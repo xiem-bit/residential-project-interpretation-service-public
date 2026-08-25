@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/presentation_response.schema.json",
+  "title": "Platform presentation response",
+  "type": "object",
+  "required": ["schema", "status", "producer", "request_sha256", "artifact", "page_mapping", "visual_evidence", "qa", "gaps"],
+  "properties": {
+    "schema": {"const": "residential.presentation_response.v0.1"},
+    "status": {"enum": ["complete", "test_double_complete", "gap"]},
+    "producer": {
+      "type": "object",
+      "required": ["kind", "platform", "formal_visual_renderer"],
+      "properties": {
+        "kind": {"type": "string"},
+        "platform": {"type": "string"},
+        "formal_visual_renderer": {"type": "boolean"}
+      }
+    },
+    "request_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "artifact": {
+      "type": "object",
+      "required": ["path", "media_type", "editable", "slide_count", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "media_type": {"const": "application/vnd.openxmlformats-officedocument.presentationml.presentation"},
+        "editable": {"const": true},
+        "slide_count": {"type": "integer", "minimum": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "page_mapping": {"type": "array", "minItems": 1},
+    "visual_evidence": {"type": "object", "required": ["kind", "path", "formal_visual_review"]},
+    "qa": {"type": "object"},
+    "gaps": {"type": "array"}
+  }
+}
+

@@ -1,0 +1,23 @@
+{
+  "schema": "residential.fictional_fact_register.v0.1",
+  "fixture_notice": "全部为合成测试数据，不对应真实项目",
+  "facts": [
+    {"id": "FACT-ID", "topic": "项目身份", "value": "澄川市青岚新区青岚澄境", "status": "synthetic_confirmed", "source": "client_brief.md"},
+    {"id": "FACT-AREA-A", "topic": "用地面积", "value": 61800, "unit": "平方米", "status": "conflicts_with_FACT-AREA-B", "source": "虚构简报A"},
+    {"id": "FACT-AREA-B", "topic": "用地面积", "value": 62300, "unit": "平方米", "status": "adopted_higher_value_for_fixture", "source": "虚构规划摘要B"},
+    {"id": "FACT-FAR", "topic": "容积率", "value": 1.45, "status": "synthetic_confirmed", "source": "虚构规划摘要B"},
+    {"id": "FACT-GREEN", "topic": "绿地率", "value": "38%", "status": "synthetic_confirmed", "source": "虚构规划摘要B"},
+    {"id": "FACT-RAIL-A", "topic": "轨道节点距离", "value": 2.4, "unit": "公里直线距离", "status": "synthetic_confirmed", "source": "虚构测距记录"},
+    {"id": "FACT-RAIL-B", "topic": "轨道节点距离", "value": 2.1, "unit": "公里步行距离", "status": "unverified_route", "source": "虚构营销口述"},
+    {"id": "FACT-UNITS", "topic": "产品面积", "value": [128, 143, 168], "unit": "平方米", "status": "synthetic_confirmed", "source": "虚构户型表"},
+    {"id": "FACT-PRICE", "topic": "价格", "value": null, "status": "unknown_material_gap", "source": "未提供"},
+    {"id": "FACT-SCHOOL", "topic": "学校权益", "value": null, "status": "unknown_rights_gap", "source": "仅有规划教育用地描述"},
+    {"id": "FACT-DELIVERY", "topic": "交付时间", "value": null, "status": "unknown_formal_document_gap", "source": "仅有营销口头设想"}
+  ],
+  "conflict_policy": {
+    "area": "保留两项原始值；示例生产统一采用较高值62300平方米",
+    "rail": "只采用2.4公里直线距离；2.1公里步行距离保持待核实",
+    "unknowns": "价格、学区与交付不得转写为承诺"
+  }
+}
+

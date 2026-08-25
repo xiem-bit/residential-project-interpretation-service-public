@@ -1,0 +1,63 @@
+{
+  "schema": "residential-competitiveness-b-class-promotion.v0.1",
+  "slice": "4.1",
+  "component": "multi-source PPTX starter adapter",
+  "source_commit": "21a68a543ee7322a0a2532a0c254ecf211d1a878",
+  "private_baseline_files": [
+    {
+      "path": "tools/product3_ppt_pipeline/automizer_adapter/build_multisource_starter.mjs",
+      "git_blob": "592a26e886cf58e94b9a9e72e6795ebba6438cd2",
+      "candidate_action": "minimally hardened"
+    },
+    {
+      "path": "tools/product3_ppt_pipeline/automizer_adapter/package.json",
+      "git_blob": "2a1bac326c85a18a5144bb8c5f5f82aa80c2f666",
+      "candidate_action": "converted to standard npm dependency contract"
+    },
+    {
+      "path": "tools/product3_ppt_pipeline/automizer_adapter/pnpm-lock.yaml",
+      "git_blob": "bd8ba062857cc95f6e7dc95b270ebdc99c4bec0a",
+      "candidate_action": "not distributed; replaced by package-lock.json"
+    }
+  ],
+  "candidate_files": [
+    "tools/product3_ppt_pipeline/automizer_adapter/README.md",
+    "tools/product3_ppt_pipeline/automizer_adapter/SECURITY.md",
+    "tools/product3_ppt_pipeline/automizer_adapter/build_multisource_starter.mjs",
+    "tools/product3_ppt_pipeline/automizer_adapter/package-lock.json",
+    "tools/product3_ppt_pipeline/automizer_adapter/package.json",
+    "tools/product3_ppt_pipeline/automizer_adapter/pptx_package_safety.mjs",
+    "tools/product3_ppt_pipeline/automizer_adapter/test/adapter.test.mjs",
+    "tools/product3_ppt_pipeline/automizer_adapter/verify_pptx_package.mjs"
+  ],
+  "candidate_sha256s": {
+    "tools/product3_ppt_pipeline/automizer_adapter/README.md": "7ec0a2bf4d4aa49a960330496efd711e58254cf08005d5a0990ec9fbfed8dea0",
+    "tools/product3_ppt_pipeline/automizer_adapter/SECURITY.md": "21fbeccc5e37a15d0cf0202436d736c147fac9eca62f4ab9a463482f6a3d82fe",
+    "tools/product3_ppt_pipeline/automizer_adapter/build_multisource_starter.mjs": "18f60aecab18f1d5f85ac121710fdb249e163548575f409f5d3da7adaac2712a",
+    "tools/product3_ppt_pipeline/automizer_adapter/package-lock.json": "8507f328e27e8a246919d1255661421eda1361fae31ce2279a813cf8f992cd84",
+    "tools/product3_ppt_pipeline/automizer_adapter/package.json": "4b0eb483cdb0033ee30287e4abd7ec5ba324f9d55b1d5ad4b26256ef225b611d",
+    "tools/product3_ppt_pipeline/automizer_adapter/pptx_package_safety.mjs": "7f15bd7ab19c1253e0c2b2ac7025cdbe1fa6bf6e156c1dc262ee6ae394de7d3f",
+    "tools/product3_ppt_pipeline/automizer_adapter/test/adapter.test.mjs": "abc12b9f798b70bb6273a8511783474c03a6b9c993acae21c1855f25cf05b568",
+    "tools/product3_ppt_pipeline/automizer_adapter/verify_pptx_package.mjs": "abf8fd3a82f489be976ba99e528e5d0a7f1c443871ab9ed0118af28e8cfed929"
+  },
+  "minimal_change_boundary": [
+    "retain only explicitly selected source slides before assembly",
+    "strip speaker notes and comments",
+    "remove unreachable slides, media, layouts, masters and related OOXML parts",
+    "reject broken relationships and embedded local filesystem paths",
+    "use logical relative source paths and path-portable receipts",
+    "install from a committed npm lockfile in Node.js 20 or newer",
+    "reject known image-size denial-of-service media families before Automizer runs",
+    "add synthetic end-to-end and fail-closed tests"
+  ],
+  "explicit_non_goals": [
+    "formal presentation authoring",
+    "visual-fidelity certification",
+    "business-content approval",
+    "replacement of the private Presentations production engine",
+    "support for ICNS, JXL, HEIF, HEIC or AVIF source media"
+  ],
+  "real_project_assets_included": false,
+  "private_git_history_included": false,
+  "promotion_status": "local_candidate_pass_with_recorded_dependency_exception"
+}

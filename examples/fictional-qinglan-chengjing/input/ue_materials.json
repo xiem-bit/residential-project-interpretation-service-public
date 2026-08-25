@@ -1,0 +1,13 @@
+{
+  "schema": "residential.fictional_ue_materials.v0.1",
+  "fixture_notice": "仅含合成语义，不含真实图片或项目源码",
+  "available": [
+    {"id": "UE-MAP-01", "type": "system_made_map_brief", "semantics": "项目、双就业节点、既有轨道站与主要道路的抽象关系图", "binary_asset": false},
+    {"id": "UE-ROUTE-01", "type": "system_made_route_brief", "semantics": "入口、首层园林、架空层与地下会所的连续归家路径", "binary_asset": false},
+    {"id": "UE-UNIT-01", "type": "system_made_space_brief", "semantics": "143平方米双套房与可变书房在日常、父母短住和居家办公间切换", "binary_asset": false}
+  ],
+  "platform_may_create": ["抽象地图", "逻辑结构图", "无人物识别风险的生成式空间示意"],
+  "prohibited": ["甲方PDF截图", "甲方微信图片", "真实客户原图", "未经授权的效果图二创"],
+  "missing": ["真实总平底图", "真实户型图", "真实案例图", "正式二维码与发布地址"]
+}
+

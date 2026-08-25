@@ -1,0 +1,14 @@
+{
+  "schema": "residential.product5_visual_review.v0.1",
+  "status": "to_fill",
+  "platform": "WorkBuddy",
+  "reviewer_label": "",
+  "views": [
+    {"view": "desktop", "status": "to_fill", "screenshot_path": "previews/product5-desktop.png", "notes": ""},
+    {"view": "mobile", "status": "to_fill", "screenshot_path": "previews/product5-mobile.png", "notes": ""}
+  ],
+  "relative_navigation": "to_fill",
+  "external_resource_scan": "to_fill",
+  "formal_visual_review": "to_fill"
+}
+

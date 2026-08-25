@@ -1,0 +1,22 @@
+{
+  "name": "product3-pptx-automizer-adapter",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node --check build_multisource_starter.mjs && node --check pptx_package_safety.mjs && node --check verify_pptx_package.mjs",
+    "test": "node --test test/*.test.mjs",
+    "verify": "npm run check && npm test"
+  },
+  "dependencies": {
+    "jszip": "3.10.1",
+    "pptx-automizer": "0.9.3"
+  },
+  "devDependencies": {
+    "pptxgenjs": "3.12.0"
+  }
+}

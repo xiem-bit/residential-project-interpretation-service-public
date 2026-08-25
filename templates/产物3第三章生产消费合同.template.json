@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "project_id": "[填写项目标识]",
+    "status": "draft",
+    "main_consumption_contract": "docs/30-住宅项目竞争力生产消费主合同_v1.0.md",
+    "super_competitiveness_requirement": {
+      "minimum": 3,
+      "maximum": 4,
+      "high_cost_admission": "all_established_and_internally_validated"
+    },
+    "source_chapter2_contract": "[填写第二章合同路径]",
+    "visible_copy_mode": "client_marketing_team",
+    "value_anchor_visualization_service": false
+  },
+  "visual_source_policy": {
+    "allowed": [
+      "semantic_company_case_library",
+      "system_made_map_or_data_chart",
+      "system_made_logic_diagram",
+      "semantically_reviewed_generated_visual",
+      "client_render_derivative_only_after_separate_authorization_and_local_render_owner"
+    ],
+    "prohibited": [
+      "raw_client_pdf_screenshot",
+      "raw_client_wechat_image",
+      "raw_client_proposal_screenshot",
+      "cropped_recolored_masked_recaptioned_or_lightly_redrawn_client_original"
+    ],
+    "client_material_usage": "internal_understanding_fact_extraction_visual_reference_and_search_index_only",
+    "client_render_derivative_default": "off",
+    "required_asset_registry_fields": ["source_type", "asset_identity", "business_semantics", "proof_purpose", "page_destination"]
+  },
+  "chapter3": {
+    "value_anchor": {
+      "source_ref": "VALUE-ANCHOR",
+      "text": "[空间锚点]上『最[差异化特质]』的[产品形态]",
+      "usage": "textual_recap_only",
+      "scene_id": "COMMON-01"
+    },
+    "common_project_answer": {
+      "visible_claim": "[填写全部竞争力共同回答的项目总答案]",
+      "super_competitiveness_sections": [
+        {
+          "source_ref": "SC-LOCATION",
+          "text": "[竞争边界]内最能改变[区位不利观念]的[区位竞争武器]",
+          "bounded_superlative": {
+            "comparison_set": "[填写本案相对哪些竞品、存量房或继续等待]",
+            "purchase_task": "[填写目标客群正在完成的购买任务]",
+            "claim": "[填写本案在该边界内形成的唯一、最或同等行业结论]"
+          },
+          "customer_gain": "[填写客户可以得到什么]",
+          "project_fact_refs": ["E-DEMO"],
+          "competition_relation_refs": ["REL-01"],
+          "customer_question_refs": ["CD-01"],
+          "ue_scenes": [
+            {
+              "id": "COMMON-SC1-01",
+              "visible_title": "[填写肯定式结论标题]",
+              "visual_mode": "map",
+              "content": "[填写画面、交互和讲解内容]",
+              "product5_target": "[填写产物5页面或待实现状态]"
+            }
+          ],
+          "case_slots": [
+            {"id": "CASE-SC1-01", "purpose": "[填写案例需要证明什么]", "status": "待真人准备"},
+            {"id": "CASE-SC1-02", "purpose": "[填写案例需要证明什么]", "status": "待真人准备"}
+          ]
+        },
+        {
+          "source_ref": "SC-PLANNING",
+          "text": "[竞争边界]内最能改变[规划不利观念]的[规划竞争武器]",
+          "bounded_superlative": {
+            "comparison_set": "[填写本案相对哪些竞品、存量房或继续等待]",
+            "purchase_task": "[填写目标客群正在完成的购买任务]",
+            "claim": "[填写本案在该边界内形成的唯一、最或同等行业结论]"
+          },
+          "customer_gain": "[填写客户可以得到什么]",
+          "project_fact_refs": ["E-DEMO"],
+          "competition_relation_refs": ["REL-01"],
+          "customer_question_refs": ["CD-02"],
+          "ue_scenes": [
+            {
+              "id": "COMMON-SC2-01",
+              "visible_title": "[填写肯定式结论标题]",
+              "visual_mode": "route",
+              "content": "[填写画面、交互和讲解内容]",
+              "product5_target": "[填写产物5页面或待实现状态]"
+            }
+          ],
+          "case_slots": [
+            {"id": "CASE-SC2-01", "purpose": "[填写案例需要证明什么]", "status": "待真人准备"},
+            {"id": "CASE-SC2-02", "purpose": "[填写案例需要证明什么]", "status": "待真人准备"}
+          ]
+        },
+        {
+          "source_ref": "SC-PRODUCT",
+          "text": "[竞争边界]内最能改变[产品不利观念]的[产品竞争武器]",
+          "bounded_superlative": {
+            "comparison_set": "[填写本案相对哪些竞品、存量房或继续等待]",
+            "purchase_task": "[填写目标客群正在完成的购买任务]",
+            "claim": "[填写本案在该边界内形成的唯一、最或同等行业结论]"
+          },
+          "customer_gain": "[填写客户可以得到什么]",
+          "project_fact_refs": ["E-DEMO"],
+          "competition_relation_refs": ["REL-01"],
+          "customer_question_refs": ["CD-03"],
+          "ue_scenes": [
+            {
+              "id": "COMMON-SC3-01",
+              "visible_title": "[填写肯定式结论标题]",
+              "visual_mode": "space",
+              "content": "[填写画面、交互和讲解内容]",
+              "product5_target": "[填写产物5页面或待实现状态]"
+            }
+          ],
+          "case_slots": [
+            {"id": "CASE-SC3-01", "purpose": "[填写案例需要证明什么]", "status": "待真人准备"},
+            {"id": "CASE-SC3-02", "purpose": "[填写案例需要证明什么]", "status": "待真人准备"}
+          ]
+        }
+      ],
+      "closing_scene": {
+        "id": "COMMON-CLOSE-01",
+        "visible_claim": "[填写全部竞争力共同回到项目的总答案]",
+        "product5_target": "[填写产物5页面或待实现状态]"
+      }
+    },
+    "family_routes": [
+      {
+        "id": "ROUTE-TASK-A",
+        "visible_name": "[填写客户可读的家庭任务名称]",
+        "source_product2_task_ref": "TASK-A",
+        "circumstance": "[填写家庭当前处境]",
+        "trigger": "[填写改变触发]",
+        "desired_progress": "[填写希望取得的进展]",
+        "alternative_choices": ["[填写项目、板块、存量房或继续居住方案]"],
+        "decision_conditions": ["[填写比较、筛选或否决条件]"],
+        "project_answer": "[填写本案如何帮助客户取得进展]",
+        "product_matches": [
+          {"product": "[填写面积或户型]", "role": "[填写该产品在任务中的作用]", "price_discipline": "[填写总价或购买条件]"}
+        ],
+        "required_layers": ["data_judgment", "product_understanding", "family_life"],
+        "scenes": [
+          {
+            "id": "ROUTE-TASK-A-01",
+            "visible_title": "[填写肯定式结论标题]",
+            "layer": "data_judgment",
+            "content": "[填写本场景要讲清的内容]",
+            "module_refs": ["MODULE-REGION"],
+            "product5_target": "[填写产物5页面或待实现状态]"
+          },
+          {
+            "id": "ROUTE-TASK-A-02",
+            "visible_title": "[填写肯定式结论标题]",
+            "layer": "product_understanding",
+            "content": "[填写本场景要讲清的内容]",
+            "module_refs": ["MODULE-UNIT"],
+            "product5_target": "[填写产物5页面或待实现状态]"
+          },
+          {
+            "id": "ROUTE-TASK-A-03",
+            "visible_title": "[填写肯定式结论标题]",
+            "layer": "family_life",
+            "content": "[填写本场景要讲清的内容]",
+            "module_refs": ["MODULE-GARDEN"],
+            "product5_target": "[填写产物5页面或待实现状态]"
+          }
+        ]
+      }
+    ],
+    "system_modules": [
+      {
+        "id": "MODULE-REGION",
+        "label": "区域与地段",
+        "visible_value_claim": "[填写本模块价值主张]",
+        "supports_super_competitiveness_refs": ["SC-LOCATION"],
+        "supports_route_refs": ["ROUTE-TASK-A"],
+        "content_items": ["城市关系", "通勤与生活路径", "重点配套"],
+        "interaction_actions": ["点击", "切换", "比较"],
+        "product5_targets": ["[填写产物5页面或待实现状态]"]
+      },
+      {
+        "id": "MODULE-UNIT",
+        "label": "户型与房源",
+        "visible_value_claim": "[填写本模块价值主张]",
+        "supports_super_competitiveness_refs": ["SC-PRODUCT"],
+        "supports_route_refs": ["ROUTE-TASK-A"],
+        "content_items": ["户型关系", "空间尺度", "房源条件"],
+        "interaction_actions": ["切换", "对比", "调用"],
+        "product5_targets": ["[填写产物5页面或待实现状态]"]
+      },
+      {
+        "id": "MODULE-GARDEN",
+        "label": "园林与公区",
+        "visible_value_claim": "[填写本模块价值主张]",
+        "supports_super_competitiveness_refs": ["SC-PLANNING"],
+        "supports_route_refs": ["ROUTE-TASK-A"],
+        "content_items": ["园林节点", "架空层", "会所与归家"],
+        "interaction_actions": ["漫游", "切换", "查看"],
+        "product5_targets": ["[填写产物5页面或待实现状态]"]
+      }
+    ],
+    "system_scope_close": {
+      "scene_id": "CLOSE-01",
+      "visible_claim": "[填写甲方最终获得的系统总答案]",
+      "required_module_labels": ["城市", "区域", "地段", "配套", "项目", "建筑", "园林", "公区", "精装", "户型", "房源"],
+      "case_area_status": "待真人准备",
+      "product5_target": "[填写产物5总览页或待实现状态]"
+    }
+  }
+}

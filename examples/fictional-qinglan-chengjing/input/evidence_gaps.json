@@ -1,0 +1,12 @@
+{
+  "schema": "residential.fictional_evidence_gaps.v0.1",
+  "fixture_notice": "全部为测试缺口",
+  "gaps": [
+    {"id": "GAP-PRICE", "topic": "首开价格与付款条件", "impact": "总价适配与价格承诺等待正式价格和付款条件", "status": "open_non_blocking_for_method_demo", "required_owner": "future_authorized_project_owner"},
+    {"id": "GAP-SCHOOL", "topic": "学校建设与入学权益", "impact": "禁止使用名校旁、学区或确定入学表达", "status": "open_claim_blocker", "required_owner": "future_authorized_project_owner"},
+    {"id": "GAP-RAIL", "topic": "2.1公里步行路径", "impact": "当前表达采用2.4公里直线距离；步行路径等待核验", "status": "open_claim_blocker", "required_owner": "future_authorized_project_owner"},
+    {"id": "GAP-DELIVERY", "topic": "正式交付时间", "impact": "不得进入客户承诺", "status": "open_claim_blocker", "required_owner": "future_authorized_project_owner"},
+    {"id": "GAP-VISUAL", "topic": "真实效果图与案例素材", "impact": "平台只能使用系统制作图、抽象图或经复核生成图", "status": "open_platform_asset_gap", "required_owner": "selected_platform_adapter"}
+  ],
+  "demo_decision": "缺口不阻塞虚构方法与接口测试，但阻塞对应真实营销承诺"
+}

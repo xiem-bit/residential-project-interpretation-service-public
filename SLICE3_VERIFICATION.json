@@ -1,0 +1,73 @@
+{
+  "schema": "residential-competitiveness-public-core-verification.v0.1",
+  "slice": 3,
+  "status": "pass_local_candidate",
+  "verification_date": "2026-08-25",
+  "source_commit": "21a68a543ee7322a0a2532a0c254ecf211d1a878",
+  "source_integrity": {
+    "allowlisted_files": 21,
+    "exact_git_blob_matches": 21,
+    "missing_files": 0,
+    "content_mismatches": 0
+  },
+  "candidate_inventory": {
+    "source_files": 21,
+    "packaging_files": 8,
+    "total_files": 29,
+    "unexpected_files": 0,
+    "non_regular_entries": 0
+  },
+  "purity_scans": {
+    "forbidden_roots": 0,
+    "hardcoded_absolute_paths": 0,
+    "secret_patterns": 0,
+    "internal_infrastructure_markers": 0,
+    "known_real_project_or_client_identifiers": 0,
+    "platform_or_company_specific_markers": 0,
+    "email_addresses": 0,
+    "mainland_china_mobile_numbers": 0,
+    "binary_assets": 0,
+    "fixture_only_external_url_files": 2,
+    "fixture_only_local_file_url_files": 1
+  },
+  "python_verification": {
+    "runtime": "system Python",
+    "version": "3.9.6",
+    "dependency_model": "standard_library_only",
+    "command": "python3 tests/run_public_tests.py",
+    "tests_run": 49,
+    "tests_passed": 49,
+    "tests_failed": 0
+  },
+  "component_reclassification": {
+    "component": "multi-source PPTX starter adapter",
+    "previous_class": "A",
+    "new_class": "B",
+    "candidate_action": "removed_from_slice3_candidate",
+    "synthetic_end_to_end_generation_completed": true,
+    "referenced_output_slide_count_was_correct": true,
+    "unselected_source_slide_content_retained_in_archive": true,
+    "absolute_local_paths_recorded_in_receipt": true,
+    "repair_deferred_to_slice4": true
+  },
+  "private_baseline_check": {
+    "worktree_clean": true,
+    "head_matches_source_commit": true,
+    "main_matches_source_commit": true,
+    "origin_main_matches_source_commit": true
+  },
+  "rights_and_distribution": {
+    "license_selected": false,
+    "rights_holder_approval_confirmed": false,
+    "public_distribution_authorized": false,
+    "git_repository_created_for_candidate": false,
+    "public_repository_created": false,
+    "published": false
+  },
+  "remaining_limits": [
+    "Independent-machine cold start has not been run.",
+    "Target-agent-platform cold start and autonomous adaptation have not been run.",
+    "License selection and rights-holder authorization remain open final release gates.",
+    "Slice 4 has not started."
+  ]
+}

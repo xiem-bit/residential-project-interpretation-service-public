@@ -1,0 +1,46 @@
+{
+  "schema": "residential.public_capability_routing.v0.1",
+  "status": "rc1",
+  "routes": [
+    {
+      "capability": "residential_contract_validation",
+      "owner": "public_core",
+      "entrypoint": "python3 scripts/run_rc1_demo.py",
+      "fallback": "emit_contract_shaped_gap"
+    },
+    {
+      "capability": "formal_presentation_generation",
+      "owner": "platform_adapter",
+      "input_schema": "contracts/presentation_request.schema.json",
+      "output_schema": "contracts/presentation_response.schema.json",
+      "platform_examples": ["WorkBuddy presentation skill", "Codex presentation skill", "human presentation team"],
+      "fallback": "return_no_supported_presentation_capability_gap"
+    },
+    {
+      "capability": "pptx_structural_and_business_qa",
+      "owner": "public_core",
+      "entrypoint": "tools/product3_ppt_pipeline/automizer_adapter/verify_pptx_package.mjs",
+      "fallback": "reject_artifact"
+    },
+    {
+      "capability": "product5_generic_shell_and_static_bundle",
+      "owner": "public_core",
+      "entrypoint": "tools/ue_static_bundle/create_manifest.mjs",
+      "fallback": "emit_incomplete_static_bundle_gap"
+    },
+    {
+      "capability": "formal_visual_review",
+      "owner": "platform_adapter_or_human",
+      "bundled_in_rc1": false,
+      "required_for_real_client_delivery": true,
+      "fallback": "FORMAL_VISUAL_REVIEW_REQUIRED"
+    },
+    {
+      "capability": "cloud_publication",
+      "owner": "outside_rc1",
+      "bundled_in_rc1": false,
+      "fallback": "PUBLICATION_NOT_AUTHORIZED"
+    }
+  ]
+}
+

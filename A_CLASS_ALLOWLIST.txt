@@ -1,0 +1,23 @@
+# Exact private-baseline files allowed into the Slice 3 candidate.
+# Files created during Slice 3 packaging are listed separately in PUBLIC_CORE_MANIFEST.json.
+fixtures/client-review/external-resource.md
+fixtures/client-review/html-comment.md
+fixtures/client-review/long-content.md
+fixtures/client-review/positive.md
+fixtures/client-review/unsafe-html.md
+fixtures/client-review/unsafe-link.md
+templates/产物3第二章生产消费合同.template.json
+templates/产物3第三章生产消费合同.template.json
+templates/产物4价值框架生产消费合同.template.json
+tools/chinese_copy_lint/affirmative_statement_lint.py
+tools/chinese_copy_lint/test_affirmative_statement_lint.py
+tools/product3_chapter2/test_validate_chapter2_contract.py
+tools/product3_chapter2/validate_chapter2_contract.py
+tools/product3_chapter23/test_validate_chapter23_bridge.py
+tools/product3_chapter23/validate_chapter23_bridge.py
+tools/product3_chapter3/test_validate_chapter3_contract.py
+tools/product3_chapter3/validate_chapter3_contract.py
+tools/product3_ppt_pipeline/business_gates.py
+tools/product4/test_validate_product4_contract.py
+tools/product4/validate_product4_contract.py
+tools/product4/validate_product4_xmind.py

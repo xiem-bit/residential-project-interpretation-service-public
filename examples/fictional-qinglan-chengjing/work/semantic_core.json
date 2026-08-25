@@ -1,0 +1,313 @@
+{
+  "schema": "residential.semantic_core.v0.1",
+  "status": "approved_for_fictional_demo",
+  "fixture_notice": "全量虚构，不对应任何真实城市、企业、楼盘或客户",
+  "project": {
+    "id": "fictional-qinglan-chengjing",
+    "name": "青岚澄境（虚构示例）",
+    "city": "澄川市（虚构）",
+    "district": "青岚新区东岸生活带（虚构）",
+    "developer": "澄川青岚置业有限公司（虚构）",
+    "mode": "fictional_release_fixture"
+  },
+  "fact_policy": {
+    "adopted_site_area_sqm": 62300,
+    "site_area_conflict_preserved": true,
+    "adopted_rail_distance": "2.4公里直线距离",
+    "unverified_claims": ["2.1公里步行距离", "学校权益", "首开价格", "正式交付时间"],
+    "claim_rule": "未核实事项保持gap，不进入客户承诺"
+  },
+  "evidence_registry": [
+    {"id": "E-BRIEF", "type": "合成甲方简报", "title": "青岚澄境虚构甲方简报", "locator": "input/client_brief.md"},
+    {"id": "E-FACTS", "type": "合成事实登记", "title": "事实、冲突与采用口径", "locator": "input/fact_register.json"},
+    {"id": "E-MARKET", "type": "合成市场证据", "title": "虚构竞品与替代选择", "locator": "input/market_evidence.json"},
+    {"id": "E-VOICES", "type": "合成客户声音", "title": "六条测试用合成逐字句", "locator": "input/customer_voices.md"},
+    {"id": "E-GAPS", "type": "合成缺口登记", "title": "价格、学区、交通、交付与素材缺口", "locator": "input/evidence_gaps.json"},
+    {"id": "E-UE", "type": "合成UE语义素材", "title": "地图、归家与户型场景说明", "locator": "input/ue_materials.json"},
+    {"id": "E-CLAIMS", "type": "合成营销主张", "title": "允许、加边界与拒绝的主张", "locator": "input/marketing_claims.json"}
+  ],
+  "customer_decisions": [
+    {
+      "id": "CD-ENTRY",
+      "kind": "candidate_entry",
+      "text": "跨城通勤家庭先确认两条就业路径的可选择性，再决定新区低密能否进入候选",
+      "choice_event": "VOICE-01接受距离增加但拒绝把日常通勤押在单一路径；VOICE-02承认北湾府的成熟通勤优势",
+      "evidence_refs": ["E-VOICES", "E-MARKET"]
+    },
+    {
+      "id": "CD-COMPARE",
+      "kind": "active_comparison",
+      "text": "低密配置只有被还原成每天经过和使用的空间关系，才进入主动比较",
+      "choice_event": "VOICE-04认可栖霞里已开放会所，同时要求青岚澄境把园林与地下空间一次讲清",
+      "evidence_refs": ["E-VOICES", "E-MARKET", "E-UE"]
+    },
+    {
+      "id": "CD-ACTION",
+      "kind": "veto",
+      "text": "家庭先确认户型能否承接三代短住与居家办公，再等待价格和权益正式文件",
+      "choice_event": "VOICE-03提出双卫生间与空间不浪费的并行要求；VOICE-05明确价格未出时继续比较",
+      "evidence_refs": ["E-VOICES", "E-GAPS"]
+    }
+  ],
+  "relations": [
+    {
+      "id": "REL-COMMUTE",
+      "option_a": "青岚澄境（虚构）",
+      "option_b": "北湾府（虚构）",
+      "relation": "direct_substitute_for_128_to_143_sqm_commute_task",
+      "customer_reason": "客户在成熟轨道便利与新区低密空间之间比较每日时间成本",
+      "customer_decision_refs": ["CD-ENTRY"]
+    },
+    {
+      "id": "REL-LOWDENSITY",
+      "option_a": "青岚澄境（虚构）",
+      "option_b": "栖霞里（虚构）",
+      "relation": "direct_substitute_for_143_to_168_sqm_low_density_task",
+      "customer_reason": "客户同时比较低密强度、会所成熟度与家庭空间弹性",
+      "customer_decision_refs": ["CD-COMPARE", "CD-ACTION"]
+    },
+    {
+      "id": "REL-WAIT",
+      "option_a": "青岚澄境（虚构）",
+      "option_b": "继续居住并等待",
+      "relation": "behavioral_substitute_before_price_release",
+      "customer_reason": "价格和部分权益未确定时，继续居住能保持现金流与选择权",
+      "customer_decision_refs": ["CD-ACTION"]
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "REG",
+      "name": "区域",
+      "order": 1,
+      "customer_question": "新区低密能否进入双城通勤家庭候选",
+      "customer_decision_refs": ["CD-ENTRY"],
+      "comparison_factors": ["通勤弹性", "生活成熟度", "权益边界"],
+      "advantage_column_id": "ACCESS",
+      "map": {
+        "spatial_comparison": true,
+        "base_map_asset": "input/ue_materials.json#UE-MAP-01",
+        "subject_location": "青岚新区东岸生活带（虚构）",
+        "supporting_visual_assets": []
+      },
+      "subject_strengths": [
+        {"id": "REG-S-01", "factor_id": "通勤弹性", "text": "虚构道路网可分别连接东部产业园与老城就业节点", "evidence_refs": ["E-BRIEF", "E-UE"]},
+        {"id": "REG-S-02", "factor_id": "生活成熟度", "text": "虚构15分钟生活圈登记八类日常服务，完整度低于北湾府", "evidence_refs": ["E-MARKET"]},
+        {"id": "REG-S-03", "factor_id": "权益边界", "text": "既有轨道节点采用2.4公里直线距离，学校、步行距离与规划交通保持待核实", "evidence_refs": ["E-FACTS", "E-GAPS"]}
+      ],
+      "competitors": [
+        {
+          "id": "REG-COMP-BEIWAN",
+          "name": "北湾府（虚构）",
+          "role_boundary": "128—143平方米且优先成熟轨道通勤的家庭",
+          "strengths": [
+            {"id": "REG-C-01", "factor_id": "生活成熟度", "text": "约650米可达虚构既有轨道站，商业与学校更成熟", "evidence_refs": ["E-MARKET"]}
+          ],
+          "limitations": [
+            {"id": "REG-C-02", "factor_id": "通勤弹性", "text": "轨道便利集中于单一节点，低密与家庭空间不是其主要选择理由", "evidence_refs": ["E-MARKET"]}
+          ]
+        }
+      ],
+      "conclusions": [
+        {"id": "REG-CON-01", "text": "青岚澄境以双就业路径与1.45低密组合进入跨城家庭候选，北湾府继续占据成熟轨道便利优势", "fact_refs": ["REG-S-01", "REG-C-01"], "customer_decision_refs": ["CD-ENTRY"]},
+        {"id": "REG-CON-02", "text": "通勤表达采用已登记的双路径关系与2.4公里直线距离，规划交通和学校权益留在承诺之外", "fact_refs": ["REG-S-03", "REG-C-02"], "customer_decision_refs": ["CD-ENTRY"]}
+      ],
+      "advantages": [
+        {"id": "ADV-A-01", "text": "双就业节点路径为新区低密增加通勤选择", "customer_progress": "家庭在改善空间与日常时间之间形成可比较方案", "conclusion_refs": ["REG-CON-01"]},
+        {"id": "ADV-A-02", "text": "已知距离与待核权益分开表达", "customer_progress": "家庭能依据确定事实进入候选，不把规划主张当作既得权益", "conclusion_refs": ["REG-CON-02"]}
+      ],
+      "super_competitiveness": {
+        "id": "SC-ACCESS",
+        "text": "本虚构对比样本中，唯一同时覆盖双就业节点路径与1.45容积率低密生活的128—168平方米改善住区",
+        "range": "澄川东岸虚构样本、128—168平方米、跨城通勤改善任务",
+        "super_trait": "双路径通勤与低密空间同时成立",
+        "form": "东岸低密改善住区",
+        "bounded_superlative": {
+          "comparison_set": "北湾府、栖霞里与继续居住三个虚构选择",
+          "purchase_task": "在跨城通勤可接受的前提下取得低密改善空间",
+          "claim": "仅在本虚构样本与面积任务内，青岚澄境形成双就业节点路径加1.45容积率的唯一组合"
+        },
+        "customer_gain": "家庭先用两条就业路径判断新区位置，再把低密空间纳入同一次比较",
+        "evidence_refs": ["E-FACTS", "E-MARKET", "E-VOICES"],
+        "relation_refs": ["REL-COMMUTE"],
+        "customer_decision_refs": ["CD-ENTRY"],
+        "scene": {"id": "COMMON-SC-ACCESS", "visible_title": "双节点路径让新区低密进入通勤家庭候选", "visual_mode": "map", "content": "以抽象地图切换东部产业园与老城就业节点，同时标出2.4公里直线距离及待核边界", "product5_target": "view-city-links"}
+      }
+    },
+    {
+      "id": "PLAN",
+      "name": "规划",
+      "order": 2,
+      "customer_question": "低密配置能否变成每天可使用的完整路径",
+      "customer_decision_refs": ["CD-COMPARE"],
+      "comparison_factors": ["开发强度", "空间连续性", "展示成熟度"],
+      "advantage_column_id": "CONTINUITY",
+      "map": {
+        "spatial_comparison": false,
+        "base_map_asset": "input/ue_materials.json#UE-ROUTE-01",
+        "subject_location": "青岚澄境虚构社区",
+        "supporting_visual_assets": ["input/ue_materials.json#UE-ROUTE-01"]
+      },
+      "subject_strengths": [
+        {"id": "PLAN-S-01", "factor_id": "开发强度", "text": "容积率1.45、12栋8—11层住宅构成虚构低密底盘", "evidence_refs": ["E-FACTS", "E-BRIEF"]},
+        {"id": "PLAN-S-02", "factor_id": "空间连续性", "text": "入口、首层园林、架空层与地下会所按连续归家路径组织", "evidence_refs": ["E-UE"]},
+        {"id": "PLAN-S-03", "factor_id": "展示成熟度", "text": "当前只有语义说明，正式图像与现场展示尚未提供", "evidence_refs": ["E-UE", "E-GAPS"]}
+      ],
+      "competitors": [
+        {
+          "id": "PLAN-COMP-QIXIA",
+          "name": "栖霞里（虚构）",
+          "role_boundary": "143—168平方米且优先低密和成熟会所体验的家庭",
+          "strengths": [
+            {"id": "PLAN-C-01", "factor_id": "展示成熟度", "text": "容积率1.20且会所已经开放，低密体验更容易被现场确认", "evidence_refs": ["E-MARKET"]}
+          ],
+          "limitations": [
+            {"id": "PLAN-C-02", "factor_id": "空间连续性", "text": "虚构资料未形成首层园林与地下会所的连续家庭路径", "evidence_refs": ["E-MARKET"]}
+          ]
+        }
+      ],
+      "conclusions": [
+        {"id": "PLAN-CON-01", "text": "栖霞里以更低容积率和已开放会所领先，青岚澄境通过连续归家路径建立不同的比较标准", "fact_refs": ["PLAN-S-02", "PLAN-C-01"], "customer_decision_refs": ["CD-COMPARE"]},
+        {"id": "PLAN-CON-02", "text": "青岚澄境的当前价值来自可被UE讲清的空间关系，正式视觉素材仍由平台按白名单生产", "fact_refs": ["PLAN-S-03", "PLAN-C-02"], "customer_decision_refs": ["CD-COMPARE"]}
+      ],
+      "advantages": [
+        {"id": "ADV-C-01", "text": "首层与地下空间组成连续归家路径", "customer_progress": "家庭把低密配置转换为每天经过和使用的具体日常", "conclusion_refs": ["PLAN-CON-01"]},
+        {"id": "ADV-C-02", "text": "UE场景为尚未开放的空间关系提供可检查预演", "customer_progress": "家庭在真实开放前先理解动线，同时保留素材和兑现边界", "conclusion_refs": ["PLAN-CON-02"]}
+      ],
+      "super_competitiveness": {
+        "id": "SC-CONTINUITY",
+        "text": "本虚构对比样本中，唯一把首层园林、架空层与地下会所串成全天候连续归家路径的低密社区",
+        "range": "澄川东岸虚构低密样本、143—168平方米、家庭日常使用任务",
+        "super_trait": "首层与地下空间连续可用",
+        "form": "全天候归家型低密社区",
+        "bounded_superlative": {
+          "comparison_set": "栖霞里与青岚澄境两个虚构低密选择",
+          "purchase_task": "判断园林、会所和归家空间是否每天可用",
+          "claim": "仅在本虚构样本内，青岚澄境形成首层园林、架空层与地下会所的唯一连续路径"
+        },
+        "customer_gain": "家庭沿一条归家路线看懂园林、公共活动与地下会所怎样共同服务日常",
+        "evidence_refs": ["E-UE", "E-MARKET", "E-VOICES"],
+        "relation_refs": ["REL-LOWDENSITY"],
+        "customer_decision_refs": ["CD-COMPARE"],
+        "scene": {"id": "COMMON-SC-CONTINUITY", "visible_title": "连续归家把低密配置变成每天可用的生活", "visual_mode": "route", "content": "沿入口、园林、架空层与地下会所逐层点亮，明确现有语义素材与待补正式图像", "product5_target": "view-homecoming-route"}
+      }
+    },
+    {
+      "id": "UNIT",
+      "name": "户型",
+      "order": 3,
+      "customer_question": "改善户型能否同时承接三代短住与居家办公",
+      "customer_decision_refs": ["CD-ACTION"],
+      "comparison_factors": ["面积门槛", "家庭独立性", "空间弹性"],
+      "advantage_column_id": "FLEXIBILITY",
+      "map": {
+        "spatial_comparison": false,
+        "base_map_asset": "input/ue_materials.json#UE-UNIT-01",
+        "subject_location": "青岚澄境虚构143平方米户型",
+        "supporting_visual_assets": ["input/ue_materials.json#UE-UNIT-01"]
+      },
+      "subject_strengths": [
+        {"id": "UNIT-S-01", "factor_id": "面积门槛", "text": "128、143、168平方米构成三个虚构改善面积档", "evidence_refs": ["E-FACTS"]},
+        {"id": "UNIT-S-02", "factor_id": "家庭独立性", "text": "143与168平方米设置双套房关系，支持父母短住时的独立卫浴", "evidence_refs": ["E-BRIEF", "E-UE"]},
+        {"id": "UNIT-S-03", "factor_id": "空间弹性", "text": "可变书房在日常工作、儿童学习与父母短住之间切换", "evidence_refs": ["E-UE"]}
+      ],
+      "competitors": [
+        {
+          "id": "UNIT-COMP-QIXIA",
+          "name": "栖霞里（虚构）",
+          "role_boundary": "143—168平方米且重视低密会所的家庭",
+          "strengths": [
+            {"id": "UNIT-C-01", "factor_id": "面积门槛", "text": "143平方米总面积相近且会所体验已开放", "evidence_refs": ["E-MARKET"]}
+          ],
+          "limitations": [
+            {"id": "UNIT-C-02", "factor_id": "家庭独立性", "text": "虚构143平方米产品没有双套房切换条件", "evidence_refs": ["E-MARKET"]}
+          ]
+        }
+      ],
+      "conclusions": [
+        {"id": "UNIT-CON-01", "text": "青岚澄境143平方米以双套房与可变书房回应三代短住，栖霞里继续占据会所已开放的确定性", "fact_refs": ["UNIT-S-02", "UNIT-C-01"], "customer_decision_refs": ["CD-ACTION"]},
+        {"id": "UNIT-CON-02", "text": "价格公布前先验证家庭空间适配，价格与权益文件到位后再完成购买判断", "fact_refs": ["UNIT-S-03", "UNIT-C-02"], "customer_decision_refs": ["CD-ACTION"]}
+      ],
+      "advantages": [
+        {"id": "ADV-F-01", "text": "双套房在共同生活中保留两代人的独立边界", "customer_progress": "父母短住与核心家庭日常可以在同一户型内并行", "conclusion_refs": ["UNIT-CON-01"]},
+        {"id": "ADV-F-02", "text": "可变书房按家庭阶段切换使用", "customer_progress": "家庭先确认空间适配，再等待价格条件关闭决策", "conclusion_refs": ["UNIT-CON-02"]}
+      ],
+      "super_competitiveness": {
+        "id": "SC-FLEXIBILITY",
+        "text": "本虚构143—168平方米样本中，唯一同时设置双套房与可变书房的三代弹性户型组团",
+        "range": "澄川东岸虚构样本、143—168平方米、三代短住与居家办公任务",
+        "super_trait": "家庭独立性与空间弹性并存",
+        "form": "三代弹性改善户型组团",
+        "bounded_superlative": {
+          "comparison_set": "栖霞里、北湾府与继续等待三个虚构选择",
+          "purchase_task": "在总价未知阶段先确认三代短住与居家办公的空间适配",
+          "claim": "仅在本虚构样本143—168平方米范围内，青岚澄境形成双套房加可变书房的唯一组合"
+        },
+        "customer_gain": "父母短住、居家办公和儿童学习可以按家庭阶段切换，同时保留各自边界",
+        "evidence_refs": ["E-FACTS", "E-UE", "E-VOICES"],
+        "relation_refs": ["REL-LOWDENSITY", "REL-WAIT"],
+        "customer_decision_refs": ["CD-ACTION"],
+        "scene": {"id": "COMMON-SC-FLEXIBILITY", "visible_title": "弹性套房让三代短住与居家办公各得其所", "visual_mode": "space", "content": "切换143平方米日常、父母短住与居家办公三种状态，并保留价格与权益缺口", "product5_target": "view-flexible-home"}
+      }
+    }
+  ],
+  "value_anchor": {
+    "text": "澄川东岸双节点生活里，把低密归家与三代弹性放进同一套日常的改善住区",
+    "spatial_anchor": "澄川东岸双节点生活圈（虚构）",
+    "differentiating_trait": "低密归家与三代弹性同步可见",
+    "product_form": "128—168平方米低密改善住区",
+    "shared_customer_progress": "在通勤可接受的前提下，让家庭成员获得共同生活与独立空间的平衡",
+    "customer_decision_refs": ["CD-ENTRY", "CD-COMPARE", "CD-ACTION"],
+    "advantage_item_refs": ["ADV-A-01", "ADV-C-01", "ADV-F-01"],
+    "super_competitiveness_refs": ["SC-ACCESS", "SC-CONTINUITY", "SC-FLEXIBILITY"]
+  },
+  "display_strategy": {
+    "rational": {"text": "用双就业路径、连续归家与户型切换证明青岚澄境的三项选择价值", "advantage_item_refs": ["ADV-A-01", "ADV-C-01", "ADV-F-01"]},
+    "emotional": {"text": "让家庭沿一天的行动顺序体验各自独立又彼此照应的低密日常", "advantage_item_refs": ["ADV-A-02", "ADV-C-02", "ADV-F-02"]}
+  },
+  "common_project_answer": "青岚澄境让通勤家庭在新区低密中同时看清每日路径、共同生活与独立空间",
+  "family_routes": [
+    {
+      "id": "ROUTE-DUAL-CITY-FAMILY",
+      "visible_name": "双城通勤三代家庭的一天",
+      "source_product2_task_ref": "TASK-SYNTHETIC-01",
+      "circumstance": "夫妻分别在老城与东部产业园工作，父母每年短住数月，孩子处在学习阶段",
+      "trigger": "现住房在居家办公、父母短住和稳定接送三项任务上同时出现空间冲突",
+      "desired_progress": "在可承受通勤内获得可切换、彼此照应又保留独立性的家庭空间",
+      "alternative_choices": ["北湾府的成熟通勤", "栖霞里的低密会所", "继续居住并等待价格"],
+      "decision_conditions": ["两条就业路径都可接受", "143平方米能承接父母短住", "价格与权益只按正式文件判断"],
+      "project_answer": "双节点路径、连续归家和双套房可变书房分别回答通勤、日常使用与家庭适配",
+      "product_matches": [
+        {"product": "143平方米虚构户型", "role": "以双套房与可变书房承接三代短住和居家办公", "price_discipline": "价格未公布，仅验证空间适配"}
+      ],
+      "required_layers": ["data_judgment", "product_understanding", "family_life"],
+      "scenes": [
+        {"id": "ROUTE-DUAL-01", "visible_title": "两条就业路径共同决定新区位置的可接受度", "layer": "data_judgment", "content": "切换老城与东部产业园两条抽象路径，标明已知距离与待核信息", "module_refs": ["MODULE-REGION"], "product5_target": "mobile-route-city"},
+        {"id": "ROUTE-DUAL-02", "visible_title": "连续归家把园林与会所接入每天行动", "layer": "product_understanding", "content": "沿入口、园林、架空层与地下会所查看全天候家庭使用关系", "module_refs": ["MODULE-GARDEN"], "product5_target": "mobile-route-homecoming"},
+        {"id": "ROUTE-DUAL-03", "visible_title": "可变书房与双套房承接家庭三种状态", "layer": "family_life", "content": "切换日常、父母短住和居家办公，比较成员独立性与共同生活", "module_refs": ["MODULE-UNIT"], "product5_target": "mobile-route-family"}
+      ]
+    }
+  ],
+  "system_modules": [
+    {"id": "MODULE-REGION", "label": "区域与地段", "visible_value_claim": "双节点路径让通勤可接受度成为可比较事实", "supports_super_competitiveness_refs": ["SC-ACCESS"], "supports_route_refs": ["ROUTE-DUAL-CITY-FAMILY"], "content_items": ["城市关系", "两条就业路径", "已知与待核距离"], "interaction_actions": ["切换", "比较", "查看边界"], "product5_targets": ["view-city-links", "mobile-route-city"]},
+    {"id": "MODULE-GARDEN", "label": "园林与公区", "visible_value_claim": "连续归家让低密配置进入每天使用", "supports_super_competitiveness_refs": ["SC-CONTINUITY"], "supports_route_refs": ["ROUTE-DUAL-CITY-FAMILY"], "content_items": ["入口", "园林", "架空层", "地下会所"], "interaction_actions": ["点亮", "漫游", "切换"], "product5_targets": ["view-homecoming-route", "mobile-route-homecoming"]},
+    {"id": "MODULE-UNIT", "label": "户型与房源", "visible_value_claim": "双套房与可变书房让家庭阶段自由切换", "supports_super_competitiveness_refs": ["SC-FLEXIBILITY"], "supports_route_refs": ["ROUTE-DUAL-CITY-FAMILY"], "content_items": ["面积梯度", "双套房", "可变书房"], "interaction_actions": ["切换", "对比", "选择"], "product5_targets": ["view-flexible-home", "mobile-route-family"]}
+  ],
+  "system_scope_close": {
+    "scene_id": "CLOSE-01",
+    "visible_claim": "一套语义核贯通城市、社区、户型与家庭选择",
+    "required_module_labels": ["城市", "区域", "地段", "配套", "项目", "建筑", "园林", "公区", "精装", "户型", "房源"],
+    "case_area_status": "虚构示例不使用真实案例素材",
+    "product5_target": "view-overview"
+  },
+  "presentation_pages": [
+    {"page_id": "P3-01", "role": "opening", "title": "青岚澄境：双节点生活里的低密改善选择", "key_message": "本虚构项目用双节点路径、连续归家与三代弹性回答新区改善家庭的三次选择。", "visual_brief": "价值锚点居中，三项选择价值形成三点结构，不使用真实项目图片。", "evidence_refs": ["E-BRIEF", "E-FACTS"], "super_competitiveness_refs": ["SC-ACCESS", "SC-CONTINUITY", "SC-FLEXIBILITY"], "acceptance": ["项目名称含虚构标识", "三项竞争力ID完整"]},
+    {"page_id": "P3-02", "role": "competition_context", "title": "客户在通勤成熟、低密体验与继续等待之间做选择", "key_message": "北湾府的成熟通勤、栖霞里的低密会所和继续等待都有成立理由，青岚澄境需要重设综合比较标准。", "visual_brief": "四项选择并列，先呈现各自成立理由，再突出本案综合关系。", "evidence_refs": ["E-MARKET", "E-VOICES"], "super_competitiveness_refs": [], "acceptance": ["竞品优势可见", "继续等待作为真实替代可见"]},
+    {"page_id": "P3-03", "role": "super_competitiveness", "title": "双节点路径让新区低密进入通勤家庭候选", "key_message": "两条就业路径与1.45容积率共同成立，规划交通、学校和步行距离保持待核。", "visual_brief": "使用系统制作抽象地图，区分已知路径与待核信息。", "evidence_refs": ["E-FACTS", "E-MARKET", "E-GAPS"], "super_competitiveness_refs": ["SC-ACCESS"], "acceptance": ["只使用2.4公里直线距离", "待核权益不作承诺"]},
+    {"page_id": "P3-04", "role": "super_competitiveness", "title": "连续归家把低密配置变成每天可用的生活", "key_message": "入口、园林、架空层与地下会所沿一条全天候路线共同服务家庭日常。", "visual_brief": "使用系统制作路径图逐层点亮，不引用甲方截图。", "evidence_refs": ["E-UE", "E-MARKET"], "super_competitiveness_refs": ["SC-CONTINUITY"], "acceptance": ["四段空间关系完整", "正式视觉素材缺口明确"]},
+    {"page_id": "P3-05", "role": "super_competitiveness", "title": "弹性套房让三代短住与居家办公各得其所", "key_message": "双套房保留两代独立边界，可变书房在工作、学习与短住之间切换。", "visual_brief": "用三个抽象户型状态说明空间切换，不使用真实户型截图。", "evidence_refs": ["E-FACTS", "E-UE", "E-VOICES"], "super_competitiveness_refs": ["SC-FLEXIBILITY"], "acceptance": ["三种状态可辨", "价格未知不影响空间适配判断"]},
+    {"page_id": "P3-06", "role": "family_route", "title": "一套143平方米户型承接家庭三种日常", "key_message": "双城通勤、父母短住与居家办公沿同一条家庭路径得到连续回答。", "visual_brief": "按早晨通勤、傍晚归家、夜间家庭三段组织。", "evidence_refs": ["E-VOICES", "E-UE"], "super_competitiveness_refs": ["SC-ACCESS", "SC-CONTINUITY", "SC-FLEXIBILITY"], "acceptance": ["三层家庭路径完整", "不把面积直接等同家庭阶段"]},
+    {"page_id": "P3-07", "role": "ue_solution", "title": "UE把城市、社区与户型关系连成一条选择路径", "key_message": "客户从城市关系进入社区归家，再切换户型状态，逐步完成位置、使用与家庭适配判断。", "visual_brief": "桌面端三步导航加手机端家庭路线，全部使用相对路径。", "evidence_refs": ["E-UE"], "super_competitiveness_refs": ["SC-ACCESS", "SC-CONTINUITY", "SC-FLEXIBILITY"], "acceptance": ["桌面和手机路径相互对应", "不出现发布域名或二维码"]},
+    {"page_id": "P3-08", "role": "boundary_and_next_step", "title": "已知事实支撑当前判断，待核事项留待正式材料关闭", "key_message": "价格、学校、步行距离、交付时间和正式视觉素材保持明确缺口，后续只由授权资料关闭。", "visual_brief": "左侧列已完成判断，右侧列五项缺口与责任方。", "evidence_refs": ["E-GAPS", "E-CLAIMS"], "super_competitiveness_refs": [], "acceptance": ["五项缺口完整", "结构通过不等于客户验收"]}
+  ]
+}

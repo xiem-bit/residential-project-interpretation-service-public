@@ -1,0 +1,37 @@
+{
+  "schema": "residential.external_cold_start_observation.v0.1",
+  "status": "to_fill",
+  "tester_label": "",
+  "machine": {
+    "os": "",
+    "architecture": "",
+    "python_version": "",
+    "node_version": ""
+  },
+  "acquisition": {
+    "repository": "https://github.com/xiem-bit/residential-project-interpretation-service-public",
+    "tag": "v0.1.0-rc.1",
+    "obtained_from_github": true,
+    "private_source_repository_access": false,
+    "local_rc_directory_provided": false,
+    "history_chat_provided": false
+  },
+  "platform": {
+    "workbuddy_used": true,
+    "workbuddy_agent_label": "",
+    "skills_selected_by_workbuddy": []
+  },
+  "assistance": {
+    "infrastructure_assistance_count": 0,
+    "infrastructure_assistance_notes": [],
+    "content_guidance_count": 0,
+    "content_guidance_notes": []
+  },
+  "timing_minutes": {
+    "clone_and_install": null,
+    "understand_and_route": null,
+    "produce_and_verify": null,
+    "total": null
+  },
+  "tester_attestation": ""
+}

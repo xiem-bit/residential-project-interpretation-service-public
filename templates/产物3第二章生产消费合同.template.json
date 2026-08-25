@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "project_id": "[填写项目标识]",
+    "status": "draft",
+    "main_consumption_contract": "docs/30-住宅项目竞争力生产消费主合同_v1.0.md",
+    "super_competitiveness_requirement": {
+      "minimum": 3,
+      "maximum": 4,
+      "high_cost_admission": "all_established_and_internally_validated"
+    },
+    "chapter_structure": {
+      "template_chapters": [1, 4],
+      "project_generated_chapters": [2, 3]
+    },
+    "dimension_plan": {
+      "default_order_used": true,
+      "change_reason": ""
+    }
+  },
+  "visual_source_policy": {
+    "allowed": [
+      "semantic_company_case_library",
+      "system_made_map_or_data_chart",
+      "system_made_logic_diagram",
+      "semantically_reviewed_generated_visual",
+      "client_render_derivative_only_after_separate_authorization_and_local_render_owner"
+    ],
+    "prohibited": [
+      "raw_client_pdf_screenshot",
+      "raw_client_wechat_image",
+      "raw_client_proposal_screenshot",
+      "cropped_recolored_masked_recaptioned_or_lightly_redrawn_client_original"
+    ],
+    "client_material_usage": "internal_understanding_fact_extraction_visual_reference_and_search_index_only",
+    "client_render_derivative_default": "off",
+    "required_asset_registry_fields": ["source_type", "asset_identity", "business_semantics", "proof_purpose", "page_destination"]
+  },
+  "evidence_registry": [
+    {
+      "id": "E-DEMO",
+      "type": "[甲方资料/地图POI/竞品官方/机构数据库/客户声音/顾问判断]",
+      "title": "[填写证据标题]",
+      "locator": "[填写文件路径、网址、页码或记录编号]"
+    }
+  ],
+  "customer_decision_registry": [
+    {
+      "id": "CD-01",
+      "kind": "candidate_entry",
+      "text": "[填写客户把哪些项目、板块或生活方案纳入候选的共同机制]",
+      "choice_event": "[填写能够证明候选进入或替代关系的真实选择事件摘要]",
+      "evidence_refs": ["E-DEMO"]
+    },
+    {
+      "id": "CD-02",
+      "kind": "active_comparison",
+      "text": "[填写客户主动比较时采用的共同标准]",
+      "choice_event": "[填写能够证明客户实际比较标准的真实选择事件摘要]",
+      "evidence_refs": ["E-DEMO"]
+    },
+    {
+      "id": "CD-03",
+      "kind": "veto",
+      "text": "[填写拥有筛选权或否决权的共同条件]",
+      "choice_event": "[填写能够证明关键否决条件的真实选择事件摘要]",
+      "evidence_refs": ["E-DEMO"]
+    }
+  ],
+  "chapter2": {
+    "communication_outcomes": [
+      "甲方认可本案真实竞争局面已经被准确理解",
+      "甲方认可价值锚点与本案超级竞争力来自同口径比较"
+    ],
+    "candidate_and_substitute_relations": {
+      "visible_claim": "[填写客户怎样组织候选的一句话结论]",
+      "relations": [
+        {
+          "id": "REL-01",
+          "option_a": "[填写本案或一类选择方案]",
+          "option_b": "[填写项目、板块、存量房或继续居住等替代方案]",
+          "relation": "substitute",
+          "customer_reason": "[填写客户为什么把两种方案放在一起比较]",
+          "customer_decision_refs": ["CD-01"]
+        }
+      ]
+    },
+    "dimensions": [
+      {
+        "id": "REG",
+        "name": "区域",
+        "order": 1,
+        "customer_question": "位置能不能接受",
+        "customer_decision_refs": ["CD-01", "CD-02"],
+        "comparison_factors": ["辐射范围", "交通效率", "成熟配套"],
+        "advantage_column_id": "LOCATION",
+        "map": {
+          "spatial_comparison": true,
+          "base_map_asset": "[填写系统基于地图POI／OSM重新制作的地图路径]",
+          "subject_location": "[填写本案位置]",
+          "competitor_ids": ["REG-COMP-01"],
+          "spatial_annotations": ["[填写距离、道路、轨道、地标或现实阻隔]"],
+          "supporting_visual_assets": []
+        },
+        "subject": {
+          "id": "SUBJECT",
+          "strengths": [
+            {"id": "REG-S-V1", "factor_id": "辐射范围", "text": "[填写本案区域价值1]", "evidence_refs": ["E-DEMO"]},
+            {"id": "REG-S-V2", "factor_id": "交通效率", "text": "[填写本案区域价值2]", "evidence_refs": ["E-DEMO"]},
+            {"id": "REG-S-V3", "factor_id": "成熟配套", "text": "[填写本案区域价值3]", "evidence_refs": ["E-DEMO"]}
+          ]
+        },
+        "competitors": [
+          {
+            "id": "REG-COMP-01",
+            "name": "[填写区域竞品]",
+            "role_boundary": "[填写适用面积、总价、产品档或购买任务]",
+            "strengths": [
+              {"id": "REG-C1-V1", "factor_id": "辐射范围", "text": "[如实填写竞品区域优势]", "evidence_refs": ["E-DEMO"]}
+            ],
+            "limitations": [
+              {"id": "REG-C1-L1", "factor_id": "交通效率", "text": "[填写可证明的选择代价或适配边界]", "evidence_refs": ["E-DEMO"]}
+            ]
+          }
+        ],
+        "conclusions": [
+          {"id": "REG-CON-01", "text": "[填写本案区域可赢点1]", "fact_refs": ["REG-S-V1", "REG-C1-V1"], "customer_decision_refs": ["CD-01"]},
+          {"id": "REG-CON-02", "text": "[填写本案区域可赢点2]", "fact_refs": ["REG-S-V2", "REG-C1-L1"], "customer_decision_refs": ["CD-02"]},
+          {"id": "REG-CON-03", "text": "[填写本案区域可赢点3]", "fact_refs": ["REG-S-V3", "REG-C1-V1"], "customer_decision_refs": ["CD-01", "CD-02"]}
+        ]
+      },
+      {
+        "id": "PLAN",
+        "name": "规划",
+        "order": 2,
+        "customer_question": "社区好不好",
+        "customer_decision_refs": ["CD-02", "CD-03"],
+        "comparison_factors": ["开发强度", "社区完整性", "归家体验"],
+        "advantage_column_id": "PLANNING",
+        "map": {
+          "spatial_comparison": false,
+          "base_map_asset": "[如需空间底图，填写系统基于地图POI／OSM重新制作的地图路径]",
+          "subject_location": "[填写本案位置]",
+          "competitor_ids": ["PLAN-COMP-01"],
+          "spatial_annotations": ["[填写项目与竞品空间关系]"],
+          "supporting_visual_assets": ["[填写系统逻辑图、生成式示意图或语义匹配的公司案例素材，不填甲方原图]" ]
+        },
+        "subject": {
+          "id": "SUBJECT",
+          "strengths": [
+            {"id": "PLAN-S-V1", "factor_id": "开发强度", "text": "[填写本案规划价值1]", "evidence_refs": ["E-DEMO"]},
+            {"id": "PLAN-S-V2", "factor_id": "社区完整性", "text": "[填写本案规划价值2]", "evidence_refs": ["E-DEMO"]},
+            {"id": "PLAN-S-V3", "factor_id": "归家体验", "text": "[填写本案规划价值3]", "evidence_refs": ["E-DEMO"]}
+          ]
+        },
+        "competitors": [
+          {
+            "id": "PLAN-COMP-01",
+            "name": "[填写规划竞品]",
+            "role_boundary": "[填写适用边界]",
+            "strengths": [
+              {"id": "PLAN-C1-V1", "factor_id": "社区完整性", "text": "[如实填写竞品规划优势]", "evidence_refs": ["E-DEMO"]}
+            ],
+            "limitations": [
+              {"id": "PLAN-C1-L1", "factor_id": "开发强度", "text": "[填写可证明的选择代价或适配边界]", "evidence_refs": ["E-DEMO"]}
+            ]
+          }
+        ],
+        "conclusions": [
+          {"id": "PLAN-CON-01", "text": "[填写本案规划可赢点1]", "fact_refs": ["PLAN-S-V1", "PLAN-C1-L1"], "customer_decision_refs": ["CD-03"]},
+          {"id": "PLAN-CON-02", "text": "[填写本案规划可赢点2]", "fact_refs": ["PLAN-S-V2", "PLAN-C1-V1"], "customer_decision_refs": ["CD-02"]},
+          {"id": "PLAN-CON-03", "text": "[填写本案规划可赢点3]", "fact_refs": ["PLAN-S-V3", "PLAN-C1-V1"], "customer_decision_refs": ["CD-02", "CD-03"]}
+        ]
+      },
+      {
+        "id": "UNIT",
+        "name": "户型",
+        "order": 3,
+        "customer_question": "户型合不合适",
+        "customer_decision_refs": ["CD-02", "CD-03"],
+        "comparison_factors": ["面积门槛", "功能完整性", "采光通风"],
+        "advantage_column_id": "PRODUCT",
+        "map": {
+          "spatial_comparison": false,
+          "base_map_asset": "[如需空间底图，填写系统基于地图POI／OSM重新制作的地图路径]",
+          "subject_location": "[填写本案位置]",
+          "competitor_ids": ["UNIT-COMP-01"],
+          "spatial_annotations": ["[填写项目与竞品空间关系]"],
+          "supporting_visual_assets": ["[填写系统制作的户型关系逻辑图、生成式空间示意或语义匹配的公司案例素材，不填甲方原图]" ]
+        },
+        "subject": {
+          "id": "SUBJECT",
+          "strengths": [
+            {"id": "UNIT-S-V1", "factor_id": "面积门槛", "text": "[填写本案户型价值1]", "evidence_refs": ["E-DEMO"]},
+            {"id": "UNIT-S-V2", "factor_id": "功能完整性", "text": "[填写本案户型价值2]", "evidence_refs": ["E-DEMO"]},
+            {"id": "UNIT-S-V3", "factor_id": "采光通风", "text": "[填写本案户型价值3]", "evidence_refs": ["E-DEMO"]}
+          ]
+        },
+        "competitors": [
+          {
+            "id": "UNIT-COMP-01",
+            "name": "[填写户型竞品]",
+            "role_boundary": "[填写适用边界]",
+            "strengths": [
+              {"id": "UNIT-C1-V1", "factor_id": "功能完整性", "text": "[如实填写竞品户型优势]", "evidence_refs": ["E-DEMO"]}
+            ],
+            "limitations": [
+              {"id": "UNIT-C1-L1", "factor_id": "采光通风", "text": "[填写可证明的选择代价或适配边界]", "evidence_refs": ["E-DEMO"]}
+            ]
+          }
+        ],
+        "conclusions": [
+          {"id": "UNIT-CON-01", "text": "[填写本案户型可赢点1]", "fact_refs": ["UNIT-S-V1", "UNIT-C1-V1"], "customer_decision_refs": ["CD-02"]},
+          {"id": "UNIT-CON-02", "text": "[填写本案户型可赢点2]", "fact_refs": ["UNIT-S-V2", "UNIT-C1-V1"], "customer_decision_refs": ["CD-03"]},
+          {"id": "UNIT-CON-03", "text": "[填写本案户型可赢点3]", "fact_refs": ["UNIT-S-V3", "UNIT-C1-L1"], "customer_decision_refs": ["CD-02", "CD-03"]}
+        ]
+      }
+    ],
+    "advantage_matrix": {
+      "columns": [
+        {
+          "id": "LOCATION",
+          "label": "区位优势",
+          "items": [
+            {"id": "ADV-L1", "text": "[填写区位优势1]", "customer_progress": "[填写客户借此完成的选择或解决的矛盾]", "conclusion_refs": ["REG-CON-01"]},
+            {"id": "ADV-L2", "text": "[填写区位优势2]", "customer_progress": "[填写客户借此完成的选择或解决的矛盾]", "conclusion_refs": ["REG-CON-02"]},
+            {"id": "ADV-L3", "text": "[填写区位优势3]", "customer_progress": "[填写客户借此完成的选择或解决的矛盾]", "conclusion_refs": ["REG-CON-03"]}
+          ],
+          "super_competitiveness": {
+            "id": "SC-LOCATION",
+            "text": "[竞争边界]内最能改变[区位不利观念]的[区位竞争武器]",
+            "range": "[填写范围]",
+            "super_trait": "[填写最具差异的特质]",
+            "form": "[填写区域或生活形态]",
+            "bounded_superlative": {
+              "comparison_set": "[填写本案相对哪些竞品、存量房或继续等待]",
+              "purchase_task": "[填写目标客群正在完成的购买任务]",
+              "claim": "[填写本案在该边界内形成的唯一、最或同等行业结论]"
+            },
+            "advantage_item_refs": ["ADV-L1", "ADV-L2", "ADV-L3"]
+          }
+        },
+        {
+          "id": "PLANNING",
+          "label": "规划优势",
+          "items": [
+            {"id": "ADV-P1", "text": "[填写规划优势1]", "customer_progress": "[填写客户借此完成的选择或解决的矛盾]", "conclusion_refs": ["PLAN-CON-01"]},
+            {"id": "ADV-P2", "text": "[填写规划优势2]", "customer_progress": "[填写客户借此完成的选择或解决的矛盾]", "conclusion_refs": ["PLAN-CON-02"]},
+            {"id": "ADV-P3", "text": "[填写规划优势3]", "customer_progress": "[填写客户借此完成的选择或解决的矛盾]", "conclusion_refs": ["PLAN-CON-03"]}
+          ],
+          "super_competitiveness": {
+            "id": "SC-PLANNING",
+            "text": "[竞争边界]内最能改变[规划不利观念]的[规划竞争武器]",
+            "range": "[填写范围]",
+            "super_trait": "[填写最具差异的特质]",
+            "form": "[填写社区形态]",
+            "bounded_superlative": {
+              "comparison_set": "[填写本案相对哪些竞品、存量房或继续等待]",
+              "purchase_task": "[填写目标客群正在完成的购买任务]",
+              "claim": "[填写本案在该边界内形成的唯一、最或同等行业结论]"
+            },
+            "advantage_item_refs": ["ADV-P1", "ADV-P2", "ADV-P3"]
+          }
+        },
+        {
+          "id": "PRODUCT",
+          "label": "产品优势",
+          "items": [
+            {"id": "ADV-U1", "text": "[填写产品优势1]", "customer_progress": "[填写客户借此完成的选择或解决的矛盾]", "conclusion_refs": ["UNIT-CON-01"]},
+            {"id": "ADV-U2", "text": "[填写产品优势2]", "customer_progress": "[填写客户借此完成的选择或解决的矛盾]", "conclusion_refs": ["UNIT-CON-02"]},
+            {"id": "ADV-U3", "text": "[填写产品优势3]", "customer_progress": "[填写客户借此完成的选择或解决的矛盾]", "conclusion_refs": ["UNIT-CON-03"]}
+          ],
+          "super_competitiveness": {
+            "id": "SC-PRODUCT",
+            "text": "[竞争边界]内最能改变[产品不利观念]的[产品竞争武器]",
+            "range": "[填写范围]",
+            "super_trait": "[填写最具差异的特质]",
+            "form": "[填写产品形态]",
+            "bounded_superlative": {
+              "comparison_set": "[填写本案相对哪些竞品、存量房或继续等待]",
+              "purchase_task": "[填写目标客群正在完成的购买任务]",
+              "claim": "[填写本案在该边界内形成的唯一、最或同等行业结论]"
+            },
+            "advantage_item_refs": ["ADV-U1", "ADV-U2", "ADV-U3"]
+          }
+        }
+      ]
+    },
+    "value_anchor": {
+      "text": "[空间锚点]上『最[差异化特质]』的[产品形态]",
+      "spatial_anchor": "[填写空间锚点]",
+      "differentiating_trait": "[填写差异化特质]",
+      "product_form": "[填写产品形态]",
+      "shared_customer_progress": "[填写多类客户共同希望取得的生活进展]",
+      "customer_decision_refs": ["CD-01", "CD-02", "CD-03"],
+      "advantage_item_refs": ["ADV-L1", "ADV-P1", "ADV-U1"],
+      "super_competitiveness_refs": ["SC-LOCATION", "SC-PLANNING", "SC-PRODUCT"]
+    },
+    "display_strategy": {
+      "rational": {
+        "text": "通过系统化的销讲与展示，让客户感知到『[填写区位辐射与产品打造的事实性价值]』",
+        "advantage_item_refs": ["ADV-L1", "ADV-P1", "ADV-U1"]
+      },
+      "emotional": {
+        "text": "从CIM系统的氛围设计上，让客户沉浸式体验到『[填写情绪性生活方式]』",
+        "advantage_item_refs": ["ADV-L2", "ADV-P3", "ADV-U3"]
+      }
+    },
+    "handoff_to_chapter3": {
+      "value_anchor_ref": "VALUE-ANCHOR",
+      "value_anchor_usage": "textual_recap_only",
+      "value_anchor_visualization_service": false,
+      "super_competitiveness_refs": ["SC-LOCATION", "SC-PLANNING", "SC-PRODUCT"],
+      "display_strategy_usage": "internal_creative_brief",
+      "required_chapter3_contract": "templates/产物3第三章生产消费合同.template.json",
+      "required_bridge_validator": "tools/product3_chapter23/validate_chapter23_bridge.py"
+    }
+  }
+}

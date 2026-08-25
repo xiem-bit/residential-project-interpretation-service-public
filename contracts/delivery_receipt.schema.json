@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/delivery_receipt.schema.json",
+  "title": "RC1 fictional delivery receipt",
+  "type": "object",
+  "required": ["schema", "status", "project_id", "fixture_notice", "verification", "outputs", "gaps", "publication"],
+  "properties": {
+    "schema": {"const": "residential.public_delivery_receipt.v0.1"},
+    "status": {"enum": ["local_fictional_e2e_pass", "workbuddy_fictional_e2e_pass", "fail"]},
+    "project_id": {"type": "string", "minLength": 3},
+    "fixture_notice": {"type": "string", "minLength": 1},
+    "verification": {
+      "type": "object",
+      "required": ["method_contracts", "platform_roundtrip", "pptx_structure", "product5_static_bundle", "formal_visual", "cross_machine", "workbuddy"]
+    },
+    "outputs": {"type": "object"},
+    "gaps": {"type": "array"},
+    "publication": {
+      "type": "object",
+      "required": ["authorized", "license_selected", "license", "public_repository_created", "repository"],
+      "properties": {
+        "authorized": {"const": true},
+        "license_selected": {"const": true},
+        "license": {"const": "Apache-2.0"},
+        "public_repository_created": {"const": true},
+        "repository": {"const": "https://github.com/xiem-bit/residential-project-interpretation-service-public"}
+      }
+    }
+  }
+}

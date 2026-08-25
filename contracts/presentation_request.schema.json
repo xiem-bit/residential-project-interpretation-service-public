@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/presentation_request.schema.json",
+  "title": "Platform-neutral residential presentation request",
+  "type": "object",
+  "required": ["schema", "project_id", "semantic_core", "artifact_requirements", "pages", "return_requirements", "gap_policy"],
+  "properties": {
+    "schema": {"const": "residential.presentation_request.v0.1"},
+    "project_id": {"type": "string", "minLength": 3},
+    "semantic_core": {
+      "type": "object",
+      "required": ["value_anchor", "super_competitiveness_ids"],
+      "properties": {
+        "value_anchor": {"type": "string", "minLength": 1},
+        "super_competitiveness_ids": {"type": "array", "minItems": 3, "maxItems": 4, "uniqueItems": true, "items": {"type": "string"}}
+      }
+    },
+    "artifact_requirements": {
+      "type": "object",
+      "required": ["format", "editable", "formal_visual_generation_owner"],
+      "properties": {
+        "format": {"const": "pptx"},
+        "editable": {"const": true},
+        "formal_visual_generation_owner": {"const": "platform_adapter"}
+      }
+    },
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["page_id", "role", "title", "key_message", "visual_brief", "evidence_refs", "super_competitiveness_refs", "acceptance"],
+        "properties": {
+          "page_id": {"type": "string", "minLength": 1},
+          "role": {"type": "string", "minLength": 1},
+          "title": {"type": "string", "minLength": 1},
+          "key_message": {"type": "string", "minLength": 1},
+          "visual_brief": {"type": "string", "minLength": 1},
+          "evidence_refs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "super_competitiveness_refs": {"type": "array", "items": {"type": "string"}},
+          "acceptance": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+        }
+      }
+    },
+    "return_requirements": {"type": "array", "minItems": 5, "items": {"type": "string"}},
+    "gap_policy": {"type": "object", "required": ["unsupported_capability", "semantic_change"]}
+  }
+}
+

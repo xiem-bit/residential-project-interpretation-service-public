@@ -1,0 +1,52 @@
+{
+  "schema": "public-release-dependency-exceptions.v0.1",
+  "exceptions": [
+    {
+      "id": "image-size-dos-2026-08-25",
+      "package": "image-size",
+      "introduced_through": "pptxgenjs via pptx-automizer",
+      "status": "accepted_time_bounded_non_blocking",
+      "accepted_on": "2026-08-25",
+      "review_after": "2026-09-25",
+      "last_checked": "2026-08-25",
+      "public_core_progress_blocker": false,
+      "observed_npm_audit": {
+        "high_severity_package_entries": 3,
+        "affected_package_entries": [
+          "image-size",
+          "pptxgenjs",
+          "pptx-automizer"
+        ],
+        "underlying_advisory_count": 2,
+        "interpretation": "all three package entries trace to the two image-size denial-of-service advisories below; npm audit is intentionally nonzero"
+      },
+      "advisories": [
+        {
+          "id": "GHSA-w3rx-r6r6-pgpr",
+          "impact": "availability denial of service through malformed ICNS input",
+          "patched_release_available": false,
+          "url": "https://github.com/advisories/GHSA-w3rx-r6r6-pgpr"
+        },
+        {
+          "id": "GHSA-5p2g-fcmc-qvqq",
+          "impact": "availability denial of service through malformed JXL or HEIF input",
+          "patched_release_available": false,
+          "url": "https://github.com/advisories/GHSA-5p2g-fcmc-qvqq"
+        }
+      ],
+      "mitigations": [
+        "reject ICNS, JXL, HEIF, HEIC and AVIF by extension before Automizer runs",
+        "reject affected signatures even when the media extension is disguised",
+        "fail before output PPTX or receipt creation",
+        "keep synthetic malicious-media regression tests in npm run verify"
+      ],
+      "reopen_immediately_if": [
+        "a compatible patched upstream release becomes available",
+        "the mitigation regression test fails",
+        "a new advisory expands impact beyond the denied media families",
+        "the adapter is exposed as a network service or accepts uncontrolled public uploads"
+      ],
+      "owner": "public_release_maintainer"
+    }
+  ]
+}

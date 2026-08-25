@@ -1,0 +1,13 @@
+# 示例住宅项目乙长内容载体检查
+
+本文件验证长链接与代码块在手机端不会被正文容器裁掉。
+
+## 长链接
+
+[这是一个只用于排版检查且不会自动访问的长链接](https://example.com/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
+
+## 长代码块
+
+```text
+LONG_UNBROKEN_VALUE=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+```

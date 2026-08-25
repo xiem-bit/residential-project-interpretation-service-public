@@ -1,0 +1,19 @@
+{
+  "schema": "residential.presentation_visual_review.v0.1",
+  "status": "to_fill",
+  "platform": "WorkBuddy",
+  "reviewed_editable_artifact": "product3-workbuddy.pptx",
+  "reviewer_label": "",
+  "pages": [
+    {"page_id": "P3-01", "status": "to_fill", "preview_path": "previews/P3-01.png", "overflow": "to_fill", "notes": ""},
+    {"page_id": "P3-02", "status": "to_fill", "preview_path": "previews/P3-02.png", "overflow": "to_fill", "notes": ""},
+    {"page_id": "P3-03", "status": "to_fill", "preview_path": "previews/P3-03.png", "overflow": "to_fill", "notes": ""},
+    {"page_id": "P3-04", "status": "to_fill", "preview_path": "previews/P3-04.png", "overflow": "to_fill", "notes": ""},
+    {"page_id": "P3-05", "status": "to_fill", "preview_path": "previews/P3-05.png", "overflow": "to_fill", "notes": ""},
+    {"page_id": "P3-06", "status": "to_fill", "preview_path": "previews/P3-06.png", "overflow": "to_fill", "notes": ""},
+    {"page_id": "P3-07", "status": "to_fill", "preview_path": "previews/P3-07.png", "overflow": "to_fill", "notes": ""},
+    {"page_id": "P3-08", "status": "to_fill", "preview_path": "previews/P3-08.png", "overflow": "to_fill", "notes": ""}
+  ],
+  "formal_visual_review": "to_fill"
+}
+

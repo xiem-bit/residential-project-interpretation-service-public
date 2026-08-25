@@ -1,0 +1,12 @@
+{
+  "schema": "residential.fictional_marketing_claims.v0.1",
+  "fixture_notice": "全部为测试主张",
+  "claims": [
+    {"text": "1.45低密住区", "decision": "allowed_with_synthetic_fact", "reason": "虚构规划摘要已给出容积率"},
+    {"text": "东岸唯一低密住区", "decision": "allowed_only_as_bounded_fixture_claim", "reason": "只能写成在本虚构对比样本与明确面积任务内的唯一组合"},
+    {"text": "双轨生活", "decision": "rejected_until_verified", "reason": "仅一个既有节点且规划节点未核实"},
+    {"text": "名校旁", "decision": "rejected", "reason": "没有学校建设和入学权益证据"},
+    {"text": "全龄度假社区", "decision": "rewrite", "reason": "改写为可被园林、会所与家庭路径证明的具体日常获得"}
+  ]
+}
+

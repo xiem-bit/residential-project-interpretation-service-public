@@ -1,0 +1,55 @@
+name: Verify public RC
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out fixed source
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: tools/product3_ppt_pipeline/automizer_adapter/package-lock.json
+
+      - name: Verify release inventory
+        run: |
+          python3 scripts/generate_third_party_inventory.py --check
+          python3 scripts/build_release_manifest.py --check
+
+      - name: Run Python public-core tests
+        run: python3 tests/run_public_tests.py
+
+      - name: Install locked Node dependencies
+        working-directory: tools/product3_ppt_pipeline/automizer_adapter
+        run: npm ci --ignore-scripts
+
+      - name: Verify PPTX structural adapter
+        working-directory: tools/product3_ppt_pipeline/automizer_adapter
+        run: npm run verify
+
+      - name: Verify static-bundle tools
+        run: node --test tools/ue_static_bundle/test/*.test.mjs
+
+      - name: Run fictional reference flow
+        run: python3 scripts/run_rc1_demo.py
+
+      - name: Prepare external-platform handoff
+        run: python3 scripts/prepare_external_cold_start.py

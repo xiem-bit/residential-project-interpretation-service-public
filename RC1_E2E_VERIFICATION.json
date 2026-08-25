@@ -1,0 +1,86 @@
+{
+  "schema": "residential.public_rc1_e2e_verification.v0.1",
+  "verified_at": "2026-08-25",
+  "status": "local_fictional_e2e_pass_cross_machine_pending",
+  "source": {
+    "private_source_commit": "21a68a543ee7322a0a2532a0c254ecf211d1a878",
+    "parent_slice4_1_file_count": 39,
+    "parent_slice4_1_aggregate_sha256": "2f84aeb2722fc5628abd8d23f51bf485605c470fff5f61d10e204a76bd34d42a",
+    "parent_slice4_1_unchanged": true
+  },
+  "candidate_source_tree": {
+    "file_count_excluding_this_record_and_generated_dependencies": 71,
+    "aggregate_sha256_excluding_this_record_and_generated_dependencies": "7fafe4a4a45924f8a1c9c6bbff6c73af4a3b01c04630461f9bb50890536a94a1",
+    "excluded": [
+      "RC1_E2E_VERIFICATION.json",
+      "verification-tmp/**",
+      "**/node_modules/**",
+      "**/__pycache__/**"
+    ],
+    "forbidden_root_count": 0,
+    "source_symlink_count_excluding_node_modules": 0,
+    "real_project_or_customer_identifier_hits": 0,
+    "private_owner_path_hits": 0
+  },
+  "environment": {
+    "python": "3.9.6",
+    "node": "v24.19.0",
+    "npm": "11.17.0",
+    "codex_runtime_required": false
+  },
+  "tests": {
+    "python_public_tests": {"passed": 55, "failed": 0},
+    "pptx_adapter_node_tests": {"passed": 6, "failed": 0},
+    "static_bundle_node_tests": {"passed": 2, "failed": 0},
+    "fictional_e2e_runs_in_primary_candidate": {"passed": 2, "failed": 0},
+    "fresh_directory_without_node_modules_or_previous_outputs": {
+      "dependency_install": "pass",
+      "fictional_e2e": "pass",
+      "python_tests": "pass",
+      "pptx_adapter_tests": "pass",
+      "static_bundle_tests": "pass",
+      "client_visible_affirmative_copy_review": "pass"
+    }
+  },
+  "latest_local_receipt": {
+    "path": "verification-tmp/fictional-demo/delivery-receipt.json",
+    "status": "local_fictional_e2e_pass",
+    "aggregate_output_sha256": "30ca1d05a6351fb907aab3a9af8f7cf572dcc3ed6f6af78aa57917f86e88c7f5",
+    "generated_outputs_are_release_ignored": true
+  },
+  "fixture_coverage": {
+    "fact_conflict": "pass",
+    "unknown_fact": "pass",
+    "competitor_strengths": "pass",
+    "synthetic_customer_voices": "pass",
+    "evidence_gaps": "pass",
+    "area_bands_and_ue_semantics": "pass",
+    "mixed_marketing_claim_decisions": "pass"
+  },
+  "responsibility_boundary": {
+    "public_contracts_and_validators": "pass",
+    "platform_request_response_roundtrip": "pass",
+    "editable_test_double_pptx_and_ooxml_qa": "pass",
+    "formal_presentation_visual_fidelity": "platform_review_required",
+    "generic_product5_shell_and_static_bundle": "pass",
+    "formal_browser_visual_review": "platform_review_required_for_real_client_delivery",
+    "web_review_core_required_for_local_fixture": false
+  },
+  "deferred_as_non_blocking": [
+    "Grist assembly console",
+    "generic A4 PDF renderer",
+    "bundled formal presentation renderer",
+    "browser-bound web review implementation",
+    "cloud publishing",
+    "live public-channel collection"
+  ],
+  "remaining_gates": {
+    "independent_machine": "not_run",
+    "workbuddy_cold_start_and_skill_adaptation": "not_run",
+    "formal_visual_review_by_selected_platform": "not_run",
+    "license_selection": "pending_final_release_authorization",
+    "rights_holder_approval": "pending_final_release_authorization",
+    "public_repository_creation": "not_authorized"
+  }
+}
+

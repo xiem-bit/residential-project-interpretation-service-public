@@ -1,0 +1,37 @@
+{
+  "schema": "residential.fictional_market_evidence.v0.1",
+  "fixture_notice": "全部竞品与数据均为合成测试信息",
+  "subject": {"project_id": "fictional-qinglan-chengjing", "lifecycle": "synthetic_prelaunch"},
+  "competitors": [
+    {
+      "id": "COMP-BEIWAN",
+      "name": "北湾府（虚构）",
+      "role": "128—143平方米、重视成熟通勤的直接比较对象",
+      "strengths": ["距虚构既有轨道站约650米", "商业与学校等成熟配套更集中"],
+      "tradeoffs": ["容积率2.35", "缺少连续地下会所与首层园林动线"],
+      "evidence_status": "synthetic_frozen"
+    },
+    {
+      "id": "COMP-QIXIA",
+      "name": "栖霞里（虚构）",
+      "role": "143—168平方米、重视低密与会所的直接比较对象",
+      "strengths": ["容积率1.20", "会所已开放且展示成熟"],
+      "tradeoffs": ["距老城就业节点更远", "143平方米产品没有双套房切换条件"],
+      "evidence_status": "synthetic_frozen"
+    },
+    {
+      "id": "ALT-WAIT",
+      "name": "继续居住并等待（虚构选择）",
+      "role": "价格未公布前的现实替代方案",
+      "strengths": ["不立即增加家庭现金流压力"],
+      "tradeoffs": ["跨城通勤与三代短住矛盾继续存在"],
+      "evidence_status": "synthetic_customer_voice"
+    }
+  ],
+  "cannot_infer": [
+    "不能从本材料推导真实成交、价格趋势或市场普遍偏好",
+    "不能把未提供的学区、交付和交通兑现写成项目权益",
+    "不能把虚构竞品的局部产品边界扩大到整盘"
+  ]
+}
+

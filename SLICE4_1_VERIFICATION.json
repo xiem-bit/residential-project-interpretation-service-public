@@ -1,0 +1,118 @@
+{
+  "schema": "residential-competitiveness-public-core-verification.v0.2",
+  "slice": "4.1",
+  "status": "pass_local_candidate_with_recorded_dependency_exception",
+  "verification_date": "2026-08-25",
+  "source_commit": "21a68a543ee7322a0a2532a0c254ecf211d1a878",
+  "source_integrity": {
+    "a_class_files": 21,
+    "exact_git_blob_matches": 21,
+    "missing_files": 0,
+    "content_mismatches": 0
+  },
+  "slice3_preservation": {
+    "candidate_directory_unchanged": true,
+    "file_count": 29,
+    "aggregate_sha256": "7a38b13ca96d2d13605399135d45ccc8d42f1edd6d51053925264fcb9201695a"
+  },
+  "candidate_inventory": {
+    "a_class_source_files": 21,
+    "inherited_release_packaging_files": 8,
+    "promoted_component_files": 8,
+    "slice4_governance_files": 2,
+    "total_files": 39,
+    "node_modules_included": false,
+    "git_metadata_included": false,
+    "symlinks": 0
+  },
+  "python_core_verification": {
+    "runtime": "system Python",
+    "version": "3.9.6",
+    "dependency_model": "standard_library_only",
+    "command": "python3 tests/run_public_tests.py",
+    "tests_run": 49,
+    "tests_passed": 49,
+    "tests_failed": 0
+  },
+  "pptx_component_verification": {
+    "runtime": "standard Node.js and npm",
+    "node_version": "24.19.0",
+    "npm_version": "11.17.0",
+    "minimum_node_version": "20",
+    "dependency_install": "fresh-directory npm ci passed",
+    "command": "npm run verify",
+    "tests_run": 6,
+    "tests_passed": 6,
+    "tests_failed": 0,
+    "synthetic_multi_source_generation": true,
+    "selected_slide_count_verified": true,
+    "unselected_slide_content_absent": true,
+    "speaker_notes_and_comments_stripped": true,
+    "unselected_media_layout_and_master_content_absent": true,
+    "orphan_ooxml_parts_absent": true,
+    "broken_internal_relationships_absent": true,
+    "receipt_paths_portable": true,
+    "absolute_and_escaping_source_paths_rejected": true,
+    "independent_package_verifier_negative_fixture_passed": true
+  },
+  "dependency_security": {
+    "pptx_automizer_version": "0.9.3",
+    "npm_audit_status": "nonzero_recorded_exception_not_reported_as_pass",
+    "npm_audit_high_findings": 3,
+    "underlying_advisories": [
+      "GHSA-w3rx-r6r6-pgpr",
+      "GHSA-5p2g-fcmc-qvqq"
+    ],
+    "upstream_patched_image_size_release_available": false,
+    "affected_media_families_denied_before_automizer": [
+      "ICNS",
+      "JXL",
+      "HEIF",
+      "HEIC",
+      "AVIF"
+    ],
+    "disguised_malicious_media_regression_cases": 3,
+    "regression_cases_passed": 3,
+    "interpretation": "compensating input control verified; transitive dependency is not claimed patched"
+  },
+  "purity_scans": {
+    "forbidden_roots": 0,
+    "hardcoded_user_or_application_paths": 0,
+    "secret_values": 0,
+    "internal_infrastructure_markers": 0,
+    "known_real_project_or_client_identifiers": 0,
+    "email_addresses": 0,
+    "mainland_china_mobile_numbers": 0,
+    "binary_project_assets": 0
+  },
+  "private_baseline_check": {
+    "worktree_clean": true,
+    "head_matches_source_commit": true,
+    "main_matches_source_commit": true,
+    "origin_main_matches_source_commit": true,
+    "private_repository_modified": false
+  },
+  "rights_and_distribution": {
+    "license_selected": false,
+    "rights_holder_approval_confirmed": false,
+    "public_distribution_authorized": false,
+    "git_repository_created_for_candidate": false,
+    "public_repository_created": false,
+    "published": false
+  },
+  "validation_boundary": {
+    "local_clean_environment_verified": true,
+    "independent_machine_verified": false,
+    "workbuddy_cold_start_verified": false,
+    "formal_visual_fidelity_verified": false,
+    "real_project_deck_verified": false,
+    "formal_presentation_production_verified": false
+  },
+  "remaining_limits": [
+    "The recorded image-size advisories have no upstream patched release and must be re-evaluated before final public release.",
+    "Independent-machine and WorkBuddy cold starts remain open.",
+    "License selection and rights-holder authorization remain final public-release gates.",
+    "Formal visual fidelity and business acceptance remain outside this component's claim.",
+    "Slice 4.2 has not started."
+  ]
+}
