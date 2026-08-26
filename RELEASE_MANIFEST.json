@@ -15,7 +15,7 @@
     "RELEASE_MANIFEST.json"
   ],
   "file_count": 191,
-  "tree_sha256": "f0be793e197c959174676ad342ea0759032d943f641c59ecedbdae33976bb1b6",
+  "tree_sha256": "1bd9b6cc577bf815269cb74a6080a78fe22b48b26cc1932ee20a3f23340ac3fd",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -89,8 +89,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2640,
-      "sha256": "dfed38a5621f46307a1795a9776bc95899bd0a2ad4a1d0d9dee2cbdab35978b9"
+      "bytes": 2925,
+      "sha256": "d0912ba2d672ebdbda2bd545a957f5b36f7790fd7799550243a70f66e230a59e"
     },
     {
       "path": "RELEASE_STATUS.md",
@@ -144,8 +144,8 @@
     },
     {
       "path": "adapters/README.md",
-      "bytes": 917,
-      "sha256": "2ad38a562327720d4366ca111714ca57e6a15ec1ad180299ec8655c1fc726b12"
+      "bytes": 1139,
+      "sha256": "f3f4cf9ececff2aef958a8a35b26b61a3d333465e0c07e1ab77f11f6854af4a9"
     },
     {
       "path": "adapters/codex/README.md",
@@ -174,8 +174,8 @@
     },
     {
       "path": "adapters/workbuddy/README.md",
-      "bytes": 610,
-      "sha256": "789e0c03a054037479dbc596e784399551556901686c26744558a5914d3a1d36"
+      "bytes": 835,
+      "sha256": "23a3a7263e1a358bcddc9d9ac77971c71113857f9f5a2c68969b51e1733f86fc"
     },
     {
       "path": "cold-start/observation.template.json",
