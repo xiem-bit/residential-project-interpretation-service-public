@@ -1,69 +1,41 @@
-# 住宅项目竞争力公共核心 — v0.1.0-rc.1
+# 住宅项目竞争力生产核心
 
-这是一个平台无关的住宅项目竞争力生产核心公开发行候选版。任何人都可以直接克隆、下载、检查和运行，无需申请仓库访问权限。
+本仓库公开的是一条完整的住宅项目业务生产路径：从已授权原始材料出发，识别项目真正的竞争问题、有效竞争圈、客户购买任务和竞争解法，形成三至四条成立的超级竞争力，再把同一业务判断投影到住宅 UE 售前方案、签约后价值框架和交互原型。
 
-首个完整虚构项目流程已经在标准 Python 和 Node 运行环境中通过验证。请从 [`START_HERE.md`](START_HERE.md) 开始；本页用于说明发行包的能力与边界。
+PPTX、网页和 XMind 是可替换的下游载体。它们可以由 WorkBuddy、Codex、其他 Agent、专业平台或人工团队制作；载体是否美观不构成本工程住宅战略发现能力的通过证据。
 
-本仓库采用 [Apache License 2.0](LICENSE) 开源许可。公共 RC 状态和支持边界记录在 [`RELEASE_STATUS.md`](RELEASE_STATUS.md) 中。
+当前公开主线已经形成 `v0.2.0-rc.1` 本地候选，正在等待独立业务冷启动与盲审；候选尚未创建标签。已发布的固定标签 `v0.1.0-rc.1` 保持不可变，并重新界定为“已冻结语义核的下游合同与平台适配演示”。请从 [START_HERE.md](START_HERE.md) 开始。
 
-## 已包含的可运行能力
+## 本版新增的核心能力
 
-- 中文断言式文案检查；
-- 产物 3 第二章和第三章合同校验；
-- 产物 3 第二章至第三章桥接校验；
-- 产物 4 合同与 XMind 校验；
-- 通用产物 3 业务门禁；
-- 虚构 Markdown 安全测试夹具；
-- 面向多来源原生页面窄场景的 PPTX starter 适配器，并包含 OOXML 包级质量检查。
+- 以原始项目材料和轻量任务合同为入口，不再把现成语义核作为默认输入；
+- 完整覆盖项目身份、事实／冲突／缺口、产物 1、产物 2、统一语义核、超级竞争力、产物启用与生产准入；
+- 连续连接产物 3 第二章竞争推导、第三章 UE 证明、产物 4 单树价值框架与产物 5 交互蓝图；
+- 语义变化先回写上游，再只重投影受影响产物；
+- 提供平台中立的生产编排 Skill、模板、Schema、结构校验器、教程样例和隐藏答案评测协议；
+- 把业务生产路径验收与 PPT／网页适配器验收彻底分开。
 
-## Python 验证
+## 快速验证
 
-Python 核心仅使用标准库。
+Python 核心只使用标准库：
 
 ```bash
 python3 tests/run_public_tests.py
+python3 scripts/verify_production_run.py examples/production-path-tutorial/expected --mode tutorial
 ```
 
-## 完整虚构项目冷启动
+旧 RC1 的载体往返演示仍可独立运行：
 
 ```bash
 python3 scripts/run_rc1_demo.py --install-node-deps
 ```
 
-该命令会在 `verification-tmp/fictional-demo/` 下生成本机回执。已确认状态为 `local_fictional_e2e_pass`：方法合同、平台往返、PPTX 结构和产物 5 静态包均已通过。正式视觉审阅、独立电脑运行和 WorkBuddy 适配仍属于彼此独立的验证状态。
+它只验证下游合同、PPTX 结构和静态包，不验证住宅竞争战略发现能力。
 
-这个本机命令是参考实现，不是外部可移植性测试。使用固定 tag、零内容指导的 WorkBuddy 流程定义在 [`COLD_START_PROTOCOL.md`](COLD_START_PROTOCOL.md) 中。
+## 开源与边界
 
-## PPTX starter 验证
+本仓库采用 [Apache License 2.0](LICENSE)。任何人都可以按许可证使用、修改和再分发代码、方法、模板与虚构样例。
 
-PPTX 适配器需要 Node.js 20 或更高版本，以及标准 npm 依赖。
+以下内容不进入公开仓：真实项目和客户材料、受限图片与案例资产、凭据和运行现场、私有黄金答案、隐藏答案评测答案、平台专属视觉引擎。公开方法可以消费使用者自己有权使用的资料，但许可证不替代资料授权、保密义务或客户验收。
 
-```bash
-cd tools/product3_ppt_pipeline/automizer_adapter
-npm ci
-npm run verify
-```
-
-该适配器只保留明确选中的源页面，剥离备注和批注，移除不可达的 OOXML 部件，拒绝绝对源路径，并生成可跨路径使用的回执。独立校验器会检查页面数量、关系、孤立部件和嵌入的本机路径痕迹。
-
-这是结构包质量检查，不是演示文稿渲染器。正式页面设计、高保真生成和渲染由所选平台适配器负责，例如 Codex、WorkBuddy、其他 Agent 平台或人工制作团队；它们不是公共核心必须实现的能力。`image-size` 的传递依赖安全公告及补偿性输入控制，已作为有期限的依赖例外记录；本工程不宣称 `npm audit` 已通过。
-
-## v0.1 收敛目标
-
-本公共候选版用于证明：没有私有项目历史、也没有 Codex 运行环境的使用者，可以在干净的标准运行环境中执行一次虚构住宅项目流程：
-
-`START_HERE → 研究合同 → 虚构证据 → 产物 3 生产输入 → 平台生成演示文稿 → 公共 QA → 产物 5 通用壳层 → 静态包 → 交付检查`。
-
-只有闭合该流程所必需的组件才进入 RC1。独立 WorkBuddy 冷启动是下一项可移植性验证，不是下载或安装门槛。详见 `V0_1_RELEASE_SCOPE.md`。
-
-## 明确排除的内容
-
-- 所有真实项目、客户材料、生产资产和私有评测数据；
-- 私有 Git 历史、分支、标签和仓库元数据；
-- 本机路径、凭据、内部域名、SSH 配置和托管现场；
-- 平台专属的演示文稿、托管和高状态生产运行环境；
-- RC1 虚构端到端流程不需要的组件；
-- 正式 PPT 生成引擎、Grist、云发布配置和真实项目的产物 5 实现；
-- A4 PDF 生成能力，除非后续 RC1 流程证明它确有必要。
-
-候选包的精确边界见 `PUBLIC_CORE_MANIFEST.json`、`RELEASE_MANIFEST.json`、`A_CLASS_ALLOWLIST.txt`、`B_CLASS_PROMOTION_MANIFEST.json`、`V0_1_RELEASE_SCOPE.md` 和 `DEPENDENCY_EXCEPTIONS.json`。第三方许可证与安全边界记录在 `THIRD_PARTY_NOTICES.md`、`THIRD_PARTY_LICENSES.json` 和 `SECURITY.md` 中。
+当前发行状态与尚未通过的门禁见 [RELEASE_STATUS.md](RELEASE_STATUS.md)，完整范围见 [V0_2_RELEASE_SCOPE.md](V0_2_RELEASE_SCOPE.md)。

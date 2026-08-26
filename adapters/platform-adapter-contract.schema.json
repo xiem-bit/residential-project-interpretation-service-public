@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/platform-adapter-contract.schema.json",
+  "type": "object",
+  "required": ["schema", "platform", "role", "input_semantic_version", "immutable_business_refs", "requested_capability", "outputs", "gaps", "adapter_status"],
+  "properties": {
+    "schema": {"const": "residential.platform_adapter_contract.v0.2"},
+    "role": {"enum": ["business_orchestrator", "carrier_adapter"]},
+    "adapter_status": {"enum": ["not_requested", "accepted", "complete", "partial", "gap", "failed"]}
+  }
+}

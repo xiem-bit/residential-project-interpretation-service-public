@@ -1,0 +1,53 @@
+{
+  "schema": "residential.product3_chapter3_ue_contract.v0.2",
+  "project_id": "fictional-qinglan-chengjing-production",
+  "semantic_version": "SEM-QC-001",
+  "status": "complete",
+  "value_anchor": {"text": "澄川东岸双向就业生活里，把低密归家与三代弹性放进同一套日常的改善住区", "source_ref": "VALUE-ANCHOR", "usage": "textual_recap_only"},
+  "solutions": [
+    {
+      "sc_id": "SC-ACCESS",
+      "name": "双向就业低密选择",
+      "customer_gain": "先用两条就业方向判断新区位置，再把低密空间纳入同一次比较",
+      "project_fact_refs": ["E-BRIEF", "CONFLICT-RAIL"],
+      "competition_relation_refs": ["REL-COMMUTE"],
+      "purchase_task_refs": ["TASK-COMMUTE-IMPROVE"],
+      "bounded_claim": "本虚构样本内唯一同时提供双向就业关系与1.45低密底盘的改善选择",
+      "ue_scenes": [
+        {"id": "UE-SC-ACCESS", "customer_problem": "担心新区位置把日常通勤押在单一路径", "visual_proof": "项目、两个就业方向、既有轨道节点和主要道路的抽象关系", "interaction": "切换两个就业方向并分层显示已知距离与待核信息", "sales_logic": "先承认北湾府成熟轨道优势，再说明本案为何以双向就业加低密进入候选", "target_judgment": "新区位置可以用两条就业方向共同判断，而不是只按最近轨道站判断", "module_refs": ["MODULE-REGION"], "product5_target": "P5-ACCESS"}
+      ]
+    },
+    {
+      "sc_id": "SC-CONTINUITY",
+      "name": "全天候连续归家",
+      "customer_gain": "沿一条归家路线看懂园林、架空层和地下会所怎样共同服务日常",
+      "project_fact_refs": ["E-ROUTE", "GAP-VISUAL"],
+      "competition_relation_refs": ["REL-LOWDENSITY"],
+      "purchase_task_refs": ["TASK-FAMILY-FLEX"],
+      "bounded_claim": "本虚构样本内唯一把首层园林、架空层与地下会所组织成连续归家路径的低密社区",
+      "ue_scenes": [
+        {"id": "UE-SC-CONTINUITY", "customer_problem": "园林和会所仍像彼此分离的配置清单", "visual_proof": "入口、园林、架空层和地下会所的空间与时间连续性", "interaction": "按归家顺序逐层点亮并漫游", "sales_logic": "先承认栖霞里会所已开放，再把比较标准转为家庭每天怎样经过和使用", "target_judgment": "低密价值是一条全天候生活路径，而不是配置数量", "module_refs": ["MODULE-GARDEN"], "product5_target": "P5-CONTINUITY"}
+      ]
+    },
+    {
+      "sc_id": "SC-FLEXIBILITY",
+      "name": "三代弹性空间先验",
+      "customer_gain": "父母短住、居家办公和儿童学习可以按家庭状态切换并保留成员边界",
+      "project_fact_refs": ["E-PRODUCT", "GAP-PRICE"],
+      "competition_relation_refs": ["REL-LOWDENSITY", "REL-WAIT"],
+      "purchase_task_refs": ["TASK-FAMILY-FLEX"],
+      "bounded_claim": "本虚构样本内唯一同时设置双套房与可变书房、并可先完成家庭空间适配的产品组合",
+      "ue_scenes": [
+        {"id": "UE-SC-FLEXIBILITY", "customer_problem": "价格未出时把户型适配也推迟，父母短住与办公矛盾无法关闭", "visual_proof": "143平方米日常、父母短住和居家办公三种状态", "interaction": "切换空间状态并比较独立卫浴、书房和共同生活关系", "sales_logic": "不制造价格紧迫感，先帮助家庭确认空间是否适合", "target_judgment": "等待价格不妨碍先完成家庭空间适配判断", "module_refs": ["MODULE-UNIT"], "product5_target": "P5-FLEXIBILITY"}
+      ]
+    }
+  ],
+  "family_routes": [
+    {"id": "ROUTE-DUAL-CITY-FAMILY", "purchase_task_ref": "TASK-FAMILY-FLEX", "sc_order": ["SC-ACCESS", "SC-CONTINUITY", "SC-FLEXIBILITY"], "recommendation": "先验证双向就业，再看连续归家，最后用143平方米三种状态确认空间适配", "exit_condition": "任一就业方向不可接受、正式价格超支付边界或双套房任务不存在时转入其他方案"}
+  ],
+  "system_modules": [
+    {"id": "MODULE-REGION", "name": "城市与区域关系", "supports_sc_refs": ["SC-ACCESS"], "customer_value": "把通勤可接受度转成可比较关系", "product5_targets": ["P5-ACCESS"]},
+    {"id": "MODULE-GARDEN", "name": "园林公区与归家路径", "supports_sc_refs": ["SC-CONTINUITY"], "customer_value": "把低密配置转成每天使用路径", "product5_targets": ["P5-CONTINUITY"]},
+    {"id": "MODULE-UNIT", "name": "户型状态与房源适配", "supports_sc_refs": ["SC-FLEXIBILITY"], "customer_value": "让家庭提前验证三代短住与工作学习适配", "product5_targets": ["P5-FLEXIBILITY"]}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/fact-gap-register.schema.json",
+  "title": "Fact conflict and gap register",
+  "type": "object",
+  "required": ["schema", "project_id", "input_freeze_id", "fact_cutoff", "entries", "freeze_status"],
+  "properties": {
+    "schema": {"const": "residential.fact_conflict_gap_register.v0.2"},
+    "project_id": {"type": "string", "minLength": 1},
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "claim", "source_refs", "scope", "impact", "status"],
+        "properties": {
+          "kind": {"enum": ["fact", "limited_observation", "business_judgment", "working_assumption", "gap", "conflict", "cannot_infer"]},
+          "status": {"enum": ["accepted", "limited", "open", "resolved", "superseded", "cannot_infer"]}
+        }
+      }
+    },
+    "freeze_status": {"enum": ["input_frozen", "input_frozen_with_declared_gaps", "blocked_by_material_conflict"]}
+  }
+}

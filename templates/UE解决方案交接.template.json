@@ -1,0 +1,19 @@
+{
+  "schema": "residential.ue_solution_handoff.v0.2",
+  "project_id": "PROJECT-001",
+  "semantic_version": "SEM-001",
+  "status": "ue_solution_bridge_pass",
+  "value_anchor_ref": "VALUE-ANCHOR",
+  "mappings": [
+    {
+      "sc_id": "SC-01",
+      "purchase_task_refs": ["TASK-01"],
+      "chapter2_refs": ["DIM-01"],
+      "chapter3_scene_refs": ["UE-SC01-01"],
+      "module_refs": ["MODULE-01"],
+      "product4_node_refs": [],
+      "product5_target_refs": ["P5-SC01-01"]
+    }
+  ],
+  "gaps": []
+}

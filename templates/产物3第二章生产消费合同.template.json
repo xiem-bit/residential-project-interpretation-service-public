@@ -2,7 +2,7 @@
   "meta": {
     "project_id": "[填写项目标识]",
     "status": "draft",
-    "main_consumption_contract": "docs/30-住宅项目竞争力生产消费主合同_v1.0.md",
+    "main_consumption_contract": "contracts/住宅竞争力方法与生产合同.md",
     "super_competitiveness_requirement": {
       "minimum": 3,
       "maximum": 4,

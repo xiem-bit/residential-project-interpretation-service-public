@@ -1,0 +1,114 @@
+{
+  "schema": "residential.production_authority_map.v0.2",
+  "candidate_version": "v0.2.0-rc.1",
+  "source_baseline": {
+    "repository_role": "private_method_authority",
+    "commit": "21a68a543ee7322a0a2532a0c254ecf211d1a878",
+    "worktree_required_clean": true,
+    "extraction_method": "public_safe_operational_distillation"
+  },
+  "precedence": [
+    "START_HERE.md",
+    "AGENT_RULES.md",
+    "RELEASE_STATUS.md",
+    "core/00-权威生产路径.md",
+    "PRODUCTION_PATH_MANIFEST.json",
+    "workflows/residential-production-orchestrator/SKILL.md",
+    "task_specific_core_and_templates"
+  ],
+  "mappings": [
+    {
+      "authority": "main_entry_and_status",
+      "source": [
+        {"path": "AGENTS.md", "git_blob": "7d0e6091a3db4424890421e09e5d3e2755186bdd"},
+        {"path": "README.md", "git_blob": "d07dafc95422b38be30c43934ae27c154b30dfa8"},
+        {"path": "docs/00-main启动必读.md", "git_blob": "3708f66c950d15b21c4ee55ee64a0adff80b77e6"},
+        {"path": "docs/当前状态.md", "git_blob": "41ba4caa5a070a7b6b382dfa042fc34927820068"}
+      ],
+      "public": ["START_HERE.md", "AGENT_RULES.md", "RELEASE_STATUS.md", "core/00-权威生产路径.md"],
+      "coverage": "full_operational_distillation"
+    },
+    {
+      "authority": "cross_product_contract_and_quality_baseline",
+      "source": [
+        {"path": "docs/30-住宅项目竞争力生产消费主合同_v1.0.md", "git_blob": "292262ab276585680c496c96227f6b511f1cb452"},
+        {"path": "docs/09-产物1至5整体设计与八项目重写标准.md", "git_blob": "247756a7a96b1cc0dce9f9e68f124c9d1048a66d"},
+        {"path": "docs/35-产物1至5现行产品体系与黄金生产基线决策记录_v1.0.md", "git_blob": "cbfe978ba3eba133c0d1323950ef36d6a4ca6e54"}
+      ],
+      "public": [
+        "core/00-权威生产路径.md",
+        "core/04-统一语义核与超级竞争力.md",
+        "core/05-产物启用与生产准入.md",
+        "PRODUCTION_PATH_MANIFEST.json"
+      ],
+      "coverage": "full_operational_distillation"
+    },
+    {
+      "authority": "formal_annexes",
+      "source": [
+        {"path": "templates/住宅项目上游检索任务与回传表_v1.0.md", "git_blob": "41c86cd2dd107cf6dc9e02e63d345eca7f6b6d4e"},
+        {"path": "templates/住宅项目超级竞争力与制作规划表_v1.0.md", "git_blob": "5b89eac6fe24636c6396aa503b04ec7b4c578362"},
+        {"path": "templates/住宅项目产物1至6启用关系与验收矩阵_v1.0.md", "git_blob": "4f6d55645bf90d656162a45c07eec52502166b7b"}
+      ],
+      "public": [
+        "templates/附表A-上游检索任务与回传.md",
+        "templates/附表B-超级竞争力与制作规划.md",
+        "templates/附表C-产物启用与验收矩阵.md"
+      ],
+      "coverage": "full_operational_distillation"
+    },
+    {
+      "authority": "project_contract_and_upstream",
+      "source": [
+        {"path": "templates/真实项目有效任务合同.md", "git_blob": "db33b0958f975892f3f40bfcb075370653ab6e99"},
+        {"path": "docs/23-产物1至2搜索前置与产物4价值框架生产规范_v1.0.md", "git_blob": "352137752baba001fa6c5553c9e7f73ac3cd5b64"}
+      ],
+      "public": [
+        "core/01-项目任务与输入治理.md",
+        "core/02-产物1竞争态势研究.md",
+        "core/03-产物2购买决策研究.md",
+        "templates/真实项目有效任务合同.md"
+      ],
+      "coverage": "full_operational_distillation"
+    },
+    {
+      "authority": "product3_strategy_and_ue",
+      "source": [
+        {"path": "docs/18-产物3第二章竞争理解与价值推导生产规范_v1.0.md", "git_blob": "61266f781501419eff53d644dd86788a6d07340f"},
+        {"path": "docs/19-产物3第三章住宅UE系统解决方案生产规范_v1.0.md", "git_blob": "43a13199f8a9bbc88c04dd60857c46b8c443314d"},
+        {"path": "docs/33-产物3预排版装配控制台生产规范_v0.1.md", "git_blob": "47b9fcec2be81d399837b945cd0398b6dc392214"},
+        {"path": "docs/34-产物3装配清单到可编辑PPTX全流程生产与定向修订设计_v0.1.md", "git_blob": "aaf7d7a090c7c9780e62c75ea33691867f2a13ea"}
+      ],
+      "public": [
+        "core/06-产物3从竞争策略到UE解决方案.md",
+        "templates/产物3第二章生产消费合同.template.json",
+        "templates/产物3第三章生产消费合同.template.json",
+        "templates/UE解决方案交接.template.json"
+      ],
+      "coverage": "full_business_path_adapter_implementation_separate"
+    },
+    {
+      "authority": "product4_product5_and_change",
+      "source": [
+        {"path": "docs/24-产物1至5统一语义核与产物3-4-5交付接口决策记录_v0.1.md", "git_blob": "4be846430a9b34b0945d2a87238afdb2e668060c"},
+        {"path": "docs/28-产物5住宅UE交互视觉原型生产规范_v1.0.md", "git_blob": "b305daacfd89c107e2adb34e9fd1b146d3a3d2ac"}
+      ],
+      "public": [
+        "core/07-产物4单树价值框架.md",
+        "core/08-产物5交互蓝图.md",
+        "core/09-变更回写与重投影.md"
+      ],
+      "coverage": "full_operational_distillation"
+    }
+  ],
+  "excluded_from_public": [
+    "real_project_facts_and_customer_materials",
+    "restricted_visual_assets",
+    "private_golden_answers",
+    "private_evaluation_holdout_and_answers",
+    "credentials_and_runtime_state",
+    "private_git_history",
+    "platform_specific_visual_engines"
+  ],
+  "license": "Apache-2.0"
+}

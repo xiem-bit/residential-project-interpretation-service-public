@@ -1,0 +1,9 @@
+{
+  "schema": "residential.revision_before_snapshot.v0.2",
+  "project_id": "fictional-qinglan-chengjing-production",
+  "semantic_version": "SEM-QC-001",
+  "source_run": "examples/production-path-tutorial/expected",
+  "value_anchor": "澄川东岸双向就业生活里，把低密归家与三代弹性放进同一套日常的改善住区",
+  "current_sc_ids": ["SC-ACCESS", "SC-CONTINUITY", "SC-FLEXIBILITY"],
+  "old_judgment": "入口、首层园林、架空层与地下会所形成全天候连续归家路径"
+}

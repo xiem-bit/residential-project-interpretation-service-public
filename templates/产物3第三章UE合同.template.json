@@ -1,0 +1,32 @@
+{
+  "schema": "residential.product3_chapter3_ue_contract.v0.2",
+  "project_id": "PROJECT-001",
+  "semantic_version": "SEM-001",
+  "status": "complete",
+  "value_anchor": {"text": "与第二章一致的价值锚点", "source_ref": "VALUE-ANCHOR", "usage": "textual_recap_only"},
+  "solutions": [
+    {
+      "sc_id": "SC-01",
+      "name": "与第二章一致的竞争武器",
+      "customer_gain": "客户获得",
+      "project_fact_refs": ["E-01"],
+      "competition_relation_refs": ["REL-01"],
+      "purchase_task_refs": ["TASK-01"],
+      "bounded_claim": "与第二章一致的边界内结论",
+      "ue_scenes": [
+        {
+          "id": "UE-SC01-01",
+          "customer_problem": "客户原判断或看不懂的关系",
+          "visual_proof": "UE需要显示的空间／时间／比较关系",
+          "interaction": "自由视角、分层点亮、路径漫游或角色切换",
+          "sales_logic": "置业顾问怎样讲解",
+          "target_judgment": "希望形成的新判断",
+          "module_refs": ["MODULE-01"],
+          "product5_target": "P5-SC01-01"
+        }
+      ]
+    }
+  ],
+  "family_routes": [{"id": "ROUTE-01", "purchase_task_ref": "TASK-01", "sc_order": ["SC-01"], "recommendation": "适配结论", "exit_condition": "不适配或需要转人工的条件"}],
+  "system_modules": [{"id": "MODULE-01", "name": "系统模块", "supports_sc_refs": ["SC-01"], "customer_value": "模块怎样改变客户理解", "product5_targets": ["P5-SC01-01"]}]
+}

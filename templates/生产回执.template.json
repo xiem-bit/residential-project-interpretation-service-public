@@ -1,0 +1,26 @@
+{
+  "schema": "residential.production_receipt.v0.2",
+  "project_id": "PROJECT-001",
+  "run_mode": "real_project_delivery",
+  "candidate_commit": "REPLACE_WITH_FIXED_COMMIT",
+  "input_manifest_sha256": "REPLACE_WITH_SHA256",
+  "output_manifest_sha256": "REPLACE_WITH_SHA256",
+  "content_guidance_count": 0,
+  "business_statuses": {
+    "rules_loaded": "pass",
+    "project_identity_closed": "pass",
+    "product1_complete": "pass",
+    "product2_complete_or_not_enabled": "pass",
+    "semantic_core_frozen": "pass",
+    "minimum_three_sc_pass": "pass",
+    "business_judgment_blind_review_pass": "not_run",
+    "ue_solution_bridge_pass": "pass",
+    "cross_product_consistency_pass": "pass",
+    "production_path_replication_pass": "not_run"
+  },
+  "machine_validation": {"status": "not_run", "scope": "structure_references_states_only", "errors": []},
+  "blind_review": {"status": "not_run", "reviewer_independent": false, "score": null, "rubric": "evaluation/hidden-answer/rubric.json", "review_file": null, "observation_file": null},
+  "adapter_statuses": {"presentation": "not_requested", "web": "not_requested", "publication": "not_authorized"},
+  "gaps": [],
+  "final_status": "machine_validation_pending"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "residential.product5_interaction_blueprint.v0.2",
+  "project_id": "PROJECT-001",
+  "semantic_version": "SEM-001",
+  "depth": "presales_focus",
+  "value_anchor_ref": "VALUE-ANCHOR",
+  "primary_navigation": ["HOME", "SC-01", "SC-02", "SC-03", "AI-ADVISOR"],
+  "sc_scenes": [{"id": "P5-SC01-01", "sc_id": "SC-01", "ue_scene_ref": "UE-SC01-01", "proof_purpose": "希望改变的客户判断", "interaction_states": ["default", "compare"]}],
+  "routes": [{"id": "ROUTE-01", "purchase_task_ref": "TASK-01", "sc_order": ["SC-01"], "mobile_continuation": "M-ROUTE-01"}],
+  "ai_advisor": {"creates_new_sc": false, "route_refs": ["ROUTE-01"], "handoff_to_sales": "下一步动作"},
+  "gaps": []
+}

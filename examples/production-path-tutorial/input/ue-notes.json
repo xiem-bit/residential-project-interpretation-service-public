@@ -1,0 +1,11 @@
+{
+  "schema": "fictional.raw_ue_notes.v0.2",
+  "fixture_notice": "只含语义说明，不含真实项目资产",
+  "available_semantics": [
+    {"id": "UE-RAW-MAP", "description": "项目、两个就业方向、既有轨道节点与主要道路的抽象关系"},
+    {"id": "UE-RAW-ROUTE", "description": "入口、首层园林、架空层与地下会所的连续路径"},
+    {"id": "UE-RAW-UNIT", "description": "143平方米在日常、父母短住和居家办公之间的空间切换"}
+  ],
+  "allowed_future_assets": ["系统制作地图", "逻辑结构图", "经语义复核的生成式空间示意"],
+  "prohibited_assets": ["客户PDF截图", "客户微信图片", "真实客户原图", "未经授权的效果图二创"]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "residential.semantic_delta.v0.2",
+  "project_id": "fictional-qinglan-chengjing-production",
+  "from_version": "SEM-QC-001",
+  "to_version": "SEM-QC-002",
+  "current_sc_ids": ["SC-ACCESS", "SC-DAILY-ROUTE", "SC-FLEXIBILITY"],
+  "superseded": [
+    {"id": "SC-CONTINUITY", "reason": "全天候属性被新增正式事实推翻", "replaced_by": "SC-DAILY-ROUTE"}
+  ],
+  "established": [
+    {
+      "id": "SC-DAILY-ROUTE",
+      "name": "四段日常归家",
+      "mechanism": "daily_route_sequence",
+      "bounded_claim": "本虚构样本内唯一按入口、园林、架空层与地下会所四段顺序组织家庭日常的低密社区；不声称全天候",
+      "five_checks_revalidated": true,
+      "project_support_refs": ["E-ROUTE-UPDATED", "NEW-OFFICIAL-ROUTE-001"],
+      "ue_proof": "逐段漫游并明确标识露天连廊和雨天边界"
+    }
+  ],
+  "value_anchor_change": {
+    "old": "澄川东岸双向就业生活里，把低密归家与三代弹性放进同一套日常的改善住区",
+    "new": "澄川东岸双向就业生活里，把四段归家与三代弹性放进同一套日常的改善住区"
+  }
+}

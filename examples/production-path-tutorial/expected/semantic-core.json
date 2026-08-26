@@ -1,0 +1,49 @@
+{
+  "schema": "residential.semantic_core.v0.2",
+  "project_id": "fictional-qinglan-chengjing-production",
+  "version": "SEM-QC-001",
+  "status": "semantic_core_frozen",
+  "source_outputs": ["project-contract.md", "product1-competition-study.md", "product2-buyer-decision-study.md"],
+  "project_and_task_identity": {
+    "project_name": "青岚澄境（全量虚构）",
+    "task_mode": "hidden_answer_replay",
+    "business_question": "从真实替代和购买任务形成三条竞争武器并落到UE售前方案",
+    "fact_cutoff": "2026-08-01"
+  },
+  "belief_change": {
+    "adverse": "本案只是距离更远、兑现更慢的环境型低密项目，价格未出时等待没有损失",
+    "target": "本案能在通勤可接受的前提下，把低密归家和三代空间弹性变成每天可使用、可提前验证的改善方案"
+  },
+  "enemies": {
+    "tangible": ["COMP-BEIWAN", "COMP-QIXIA", "ALT-WAIT"],
+    "intangible": ["成熟配套单一标准", "低密只等于环境", "价格未知就停止其他选择判断"]
+  },
+  "target_customers": [
+    {"id": "TG-DUAL-CITY-FAMILY", "description": "双向就业并存在三代短住或居家办公矛盾的改善家庭", "purchase_task_refs": ["TASK-COMMUTE-IMPROVE", "TASK-FAMILY-FLEX"]}
+  ],
+  "purchase_tasks": [
+    {"id": "TASK-COMMUTE-IMPROVE", "summary": "在两条就业路径可接受的前提下取得低密改善空间", "boundary": "虚构东岸样本、128—168平方米"},
+    {"id": "TASK-FAMILY-FLEX", "summary": "让父母短住、居家办公和共同生活在同一住宅中各得其所", "boundary": "143—168平方米且存在对应家庭矛盾"}
+  ],
+  "effective_boundary": {
+    "geography": "澄川市东岸虚构比较样本",
+    "customer": "双向就业并存在家庭空间切换任务的改善家庭",
+    "area_and_price": "128—168平方米；价格只使用预算盘交叠，不使用绝对值",
+    "product_form": "低密改善住宅",
+    "purchase_task": "通勤可接受、低密日常可用、家庭空间可切换",
+    "lifecycle_window": "本案预售前与两个项目在售窗口",
+    "bounded_claim": "在本虚构样本和任务内，本案形成双向就业、连续归家与三代弹性的组合最优满足"
+  },
+  "value_anchor": {
+    "text": "澄川东岸双向就业生活里，把低密归家与三代弹性放进同一套日常的改善住区",
+    "replaces": "新区低密只提供环境、无法同时照顾通勤与家庭日常",
+    "project_support_refs": ["E-BRIEF", "E-PRODUCT", "E-ROUTE"],
+    "sc_refs": ["SC-ACCESS", "SC-CONTINUITY", "SC-FLEXIBILITY"]
+  },
+  "super_competitiveness_refs": ["SC-ACCESS", "SC-CONTINUITY", "SC-FLEXIBILITY"],
+  "product_package": {"enabled": [1, 2, 3, 5], "not_enabled": [4]},
+  "key_upstream_gaps": ["GAP-PRICE", "GAP-SCHOOL", "GAP-DELIVERY", "GAP-VISUAL"],
+  "current_decisions": ["DEC-AREA", "DEC-RAIL"],
+  "superseded_decisions": [],
+  "source_refs": ["E-BRIEF", "E-PRODUCT", "E-ROUTE", "E-MARKET", "E-VOICES", "CONFLICT-AREA", "CONFLICT-RAIL"]
+}

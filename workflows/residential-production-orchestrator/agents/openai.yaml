@@ -1,0 +1,4 @@
+interface:
+  display_name: "住宅竞争力生产编排"
+  short_description: "从原始材料生产住宅竞争判断、超级竞争力与UE落地合同"
+  default_prompt: "请按公开权威生产路径，从授权原始材料开始完成住宅项目竞争力生产，并如实输出状态与缺口。"

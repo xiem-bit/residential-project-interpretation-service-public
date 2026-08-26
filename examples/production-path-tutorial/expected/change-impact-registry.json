@@ -1,0 +1,7 @@
+{
+  "schema": "residential.change_impact_registry.v0.2",
+  "project_id": "fictional-qinglan-chengjing-production",
+  "current_semantic_version": "SEM-QC-001",
+  "status": "no_change_recorded",
+  "changes": []
+}

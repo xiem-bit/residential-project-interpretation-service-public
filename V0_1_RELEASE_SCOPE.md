@@ -1,4 +1,9 @@
-# v0.1 RC1 release scope
+# v0.1 RC1 release scope (historical, immutable)
+
+> Current classification: this fixed release demonstrates downstream contracts,
+> platform round-trips and carrier QA after a semantic core has already been supplied.
+> It does not evaluate discovery of a residential competition strategy from raw inputs.
+> The complete production-path candidate is defined by `V0_2_RELEASE_SCOPE.md`.
 
 Status: `public_rc_authorized / local_end_to_end_verified / workbuddy_pending`
 

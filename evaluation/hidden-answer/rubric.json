@@ -1,0 +1,83 @@
+{
+  "schema": "residential.hidden_answer_rubric.v0.2",
+  "total_points": 100,
+  "pass_threshold": 80,
+  "dimensions": [
+    {
+      "id": "competition_problem",
+      "weight": 12,
+      "minimum": 8,
+      "criteria": ["识别当前不利观念和目标观念", "解释为什么这是本案真正竞争问题", "由原始输入支撑而非口号替代"]
+    },
+    {
+      "id": "competitor_boundary",
+      "weight": 14,
+      "minimum": 9,
+      "criteria": ["同时检查物理空间、认知货架和购买任务", "按生命周期、产品、面积价格、窗口和任务裁定角色", "承认对手为什么被选择", "保留局部适配边界"]
+    },
+    {
+      "id": "buyer_tasks",
+      "weight": 12,
+      "minimum": 8,
+      "criteria": ["处境、触发、进展、替代、取舍、促成与阻断闭合", "不由年龄面积直接推导家庭", "声音等级和反例诚实"]
+    },
+    {
+      "id": "semantic_core_and_value_anchor",
+      "weight": 8,
+      "minimum": 5,
+      "criteria": ["八项真值一致", "价值锚点汇总而不取代SC", "来源、边界和被覆盖判断可追溯"]
+    },
+    {
+      "id": "super_competitiveness",
+      "weight": 20,
+      "minimum": 14,
+      "criteria": ["三至四条且机制不同", "不是区位资源产品机械并列", "共同覆盖进入候选、赢得比较、促进行动", "名称和判断对甲方可用"]
+    },
+    {
+      "id": "five_checks",
+      "weight": 10,
+      "minimum": 7,
+      "criteria": ["每条都有购买影响", "边界内唯一和最成立", "敌我关系清楚", "项目事实承接", "UE能够改变客户判断"]
+    },
+    {
+      "id": "ue_solution",
+      "weight": 12,
+      "minimum": 8,
+      "criteria": ["第二章推导与第三章承接一致", "每条SC连接客户获得、项目事实、竞争比较和UE证明", "交互不是功能清单", "客户路线不新增项目价值"]
+    },
+    {
+      "id": "cross_product_consistency",
+      "weight": 5,
+      "minimum": 3,
+      "criteria": ["稳定ID、语义版本、价值锚点、SC和任务跨产物一致", "未启用产物理由真实"]
+    },
+    {
+      "id": "change_handling",
+      "weight": 4,
+      "minimum": 2,
+      "criteria": ["新事实先回写上游", "只重投影受影响内容", "旧判断有被覆盖记录"]
+    },
+    {
+      "id": "honest_boundaries",
+      "weight": 3,
+      "minimum": 2,
+      "criteria": ["未知不写成没有", "推演不冒充原声", "机器、盲审、载体、发布和业务效果状态分开"]
+    }
+  ],
+  "automatic_failures": [
+    "fewer_than_three_established_sc",
+    "semantic_core_or_answer_leaked_before_attempt",
+    "content_guidance_count_above_zero_on_first_formal_run",
+    "fabricated_fact_source_or_customer_voice",
+    "ppt_or_web_output_used_as_strategy_pass_evidence",
+    "critical_project_identity_or_rights_conflict_ignored"
+  ],
+  "pass_requires": [
+    "total_score_at_least_80",
+    "every_dimension_meets_minimum",
+    "no_automatic_failure",
+    "machine_contract_pass",
+    "independent_reviewer",
+    "change_probe_pass"
+  ]
+}

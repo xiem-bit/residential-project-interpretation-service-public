@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/production-receipt.schema.json",
+  "type": "object",
+  "required": ["schema", "project_id", "run_mode", "candidate_commit", "input_manifest_sha256", "output_manifest_sha256", "content_guidance_count", "business_statuses", "machine_validation", "blind_review", "adapter_statuses", "gaps", "final_status"],
+  "properties": {
+    "schema": {"const": "residential.production_receipt.v0.2"},
+    "run_mode": {"enum": ["tutorial", "real_project_delivery", "hidden_answer_replay"]},
+    "content_guidance_count": {"type": "integer", "minimum": 0},
+    "business_statuses": {
+      "type": "object",
+      "required": ["rules_loaded", "project_identity_closed", "product1_complete", "product2_complete_or_not_enabled", "semantic_core_frozen", "minimum_three_sc_pass", "business_judgment_blind_review_pass", "ue_solution_bridge_pass", "cross_product_consistency_pass", "production_path_replication_pass"]
+    },
+    "final_status": {"enum": ["machine_validation_pending", "tutorial_reference_complete", "machine_contract_pass_blind_review_pending", "business_judgment_returned_for_research", "production_path_replication_pass", "blocked"]}
+  }
+}

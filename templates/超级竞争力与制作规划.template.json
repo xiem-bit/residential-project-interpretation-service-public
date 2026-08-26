@@ -1,0 +1,38 @@
+{
+  "schema": "residential.super_competitiveness_plan.v0.2",
+  "project_id": "PROJECT-001",
+  "semantic_version": "SEM-001",
+  "status": "minimum_three_sc_pass",
+  "items": [
+    {
+      "id": "SC-01",
+      "name": "行业化竞争武器",
+      "mechanism": "与其他SC不同的竞争机制",
+      "status": "established",
+      "target_customer_refs": ["TG-01"],
+      "purchase_task_refs": ["TASK-01"],
+      "belief_change": {"from": "旧观念", "to": "新判断"},
+      "bounded_claim": {
+        "comparison_set": "真实竞品或替代",
+        "boundary": "地域、客群、面积／价格、产品、任务、时间边界",
+        "claim": "边界内唯一、稀缺、极致或最优满足"
+      },
+      "enemy_refs": ["COMP-01"],
+      "project_support_refs": ["E-01"],
+      "five_checks": {
+        "purchase_impact": {"status": "pass", "rationale": "怎样影响进入候选、赢得比较或促进行动", "refs": ["TASK-01"]},
+        "bounded_unique_or_best": {"status": "pass", "rationale": "边界和相对结论", "refs": ["E-01"]},
+        "enemy_relation": {"status": "pass", "rationale": "面对的竞品、替代、弱项或观念", "refs": ["COMP-01"]},
+        "project_support": {"status": "pass", "rationale": "项目事实或物理机制", "refs": ["E-01"]},
+        "ue_provability": {"status": "pass", "rationale": "画面、比较、交互与销讲怎样改变判断", "refs": ["UE-SC01-01"]}
+      },
+      "purchase_stage_effects": ["enter_consideration"],
+      "production_items": [{"id": "ITEM-001", "customer_judgment": "目标购买判断", "ue_proof_task": "UE证明任务"}]
+    }
+  ],
+  "purchase_stage_coverage": {
+    "enter_consideration": ["SC-01"],
+    "win_comparison": ["SC-02"],
+    "prompt_action": ["SC-03"]
+  }
+}

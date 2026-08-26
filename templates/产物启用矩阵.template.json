@@ -1,0 +1,21 @@
+{
+  "schema": "residential.product_enablement_matrix.v0.2",
+  "project_id": "PROJECT-001",
+  "semantic_version": "SEM-001",
+  "products": [
+    {"product": 1, "status": "complete", "reason": "住宅研究默认首要", "deliverables": ["product1-competition-study.md"]},
+    {"product": 2, "status": "not_enabled", "reason": "现有授权成果已提供等价购买任务", "deliverables": ["product2-buyer-decision-study.md"]},
+    {"product": 3, "status": "enabled", "reason": "本轮为UE售前提案", "deliverables": ["product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json"]},
+    {"product": 4, "status": "not_enabled", "reason": "尚未进入签约后生产", "deliverables": []},
+    {"product": 5, "status": "not_enabled", "reason": "本轮不要求交互原型", "deliverables": []}
+  ],
+  "high_cost_admission": {
+    "status": "admitted",
+    "semantic_core_frozen": true,
+    "established_sc_count": 3,
+    "all_five_checks_pass": true,
+    "purchase_stage_coverage_complete": true,
+    "fact_and_rights_boundary_declared": true
+  },
+  "adapter_requirements": []
+}

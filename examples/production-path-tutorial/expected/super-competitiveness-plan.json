@@ -1,0 +1,88 @@
+{
+  "schema": "residential.super_competitiveness_plan.v0.2",
+  "project_id": "fictional-qinglan-chengjing-production",
+  "semantic_version": "SEM-QC-001",
+  "status": "minimum_three_sc_pass",
+  "items": [
+    {
+      "id": "SC-ACCESS",
+      "name": "双向就业低密选择",
+      "mechanism": "time_space_tradeoff",
+      "status": "established",
+      "target_customer_refs": ["TG-DUAL-CITY-FAMILY"],
+      "purchase_task_refs": ["TASK-COMMUTE-IMPROVE"],
+      "belief_change": {"from": "新区低密意味着把通勤押在单一路径上", "to": "两条就业方向可先验证，让低密改善进入家庭候选"},
+      "bounded_claim": {
+        "comparison_set": "北湾府、栖霞里和继续等待三个虚构选项",
+        "boundary": "澄川东岸虚构样本、128—168平方米、双向就业改善任务、本案预售前窗口",
+        "claim": "本虚构样本内唯一同时提供双向就业关系与1.45容积率低密底盘的改善选择"
+      },
+      "enemy_refs": ["COMP-BEIWAN", "成熟配套单一标准"],
+      "project_support_refs": ["E-BRIEF", "CONFLICT-RAIL"],
+      "five_checks": {
+        "purchase_impact": {"status": "pass", "rationale": "先关闭两条就业方向是否可接受，让本案从环境型新区进入通勤家庭候选", "refs": ["TASK-COMMUTE-IMPROVE", "E-VOICES"]},
+        "bounded_unique_or_best": {"status": "pass", "rationale": "唯一组合只限定于三个虚构选项、登记面积和当前任务，不扩大到全城", "refs": ["E-MARKET", "E-BRIEF"]},
+        "enemy_relation": {"status": "pass", "rationale": "承认北湾府成熟轨道优势，本案用双向就业加低密重设比较", "refs": ["COMP-BEIWAN", "E-VOICES"]},
+        "project_support": {"status": "pass", "rationale": "1.45容积率和两条就业方向关系有合成事实支持，未核步行与学校不进入", "refs": ["E-BRIEF", "CONFLICT-RAIL", "GAP-SCHOOL"]},
+        "ue_provability": {"status": "pass", "rationale": "抽象地图切换两个就业方向并区分已知距离与待核信息，能改变位置判断", "refs": ["UE-SC-ACCESS"]}
+      },
+      "purchase_stage_effects": ["enter_consideration", "win_comparison"],
+      "production_items": [{"id": "ITEM-ACCESS-MAP", "customer_judgment": "两条就业方向共同决定新区位置是否可接受", "ue_proof_task": "切换就业方向、显示已知距离和待核边界"}]
+    },
+    {
+      "id": "SC-CONTINUITY",
+      "name": "全天候连续归家",
+      "mechanism": "daily_route_continuity",
+      "status": "established",
+      "target_customer_refs": ["TG-DUAL-CITY-FAMILY"],
+      "purchase_task_refs": ["TASK-FAMILY-FLEX"],
+      "belief_change": {"from": "低密只是容积率、园林和会所的配置清单", "to": "低密价值沿入口、园林、架空层和地下会所进入每天的归家行动"},
+      "bounded_claim": {
+        "comparison_set": "青岚澄境与栖霞里两个虚构低密选项",
+        "boundary": "143—168平方米、重视家庭日常使用的低密改善任务",
+        "claim": "本虚构样本内唯一把首层园林、架空层与地下会所组织成连续归家路径的低密社区"
+      },
+      "enemy_refs": ["COMP-QIXIA", "低密只等于环境"],
+      "project_support_refs": ["E-ROUTE", "E-BRIEF"],
+      "five_checks": {
+        "purchase_impact": {"status": "pass", "rationale": "用每天怎么走和怎么用重设低密比较标准，支持本案赢得主动比较", "refs": ["TASK-FAMILY-FLEX", "E-VOICES"]},
+        "bounded_unique_or_best": {"status": "pass", "rationale": "只在两个虚构低密样本和连续使用任务内形成唯一路径关系", "refs": ["E-ROUTE", "E-MARKET"]},
+        "enemy_relation": {"status": "pass", "rationale": "承认栖霞里更低容积率和会所已开放，本案改比连续使用而非配置数量", "refs": ["COMP-QIXIA", "E-MARKET"]},
+        "project_support": {"status": "pass", "rationale": "正式材料与UE语义共同登记四段连续归家关系，正式图片仍保留缺口", "refs": ["E-ROUTE", "GAP-VISUAL"]},
+        "ue_provability": {"status": "pass", "rationale": "沿归家路线逐段点亮并漫游，能把配置清单转成每天使用关系", "refs": ["UE-SC-CONTINUITY"]}
+      },
+      "purchase_stage_effects": ["win_comparison"],
+      "production_items": [{"id": "ITEM-HOMECOMING", "customer_judgment": "低密配置构成每天连续使用的归家生活", "ue_proof_task": "入口至地下会所逐段点亮和路径漫游"}]
+    },
+    {
+      "id": "SC-FLEXIBILITY",
+      "name": "三代弹性空间先验",
+      "mechanism": "family_space_adaptability_and_decision_sequencing",
+      "status": "established",
+      "target_customer_refs": ["TG-DUAL-CITY-FAMILY"],
+      "purchase_task_refs": ["TASK-FAMILY-FLEX"],
+      "belief_change": {"from": "价格未出时多看看没有损失，户型适配也可以以后再判断", "to": "双套房和可变书房能先关闭三代短住与居家办公的空间适配，价格到位后只需继续验证支付边界"},
+      "bounded_claim": {
+        "comparison_set": "栖霞里、北湾府和继续等待三个虚构选项",
+        "boundary": "143—168平方米、三代短住与居家办公任务、价格未公布阶段",
+        "claim": "本虚构样本内唯一同时设置双套房与可变书房、并可先完成家庭空间适配的产品组合"
+      },
+      "enemy_refs": ["COMP-QIXIA", "ALT-WAIT", "价格未知就停止其他选择判断"],
+      "project_support_refs": ["E-PRODUCT", "GAP-PRICE"],
+      "five_checks": {
+        "purchase_impact": {"status": "pass", "rationale": "把可验证的空间适配与待公布价格分开，推动客户先完成下一项有效判断", "refs": ["TASK-FAMILY-FLEX", "E-VOICES"]},
+        "bounded_unique_or_best": {"status": "pass", "rationale": "唯一组合限定于虚构样本、143—168平方米和对应家庭任务", "refs": ["E-PRODUCT", "E-MARKET"]},
+        "enemy_relation": {"status": "pass", "rationale": "面对栖霞里户型差异和继续等待，不虚构价格紧迫感，只改变判断顺序", "refs": ["COMP-QIXIA", "ALT-WAIT", "GAP-PRICE"]},
+        "project_support": {"status": "pass", "rationale": "双套房与可变书房由合成正式材料支持，价格保持开放缺口", "refs": ["E-PRODUCT", "GAP-PRICE"]},
+        "ue_provability": {"status": "pass", "rationale": "切换日常、父母短住和居家办公三种状态，可直接验证成员边界与空间效率", "refs": ["UE-SC-FLEXIBILITY"]}
+      },
+      "purchase_stage_effects": ["prompt_action"],
+      "production_items": [{"id": "ITEM-FAMILY-STATES", "customer_judgment": "同一户型可先验证三代短住与工作学习的空间适配", "ue_proof_task": "切换三种家庭状态并保留价格缺口"}]
+    }
+  ],
+  "purchase_stage_coverage": {
+    "enter_consideration": ["SC-ACCESS"],
+    "win_comparison": ["SC-ACCESS", "SC-CONTINUITY"],
+    "prompt_action": ["SC-FLEXIBILITY"]
+  }
+}

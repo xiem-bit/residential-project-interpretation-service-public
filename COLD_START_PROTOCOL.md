@@ -1,5 +1,7 @@
 # WorkBuddy 外部冷启动协议
 
+> 历史 RC1 载体适配协议：本文件只验证已冻结语义核之后的演示文稿／网页平台往返，不能评价 WorkBuddy 是否能够从原始材料发现住宅竞争战略。完整业务生产路径冷启动以 `BUSINESS_COLD_START_PROTOCOL.md` 为准。
+
 本协议验证“陌生使用者从公开 GitHub 固定 RC 获取工程，并让 WorkBuddy 自主完成平台适配”。
 本机 `run_rc1_demo.py` 的测试适配器只证明公共接口可往返，不能使本协议通过。
 

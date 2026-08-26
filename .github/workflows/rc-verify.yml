@@ -1,8 +1,9 @@
 name: Verify public RC
 
 on:
+  workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, "codex/**"]
     tags: ["v*"]
   pull_request:
 
@@ -37,6 +38,12 @@ jobs:
       - name: Run Python public-core tests
         run: python3 tests/run_public_tests.py
 
+      - name: Verify v0.2 production-path tutorial
+        run: |
+          python3 scripts/check_environment.py --profile production-core
+          python3 scripts/verify_production_run.py examples/production-path-tutorial/expected --mode tutorial
+          python3 scripts/verify_revision_tutorial.py examples/production-path-revision
+
       - name: Install locked Node dependencies
         working-directory: tools/product3_ppt_pipeline/automizer_adapter
         run: npm ci --ignore-scripts
@@ -48,8 +55,8 @@ jobs:
       - name: Verify static-bundle tools
         run: node --test tools/ue_static_bundle/test/*.test.mjs
 
-      - name: Run fictional reference flow
+      - name: Run historical RC1 carrier reference flow
         run: python3 scripts/run_rc1_demo.py
 
-      - name: Prepare external-platform handoff
+      - name: Prepare historical RC1 carrier handoff
         run: python3 scripts/prepare_external_cold_start.py

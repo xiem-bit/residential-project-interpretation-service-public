@@ -1,146 +1,79 @@
 {
-  "schema": "residential-competitiveness-public-core-manifest.v0.5",
+  "schema": "residential-competitiveness-public-core-manifest.v0.6",
   "status": "public_prerelease_apache_2_0",
-  "slice": "v0.1-rc1",
+  "candidate": "v0.2.0-rc.1",
   "source_commit": "21a68a543ee7322a0a2532a0c254ecf211d1a878",
-  "parent_candidate": {
-    "stage": "Slice 4.1 accepted",
-    "file_count": 39,
-    "aggregate_sha256": "2f84aeb2722fc5628abd8d23f51bf485605c470fff5f61d10e204a76bd34d42a"
-  },
-  "extraction_policy": "fixed_commit_allowlist_only",
-  "source_allowlist": "A_CLASS_ALLOWLIST.txt",
-  "packaging_files": [
-    ".gitignore",
-    ".github/workflows/rc-verify.yml",
-    "LICENSE",
-    "README.md",
-    "START_HERE.md",
-    "RELEASE_STATUS.md",
-    "SECURITY.md",
-    "THIRD_PARTY_NOTICES.md",
-    "THIRD_PARTY_LICENSES.json",
-    "RELEASE_MANIFEST.json",
-    "COLD_START_PROTOCOL.md",
-    "A_CLASS_ALLOWLIST.txt",
-    "PUBLIC_CORE_MANIFEST.json",
-    "SLICE3_VERIFICATION.json",
-    "B_CLASS_PROMOTION_MANIFEST.json",
-    "SLICE4_1_VERIFICATION.json",
-    "V0_1_RELEASE_SCOPE.md",
-    "DEPENDENCY_EXCEPTIONS.json",
-    "RC1_E2E_VERIFICATION.json",
-    "cold-start/observation.template.json",
-    "cold-start/presentation-visual-review.template.json",
-    "cold-start/product5-visual-review.template.json",
-    "scripts/build_release_manifest.py",
-    "scripts/generate_third_party_inventory.py",
-    "scripts/prepare_external_cold_start.py",
-    "scripts/verify_external_cold_start.py",
-    "tests/run_public_tests.py",
-    "tests/test_business_gates_public.py",
-    "tests/test_product4_xmind_public.py",
-    "tests/test_rc1_contracts.py",
-    "tests/test_external_cold_start_protocol.py",
-    "tests/test_public_release_state.py"
-  ],
-  "rc1_assembly_roots": [
-    "contracts",
-    "examples/fictional-qinglan-chengjing",
-    "scripts",
-    "tools/rc1",
-    "tools/platform_adapter_test_double",
-    "tools/product5_shell",
-    "tools/ue_static_bundle"
-  ],
-  "forbidden_roots": [
-    ".git",
-    "projects",
-    "assets",
-    "evals"
-  ],
+  "extraction_policy": "fixed_clean_source_operational_distillation_and_public_safe_new_implementation",
+  "authority_map": "PRODUCTION_AUTHORITY_MAP.json",
+  "production_path_manifest": "PRODUCTION_PATH_MANIFEST.json",
   "rights": {
     "license_selected": true,
     "license": "Apache-2.0",
     "license_file": "LICENSE",
     "rights_holder_approval_confirmed": true,
-    "public_distribution_authorized": true
+    "public_distribution_authorized": true,
+    "use_modify_redistribute_open_to_anyone_under_license": true
   },
   "public_release": {
     "repository": "https://github.com/xiem-bit/residential-project-interpretation-service-public",
     "visibility": "public",
-    "tag": "v0.1.0-rc.1",
-    "repository_creation_authorized": true,
-    "repository_created": true
+    "latest_published_tag": "v0.1.0-rc.1",
+    "latest_published_tag_immutable": true,
+    "candidate_tag": "v0.2.0-rc.1",
+    "candidate_tag_created": false,
+    "candidate_publish_gate": "independent_zero_guidance_business_cold_start_and_blind_review"
   },
-  "historical_verification_snapshots": [
-    {
-      "file": "SLICE3_VERIFICATION.json",
-      "state_at_time": "pre_public_assembly_snapshot",
-      "current_rights_status_source": "PUBLIC_CORE_MANIFEST.json"
-    },
-    {
-      "file": "SLICE4_1_VERIFICATION.json",
-      "state_at_time": "pre_public_assembly_snapshot",
-      "current_rights_status_source": "PUBLIC_CORE_MANIFEST.json"
-    },
-    {
-      "file": "RC1_E2E_VERIFICATION.json",
-      "state_at_time": "pre_public_assembly_snapshot",
-      "current_rights_status_source": "PUBLIC_CORE_MANIFEST.json"
-    }
+  "historical_rc1": {
+    "classification": "downstream_contract_and_carrier_adapter_demo",
+    "scope": "V0_1_RELEASE_SCOPE.md",
+    "allowlist": "A_CLASS_ALLOWLIST.txt",
+    "verification": "RC1_E2E_VERIFICATION.json",
+    "workbuddy_adapter_protocol": "COLD_START_PROTOCOL.md",
+    "cannot_prove": "residential_strategy_discovery_from_raw_inputs"
+  },
+  "v0_2_public_roots": [
+    "core",
+    "templates",
+    "schemas",
+    "workflows/residential-production-orchestrator",
+    "tools/production_core",
+    "examples/production-path-tutorial",
+    "examples/production-path-revision",
+    "evaluation/hidden-answer",
+    "external-capabilities",
+    "adapters"
   ],
-  "promoted_components": [
-    {
-      "component": "multi-source PPTX starter adapter",
-      "previous_class": "B",
-      "candidate_status": "promoted_with_recorded_dependency_exception",
-      "promotion_manifest": "B_CLASS_PROMOTION_MANIFEST.json",
-      "runtime": "Node.js >=20 with npm package-lock",
-      "scope": "selected native-slide starter assembly and structural OOXML package QA only",
-      "security_boundary": "DEPENDENCY_EXCEPTIONS.json",
-      "formal_visual_generation": "platform_adapter_responsibility",
-      "formal_visual_generation_is_public_core_release_blocker": false
-    }
+  "v0_2_business_outputs": [
+    "project-contract.md",
+    "fact-conflict-gap-register.json",
+    "product1-competition-study.md",
+    "product2-buyer-decision-study.md",
+    "semantic-core.json",
+    "super-competitiveness-plan.json",
+    "product-enablement-matrix.json",
+    "product3-chapter2-contract.json",
+    "product3-chapter3-contract.json",
+    "ue-solution-handoff.json",
+    "change-impact-registry.json",
+    "production-receipt.json"
   ],
-  "rc1_required_workstreams": [
-    {
-      "component": "platform-neutral START_HERE, capability routing and unified verification",
-      "status": "local_pass"
-    },
-    {
-      "component": "complete fictional residential-project fixture and expected contracts",
-      "status": "local_pass"
-    },
-    {
-      "component": "relative-path UE static-bundle manifest and delivery validators",
-      "status": "local_pass"
-    },
-    {
-      "component": "minimum generic Product 5 shell with all project content replaced",
-      "status": "local_pass"
-    },
-    {
-      "component": "platform adapter contract and test double without a formal bundled renderer",
-      "status": "local_contract_roundtrip_pass"
-    }
+  "semantic_core_role": "production_output",
+  "business_acceptance": {
+    "machine_scope": "structure_references_states_only",
+    "independent_blind_review_required": true,
+    "content_guidance_required": 0,
+    "presentation_or_web_required": false,
+    "current_status": "local_tutorial_machine_contract_pass_external_business_cold_start_not_run"
+  },
+  "forbidden_public_content": [
+    "real_project_or_customer_materials",
+    "restricted_assets",
+    "credentials_or_private_runtime_state",
+    "private_golden_answers",
+    "private_holdout_inputs_and_answers",
+    "private_git_history"
   ],
-  "rc1_optional_workstreams": [
-    "generic A4 PDF rendering only if required by the end-to-end fixture",
-    "WorkBuddy-specific manifest after the platform-neutral core passes locally",
-    "browser-bound web review only if independent cold start exposes a delivery blocker"
-  ],
-  "deferred_components": [
-    "Grist assembly console",
-    "formal presentation rendering engines",
-    "cloud publishing and server profiles",
-    "real project assets and Product 5 golden implementation",
-    "live public-channel collection during the fictional cold start"
-  ],
-  "release_scope": "V0_1_RELEASE_SCOPE.md",
-  "dependency_exceptions": "DEPENDENCY_EXCEPTIONS.json",
-  "validation_status": "public_rc_local_fictional_e2e_pass_workbuddy_not_run",
-  "external_cold_start_protocol": "COLD_START_PROTOCOL.md",
-  "inherited_verification_file": "SLICE4_1_VERIFICATION.json",
-  "rc1_e2e_verification_file": "RC1_E2E_VERIFICATION.json"
+  "release_scope": "V0_2_RELEASE_SCOPE.md",
+  "business_cold_start_protocol": "BUSINESS_COLD_START_PROTOCOL.md",
+  "dependency_exceptions": "DEPENDENCY_EXCEPTIONS.json"
 }

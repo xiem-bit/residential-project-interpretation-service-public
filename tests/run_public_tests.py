@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run every Python test included in the public RC1 candidate."""
+"""Run every Python test included in the public release candidate."""
 
 from __future__ import annotations
 
@@ -20,6 +20,7 @@ TEST_FILES = (
     "tests/test_product4_xmind_public.py",
     "tests/test_rc1_contracts.py",
     "tests/test_external_cold_start_protocol.py",
+    "tests/test_production_path_v02.py",
     "tests/test_public_release_state.py",
 )
 

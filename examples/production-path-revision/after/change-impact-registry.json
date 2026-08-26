@@ -1,0 +1,21 @@
+{
+  "schema": "residential.change_impact_registry.v0.2",
+  "project_id": "fictional-qinglan-chengjing-production",
+  "current_semantic_version": "SEM-QC-002",
+  "status": "reprojection_complete",
+  "changes": [
+    {
+      "id": "CHANGE-ROUTE-001",
+      "trigger": "NEW-OFFICIAL-ROUTE-001确认园林至地下会所含18米露天连廊",
+      "old_judgment": "SC-CONTINUITY：全天候连续归家",
+      "new_judgment": "SC-DAILY-ROUTE：四段日常归家路径；不再声称全天候",
+      "reason": "项目空间顺序仍成立，但全天候属性没有事实承接",
+      "from_semantic_version": "SEM-QC-001",
+      "to_semantic_version": "SEM-QC-002",
+      "affected_refs": ["E-ROUTE", "DEC-ROUTE", "product1", "semantic-core", "SC-CONTINUITY", "SC-DAILY-ROUTE", "DIM-CONTINUITY", "UE-SC-CONTINUITY", "P5-CONTINUITY"],
+      "unaffected_outputs": ["SC-ACCESS", "SC-FLEXIBILITY", "TASK-COMMUTE-IMPROVE", "TASK-FAMILY-FLEX", "product4:not_enabled"],
+      "status": "reprojection_complete",
+      "verification_refs": ["after/semantic-delta.json", "after/reprojection-map.json"]
+    }
+  ]
+}

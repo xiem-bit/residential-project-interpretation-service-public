@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/product-enablement.schema.json",
+  "type": "object",
+  "required": ["schema", "project_id", "semantic_version", "products", "high_cost_admission", "adapter_requirements"],
+  "properties": {
+    "schema": {"const": "residential.product_enablement_matrix.v0.2"},
+    "products": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["product", "status", "reason", "deliverables"],
+        "properties": {
+          "product": {"type": "integer", "minimum": 1, "maximum": 5},
+          "status": {"enum": ["enabled", "complete", "in_progress", "not_enabled", "blocked"]}
+        }
+      }
+    },
+    "high_cost_admission": {
+      "type": "object",
+      "required": ["status", "semantic_core_frozen", "established_sc_count", "all_five_checks_pass", "purchase_stage_coverage_complete", "fact_and_rights_boundary_declared"],
+      "properties": {"status": {"enum": ["admitted", "research_only", "blocked"]}}
+    }
+  }
+}

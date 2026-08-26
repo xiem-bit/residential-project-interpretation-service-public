@@ -36,6 +36,37 @@ class PublicReleaseStateTest(unittest.TestCase):
             manifest["public_release"]["repository"],
             "https://github.com/xiem-bit/residential-project-interpretation-service-public",
         )
+        self.assertEqual(manifest["semantic_core_role"], "production_output")
+        self.assertEqual(manifest["public_release"]["latest_published_tag"], "v0.1.0-rc.1")
+        self.assertFalse(manifest["public_release"]["candidate_tag_created"])
+        self.assertFalse(manifest["business_acceptance"]["presentation_or_web_required"])
+
+    def test_v02_authority_map_targets_existing_public_files(self) -> None:
+        authority = json.loads((ROOT / "PRODUCTION_AUTHORITY_MAP.json").read_text(encoding="utf-8"))
+        self.assertEqual(authority["source_baseline"]["commit"], "21a68a543ee7322a0a2532a0c254ecf211d1a878")
+        for mapping in authority["mappings"]:
+            self.assertEqual(mapping["coverage"].split("_")[0], "full")
+            for relative in mapping["public"]:
+                self.assertTrue((ROOT / relative).exists(), relative)
+
+    def test_public_evaluation_contains_protocol_not_private_holdout(self) -> None:
+        files = {
+            path.relative_to(ROOT / "evaluation" / "hidden-answer").as_posix()
+            for path in (ROOT / "evaluation" / "hidden-answer").rglob("*")
+            if path.is_file()
+        }
+        self.assertEqual(
+            files,
+            {"README.md", "task.template.md", "rubric.json", "observation.template.json", "review.template.json"},
+        )
+
+    def test_v02_roots_have_no_absolute_user_paths(self) -> None:
+        manifest = json.loads((ROOT / "PUBLIC_CORE_MANIFEST.json").read_text(encoding="utf-8"))
+        forbidden = re.compile(r"(?:/Users/|file://|[A-Za-z]:\\\\|\.workbuddy/binaries/)")
+        for root_name in manifest["v0_2_public_roots"]:
+            for path in (ROOT / root_name).rglob("*"):
+                if path.is_file() and path.suffix.lower() in {".json", ".md", ".py", ".yml"}:
+                    self.assertIsNone(forbidden.search(path.read_text(encoding="utf-8")), path.relative_to(ROOT).as_posix())
 
     def test_source_tree_has_no_private_release_or_secret_marker(self) -> None:
         excluded_parts = {".git", ".venv", "node_modules", "verification-tmp", "__pycache__"}

@@ -1,0 +1,29 @@
+{
+  "schema": "residential.fact_conflict_gap_register.v0.2",
+  "project_id": "PROJECT-001",
+  "input_freeze_id": "INPUT-FREEZE-001",
+  "fact_cutoff": "YYYY-MM-DD",
+  "entries": [
+    {
+      "id": "E-01",
+      "kind": "fact",
+      "claim": "材料直接支持的项目事实",
+      "source_refs": ["INPUT-01"],
+      "scope": "适用对象、时间和空间",
+      "impact": "supports_project_identity",
+      "status": "accepted"
+    },
+    {
+      "id": "GAP-01",
+      "kind": "gap",
+      "claim": "可能改变竞争判断的缺口",
+      "source_refs": [],
+      "scope": "当前任务",
+      "impact": "may_change_competition_boundary",
+      "status": "open",
+      "owner": "authorized_upstream_owner",
+      "stop_condition": "取得能够支持或推翻该判断的材料"
+    }
+  ],
+  "freeze_status": "input_frozen_with_declared_gaps"
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "residential.product5_interaction_blueprint.v0.2",
+  "project_id": "fictional-qinglan-chengjing-production",
+  "semantic_version": "SEM-QC-001",
+  "depth": "presales_focus",
+  "value_anchor_ref": "VALUE-ANCHOR",
+  "primary_navigation": ["HOME", "SC-ACCESS", "SC-CONTINUITY", "SC-FLEXIBILITY", "AI-ADVISOR"],
+  "sc_scenes": [
+    {"id": "P5-ACCESS", "sc_id": "SC-ACCESS", "ue_scene_ref": "UE-SC-ACCESS", "proof_purpose": "验证双向就业关系让新区低密进入候选", "interaction_states": ["east_job", "old_city_job", "known_and_gap"]},
+    {"id": "P5-CONTINUITY", "sc_id": "SC-CONTINUITY", "ue_scene_ref": "UE-SC-CONTINUITY", "proof_purpose": "把四段空间关系转成全天候连续归家", "interaction_states": ["arrival", "garden", "stilt_floor", "club"]},
+    {"id": "P5-FLEXIBILITY", "sc_id": "SC-FLEXIBILITY", "ue_scene_ref": "UE-SC-FLEXIBILITY", "proof_purpose": "验证三代短住与居家办公的空间适配", "interaction_states": ["daily", "parents_visit", "home_office"]}
+  ],
+  "routes": [
+    {"id": "ROUTE-DUAL-CITY-FAMILY", "purchase_task_ref": "TASK-FAMILY-FLEX", "sc_order": ["SC-ACCESS", "SC-CONTINUITY", "SC-FLEXIBILITY"], "mobile_continuation": "M-DUAL-CITY-FAMILY"}
+  ],
+  "ai_advisor": {"creates_new_sc": false, "route_refs": ["ROUTE-DUAL-CITY-FAMILY"], "handoff_to_sales": "确认就业路径、家庭空间和支付边界后进入具体户型比较"},
+  "gaps": ["GAP-VISUAL", "GAP-PRICE"]
+}

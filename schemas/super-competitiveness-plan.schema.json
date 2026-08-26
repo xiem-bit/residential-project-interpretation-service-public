@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/super-competitiveness-plan.schema.json",
+  "type": "object",
+  "required": ["schema", "project_id", "semantic_version", "status", "items", "purchase_stage_coverage"],
+  "properties": {
+    "schema": {"const": "residential.super_competitiveness_plan.v0.2"},
+    "status": {"enum": ["minimum_three_sc_pass", "returned_for_research"]},
+    "items": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "mechanism", "status", "target_customer_refs", "purchase_task_refs", "belief_change", "bounded_claim", "enemy_refs", "project_support_refs", "five_checks", "purchase_stage_effects", "production_items"],
+        "properties": {
+          "status": {"enum": ["candidate", "established", "returned_for_research", "superseded"]},
+          "five_checks": {
+            "type": "object",
+            "required": ["purchase_impact", "bounded_unique_or_best", "enemy_relation", "project_support", "ue_provability"]
+          }
+        }
+      }
+    },
+    "purchase_stage_coverage": {
+      "type": "object",
+      "required": ["enter_consideration", "win_comparison", "prompt_action"]
+    }
+  }
+}

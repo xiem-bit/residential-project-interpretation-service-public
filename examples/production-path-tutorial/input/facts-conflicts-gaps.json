@@ -1,0 +1,20 @@
+{
+  "schema": "fictional.raw_fact_gap_material.v0.2",
+  "fixture_notice": "全部为合成材料",
+  "facts": [
+    {"id": "RAW-FAR", "claim": "容积率1.45", "source": "formal-material.md"},
+    {"id": "RAW-GREEN", "claim": "绿地率38%", "source": "formal-material.md"},
+    {"id": "RAW-UNITS", "claim": "128、143、168平方米", "source": "formal-material.md"},
+    {"id": "RAW-RAIL", "claim": "既有轨道节点约2.4公里直线距离", "source": "formal-material.md"}
+  ],
+  "conflicts": [
+    {"id": "RAW-CONFLICT-AREA", "claims": ["用地61800平方米", "用地62300平方米"]},
+    {"id": "RAW-CONFLICT-RAIL", "claims": ["2.4公里直线距离有记录", "2.1公里步行距离无路线依据"]}
+  ],
+  "gaps": [
+    {"id": "RAW-GAP-PRICE", "topic": "首开价格与付款条件", "claim_effect": "阻塞总价适配和价格承诺"},
+    {"id": "RAW-GAP-SCHOOL", "topic": "学校建设与入学权益", "claim_effect": "阻塞名校旁和学区表达"},
+    {"id": "RAW-GAP-DELIVERY", "topic": "正式交付时间", "claim_effect": "阻塞交付承诺"},
+    {"id": "RAW-GAP-VISUAL", "topic": "正式图片与案例", "claim_effect": "不阻塞业务判断，阻塞正式视觉生产"}
+  ]
+}

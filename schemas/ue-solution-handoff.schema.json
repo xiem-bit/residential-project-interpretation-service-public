@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/ue-solution-handoff.schema.json",
+  "type": "object",
+  "required": ["schema", "project_id", "semantic_version", "status", "value_anchor_ref", "mappings", "gaps"],
+  "properties": {
+    "schema": {"const": "residential.ue_solution_handoff.v0.2"},
+    "status": {"enum": ["ue_solution_bridge_pass", "returned_for_research", "not_enabled"]},
+    "mappings": {"type": "array", "minItems": 3}
+  }
+}

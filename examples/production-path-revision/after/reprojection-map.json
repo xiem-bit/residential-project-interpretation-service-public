@@ -1,0 +1,20 @@
+{
+  "schema": "residential.reprojection_map.v0.2",
+  "project_id": "fictional-qinglan-chengjing-production",
+  "semantic_version": "SEM-QC-002",
+  "affected_outputs": [
+    {"id": "fact-conflict-gap-register", "action": "updated", "result": "新增E-ROUTE-UPDATED并保留旧事实来源"},
+    {"id": "project-contract", "action": "updated", "result": "新增DEC-ROUTE并覆盖全天候判断"},
+    {"id": "product1", "action": "updated", "result": "比较标准改为四段日常顺序，不再使用全天候"},
+    {"id": "product2", "action": "reviewed_no_content_change", "result": "购买任务和客户声音不变"},
+    {"id": "semantic-core", "action": "versioned", "result": "升为SEM-QC-002并替换价值锚点与SC引用"},
+    {"id": "super-competitiveness-plan", "action": "revalidated", "result": "SC-CONTINUITY被覆盖，SC-DAILY-ROUTE通过五项检查"},
+    {"id": "product3-chapter2-contract", "action": "updated", "result": "DIM-CONTINUITY和价值锚点同步"},
+    {"id": "product3-chapter3-contract", "action": "updated", "result": "UE场景明确露天连廊与雨天边界"},
+    {"id": "ue-solution-handoff", "action": "updated", "result": "SC与场景映射换为新ID"},
+    {"id": "product5-interaction-blueprint", "action": "updated", "result": "导航、场景和交互状态换为P5-DAILY-ROUTE"},
+    {"id": "product4", "action": "not_enabled_no_reprojection_required", "result": "本轮未启用"}
+  ],
+  "unchanged_refs": ["SC-ACCESS", "SC-FLEXIBILITY", "TASK-COMMUTE-IMPROVE", "TASK-FAMILY-FLEX"],
+  "cross_product_consistency": "pass"
+}

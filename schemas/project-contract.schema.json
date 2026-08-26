@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/project-contract.schema.json",
+  "title": "Embedded project contract summary",
+  "type": "object",
+  "required": ["schema", "task_id", "mode", "business_question", "primary_audience", "use_case", "business_stage", "project", "authorized_inputs", "enabled_products", "disabled_products", "current_decisions", "superseded_decisions", "status"],
+  "properties": {
+    "schema": {"const": "residential.project_contract.v0.2"},
+    "task_id": {"type": "string", "minLength": 1},
+    "mode": {"enum": ["real_project_delivery", "hidden_answer_replay", "non_research_task"]},
+    "business_question": {"type": "string", "minLength": 1},
+    "primary_audience": {"type": "string", "minLength": 1},
+    "use_case": {"type": "string", "minLength": 1},
+    "business_stage": {"type": "string", "minLength": 1},
+    "project": {
+      "type": "object",
+      "required": ["id", "canonical_name", "aliases", "city", "district_or_area", "location", "developer", "land_and_phase_relation", "lifecycle", "fact_cutoff", "identity_status"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "identity_status": {"enum": ["closed", "blocked_by_material_conflict"]}
+      }
+    },
+    "authorized_inputs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "path", "role", "authorization"],
+        "properties": {
+          "role": {"enum": ["formal_material", "consultant_work", "customer_voice", "public_evidence", "institutional_data", "expert_judgment"]},
+          "authorization": {"enum": ["confirmed", "synthetic_public_fixture"]}
+        }
+      }
+    },
+    "enabled_products": {"type": "array", "items": {"type": "integer", "minimum": 1, "maximum": 5}},
+    "status": {"enum": ["project_identity_closed", "blocked_by_identity_or_rights"]}
+  }
+}

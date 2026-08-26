@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/product5-interaction-blueprint.schema.json",
+  "type": "object",
+  "required": ["schema", "project_id", "semantic_version", "depth", "value_anchor_ref", "primary_navigation", "sc_scenes", "routes", "ai_advisor", "gaps"],
+  "properties": {
+    "schema": {"const": "residential.product5_interaction_blueprint.v0.2"},
+    "depth": {"enum": ["presales_focus", "delivery_full"]},
+    "sc_scenes": {"type": "array", "minItems": 3, "maxItems": 4},
+    "ai_advisor": {
+      "type": "object",
+      "required": ["creates_new_sc", "route_refs", "handoff_to_sales"],
+      "properties": {"creates_new_sc": {"const": false}}
+    }
+  }
+}

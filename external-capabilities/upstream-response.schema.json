@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/upstream-response.schema.json",
+  "type": "object",
+  "required": ["schema", "request_id", "project_id", "status", "evidence", "negative_hits", "gaps", "stop_reason", "upstream_does_not_adjudicate_strategy"],
+  "properties": {
+    "schema": {"const": "residential.upstream_response.v0.2"},
+    "status": {"enum": ["fulfilled", "partial", "gap", "stopped"]},
+    "evidence": {"type": "array"},
+    "negative_hits": {"type": "array"},
+    "gaps": {"type": "array"},
+    "upstream_does_not_adjudicate_strategy": {"const": true}
+  }
+}

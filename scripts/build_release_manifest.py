@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build or verify the clean RC source-file manifest."""
+"""Build or verify the clean public-candidate source-file manifest."""
 
 from __future__ import annotations
 
@@ -51,9 +51,10 @@ def build_manifest() -> dict[str, Any]:
     ]
     tree_input = "".join(f"{item['sha256']}  {item['path']}\n" for item in records)
     return {
-        "schema": "residential.public_rc_source_manifest.v0.1",
-        "version": "v0.1.0-rc.1",
-        "status": "public_prerelease_apache_2_0",
+        "schema": "residential.public_rc_source_manifest.v0.2",
+        "version": "v0.2.0-rc.1",
+        "status": "candidate_unpublished_business_cold_start_pending",
+        "latest_published_tag": "v0.1.0-rc.1",
         "source_commit": "21a68a543ee7322a0a2532a0c254ecf211d1a878",
         "excluded": [
             ".git/**",

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/semantic-core.schema.json",
+  "type": "object",
+  "required": ["schema", "project_id", "version", "status", "source_outputs", "project_and_task_identity", "belief_change", "enemies", "target_customers", "purchase_tasks", "effective_boundary", "value_anchor", "super_competitiveness_refs", "product_package", "key_upstream_gaps", "current_decisions", "superseded_decisions", "source_refs"],
+  "properties": {
+    "schema": {"const": "residential.semantic_core.v0.2"},
+    "status": {"enum": ["semantic_core_frozen", "returned_for_research", "superseded"]},
+    "super_competitiveness_refs": {"type": "array", "minItems": 3, "maxItems": 4},
+    "target_customers": {"type": "array", "minItems": 1},
+    "purchase_tasks": {"type": "array", "minItems": 1},
+    "source_outputs": {"type": "array", "minItems": 2}
+  }
+}

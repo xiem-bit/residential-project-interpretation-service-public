@@ -1,0 +1,12 @@
+# 平台适配层
+
+适配层位于业务语义冻结之后。它可以把已批准的内容合同做成 PPTX、XMind、网页、视频或其他载体，也可以由平台本身承担完整生产编排；两种角色必须分开记录。
+
+## 两类调用
+
+1. `business_orchestrator`：平台读取公开 Skill，从原始材料完成住宅生产主链；
+2. `carrier_adapter`：平台只消费冻结语义和下游合同，生产指定载体。
+
+WorkBuddy、Codex 或通用 Agent 若执行第一类调用，必须按 `workflows/residential-production-orchestrator/SKILL.md`产出业务文件。调用自身 PPT／网页 Skill 只能形成第二类状态。
+
+适配器不得改写项目 ID、语义版本、价值锚点、SC ID／名称、购买任务、竞争边界或 gap。能力不足时返回真实缺口。视觉、文件结构、发布和托管结果全部放在 `adapter_statuses`，不得升级业务状态。

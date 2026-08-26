@@ -1,0 +1,14 @@
+{
+  "schema": "residential.product3_chapter2_strategy_contract.v0.2",
+  "project_id": "PROJECT-001",
+  "semantic_version": "SEM-001",
+  "status": "complete",
+  "customer_choices": [{"id": "CD-01", "kind": "candidate_entry", "claim": "客户如何组织候选", "evidence_refs": ["E-VOICE-01"]}],
+  "candidate_relations": [{"id": "REL-01", "option_a": "本案", "option_b": "替代方案", "relation": "substitute", "customer_reason": "为什么一起比较", "purchase_task_refs": ["TASK-01"]}],
+  "comparison_dimensions": [{"id": "DIM-01", "name": "竞争维度", "customer_question": "客户问题", "subject_facts": ["E-01"], "competitor_facts": ["E-02"], "conclusion": "同口径竞争结论"}],
+  "value_anchor": {"text": "价值锚点", "source_ref": "VALUE-ANCHOR"},
+  "super_competitiveness": [
+    {"id": "SC-01", "name": "竞争武器", "comparison_set": "真实竞品／替代", "purchase_task_refs": ["TASK-01"], "bounded_claim": "边界内唯一和最结论"}
+  ],
+  "display_strategy": {"rational": "理性展示目标", "emotional": "感性展示目标"}
+}

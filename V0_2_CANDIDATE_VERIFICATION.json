@@ -1,0 +1,64 @@
+{
+  "schema": "residential.v0_2_candidate_verification.v0.1",
+  "verified_at": "2026-08-26",
+  "status": "local_candidate_pass_external_business_cold_start_pending",
+  "private_source_baseline": {
+    "commit": "21a68a543ee7322a0a2532a0c254ecf211d1a878",
+    "main_matches_origin_main": true,
+    "source_worktree_clean": true,
+    "source_repository_modified": false
+  },
+  "historical_release_preservation": {
+    "tag": "v0.1.0-rc.1",
+    "tag_commit": "d11b0385f0e535c3fdc40acb23982acfcaf6481b",
+    "tag_moved": false,
+    "new_classification": "downstream_contract_and_carrier_adapter_demo"
+  },
+  "local_checks": {
+    "python_public_tests": {"status": "pass", "tests": 79, "failures": 0},
+    "production_tutorial_machine_contract": {"status": "pass", "strategic_quality_claimed": false},
+    "revision_reprojection_tutorial": {"status": "pass", "strategic_quality_claimed": false},
+    "workflow_skill_validation": {"status": "pass"},
+    "authority_blob_map": {"status": "pass", "source_files": 18},
+    "json_parse_scan": {"status": "pass", "files": 75},
+    "python_profile": {"status": "pass", "minimum": "3.9", "codex_runtime_required": false},
+    "private_path_and_secret_scan": {"status": "pass"},
+    "release_manifest": {"status": "pass", "files": 191},
+    "third_party_inventory": {"status": "pass", "packages": 116},
+    "historical_rc1_carrier_regression": {
+      "status": "pass",
+      "fictional_e2e": "pass",
+      "pptx_adapter_tests": 6,
+      "static_bundle_tests": 2,
+      "business_strategy_claimed": false
+    },
+    "apache_2_0_rights": {"status": "confirmed"}
+  },
+  "business_path_coverage": {
+    "raw_inputs_as_entry": "pass",
+    "product1": "pass",
+    "product2_or_not_enabled": "pass",
+    "semantic_core_as_output": "pass",
+    "three_to_four_sc_and_five_checks": "pass",
+    "product_enablement_and_high_cost_admission": "pass",
+    "chapter2_to_chapter3_ue_bridge": "pass",
+    "product5_blueprint": "pass",
+    "change_writeback_and_targeted_reprojection": "pass",
+    "business_and_carrier_status_separation": "pass"
+  },
+  "remaining_release_gates": {
+    "clean_clone_ci": "pending_after_candidate_commit",
+    "independent_participant": "not_run",
+    "zero_content_guidance": "not_run",
+    "private_hidden_answer_blind_review": "not_run",
+    "change_probe": "not_run",
+    "production_path_replication_pass": "not_run",
+    "v0_2_0_rc_1_tag": "not_created"
+  },
+  "explicit_non_claims": [
+    "tutorial machine pass is not independent strategic-quality proof",
+    "presentation or web adapter pass is not business-path proof",
+    "real project effect and customer acceptance are not validated",
+    "the historical Node adapter retains the time-bounded dependency exception recorded in DEPENDENCY_EXCEPTIONS.json; the v0.2 production core does not depend on it"
+  ]
+}

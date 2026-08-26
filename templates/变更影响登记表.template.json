@@ -1,0 +1,7 @@
+{
+  "schema": "residential.change_impact_registry.v0.2",
+  "project_id": "PROJECT-001",
+  "current_semantic_version": "SEM-001",
+  "status": "no_change_recorded",
+  "changes": []
+}

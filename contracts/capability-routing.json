@@ -1,46 +1,51 @@
 {
-  "schema": "residential.public_capability_routing.v0.1",
-  "status": "rc1",
+  "schema": "residential.public_capability_routing.v0.2",
+  "status": "v0.2_candidate",
   "routes": [
     {
-      "capability": "residential_contract_validation",
-      "owner": "public_core",
-      "entrypoint": "python3 scripts/run_rc1_demo.py",
-      "fallback": "emit_contract_shaped_gap"
+      "capability": "residential_business_production_from_raw_inputs",
+      "owner": "public_business_orchestrator",
+      "entrypoint": "workflows/residential-production-orchestrator/SKILL.md",
+      "verification": "python3 scripts/verify_production_run.py RUN_DIR",
+      "strategic_quality": "independent_blind_human_review_required",
+      "fallback": "return_to_research_or_emit_structured_gap"
+    },
+    {
+      "capability": "authorized_upstream_evidence",
+      "owner": "selected_external_owner",
+      "task_schema": "external-capabilities/upstream-task.schema.json",
+      "response_schema": "external-capabilities/upstream-response.schema.json",
+      "may_adjudicate_competitors_or_sc": false,
+      "fallback": "return_partial_gap_or_stopped"
     },
     {
       "capability": "formal_presentation_generation",
-      "owner": "platform_adapter",
+      "owner": "carrier_adapter",
       "input_schema": "contracts/presentation_request.schema.json",
       "output_schema": "contracts/presentation_response.schema.json",
-      "platform_examples": ["WorkBuddy presentation skill", "Codex presentation skill", "human presentation team"],
-      "fallback": "return_no_supported_presentation_capability_gap"
+      "can_satisfy_business_replication_gate": false,
+      "fallback": "return_presentation_adapter_gap"
     },
     {
-      "capability": "pptx_structural_and_business_qa",
+      "capability": "product5_implementation",
+      "owner": "carrier_adapter",
+      "business_input": "product5-interaction-blueprint.json",
+      "can_satisfy_business_replication_gate": false,
+      "fallback": "return_web_adapter_gap"
+    },
+    {
+      "capability": "business_machine_contract_validation",
       "owner": "public_core",
-      "entrypoint": "tools/product3_ppt_pipeline/automizer_adapter/verify_pptx_package.mjs",
-      "fallback": "reject_artifact"
+      "entrypoint": "scripts/verify_production_run.py",
+      "scope": "structure_references_states_only",
+      "cannot_claim": "business_judgment_blind_review_pass"
     },
     {
-      "capability": "product5_generic_shell_and_static_bundle",
-      "owner": "public_core",
-      "entrypoint": "tools/ue_static_bundle/create_manifest.mjs",
-      "fallback": "emit_incomplete_static_bundle_gap"
-    },
-    {
-      "capability": "formal_visual_review",
-      "owner": "platform_adapter_or_human",
-      "bundled_in_rc1": false,
-      "required_for_real_client_delivery": true,
-      "fallback": "FORMAL_VISUAL_REVIEW_REQUIRED"
-    },
-    {
-      "capability": "cloud_publication",
-      "owner": "outside_rc1",
-      "bundled_in_rc1": false,
-      "fallback": "PUBLICATION_NOT_AUTHORIZED"
+      "capability": "business_replication_acceptance",
+      "owner": "independent_participant_and_blind_reviewer",
+      "protocol": "BUSINESS_COLD_START_PROTOCOL.md",
+      "visual_carrier_required": false,
+      "fallback": "business_judgment_returned_for_research"
     }
   ]
 }
-

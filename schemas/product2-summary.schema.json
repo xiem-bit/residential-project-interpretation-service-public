@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/product2-summary.schema.json",
+  "type": "object",
+  "required": ["schema", "project_id", "enabled", "status", "not_enabled_reason", "covered_by", "purchase_tasks", "counterexamples", "updates_to_product1", "inputs_to_product3"],
+  "properties": {
+    "schema": {"const": "residential.product2_buyer_decision_study.v0.2"},
+    "status": {"enum": ["product2_complete", "not_enabled", "returned_for_research"]},
+    "purchase_tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "priority", "roles_and_relations", "circumstance", "trigger", "desired_progress", "alternatives", "gains", "tolerances", "facilitators", "blockers", "project_fit", "boundary", "source_kind", "evidence_refs"]
+      }
+    }
+  }
+}

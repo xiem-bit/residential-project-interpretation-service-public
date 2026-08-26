@@ -1,0 +1,31 @@
+{
+  "schema": "residential.product3_chapter2_strategy_contract.v0.2",
+  "project_id": "fictional-qinglan-chengjing-production",
+  "semantic_version": "SEM-QC-001",
+  "status": "complete",
+  "customer_choices": [
+    {"id": "CD-ENTRY", "kind": "candidate_entry", "claim": "双向就业家庭先判断两条路径是否都可接受，再决定新区低密能否进入候选", "evidence_refs": ["E-VOICES", "E-MARKET"]},
+    {"id": "CD-COMPARE", "kind": "active_comparison", "claim": "低密配置只有被还原成每天经过和使用的关系才进入主动比较", "evidence_refs": ["E-VOICES", "E-ROUTE"]},
+    {"id": "CD-ACTION", "kind": "veto", "claim": "家庭先确认户型适配，再等待正式价格与权益关闭支付判断", "evidence_refs": ["E-VOICES", "GAP-PRICE"]}
+  ],
+  "candidate_relations": [
+    {"id": "REL-COMMUTE", "option_a": "青岚澄境", "option_b": "北湾府", "relation": "direct_substitute", "customer_reason": "在成熟轨道便利与双向就业加低密空间之间比较每日时间成本", "purchase_task_refs": ["TASK-COMMUTE-IMPROVE"]},
+    {"id": "REL-LOWDENSITY", "option_a": "青岚澄境", "option_b": "栖霞里", "relation": "direct_substitute", "customer_reason": "在会所已开放、低密强度与家庭空间连续使用之间比较", "purchase_task_refs": ["TASK-FAMILY-FLEX"]},
+    {"id": "REL-WAIT", "option_a": "青岚澄境", "option_b": "继续居住并等待", "relation": "behavioral_substitute", "customer_reason": "价格未知时保留现金流与选择权", "purchase_task_refs": ["TASK-FAMILY-FLEX"]}
+  ],
+  "comparison_dimensions": [
+    {"id": "DIM-ACCESS", "name": "通勤与候选资格", "customer_question": "新区位置是否同时服务两条就业方向", "subject_facts": ["E-BRIEF", "CONFLICT-RAIL"], "competitor_facts": ["E-MARKET"], "conclusion": "本案用双向就业关系与低密组合进入候选，北湾府继续占据成熟轨道优势"},
+    {"id": "DIM-CONTINUITY", "name": "低密日常使用", "customer_question": "园林与会所能否形成每天可用的连续关系", "subject_facts": ["E-ROUTE"], "competitor_facts": ["E-MARKET"], "conclusion": "栖霞里以会所已开放领先，本案以连续归家关系重设比较标准"},
+    {"id": "DIM-FLEX", "name": "家庭空间适配", "customer_question": "户型能否承接父母短住与居家办公并降低等待损失", "subject_facts": ["E-PRODUCT", "GAP-PRICE"], "competitor_facts": ["E-MARKET"], "conclusion": "本案先关闭空间适配，价格与权益到位后再完成支付判断"}
+  ],
+  "value_anchor": {"text": "澄川东岸双向就业生活里，把低密归家与三代弹性放进同一套日常的改善住区", "source_ref": "VALUE-ANCHOR"},
+  "super_competitiveness": [
+    {"id": "SC-ACCESS", "name": "双向就业低密选择", "comparison_set": "北湾府、栖霞里和继续等待", "purchase_task_refs": ["TASK-COMMUTE-IMPROVE"], "bounded_claim": "本虚构样本内唯一同时提供双向就业关系与1.45低密底盘的改善选择"},
+    {"id": "SC-CONTINUITY", "name": "全天候连续归家", "comparison_set": "青岚澄境与栖霞里", "purchase_task_refs": ["TASK-FAMILY-FLEX"], "bounded_claim": "本虚构样本内唯一把首层园林、架空层与地下会所组织成连续归家路径的低密社区"},
+    {"id": "SC-FLEXIBILITY", "name": "三代弹性空间先验", "comparison_set": "栖霞里、北湾府和继续等待", "purchase_task_refs": ["TASK-FAMILY-FLEX"], "bounded_claim": "本虚构样本内唯一同时设置双套房与可变书房、并可先完成家庭空间适配的产品组合"}
+  ],
+  "display_strategy": {
+    "rational": "用双向就业关系、连续归家路径和户型状态切换证明三项选择价值",
+    "emotional": "让家庭沿一天的行动顺序体验各自独立又彼此照应的低密日常"
+  }
+}

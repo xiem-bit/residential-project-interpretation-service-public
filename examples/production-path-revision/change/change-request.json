@@ -1,0 +1,10 @@
+{
+  "schema": "residential.revision_change_request.v0.2",
+  "change_id": "CHANGE-ROUTE-001",
+  "project_id": "fictional-qinglan-chengjing-production",
+  "source_ref": "NEW-OFFICIAL-ROUTE-001",
+  "classification": "material_semantic_change",
+  "old_judgment": "全天候连续归家",
+  "new_fact": "园林至地下会所包含18米露天连廊",
+  "reason_not_local_copy_edit": "新事实改变SC名称、唯一和最边界、UE证明和客户购买理由"
+}

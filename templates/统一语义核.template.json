@@ -1,0 +1,44 @@
+{
+  "schema": "residential.semantic_core.v0.2",
+  "project_id": "PROJECT-001",
+  "version": "SEM-001",
+  "status": "semantic_core_frozen",
+  "source_outputs": ["project-contract.md", "product1-competition-study.md", "product2-buyer-decision-study.md"],
+  "project_and_task_identity": {
+    "project_name": "项目规范名",
+    "task_mode": "real_project_delivery",
+    "business_question": "业务问题",
+    "fact_cutoff": "YYYY-MM-DD"
+  },
+  "belief_change": {
+    "adverse": "当前不利观念",
+    "target": "希望建立的新判断"
+  },
+  "enemies": {
+    "tangible": ["COMP-01"],
+    "intangible": ["旧标准或观望"]
+  },
+  "target_customers": [{"id": "TG-01", "description": "目标客群", "purchase_task_refs": ["TASK-01"]}],
+  "purchase_tasks": [{"id": "TASK-01", "summary": "购买任务", "boundary": "适用边界"}],
+  "effective_boundary": {
+    "geography": "地域",
+    "customer": "客群",
+    "area_and_price": "面积与宽总价",
+    "product_form": "产品形态",
+    "purchase_task": "购买任务",
+    "lifecycle_window": "时间窗口",
+    "bounded_claim": "边界内唯一、稀缺、极致或最优满足"
+  },
+  "value_anchor": {
+    "text": "核心生活主张／价值锚点",
+    "replaces": "被替代的旧判断",
+    "project_support_refs": ["E-01"],
+    "sc_refs": ["SC-01", "SC-02", "SC-03"]
+  },
+  "super_competitiveness_refs": ["SC-01", "SC-02", "SC-03"],
+  "product_package": {"enabled": [1, 3], "not_enabled": [2, 4, 5]},
+  "key_upstream_gaps": [],
+  "current_decisions": [],
+  "superseded_decisions": [],
+  "source_refs": ["E-01"]
+}

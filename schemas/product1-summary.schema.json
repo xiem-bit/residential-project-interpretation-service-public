@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/product1-summary.schema.json",
+  "type": "object",
+  "required": ["schema", "project_id", "input_freeze_id", "status", "market_judgments", "competitors", "competition_problem", "effective_boundary", "sc_candidates", "client_visible_conclusions", "gap_refs", "stop_search"],
+  "properties": {
+    "schema": {"const": "residential.product1_competition_study.v0.2"},
+    "status": {"enum": ["product1_complete", "returned_for_research"]},
+    "competitors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "role", "role_boundary", "why_chosen", "substitution_basis", "strengths", "tradeoffs", "evidence_refs"],
+        "properties": {
+          "role": {"enum": ["direct", "partial", "indirect", "internal_substitute", "non_competitor"]}
+        }
+      }
+    },
+    "sc_candidates": {"type": "array", "minItems": 3},
+    "client_visible_conclusions": {"type": "array", "minItems": 1}
+  }
+}

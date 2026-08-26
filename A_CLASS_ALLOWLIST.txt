@@ -1,5 +1,6 @@
-# Exact private-baseline files allowed into the Slice 3 candidate.
-# Files created during Slice 3 packaging are listed separately in PUBLIC_CORE_MANIFEST.json.
+# Historical RC1 allowlist. It remains immutable evidence of the v0.1 extraction and no
+# longer defines the v0.2 production-path package. Current authority mapping is recorded
+# in PRODUCTION_AUTHORITY_MAP.json and current source inventory in RELEASE_MANIFEST.json.
 fixtures/client-review/external-resource.md
 fixtures/client-review/html-comment.md
 fixtures/client-review/long-content.md

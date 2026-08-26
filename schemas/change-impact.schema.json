@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/change-impact.schema.json",
+  "type": "object",
+  "required": ["schema", "project_id", "current_semantic_version", "status", "changes"],
+  "properties": {
+    "schema": {"const": "residential.change_impact_registry.v0.2"},
+    "status": {"enum": ["no_change_recorded", "reprojection_in_progress", "reprojection_complete", "human_exception_required"]},
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "trigger", "old_judgment", "new_judgment", "reason", "from_semantic_version", "to_semantic_version", "affected_refs", "unaffected_outputs", "status", "verification_refs"]
+      }
+    }
+  }
+}

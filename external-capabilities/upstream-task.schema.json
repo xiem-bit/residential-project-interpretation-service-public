@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residential/upstream-task.schema.json",
+  "type": "object",
+  "required": ["schema", "request_id", "project_id", "business_question", "judgment_gap", "owner", "requested_evidence", "object_scope", "time_scope", "downstream_destination", "quota", "stop_condition", "authorization", "status"],
+  "properties": {
+    "schema": {"const": "residential.upstream_task.v0.2"},
+    "owner": {"enum": ["client_material_owner", "public_information_owner", "institutional_data_owner", "residential_production_owner", "expert_owner"]},
+    "authorization": {"enum": ["confirmed", "synthetic_fixture"]},
+    "status": {"enum": ["pending", "in_progress", "fulfilled", "partial", "gap", "stopped"]}
+  }
+}
