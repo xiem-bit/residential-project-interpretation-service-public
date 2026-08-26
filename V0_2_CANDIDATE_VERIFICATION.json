@@ -25,6 +25,18 @@
     "private_path_and_secret_scan": {"status": "pass"},
     "release_manifest": {"status": "pass", "files": 191},
     "third_party_inventory": {"status": "pass", "packages": 116},
+    "clean_clone": {
+      "status": "pass",
+      "commit": "9ea3b6428120416ef87543866292ee32f864863f",
+      "python_public_tests": 79,
+      "tutorial_and_revision": "pass"
+    },
+    "github_actions_candidate_branch": {
+      "status": "pass",
+      "commit": "9ea3b6428120416ef87543866292ee32f864863f",
+      "run_id": 32929706510,
+      "url": "https://github.com/xiem-bit/residential-project-interpretation-service-public/actions/runs/32929706510"
+    },
     "historical_rc1_carrier_regression": {
       "status": "pass",
       "fictional_e2e": "pass",
@@ -47,7 +59,6 @@
     "business_and_carrier_status_separation": "pass"
   },
   "remaining_release_gates": {
-    "clean_clone_ci": "pending_after_candidate_commit",
     "independent_participant": "not_run",
     "zero_content_guidance": "not_run",
     "private_hidden_answer_blind_review": "not_run",
