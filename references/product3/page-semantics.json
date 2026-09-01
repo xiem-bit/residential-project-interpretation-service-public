@@ -1,0 +1,122 @@
+{
+  "schema": "residential.product3_page_semantics.v1",
+  "concept_rule": "page_responsibility_is_a_field_of_page_semantics_not_a_parallel_library",
+  "default_priority": "complete_gold_combination_then_project_specific_recomposition",
+  "groups": [
+    {"id": "P3-G0-FRAME", "name": "叙事定题与转场", "responsibility": "定题、换章和收口，不承担中段论证"},
+    {"id": "P3-G1-OBSERVE", "name": "研究与选择局面", "responsibility": "说明判断从哪里来，并把真实替代放进同一选择"},
+    {"id": "P3-G2-SYNTHESIZE", "name": "竞争推导与价值收敛", "responsibility": "从同口径比较收敛为核心判断、价值锚点和竞争力导航"},
+    {"id": "P3-G3-PROVE", "name": "竞争力展开与画面证明", "responsibility": "先讲客户获得和项目机制，再用事实、图像或UE界面证明"},
+    {"id": "P3-G4-ROUTE", "name": "家庭分流与产品路径", "responsibility": "把家庭处境、比较标准、产品答案和展示内容串成可讲路径"},
+    {"id": "P3-G5-SCOPE", "name": "制作范围与推荐机制", "responsibility": "把已成立语义投影为UE制作范围、内容分流和推荐机制"}
+  ],
+  "semantics": [
+    {
+      "id": "P3-COVER-CLAIM", "name": "封面主张", "group_id": "P3-G0-FRAME",
+      "responsibility": "用一句话锁定项目要解决的购买问题",
+      "use_when": "统一语义核已经形成价值锚点", "avoid_when": "仍在罗列资源，尚未收敛购买问题",
+      "required_content": "项目名、价值主张、方案定位", "visual_structure": "深色整页、一个视觉重心、少量文字",
+      "speaking_action": "定题，说明解决对象，进入项目理解", "evidence_responsibility": "主张必须被后文完整承接", "transition": "进入客户声音或选择局面"
+    },
+    {
+      "id": "P3-SECTION-PROMISE", "name": "章节切换", "group_id": "P3-G0-FRAME",
+      "responsibility": "告诉读者下一章要回答什么", "use_when": "章节之间需要切换购买问题与回答方式",
+      "required_content": "章节号、章节承诺、读者获得", "visual_structure": "深色整页、超大标题、单一强调线",
+      "speaking_action": "回收上一章，提出下一问，说明回答路径", "evidence_responsibility": "承诺必须与后续页面职责一致", "transition": "下一页立即开始回答"
+    },
+    {
+      "id": "P3-RESEARCH-CREDIBILITY", "name": "检索能力与研究底盘", "group_id": "P3-G1-OBSERVE",
+      "responsibility": "说明公开渠道与定向研究怎样形成可判断底盘", "use_when": "业务需要前台说明观察覆盖且证据边界允许",
+      "avoid_when": "只有日志、后台状态或未经裁定的候选数据", "required_content": "观察覆盖、筛选过程、可用判断与真实口径",
+      "visual_structure": "关系图或少量数据与结论", "speaking_action": "说明观察范围、筛选方式和可支持的判断",
+      "evidence_responsibility": "来源等级和样本边界真实，治理细节留后台", "transition": "进入客户声音或选择局面"
+    },
+    {
+      "id": "P3-BUYER-VOICE", "name": "公开客户声音", "group_id": "P3-G1-OBSERVE",
+      "responsibility": "用可追溯声音揭示选择条件", "use_when": "存在合规、可追溯且允许前台使用的声音",
+      "avoid_when": "把个别表达写成普遍比例或成交归因", "required_content": "必要语境、选择条件、来源邻接和一句收敛判断",
+      "visual_structure": "多条声音按选择条件分组", "speaking_action": "让客户开口，分类条件，提出项目要回答的问题",
+      "evidence_responsibility": "样本不足时减量并说明边界，不补造", "transition": "进入客户选择局面"
+    },
+    {
+      "id": "P3-CHOICE-SITUATION", "name": "客户选择局面", "group_id": "P3-G1-OBSERVE",
+      "responsibility": "把不同现实条件放入同一比较", "use_when": "竞品角色、购买任务与项目承接已经闭合",
+      "required_content": "本案、三至五个现实条件或替代答案、共同选择问题", "visual_structure": "中心项目与周边替代，或连续选择路径",
+      "speaking_action": "摆出现实处境，承认替代，定义同一场比较", "evidence_responsibility": "条件来自项目研究或明确假设", "transition": "进入竞争地图"
+    },
+    {
+      "id": "P3-COMPETITION-MAP", "name": "竞争地图", "group_id": "P3-G2-SYNTHESIZE",
+      "responsibility": "承认替代选择并重设比较标准", "use_when": "区域、规划、产品或生活任务存在同口径关系",
+      "avoid_when": "只有距离而没有购买任务和比较结论", "required_content": "本案、真实替代、客户关心、相对关系与本案机会",
+      "visual_structure": "地图或关系底图加比较结论", "speaking_action": "承认对手，统一口径，重设标准",
+      "evidence_responsibility": "位置、竞品角色、距离和事实可追溯", "transition": "进入下一张地图或优势收敛"
+    },
+    {
+      "id": "P3-ADVANTAGE-SYNTHESIS", "name": "优势收敛", "group_id": "P3-G2-SYNTHESIZE",
+      "responsibility": "把多张竞争地图压缩成三至四条判断", "use_when": "竞争地图已经充分，准备进入价值锚点",
+      "required_content": "判断名称、项目承接、客户获得和相对竞争关系", "visual_structure": "三至四列递进关系",
+      "speaking_action": "回收比较，命名优势，说明共同覆盖", "evidence_responsibility": "每条都追溯到事实、竞品和客户选择", "transition": "进入价值锚点"
+    },
+    {
+      "id": "P3-VALUE-ANCHOR", "name": "价值锚点", "group_id": "P3-G2-SYNTHESIZE",
+      "responsibility": "给出全篇统一的购买价值", "use_when": "超级竞争力已经通过业务裁定",
+      "required_content": "价值锚点、三至四条竞争力和共同作用", "visual_structure": "整页价值主张与三项支撑",
+      "speaking_action": "一句命名，三项支撑，形成购买理由", "evidence_responsibility": "不以生活方式文案填补事实和比较断层", "transition": "进入UE解决方案"
+    },
+    {
+      "id": "P3-SC-OVERVIEW", "name": "超级竞争力总览", "group_id": "P3-G2-SYNTHESIZE",
+      "responsibility": "展示三至四条竞争力怎样共同作用", "use_when": "需要在展开前导航或在展开后收束",
+      "required_content": "编号、名称、客户获得和项目机制", "visual_structure": "三至四项同一层级的清晰导航",
+      "speaking_action": "总览，交代分工，指向逐条证明", "evidence_responsibility": "数量服从当前项目机制，不机械固定", "transition": "进入第一条竞争力"
+    },
+    {
+      "id": "P3-SC-SCENE", "name": "竞争力场景", "group_id": "P3-G3-PROVE",
+      "responsibility": "先讲客户获得与项目机制", "use_when": "每条超级竞争力的开场",
+      "required_content": "场景主张、二至四个推理动作和项目承接", "visual_structure": "一幅主关系配少量解释",
+      "speaking_action": "说客户处境、项目承接和新判断", "evidence_responsibility": "主张必须由本页下半部或下一页证明", "transition": "进入证明或全屏UE"
+    },
+    {
+      "id": "P3-SC-PROOF", "name": "竞争力证明", "group_id": "P3-G3-PROVE",
+      "responsibility": "用图像、比较或系统界面证明上一页", "use_when": "存在合规图片、系统图或可前台比较",
+      "required_content": "证明对象、新增图证、解释和结论", "visual_structure": "单幅主图、双图或图表关系",
+      "speaking_action": "指出证据、解释关系、回扣竞争力", "evidence_responsibility": "示意与实景状态真实；相邻证明页必须新增判断或图证", "transition": "下一条竞争力或家庭路径"
+    },
+    {
+      "id": "P3-UE-FULLSCREEN", "name": "全屏UE展示", "group_id": "P3-G3-PROVE",
+      "responsibility": "让未来案场体验一眼可见", "use_when": "已有系统界面、可信线稿或业务复核画面",
+      "avoid_when": "只有甲方原始截图或画面与本案不一致", "required_content": "主画面、一级菜单、二级内容和销售动作",
+      "visual_structure": "全屏底图、双侧信息层、底部菜单", "speaking_action": "定位视角、演示操作、说明判断变化",
+      "evidence_responsibility": "准确说明未来示意、案例参考或本案设计状态", "transition": "进入下一证明或家庭路径"
+    },
+    {
+      "id": "P3-FAMILY-SEGMENT", "name": "家庭分类", "group_id": "P3-G4-ROUTE",
+      "responsibility": "说明不同家庭为什么需要不同路径", "use_when": "家庭判断达到比较解释或项目匹配强度",
+      "required_content": "家庭处境、改善目的、产品区间、核心取舍和相符人物图", "visual_structure": "三至四幅人物与任务",
+      "speaking_action": "区分家庭、说明选择任务、指向分路径", "evidence_responsibility": "不以面积直接推导家庭阶段；人物图必须合规登记", "transition": "进入第一类家庭路径"
+    },
+    {
+      "id": "P3-FAMILY-PATH", "name": "家庭路径", "group_id": "P3-G4-ROUTE",
+      "responsibility": "把处境、选择、产品与展示串起来", "use_when": "家庭任务、抗性、产品和展示已经连通",
+      "required_content": "现状、促成与阻断、替代、项目获得和展示证明", "visual_structure": "连续行动路径配一至两幅场景图",
+      "speaking_action": "说处境、选择门槛和本案怎样证明", "evidence_responsibility": "销售解释不伪装成真实客户旅程", "transition": "下一类家庭或UE蓝图"
+    },
+    {
+      "id": "P3-UE-BLUEPRINT", "name": "UE制作蓝图", "group_id": "P3-G5-SCOPE",
+      "responsibility": "把已成立语义投影为制作范围", "use_when": "业务语义冻结且范围可供采购或生产理解",
+      "required_content": "通用接待、分支内容、交互动作、推荐分流和素材边界", "visual_structure": "一条共享底座与三类分支",
+      "speaking_action": "回收业务目标、展开制作模块、说明共用与分支", "evidence_responsibility": "区分已具备、拟制作和待素材，不冒充已开发系统", "transition": "进入全屏UE或AI推荐"
+    },
+    {
+      "id": "P3-AI-RECOMMENDER", "name": "AI推荐官", "group_id": "P3-G5-SCOPE",
+      "responsibility": "说明推荐分流怎样打开适合内容", "use_when": "推荐官已启用且选择条件与内容分流闭合",
+      "required_content": "输入条件、判断逻辑、打开内容和人工接待衔接", "visual_structure": "条件与逻辑连接桌面结果和手机延续",
+      "speaking_action": "提出条件、演示分流、说明顾问如何继续", "evidence_responsibility": "不夸大模型能力，不把概念演示写成已上线效果", "transition": "进入最终收口"
+    },
+    {
+      "id": "P3-CLOSING-OUTCOME", "name": "最终收口", "group_id": "P3-G0-FRAME",
+      "responsibility": "把方案压缩成甲方能记住的结果", "use_when": "逻辑和制作范围已经闭合",
+      "required_content": "最终主张、二至四个结果和价值锚点回扣", "visual_structure": "深色整页与少量结果关系",
+      "speaking_action": "回收购买问题、展示方法和最终结果", "evidence_responsibility": "用可兑现表达，不虚构客户采纳或业务成效", "transition": "结束或进入标准交付章节"
+    }
+  ]
+}

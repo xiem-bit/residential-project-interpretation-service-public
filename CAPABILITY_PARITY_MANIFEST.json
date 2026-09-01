@@ -1,7 +1,7 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "p5_gold_complete_product3_gold_pending_not_released",
+  "status": "product3_product5_gold_complete_product4_learning_install_pending_not_released",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
     "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
@@ -165,12 +165,11 @@
       "domain": "product3",
       "classification": "private_replaced",
       "source_authority_ids": ["product3_strategy_and_ue", "product3_gold_assembly"],
-      "public_targets": ["core/06-产物3从竞争策略到UE解决方案.md", "templates/产物3第二章生产消费合同.template.json", "templates/产物3第三章生产消费合同.template.json", "adapters/presentation/README.md"],
-      "planned_public_targets": ["references/product3", "examples/gold-product3-public-safe"],
+      "public_targets": ["core/06-产物3从竞争策略到UE解决方案.md", "templates/产物3第二章生产消费合同.template.json", "templates/产物3第三章生产消费合同.template.json", "references/product3", "examples/gold-product3-public-safe", "adapters/presentation/README.md"],
       "load_condition": "product3_enabled_or_material_structure_change",
       "acceptance": "页面语义、视觉结构、组合范式、删除禁用、首稿完整度和可编辑PPT形成完整公开参考",
-      "status": "public_safe_derivative_required",
-      "gap": "缺公开安全页面语义库、组合黄金PPT、删除禁用和首稿完整度资产"
+      "status": "implemented_current",
+      "gap": ""
     },
     {
       "id": "CAP-011",
@@ -273,10 +272,9 @@
     }
   ],
   "release_blockers": [
-    "CAP-010",
     "CAP-011",
     "CAP-013",
     "CAP-016"
   ],
-  "next_slice": "product3_public_safe_page_semantics_and_gold_pptx"
+  "next_slice": "product4_single_tree_gold_and_learning_feedback_references"
 }

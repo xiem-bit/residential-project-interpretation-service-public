@@ -1,0 +1,371 @@
+{"kind":"deck","id":"pr/lpookb","name":"Deck"}
+{"kind":"layout","layoutId":"c3144588-fd13-4387-86e2-6c157bfa5d98","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"fa25bb8e-cb16-4681-af2a-31fa8a41f7fa","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/c6ct6n","slide":1,"title":"青岚澄境 · 全量虚构","textShapes":5}
+{"kind":"shape","id":"sh/76tgr654","slide":1,"name":"box","bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/m5kzy1oj","slide":1,"name":"text","text":"青岚澄境 · 全量虚构","textPreview":"青岚澄境 · 全量虚构","textChars":11,"textLines":1,"bbox":[72,82,380,28]}
+{"kind":"textbox","id":"sh/hcvyxgn6","slide":1,"name":"deck-title","text":"双节点生活里的\n低密改善选择","textPreview":"双节点生活里的 | 低密改善选择","textChars":14,"textLines":2,"bbox":[72,145,700,190]}
+{"kind":"textbox","id":"sh/wbmh4v6l","slide":1,"name":"deck-subtitle","text":"住宅UE售前解决方案与销讲展示策略","textPreview":"住宅UE售前解决方案与销讲展示策略","textChars":17,"textLines":1,"bbox":[76,365,620,46]}
+{"kind":"shape","id":"sh/vatgvq50","slide":1,"name":"relationship-line","bbox":[76,454,290,0]}
+{"kind":"textbox","id":"sh/u9kz2lov","slide":1,"name":"text","text":"让位置可比较，让低密可体验，让家庭选择可推进","textPreview":"让位置可比较，让低密可体验，让家庭选择可推进","textChars":22,"textLines":1,"bbox":[76,482,650,42]}
+{"kind":"textbox","id":"sh/50vy10ni","slide":1,"name":"text","text":"公开安全黄金参考","textPreview":"公开安全黄金参考","textChars":8,"textLines":1,"bbox":[1010,646,200,22]}
+{"kind":"image","id":"im/h0fedkzq","slide":1,"name":"","alt":"虚构澄川东岸城市与低密住区鸟瞰","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/c6ct6n","slide":1,"text":"[Sources]\n- examples/production-path-tutorial/expected/semantic-core.json\n- tools/product5_shell/assets-register.json — P5-GEN-001"}
+{"kind":"slide","id":"sl/crxi6i","slide":2,"title":"客户声音","textShapes":15}
+{"kind":"textbox","id":"sh/76dgvidw","slide":2,"name":"eyebrow","text":"客户声音","textPreview":"客户声音","textChars":4,"textLines":1,"bbox":[60,46,460,24]}
+{"kind":"textbox","id":"sh/s7mh4neh","slide":2,"name":"slide-title","text":"六条有限声音只承担一项职责：识别三项选择条件","textPreview":"六条有限声音只承担一项职责：识别三项选择条件","textChars":22,"textLines":1,"bbox":[60,84,1080,96]}
+{"kind":"textbox","id":"sh/t8vyxsv2","slide":2,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/ihkzydwf","slide":2,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/j2tgrydk","slide":2,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/k32h03e5","slide":2,"name":"page-number","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"shape","id":"sh/54byt8vq","slide":2,"name":"relationship-line","bbox":[426,196,0,392]}
+{"kind":"shape","id":"sh/adkfutw3","slide":2,"name":"relationship-line","bbox":[816,196,0,392]}
+{"kind":"textbox","id":"sh/vetgnydo","slide":2,"name":"text","text":"家庭时间","textPreview":"家庭时间","textChars":4,"textLines":1,"bbox":[60,196,330,34]}
+{"kind":"textbox","id":"sh/z6pwzqhg","slide":2,"name":"text","text":"“房子可以远一点，但每天的时间不能完全押在一条路上。”","textPreview":"“房子可以远一点，但每天的时间不能完全押在一条路上。”","textChars":27,"textLines":1,"bbox":[60,260,330,112]}
+{"kind":"shape","id":"sh/e5gv6l0v","slide":2,"name":"relationship-line","bbox":[60,392,100,0]}
+{"kind":"textbox","id":"sh/187e10zm","slide":2,"name":"text","text":"“学校如果只是规划，就别当成我买房的理由。”","textPreview":"“学校如果只是规划，就别当成我买房的理由。”","textChars":22,"textLines":1,"bbox":[60,422,330,112]}
+{"kind":"textbox","id":"sh/07yd8vi1","slide":2,"name":"text","text":"低密怎样被使用","textPreview":"低密怎样被使用","textChars":7,"textLines":1,"bbox":[450,196,330,34]}
+{"kind":"textbox","id":"sh/nu9w3ahc","slide":2,"name":"text","text":"“如果只是环境好，我不会为了低密多走那么远。”","textPreview":"“如果只是环境好，我不会为了低密多走那么远。”","textChars":23,"textLines":1,"bbox":[450,260,330,112]}
+{"kind":"shape","id":"sh/m9gva50r","slide":2,"name":"relationship-line","bbox":[450,392,100,0]}
+{"kind":"textbox","id":"sh/9wre50zi","slide":2,"name":"text","text":"“园林和地下空间，最好让我一次看懂怎么走、怎么用。”","textPreview":"“园林和地下空间，最好让我一次看懂怎么走、怎么用。”","textChars":26,"textLines":1,"bbox":[450,422,330,112]}
+{"kind":"textbox","id":"sh/ovixcvix","slide":2,"name":"text","text":"家庭弹性与等待","textPreview":"家庭弹性与等待","textChars":7,"textLines":1,"bbox":[840,196,330,34]}
+{"kind":"textbox","id":"sh/3y5wr6h8","slide":2,"name":"text","text":"“父母一年会来住几个月，最好各自有卫生间。”","textPreview":"“父母一年会来住几个月，最好各自有卫生间。”","textChars":22,"textLines":1,"bbox":[840,260,330,112]}
+{"kind":"shape","id":"sh/2dwvy10n","slide":2,"name":"relationship-line","bbox":[840,392,100,0]}
+{"kind":"textbox","id":"sh/6tkz69kb","slide":2,"name":"text","text":"“价格还没出来，我不着急定，多看看也没有损失。”","textPreview":"“价格还没出来，我不着急定，多看看也没有损失。”","textChars":24,"textLines":1,"bbox":[840,422,330,112]}
+{"kind":"textbox","id":"sh/7udgze1w","slide":2,"name":"text","text":"这些声音只揭示比较机制：路径要同时成立、低密要进入每天、家庭空间要先关闭适配。","textPreview":"这些声音只揭示比较机制：路径要同时成立、低密要进入每天、家庭空间要先关闭适配。","textChars":39,"textLines":1,"bbox":[60,606,1090,36]}
+{"kind":"notes","id":"nt/crxi6i","slide":2,"text":"[Sources]\n- examples/production-path-tutorial/input/customer-voices.md — six synthetic voices"}
+{"kind":"slide","id":"sl/vo6e0i","slide":3,"title":"客户选择局面","textShapes":14}
+{"kind":"textbox","id":"sh/hov6lwbe","slide":3,"name":"eyebrow","text":"客户选择局面","textPreview":"客户选择局面","textChars":6,"textLines":1,"bbox":[60,46,460,24]}
+{"kind":"textbox","id":"sh/ulknahcn","slide":3,"name":"slide-title","text":"本案面对三套成立的选择逻辑","textPreview":"本案面对三套成立的选择逻辑","textChars":13,"textLines":1,"bbox":[60,84,1080,96]}
+{"kind":"textbox","id":"sh/vmtojmt8","slide":3,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/4rm5grup","slide":3,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/5sv6pwba","slide":3,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/ip4ne1cj","slide":3,"name":"page-number","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"shape","id":"sh/3qdon6t4","slide":3,"name":"relationship-line","bbox":[280,244,360,100]}
+{"kind":"shape","id":"sh/kvi547ul","slide":3,"name":"relationship-line","bbox":[640,244,360,100]}
+{"kind":"shape","id":"sh/lwrmdcv6","slide":3,"name":"relationship-line","bbox":[640,344,0,206]}
+{"kind":"shape","id":"sh/t0jm1wni","slide":3,"name":"box","bbox":[80,188,340,160]}
+{"kind":"textbox","id":"sh/sfalsr6x","slide":3,"name":"text","text":"北湾府","textPreview":"北湾府","textChars":3,"textLines":1,"bbox":[110,214,280,36]}
+{"kind":"textbox","id":"sh/re14zm5c","slide":3,"name":"text","text":"成熟轨道与配套\n降低每天的不确定性","textPreview":"成熟轨道与配套 | 降低每天的不确定性","textChars":17,"textLines":2,"bbox":[110,264,280,70]}
+{"kind":"shape","id":"sh/6ds3qhor","slide":3,"name":"box","bbox":[860,188,340,160]}
+{"kind":"textbox","id":"sh/14jm5wne","slide":3,"name":"text","text":"栖霞里","textPreview":"栖霞里","textChars":3,"textLines":1,"bbox":[890,214,280,36]}
+{"kind":"textbox","id":"sh/g3alwr6t","slide":3,"name":"text","text":"更低容积率与已开放会所\n让低密体验现在可见","textPreview":"更低容积率与已开放会所 | 让低密体验现在可见","textChars":21,"textLines":2,"bbox":[890,264,280,70]}
+{"kind":"shape","id":"sh/f2143m5o","slide":3,"name":"box","bbox":[470,284,340,142]}
+{"kind":"textbox","id":"sh/e1s3u1o3","slide":3,"name":"text","text":"青岚澄境","textPreview":"青岚澄境","textChars":4,"textLines":1,"bbox":[510,310,260,40]}
+{"kind":"textbox","id":"sh/p83m9gnq","slide":3,"name":"text","text":"双节点路径 × 连续归家 × 家庭弹性","textPreview":"双节点路径 × 连续归家 × 家庭弹性","textChars":19,"textLines":1,"bbox":[500,368,280,30]}
+{"kind":"shape","id":"sh/o7ul0b65","slide":3,"name":"box","bbox":[470,500,340,110]}
+{"kind":"textbox","id":"sh/8nmxsjid","slide":3,"name":"text","text":"继续居住并等待","textPreview":"继续居住并等待","textChars":7,"textLines":1,"bbox":[500,520,280,30]}
+{"kind":"textbox","id":"sh/9ovelozy","slide":3,"name":"text","text":"保留现金流与选择权","textPreview":"保留现金流与选择权","textChars":9,"textLines":1,"bbox":[500,568,280,24]}
+{"kind":"textbox","id":"sh/mlkfq90n","slide":3,"name":"text","text":"本案必须同时回答：为什么值得进入、凭什么赢得比较、现在还能先推进什么。","textPreview":"本案必须同时回答：为什么值得进入、凭什么赢得比较、现在还能先推进什么。","textChars":35,"textLines":1,"bbox":[60,625,1100,32]}
+{"kind":"notes","id":"nt/vo6e0i","slide":3,"text":"[Sources]\n- examples/production-path-tutorial/expected/product1-competition-study.md\n- examples/production-path-tutorial/expected/product2-buyer-decision-study.md"}
+{"kind":"slide","id":"sl/8jf33w","slide":4,"title":"竞争地图 01 · 进入候选","textShapes":11}
+{"kind":"textbox","id":"sh/bq1s76xg","slide":4,"name":"eyebrow","text":"竞争地图 01 · 进入候选","textPreview":"竞争地图 01 · 进入候选","textChars":14,"textLines":1,"bbox":[60,46,460,24]}
+{"kind":"textbox","id":"sh/crat0be1","slide":4,"name":"slide-title","text":"两条就业方向同时可接受，新区低密才有资格进入家庭选择","textPreview":"两条就业方向同时可接受，新区低密才有资格进入家庭选择","textChars":26,"textLines":1,"bbox":[60,84,1080,96]}
+{"kind":"textbox","id":"sh/dsja9gfm","slide":4,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/2l8bu1gz","slide":4,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/3mhs36xk","slide":4,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/onatwbep","slide":4,"name":"page-number","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"shape","id":"sh/poja5gfa","slide":4,"name":"relationship-line","bbox":[290,250,280,90]}
+{"kind":"shape","id":"sh/mhcb6lw3","slide":4,"name":"relationship-line","bbox":[570,260,360,80]}
+{"kind":"shape","id":"sh/7ilsfqxo","slide":4,"name":"relationship-line","bbox":[570,340,0,210]}
+{"kind":"shape","id":"sh/fipw7y9o","slide":4,"name":"box","bbox":[178,198,220,96]}
+{"kind":"textbox","id":"sh/ehgvetsj","slide":4,"name":"text","text":"老城就业方向","textPreview":"老城就业方向","textChars":6,"textLines":1,"bbox":[198,226,180,36]}
+{"kind":"shape","id":"sh/1k7e98ru","slide":4,"name":"box","bbox":[820,198,260,96]}
+{"kind":"textbox","id":"sh/0jydg3a9","slide":4,"name":"text","text":"东部产业园方向","textPreview":"东部产业园方向","textChars":7,"textLines":1,"bbox":[845,226,210,36]}
+{"kind":"shape","id":"sh/nm9wbi90","slide":4,"name":"box","bbox":[458,294,224,110]}
+{"kind":"textbox","id":"sh/2l0vidsf","slide":4,"name":"text","text":"家庭时间表","textPreview":"家庭时间表","textChars":5,"textLines":1,"bbox":[486,326,168,42]}
+{"kind":"shape","id":"sh/pored8r6","slide":4,"name":"box","bbox":[430,510,280,96]}
+{"kind":"textbox","id":"sh/onidk3al","slide":4,"name":"text","text":"青岚澄境","textPreview":"青岚澄境","textChars":4,"textLines":1,"bbox":[470,528,200,34]}
+{"kind":"textbox","id":"sh/ba9wfi9w","slide":4,"name":"text","text":"1.45低密底盘","textPreview":"1.45低密底盘","textChars":8,"textLines":1,"bbox":[470,568,200,24]}
+{"kind":"textbox","id":"sh/a90vmdsb","slide":4,"name":"text","text":"北湾府继续占据成熟轨道优势；本案用“双向路径＋低密所得”重设候选标准。","textPreview":"北湾府继续占据成熟轨道优势；本案用“双向路径＋低密所得”重设候选标准。","textChars":35,"textLines":1,"bbox":[760,448,390,112]}
+{"kind":"notes","id":"nt/8jf33w","slide":4,"text":"[Sources]\n- examples/production-path-tutorial/expected/product3-chapter2-contract.json — DIM-ACCESS\n- examples/production-path-tutorial/expected/product1-competition-study.md"}
+{"kind":"slide","id":"sl/bfs9da","slide":5,"title":"竞争地图 02 · 赢得比较","textShapes":20}
+{"kind":"textbox","id":"sh/v2pozmtk","slide":5,"name":"eyebrow","text":"竞争地图 02 · 赢得比较","textPreview":"竞争地图 02 · 赢得比较","textChars":14,"textLines":1,"bbox":[60,46,460,24]}
+{"kind":"textbox","id":"sh/g3i5sra5","slide":5,"name":"slide-title","text":"会所可见赢在当下，连续归家才能把低密价值带进每天","textPreview":"会所可见赢在当下，连续归家才能把低密价值带进每天","textChars":24,"textLines":1,"bbox":[60,84,1080,96]}
+{"kind":"textbox","id":"sh/h4r61wbq","slide":5,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/i50nu1sb","slide":5,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/3q9o36tw","slide":5,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/4ri5wba1","slide":5,"name":"page-number","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"textbox","id":"sh/5sr65gbm","slide":5,"name":"text","text":"栖霞里","textPreview":"栖霞里","textChars":3,"textLines":1,"bbox":[70,205,280,38]}
+{"kind":"textbox","id":"sh/y9wnihsr","slide":5,"name":"text","text":"已开放会所","textPreview":"已开放会所","textChars":5,"textLines":1,"bbox":[70,254,280,58]}
+{"kind":"textbox","id":"sh/ja54r2tc","slide":5,"name":"text","text":"当前体验更确定","textPreview":"当前体验更确定","textChars":7,"textLines":1,"bbox":[70,328,280,28]}
+{"kind":"textbox","id":"sh/3u1g7y5o","slide":5,"name":"text","text":"青岚澄境","textPreview":"青岚澄境","textChars":4,"textLines":1,"bbox":[850,205,300,38]}
+{"kind":"textbox","id":"sh/2tszyto3","slide":5,"name":"text","text":"连续归家","textPreview":"连续归家","textChars":4,"textLines":1,"bbox":[850,254,300,58]}
+{"kind":"textbox","id":"sh/pwjy9onu","slide":5,"name":"text","text":"每天经过、随时使用","textPreview":"每天经过、随时使用","textChars":9,"textLines":1,"bbox":[850,328,300,28]}
+{"kind":"shape","id":"sh/ovah0369","slide":5,"name":"relationship-line","bbox":[180,490,860,0]}
+{"kind":"shape","id":"sh/fqhg3e5c","slide":5,"name":"box","bbox":[120,444,128,92]}
+{"kind":"textbox","id":"sh/ep8zu9o7","slide":5,"name":"text","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[132,458,104,20]}
+{"kind":"textbox","id":"sh/1szy5oni","slide":5,"name":"text","text":"到达","textPreview":"到达","textChars":2,"textLines":1,"bbox":[132,485,104,28]}
+{"kind":"shape","id":"sh/grqhwj6x","slide":5,"name":"box","bbox":[400,444,128,92]}
+{"kind":"textbox","id":"sh/rmhgzepg","slide":5,"name":"text","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[412,458,104,20]}
+{"kind":"textbox","id":"sh/618fq9ov","slide":5,"name":"text","text":"首层园林","textPreview":"首层园林","textChars":4,"textLines":1,"bbox":[412,485,104,28]}
+{"kind":"shape","id":"sh/uxozi98n","slide":5,"name":"box","bbox":[680,444,128,92]}
+{"kind":"textbox","id":"sh/vyx0be98","slide":5,"name":"text","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[692,458,104,20]}
+{"kind":"textbox","id":"sh/wz6hkzqt","slide":5,"name":"text","text":"架空层","textPreview":"架空层","textChars":3,"textLines":1,"bbox":[692,485,104,28]}
+{"kind":"shape","id":"sh/hkfid4re","slide":5,"name":"box","bbox":[960,444,128,92]}
+{"kind":"textbox","id":"sh/ilozm98z","slide":5,"name":"text","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[972,458,104,20]}
+{"kind":"textbox","id":"sh/jmh0fe9k","slide":5,"name":"text","text":"地下会所","textPreview":"地下会所","textChars":4,"textLines":1,"bbox":[972,485,104,28]}
+{"kind":"textbox","id":"sh/4nqhojq5","slide":5,"name":"text","text":"本案承认对手的现时体验优势，以高频日常使用重设低密比较标准。","textPreview":"本案承认对手的现时体验优势，以高频日常使用重设低密比较标准。","textChars":30,"textLines":1,"bbox":[160,592,960,40]}
+{"kind":"notes","id":"nt/bfs9da","slide":5,"text":"[Sources]\n- examples/production-path-tutorial/expected/product3-chapter2-contract.json — DIM-CONTINUITY\n- examples/production-path-tutorial/expected/product1-competition-study.md"}
+{"kind":"slide","id":"sl/ptpfla","slide":6,"title":"竞争地图 03 · 推进行动","textShapes":12}
+{"kind":"textbox","id":"sh/xgry9obq","slide":6,"name":"eyebrow","text":"竞争地图 03 · 推进行动","textPreview":"竞争地图 03 · 推进行动","textChars":14,"textLines":1,"bbox":[60,46,460,24]}
+{"kind":"textbox","id":"sh/ad0ze9cf","slide":6,"name":"slide-title","text":"价格未公布时，先关闭空间适配，\n把等待收敛为一次支付判断","textPreview":"价格未公布时，先关闭空间适配， | 把等待收敛为一次支付判断","textChars":28,"textLines":2,"bbox":[60,84,1080,96]}
+{"kind":"textbox","id":"sh/be9g7et0","slide":6,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/kj2hkjuh","slide":6,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/lkbydob2","slide":6,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/yhkzitcb","slide":6,"name":"page-number","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"shape","id":"sh/jitgbytw","slide":6,"name":"relationship-line","bbox":[625,218,0,350]}
+{"kind":"textbox","id":"sh/8n2ho3ut","slide":6,"name":"text","text":"继续等待","textPreview":"继续等待","textChars":4,"textLines":1,"bbox":[100,214,410,52]}
+{"kind":"textbox","id":"sh/tovih8by","slide":6,"name":"text","text":"保留现金流\n保留选择权\n保留正式价格判断","textPreview":"保留现金流 | 保留选择权 | 保留正式价格判断","textChars":20,"textLines":3,"bbox":[100,306,410,174]}
+{"kind":"textbox","id":"sh/1gz2hsfe","slide":6,"name":"text","text":"所有问题都保持开放","textPreview":"所有问题都保持开放","textChars":9,"textLines":1,"bbox":[100,524,410,36]}
+{"kind":"textbox","id":"sh/0f6lo7y9","slide":6,"name":"text","text":"先关闭三项适配","textPreview":"先关闭三项适配","textChars":7,"textLines":1,"bbox":[720,214,430,52]}
+{"kind":"textbox","id":"sh/zexkf2xo","slide":6,"name":"text","text":"两条就业路径是否可接受\n连续归家是否值得高频使用\n双套房与可变书房是否适合家庭","textPreview":"两条就业路径是否可接受 | 连续归家是否值得高频使用 | 双套房与可变书房是否适合家庭","textChars":39,"textLines":3,"bbox":[720,306,430,174]}
+{"kind":"textbox","id":"sh/eto3mxg3","slide":6,"name":"text","text":"价格公布后，只剩支付判断","textPreview":"价格公布后，只剩支付判断","textChars":12,"textLines":1,"bbox":[720,524,430,36]}
+{"kind":"shape","id":"sh/9kz2lcfq","slide":6,"name":"box","bbox":[566,330,118,72]}
+{"kind":"textbox","id":"sh/ojqls7y5","slide":6,"name":"text","text":"先看清","textPreview":"先看清","textChars":3,"textLines":1,"bbox":[579,351,92,30]}
+{"kind":"notes","id":"nt/ptpfla","slide":6,"text":"[Sources]\n- examples/production-path-tutorial/expected/product2-buyer-decision-study.md — continue waiting\n- examples/production-path-tutorial/expected/product3-chapter2-contract.json — DIM-FLEX"}
+{"kind":"slide","id":"sl/ecfd2k","slide":7,"title":"竞争结论","textShapes":18}
+{"kind":"textbox","id":"sh/98jm9432","slide":7,"name":"eyebrow","text":"竞争结论","textPreview":"竞争结论","textChars":4,"textLines":1,"bbox":[60,46,460,24]}
+{"kind":"textbox","id":"sh/m583yp4r","slide":7,"name":"slide-title","text":"三项机制分别承担进入候选、赢得比较与推进行动","textPreview":"三项机制分别承担进入候选、赢得比较与推进行动","textChars":22,"textLines":1,"bbox":[60,84,1080,96]}
+{"kind":"textbox","id":"sh/n6h47ulc","slide":7,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/wva54zmt","slide":7,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/xwjmx43e","slide":7,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/a9sn294n","slide":7,"name":"page-number","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"shape","id":"sh/ba14bel8","slide":7,"name":"box","bbox":[60,218,8,330]}
+{"kind":"textbox","id":"sh/sz6lsfmp","slide":7,"name":"text","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[88,214,300,30]}
+{"kind":"textbox","id":"sh/d0zm1k3u","slide":7,"name":"text","text":"进入候选","textPreview":"进入候选","textChars":4,"textLines":1,"bbox":[88,260,300,48]}
+{"kind":"textbox","id":"sh/xcn6p03m","slide":7,"name":"text","text":"双向就业低密选择","textPreview":"双向就业低密选择","textChars":8,"textLines":1,"bbox":[88,338,300,58]}
+{"kind":"textbox","id":"sh/cbe5wf21","slide":7,"name":"text","text":"两条就业方向与1.45低密底盘共同成立","textPreview":"两条就业方向与1.45低密底盘共同成立","textChars":19,"textLines":1,"bbox":[88,424,300,94]}
+{"kind":"shape","id":"sh/balonalg","slide":7,"name":"box","bbox":[440,218,8,330]}
+{"kind":"textbox","id":"sh/a9cnu54b","slide":7,"name":"text","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[468,214,300,30]}
+{"kind":"textbox","id":"sh/l0n6tk3y","slide":7,"name":"text","text":"赢得比较","textPreview":"赢得比较","textChars":4,"textLines":1,"bbox":[468,260,300,48]}
+{"kind":"textbox","id":"sh/kze50f2d","slide":7,"name":"text","text":"全天候连续归家","textPreview":"全天候连续归家","textChars":7,"textLines":1,"bbox":[468,338,300,58]}
+{"kind":"textbox","id":"sh/ze5orals","slide":7,"name":"text","text":"园林、架空层与会所沿每天行动顺序展开","textPreview":"园林、架空层与会所沿每天行动顺序展开","textChars":18,"textLines":1,"bbox":[468,424,300,94]}
+{"kind":"shape","id":"sh/ydwny5k7","slide":7,"name":"box","bbox":[820,218,8,330]}
+{"kind":"textbox","id":"sh/t476xk3u","slide":7,"name":"text","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[848,214,300,30]}
+{"kind":"textbox","id":"sh/83yp4z29","slide":7,"name":"text","text":"推进行动","textPreview":"推进行动","textChars":4,"textLines":1,"bbox":[848,260,300,48]}
+{"kind":"textbox","id":"sh/s76903al","slide":7,"name":"text","text":"三代弹性空间先验","textPreview":"三代弹性空间先验","textChars":8,"textLines":1,"bbox":[848,338,300,58]}
+{"kind":"textbox","id":"sh/t8fqt8b6","slide":7,"name":"text","text":"先确认双套房与可变书房，再等待正式价格","textPreview":"先确认双套房与可变书房，再等待正式价格","textChars":19,"textLines":1,"bbox":[848,424,300,94]}
+{"kind":"textbox","id":"sh/6l47ytsf","slide":7,"name":"text","text":"三条竞争力分工明确，共同回答同一个购买问题：这套改善能否同时服务家庭时间、每天使用与阶段变化。","textPreview":"三条竞争力分工明确，共同回答同一个购买问题：这套改善能否同时服务家庭时间、每天使用与阶段变化。","textChars":47,"textLines":1,"bbox":[60,590,1100,44]}
+{"kind":"notes","id":"nt/ecfd2k","slide":7,"text":"[Sources]\n- examples/production-path-tutorial/expected/product1-competition-study.md\n- examples/production-path-tutorial/expected/product3-chapter2-contract.json — super_competitiveness"}
+{"kind":"slide","id":"sl/5ujkx8","slide":8,"title":"价值锚点","textShapes":9}
+{"kind":"shape","id":"sh/elkjil8b","slide":8,"name":"box","bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/fmt0r69w","slide":8,"name":"text","text":"价值锚点","textPreview":"价值锚点","textChars":4,"textLines":1,"bbox":[72,74,300,28]}
+{"kind":"textbox","id":"sh/obm1ovqd","slide":8,"name":"value-anchor","text":"澄川东岸双节点生活里，\n把低密归家与三代弹性\n放进同一套日常","textPreview":"澄川东岸双节点生活里， | 把低密归家与三代弹性 | 放进同一套日常","textChars":30,"textLines":3,"bbox":[72,138,760,260]}
+{"kind":"textbox","id":"sh/pcvix0ry","slide":8,"name":"text","text":"双向就业关系","textPreview":"双向就业关系","textChars":6,"textLines":1,"bbox":[76,492,260,32]}
+{"kind":"textbox","id":"sh/29kjml8n","slide":8,"name":"text","text":"连续归家路径","textPreview":"连续归家路径","textChars":6,"textLines":1,"bbox":[370,492,260,32]}
+{"kind":"textbox","id":"sh/3ad0vq9s","slide":8,"name":"text","text":"家庭状态切换","textPreview":"家庭状态切换","textChars":6,"textLines":1,"bbox":[664,492,260,32]}
+{"kind":"textbox","id":"sh/4fihcrq9","slide":8,"name":"text","text":"进入候选","textPreview":"进入候选","textChars":4,"textLines":1,"bbox":[76,540,220,28]}
+{"kind":"textbox","id":"sh/5grilwru","slide":8,"name":"text","text":"赢得比较","textPreview":"赢得比较","textChars":4,"textLines":1,"bbox":[370,540,220,28]}
+{"kind":"textbox","id":"sh/t0fyhojy","slide":8,"name":"text","text":"推进行动","textPreview":"推进行动","textChars":4,"textLines":1,"bbox":[664,540,220,28]}
+{"kind":"textbox","id":"sh/sz6ho3id","slide":8,"name":"text","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1160,676,60,18]}
+{"kind":"image","id":"im/cf61gnyp","slide":8,"name":"","alt":"虚构低密园林与连续公共空间","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/5ujkx8","slide":8,"text":"[Sources]\n- examples/production-path-tutorial/expected/product3-chapter2-contract.json — value_anchor\n- tools/product5_shell/assets-register.json — P5-GEN-002"}
+{"kind":"slide","id":"sl/rajjt8","slide":9,"title":"03","textShapes":7}
+{"kind":"textbox","id":"sh/t8belc32","slide":9,"name":"text","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[74,84,180,100]}
+{"kind":"textbox","id":"sh/650fqhkr","slide":9,"name":"text","text":"住宅UE系统解决方案","textPreview":"住宅UE系统解决方案","textChars":10,"textLines":1,"bbox":[78,215,660,42]}
+{"kind":"textbox","id":"sh/769wj2lw","slide":9,"name":"text","text":"让三条竞争力在案场里\n被看见、被操作、被继续","textPreview":"让三条竞争力在案场里 | 被看见、被操作、被继续","textChars":22,"textLines":2,"bbox":[78,285,900,160]}
+{"kind":"shape","id":"sh/k3ixo7ml","slide":9,"name":"relationship-line","bbox":[80,500,320,0]}
+{"kind":"textbox","id":"sh/l4rehc36","slide":9,"name":"text","text":"下一章直接回答UE怎样证明三条竞争力。","textPreview":"下一章直接回答UE怎样证明三条竞争力。","textChars":19,"textLines":1,"bbox":[78,540,760,36]}
+{"kind":"textbox","id":"sh/yh0fmx4f","slide":9,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/ji9wf2l0","slide":9,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/wfyxknm9","slide":9,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/xgreds3u","slide":9,"name":"page-number","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"notes","id":"nt/rajjt8","slide":9,"text":"[Sources]\n- core/06-产物3从竞争策略到UE解决方案.md"}
+{"kind":"slide","id":"sl/9g872b","slide":10,"title":"超级竞争力总览","textShapes":18}
+{"kind":"textbox","id":"sh/xg3apkjq","slide":10,"name":"eyebrow","text":"超级竞争力总览","textPreview":"超级竞争力总览","textChars":7,"textLines":1,"bbox":[60,46,460,24]}
+{"kind":"textbox","id":"sh/adcru50z","slide":10,"name":"slide-title","text":"三条竞争力各自完成一次购买推进，UE只负责把它们证明清楚","textPreview":"三条竞争力各自完成一次购买推进，UE只负责把它们证明清楚","textChars":28,"textLines":1,"bbox":[60,84,1080,96]}
+{"kind":"textbox","id":"sh/belsna1k","slide":10,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/oru9sfit","slide":10,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/9c3al0je","slide":10,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/mpsrq503","slide":10,"name":"page-number","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"textbox","id":"sh/nql8ja1o","slide":10,"name":"text","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[60,218,80,46]}
+{"kind":"textbox","id":"sh/0na9ovix","slide":10,"name":"text","text":"双向就业低密选择","textPreview":"双向就业低密选择","textChars":8,"textLines":1,"bbox":[60,288,330,58]}
+{"kind":"textbox","id":"sh/1ojqh0ji","slide":10,"name":"text","text":"让本案进入候选","textPreview":"让本案进入候选","textChars":7,"textLines":1,"bbox":[60,372,330,34]}
+{"kind":"shape","id":"sh/lo7i5cf2","slide":10,"name":"relationship-line","bbox":[60,430,300,0]}
+{"kind":"textbox","id":"sh/0ny1wryh","slide":10,"name":"text","text":"切换两条就业方向\n比较家庭时间","textPreview":"切换两条就业方向 | 比较家庭时间","textChars":15,"textLines":2,"bbox":[60,458,330,92]}
+{"kind":"textbox","id":"sh/zmp03mxw","slide":10,"name":"text","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[446,218,80,46]}
+{"kind":"textbox","id":"sh/elgjuhgr","slide":10,"name":"text","text":"全天候连续归家","textPreview":"全天候连续归家","textChars":7,"textLines":1,"bbox":[446,288,330,58]}
+{"kind":"textbox","id":"sh/dkni1cf6","slide":10,"name":"text","text":"让本案赢得低密比较","textPreview":"让本案赢得低密比较","textChars":9,"textLines":1,"bbox":[446,372,330,34]}
+{"kind":"shape","id":"sh/cje1s7yl","slide":10,"name":"relationship-line","bbox":[446,430,300,0]}
+{"kind":"textbox","id":"sh/ri50z2x0","slide":10,"name":"text","text":"点亮到达—园林—架空层—会所","textPreview":"点亮到达—园林—架空层—会所","textChars":14,"textLines":1,"bbox":[446,458,330,92]}
+{"kind":"textbox","id":"sh/qhwjqxgf","slide":10,"name":"text","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[832,218,80,46]}
+{"kind":"textbox","id":"sh/pgnixsfu","slide":10,"name":"text","text":"三代弹性空间先验","textPreview":"三代弹性空间先验","textChars":8,"textLines":1,"bbox":[832,288,330,58]}
+{"kind":"textbox","id":"sh/4veho7y9","slide":10,"name":"text","text":"让客户继续行动","textPreview":"让客户继续行动","textChars":7,"textLines":1,"bbox":[832,372,330,34]}
+{"kind":"shape","id":"sh/gzi1k765","slide":10,"name":"relationship-line","bbox":[832,430,300,0]}
+{"kind":"textbox","id":"sh/h0ridc7q","slide":10,"name":"text","text":"切换核心居住—父母短住—居家办公","textPreview":"切换核心居住—父母短住—居家办公","textChars":16,"textLines":1,"bbox":[832,458,330,92]}
+{"kind":"textbox","id":"sh/uxgjixof","slide":10,"name":"text","text":"项目事实建立价值，竞争关系决定价值，UE画面证明价值。三者按此顺序共同成立。","textPreview":"项目事实建立价值，竞争关系决定价值，UE画面证明价值。三者按此顺序共同成立。","textChars":38,"textLines":1,"bbox":[60,602,1100,34]}
+{"kind":"notes","id":"nt/9g872b","slide":10,"text":"[Sources]\n- examples/production-path-tutorial/expected/product3-chapter2-contract.json\n- examples/production-path-tutorial/expected/product3-chapter3-contract.json"}
+{"kind":"slide","id":"sl/sy1e1v","slide":11,"title":"SC 01 · 双向就业低密选择","textShapes":12}
+{"kind":"textbox","id":"sh/907y1cfa","slide":11,"name":"eyebrow","text":"SC 01 · 双向就业低密选择","textPreview":"SC 01 · 双向就业低密选择","textChars":16,"textLines":1,"bbox":[60,46,460,24]}
+{"kind":"textbox","id":"sh/mxgzqxgj","slide":11,"name":"slide-title","text":"先让一家人的两条路径同时成立，再谈新区低密是否值得","textPreview":"先让一家人的两条路径同时成立，再谈新区低密是否值得","textChars":25,"textLines":1,"bbox":[60,84,1080,96]}
+{"kind":"textbox","id":"sh/nypgz2h4","slide":11,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/w3ihw7y1","slide":11,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/x4ry5cf6","slide":11,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/a10zuxgv","slide":11,"name":"page-number","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"shape","id":"sh/v29g32xg","slide":11,"name":"relationship-line","bbox":[260,470,760,0]}
+{"kind":"shape","id":"sh/c7exknyh","slide":11,"name":"relationship-line","bbox":[640,300,0,170]}
+{"kind":"shape","id":"sh/d8nytsz2","slide":11,"name":"box","bbox":[140,410,240,120]}
+{"kind":"textbox","id":"sh/tkzmp072","slide":11,"name":"text","text":"老城就业方向","textPreview":"老城就业方向","textChars":6,"textLines":1,"bbox":[170,442,180,34]}
+{"kind":"textbox","id":"sh/8jqlgvqh","slide":11,"name":"text","text":"成熟通勤","textPreview":"成熟通勤","textChars":4,"textLines":1,"bbox":[170,486,180,26]}
+{"kind":"shape","id":"sh/7ih4nqpw","slide":11,"name":"box","bbox":[900,410,240,120]}
+{"kind":"textbox","id":"sh/6ho3el8b","slide":11,"name":"text","text":"东部产业园方向","textPreview":"东部产业园方向","textChars":7,"textLines":1,"bbox":[930,442,180,34]}
+{"kind":"textbox","id":"sh/hozmd07y","slide":11,"name":"text","text":"新区就业","textPreview":"新区就业","textChars":4,"textLines":1,"bbox":[930,486,180,26]}
+{"kind":"shape","id":"sh/gnqlkfqd","slide":11,"name":"box","bbox":[520,242,240,118]}
+{"kind":"textbox","id":"sh/vmh4baps","slide":11,"name":"text","text":"家庭时间表","textPreview":"家庭时间表","textChars":5,"textLines":1,"bbox":[552,268,176,36]}
+{"kind":"textbox","id":"sh/ul83i58n","slide":11,"name":"text","text":"先核对两条路径","textPreview":"先核对两条路径","textChars":7,"textLines":1,"bbox":[552,316,176,24]}
+{"kind":"shape","id":"sh/5cjmhk7a","slide":11,"name":"box","bbox":[498,545,284,76]}
+{"kind":"textbox","id":"sh/4ba5ofqp","slide":11,"name":"text","text":"通勤可接受 ＋ 1.45低密","textPreview":"通勤可接受 ＋ 1.45低密","textChars":14,"textLines":1,"bbox":[518,567,244,32]}
+{"kind":"notes","id":"nt/sy1e1v","slide":11,"text":"[Sources]\n- examples/production-path-tutorial/expected/product3-chapter3-contract.json — SC-ACCESS"}
+{"kind":"slide","id":"sl/6r5odc","slide":12,"title":"SC 02 · 全天候连续归家","textShapes":10}
+{"kind":"shape","id":"sh/utkr654f","slide":12,"name":"box","bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/vutsfal0","slide":12,"name":"text","text":"SC 02 · 全天候连续归家","textPreview":"SC 02 · 全天候连续归家","textChars":15,"textLines":1,"bbox":[70,62,560,30]}
+{"kind":"textbox","id":"sh/4jm9cz2x","slide":12,"name":"text","text":"低密通过四步连续归家，\n每天进入家庭使用","textPreview":"低密通过四步连续归家， | 每天进入家庭使用","textChars":20,"textLines":2,"bbox":[70,120,650,150]}
+{"kind":"textbox","id":"sh/5kvalk32","slide":12,"name":"text","text":"到达","textPreview":"到达","textChars":2,"textLines":1,"bbox":[76,442,180,34]}
+{"kind":"textbox","id":"sh/ihkrap4r","slide":12,"name":"text","text":"首层园林","textPreview":"首层园林","textChars":4,"textLines":1,"bbox":[350,442,180,34]}
+{"kind":"textbox","id":"sh/3itsjulc","slide":12,"name":"text","text":"架空层","textPreview":"架空层","textChars":3,"textLines":1,"bbox":[624,442,180,34]}
+{"kind":"textbox","id":"sh/kni90vmd","slide":12,"name":"text","text":"地下会所","textPreview":"地下会所","textChars":4,"textLines":1,"bbox":[898,442,180,34]}
+{"kind":"shape","id":"sh/lorq903y","slide":12,"name":"relationship-line","bbox":[100,510,904,0]}
+{"kind":"shape","id":"sh/twfm5ofu","slide":12,"name":"box","bbox":[100,492,36,36]}
+{"kind":"shape","id":"sh/sv65wje9","slide":12,"name":"box","bbox":[374,492,36,36]}
+{"kind":"shape","id":"sh/rux43ex4","slide":12,"name":"box","bbox":[648,492,36,36]}
+{"kind":"shape","id":"sh/6to3utwj","slide":12,"name":"box","bbox":[922,492,36,36]}
+{"kind":"textbox","id":"sh/10fm98f6","slide":12,"name":"text","text":"客户沿同一条路径判断哪些空间会被高频使用，也看见愿意为低密支付的真实所得。","textPreview":"客户沿同一条路径判断哪些空间会被高频使用，也看见愿意为低密支付的真实所得。","textChars":37,"textLines":1,"bbox":[70,564,940,54]}
+{"kind":"textbox","id":"sh/gz6503el","slide":12,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/fyx47yx0","slide":12,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/exonytwf","slide":12,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/pozmd8f2","slide":12,"name":"page-number","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"image","id":"im/4b6l4jid","slide":12,"name":"","alt":"虚构家庭雨夜归家场景","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/6r5odc","slide":12,"text":"[Sources]\n- examples/production-path-tutorial/expected/product3-chapter3-contract.json — SC-CONTINUITY\n- tools/product5_shell/assets-register.json — P5-GEN-003"}
+{"kind":"slide","id":"sl/1xzr4o","slide":13,"title":"SC 03 · 三代弹性空间先验","textShapes":12}
+{"kind":"shape","id":"sh/5o7m1k3i","slide":13,"name":"box","bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/4ny5sfmx","slide":13,"name":"text","text":"SC 03 · 三代弹性空间先验","textPreview":"SC 03 · 三代弹性空间先验","textChars":16,"textLines":1,"bbox":[70,62,560,30]}
+{"kind":"textbox","id":"sh/ra9o3ulo","slide":13,"name":"text","text":"双套房保留两代边界，\n可变书房跟着家庭阶段切换","textPreview":"双套房保留两代边界， | 可变书房跟着家庭阶段切换","textChars":23,"textLines":2,"bbox":[70,120,680,150]}
+{"kind":"shape","id":"sh/q90nup43","slide":13,"name":"box","bbox":[70,430,320,132]}
+{"kind":"textbox","id":"sh/dcr6543u","slide":13,"name":"text","text":"核心家庭居住","textPreview":"核心家庭居住","textChars":6,"textLines":1,"bbox":[92,454,276,32]}
+{"kind":"textbox","id":"sh/sbi5wzm9","slide":13,"name":"text","text":"工作、学习与相聚互不挤占","textPreview":"工作、学习与相聚互不挤占","textChars":12,"textLines":1,"bbox":[92,500,276,48]}
+{"kind":"shape","id":"sh/fe9o7ulk","slide":13,"name":"box","bbox":[430,430,320,132]}
+{"kind":"textbox","id":"sh/ed0nyp4f","slide":13,"name":"text","text":"父母阶段性同住","textPreview":"父母阶段性同住","textChars":7,"textLines":1,"bbox":[452,454,276,32]}
+{"kind":"textbox","id":"sh/87ix8zqd","slide":13,"name":"text","text":"两代各自拥有休息与卫浴边界","textPreview":"两代各自拥有休息与卫浴边界","textChars":13,"textLines":1,"bbox":[452,500,276,48]}
+{"kind":"shape","id":"sh/98be147y","slide":13,"name":"box","bbox":[790,430,320,132]}
+{"kind":"textbox","id":"sh/ml0f6p87","slide":13,"name":"text","text":"居家办公并行","textPreview":"居家办公并行","textChars":6,"textLines":1,"bbox":[812,454,276,32]}
+{"kind":"textbox","id":"sh/7m9wzups","slide":13,"name":"text","text":"书房在工作、学习与短住间切换","textPreview":"书房在工作、学习与短住间切换","textChars":14,"textLines":1,"bbox":[812,500,276,48]}
+{"kind":"textbox","id":"sh/wb2xcjqp","slide":13,"name":"text","text":"空间适配先完成，正式价格公布后再完成支付判断。","textPreview":"空间适配先完成，正式价格公布后再完成支付判断。","textChars":23,"textLines":1,"bbox":[70,596,800,34]}
+{"kind":"textbox","id":"sh/hcbe547u","slide":13,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/u9kfa98j","slide":13,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/vatw3ep4","slide":13,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/4fmxgjql","slide":13,"name":"page-number","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"image","id":"im/ri18z69c","slide":13,"name":"","alt":"虚构三代家庭在同一住宅内并行生活","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/1xzr4o","slide":13,"text":"[Sources]\n- examples/production-path-tutorial/expected/product3-chapter3-contract.json — SC-FLEXIBILITY\n- tools/product5_shell/assets-register.json — P5-GEN-006"}
+{"kind":"slide","id":"sl/erhggd","slide":14,"title":"家庭分流","textShapes":12}
+{"kind":"textbox","id":"sh/1ojyh4fa","slide":14,"name":"eyebrow","text":"家庭分流","textPreview":"家庭分流","textChars":4,"textLines":1,"bbox":[60,46,460,24]}
+{"kind":"textbox","id":"sh/e1sfmpgj","slide":14,"name":"slide-title","text":"三类看房任务需要三条不同路径，\n面积只在任务清楚后进入选择","textPreview":"三类看房任务需要三条不同路径， | 面积只在任务清楚后进入选择","textChars":29,"textLines":2,"bbox":[60,84,1080,96]}
+{"kind":"textbox","id":"sh/f21wvux4","slide":14,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/oraxsjyl","slide":14,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/psjylof6","slide":14,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/2psfq9gv","slide":14,"name":"page-number","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"shape","id":"sh/kvqxgfyh","slide":14,"name":"box","bbox":[60,412,330,142]}
+{"kind":"textbox","id":"sh/5wzepkf2","slide":14,"name":"text","text":"双向通勤家庭","textPreview":"双向通勤家庭","textChars":6,"textLines":1,"bbox":[84,444,282,36]}
+{"kind":"textbox","id":"sh/tk7210r2","slide":14,"name":"text","text":"先核对夫妻工作、接送与家庭支持","textPreview":"先核对夫妻工作、接送与家庭支持","textChars":15,"textLines":1,"bbox":[84,494,282,44]}
+{"kind":"shape","id":"sh/7yp0zq9c","slide":14,"name":"box","bbox":[445,412,330,142]}
+{"kind":"textbox","id":"sh/6xgj6l8r","slide":14,"name":"text","text":"家庭空间重组","textPreview":"家庭空间重组","textChars":6,"textLines":1,"bbox":[469,444,282,36]}
+{"kind":"textbox","id":"sh/hor25kre","slide":14,"name":"text","text":"先核对父母短住、工作学习与共同生活","textPreview":"先核对父母短住、工作学习与共同生活","textChars":17,"textLines":1,"bbox":[469,494,282,44]}
+{"kind":"shape","id":"sh/fm9k3a98","slide":14,"name":"box","bbox":[830,412,330,142]}
+{"kind":"textbox","id":"sh/ulgja58n","slide":14,"name":"text","text":"价格纪律客户","textPreview":"价格纪律客户","textChars":6,"textLines":1,"bbox":[854,444,282,36]}
+{"kind":"textbox","id":"sh/psr29kra","slide":14,"name":"text","text":"先关闭空间适配，再等待正式支付条件","textPreview":"先关闭空间适配，再等待正式支付条件","textChars":17,"textLines":1,"bbox":[854,494,282,44]}
+{"kind":"textbox","id":"sh/4ri1gfqp","slide":14,"name":"text","text":"先识别家庭正在解决的现实任务，再打开相应城市、社区与产品内容。","textPreview":"先识别家庭正在解决的现实任务，再打开相应城市、社区与产品内容。","textChars":31,"textLines":1,"bbox":[60,594,1050,36]}
+{"kind":"image","id":"im/ypwve5s3","slide":14,"name":"","geometry":"roundRect","alt":"双向通勤家庭","bbox":[60,204,330,350]}
+{"kind":"image","id":"im/fa98ru9g","slide":14,"name":"","geometry":"roundRect","alt":"家庭空间重组","bbox":[445,204,330,350]}
+{"kind":"image","id":"im/7m98na9k","slide":14,"name":"","geometry":"roundRect","alt":"价格纪律客户","bbox":[830,204,330,350]}
+{"kind":"notes","id":"nt/erhggd","slide":14,"text":"[Sources]\n- examples/production-path-tutorial/expected/product2-buyer-decision-study.md\n- tools/product5_shell/assets-register.json — P5-GEN-005, P5-GEN-004, P5-GEN-007"}
+{"kind":"slide","id":"sl/j7n41a","slide":15,"title":"家庭路径 · 父母短住与居家办公","textShapes":17}
+{"kind":"textbox","id":"sh/ve98be1o","slide":15,"name":"eyebrow","text":"家庭路径 · 父母短住与居家办公","textPreview":"家庭路径 · 父母短住与居家办公","textChars":16,"textLines":1,"bbox":[60,46,460,24]}
+{"kind":"textbox","id":"sh/wf2pkj2t","slide":15,"name":"slide-title","text":"一条路线从家庭冲突走到产品选择，再把结论带回现场","textPreview":"一条路线从家庭冲突走到产品选择，再把结论带回现场","textChars":24,"textLines":1,"bbox":[60,84,1080,96]}
+{"kind":"textbox","id":"sh/xgbqdoje","slide":15,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/mp07e9kr","slide":15,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/nq987e1c","slide":15,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/oripgz2x","slide":15,"name":"page-number","text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"shape","id":"sh/9srq94ji","slide":15,"name":"relationship-line","bbox":[120,394,760,0]}
+{"kind":"shape","id":"sh/6lkrqtkb","slide":15,"name":"box","bbox":[86,336,116,116]}
+{"kind":"textbox","id":"sh/7md8jy1g","slide":15,"name":"text","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[104,360,80,26]}
+{"kind":"textbox","id":"sh/3alczeto","slide":15,"name":"text","text":"当前冲突","textPreview":"当前冲突","textChars":4,"textLines":1,"bbox":[64,486,160,32]}
+{"kind":"textbox","id":"sh/29cv69c3","slide":15,"name":"text","text":"父母短住、居家办公、孩子学习反复占用同一房间","textPreview":"父母短住、居家办公、孩子学习反复占用同一房间","textChars":22,"textLines":1,"bbox":[46,536,196,76]}
+{"kind":"shape","id":"sh/pw3u1obu","slide":15,"name":"box","bbox":[390,336,116,116]}
+{"kind":"textbox","id":"sh/ovud8ju9","slide":15,"name":"text","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[408,360,80,26]}
+{"kind":"textbox","id":"sh/by5c3yt0","slide":15,"name":"text","text":"适配判断","textPreview":"适配判断","textChars":4,"textLines":1,"bbox":[368,486,160,32]}
+{"kind":"textbox","id":"sh/axwvatcf","slide":15,"name":"text","text":"双套房保留两代边界，可变书房承接状态切换","textPreview":"双套房保留两代边界，可变书房承接状态切换","textChars":20,"textLines":1,"bbox":[350,536,196,76]}
+{"kind":"shape","id":"sh/x0nu5obq","slide":15,"name":"box","bbox":[694,336,116,116]}
+{"kind":"textbox","id":"sh/czedcju5","slide":15,"name":"text","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[712,360,80,26]}
+{"kind":"textbox","id":"sh/z25w7ytw","slide":15,"name":"text","text":"现场证明","textPreview":"现场证明","textChars":4,"textLines":1,"bbox":[672,486,160,32]}
+{"kind":"textbox","id":"sh/y1wvetcb","slide":15,"name":"text","text":"切换三种家庭状态，再走连续归家路线","textPreview":"切换三种家庭状态，再走连续归家路线","textChars":17,"textLines":1,"bbox":[654,536,196,76]}
+{"kind":"shape","id":"sh/u9k7m10v","slide":15,"name":"box","bbox":[954,270,250,322]}
+{"kind":"textbox","id":"sh/vatovmhg","slide":15,"name":"text","text":"产品承接","textPreview":"产品承接","textChars":4,"textLines":1,"bbox":[984,302,190,34]}
+{"kind":"textbox","id":"sh/gb2pori1","slide":15,"name":"text","text":"143—168㎡","textPreview":"143—168㎡","textChars":8,"textLines":1,"bbox":[984,360,190,42]}
+{"kind":"textbox","id":"sh/hwb6xwzm","slide":15,"name":"text","text":"双套房\n可变书房\n园林—架空层—会所","textPreview":"双套房 | 可变书房 | 园林—架空层—会所","textChars":18,"textLines":3,"bbox":[984,430,190,112]}
+{"kind":"notes","id":"nt/j7n41a","slide":15,"text":"[Sources]\n- examples/production-path-tutorial/expected/product2-buyer-decision-study.md — family-space task\n- examples/production-path-tutorial/expected/product3-chapter3-contract.json — family_routes"}
+{"kind":"slide","id":"sl/ccojnx","slide":16,"title":"UE制作蓝图","textShapes":14}
+{"kind":"textbox","id":"sh/t8vmdk7a","slide":16,"name":"eyebrow","text":"UE制作蓝图","textPreview":"UE制作蓝图","textChars":6,"textLines":1,"bbox":[60,46,460,24]}
+{"kind":"textbox","id":"sh/654325oj","slide":16,"name":"slide-title","text":"一套共享底座承接三条竞争力，再按家庭任务打开专属内容","textPreview":"一套共享底座承接三条竞争力，再按家庭任务打开专属内容","textChars":26,"textLines":1,"bbox":[60,84,1080,96]}
+{"kind":"textbox","id":"sh/76d4bap4","slide":16,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/gb6l8f6l","slide":16,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/hwfmhk76","slide":16,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/u9o365of","slide":16,"name":"page-number","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"shape","id":"sh/vax4fap0","slide":16,"name":"relationship-line","bbox":[250,292,390,134]}
+{"kind":"shape","id":"sh/4z65cz6x","slide":16,"name":"relationship-line","bbox":[640,292,0,134]}
+{"kind":"shape","id":"sh/p0fml472","slide":16,"name":"relationship-line","bbox":[640,292,390,134]}
+{"kind":"shape","id":"sh/dgvq1ofa","slide":16,"name":"relationship-line","bbox":[640,210,0,82]}
+{"kind":"shape","id":"sh/sf2psjyp","slide":16,"name":"box","bbox":[500,184,280,96]}
+{"kind":"textbox","id":"sh/ret8zyx4","slide":16,"name":"text","text":"通用接待底座","textPreview":"通用接待底座","textChars":6,"textLines":1,"bbox":[532,210,216,34]}
+{"kind":"textbox","id":"sh/qdk7qtgj","slide":16,"name":"text","text":"全屏场景 · 双侧信息 · 底部导航","textPreview":"全屏场景 · 双侧信息 · 底部导航","textChars":18,"textLines":1,"bbox":[520,250,240,20]}
+{"kind":"shape","id":"sh/14vq58f6","slide":16,"name":"box","bbox":[80,408,340,154]}
+{"kind":"textbox","id":"sh/03mpw3yl","slide":16,"name":"text","text":"城市关系","textPreview":"城市关系","textChars":4,"textLines":1,"bbox":[106,438,288,34]}
+{"kind":"textbox","id":"sh/f2d83yx0","slide":16,"name":"text","text":"两条就业方向\n家庭时间比较","textPreview":"两条就业方向 | 家庭时间比较","textChars":13,"textLines":2,"bbox":[106,490,288,58]}
+{"kind":"shape","id":"sh/eh47utgf","slide":16,"name":"box","bbox":[470,408,340,154]}
+{"kind":"textbox","id":"sh/h8b6t4f2","slide":16,"name":"text","text":"连续归家","textPreview":"连续归家","textChars":4,"textLines":1,"bbox":[496,438,288,34]}
+{"kind":"textbox","id":"sh/g7ipkzyh","slide":16,"name":"text","text":"到达—园林—架空层—会所","textPreview":"到达—园林—架空层—会所","textChars":12,"textLines":1,"bbox":[496,490,288,58]}
+{"kind":"shape","id":"sh/8rmp0j6d","slide":16,"name":"box","bbox":[860,408,340,154]}
+{"kind":"textbox","id":"sh/9svq9ony","slide":16,"name":"text","text":"家庭弹性","textPreview":"家庭弹性","textChars":4,"textLines":1,"bbox":[886,438,288,34]}
+{"kind":"textbox","id":"sh/mp47y9o7","slide":16,"name":"text","text":"双套房与可变书房\n三种状态切换","textPreview":"双套房与可变书房 | 三种状态切换","textChars":15,"textLines":2,"bbox":[886,490,288,58]}
+{"kind":"shape","id":"sh/7qd87e5s","slide":16,"name":"box","bbox":[360,592,560,54]}
+{"kind":"textbox","id":"sh/wv6p4j69","slide":16,"name":"text","text":"AI推荐官识别条件 → 组合内容 → 手机继续看","textPreview":"AI推荐官识别条件 → 组合内容 → 手机继续看","textChars":24,"textLines":1,"bbox":[382,608,516,24]}
+{"kind":"notes","id":"nt/ccojnx","slide":16,"text":"[Sources]\n- examples/production-path-tutorial/expected/product3-chapter3-contract.json — system_modules\n- core/08-产物5交互蓝图.md"}
+{"kind":"slide","id":"sl/b01lzi","slide":17,"title":"全屏UE展示","textShapes":3}
+{"kind":"shape","id":"sh/judszad4","slide":17,"name":"box","bbox":[0,0,1280,92]}
+{"kind":"textbox","id":"sh/i94bq5cj","slide":17,"name":"text","text":"全屏UE展示","textPreview":"全屏UE展示","textChars":6,"textLines":1,"bbox":[36,24,220,22]}
+{"kind":"textbox","id":"sh/x8vaxkvy","slide":17,"name":"text","text":"同一视角里完成方向切换、数字比较与项目定位","textPreview":"同一视角里完成方向切换、数字比较与项目定位","textChars":21,"textLines":1,"bbox":[36,50,780,32]}
+{"kind":"shape","id":"sh/w7mt4fud","slide":17,"name":"box","bbox":[862,604,374,70]}
+{"kind":"textbox","id":"sh/b6dsvads","slide":17,"name":"text","text":"客户先选方向，顾问再把“位置是否可接受”讲成共同判断。","textPreview":"客户先选方向，顾问再把“位置是否可接受”讲成共同判断。","textChars":27,"textLines":1,"bbox":[886,622,326,36]}
+{"kind":"image","id":"im/hkved0b2","slide":17,"name":"","alt":"公开安全产物5城市关系桌面界面","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/b01lzi","slide":17,"text":"[Sources]\n- examples/gold-product5-public-safe/qa/desktop-city-1600x900.png\n- examples/gold-product5-public-safe/qa/design-qa.md"}
+{"kind":"slide","id":"sl/c0wbi9","slide":18,"title":"AI推荐官","textShapes":10}
+{"kind":"textbox","id":"sh/u58jadoj","slide":18,"name":"eyebrow","text":"AI推荐官","textPreview":"AI推荐官","textChars":5,"textLines":1,"bbox":[60,46,460,24]}
+{"kind":"textbox","id":"sh/h8zi58nu","slide":18,"name":"slide-title","text":"四个生活问题把三条竞争力重排成一条专属看房路线","textPreview":"四个生活问题把三条竞争力重排成一条专属看房路线","textChars":23,"textLines":1,"bbox":[60,84,1080,96]}
+{"kind":"textbox","id":"sh/g7q1c369","slide":18,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/3ah07i50","slide":18,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/i98jedof","slide":18,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/5cji9sn6","slide":18,"name":"page-number","text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"shape","id":"sh/ydoz2tob","slide":18,"name":"relationship-line","bbox":[866,255,0,300]}
+{"kind":"textbox","id":"sh/wfux8fap","slide":18,"name":"text","text":"桌面","textPreview":"桌面","textChars":2,"textLines":1,"bbox":[852,202,72,24]}
+{"kind":"textbox","id":"sh/hg3e10ru","slide":18,"name":"text","text":"手机","textPreview":"手机","textChars":2,"textLines":1,"bbox":[1158,202,62,24]}
+{"kind":"textbox","id":"sh/udsf65sj","slide":18,"name":"text","text":"识别家庭任务","textPreview":"识别家庭任务","textChars":6,"textLines":1,"bbox":[862,316,68,60]}
+{"kind":"textbox","id":"sh/velwza94","slide":18,"name":"text","text":"组合三条理由","textPreview":"组合三条理由","textChars":6,"textLines":1,"bbox":[862,406,68,60]}
+{"kind":"textbox","id":"sh/4juxcfql","slide":18,"name":"text","text":"带走现场顺序","textPreview":"带走现场顺序","textChars":6,"textLines":1,"bbox":[862,496,68,60]}
+{"kind":"image","id":"im/dcrm1k3u","slide":18,"name":"","geometry":"roundRect","alt":"公开安全AI推荐官桌面结果","bbox":[60,188,780,438]}
+{"kind":"image","id":"im/a5k329kn","slide":18,"name":"","geometry":"roundRect","alt":"公开安全手机专属看房建议","bbox":[930,164,220,476]}
+{"kind":"notes","id":"nt/c0wbi9","slide":18,"text":"[Sources]\n- examples/gold-product5-public-safe/qa/desktop-advisor-result-1600x900.png\n- examples/gold-product5-public-safe/qa/mobile-family-flex-390x844.png\n- tools/product5_shell/public/project-data.js — advisor routes"}
+{"kind":"slide","id":"sl/cdvwj0","slide":19,"title":"最终收口","textShapes":12}
+{"kind":"textbox","id":"sh/0r6xwf2x","slide":19,"name":"text","text":"最终收口","textPreview":"最终收口","textChars":4,"textLines":1,"bbox":[72,72,240,30]}
+{"kind":"textbox","id":"sh/zqxgna1c","slide":19,"name":"text","text":"把一次复杂改善，\n变成三次清楚选择","textPreview":"把一次复杂改善， | 变成三次清楚选择","textChars":17,"textLines":2,"bbox":[72,132,790,150]}
+{"kind":"shape","id":"sh/epofu5kr","slide":19,"name":"relationship-line","bbox":[74,330,1120,0]}
+{"kind":"textbox","id":"sh/9gzytkje","slide":19,"name":"text","text":"位置可比较","textPreview":"位置可比较","textChars":5,"textLines":1,"bbox":[74,390,320,42]}
+{"kind":"textbox","id":"sh/ovqh0fit","slide":19,"name":"text","text":"两条就业方向共同进入家庭时间表","textPreview":"两条就业方向共同进入家庭时间表","textChars":15,"textLines":1,"bbox":[74,458,320,58]}
+{"kind":"textbox","id":"sh/nuhgra1o","slide":19,"name":"text","text":"低密可体验","textPreview":"低密可体验","textChars":5,"textLines":1,"bbox":[450,390,320,42]}
+{"kind":"textbox","id":"sh/mtozypk3","slide":19,"name":"text","text":"连续归家把配置变成每天使用","textPreview":"连续归家把配置变成每天使用","textChars":13,"textLines":1,"bbox":[450,458,320,58]}
+{"kind":"textbox","id":"sh/xkzyx4jq","slide":19,"name":"text","text":"选择可推进","textPreview":"选择可推进","textChars":5,"textLines":1,"bbox":[826,390,320,42]}
+{"kind":"textbox","id":"sh/wjqh4zi5","slide":19,"name":"text","text":"空间先适配，价格后判断","textPreview":"空间先适配，价格后判断","textChars":11,"textLines":1,"bbox":[826,458,320,58]}
+{"kind":"textbox","id":"sh/2dg76dkn","slide":19,"name":"text","text":"青岚澄境｜双节点生活里的低密改善住区","textPreview":"青岚澄境｜双节点生活里的低密改善住区","textChars":18,"textLines":1,"bbox":[74,590,820,36]}
+{"kind":"textbox","id":"sh/3epofy1s","slide":19,"name":"fixture-mark","text":"PUBLIC-SAFE FICTIONAL REFERENCE","textPreview":"PUBLIC-SAFE FICTIONAL REFERENCE","textChars":31,"textLines":1,"bbox":[910,42,310,20]}
+{"kind":"shape","id":"sh/4fyp832d","slide":19,"name":"relationship-line","bbox":[60,681,1160,0]}
+{"kind":"textbox","id":"sh/pg76h8jy","slide":19,"name":"fixture-footer","text":"青岚澄境｜全量虚构公开参考","textPreview":"青岚澄境｜全量虚构公开参考","textChars":13,"textLines":1,"bbox":[60,688,320,18]}
+{"kind":"textbox","id":"sh/qhg7adkj","slide":19,"name":"page-number","text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1160,688,60,18]}
+{"kind":"notes","id":"nt/cdvwj0","slide":19,"text":"[Sources]\n- examples/production-path-tutorial/expected/product3-chapter2-contract.json\n- examples/production-path-tutorial/expected/product3-chapter3-contract.json"}
