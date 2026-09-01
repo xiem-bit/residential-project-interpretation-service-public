@@ -6,7 +6,9 @@
   "source_commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
   "excluded": [
     ".git/**",
+    ".playwright-cli/**",
     ".venv/**",
+    "**/dist/**",
     "**/node_modules/**",
     "verification-tmp/**",
     "**/__pycache__/**",
@@ -14,8 +16,8 @@
     ".DS_Store",
     "RELEASE_MANIFEST.json"
   ],
-  "file_count": 315,
-  "tree_sha256": "deb5939477f21b0bb55181f1dc5ecf9ce20de3e9b5243a3dcd863bf55c5f149f",
+  "file_count": 281,
+  "tree_sha256": "ec4b545952d75925385f58b60a103dec5c6bf43565e37c85e24c638285af9ed5",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -26,126 +28,6 @@
       "path": ".gitignore",
       "bytes": 131,
       "sha256": "b393186d743eb113701a33dbeea48063d257b73cae04d446314fc3a3f428efa7"
-    },
-    {
-      "path": ".playwright-cli/console-2026-09-01T05-25-09-214Z.log",
-      "bytes": 948,
-      "sha256": "ee8f3b0fb15f0523519948ec9fb84abaabf6aea10c8789917569941301b88ebe"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-25-09-517Z.yml",
-      "bytes": 1566,
-      "sha256": "c96339e5a5bfa82d403fc75f86872764bdaa086b8649b61ce09cb9808bb13238"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-26-56-157Z.yml",
-      "bytes": 2104,
-      "sha256": "18056b652721c468b3d533a70ae529d0a348982a6798205c2667cdd2a0fca18d"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-27-10-320Z.png",
-      "bytes": 1593716,
-      "sha256": "94f21dc8c663f07a7d7b5186599a54d422903c936dae91e978eb4072c16326d7"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-27-26-775Z.yml",
-      "bytes": 3373,
-      "sha256": "5964ff4be1cade848b89818d9b51ee724fe1a1ed14add5dae96dc6aea1f634de"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-27-31-700Z.png",
-      "bytes": 1525364,
-      "sha256": "25998960d32366baf88a268322f108bf992944f8817097b3a2bc4c0b372d9c2f"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-28-00-239Z.png",
-      "bytes": 1547287,
-      "sha256": "fbdbe2a8ec52bdd071ace001654e9e767d8ec594a7fd491a31251c121270f19f"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-28-27-369Z.yml",
-      "bytes": 2461,
-      "sha256": "d709aa51e081a2390db14ab35adbf5af94cb87a2b775a0958e83c672240061d5"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-28-38-559Z.yml",
-      "bytes": 2669,
-      "sha256": "3ddf164b9266435e67974e3102f2ed3c1af5a977dade93dcfc00cf644e7f33c3"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-28-49-002Z.yml",
-      "bytes": 2688,
-      "sha256": "d0d82af9f12bd03b7ffea1cb26407d6a6132b5f4661a0993ea43424d8768e251"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-28-52-285Z.yml",
-      "bytes": 2702,
-      "sha256": "767f1c97e73bce6b6d683d2ad61e23670144ddbf1b34cbedb6b11f9c1731c490"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-29-02-633Z.yml",
-      "bytes": 2730,
-      "sha256": "2117ba354725d8af67731d823348823eb00de21ccfb3ff0fe172e103097866c1"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-29-05-355Z.yml",
-      "bytes": 2699,
-      "sha256": "be336a8a97bbee1109c27862e270ba90f05ce621535e753c754d86bc59e9e8c6"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-29-16-327Z.yml",
-      "bytes": 2724,
-      "sha256": "44082725e0ecb182f27468ec7c58349faf0e272ae4f1bda8589241f580bc182a"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-29-19-509Z.yml",
-      "bytes": 2722,
-      "sha256": "c2fff9fef3af136bfdd4664ef10153de2743764140b77b9f80dca2c8f1ebe5b6"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-29-29-384Z.yml",
-      "bytes": 2741,
-      "sha256": "8d3d68193acf8080310e91bad0b280a0a3c39c42892731c109274032f3ddc7ab"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-29-32-034Z.yml",
-      "bytes": 2767,
-      "sha256": "16f84dbf7bece85739e6b3689bef470ffd77f8a1119864f8ac3ebb78be1efd08"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-29-35-223Z.yml",
-      "bytes": 1593,
-      "sha256": "028e12f13dc4907f0d635cafe353205bd8fc9caa2c17b990961fd9a295d026e6"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-29-47-444Z.png",
-      "bytes": 1183815,
-      "sha256": "c1becf2906c5ca2926306c74806ab14bc92cb8a797f86ecfb7fff47af318d731"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-30-03-635Z.yml",
-      "bytes": 5423,
-      "sha256": "c42fc6f6a302ee5bcf6e145080a1ba5004378ec6365ba6157f5c930634c70801"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-30-21-619Z.png",
-      "bytes": 250670,
-      "sha256": "f02e080da70fcf0d8245f8b0e3c9d9e05ecc2acc4d0cfa0181a08b8fd8407d03"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-30-39-394Z.yml",
-      "bytes": 3699,
-      "sha256": "6c43a8202c5ee520f5e38351ab0b3a5ef9e49c2c3de1b6ca2a3b98983f8355d7"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-31-07-758Z.yml",
-      "bytes": 2771,
-      "sha256": "f784749e3831de9eeaeafc87b4db239f779a9090f8f1d864dcb051ea8315163e"
-    },
-    {
-      "path": ".playwright-cli/page-2026-09-01T05-31-13-732Z.yml",
-      "bytes": 2694,
-      "sha256": "218093e0e67763018b4533d02b3d14afa7c726adb666bc2a40ad305f3ae06991"
     },
     {
       "path": "AGENTS.md",
@@ -188,6 +70,11 @@
       "sha256": "c999aa831a752bf0b8cb71ec2c56bb5d6250514e18be63e51eeebfef94662902"
     },
     {
+      "path": "INSTALL.md",
+      "bytes": 3931,
+      "sha256": "bcd6bcf84b8f3c75f99fd1e00f780fdbb450f46b0217f17f555c56505a23288b"
+    },
+    {
       "path": "LICENSE",
       "bytes": 11358,
       "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c"
@@ -214,8 +101,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3819,
-      "sha256": "d062f22f3126ec546910db548f22df983db708d972cdac9096ae0c31ec352466"
+      "bytes": 4046,
+      "sha256": "c7a4ce64e969dc63b66ac57401538691a3e3eb84a22f4f848c12409b1e9f31b9"
     },
     {
       "path": "RELEASE_STATUS.md",
@@ -244,8 +131,8 @@
     },
     {
       "path": "START_HERE.md",
-      "bytes": 5192,
-      "sha256": "56dab09bd9f7162adeb6ef297975ed1b4435e2cc404e239954c991a3dcb96d75"
+      "bytes": 5341,
+      "sha256": "8b3178b5d6ac6057b029fd5fdffc8e9e60a865211a32c635a5c5b57865a0a181"
     },
     {
       "path": "THIRD_PARTY_LICENSES.json",
@@ -274,8 +161,8 @@
     },
     {
       "path": "adapters/README.md",
-      "bytes": 1152,
-      "sha256": "d381a1e49d7c23bc55aee09a7f499b44bb1a3e6d15abe5c970f93d70ba09014d"
+      "bytes": 1348,
+      "sha256": "79d2d758317aa0c038b561bd637d7632ceb4dee54dc03657fec787ee82ab8f13"
     },
     {
       "path": "adapters/codex/README.md",
@@ -1004,13 +891,13 @@
     },
     {
       "path": "scripts/build_release_manifest.py",
-      "bytes": 3469,
-      "sha256": "a107585094e956d0ee26929a643862309f1b1be984df0a9f43e8dcdea2928ba0"
+      "bytes": 3587,
+      "sha256": "1e5dfaaa901bdac76678bec482d868889bb1640d62f32008dae90c57fc9eb2c6"
     },
     {
       "path": "scripts/check_environment.py",
-      "bytes": 2625,
-      "sha256": "6509ef0a37ec01a624c26e565d788d565cd1d43597f8beb3a6163634be56394c"
+      "bytes": 11420,
+      "sha256": "c2bda29837c7cea78b5e65435130fa2e0986ee5bf0b60e416be09e16c58a5ef2"
     },
     {
       "path": "scripts/generate_third_party_inventory.py",
@@ -1123,6 +1010,11 @@
       "sha256": "020dbed0b754d66f1cf7496f5799dca15ccb6f0d1477357bbe15dbb2e5ffaaae"
     },
     {
+      "path": "templates/平台适配与能力缺口回传.template.json",
+      "bytes": 696,
+      "sha256": "22d38b36d45ef62f3b16ad2e16886e63ea0881ad200ff420ec005e4fdbf9ce5c"
+    },
+    {
       "path": "templates/生产回执.template.json",
       "bytes": 753,
       "sha256": "76d9d88c491b8cde5d3042c624992529d8747f467be7a64d7813162f300ab1bc"
@@ -1159,8 +1051,8 @@
     },
     {
       "path": "tests/run_public_tests.py",
-      "bytes": 1743,
-      "sha256": "349d20c58bd6542f4df14f08ccd5997673b2dc94888c9267c25149d06ec2a06e"
+      "bytes": 1784,
+      "sha256": "b1316c8bb13b657716eeb51c14db9b9606f2a7d01e41d1e9c9a25a5751007733"
     },
     {
       "path": "tests/test_business_gates_public.py",
@@ -1186,6 +1078,11 @@
       "path": "tests/test_inference_firewall.py",
       "bytes": 3451,
       "sha256": "96325deba3b9d54ed10afa9dc171783d8be96bb29b284b918373a0ff40111b0a"
+    },
+    {
+      "path": "tests/test_installation_doctor.py",
+      "bytes": 2311,
+      "sha256": "dd7903a1530a5b6d24f78ddee179146cd82e12a516c3158eb93d338a4ffe3257"
     },
     {
       "path": "tests/test_product3_gold_authority.py",
@@ -1316,71 +1213,6 @@
       "path": "tools/product5_shell/assets-register.json",
       "bytes": 2307,
       "sha256": "dab8faf7f80d8787bb59f4dc2fb5164c28a4e4d26623460d4737fd98e3cb8c30"
-    },
-    {
-      "path": "tools/product5_shell/dist/assets/app.js",
-      "bytes": 239276,
-      "sha256": "cd575a8e148a24223e4d6557243eba96f84c26f2e13dd44a8cab21344ffec716"
-    },
-    {
-      "path": "tools/product5_shell/dist/assets/route-commute.png",
-      "bytes": 1898132,
-      "sha256": "9610002d568e3fe7f25c0b3d8cb62a51421cc672279ab9b59148ef18b7571f4d"
-    },
-    {
-      "path": "tools/product5_shell/dist/assets/route-family-flex.png",
-      "bytes": 2032261,
-      "sha256": "4e7dc68d24a7c86743999d72e85598f164dc522dc1794bee5e654f7284badafe"
-    },
-    {
-      "path": "tools/product5_shell/dist/assets/route-price-discipline.png",
-      "bytes": 1563105,
-      "sha256": "4100cfddd896844ad5c9f43f1ed1cc948014856881ccfd53e0fd1027031bb0de"
-    },
-    {
-      "path": "tools/product5_shell/dist/assets/scene-ai-advisor.png",
-      "bytes": 1942475,
-      "sha256": "f12871e6e0f9eacf5fcac3e57616e295ed94bd5a17cf30082aadecfaa353f93d"
-    },
-    {
-      "path": "tools/product5_shell/dist/assets/scene-city-sandtable.png",
-      "bytes": 2243682,
-      "sha256": "f2266a2a9d5815f692186dd55f3da39366bf8cef1c80d5348e0650b93175700d"
-    },
-    {
-      "path": "tools/product5_shell/dist/assets/scene-community-garden.png",
-      "bytes": 2494891,
-      "sha256": "094b1bed3425d46950c362133fea4aea920b24459f1d037c397879630cab1107"
-    },
-    {
-      "path": "tools/product5_shell/dist/assets/scene-homecoming.png",
-      "bytes": 2186752,
-      "sha256": "36c4ae7dad9a3e734f9bba7b6f3856b253e489696907d8cee2c468ea1f310421"
-    },
-    {
-      "path": "tools/product5_shell/dist/assets/styles.css",
-      "bytes": 23806,
-      "sha256": "e428386fa713c6552f608a545d8d7623f0def3eae8b34a18d72f5946f7e0b7c6"
-    },
-    {
-      "path": "tools/product5_shell/dist/favicon.svg",
-      "bytes": 238,
-      "sha256": "b9f089bcced9d5a9adfa5f8617acf9e5a8ad293dd812b8f9912ac1a829581d12"
-    },
-    {
-      "path": "tools/product5_shell/dist/index.html",
-      "bytes": 963,
-      "sha256": "ed8b3d5656fcda6ef9fa8a97e34d7437a14347fa58a2a3cf17d4d263ae8cc20a"
-    },
-    {
-      "path": "tools/product5_shell/dist/m/index.html",
-      "bytes": 966,
-      "sha256": "1076ff0a79db19dd44d87a52fce956126d50a1d8ee9ed87ee0dc9668ddddad6d"
-    },
-    {
-      "path": "tools/product5_shell/dist/project-data.js",
-      "bytes": 15838,
-      "sha256": "58fb203201c4d4b4f7aae256efca34eb63dc8e12b1d5bdabf8c9758604db85bc"
     },
     {
       "path": "tools/product5_shell/index.html",

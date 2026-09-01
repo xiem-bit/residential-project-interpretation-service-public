@@ -24,6 +24,7 @@ TEST_FILES = (
     "tests/test_capability_parity.py",
     "tests/test_production_reference_library.py",
     "tests/test_product3_gold_authority.py",
+    "tests/test_installation_doctor.py",
     "tests/test_public_release_state.py",
 )
 

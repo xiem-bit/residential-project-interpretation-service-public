@@ -13,7 +13,15 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "RELEASE_MANIFEST.json"
-EXCLUDED_PARTS = {".git", ".venv", "node_modules", "verification-tmp", "__pycache__"}
+EXCLUDED_PARTS = {
+    ".git",
+    ".playwright-cli",
+    ".venv",
+    "dist",
+    "node_modules",
+    "verification-tmp",
+    "__pycache__",
+}
 EXCLUDED_NAMES = {".DS_Store", "RELEASE_MANIFEST.json"}
 
 
@@ -58,7 +66,9 @@ def build_manifest() -> dict[str, Any]:
         "source_commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
         "excluded": [
             ".git/**",
+            ".playwright-cli/**",
             ".venv/**",
+            "**/dist/**",
             "**/node_modules/**",
             "verification-tmp/**",
             "**/__pycache__/**",

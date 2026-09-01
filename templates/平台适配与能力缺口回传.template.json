@@ -1,0 +1,19 @@
+{
+  "schema": "residential.platform_adapter_contract.v0.2",
+  "platform": "current_codex_or_selected_platform",
+  "role": "carrier_adapter",
+  "input_semantic_version": "SEM-CURRENT",
+  "immutable_business_refs": ["current-value-anchor", "current-established-sc-ids"],
+  "requested_capability": "editable_presentation_or_web_runtime",
+  "outputs": [],
+  "gaps": [
+    {
+      "code": "CARRIER-CAPABILITY-MISSING",
+      "scope": "presentation_or_web",
+      "reason": "当前环境缺少完成载体所需的专业能力或依赖",
+      "action": "补齐能力后继续适配器任务，保持冻结业务语义不变",
+      "blocks_business_core": false
+    }
+  ],
+  "adapter_status": "gap"
+}

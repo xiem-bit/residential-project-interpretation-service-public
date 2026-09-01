@@ -29,6 +29,8 @@ python3 tests/run_public_tests.py
 python3 scripts/verify_production_run.py examples/production-path-tutorial/expected --mode tutorial
 ```
 
+其他电脑完整试装请读取[Codex安装与自检](INSTALL.md)，并运行现有`check_environment.py` doctor；住宅研究主链、产物3参考与产物5运行时按需检查，不把Node设为所有任务的前置。
+
 旧 RC1 的载体往返演示仍可独立运行：
 
 ```bash
