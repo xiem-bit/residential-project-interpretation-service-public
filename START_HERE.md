@@ -30,6 +30,8 @@
 
 教程的 `expected/` 是公开安全生产参考，可用于理解完整路径、字段关系和交付水位；不得把其中的项目事实、竞品、客群或SC复制为当前项目事实。
 
+需要参考成功成果或真人修订原因时，先读取`references/production-reference-index.json`，再按当前阶段定点加载对应`production_reference`或`learning_feedback`。完整参考与反馈都不能生成当前项目事实。
+
 ## 二、开始一个新项目
 
 先声明任务模式：

@@ -14,5 +14,6 @@
 | External upstream | `external-capabilities/README.md` | request, evidence, response and adoption contracts; preserve sufficiency, negative hits, conflicts, gaps and stop reason |
 | Carrier production | `adapters/README.md` | platform adapter after business semantics are frozen |
 | Release acceptance | `V0_2_RELEASE_SCOPE.md` | package-level clean install, full public-safe project and human acceptance |
+| Production reference or learning feedback | `references/production-reference-index.json` | load only the stage-matched public-safe reference; never copy project facts |
 
 For a complete technical-bid Product 3, first use the current complete combination in `examples/gold-product3-public-safe/` as the default assembly reference, then recompose it for the current project with `references/product3/page-semantics.json`. Page responsibility remains a field of page semantics; do not create a parallel library or Product 3 Skill. The detailed legacy-compatible templates in `templates/产物3第二章生产消费合同.template.json` and `templates/产物3第三章生产消费合同.template.json` remain available. They deepen page-level production but do not replace the v0.2 upstream path.

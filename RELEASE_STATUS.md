@@ -3,7 +3,7 @@
 ## 当前标签与候选
 
 - `v0.1.0-rc.1`：已发布、不可变；定位为“冻结语义核之后的下游合同、平台往返与载体结构演示”。
-- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`product3_product5_gold_complete / product4_excluded / learning_install_pending / not_released`。
+- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`product3_product5_gold_complete / product4_excluded / learning_reference_complete / install_acceptance_pending / not_released`。
 
 ## P0已经成立
 
@@ -22,11 +22,12 @@
 - A／B／C三级断言写作、去内部化、来源邻接和正式载体检查已经进入现有住宅生产总控，不新增平行Skill；
 - 产物3已经形成统一的页面语义库、黄金组合、删除禁用清单和首稿完整度门槛，并提供19页可编辑PPTX、逐页来源备注、同版渲染和19／19视觉检查；“页面职责”继续作为页面语义字段，不另建平行概念或Skill；
 - 产物5已经形成项目中立的完整运行时、四问分流、三类高密度推荐、手机路线、正式网址触发二维码、动效、公开安全生成式画面和桌面／手机同版QA；唯一源码继续位于`tools/product5_shell/`，黄金参考不复制平行实现；
+- 共享参考库已经登记两套机制不同的完整公开安全项目：青岚澄境覆盖产物1、2、3、5全链，望川序覆盖城市核心换新与产物1按需收口；两套均通过现行生产校验；
+- 真人修订反馈已经以“原稿问题—真人修改—可迁移原因—不可平移内容”登记报告、产物3、产物5和增量检索的十组平台中立模式，并通过统一参考索引按阶段路由；
 - 公开信息包候选`public_evidence_envelope.v1`与住宅侧三项合同已按原始字节哈希冻结；双方fixture往返和跨包harness已经通过，尚未发布正式版本或证明真实GUI／业务验收；
 
 ## 当前尚未成立
 
-- 共享参考库仍只有一套完整报告级虚构项目，尚未达到多机制项目与真人修订反馈的目标；
 - 统一安装、doctor、产物3／5专业适配和干净安装验收尚未完成。
 
 ## 本次发行明确排除
@@ -42,6 +43,6 @@
 
 ## 当前切片
 
-`dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`、`client_report_machine_summary_separation`、`product3_public_safe_gold`与`product5_public_safe_gold`已经进入验证。下一步补齐学习反馈参考与多机制项目覆盖，再完成自助安装验收。
+`dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`、`client_report_machine_summary_separation`、`product3_public_safe_gold`、`product5_public_safe_gold`与`multi_mechanism_learning_reference_library`已经进入验证。下一步完成统一安装、doctor、干净克隆与产物3／5适配验收。
 
 当前候选不得创建或推送`v0.2.0-rc.1`标签。完成`CAPABILITY_PARITY_MANIFEST.json`中的全部发布阻断项、干净克隆和双包端到端验收后，才能申请正式发布授权。

@@ -1,0 +1,104 @@
+{
+  "schema": "residential.super_competitiveness_plan.v0.2",
+  "project_id": "fictional-wangchuan-xu",
+  "semantic_version": "SEM-WCX-001",
+  "status": "minimum_three_sc_pass",
+  "items": [
+    {
+      "id": "SC-THREE-ANCHOR",
+      "name": "三锚日常组合",
+      "mechanism": "three_anchor_daily_route",
+      "status": "established",
+      "target_customer_refs": ["TG-CORE-RENEWAL"],
+      "purchase_task_refs": ["TASK-THREE-ANCHOR"],
+      "enemy_refs": ["COMP-OUTER-NEW", "核心区只比较单点距离"],
+      "project_support_refs": ["F-ROUTES"],
+      "belief_change": {"from": "新房换新只能以更长日常路线换更大面积", "to": "三个日常锚点可以先共同核验，让核心新房进入候选"},
+      "bounded_claim": {"comparison_set": "中城雅舍、江屿天樾与望川序三个虚构选项", "boundary": "一次工作日核验、当前三个锚点和当前购买任务", "claim": "本虚构样本内唯一同时提供核心新房形态与三锚点完整核验路径的选择"},
+      "five_checks": {
+        "purchase_impact": {"status": "pass", "rationale": "三个锚点共同可接受是核心换新进入候选的先决判断", "refs": ["TASK-THREE-ANCHOR", "OBS-VOICES"]},
+        "bounded_unique_or_best": {"status": "pass", "rationale": "唯一性只限定于三个虚构选项、一次核验和当前任务", "refs": ["F-ROUTES", "OBS-MARKET"]},
+        "enemy_relation": {"status": "pass", "rationale": "承认外围新房面积优势，以三锚日常重设比较", "refs": ["COMP-OUTER-NEW", "OBS-MARKET"]},
+        "project_support": {"status": "pass", "rationale": "完整道路路径来自已接受虚构事实，未升级为长期平均通勤", "refs": ["F-ROUTES"]},
+        "ue_provability": {"status": "pass", "rationale": "交互地图可逐一切换三个锚点并同时显示单日核验边界", "refs": ["UE-PROOF-THREE-ANCHOR"]}
+      },
+      "causal_chain": {
+        "project_fact": {"statement": "项目已形成三个日常锚点的一次完整道路核验", "refs": ["F-ROUTES"]},
+        "relative_competition": {"statement": "外围新房以面积取胜，本案以三锚日常组合重设换新比较", "refs": ["COMP-OUTER-NEW", "OBS-MARKET"]},
+        "customer_importance": {"statement": "承担上班、接送和照护的家庭需要先判断三条日常路线能否共同维持", "refs": ["TASK-THREE-ANCHOR", "OBS-VOICES"]},
+        "project_response": {"statement": "望川序把三条已核路径放进同一个核心换新选择", "refs": ["F-ROUTES"]},
+        "ue_proof": {"statement": "UE地图切换三个锚点并保留单日核验边界", "refs": ["UE-PROOF-THREE-ANCHOR"]},
+        "target_action": {"statement": "推动客户完成日常可接受判断并把本案纳入候选", "refs": ["enter_consideration"]}
+      },
+      "inference_link_refs": ["INF-THREE-ANCHOR"],
+      "purchase_stage_effects": ["enter_consideration"],
+      "production_items": [{"id": "ITEM-THREE-ANCHOR", "customer_judgment": "三个日常锚点共同可接受", "ue_proof_task": "三锚点路径切换与边界显示"}]
+    },
+    {
+      "id": "SC-FINISH-CLARITY",
+      "name": "交付边界清晰度",
+      "mechanism": "renovation_decision_clarity",
+      "status": "established",
+      "target_customer_refs": ["TG-CORE-RENEWAL"],
+      "purchase_task_refs": ["TASK-RENOVATION-CLARITY"],
+      "enemy_refs": ["COMP-CITY-RESALE", "交付清单等于品质保障"],
+      "project_support_refs": ["F-FINISH"],
+      "belief_change": {"from": "中心二手房现状可见，新房只能等待未来兑现", "to": "已列明交付边界可以集中核对新房决策项，并与二手房装修形成清晰取舍"},
+      "bounded_claim": {"comparison_set": "中城雅舍与望川序两个虚构中心换新选项", "boundary": "已列明厨房、卫浴、收纳和设备范围，不涉及品质和交付日期", "claim": "本虚构比较内以集中交付清单减少装修决策项的新房选择"},
+      "five_checks": {
+        "purchase_impact": {"status": "pass", "rationale": "装修决策负担是中心二手房与新房之间的核心取舍", "refs": ["TASK-RENOVATION-CLARITY", "OBS-VOICES"]},
+        "bounded_unique_or_best": {"status": "pass", "rationale": "比较只落在两个虚构中心换新选项和已列明范围", "refs": ["F-FINISH", "OBS-MARKET"]},
+        "enemy_relation": {"status": "pass", "rationale": "承认二手房现状可见，以集中核对范围展开正面比较", "refs": ["COMP-CITY-RESALE", "OBS-MARKET"]},
+        "project_support": {"status": "pass", "rationale": "项目已列明交付边界，品质与日期继续保持边界", "refs": ["F-FINISH", "GAP-DELIVERY"]},
+        "ue_provability": {"status": "pass", "rationale": "房间状态对照可显示交付范围与客户后续选择项", "refs": ["UE-PROOF-FINISH"]}
+      },
+      "causal_chain": {
+        "project_fact": {"statement": "厨房、卫浴、收纳和设备交付边界已经列明", "refs": ["F-FINISH"]},
+        "relative_competition": {"statement": "中心二手房现状可见但需要连续装修决策，本案提供集中核对范围", "refs": ["COMP-CITY-RESALE", "OBS-MARKET"]},
+        "customer_importance": {"statement": "希望减少拆改负担的家庭需要先知道哪些范围已经确定、哪些仍需选择", "refs": ["TASK-RENOVATION-CLARITY", "OBS-VOICES"]},
+        "project_response": {"statement": "望川序以明确清单集中呈现四类交付边界", "refs": ["F-FINISH"]},
+        "ue_proof": {"statement": "UE按房间对照交付范围和后续选择项，不演绎品质保障", "refs": ["UE-PROOF-FINISH"]},
+        "target_action": {"statement": "推动客户完成新房与二手房装修决策项比较", "refs": ["win_comparison"]}
+      },
+      "inference_link_refs": ["INF-FINISH"],
+      "purchase_stage_effects": ["win_comparison"],
+      "production_items": [{"id": "ITEM-FINISH", "customer_judgment": "交付边界能集中核对装修决策项", "ue_proof_task": "房间交付范围与后续选择项对照"}]
+    },
+    {
+      "id": "SC-FLEX-ROOM",
+      "name": "弹性房间切换",
+      "mechanism": "bounded_room_state_switch",
+      "status": "established",
+      "target_customer_refs": ["TG-CORE-RENEWAL"],
+      "purchase_task_refs": ["TASK-FAMILY-STATE"],
+      "enemy_refs": ["COMP-OUTER-NEW", "ALT-WAIT", "面积标签等于家庭适配"],
+      "project_support_refs": ["F-FLEX"],
+      "belief_change": {"from": "家庭改善主要依靠增加面积，价格未出时户型判断也可以等待", "to": "明确边界的弹性房可以先验证三种家庭状态，再继续判断价格"},
+      "bounded_claim": {"comparison_set": "江屿天樾、继续等待与望川序三个虚构选项", "boundary": "112与128平方米、存在办公儿童活动或临时照护任务", "claim": "本虚构样本内可在明确采光、收纳和通行边界下完成三种房间状态验证的选择"},
+      "five_checks": {
+        "purchase_impact": {"status": "pass", "rationale": "空间状态可以在价格前先完成适配判断，缩小后续决策范围", "refs": ["TASK-FAMILY-STATE", "GAP-PRICE"]},
+        "bounded_unique_or_best": {"status": "pass", "rationale": "结论限定于两种户型、三个虚构选项和对应家庭任务", "refs": ["F-FLEX", "OBS-MARKET"]},
+        "enemy_relation": {"status": "pass", "rationale": "面对外围大面积与继续等待，本案改比空间状态是否真正可切换", "refs": ["COMP-OUTER-NEW", "ALT-WAIT"]},
+        "project_support": {"status": "pass", "rationale": "隔墙、采光、收纳和通行边界已有图纸事实承接", "refs": ["F-FLEX"]},
+        "ue_provability": {"status": "pass", "rationale": "三种房间状态可切换展示并检查各自通行与收纳关系", "refs": ["UE-PROOF-FLEX-ROOM"]}
+      },
+      "causal_chain": {
+        "project_fact": {"statement": "两种户型的弹性房已明确隔墙、采光、收纳和通行边界", "refs": ["F-FLEX"]},
+        "relative_competition": {"statement": "外围新房依靠面积、等待保留选择权，本案用可验证状态重设比较", "refs": ["COMP-OUTER-NEW", "ALT-WAIT"]},
+        "customer_importance": {"statement": "存在办公、儿童活动和临时照护任务的家庭需要判断同一房间怎样切换", "refs": ["TASK-FAMILY-STATE", "OBS-VOICES"]},
+        "project_response": {"statement": "望川序以明确空间边界承接三种家庭状态", "refs": ["F-FLEX"]},
+        "ue_proof": {"statement": "UE切换书房、儿童活动和临时照护状态并检查动线", "refs": ["UE-PROOF-FLEX-ROOM"]},
+        "target_action": {"statement": "推动客户先完成户型适配，再等待价格验证支付边界", "refs": ["prompt_action"]}
+      },
+      "inference_link_refs": ["INF-FLEX"],
+      "purchase_stage_effects": ["prompt_action"],
+      "production_items": [{"id": "ITEM-FLEX-ROOM", "customer_judgment": "同一房间能在三种家庭状态之间切换", "ue_proof_task": "三状态切换与空间边界检查"}]
+    }
+  ],
+  "purchase_stage_coverage": {
+    "enter_consideration": ["SC-THREE-ANCHOR"],
+    "win_comparison": ["SC-FINISH-CLARITY"],
+    "prompt_action": ["SC-FLEX-ROOM"]
+  }
+}
+

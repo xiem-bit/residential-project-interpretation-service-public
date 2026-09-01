@@ -197,14 +197,13 @@
       ],
       "public": [
         "examples/production-path-tutorial",
-        "examples/production-path-revision"
-      ],
-      "planned_public": [
+        "examples/production-path-revision",
         "references/production-reference-index.json",
         "references/learning-feedback",
         "examples/end-to-end-public-safe"
       ],
-      "coverage": "public_safe_reference_registry_and_learning_feedback_required"
+      "planned_public": [],
+      "coverage": "complete_public_safe_reference_registry_multi_mechanism_projects_and_learning_feedback"
     },
     {
       "authority": "platform_neutral_learning_feedback",

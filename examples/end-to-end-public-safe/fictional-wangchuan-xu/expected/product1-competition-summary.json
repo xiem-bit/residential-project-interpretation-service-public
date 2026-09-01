@@ -1,0 +1,39 @@
+{
+  "schema": "residential.product1_competition_study.v0.2",
+  "project_id": "fictional-wangchuan-xu",
+  "status": "product1_complete",
+  "competitors": [
+    {"id": "COMP-CITY-RESALE", "name": "中城雅舍（虚构）", "role": "direct", "role_boundary": "中心日常、112平方米以下、接受装修的换新任务", "why_chosen": "现状可见且三锚点关系成熟，是客户保留中心日常的直接选项", "substitution_basis": ["lifecycle", "area_and_price", "purchase_task"], "strengths": ["现状可现场查看", "三锚点关系成熟"], "tradeoffs": ["需要重新装修", "停车与收纳条件有限"], "evidence_refs": ["OBS-MARKET", "OBS-VOICES"]},
+    {"id": "COMP-OUTER-NEW", "name": "江屿天樾（虚构）", "role": "partial", "role_boundary": "138—165平方米、愿意以更长日常路线换更大新房的任务", "why_chosen": "面积和新社区空间更完整，能够替代本案的换新与家庭扩容任务", "substitution_basis": ["product_form", "area_and_price", "purchase_task"], "strengths": ["面积更大", "新社区公共空间完整"], "tradeoffs": ["三锚点路线更长", "照护往返增加"], "evidence_refs": ["OBS-MARKET", "OBS-VOICES"]},
+    {"id": "ALT-WAIT", "name": "继续等待", "role": "open_alternative", "role_boundary": "价格和交付日期未发布阶段", "why_chosen": "保留预算和供应选择权，是当前行动阻力而非闭合购买事件", "substitution_basis": ["lifecycle", "purchase_task"], "strengths": ["保留价格纪律", "保留新供应选择"], "tradeoffs": ["现住矛盾继续", "装修与换新判断继续悬置"], "evidence_refs": ["OBS-MARKET", "OBS-VOICES", "GAP-PRICE"]}
+  ],
+  "competition_problem": {
+    "adverse_belief": "望川序只是面积不如外围新房、兑现不如中心二手房直接的折中选择",
+    "target_belief": "望川序把三锚日常、新房交付边界和弹性房切换组织成城市核心换新的完整答案",
+    "tangible_enemies": ["COMP-CITY-RESALE", "COMP-OUTER-NEW", "ALT-WAIT"],
+    "intangible_enemies": ["核心区只比较单点距离", "新房交付清单等于品质保障", "面积标签等于家庭适配"],
+    "evidence_refs": ["F-ROUTES", "F-FINISH", "F-FLEX", "OBS-MARKET", "OBS-VOICES"]
+  },
+  "effective_boundary": {
+    "geography": "澜州市中城北岸虚构比较样本",
+    "customer": "双职工、承担接送与长辈照护、希望减少旧房装修负担的换新家庭",
+    "area_and_price": "98—165平方米交叠选择；正式价格未知，不判断支付适配",
+    "product_form": "中心二手房、核心区新房与外围大面积新房",
+    "purchase_task": "在日常锚点不明显倒退的前提下完成新房换新并改善家庭空间",
+    "lifecycle_window": "本案预售前、外围新房在售与中心二手房可交易窗口",
+    "rationale": "三个选项分别占据现状可见、面积空间和等待权，本案需要以日常、决策清晰度和空间切换重组比较"
+  },
+  "sc_candidates": [
+    {"id": "SC-C-WCX-01", "mechanism": "三锚点日常路线组合", "support_refs": ["F-ROUTES", "OBS-MARKET", "OBS-VOICES"]},
+    {"id": "SC-C-WCX-02", "mechanism": "交付范围相对装修决策的清晰度", "support_refs": ["F-FINISH", "OBS-MARKET", "OBS-VOICES"]},
+    {"id": "SC-C-WCX-03", "mechanism": "明确空间边界下的弹性房状态切换", "support_refs": ["F-FLEX", "OBS-VOICES", "GAP-PRICE"]}
+  ],
+  "client_visible_conclusions": [
+    "望川序以三锚日常组合进入核心换新候选",
+    "望川序用交付边界清晰度与中心二手房展开正面比较",
+    "望川序让客户在等待价格期间先完成弹性房适配判断"
+  ],
+  "gap_refs": ["GAP-PRICE", "GAP-DELIVERY"],
+  "stop_search": {"value": true, "reason": "现有虚构材料足以闭合三种不同竞争机制；价格与交付日期保持开放边界"}
+}
+

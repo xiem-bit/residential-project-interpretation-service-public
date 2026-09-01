@@ -1,0 +1,22 @@
+{
+  "schema": "residential.product_enablement_matrix.v0.2",
+  "project_id": "fictional-wangchuan-xu",
+  "semantic_version": "SEM-WCX-001",
+  "products": [
+    {"product": 1, "status": "complete", "reason": "本轮甲方成果为竞争态势研究", "deliverables": ["product1-competition-study.md", "product1-competition-summary.json"]},
+    {"product": 2, "status": "not_enabled", "reason": "本轮不需要独立客群报告", "deliverables": []},
+    {"product": 3, "status": "not_enabled", "reason": "本轮不生产UE售前提案", "deliverables": []},
+    {"product": 5, "status": "not_enabled", "reason": "本轮不生产交互蓝图", "deliverables": []}
+  ],
+  "high_cost_admission": {
+    "status": "research_only",
+    "semantic_core_frozen": true,
+    "established_sc_count": 3,
+    "all_five_checks_pass": true,
+    "all_six_links_closed": true,
+    "purchase_stage_coverage_complete": true,
+    "fact_and_rights_boundary_declared": true
+  },
+  "adapter_requirements": []
+}
+

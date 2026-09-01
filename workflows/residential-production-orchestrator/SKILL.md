@@ -23,6 +23,8 @@ Then declare exactly one mode: `real_project_delivery`, `non_research_task`, or 
 
 Use [routing.md](references/routing.md) to load only the stage-specific specifications. Use [output-contract.md](references/output-contract.md) for filenames, identifiers and status transitions.
 
+When a production reference or prior human revision would materially improve the current stage, route through `references/production-reference-index.json` and load only the matching entry. References teach mechanisms, structure and revision reasons; they never supply current-project facts.
+
 When Product 1, Product 2 or any client-facing PPT, HTML, PDF or web copy is produced or materially rewritten, also read [client-facing-writing.md](references/client-facing-writing.md). It carries the full A/B/C writing, de-internalization, source adjacency and carrier-review rules inside this existing orchestrator; do not create a parallel writing Skill.
 
 ## Workflow

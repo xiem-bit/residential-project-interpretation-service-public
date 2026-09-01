@@ -1,0 +1,51 @@
+{
+  "schema": "residential.semantic_core.v0.2",
+  "project_id": "fictional-wangchuan-xu",
+  "version": "SEM-WCX-001",
+  "status": "semantic_core_frozen",
+  "source_outputs": ["project-contract.md", "product1-competition-study.md"],
+  "project_and_task_identity": {
+    "project_name": "望川序（全量虚构）",
+    "task_mode": "tutorial",
+    "business_question": "城市核心换新家庭如何重组中心二手房、外围大面积新房和继续等待的比较",
+    "fact_cutoff": "2026-08-20"
+  },
+  "belief_change": {
+    "adverse": "望川序只是面积与兑现感都居中的折中选择",
+    "target": "望川序以三锚日常、交付边界清晰度和弹性房切换形成城市核心换新的完整答案"
+  },
+  "enemies": {
+    "tangible": ["COMP-CITY-RESALE", "COMP-OUTER-NEW", "ALT-WAIT"],
+    "intangible": ["核心区只比较单点距离", "交付清单等于品质保障", "面积标签等于家庭适配"]
+  },
+  "target_customers": [
+    {"id": "TG-CORE-RENEWAL", "description": "双职工、承担接送与长辈照护并希望减少旧房装修负担的核心换新家庭", "purchase_task_refs": ["TASK-THREE-ANCHOR", "TASK-RENOVATION-CLARITY", "TASK-FAMILY-STATE"]}
+  ],
+  "purchase_tasks": [
+    {"id": "TASK-THREE-ANCHOR", "summary": "让上班、接送和长辈照护三个日常锚点共同可接受", "boundary": "一次虚构工作日核验，不代表长期平均"},
+    {"id": "TASK-RENOVATION-CLARITY", "summary": "在中心日常不明显倒退的同时减少旧房拆改与设备更新决策", "boundary": "只比较已列明交付范围，不承诺品质或日期"},
+    {"id": "TASK-FAMILY-STATE", "summary": "让书房、儿童活动和临时照护在同一房间内按阶段切换", "boundary": "112与128平方米且家庭存在对应任务"}
+  ],
+  "effective_boundary": {
+    "geography": "澜州市中城北岸虚构样本",
+    "customer": "承担三个日常锚点并希望减少装修负担的换新家庭",
+    "area_and_price": "98—165平方米；正式价格未知",
+    "product_form": "中心二手房、核心区新房与外围大面积新房",
+    "purchase_task": "核心日常、装修决策和家庭空间共同改善",
+    "lifecycle_window": "本案预售前与两个虚构选项当前窗口",
+    "bounded_claim": "只在本虚构样本与三项购买任务内形成组合比较"
+  },
+  "value_anchor": {
+    "text": "把三个日常锚点、新房交付边界与家庭空间切换放进同一次城市核心换新",
+    "replaces": "核心换新只能在二手房现状可见和外围新房面积更大之间二选一",
+    "project_support_refs": ["F-ROUTES", "F-FINISH", "F-FLEX"],
+    "sc_refs": ["SC-THREE-ANCHOR", "SC-FINISH-CLARITY", "SC-FLEX-ROOM"]
+  },
+  "super_competitiveness_refs": ["SC-THREE-ANCHOR", "SC-FINISH-CLARITY", "SC-FLEX-ROOM"],
+  "product_package": {"enabled": [1], "not_enabled": [2, 3, 5]},
+  "key_upstream_gaps": ["GAP-PRICE", "GAP-DELIVERY"],
+  "current_decisions": ["DEC-ROUTE", "DEC-DELIVERY"],
+  "superseded_decisions": [],
+  "source_refs": ["F-PROJECT", "F-ROUTES", "F-FINISH", "F-FLEX", "OBS-MARKET", "OBS-VOICES"]
+}
+

@@ -1,7 +1,7 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "product3_product5_gold_complete_product4_excluded_learning_install_pending_not_released",
+  "status": "product3_product5_gold_complete_product4_excluded_learning_complete_install_pending_not_released",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
     "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
@@ -203,12 +203,12 @@
       "domain": "gold_reference_and_learning",
       "classification": "private_replaced",
       "source_authority_ids": ["shared_production_references", "product1_product2_gold_references", "product3_gold_assembly", "product5_gold_implementation"],
-      "public_targets": ["examples/production-path-tutorial", "examples/production-path-revision"],
-      "planned_public_targets": ["references/production-reference-index.json", "references/learning-feedback", "examples/end-to-end-public-safe"],
+      "public_targets": ["references/production-reference-index.json", "references/learning-feedback", "examples/production-path-tutorial", "examples/production-path-revision", "examples/end-to-end-public-safe", "examples/gold-product3-public-safe", "examples/gold-product5-public-safe"],
+      "planned_public_targets": [],
       "load_condition": "stage_specific_reference_lookup",
       "acceptance": "至少两至三套完整项目、正式产物参考、正反例和真人修订反馈可被路由调用",
-      "status": "public_safe_derivative_required",
-      "gap": "当前只有教程和结构expected，缺正式完成度的多机制黄金参考库"
+      "status": "implemented_current",
+      "gap": ""
     },
     {
       "id": "CAP-014",
@@ -272,8 +272,7 @@
     }
   ],
   "release_blockers": [
-    "CAP-013",
     "CAP-016"
   ],
-  "next_slice": "learning_feedback_multi_mechanism_references_and_self_install"
+  "next_slice": "self_install_doctor_and_clean_clone_acceptance"
 }

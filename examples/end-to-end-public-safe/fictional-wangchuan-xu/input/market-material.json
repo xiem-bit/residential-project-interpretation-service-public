@@ -1,0 +1,31 @@
+{
+  "schema": "synthetic.market_material.v1",
+  "project": "望川序（全量虚构）",
+  "options": [
+    {
+      "id": "COMP-CITY-RESALE",
+      "name": "中城雅舍（虚构）",
+      "lifecycle": "existing_resale",
+      "product": "98—118平方米中心区二手住宅",
+      "strengths": ["可实地查看现状", "三个家庭日常锚点关系成熟"],
+      "tradeoffs": ["需要重新装修", "停车与收纳条件有限"]
+    },
+    {
+      "id": "COMP-OUTER-NEW",
+      "name": "江屿天樾（虚构）",
+      "lifecycle": "on_sale_new_build",
+      "product": "138—165平方米外围新房",
+      "strengths": ["面积更大", "新社区公共空间完整"],
+      "tradeoffs": ["三个日常锚点的路线更长", "长辈照护往返增加"]
+    },
+    {
+      "id": "ALT-WAIT",
+      "name": "继续等待（开放选项）",
+      "lifecycle": "open_alternative",
+      "strengths": ["保留价格和供应选择权"],
+      "tradeoffs": ["现住空间矛盾继续", "装修和换新判断继续悬置"]
+    }
+  ],
+  "boundary": "全部数据为公开安全虚构材料，只用于生产路径示范"
+}
+

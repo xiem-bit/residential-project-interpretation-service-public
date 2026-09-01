@@ -1,0 +1,20 @@
+{
+  "schema": "residential.production_receipt.v0.2",
+  "project_id": "fictional-wangchuan-xu",
+  "run_mode": "tutorial",
+  "enabled_products": [1],
+  "business_statuses": {
+    "rules_loaded": "pass",
+    "project_identity_closed": "pass",
+    "product1_complete": "pass",
+    "semantic_core_frozen": "pass",
+    "minimum_three_sc_pass": "pass",
+    "cross_product_consistency_pass": "pass"
+  },
+  "machine_validation": {"status": "pass", "scope": "structure_references_states_only", "errors": []},
+  "human_review": {"status": "not_run", "decision": null, "notes": ["公开安全完整项目只证明生产参考，不冒充真人接受"]},
+  "adapter_statuses": {"presentation": "not_requested", "web": "not_requested", "publication": "not_authorized"},
+  "gaps": ["正式价格与交付日期不在本次虚构研究内关闭"],
+  "final_status": "tutorial_reference_complete"
+}
+

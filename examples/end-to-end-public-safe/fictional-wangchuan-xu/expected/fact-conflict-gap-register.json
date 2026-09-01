@@ -1,0 +1,25 @@
+{
+  "schema": "residential.fact_conflict_gap_register.v0.2",
+  "project_id": "fictional-wangchuan-xu",
+  "input_freeze_id": "INPUT-FREEZE-WCX-001",
+  "fact_cutoff": "2026-08-20",
+  "entries": [
+    {"id": "F-PROJECT", "kind": "fact", "claim": "望川序为中城北岸单一宗地虚构新房项目，6栋27—31层住宅，产品112、128、142平方米", "source_refs": ["INPUT-FORMAL"], "evidence_roles": ["formal_project_fact"], "scope": "本虚构项目", "impact": "supports_identity_and_product_boundary", "status": "accepted"},
+    {"id": "F-ROUTES", "kind": "fact", "claim": "一次虚构工作日核验记录了项目至商务区、学校和长辈住址的完整道路路径", "source_refs": ["INPUT-FORMAL"], "evidence_roles": ["formal_project_fact", "poi_or_transit_existence"], "scope": "一次工作日核验，不代表长期平均", "impact": "supports_bounded_three_anchor_relation", "status": "accepted"},
+    {"id": "F-FINISH", "kind": "fact", "claim": "交付标准清单列明厨房、卫浴、收纳和设备边界", "source_refs": ["INPUT-FORMAL"], "evidence_roles": ["formal_project_fact", "feature_attribute"], "scope": "已列明的交付范围，不代表品质结果", "impact": "supports_finish_scope_comparison", "status": "accepted"},
+    {"id": "F-FLEX", "kind": "fact", "claim": "112与128平方米的弹性房已标明隔墙、采光、收纳和通行边界", "source_refs": ["INPUT-FORMAL"], "evidence_roles": ["formal_project_fact", "feature_attribute"], "scope": "两种户型的图纸边界", "impact": "supports_room_state_switch", "status": "accepted"},
+    {"id": "OBS-MARKET", "kind": "limited_observation", "claim": "中心二手房、外围大面积新房和继续等待构成三个虚构候选选项，角色仍需按购买任务裁定", "source_refs": ["INPUT-MARKET"], "evidence_roles": ["institutional_market_observation", "formal_competitor_fact", "open_interest_or_waiting"], "scope": "三个虚构选项", "impact": "supports_candidate_and_comparison_set", "status": "limited"},
+    {"id": "OBS-VOICES", "kind": "limited_observation", "claim": "五条虚构声音涉及日常锚点、装修负担、弹性房间和等待价格", "source_refs": ["INPUT-VOICES"], "evidence_roles": ["nonprobability_social_sample", "counterexample", "open_interest_or_waiting"], "scope": "五条虚构声音，不外推总体", "impact": "supports_purchase_task_hypotheses", "status": "limited"},
+    {"id": "GAP-PRICE", "kind": "gap", "claim": "正式价格与付款条件尚未发布", "source_refs": ["INPUT-FORMAL"], "evidence_roles": ["missing_evidence"], "scope": "支付适配与行动承诺", "impact": "blocks_price_fit_claim", "status": "open", "owner": "future_authorized_project_owner", "stop_condition": "取得正式价格与付款文件"},
+    {"id": "GAP-DELIVERY", "kind": "gap", "claim": "正式交付日期尚未发布", "source_refs": ["INPUT-FORMAL"], "evidence_roles": ["missing_evidence", "planned_or_future_status"], "scope": "交付时点", "impact": "blocks_delivery_timing_claim", "status": "open", "owner": "future_authorized_project_owner", "stop_condition": "取得正式交付文件"},
+    {"id": "CI-QUALITY", "kind": "cannot_infer", "claim": "交付标准清单不能推出品质结果、按期交付或兑现保障", "source_refs": ["INPUT-FORMAL"], "evidence_roles": ["cannot_infer_boundary"], "scope": "交付与品质表达", "impact": "prohibits_quality_guarantee", "status": "cannot_infer"}
+  ],
+  "inference_links": [
+    {"id": "INF-THREE-ANCHOR", "relation_id": "REL-FORMAL-FACT", "source_refs": ["F-ROUTES"], "target_claim": "三锚点路线关系相对外围新房形成边界内竞争判断", "target_level": "bounded_comparative_judgment", "boundary": "一次虚构工作日核验、三个虚构选项和当前购买任务", "bridge_refs": ["OBS-MARKET", "OBS-VOICES"], "decision": "allowed_with_bridge", "target_refs": ["SC-THREE-ANCHOR"]},
+    {"id": "INF-FINISH", "relation_id": "REL-FEATURE-ATTRIBUTE", "source_refs": ["F-FINISH"], "target_claim": "已列明交付边界减少相对二手房装修的决策不确定项", "target_level": "actual_use_outcome", "boundary": "只说明核对范围，不声称品质或交付保障", "bridge_refs": ["OBS-MARKET", "OBS-VOICES"], "decision": "allowed_with_bridge", "target_refs": ["SC-FINISH-CLARITY"]},
+    {"id": "INF-FLEX", "relation_id": "REL-FEATURE-ATTRIBUTE", "source_refs": ["F-FLEX"], "target_claim": "明确边界的弹性房承接书房、儿童活动和临时照护切换", "target_level": "actual_use_outcome", "boundary": "112与128平方米且家庭存在对应任务", "bridge_refs": ["OBS-VOICES"], "decision": "allowed_with_bridge", "target_refs": ["SC-FLEX-ROOM"]},
+    {"id": "INF-SOCIAL-PREVALENCE-WCX", "relation_id": "REL-NONPROBABILITY-SOCIAL", "source_refs": ["OBS-VOICES"], "target_claim": "五条虚构声音代表澜州市主流购房态度", "target_level": "population_prevalence", "boundary": "不允许外推", "bridge_refs": [], "decision": "rejected", "target_refs": []}
+  ],
+  "freeze_status": "input_frozen_with_declared_gaps"
+}
+

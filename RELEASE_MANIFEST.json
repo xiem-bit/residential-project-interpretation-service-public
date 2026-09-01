@@ -14,8 +14,8 @@
     ".DS_Store",
     "RELEASE_MANIFEST.json"
   ],
-  "file_count": 277,
-  "tree_sha256": "eb7adfa06cd253f650677d03ea5606d39f4f2c373e36a0d90fe91b02bd321780",
+  "file_count": 295,
+  "tree_sha256": "ca1846d4ec06f114cd9fdb051bddc24e98c0d9233e2094397afedc10d666ce79",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -174,8 +174,8 @@
     },
     {
       "path": "CAPABILITY_PARITY_MANIFEST.json",
-      "bytes": 16523,
-      "sha256": "b0e3ff049195856a1d1bba813cdb43890dec2419473ddcf7eb596c542f613e75"
+      "bytes": 16485,
+      "sha256": "4fcc62404e36274991595161738fb3b49a6f2f0c41912462d6966af1eed5c5c7"
     },
     {
       "path": "COLD_START_PROTOCOL.md",
@@ -194,8 +194,8 @@
     },
     {
       "path": "PRODUCTION_AUTHORITY_MAP.json",
-      "bytes": 11107,
-      "sha256": "6789859c4c1232d9a4ecf1bed28489837aa400e04c5938b98362aae4dd7d25d9"
+      "bytes": 11126,
+      "sha256": "028cd8d716ae9bf41af68cbbd2e697d6b0ee7acf27a5f05c14636d6ce103bbc4"
     },
     {
       "path": "PRODUCTION_PATH_MANIFEST.json",
@@ -204,8 +204,8 @@
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
-      "bytes": 3446,
-      "sha256": "e628b1f1686c075564b61ef6a8ee13108b3140e09a8e1cf095cb2b13f1356017"
+      "bytes": 3592,
+      "sha256": "f75cfc1cbda5f41d761b8b2c83b69971270a68d0b2ba1a8e58eb1ae3f505b4fe"
     },
     {
       "path": "RC1_E2E_VERIFICATION.json",
@@ -214,13 +214,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 3561,
-      "sha256": "e56c7f6cb983275bdb38511758da7e80000ae6f46e552ad7136d83360022678a"
+      "bytes": 3612,
+      "sha256": "a7f2657d0a4af04c0fb919949d814be66bc2daea43ce8c29b7fd43b357eb0f58"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 4216,
-      "sha256": "d818d023a5f6f04ac70343a7a43930badffdc2e1eb22afc0c6d7e3c1678abc92"
+      "bytes": 4604,
+      "sha256": "3a1dba3d922ac6ce0d908bf5142d6ee0c103c5fea03237f8422d3697a901cdc1"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
@@ -244,8 +244,8 @@
     },
     {
       "path": "START_HERE.md",
-      "bytes": 4943,
-      "sha256": "3676ed4af33883b313566c454fe07fc017db68a6b9f7b28dc3955688f6d4710b"
+      "bytes": 5192,
+      "sha256": "56dab09bd9f7162adeb6ef297975ed1b4435e2cc404e239954c991a3dcb96d75"
     },
     {
       "path": "THIRD_PARTY_LICENSES.json",
@@ -401,6 +401,76 @@
       "path": "core/09-变更回写与重投影.md",
       "bytes": 1806,
       "sha256": "e518f2de7080a40fd1819b8b3caff3addf2f442532329b42baebe0ae32f8bb4f"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/README.md",
+      "bytes": 779,
+      "sha256": "ede57b6eb9bf385b06729ffbe759d3cb857f0f0e645779392eb812619ec1d2b3"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu/README.md",
+      "bytes": 923,
+      "sha256": "53bba14c7a7ca4f825c4c3cff55ad027c712db7414b15cb5cb5073b277242bb5"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu/expected/fact-conflict-gap-register.json",
+      "bytes": 5092,
+      "sha256": "906a831ac17ac39bbf0134ec80939afbbdd49a5c6436b1f773c7331a98ea4ae2"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu/expected/product-enablement-matrix.json",
+      "bytes": 988,
+      "sha256": "b248c3581fd5e0109fee54c357fb961d2d3ab9854b4ade516fa4453ab24a3d7e"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu/expected/product1-competition-study.md",
+      "bytes": 4346,
+      "sha256": "40c2176ad1d810588a804da1baec644fca5e4a1d7b3786525462cf6042df84ed"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu/expected/product1-competition-summary.json",
+      "bytes": 3880,
+      "sha256": "768b9d6c929398491da1539d6eda60be50844696cf76e3383a831aec6c41e7c4"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu/expected/production-receipt.json",
+      "bytes": 883,
+      "sha256": "e594d58055765b04420c0726c2826e469f1d77eb3294f90b62dadeb331d7def2"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu/expected/project-contract.md",
+      "bytes": 2780,
+      "sha256": "ae02e41395c3666b2943b6006cbb19862d07eb53225126b98f3cd03566493ec3"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu/expected/semantic-core.json",
+      "bytes": 3124,
+      "sha256": "a86475118915eb36ac71c43fe199d9d0278ac1890c98375c89053d0775f0a7d6"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu/expected/super-competitiveness-plan.json",
+      "bytes": 9223,
+      "sha256": "4215eb6c4cb9da3dbafc0ff9eff77d80cf715874f328320e0aef6a6e9b96180a"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu/input/customer-voices.md",
+      "bytes": 585,
+      "sha256": "087d44e510d0f870a055fdfbe931a8cecb9f7e7f0898a36b473cebba24fe0974"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu/input/formal-material.md",
+      "bytes": 817,
+      "sha256": "33ada6edc2f1047861619968db231780aadd2b45058f2a84f7bac3a95f7ae435"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu/input/market-material.json",
+      "bytes": 1134,
+      "sha256": "75e607d9a4edb465369e8191733672f0925e7aa02c462d2631f30c2eed356401"
+    },
+    {
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu/input/task-brief.md",
+      "bytes": 477,
+      "sha256": "f7b07536132430b7a012aa8fe4d58de39d0736278a787bac2206ee3fee9ad51d"
     },
     {
       "path": "examples/fictional-qinglan-chengjing/README.md",
@@ -758,6 +828,16 @@
       "sha256": "2f42108a1f346ef1d0ab0a5a94d9717199b31c58ecfdc7e5397fda2c9c3f4978"
     },
     {
+      "path": "references/learning-feedback/README.md",
+      "bytes": 954,
+      "sha256": "22337b762356984d4209d9a141b5edd13e36dce67c7bb68aebf7a7632caedd60"
+    },
+    {
+      "path": "references/learning-feedback/cases.json",
+      "bytes": 7584,
+      "sha256": "67fb924cc1475f2170932e72575a0835db66eae672f29ecd417f56fa4d1a011a"
+    },
+    {
       "path": "references/product3/README.md",
       "bytes": 3721,
       "sha256": "47f8b28147c2d3532b8947be998ddf6a1545aa68a190d11bcfcc181725c48290"
@@ -766,6 +846,11 @@
       "path": "references/product3/page-semantics.json",
       "bytes": 11591,
       "sha256": "2a24c5c285268f74ab94b6eb53943eb3410349db1f339d9f65752e91789f99f9"
+    },
+    {
+      "path": "references/production-reference-index.json",
+      "bytes": 2578,
+      "sha256": "a7f104ef494aeda02f1ca5666bbeb29d62308be4be99bf48491bd6454016549a"
     },
     {
       "path": "schemas/change-impact.schema.json",
@@ -854,8 +939,8 @@
     },
     {
       "path": "scripts/verify_capability_parity.py",
-      "bytes": 13670,
-      "sha256": "8eef248ab18d8e9961d36cd3cf7a33ca2a334bbe28fd0cd99c254b64b2c71a87"
+      "bytes": 13679,
+      "sha256": "2cedaa0a452817d607004d65e7c75423859ddc90c7394b6fdb7b510fa550be5e"
     },
     {
       "path": "scripts/verify_cross_package_conformance.py",
@@ -979,8 +1064,8 @@
     },
     {
       "path": "tests/run_public_tests.py",
-      "bytes": 1648,
-      "sha256": "8a431e372b390dd276135e104f54ffbffcc90e911eda3bad83392e734336fcb2"
+      "bytes": 1698,
+      "sha256": "47859d8ab604c5aa0ea12b943b91404dbfd2bd8b28eb7d2b6d4f8b25e856ef3b"
     },
     {
       "path": "tests/test_business_gates_public.py",
@@ -1011,6 +1096,11 @@
       "path": "tests/test_production_path_v02.py",
       "bytes": 12701,
       "sha256": "6e2ba9905be065ccaa2d5c33280f12720dfd3b01c55ab8b75f5d4c937a17435f"
+    },
+    {
+      "path": "tests/test_production_reference_library.py",
+      "bytes": 3486,
+      "sha256": "b59c7257379b959ea25697a7263f0ea73f10b75c2b20aa26adeb8d993806bc72"
     },
     {
       "path": "tests/test_public_release_state.py",
@@ -1379,8 +1469,8 @@
     },
     {
       "path": "workflows/residential-production-orchestrator/SKILL.md",
-      "bytes": 6917,
-      "sha256": "9c4fd6496171053ad7d13b41514e22dea1a35fe7112eb7145f81aba85d6fb025"
+      "bytes": 7209,
+      "sha256": "b4bac2ee46ae4d5625841c8ed5b716326d101cc39237d81bb239c986793af7ba"
     },
     {
       "path": "workflows/residential-production-orchestrator/agents/openai.yaml",
@@ -1399,8 +1489,8 @@
     },
     {
       "path": "workflows/residential-production-orchestrator/references/routing.md",
-      "bytes": 2361,
-      "sha256": "abb4f3d3f98033818ab8e710bcb557eed0484a020b829240f0272cb98c68570f"
+      "bytes": 2532,
+      "sha256": "42592fffdd9cc1847e8ef2c902c610fb6c1e9c5c94fe57832b5a435959ec9d00"
     }
   ]
 }

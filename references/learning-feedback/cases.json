@@ -1,0 +1,98 @@
+{
+  "schema": "residential.learning_feedback.v1",
+  "status": "current_public_safe",
+  "use_rule": "按当前生产阶段定点读取；学习修订原因，不复制来源项目内容",
+  "cases": [
+    {
+      "id": "LF-REPORT-001",
+      "stage": "product1_product2",
+      "before_problem": "内部研究文件经过删词后直接作为甲方报告，章节仍围绕方法、材料和后台过程组织。",
+      "human_revision": "重新编辑为两份独立甲方报告：竞争态势研究承接市场—区域—有效竞争圈—本案答案，购买决策研究承接客群处境—触发—替代—代价—行动。",
+      "transferable_reason": "甲方需要连续业务问题的答案，内部编号和研究过程不能承担报告主线。",
+      "do_not_transfer": "来源项目的城市、板块、竞品、客群、页数和具体结论。",
+      "resulting_rule_refs": ["core/02-产物1竞争态势研究.md", "core/03-产物2购买决策研究.md"]
+    },
+    {
+      "id": "LF-REPORT-002",
+      "stage": "product1",
+      "before_problem": "城市市场章节泛谈宏观趋势，与当前项目的竞争问题连接较弱。",
+      "human_revision": "采用城市改善背景—项目所在区域结构—本案有效竞争圈的逐级递进，每一级都回答它怎样改变本案比较。",
+      "transferable_reason": "市场研究只有持续收敛到当前项目选择局面，才能成为竞争态势研究。",
+      "do_not_transfer": "固定三级标题、固定行政区层级和来源项目的市场数据。",
+      "resulting_rule_refs": ["core/02-产物1竞争态势研究.md"]
+    },
+    {
+      "id": "LF-P3-001",
+      "stage": "product3_assembly",
+      "before_problem": "把一套成功终稿拆成过细逐页合同、差异审批和新页面体系，工程成本超过首稿质量收益。",
+      "human_revision": "保留一个完整黄金组合、现有页面语义字段、删除禁用清单和首稿完整度门槛；完整组合的默认优先级高于零散页面拼装。",
+      "transferable_reason": "完整组合保留叙事节奏与真人取舍，页面语义支持按项目重组，两者共同覆盖质量与弹性。",
+      "do_not_transfer": "来源终稿的固定页数、具体页序、项目文案、图片和证明页数量。",
+      "resulting_rule_refs": ["references/product3/README.md", "references/product3/page-semantics.json"]
+    },
+    {
+      "id": "LF-P3-002",
+      "stage": "product3_editing",
+      "before_problem": "逻辑正确但内部化的方法页、重复结论页和低价值过渡页占用甲方注意力。",
+      "human_revision": "删除内部流程、研究方法、制作事项、重复论证和空洞过渡；相邻页面必须增加新的客户判断、项目关系或独立图证。",
+      "transferable_reason": "甲方页面的存在理由是推进理解与决策，后台生产过程留在合同和备注。",
+      "do_not_transfer": "机械删除某个固定页码；新项目仍可在确有独立判断时新增页面。",
+      "resulting_rule_refs": ["references/product3/README.md"]
+    },
+    {
+      "id": "LF-P3-003",
+      "stage": "product3_first_review",
+      "before_problem": "首次审阅提交空槽、结构试错或低密度草稿，把基础装配判断转嫁给真人。",
+      "human_revision": "首次审阅版本已经完成正式文案、真实或公开安全图片装配、可编辑文件、逐页渲染与视觉检查。",
+      "transferable_reason": "真人首轮应判断业务表达与取舍，而不是补全机器尚未完成的基础生产。",
+      "do_not_transfer": "把机器检查、渲染完成或文件生成写成真人已经接受。",
+      "resulting_rule_refs": ["references/product3/README.md", "examples/gold-product3-public-safe/README.md"]
+    },
+    {
+      "id": "LF-P5-001",
+      "stage": "product5_ai_advisor",
+      "before_problem": "客户建议使用内部工程术语、信息密度低，像系统回执而不是甲方营销对购房者的接待。",
+      "human_revision": "每组建议直接说明本次看房重点、优先体验顺序、项目或空间承接、比较时核对条件和下一步带看动作，保持高信息密度与购房者语言。",
+      "transferable_reason": "AI推荐官的价值是把已成立竞争判断转成一次具体看房行动。",
+      "do_not_transfer": "来源项目的客户分组、路线、销售话术和项目事实。",
+      "resulting_rule_refs": ["core/08-产物5交互蓝图.md", "workflows/product5-presales-focus/SKILL.md"]
+    },
+    {
+      "id": "LF-P5-002",
+      "stage": "product5_interaction",
+      "before_problem": "页面能点击但反馈感弱，数字、按钮和状态切换缺少连续动效。",
+      "human_revision": "为数字进入、按钮悬停与按压、面板切换、场景过渡和推荐结果建立克制且一致的动效反馈。",
+      "transferable_reason": "动效帮助购房者理解状态变化和交互因果，提升未来UE沙盘的可感知完成度。",
+      "do_not_transfer": "固定时长、固定动画库或为了炫技增加与业务无关的运动。",
+      "resulting_rule_refs": ["tools/product5_shell", "examples/gold-product5-public-safe/README.md"]
+    },
+    {
+      "id": "LF-P5-003",
+      "stage": "product5_visual_scenes",
+      "before_problem": "城市关系、红线内园林和归家场景被当成可选装饰，导致交互原型只能展示界面壳层。",
+      "human_revision": "三类UE空间画面默认生产；只有真人在蓝图阶段明确裁定当前项目不讲该类关系时才可豁免。城市画面可结合项目空间证据形成接近UE城市沙盘的公开安全示意。",
+      "transferable_reason": "住宅项目普遍需要解释城市、园林和归家关系，默认生产能保障交互原型具备空间证明能力。",
+      "do_not_transfer": "来源项目的卫星底图、红线、楼栋、入口、城市方向、效果图或未经授权的甲方素材。",
+      "resulting_rule_refs": ["core/08-产物5交互蓝图.md", "workflows/product5-presales-focus/SKILL.md"]
+    },
+    {
+      "id": "LF-P5-004",
+      "stage": "product5_client_surface",
+      "before_problem": "客户页面为了说明严谨性加入未来示意、待核、生产限制和内部审校备注，削弱营销体验。",
+      "human_revision": "客户页面只呈现业务判断、必要条件与选择建议；证据边界、素材授权和生产状态保留在后台合同与回执。",
+      "transferable_reason": "严谨性由后台边界支撑，客户前台负责清晰、可信和可行动的表达。",
+      "do_not_transfer": "删除价格、权益、交付等会影响客户承诺的必要限制。",
+      "resulting_rule_refs": ["AGENT_RULES.md", "workflows/residential-production-orchestrator/references/client-facing-writing.md"]
+    },
+    {
+      "id": "LF-RESEARCH-001",
+      "stage": "incremental_research",
+      "before_problem": "把某次渠道临时不可用写成长效规则，使发行包在换机器、换账号或渠道恢复后仍沿用旧状态。",
+      "human_revision": "长期规则只定义证据职责、质量门槛和回传接口；具体渠道按当次权限、可用性和信息缺口运行时路由。",
+      "transferable_reason": "渠道健康是现场状态，证据职责才是可迁移能力。",
+      "do_not_transfer": "任何一次微信、小红书、搜索引擎或账号的临时健康结论。",
+      "resulting_rule_refs": ["external-capabilities/README.md", "CAPABILITY_PARITY_CONTRACT.md"]
+    }
+  ]
+}
+

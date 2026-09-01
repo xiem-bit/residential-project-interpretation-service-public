@@ -1,0 +1,62 @@
+{
+  "schema": "residential.production_reference_index.v1",
+  "status": "current_public_safe",
+  "project_fact_policy": "任何参考均不得生成当前项目事实、竞品、客群、价值锚点或超级竞争力",
+  "references": [
+    {
+      "id": "REF-E2E-QC-001",
+      "type": "production_reference",
+      "stage": "end_to_end_products_1_2_3_5",
+      "path": "examples/production-path-tutorial",
+      "mechanisms": ["dual_direction_access", "daily_route_continuity", "family_space_adaptability"],
+      "load_when": "需要学习全链、产物1至3与产物5同时启用或低密改善机制",
+      "may_supply_project_facts": false
+    },
+    {
+      "id": "REF-E2E-WCX-001",
+      "type": "production_reference",
+      "stage": "end_to_end_product1_only",
+      "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu",
+      "mechanisms": ["three_anchor_daily_route", "renovation_decision_clarity", "bounded_room_state_switch"],
+      "load_when": "需要学习按需启用、城市核心换新或只启用产物1的完整收口",
+      "may_supply_project_facts": false
+    },
+    {
+      "id": "REF-P3-QC-001",
+      "type": "production_reference",
+      "stage": "product3_complete_gold",
+      "path": "examples/gold-product3-public-safe",
+      "mechanisms": ["complete_combination", "page_semantics", "first_review_threshold"],
+      "load_when": "新的完整产物3、整套重制或实质改变页面组合",
+      "may_supply_project_facts": false
+    },
+    {
+      "id": "REF-P5-QC-001",
+      "type": "production_reference",
+      "stage": "product5_complete_gold",
+      "path": "examples/gold-product5-public-safe",
+      "mechanisms": ["state_machine", "motion", "ai_advisor", "mobile_route"],
+      "load_when": "新的产物5或实质交互改版",
+      "may_supply_project_facts": false
+    },
+    {
+      "id": "REF-INF-001",
+      "type": "regression_fixture",
+      "stage": "inference_firewall",
+      "path": "fixtures/inference-harness/cases.json",
+      "mechanisms": ["allowed_inference", "bridge_required", "prohibited_inference"],
+      "load_when": "高风险事实向市场、客户、品质或超级竞争力推导",
+      "may_supply_project_facts": false
+    },
+    {
+      "id": "REF-LF-001",
+      "type": "learning_feedback",
+      "stage": "human_revision_patterns",
+      "path": "references/learning-feedback/cases.json",
+      "mechanisms": ["before_after_reason_boundary"],
+      "load_when": "报告、产物3、产物5或检索规则出现对应漂移",
+      "may_supply_project_facts": false
+    }
+  ]
+}
+

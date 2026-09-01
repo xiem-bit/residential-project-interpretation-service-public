@@ -42,6 +42,10 @@
     "tools/production_core",
     "examples/production-path-tutorial",
     "examples/production-path-revision",
+    "examples/end-to-end-public-safe",
+    "examples/gold-product3-public-safe",
+    "examples/gold-product5-public-safe",
+    "references",
     "external-capabilities",
     "adapters"
   ],
@@ -67,7 +71,7 @@
     "fresh_install_full_project_acceptance_required": true,
     "maintainer_step_by_step_guidance_allowed": false,
     "presentation_or_web_required": false,
-    "current_status": "product3_product5_gold_complete_product4_excluded_learning_feedback_and_install_pending_not_release_ready"
+    "current_status": "product3_product5_gold_complete_product4_excluded_learning_feedback_complete_install_pending_not_release_ready"
   },
   "forbidden_public_content": [
     "real_project_or_customer_materials",

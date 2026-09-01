@@ -22,6 +22,7 @@ TEST_FILES = (
     "tests/test_rc1_contracts.py",
     "tests/test_production_path_v02.py",
     "tests/test_capability_parity.py",
+    "tests/test_production_reference_library.py",
     "tests/test_public_release_state.py",
 )
 
