@@ -27,11 +27,12 @@ class PublicReleaseStateTest(unittest.TestCase):
 
     def test_manifest_declares_public_apache_release(self) -> None:
         manifest = json.loads((ROOT / "PUBLIC_CORE_MANIFEST.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["status"], "public_prerelease_parity_migration_apache_2_0")
+        self.assertEqual(manifest["status"], "public_prerelease_capability_complete_authorized_assets_revalidation_pending_apache_2_0")
         self.assertEqual(manifest["rights"]["license"], "Apache-2.0")
         self.assertTrue(manifest["rights"]["rights_holder_approval_confirmed"])
         self.assertTrue(manifest["rights"]["public_distribution_authorized"])
         self.assertTrue(manifest["rights"]["authorized_real_client_materials_may_be_included"])
+        self.assertEqual(manifest["rights"]["authorized_reference_assets"], "references/authorized-reference-assets.json")
         self.assertTrue(manifest["rights"]["unauthorized_client_materials_require_anonymization_or_structural_distillation"])
         self.assertTrue(manifest["rights"]["credentials_paths_internal_runtime_state_always_excluded"])
         self.assertEqual(manifest["public_release"]["visibility"], "public")

@@ -28,7 +28,7 @@
         {"path": "docs/当前状态.md", "git_blob": "41ba4caa5a070a7b6b382dfa042fc34927820068"}
       ],
       "public": ["START_HERE.md", "AGENT_RULES.md", "RELEASE_STATUS.md", "core/00-权威生产路径.md"],
-      "coverage": "partial_dynamic_routing_upgrade_required"
+      "coverage": "complete_dynamic_routing_and_current_status"
     },
     {
       "authority": "cross_product_contract_and_quality_baseline",
@@ -43,7 +43,7 @@
         "core/05-产物启用与生产准入.md",
         "PRODUCTION_PATH_MANIFEST.json"
       ],
-      "coverage": "partial_reasoning_harness_upgrade_required"
+      "coverage": "complete_reasoning_harness_and_cross_product_baseline"
     },
     {
       "authority": "formal_annexes",
@@ -71,7 +71,7 @@
         "core/03-产物2购买决策研究.md",
         "templates/真实项目有效任务合同.md"
       ],
-      "coverage": "partial_gold_and_incremental_research_upgrade_required"
+      "coverage": "complete_project_contract_gold_and_incremental_research"
     },
     {
       "authority": "product3_strategy_and_ue",
@@ -85,9 +85,12 @@
         "core/06-产物3从竞争策略到UE解决方案.md",
         "templates/产物3第二章生产消费合同.template.json",
         "templates/产物3第三章生产消费合同.template.json",
-        "templates/UE解决方案交接.template.json"
+        "templates/UE解决方案交接.template.json",
+        "references/product3/assets/产物3页面模板库",
+        "references/product3/assets/产物3案例截图素材库",
+        "examples/gold-product3-public-safe"
       ],
-      "coverage": "partial_public_safe_gold_and_assembly_required"
+      "coverage": "complete_strategy_ue_authorized_gold_and_reference_assembly"
     },
     {
       "authority": "product5_and_change",
@@ -97,9 +100,12 @@
       ],
       "public": [
         "core/08-产物5交互蓝图.md",
-        "core/09-变更回写与重投影.md"
+        "core/09-变更回写与重投影.md",
+        "tools/product5_shell",
+        "examples/gold-product5-public-safe",
+        "workflows/product5-presales-focus"
       ],
-      "coverage": "partial_public_safe_gold_implementation_required"
+      "coverage": "complete_public_safe_gold_runtime_and_change_reprojection"
     },
     {
       "authority": "public_channel_and_incremental_research",
@@ -132,10 +138,13 @@
       ],
       "public": [
         "AGENT_RULES.md",
+        "workflows/chinese-research-report-editor",
+        "workflows/chinese-affirmative-business-editor",
+        "references/writing",
         "tools/chinese_copy_lint/affirmative_statement_lint.py",
         "fixtures/client-review"
       ],
-      "coverage": "partial_abc_semantic_review_and_delivery_qa_required"
+      "coverage": "complete_chinese_report_assertion_writing_human_feedback_and_delivery_qa"
     },
     {
       "authority": "product1_product2_gold_references",
@@ -144,13 +153,11 @@
         {"path": "assets/产物2标准样例/翠湖云顶二期/README.md", "git_blob": "97293a445ccd456c02ab0b3a556f67a6fd46d7de"}
       ],
       "public": [
-        "examples/production-path-tutorial"
+        "examples/production-path-tutorial",
+        "examples/end-to-end-public-safe"
       ],
-      "planned_public": [
-        "examples/gold-product1-public-safe",
-        "examples/gold-product2-public-safe"
-      ],
-      "coverage": "public_safe_gold_reports_required"
+      "planned_public": [],
+      "coverage": "complete_public_safe_product1_product2_reports"
     },
     {
       "authority": "product3_gold_assembly",
@@ -164,10 +171,12 @@
         "core/06-产物3从竞争策略到UE解决方案.md",
         "adapters/presentation/README.md",
         "references/product3",
+        "references/product3/assets/产物3页面模板库",
+        "references/product3/assets/产物3案例截图素材库",
         "examples/gold-product3-public-safe"
       ],
       "planned_public": [],
-      "coverage": "accepted_authorized_gold_plus_three_private_success_decks_structurally_distilled_with_page_semantics_and_first_draft_threshold"
+      "coverage": "accepted_authorized_gold_plus_three_authorized_success_decks_full_page_case_assets_semantics_and_first_draft_threshold"
     },
     {
       "authority": "product5_gold_implementation",
@@ -179,13 +188,12 @@
       "public": [
         "core/08-产物5交互蓝图.md",
         "tools/product5_shell",
-        "adapters/web/README.md"
-      ],
-      "planned_public": [
+        "adapters/web/README.md",
         "examples/gold-product5-public-safe",
         "workflows/product5-presales-focus"
       ],
-      "coverage": "public_safe_gold_source_motion_ai_mobile_and_qa_required"
+      "planned_public": [],
+      "coverage": "complete_public_safe_gold_source_motion_ai_mobile_and_qa"
     },
     {
       "authority": "shared_production_references",
@@ -199,10 +207,12 @@
         "examples/production-path-revision",
         "references/production-reference-index.json",
         "references/learning-feedback",
+        "references/writing",
+        "references/product3/assets",
         "examples/end-to-end-public-safe"
       ],
       "planned_public": [],
-      "coverage": "complete_public_safe_reference_registry_multi_mechanism_projects_and_learning_feedback"
+      "coverage": "complete_authorized_reference_registry_multi_mechanism_projects_full_assets_and_learning_feedback"
     },
     {
       "authority": "platform_neutral_learning_feedback",
@@ -218,7 +228,7 @@
   ],
   "excluded_from_public": [
     "real_project_facts_and_customer_materials",
-    "restricted_visual_assets",
+    "unauthorized_or_restricted_visual_assets",
     "private_golden_answers",
     "private_evaluation_holdout_and_answers",
     "credentials_and_runtime_state",

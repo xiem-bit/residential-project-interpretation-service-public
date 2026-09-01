@@ -3,7 +3,7 @@
 ## 当前标签与候选
 
 - `v0.1.0-rc.1`：已发布、不可变；定位为“冻结语义核之后的下游合同、平台往返与载体结构演示”。
-- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`product3_product5_gold_complete / product4_excluded / learning_reference_complete / install_accepted / not_released`。
+- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`capability_complete / authorized_reference_assets_complete / product4_excluded / install_revalidation_required / not_released`。
 
 ## P0已经成立
 
@@ -19,13 +19,13 @@
 - 产物1／2的任务冻结、充分性、查询执行下限、增量提案／授权、负命中／冲突／gap保留和采用／拒绝回执已经进入现行公开路径；
 - 允许／禁止推导关系、六段SC因果和成组正反例已经进入现行机器Harness；机器只否决显式跨步，不替代商业判断；
 - 产物1／2甲方正式报告已经与机器摘要物理分离，现有青岚澄境全量虚构教程已升级为第一套正式报告级公开安全参考；
-- A／B／C三级断言写作、去内部化、来源邻接和正式载体检查已经进入现有住宅生产总控，不新增平行Skill；
-- 产物3黄金权威已纠正为用户验收的20页授权真实终稿：提供可编辑PPTX、20／20逐页来源备注、同版渲染、真实标准地图与OpenStreetMap署名、20／20视觉检查和机器权威；三份历史成功稿76页只以匿名结构蒸馏进入17种页面语义，不公开未授权原件；
+- 中文研究报告编辑、A／B／C三级断言写作、去内部化、来源邻接、营销表达参考和正式载体检查已经完整进入住宅生产总控；十组长期人工修订语境以去身份学习样本随包，不平移来源项目答案；
+- 产物3黄金权威已纠正为用户验收的20页授权真实终稿：提供可编辑PPTX、20／20逐页来源备注、同版渲染、真实标准地图与OpenStreetMap署名、20／20视觉检查和机器权威；三份获授权历史成功原稿共76页、124文件页面模板库、229文件案例素材库及100项目500条营销表达参考已经完整随包；曲靖原稿仅移除本机路径备注，28／28页可见渲染保持一致；
 - 产物5已经形成项目中立的完整运行时、四问分流、三类高密度推荐、手机路线、正式网址触发二维码、动效、公开安全生成式画面和桌面／手机同版QA；唯一源码继续位于`tools/product5_shell/`，黄金参考不复制平行实现；
 - 共享参考库已经登记两套机制不同的完整公开安全项目：青岚澄境覆盖产物1、2、3、5全链，望川序覆盖城市核心换新与产物1按需收口；两套均通过现行生产校验；
 - 真人修订反馈已经以“原稿问题—真人修改—可迁移原因—不可平移内容”登记报告、产物3、产物5和增量检索的十组平台中立模式，并通过统一参考索引按阶段路由；
 - 公开信息包候选`public_evidence_envelope.v1`与住宅侧三项合同已按原始字节哈希冻结；双方fixture往返和跨包harness已经通过，尚未发布正式版本或证明真实GUI／业务验收；
-- 统一`INSTALL.md`与doctor已经覆盖生产核心、20页产物3黄金和产物5运行时；2026-09-01从当前候选重新干净克隆，在不复用仓库`node_modules`的副本中完成锁定依赖安装、104项公开回归、能力对齐、产物5运行测试、第三方清单和发行清单验证；
+- 统一`INSTALL.md`与doctor已经覆盖生产核心、20页产物3黄金、三份历史原稿、124文件模板、229文件案例素材、中文写作能力和产物5运行时；PPT生成引擎与Grist由终端用户自行安装，Computer Use、浏览器、地图、微信、小红书及个人登录态由终端用户自行安装或登录。本轮资产扩容后的干净克隆重验尚待完成；
 
 ## 当前尚未成立
 
@@ -54,5 +54,7 @@
 ## 当前切片
 
 `dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`、`client_report_machine_summary_separation`、`product3_authorized_gold_authority_corrected`、`product5_public_safe_gold`、`multi_mechanism_learning_reference_library`与`self_install_doctor_and_clean_clone_acceptance`已经进入验证。下一步只处理真人发行授权与双包正式版本协同，不再用安装待办掩盖现行黄金能力。
+
+本轮新增的授权参考资产已经进入机器清单和回归；下一步先完成扩容后的干净克隆重验，再处理真人发行授权与双包正式版本协同。
 
 当前候选不得创建或推送`v0.2.0-rc.1`标签。完成`CAPABILITY_PARITY_MANIFEST.json`中的全部发布阻断项、干净克隆和双包端到端验收后，才能申请正式发布授权。

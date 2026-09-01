@@ -16,8 +16,8 @@
     ".DS_Store",
     "RELEASE_MANIFEST.json"
   ],
-  "file_count": 281,
-  "tree_sha256": "9c5b873d2e1f4fac4816322152d5128df7cb96d9ea4550fbf7057a3229c0bebb",
+  "file_count": 649,
+  "tree_sha256": "8ca9d2c0ad6a09b36b742a2be1ffa42462b115bbb6d5e5852082c73743f3740e",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -31,13 +31,13 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 809,
-      "sha256": "a651d2bacd1bbff5802ef756bbb60492b31722203f7c4f386a6e6d78ce3a654a"
+      "bytes": 1434,
+      "sha256": "570201dc37a811fe420229ce6013bdbad4818e11c43c52e7e86bf3f9a049ed67"
     },
     {
       "path": "AGENT_RULES.md",
-      "bytes": 10004,
-      "sha256": "5efa51fc5e8279ca61fac5e2a850d158cd76369be6102ed484db87e8cfc49a80"
+      "bytes": 10632,
+      "sha256": "7b5c2a08cbea1995fb3fe123ca977a4f989a6e38704278198585623b4586a50b"
     },
     {
       "path": "A_CLASS_ALLOWLIST.txt",
@@ -51,13 +51,13 @@
     },
     {
       "path": "CAPABILITY_PARITY_CONTRACT.md",
-      "bytes": 9843,
-      "sha256": "10e61102da8c0a683826f823b601c64e12ffc6b069480c73156f7740045971b6"
+      "bytes": 10192,
+      "sha256": "318a86656bc70ddfe794c85b8ea462120dbab84a1ad39f0cecf3ceb7b36b1fc2"
     },
     {
       "path": "CAPABILITY_PARITY_MANIFEST.json",
-      "bytes": 17045,
-      "sha256": "096997f24f4082bc52f187fbc02dcd645c212f650746d831e544edc5817951c0"
+      "bytes": 18015,
+      "sha256": "23d2669ad38176cacdd5be272f39d9f9de08af42a16a5d3cd1cf1a95d079895b"
     },
     {
       "path": "COLD_START_PROTOCOL.md",
@@ -71,8 +71,8 @@
     },
     {
       "path": "INSTALL.md",
-      "bytes": 3931,
-      "sha256": "bcd6bcf84b8f3c75f99fd1e00f780fdbb450f46b0217f17f555c56505a23288b"
+      "bytes": 5671,
+      "sha256": "ec73931c0bd9cfc2560260948003a9d17cb0ddb48a5c8c06f9609325ba3ce512"
     },
     {
       "path": "LICENSE",
@@ -81,8 +81,8 @@
     },
     {
       "path": "PRODUCTION_AUTHORITY_MAP.json",
-      "bytes": 11175,
-      "sha256": "243b44a78cbcddcc7d68124c75bccbd2047937e41c21284ceea66512d2ee39e2"
+      "bytes": 11835,
+      "sha256": "c6e59513f63617b4f34683eacadbc3d2318e41561c0342885fa74e65253a5e63"
     },
     {
       "path": "PRODUCTION_PATH_MANIFEST.json",
@@ -91,8 +91,8 @@
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
-      "bytes": 3939,
-      "sha256": "c8266f6fcbf64e59793fc278dbefc5418e943703565d7b4043327c0bee1769cc"
+      "bytes": 4037,
+      "sha256": "b512d478d74aca2934e653a002c4d3d625c3f7624ef3061a7b4ccb332557d4f9"
     },
     {
       "path": "RC1_E2E_VERIFICATION.json",
@@ -101,18 +101,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 4046,
-      "sha256": "c7a4ce64e969dc63b66ac57401538691a3e3eb84a22f4f848c12409b1e9f31b9"
+      "bytes": 4304,
+      "sha256": "e48e3264582c0d159770b7734feb5e155b72df633c24f78384a0373aa35400a3"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 6361,
-      "sha256": "f17add465555d7574de6df726d1905c5f0eeb283180c05ff49959e5c115ad9ce"
+      "bytes": 6887,
+      "sha256": "8cd72899c7665294f9a2599b27e0ffc5ee6eb70dbd852e356a3661dcf7d71246"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
-      "bytes": 5556,
-      "sha256": "cfa369cadcd19eb20f97021d34b0079b1f1c7f781c5920710f06c6039048470a"
+      "bytes": 5791,
+      "sha256": "5ef27c9d0d2cdbec2979ebcad112c2081502444a2ad890bb37114b992b7b4279"
     },
     {
       "path": "SECURITY.md",
@@ -406,8 +406,8 @@
     },
     {
       "path": "examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md",
-      "bytes": 1338,
-      "sha256": "765005318de25be22a5900fa16875ab299cb1e99ae263e5c81191bf9f1abe145"
+      "bytes": 1807,
+      "sha256": "0a6e9c08da2c81d2602dbd785cfe484c7bce21e02c54679ec7f7be67fb743b0f"
     },
     {
       "path": "examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md",
@@ -421,8 +421,8 @@
     },
     {
       "path": "examples/gold-product3-public-safe/gold-authority.json",
-      "bytes": 3028,
-      "sha256": "3daae9f8d94d55e563a07ac478a413a633652f9e2e41269d16b5a526f19444bc"
+      "bytes": 3821,
+      "sha256": "cbe22024908cc2ab65fa01ee3cd307887e5883ede9b13f10d006966af52d07f6"
     },
     {
       "path": "examples/gold-product3-public-safe/qa/deck-montage.png",
@@ -805,6 +805,16 @@
       "sha256": "2f42108a1f346ef1d0ab0a5a94d9717199b31c58ecfdc7e5397fda2c9c3f4978"
     },
     {
+      "path": "references/AUTHORIZED_REFERENCE_ASSETS.md",
+      "bytes": 1609,
+      "sha256": "611b6ffb4d14d69e2f7d0391ddd52bcffa992874ed75921e216d196c44f8bed3"
+    },
+    {
+      "path": "references/authorized-reference-assets.json",
+      "bytes": 2040,
+      "sha256": "62e964fc1196703f8498cd8141110620fa28e9b8ff3da541e4028062a18d6def"
+    },
+    {
       "path": "references/learning-feedback/README.md",
       "bytes": 954,
       "sha256": "22337b762356984d4209d9a141b5edd13e36dce67c7bb68aebf7a7632caedd60"
@@ -815,14 +825,1789 @@
       "sha256": "fa7204a0646356a5cf86574a3b2f05b066976249dda5aacf8466c07e3bd65aca"
     },
     {
+      "path": "references/learning-feedback/human_revision_feedback.v0.1.json",
+      "bytes": 5765,
+      "sha256": "960bcee3e32ca722415fdd0b35c647c78e6404d5084ede983ee971878ca6b503"
+    },
+    {
       "path": "references/product3/HISTORICAL_SUCCESS_DISTILLATION.md",
-      "bytes": 2334,
-      "sha256": "4ab16e825c43e4321a02759c681e2f8a420bdfbe89f8b78d97b9f914bb60ad16"
+      "bytes": 2372,
+      "sha256": "f1d42f3f82b3e37c1b64bf4af206a563f6e1e153a27d80ceb82e692cb245d8bf"
     },
     {
       "path": "references/product3/README.md",
-      "bytes": 4773,
-      "sha256": "c772c2b821ccb0952a73f1827872e17a0e8ba733a5ae52523156b564749e995c"
+      "bytes": 4831,
+      "sha256": "5163e08a1fdaeb15eba8961f424fa2082024c48830e2d85a142e02e6da6d5568"
+    },
+    {
+      "path": "references/product3/assets/README.md",
+      "bytes": 821,
+      "sha256": "b2cdb7ddced661a06bb762607a4ef04106eb5eb0172d4c82da7236b9129497a1"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/README.md",
+      "bytes": 9214,
+      "sha256": "13cd33bce20af2fd9ab89830736349db9cb19927901b73ca3a894887fa5c9932"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/archive/rejected/CASE-148_gongyuandao_brand_wall_t017000ms.jpg",
+      "bytes": 605084,
+      "sha256": "6948f0fa5c69e89bc70ad6b0927a753d1fedc71308f589d60315eef1b5b592a0"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/case_asset_inventory.json",
+      "bytes": 255496,
+      "sha256": "bc4980dfcc6cbd081267759fd44b8a9bfef0c75190efd06774db33b92e918183"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-001_UE5___01_p01_i02.jpg",
+      "bytes": 501717,
+      "sha256": "ff1080388b6325e718deb2b346364c0e679c6c96ff065ce0bbb26f5a50bb4fce"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-002_UE5___01_p01_i03.jpg",
+      "bytes": 1021935,
+      "sha256": "15518bea2e74753b3e5b20a2fd1e20f7001c9abe4380852e2530f7984138a24b"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-003_UE5___01_p01_i04.jpg",
+      "bytes": 349243,
+      "sha256": "38e9fd76d8423f82fa4838751b33894c12767abed69687d01e30752d7c81a3fe"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-004_UE5___01_p01_i05.jpg",
+      "bytes": 282973,
+      "sha256": "7971a5784cee2d1e4501134830b701c155b522d97033e070a13ce05bf45f8911"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-005_UE5___01_p01_i06.jpg",
+      "bytes": 349109,
+      "sha256": "2ed70ac4990c818c28efcf672603edd9df06ec5e8bb0181e9f81b35e721ad80e"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-006_UE5___01_p01_i07.jpg",
+      "bytes": 429571,
+      "sha256": "0f52022177cc17e7f5d15135e05166f09672fc5ae6d080000db6ca94a09526cc"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-007_UE5___01_p02_i02.jpg",
+      "bytes": 297212,
+      "sha256": "44505f2b39e6f3bfb9f59e01992a97a5b09d63195be4b7192a83ed4483ef7d05"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-008_UE5___01_p02_i03.jpg",
+      "bytes": 406793,
+      "sha256": "870a1f8ddbb0bccb9979fa1740fcf8dd2472ce99f0410d83129982f5985452d2"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-009_UE5___01_p02_i04.jpg",
+      "bytes": 165515,
+      "sha256": "70db05ce1f33178ca922d149246d89e97d0850813e7386d77c7ddbff440ef473"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-010_UE5___01_p02_i05.jpg",
+      "bytes": 332857,
+      "sha256": "59f9e3ec271dc8a4765afd4e8bf4885b59a00a5e4ffe95ec25c739568ca8e3d1"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-011_UE5___01_p02_i06.jpg",
+      "bytes": 522238,
+      "sha256": "6953acfc4dbd9f3631421198be36e2f410a4391dc4ddc6e4f8d40f80aa94a94b"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-012_UE5___01_p02_i07.jpg",
+      "bytes": 206767,
+      "sha256": "5f7ff4b624978149e0adc2940af26b1bf7925002b39cea78f2c597a08be74e5a"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-016_UE5___01_p05_i02.jpg",
+      "bytes": 686527,
+      "sha256": "eb6601f283ee24d8dc7c15a0612c958c4c493a4a0f5d2ed48db9059db95454a7"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-017_UE5___01_p06_i02.jpg",
+      "bytes": 918770,
+      "sha256": "3a2b7fc202962534a4c8de7751adf1f9603b4bd4b6070ce09c809741936d976e"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-018_UE5___01_p07_i02.jpg",
+      "bytes": 270903,
+      "sha256": "21f85a9f459c0ed3f43f24b3535ff00882826271a157258109447950b58cb222"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-021_UE5___01_p09_i02.jpg",
+      "bytes": 95120,
+      "sha256": "31ea025f83dd1a651a65131fda172b553fb142396c4f7b94be1b3444737a045f"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-022_UE5___01_p09_i03.jpg",
+      "bytes": 478747,
+      "sha256": "2e1f241d5cc08b8ecf933a8708776c75c319eab777992112dbb16bcfe7c598a0"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-023_UE5___01_p10_i03.jpg",
+      "bytes": 229573,
+      "sha256": "2d22c3e72f9fb24ae6d425cab07f4c09a4b2ad490c1ce7ff67eda77cdcf255e1"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-024_UE5___01_p10_i04.jpg",
+      "bytes": 254681,
+      "sha256": "f4496ea550e55108a7f7665a87f3a3d0a3c882271e7798ae7eb4ebf176bb6e93"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-025_UE5___01_p11_i02.jpg",
+      "bytes": 432506,
+      "sha256": "9f3753ba666f3466b256f39b9b7145db4c77eb33d96d875a74af1a3b531cc106"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-026_UE5___01_p11_i03.jpg",
+      "bytes": 304325,
+      "sha256": "85ef5d4e6414ddea1c7db8686afa207a2062473b21ce0c970446dfd5171a0a76"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-027_UE5___01_p12_i02.jpg",
+      "bytes": 64384,
+      "sha256": "50f54f4e9ed1735c5485bcb394992274bd0896d590118d7e7b1a503a9d78004e"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-028_UE5___01_p12_i03.jpg",
+      "bytes": 731739,
+      "sha256": "5c98c36afd0d308eda68f61370f2f22673a24536407bc2d4e343b53f46fbe407"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-029_UE5___01_p13_i02.jpg",
+      "bytes": 890390,
+      "sha256": "40abeb99bdc8f2ca87f150282441ad5806978a5e2aca5537bc9a53d586be56c3"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-030_UE5___01_p13_i03.jpg",
+      "bytes": 264192,
+      "sha256": "24ff933b88dc7dfb1ea367f40e022d99659d7861a265fb9a0c9cea8f9e2b2914"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-031_UE5___01_p14_i02.jpg",
+      "bytes": 633238,
+      "sha256": "19397c51881ddc90828a8fa92e7f57cbc8f0f129a93741496042a366b4082d50"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-032_UE5___01_p14_i03.jpg",
+      "bytes": 373377,
+      "sha256": "3680e648199094bd67d31d13ebcc76411d23c09bcadc80058ecade7845a0dae0"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-034_UE5___01_p15_i03.jpg",
+      "bytes": 269927,
+      "sha256": "2c73bf051e76d6b0760d23a58e4ab62910f96befcb4a9c3489dd413659d29aa8"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-038_UE5___01_p16_i02.jpg",
+      "bytes": 402873,
+      "sha256": "55615fc69de567db18e81d20073642cb4e2f1d0e2d1746885b65fe107cf5c703"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-039_UE5___01_p16_i03.jpg",
+      "bytes": 447106,
+      "sha256": "bc2c145151221e5bf19b1aa30b72e9d8894f2644eb991027787d6c9e22b0ba82"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-040_UE5___01_p17_i02.jpg",
+      "bytes": 114014,
+      "sha256": "038777799d74ac87f7bf0ecb2a7069252ef0ab1f8d1291ed8c543fef63005f9a"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-041_UE5___01_p17_i03.jpg",
+      "bytes": 264740,
+      "sha256": "456d84ebaf17048321bbdc3a99108869c4908c7a7a86559c6b072153b130f87f"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-042_UE5___01_p18_i02.jpg",
+      "bytes": 784732,
+      "sha256": "323077f92a40c43d163cbbb19532e36fa5de0ca94f005a1898d50a1cd2d9f4ce"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-043_UE5___01_p18_i03.jpg",
+      "bytes": 479885,
+      "sha256": "e59ac318dec7ebb5898774cb16765d507cba95b56dfcbe6804742ba7e4bbdb13"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-044_UE5___01_p18_i04.jp2",
+      "bytes": 1301216,
+      "sha256": "8fca807395285875e9c87181b69a0fc9a81b87666509e1506e31f047866a182d"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-045_UE5___01_p19_i01.jpg",
+      "bytes": 76340,
+      "sha256": "92cd07bb97bd5bd210d04589dc26f88cb1d791ab86b79049cdd1a8a403ca19bd"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-046_UE5___01_p19_i02.jpg",
+      "bytes": 1321949,
+      "sha256": "140cefd8e9f3ddc8839a87420002de55ee16b234c7273c7994778044280c9687"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-047_UE5___01_p20_i01.jpg",
+      "bytes": 566638,
+      "sha256": "14f06a080f306cb4b02c04d50c67f1ca4a0ba368d26459707cfdf5502eb7b0ad"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-048_UE5___01_p20_i02.jpg",
+      "bytes": 1000321,
+      "sha256": "0fefade086bce400b9502974c2dc2ad1df865781783700bcb2ae23ddca7cac3e"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-049_UE5___01_p21_i01.jpg",
+      "bytes": 35395,
+      "sha256": "c22ed7d53cf2f4caea37546a4689791d21fc6a738b4c18db1848061a652a65c6"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-050_UE5___01_p21_i02.jpg",
+      "bytes": 256930,
+      "sha256": "f176d57ed5e9b7f7de63f808c33390b7e45b2e8d54ad1f55be521491ff0071f0"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-053_UE5___02_p05_i02.jpg",
+      "bytes": 249360,
+      "sha256": "6a52bf7121bc85b92d63599f2e5e171a643a69fbb5d54f19a5fa57aaf79bdc98"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-054_UE5___02_p06_i02.jpg",
+      "bytes": 363356,
+      "sha256": "cdf99ba4380e7fc84e877e26fee2673198fad2676f6d7c8dc649051e76aaabcc"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-055_UE5___02_p09_i03.jpg",
+      "bytes": 220911,
+      "sha256": "678d3eba0d34167d7edf4e1d6ed087b325197975ed9b62c059bcb69f2c454401"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-056_UE5___02_p10_i02.jpg",
+      "bytes": 43730,
+      "sha256": "e3ed1ac1c945469593d7ccf4fce75cb2b7ff7f7c235e2704c2a328c7508cb9ef"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-057_UE5___02_p10_i03.jpg",
+      "bytes": 30227,
+      "sha256": "1ed4776dccd67565c0643c760a007e56cc9aaca08784821a799068589e88e802"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-058_UE5___02_p11_i02.jpg",
+      "bytes": 218390,
+      "sha256": "739c7a9c1b50cce619a367e67f969e0f293808d231672a3e3c7c64ffa3cb5d2e"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-059_UE5___02_p11_i03.jpg",
+      "bytes": 392306,
+      "sha256": "b68b533fe0963ff0cb9c184573c5e556b8e47c60f7a534b5153edd4c5fbc80eb"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-060_UE5___02_p12_i02.jpg",
+      "bytes": 30175,
+      "sha256": "0b2f30b8ee40d267ba588a90632a980dfd871da20213212d7d7bc8a5df18d2a9"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-061_UE5___02_p12_i03.jpg",
+      "bytes": 470143,
+      "sha256": "fcaac118aa81ceda9d2ba85e67fa0de02321ca041379b517d6f36914a4dc89cb"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-062_UE5___02_p13_i02.jpg",
+      "bytes": 110168,
+      "sha256": "ce5814dcfcfad98feaadfe8aff47634d3f5be302709698296ef2247b6e876871"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-063_UE5___02_p13_i03.jpg",
+      "bytes": 58370,
+      "sha256": "482d1b688d81f740fb07b11b6e91ea8d2af0ae00791f04d3fe782ac543707ea7"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-065_UE5___02_p14_i03.jp2",
+      "bytes": 3740396,
+      "sha256": "1bf03923a6f570dc16b526486bfcf990fb40ffc2348e904254d9cbb8631ea05c"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-066_UE5___02_p15_i02.jpg",
+      "bytes": 282228,
+      "sha256": "dcef04e6a4413ff317a5a065713ecfd796a34d3949105c43746f3b1a61c8c804"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-067_UE5___02_p15_i03.jpg",
+      "bytes": 281746,
+      "sha256": "e7f3432a26f5c1d8e5e5142557536f6aae77b79cc62e8cfa055cfcd02c45ecc9"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-068_UE5___02_p16_i02.jpg",
+      "bytes": 395355,
+      "sha256": "27c3d909c09d378d3f90d0dad0c702f2f50b5a19fb9746dc354e71ddeeeff39d"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-069_UE5___02_p16_i03.jpg",
+      "bytes": 803041,
+      "sha256": "ec2584ae40e4d58a7f3b2974c7ddfb45f8d07d6dd099ab8a3c80564a51acdc48"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-070_UE5___02_p17_i02.jpg",
+      "bytes": 217940,
+      "sha256": "774fe31702ca71c60f03c07a0a818b66748c240661ed44ccf2d33e43cb9e741a"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-071_UE5___02_p17_i03.jpg",
+      "bytes": 232372,
+      "sha256": "75f35adb4d2202c441f4f3426235960460af3f70d57c5ccbc3b073bc69027ad2"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-072_UE5___02_p18_i02.jpg",
+      "bytes": 498063,
+      "sha256": "403d598052b464f3b8d2d072bc8c4eb9274e56dd5c1a6befa04d8654fc7bfa2f"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-073_UE5___02_p18_i03.jpg",
+      "bytes": 953924,
+      "sha256": "6aeec5d40545f70a4c6aa4ecc7f4c2f5b10bb77d6f02fd1c11afa68f6949d114"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-074_UE5___02_p19_i02.jpg",
+      "bytes": 94446,
+      "sha256": "9d340389e839ecd9c2e935cf0f55a4606d5a752724f93cf8f0f7960b991c0255"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-075_UE5___02_p19_i03.jpg",
+      "bytes": 503100,
+      "sha256": "0577b426bcb6d04bd7a8dc714924ea56d24aad01231ac424be82194b00532f09"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-076_UE5___02_p20_i02.jpg",
+      "bytes": 475606,
+      "sha256": "0fe69d423e0401edd4ee2e50b932e253b2848c57e1e848a9e7642d28be4ec966"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-077_UE5___02_p20_i03.jpg",
+      "bytes": 614743,
+      "sha256": "335183773fc0b11330750f43a52a364ce11d50b0a827eb3c743617bac766bfd5"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-078_UE5___02_p21_i01.jpg",
+      "bytes": 1352730,
+      "sha256": "746a9b3f251b2608b952dff067ba108ddec9349da6766d50f14a97eef0e0acdf"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-079_UE5___02_p21_i02.jpg",
+      "bytes": 710476,
+      "sha256": "82e6b950cb594ca95445b65a081ccc71775d6492147e8d33a296a1b41952a3fe"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-080_UE5___02_p22_i01.jpg",
+      "bytes": 728256,
+      "sha256": "b1ff7bb06c12d0e0505c7c7674aed724ef237396c11aa791c9088c7ec5bb408d"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-082_UE5___02_p23_i03.jpg",
+      "bytes": 306862,
+      "sha256": "c412364f98e8fccbf4a5215bd6294b9baec954f5cd9dfcdd76df7322d924d8d1"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-084_UE5___03_p04_i02.jpg",
+      "bytes": 121215,
+      "sha256": "c3ab173de6409e7bd1d4f0efdd9f702c570e1401ce321ae042b8dfe4c8575b0b"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-085_UE5___03_p05_i02.jpg",
+      "bytes": 918643,
+      "sha256": "7179eb135b43938bfda45709dcd193588fe63e3baa83888a3f9d2eb64abf76f8"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-086_UE5___03_p07_i02.jpg",
+      "bytes": 36258,
+      "sha256": "e3a240b802b25e3f4915631949a5553558f6b5595406cb79263210a89d1fcf7a"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-087_UE5___03_p09_i02.jpg",
+      "bytes": 178972,
+      "sha256": "dd8ef9315b3cb3150fc89088fd95c8eafbe63901d55d92edf66db642fed0c233"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-088_UE5___03_p10_i02.jpg",
+      "bytes": 308224,
+      "sha256": "91d797ca7422a866a4be6c1767f123a0f800fff30a8ecb37b33b20d33f598060"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-089_UE5___03_p10_i03.jpg",
+      "bytes": 118898,
+      "sha256": "4e67e40268e7b87e1aad52ce5e48db02e0dab574f4efe69a352cfe9788050f5f"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-090_UE5___03_p13_i03.jpg",
+      "bytes": 70733,
+      "sha256": "5cd8cd69867cc097ab3ef17b92dee4dea800a2b11cae32c496900a8c34bac891"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-091_UE5___03_p13_i04.jpg",
+      "bytes": 564324,
+      "sha256": "e862a6ba92adcad2256b3291c38941fc4635e782a3deb59307f48b6bd42afa2b"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-094_UE5___03_p14_i03.jpg",
+      "bytes": 237367,
+      "sha256": "f99f0752e7b8486b7259cc3876aff414b5835d93d5f68b2dc8451df2b9cd4fa5"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-095_UE5___03_p15_i01.jpg",
+      "bytes": 273586,
+      "sha256": "6d777fdc8c41d77031f74cb472c6d1e349da6ce63d48369d42b95e531b816182"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-096_UE5___03_p16_i02.jpg",
+      "bytes": 78494,
+      "sha256": "99f35fa5cb4e157a6ad0894ee56f45c0811b8ca884f0399a0b3268c7b82129e3"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-097_UE5___03_p16_i03.jpg",
+      "bytes": 76862,
+      "sha256": "4ff876bba2ce8fa8738854b14dd21ba37ff77912e76e04ca1061359d48d1f8b8"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-098_UE5___03_p18_i02.jpg",
+      "bytes": 143613,
+      "sha256": "c205473296f1ede49107f1fb0111fa559730446ff36a0493f9001742a268ea4a"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-100_UE5___03_p18_i04.jpg",
+      "bytes": 324311,
+      "sha256": "403579a5755f2879b693ff224480379603add02bc788e4c562bf8e3218ea9dd0"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-101_UE5___03_p19_i02.jpg",
+      "bytes": 734294,
+      "sha256": "d0968ab6d0f9b0faa3926058667ab08c3bebefbbee5febf73476f8299f0a09f3"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-102_UE5___03_p20_i02.jpg",
+      "bytes": 282592,
+      "sha256": "15da6cd5f35a9163b0dadc29ef2a025052ece2fc7e735d41d06b0044251d9b09"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-103_UE5___03_p20_i03.jpg",
+      "bytes": 975432,
+      "sha256": "47a1d51297fabca75f28a6f56165208e589041f2f61a0af778807491eb2e6ce5"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-104_UE5___03_p22_i01.jpg",
+      "bytes": 148086,
+      "sha256": "e5d86efe95d54b5ecf4d769428ebcc1517685b014075816482d36e388cb7e824"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-105_UE5___03_p22_i02.jpg",
+      "bytes": 202678,
+      "sha256": "f3d480164c2445a736ce91b93af77abcc3d7bd1bd4336884ac99899a7a536e8a"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-106_UE5___03_p22_i03.jpg",
+      "bytes": 199923,
+      "sha256": "3857937fcf3b0babce36a883a243e59920303b29a82e5924cd736812d1bc67c0"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-107_UE5___03_p23_i02.jpg",
+      "bytes": 443393,
+      "sha256": "aa969ac3d9b42e9d65e308cac6209eb4b88eef4f66bb2494834291815bf9f338"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-108_UE5___03_p24_i02.jpg",
+      "bytes": 107853,
+      "sha256": "c4853e024897e9ffee200681cc9a5bc552ea9cd657e57af6640022f86d4b93d3"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-109_UE5___04_p02_i03.jpg",
+      "bytes": 689420,
+      "sha256": "6fca8fbca8fe1d4e35ca3ae8d1ab7cfde529fdc42377142de55368fade714b41"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-110_UE5___04_p09_i03.jpg",
+      "bytes": 495680,
+      "sha256": "d22409744dae867a4eaa63e2fef73ebfff90ffc8f9f76dd41ba3b7d7a5c70e86"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-111_UE5___04_p11_i02.jpg",
+      "bytes": 267548,
+      "sha256": "cb70d825cf1499dfeb6e7e180a5f68bafdc6844d4031bce11aa2ace3e84a96bf"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-112_UE5___04_p12_i03.jpg",
+      "bytes": 890265,
+      "sha256": "831de1e3643f22688be11f3b2b7bb2ba9fa6b60262e0d3929bf795c6dceacaa5"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-113_UE5___04_p13_i02.jpg",
+      "bytes": 637583,
+      "sha256": "71139d313646100138936dd4f8cfe0e1311d9c1c7c5622381d57726c1d0fc667"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-115_UE5___04_p14_i03.jpg",
+      "bytes": 793274,
+      "sha256": "26d2b535ef45a766c8cb3cd578e76113d35b6bc44a903220398ba2f1b452ba94"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-116_UE5___04_p14_i04.jpg",
+      "bytes": 283230,
+      "sha256": "344afe8d264b09bd034cc9bb394b62fc39c0ec99cab7764f81f2bbe49a09d72e"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-117_UE5___04_p15_i02.jpg",
+      "bytes": 562967,
+      "sha256": "ae1d840178e4500acd194fd3e0bb796a32281e5ec082c65f176a93d34320bd20"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-118_UE5___04_p20_i01.jpg",
+      "bytes": 679903,
+      "sha256": "f054b64a4f2c5c3118e8a929c04a584164ccda49a467dc5d903c4139d0a2c8be"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-119_UE5___04_p20_i02.jpg",
+      "bytes": 774968,
+      "sha256": "26284bb075d7c54646d0f33e4a84aa411548925a23583105033c74bff0baed8e"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-120_Cdjmwh_pak_Screenshot_2026.08.05_-_10.57.38.27.png",
+      "bytes": 18099099,
+      "sha256": "65a1c984983bde2a223291340e8866a6220e0389c705c4ebe36c9c46d0035ca6"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-121_Cdjmwh_pak_Screenshot_2026.08.05_-_10.58.38.77.png",
+      "bytes": 17259666,
+      "sha256": "686c0d9a3b746a44fb1009691953d7c8daae0a6add3c1e5e3b8fd9bfbf28532f"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-122_codex-clipboard-c1133e5a-0a12-4215-af55-7b3f83d8b933.png",
+      "bytes": 2777219,
+      "sha256": "f33b54a34c974651e470afcc9329f76ec3b46381a1fa958ef75db7b39d8acc51"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-123_codex-clipboard-bd9294d2-7b59-4565-9097-69e6ee37bd99.png",
+      "bytes": 2878088,
+      "sha256": "ad8cdbb825feb3065d5d36aa3b3213a0483e74286ef45c4c9a4b1ac4b75603fb"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-124_codex-clipboard-50582a00-4d9c-49b0-8937-aaf1c136a8ba.png",
+      "bytes": 2821523,
+      "sha256": "7ad686613acea588e68099ba1e4a254bce274c6cbc0baca4e538d9a03417bfd4"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-125_codex-clipboard-d094f3ab-196c-49d2-923f-d8e166beaa5b.png",
+      "bytes": 3156661,
+      "sha256": "cd569f8eb53f9b05599dd0ddce72e2abab7e3cd2a63023a0362f159607084ee2"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-126_codex-clipboard-9f95c54c-cb6c-49b7-a339-6927b85ac421.png",
+      "bytes": 7172077,
+      "sha256": "6816bf015d79b2b0e7f40f022eda2d6489c4dfa5aeba095d454539114a7ba125"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-127_codex-clipboard-b83ce8c7-8734-4e58-a002-74569b777058.png",
+      "bytes": 9915860,
+      "sha256": "16daa9bd85bae6bb68b41b2364203de62ad6a508655e70ce2ec63a165efd4d78"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-128_codex-clipboard-beb7f2f0-a763-45b6-beca-6d9e1c90ebe8.png",
+      "bytes": 15927059,
+      "sha256": "a7cd661bc28ee9fd45baeccde009ba56dc2f2a5a1498b2f9aba2eed9e793f35b"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-129_codex-clipboard-6cd4d650-9ddf-4d9d-a1bf-f003ff6cf249.png",
+      "bytes": 16637238,
+      "sha256": "72f1ecb1a67071fe22210fa37df4bc443027825c0fe43de7fae6e4cf90039bbc"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-130_codex-clipboard-e9773943-f87a-4968-be9c-a45e7564d25a.png",
+      "bytes": 18524269,
+      "sha256": "ecbaa91a8ca416ff8cb93798d1cea5f436738d3bf0f5c5462a18ad28a522f3f1"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-131_codex-clipboard-f1ae56df-f171-498f-97f7-4439258dc90e.png",
+      "bytes": 2744143,
+      "sha256": "47c88a7481a768d084438aee9cfe374c415148407fc8a80422eee75e44ddb0ce"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-132_codex-clipboard-921364cc-62a1-46c6-b9bc-32f35173e678.png",
+      "bytes": 2727083,
+      "sha256": "1d46b2cc10434c4ad55eff08826abb62eb73b3cbbe2c9d6ebddc7b72043c504a"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-133_codex-clipboard-6cf5de5a-8d93-4180-bc4c-f39d9eb0840a.png",
+      "bytes": 2845115,
+      "sha256": "17773df267976175a752781288355ca2241f70a03253ff90e5a716033b1a4393"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-134_codex-clipboard-8a100daf-8a45-4a85-a511-d91e931f92b8.png",
+      "bytes": 3041320,
+      "sha256": "04af56ca8e4cace91b21f0c51c19cfd9888ebef363dcfb201c120c6af8b0a089"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-135_codex-clipboard-be8aae26-ce9d-40cf-ac49-db8e4c90f51c.png",
+      "bytes": 3183968,
+      "sha256": "7afe6fbf8d32ce77dcd5a2ef81d23b2fb652ab31827a8068d3f18ca0ea242840"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-137_luhu_city_value_t008000ms.jpg",
+      "bytes": 670910,
+      "sha256": "cee3caac6bb26285006b84dffe3e79fb9f5c6afd9c4d6b86518dfcd26b276716"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-138_gongyuandao_facade_wide_t004500ms.jpg",
+      "bytes": 988599,
+      "sha256": "b6d5e14ab052d6d7c9b62d5cd122eb3e52bb7b685a511da434620762db7d0f95"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-139_gongyuandao_facade_close_t012000ms.jpg",
+      "bytes": 707397,
+      "sha256": "31cdd3819275bca4693bf4f190d70ae8af715d1eaf906a4f4fa6448cea3f2c04"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-140_jinlinyue_facade_front_t000800ms.jpg",
+      "bytes": 647459,
+      "sha256": "9aa2266630070bdf97e505d2da96151f584562af0b28c0a66fdfcf57f8b1cde2"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-141_jinlinyue_facade_crown_t004600ms.jpg",
+      "bytes": 489819,
+      "sha256": "132e6b4c0b0283d3f9b7ef9cdf5b54b12bb56067f79ecda20522205adff35b9d"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-142_jinlinyue_facade_balcony_t014600ms.jpg",
+      "bytes": 545211,
+      "sha256": "7714178ad6bf3ea0354efe133ab3241dc5252d57e96a36fe0995cfa788a91de9"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-143_gongyuandao_facade_overview_ui_t001400ms.jpg",
+      "bytes": 719459,
+      "sha256": "676bcac3ec2e3051bf40b9fa8014099f4104f5e90169c640674246dfc98744fc"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-144_gongyuandao_facade_eave_t004600ms.jpg",
+      "bytes": 531284,
+      "sha256": "20b2537b64936adb5fd1acb83f99dfa30302fe0973fa5156077c54946d7b048a"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-145_gongyuandao_entrance_annotated_t015000ms.jpg",
+      "bytes": 799303,
+      "sha256": "58ef4e768a8397f00aa3fb607a92ab1057f7977db5c19c2fcebd29a85a40fcda"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-146_gongyuandao_gate_wide_t004600ms.jpg",
+      "bytes": 941321,
+      "sha256": "3736f6473338a30e11409a927f9d1ecbcfa1fa07a22a0b91e7dee245cc631688"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-147_gongyuandao_gate_water_t011000ms.jpg",
+      "bytes": 731038,
+      "sha256": "15365bc0da51969d29c4c80b285c36a9912bbfb1f487dd72d0d8af568c4a795f"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-149_jinjiang_walk_panorama_t000800ms.jpg",
+      "bytes": 661369,
+      "sha256": "e6687bf536fa5060eee19b7e86005189031467ed83156454747d08d4c6ec1284"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-150_jinjiang_walk_bridge_t007800ms.jpg",
+      "bytes": 772995,
+      "sha256": "924b247ebac6b101b7c8c66384ed6fe6a19bc3914c4c829c22ee734cec06ba55"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-151_forest_park_walk_t007200ms.jpg",
+      "bytes": 1058531,
+      "sha256": "4be77503b2f5bff976b8c6fdc599be70a1990bdde74531a1aea7ae3e8c387caa"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-152_commercial_walk_t000000ms.jpg",
+      "bytes": 619024,
+      "sha256": "6711a992ac5e5e80dbe6a8ef57d9bf523b03d639186b9668e20094f252adafe9"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-153_commercial_walk2_street_t000200ms.jpg",
+      "bytes": 850550,
+      "sha256": "6a86fa9c06ff36158efe37a0d5eaab361fa782b8ac7512407af47934a4232635"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-154_commercial_walk2_project_t010000ms.jpg",
+      "bytes": 651218,
+      "sha256": "cc2eb29ba6733fbee397e65a8ff5885fb19d6e5a436184ec7a0374cb32d07c3a"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-155_city_amenity_realism_waterfront_t011000ms.jpg",
+      "bytes": 709727,
+      "sha256": "b3e191b497728d49e3f74546d9a5550eeb9e825b6f25694052db80e2a19ab0b7"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-156_city_amenity_freedom_overview_t022000ms.jpg",
+      "bytes": 826690,
+      "sha256": "56b4c34f5398a5d5c1b8f065be199bf1c7be9c59ea978238528fff135e8225b6"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-157_lishimanhua_transport_network_t010000ms.jpg",
+      "bytes": 941658,
+      "sha256": "14665f049384bcae4cc6b2dad9d34a6b85b31e37090f41239987730561d7e6c7"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-158_lishimanhua_amenity_coverage_t014600ms.jpg",
+      "bytes": 912447,
+      "sha256": "c6afdf4e26941086ac9da9227316c63066c56c29db8d968ff96c93ba0237e332"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-159_bangtai_amenity_paths_t012800ms.jpg",
+      "bytes": 849394,
+      "sha256": "d8b0e4e492befa3e801af0e99e7dfb56bf0e495108c5fe6a47cdfbd8ea5ab592"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-160_brand_joint_value_t001200ms.jpg",
+      "bytes": 531148,
+      "sha256": "587640caa3c032847685ab1cdfb0eb62d5d01bd76d71ebe5f30f7a3e27213f67"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-161_brand_value_system_t004000ms.jpg",
+      "bytes": 380689,
+      "sha256": "e62078d5e9a6819eda87620b8dbbe633f94a816aecad36fcd0e2629ab7e52151"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-162_brand_service_system_t006600ms.jpg",
+      "bytes": 424330,
+      "sha256": "b3c31a1d92ef7a9956464bf47701422a0932790ffe13a0d4fde86f22c5d69c02"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-163_brand_history_t001600ms.jpg",
+      "bytes": 440606,
+      "sha256": "f256168852001145cdced4c4f93923b57d85c8881d5fa840616751192153df16"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-164_brand_industry_layout_t004000ms.jpg",
+      "bytes": 425094,
+      "sha256": "36f2e84704c74ec5ccc5abdc5c7e53e62f78dd81a9b96d08eee2dfd46d5f28c8"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-165_brand_city_layout_t009400ms.jpg",
+      "bytes": 412979,
+      "sha256": "6e74db24d9bf88081ba953e459c7716bffd55f45881352099676dac1d5ff1d6d"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-166_brand_culture_t011400ms.jpg",
+      "bytes": 454013,
+      "sha256": "a6181c3a05b2869bc38be131f572986c1941668f5f11b22e1e9d62f78f3019db"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-167_brand_delivery_system_t014200ms.jpg",
+      "bytes": 509306,
+      "sha256": "df3be68881f548e0f7e3ed7c01c37200633412ababc965c3bc8298fda2a3d261"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-168_brand_global_industries.png",
+      "bytes": 833475,
+      "sha256": "d2bc0a58dd793fb2620c5258f77f4a3824b80f3144d025aa2cf91b2f5719e670"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-169_brand_china_footprint.png",
+      "bytes": 1099166,
+      "sha256": "044dd4de69d570bf2bf93e3dbff52a72e570933d58875a22a49ee5196cd09cd3"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-170_brand_project_portfolio.png",
+      "bytes": 2295060,
+      "sha256": "015abe82e59a414b42a88250f1e721db11bf66fb78c2c003f27be3d1bab09a5f"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-171_block_river_culture_t015200ms.jpg",
+      "bytes": 506275,
+      "sha256": "9b2a99e295bde6de8e3fb12ea315f48c3c00862777858fea2b1cef379e07ef23"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-172_block_commercial_distance_t005200ms.jpg",
+      "bytes": 1165419,
+      "sha256": "fa74b1590ad0d718677c9392397c668f37d825d93522ee1f0254e9ad68238057"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-173_block_liangjiang_division_t004000ms.jpg",
+      "bytes": 958149,
+      "sha256": "d00ed64cdfe5d1c147dd02ef476c35645faad51c360fec983aadfaaab3997884"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-174_block_gz_parcel_benchmark_t007200ms.jpg",
+      "bytes": 752834,
+      "sha256": "64ca309c87d86f90c8def2ea54d33432f1b36814ea5aeb0878ac0874b1fc552d"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-175_block_gz_golden_triangle_t010400ms.jpg",
+      "bytes": 715053,
+      "sha256": "3462145be48d1585f0777852e8c3ecf6805914ee1a181cc0b02cec8c8f7da400"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-176_block_gz_enterprise_cluster_t012800ms.jpg",
+      "bytes": 579909,
+      "sha256": "ef19ffd111fa63380599767cd591ef2e8148e0bf6c836a88c7551057df450e7d"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-177_block_hangzhou_world_links_t007200ms.jpg",
+      "bytes": 380732,
+      "sha256": "ba1b7e58234bfbacc90279d1d3f0ced416883cebbe462a561ebd510955ae03ed"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-178_block_lishimanhua_south_axis_t004000ms.jpg",
+      "bytes": 769105,
+      "sha256": "cb4a11a3f9e8b37d9bb9341ee5ff1b14d6ebcccf8f01b8a1e9f6b4a006aa29e7"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-179_block_tianxin_subdistricts_t004000ms.jpg",
+      "bytes": 1162852,
+      "sha256": "90a2fa1b2b6a0279d11a796d9e1f123b6ee3ed0c812954fc06560c7b28e03876"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-180_block_ring_city_relation_t005600ms.jpg",
+      "bytes": 927536,
+      "sha256": "89f7bd517d1b90900af50dcd0314cbdbc7874f4352fb788a68a9ff1f74737a6d"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-181_block_natural_resources_t004800ms.jpg",
+      "bytes": 990005,
+      "sha256": "c849b08ecfeb9ebe2259868136ac183c8989ccb1c1a39e687ac9dc0b3f207411"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-182_block_jinlin_south_axis_t003200ms.jpg",
+      "bytes": 945926,
+      "sha256": "c5a4d8422da64201ff291510218724b4cf54f83635b75a1c2d655c3a94acd4a1"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-183_block_jinlin_position_t004000ms.jpg",
+      "bytes": 1280938,
+      "sha256": "7692147fe167f98311e14ca8225cf5076531937b774f3100bdd4d64dda251f49"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-184_block_jinlin_windwater_t002400ms.jpg",
+      "bytes": 1088988,
+      "sha256": "9c8eef1b03b5268dfe9ef4d57bfcfaf50f62b63b7c343197513107cd01cf5510"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-185_block_puyu_luxury_belt_t013600ms.jpg",
+      "bytes": 893090,
+      "sha256": "e7a865b0c9010a44ec6367e1a2efe8d301daef5498682c2c94440b1c220259fe"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-186_block_resource_richness_t004000ms.jpg",
+      "bytes": 1257832,
+      "sha256": "f551dab8f424d9dfd30bf47bd6e5d123350be0da68086f56cc46c84bc60ab9c6"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-187_block_cbd_masterplan.png",
+      "bytes": 4573726,
+      "sha256": "e2eabc29e5dc7e598ec2bc0f278994feac4013eb71a6214e4a4cfcee71b4ccdd"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-188_block_commercial_circles.png",
+      "bytes": 5631357,
+      "sha256": "f2a4d552846c611ec9b059e5c49d178f079659d029baa9b123329f468b9a7d4e"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-189_plan_furnished_text_storage_t003000ms.jpg",
+      "bytes": 524188,
+      "sha256": "c27e1b4bd7b16365169367fe19d6f7c40db3be9a27767c08550289fbbfd6d60f"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-190_plan_furnished_text_dining_t020000ms.jpg",
+      "bytes": 527243,
+      "sha256": "3f9c7ba69940eb9fe31c82c19cbbc59189d0ec0b5c1581d8e713929e40bd91f6"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-191_plan_standard_floor_t003000ms.jpg",
+      "bytes": 796667,
+      "sha256": "c6e955b5f1ae1c1b742c53cfc337e28306952e7df114c0ef13b73b5347e82e77"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-192_plan_bare_room_view_t003000ms.jpg",
+      "bytes": 473531,
+      "sha256": "06f28f8135f134b119a65199367dff54c35d30628e4480cfdd9e6f1aeab766b2"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-193_plan_bare_balcony_view_t013000ms.jpg",
+      "bytes": 710898,
+      "sha256": "6fe92cfc5e4aebd0a0d1df6fa1dc2f76890c035615ff74bb36f88102f256b50e"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-194_plan_unit_axono_top_t002000ms.jpg",
+      "bytes": 653043,
+      "sha256": "ea479f1084fb92077fc3c38a32be48e156800ce266fc951ba594a334865061df"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-195_plan_unit_axono_oblique_t009000ms.jpg",
+      "bytes": 826970,
+      "sha256": "c30fd8ecd79bcb8faf7047fdd7a1e9512d16c90f40424e1b8cfe2334e42614d2"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-196_plan_jincheng_overview_t001000ms.jpg",
+      "bytes": 1155725,
+      "sha256": "22728402c071f4e8c9a877c1a6b3f666ebbd906cb16734efe9a05c5b11089acc"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-197_plan_jincheng_landscape_t007000ms.jpg",
+      "bytes": 792199,
+      "sha256": "50a2752da11dad5589508f8f6da8ff4a76011315ead5db96d9eecc680cb1bcda"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-198_plan_furnished_zoning_t009000ms.jpg",
+      "bytes": 264600,
+      "sha256": "381011f3bbee05898ec400972f1aa99d4f1b5b4bff0ce6de6fcbd4750bb7dddf"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-199_plan_furnished_living_view_t015000ms.jpg",
+      "bytes": 769922,
+      "sha256": "6f9883709969d7f04f57eab21f3a7790f085a5f43da1e8d3786ebaacc8e65560"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-200_plan_furnished_corner_view_t003000ms.jpg",
+      "bytes": 768183,
+      "sha256": "78e9fec44a0fdfbd1743d584cd228003193f31954deb06aa65f4f4ea41681cbb"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-201_plan_furnished_living_dining_t015000ms.jpg",
+      "bytes": 684077,
+      "sha256": "9738f890ddebc0c5eb28c66e3c99eaecad95c2f4df027da2a703dd4b805fd00e"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-202_plan_terraced_overview_t003000ms.jpg",
+      "bytes": 931229,
+      "sha256": "974e702091ded5af23cab6a535612361cc19ce1fd6c67d2a2e770cd639c7ca06"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-203_plan_terraced_river_relation_t006000ms.jpg",
+      "bytes": 1077821,
+      "sha256": "fd4ff45a9520e371fe720f448967baf0068485c58c7ee5f1e0530d36bce8acb2"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-204_plan_large_balcony_t004000ms.jpg",
+      "bytes": 761302,
+      "sha256": "cdfef82f05168a2ae22b4ac02f43d69da737d68bff4bef28727947125567a6c4"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-205_plan_building_layout_t002000ms.jpg",
+      "bytes": 1342636,
+      "sha256": "a493032c52eca32c4c6ea30d936b79eb1a017ebf65ea77319e87b038132d26d2"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-206_plan_golden_angle_layout_t006000ms.jpg",
+      "bytes": 951665,
+      "sha256": "205090f1760e91d853204c83f794df1436f8a8e896ba85d6f1e0e1fddffc7afa"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-207_plan_project_landscape_view_t003000ms.jpg",
+      "bytes": 674309,
+      "sha256": "9b5c2b639a3bdf39992655d658604e0bdb33949ebec23bf335f8c83ef3983c50"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-208_plan_project_river_aerial_t003000ms.jpg",
+      "bytes": 1156709,
+      "sha256": "b12a0660eaf30f9a7571cc7af96474de1c9b513c4c5ad24e29cdfb8b81c0a3f7"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-209_plan_project_river_walk_t017000ms.jpg",
+      "bytes": 753462,
+      "sha256": "2ae297aa4a7ec18174c23899e38dd6fdbde03302785bf54acbd842e76ecd5377"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-210_plan_puyu_foyer_t002000ms.jpg",
+      "bytes": 626940,
+      "sha256": "3dee2e8a98749452cf98992b4dc9802b3ef5a065b5088e517d3f3bcc88915e78"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-211_plan_puyu_living_dining_t004000ms.jpg",
+      "bytes": 680901,
+      "sha256": "8f684f2ef5ba175206c991813b182ba384cbba1f34a8017b6683e22b2194a82c"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-212_plan_puyu_kitchen_t006000ms.jpg",
+      "bytes": 540779,
+      "sha256": "f9c042529e5898f1f4dc1f7a87243cc0997e6fe391ac1975ae39aee9f1e0f792"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-213_plan_puyu_bedroom_t008000ms.jpg",
+      "bytes": 667727,
+      "sha256": "9f1adf1ada09dcabe6edc4db7fc782382523e5abc170ff7504f773a21a939f0f"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-214_plan_puyu_bathroom_t009000ms.jpg",
+      "bytes": 654145,
+      "sha256": "a58347b3959264cacd2f0585ac3459f09c40eba20d79f35c01c66ae1ec088732"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-215_plan_selection_buildings_t001000ms.jpg",
+      "bytes": 1341611,
+      "sha256": "e223206c032398767bfe270bb82bb669bbed2bee563170f79b33a5e307a5c75f"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-216_plan_selection_view_t010000ms.jpg",
+      "bytes": 821773,
+      "sha256": "ef79c20881e104e3ba5e425f8de7a23bbb8f14a2d7cfb505a31dad01e91b451a"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-217_plan_each_view_building_t002000ms.jpg",
+      "bytes": 852415,
+      "sha256": "25d9580ce1211e4f7ef3ebee68a42597670490b3dcdd9b6c29db352de9a5c71e"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-218_plan_each_view_waterfront_t007000ms.jpg",
+      "bytes": 689860,
+      "sha256": "70bae4aa7d15b1b0461498872418758034345a2d72ead03c3ee8971f56054760"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-219_plan_duplex_two_floors_t003000ms.jpg",
+      "bytes": 247835,
+      "sha256": "d070a8a375847ce6a2c42fad4a5126933d58e6fe214a35454135b998778b9c13"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-220_plan_duplex_zoning_t008000ms.jpg",
+      "bytes": 277694,
+      "sha256": "42acb874cefd6bb36547064326e7aa16370c2a3940f73801a5664fd3e6336fb7"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-221_plan_duplex_double_height_t012000ms.jpg",
+      "bytes": 662795,
+      "sha256": "e88798f64b79cb050e4d4f80a88c9294e7b6ccb390d6eeba765df6827c2af0eb"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-222_plan_design_alliance.png",
+      "bytes": 2264341,
+      "sha256": "96ca48519d78e44d58c16938db598031b95a194410de595c5efd74ba9ae4faac"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-223_plan_eight_rules.png",
+      "bytes": 3147538,
+      "sha256": "0cf59b7faac5aab67221e37f455e77c1796300e56dd6f023139d8ae9eacbc90f"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-224_plan_masterplan_metrics.png",
+      "bytes": 5065723,
+      "sha256": "8f0ee77422759bc4b40a9a6150fa2c83f1953ae266755cc26075d586e89efe2a"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-225_garden_sunken_club_t001500ms.jpg",
+      "bytes": 869550,
+      "sha256": "fd39af10fc9afa15a2b59383300951f5c3ae921205e9c58972c0867d32fe8b02"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-226_garden_corridor_sunlight_t004500ms.jpg",
+      "bytes": 882408,
+      "sha256": "55435117be4ceb144ed43ef36aee4b7d5e035067adebd7237375be4f3adde6a3"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-227_garden_corridor_courtyard_t010500ms.jpg",
+      "bytes": 728998,
+      "sha256": "c24aa126c1714ba40f3ba5e97738f639edafe441b724537204c1c8af8c3436ec"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-228_garden_corridor_rockwater_t013500ms.jpg",
+      "bytes": 716579,
+      "sha256": "1e8746b472125b382c0e12a3c08367b215e3dcd79005c754826ee9213f6e107f"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-229_garden_homewalk_deck_t004500ms.jpg",
+      "bytes": 719436,
+      "sha256": "0f7b638ecc535c9a080e2719c060826f1c6680299c582ed8b73894f92f76249b"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-230_garden_homewalk_watercourt_t009000ms.jpg",
+      "bytes": 708483,
+      "sha256": "23572eed5f1fef15f753c3436baa91e890896dbb09b03f0ed102bf349f1339e4"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-231_garden_homewalk_tower_t016500ms.jpg",
+      "bytes": 940793,
+      "sha256": "cae59b5b21faf15392f23975858abfed754b507a76a40968a6d050df246ecf1c"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-232_garden_stilt_urban_living_t004500ms.jpg",
+      "bytes": 670638,
+      "sha256": "7936495804dfc17f1509ae55bb0a4bae561c8508518f9fc87b64e5c766804162"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-233_garden_stilt_pine_tea_t009000ms.jpg",
+      "bytes": 672138,
+      "sha256": "d3389e6399f79f3ae0842c8894a6232defe435f44f219327dc828d77fdd227d8"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-234_garden_proxy_park_lounge_t001500ms.jpg",
+      "bytes": 983739,
+      "sha256": "5c69d67827d2b5d31a8a10967cb58f0a185c62ea5023de28f2dbc24535dfe5c0"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-235_garden_proxy_park_river_t009000ms.jpg",
+      "bytes": 1079241,
+      "sha256": "9130a70ce81ea440e6bb8484876a5f7f7bb2c0b4def51991ac93dd8f13fa92f1"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-236_garden_stylized_fountain_t001500ms.jpg",
+      "bytes": 717357,
+      "sha256": "fddb6b32bde64cb2f58480d64ea47fd44c02eff8e877726919c048785ee706b5"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-237_garden_stylized_entry_t006000ms.jpg",
+      "bytes": 782139,
+      "sha256": "d4af6afed18c702bfaf56b30edc5ebf293a9498d56a6ad40f9c314c7e95ee5ea"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-238_garden_jinlin_apex_tree_t003000ms.jpg",
+      "bytes": 767694,
+      "sha256": "af3e3b5941bcea2e49bee21cdcb1584f561203e536a889dc4b03e4a97d2b95f6"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-239_garden_jinlin_framed_path_t015000ms.jpg",
+      "bytes": 694799,
+      "sha256": "a5dccae6c05da368b4387c6e50d31e60ec261ded5c13478b639811e39492c98a"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-240_garden_jinlin_tower_forest_t022500ms.jpg",
+      "bytes": 1218356,
+      "sha256": "28f3703e055c2831c1fc9c1b18dba0f6dd1c09243c547871d3e379faaccac7b3"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-241_garden_forest_path_sun_t007500ms.jpg",
+      "bytes": 984468,
+      "sha256": "733a0d6b524865b8a0a69f3b9444e0fb495015395ac6f854fb0ead6ef29e01ea"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-242_garden_forest_watercourt_t015000ms.jpg",
+      "bytes": 838230,
+      "sha256": "8377cbb2019e39eeb48a948d8e255a01c2cbfa2ce71fddbf73b14ff6d0927fb9"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-243_garden_forest_layered_planting_t013500ms.jpg",
+      "bytes": 965149,
+      "sha256": "ec5dd4b4d9241c893a715d2f982a17a45390afb6ec9ff4d368f0d79402477188"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/original/CASE-244_garden_forest_building_edge_t016500ms.jpg",
+      "bytes": 1003579,
+      "sha256": "54785a56f62074e185cc2c1c3ad4e9867614117c4fc98e0ff07811188eef4ea0"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/案例截图素材语义台账.xlsx",
+      "bytes": 11652338,
+      "sha256": "9b9b2958e1f36e65292ddb5262b8a669019a85780eeac8c0d7b92c9b88448b57"
+    },
+    {
+      "path": "references/product3/assets/产物3案例截图素材库/案例截图素材语义台账.xlsx.inspect.ndjson",
+      "bytes": 805669,
+      "sha256": "bf74f3655775a0db9a08158bdf82f0086838c71287d90a8a5a7433bf9a176e59"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/01-三套成功产物3来源逐页索引_v0.1.md",
+      "bytes": 14707,
+      "sha256": "3c7dca108ad0aaf13c9107fef8c083836456324568ac7c6925d333207ecb96a2"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/02-共享页面语义库_v0.1.md",
+      "bytes": 15830,
+      "sha256": "e48fcaf4efcb1be08b730ea95887e187f09b93dbc2be176b2a2469e3c832cba9"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/04-页面语义、视觉变体与来源页标注_v0.3.md",
+      "bytes": 17623,
+      "sha256": "73e0afc5e4d7cc543846e7c3cdf317f07f33ed65c3a5df33f59a4ebd8d89e651"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/README.md",
+      "bytes": 6635,
+      "sha256": "4fb80fa572485094f78cb802609398e0e1a0d93e9b0bf4a67ea84847e7371f5b"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/datasets/page_semantic_dataset.v0.3.json",
+      "bytes": 50986,
+      "sha256": "c4214478f1c36a0b561a31995fb53216a334ab01ea750591ab1d83411ffd4c30"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/datasets/page_semantic_pairing_profiles.v0.1.json",
+      "bytes": 8726,
+      "sha256": "62aac30e5550ea87ccbd1e7bdd5c10f85cee407b4355b13fb32483c385965c43"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/datasets/page_semantic_pairing_profiles.v0.2.json",
+      "bytes": 18603,
+      "sha256": "877b1504103aa61a27a0a17cc2ff0f26fc18e1598d38d8df8fc1e7d6aa36b1a0"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/datasets/source_page_semantic_annotations.v0.3.json",
+      "bytes": 159920,
+      "sha256": "e78ab852e9e5e066514e423b624448ab3aa4969d95fe6705bd5036ca327fb868"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-1.png",
+      "bytes": 67249,
+      "sha256": "9d6de397ec8953282b0178e7b54802232ffbf2ce0434b95875d50dce8baa79f6"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-10.png",
+      "bytes": 1251131,
+      "sha256": "87cf294190e404096207baece67dee13c2d735bbb2bc6f0cb0d8d9ec8cd8bafc"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-11.png",
+      "bytes": 1238250,
+      "sha256": "0fb38fb3aba92303c396a2a95e7316e87ede0d6c918daf3e097e8f533156758e"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-12.png",
+      "bytes": 141114,
+      "sha256": "53c0840b1e06237de3a21930cbf902ea3c57cd0ced3ebd98b529a5795ae92135"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-13.png",
+      "bytes": 1223910,
+      "sha256": "15d9d139e9bf44ca09804d4e03343ebfa40602e2b3e4de65218dce73ed13fa1f"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-14.png",
+      "bytes": 1216906,
+      "sha256": "658af1f5c975002309b5d0afbc87a9bf52649b15b297ef2f3f11a640129b0953"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-15.png",
+      "bytes": 1373768,
+      "sha256": "6c1e9b31a146186bcf057289438a4f76524e474dee70355b47451940d1bcc8e5"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-16.png",
+      "bytes": 1019502,
+      "sha256": "f4b483e2ba00d8d8f618889844e49492eccfd3491296c7af8c839f0f4aa4dc79"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-17.png",
+      "bytes": 1272966,
+      "sha256": "f97cfd9b7b1ffd1a3826acc03608162546db8f80c9c609773451bf0ad62fba0a"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-18.png",
+      "bytes": 741615,
+      "sha256": "523a80a913147d0583d046561fcbf2ad6c25cf861d6029ce2467c8424272926b"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-19.png",
+      "bytes": 1217481,
+      "sha256": "bfca0d279ab91dd8075a5de336b20a09f1e8ad84c13d608b05bdd3a1b6a05e86"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-2.png",
+      "bytes": 54457,
+      "sha256": "534e0418a11ad01aaac037bfa41a1def616d9e338ab886a4c376abb1880286a1"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-20.png",
+      "bytes": 1036644,
+      "sha256": "5d0f101c0de792c055202d4d9da40456c67b76ebf649bcbc0b9888b45cb83cfe"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-21.png",
+      "bytes": 1056295,
+      "sha256": "7cb346b65d8ba188405322f1831ef710f3b1ddfd5bae1bf71652c0450b5ae607"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-22.png",
+      "bytes": 1137869,
+      "sha256": "36fda3e81bc13f114a4ef142b253b9b962d8917e0546b384a81304824de2e21f"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-23.png",
+      "bytes": 145232,
+      "sha256": "72b5590160f6cf6aa7330dcf7d4df5f21e3a385cdbd4c5ab5fe83481a8535f3a"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-24.png",
+      "bytes": 610103,
+      "sha256": "18ffb93412a54d6176c1cc509cd567d25b22c339c4f9a0e805dee8c9fadccbe7"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-25.png",
+      "bytes": 983740,
+      "sha256": "8acc6ec06fd280d5d40dd79f5d54e93ff919954011efcfabc5e727b6d14f0ff4"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-26.png",
+      "bytes": 1261482,
+      "sha256": "0af665dd75d25e04c66cd587a673f7082353a821dd375987ebb031c6b1511476"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-27.png",
+      "bytes": 138540,
+      "sha256": "8092ce7faf470ef9b79931b1443b6d61b1385ef4048ef0f6bfcda608b1973a17"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-3.png",
+      "bytes": 202785,
+      "sha256": "05fc46d227c5d451510df1db65b13cf80c2726ab4b8fdaba9b8bea0682caba02"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-4.png",
+      "bytes": 885938,
+      "sha256": "ecc893d6d937fd34c31bc20b9a28fa3489e87a3e8990b591aa3ac7e4e7b13b91"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-5.png",
+      "bytes": 754373,
+      "sha256": "3c940f66c7d52e182a81cb40b140c127858a7bdeb0aa119b7008fb581d7f8145"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-6.png",
+      "bytes": 493252,
+      "sha256": "c9c2667fcd2ec6d859dfdfc77cd6d5e31f2498a036e477c2b9de59a48c6d7865"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-7.png",
+      "bytes": 207416,
+      "sha256": "1b118e485f4fb467b2434cea46badca3e0f8f17560b8090caa108b4adbdd6530"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-8.png",
+      "bytes": 55137,
+      "sha256": "f4cf153cf1f07889d96d7943c07584fdb61e7a45dc66cb1087c7c953f1437f58"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/德阳B10逐页/slide-9.png",
+      "bytes": 126789,
+      "sha256": "a66d32512eb15079d285a7f7c7ba061e304c9b1e8c9c21ef6b18a9f027917361"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-1.png",
+      "bytes": 74227,
+      "sha256": "df6249bd82f9dea160868e1416a3b56bc828e49719e7bfee440c4ceb42e5e1eb"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-10.png",
+      "bytes": 51381,
+      "sha256": "bf5477065fda1dd45c9eb0f3cd9937110fbd6c687efa6dfa465624cc56185667"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-11.png",
+      "bytes": 115709,
+      "sha256": "b8fb035d28760d89bf048d22153a6a78a428e31b7bcf2dd47881d4f8d36a73ff"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-12.png",
+      "bytes": 462610,
+      "sha256": "b90ed448b6449051891b4fc61a0860f2a46e81f8233c3831cf7d548333fcad04"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-13.png",
+      "bytes": 1314655,
+      "sha256": "998e85431ed4f04362b6dec75d407068060459e5db6fdb652fda55891417cb8a"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-14.png",
+      "bytes": 103564,
+      "sha256": "f093ea2a2a68544c942e0664f471bab440d69a88ea8186c3241189a5a5ed18a4"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-15.png",
+      "bytes": 1155090,
+      "sha256": "7d1a1a60e3ae8cbda2da38350183358dfc7bafd1915ccdc320d28bbdd2c90d8c"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-16.png",
+      "bytes": 1018520,
+      "sha256": "71503622e7d0db8dd7d2e7b08a2de2658f735828cf4cd4db8120ef2f93262d4f"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-17.png",
+      "bytes": 102365,
+      "sha256": "b96b8555720cf9b1979b8172519398c3da43d72f1f37022f9e19e2fcb307ceb8"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-18.png",
+      "bytes": 283631,
+      "sha256": "c2e870517faad294899f644662434f9778ddd34084838866382d6f1bd1094054"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-19.png",
+      "bytes": 1405153,
+      "sha256": "a1e76058ec181da5970ee2fa400efaadbfe87dd8b89db225eb14996ca8559ef8"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-2.png",
+      "bytes": 54404,
+      "sha256": "a9c2175af85649b3a0d86116b8a29240df19df7c80d88efe95ccd64774cb20c2"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-20.png",
+      "bytes": 93307,
+      "sha256": "73fd8dd21e465ccc1a314fed3c83546669f9c7a05afaf71a20796eebeed896a8"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-21.png",
+      "bytes": 1161181,
+      "sha256": "009ac397c63612fd1d847a48f11e49f4fcf7e3531995584f97bb959c18a5b495"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-22.png",
+      "bytes": 1409409,
+      "sha256": "891addbc13b1c1bb2349eb686715a1c18a7a985f1293ec5c431dc4f6225cab08"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-23.png",
+      "bytes": 1123552,
+      "sha256": "63d0aac368c50be837fc66c9625efe3a0620b63abbceb1952942b46e38a15dea"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-24.png",
+      "bytes": 925506,
+      "sha256": "e0826efa578aef5d6ef8297761cc439e701f4b2c8ffc606295a23dd6e9fdd817"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-25.png",
+      "bytes": 1211575,
+      "sha256": "fdb4886533b44bc2c22311b0d00177e404094b4956423377da4d6f3afc62ea03"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-26.png",
+      "bytes": 934616,
+      "sha256": "3a6821e934077d4441f7d840919c3839bf4512efa5edb715f184283b7b00cfb4"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-27.png",
+      "bytes": 733177,
+      "sha256": "e31cbc8c1d2bbc67be5205ad2403fa485ea9d7a4e2cd6fda9d83a6eba414a6a9"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-28.png",
+      "bytes": 109184,
+      "sha256": "7565f2e9aae7b914b7c15bb139d7f910a68e9078fd11a6c5c0fe9f5bc9a04820"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-3.png",
+      "bytes": 191688,
+      "sha256": "70317eed9a0996dfe8ff69d1b09f4dc64e05df814c74b09c1886238c62cd4558"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-4.png",
+      "bytes": 277731,
+      "sha256": "4f5e473413e2e6a55e2ff51ba40af784cba27aedc061b9f0886f33f572245ec7"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-5.png",
+      "bytes": 160841,
+      "sha256": "280aed249163631765633888c6972d3c98280ae405360ab760fcf53d71cfcc8e"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-6.png",
+      "bytes": 691141,
+      "sha256": "0033b25598547bcabdb3a34f5b15e17a96130e78380520930cf7d2e9cc421a2b"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-7.png",
+      "bytes": 441224,
+      "sha256": "8253be849fb3084b585a0130098d23580d444c60348c7d3b8c091a70270382a6"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-8.png",
+      "bytes": 432327,
+      "sha256": "0c7f588cbc66bf66e6f0a854faa8f58da287f87bfa617a006ee14fc7187a4f50"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/曲靖逐页/slide-9.png",
+      "bytes": 147908,
+      "sha256": "55fe7fce50778d490aed45e179ef2ae4f85f79d065251bc884d961db06ee4227"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-1.png",
+      "bytes": 43254,
+      "sha256": "0ddd7b3e0f5c47b8dc6637091c03cae1323a51f8d4e5e939ef3c986db28a615c"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-10.png",
+      "bytes": 819992,
+      "sha256": "04014204924763a395f6ea8711b3b91f7d798e35a03d5be95ec3f419ae85c419"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-11.png",
+      "bytes": 828618,
+      "sha256": "7b470dcd7ad8ac06e41fa205b835800ea8168719935c76fce44827513e488360"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-12.png",
+      "bytes": 854076,
+      "sha256": "4a002a2355333d5abae7268569e8db9fc56f837917cc661115a67e5c3abaf8df"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-13.png",
+      "bytes": 805996,
+      "sha256": "3ee2f7ee1855d101deb2fce44875a524b89320e9bd95ddda4a30aaf391143841"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-14.png",
+      "bytes": 812590,
+      "sha256": "fde41cab89579ba4bd476ff9f392c6e70ce1cd9cfad95c11fbf5eadd899f4275"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-15.png",
+      "bytes": 819979,
+      "sha256": "8b98da221614cd294f81d720d03264a4fa3b2db9e9af4d8ebe7ee9dce25ba44b"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-16.png",
+      "bytes": 795542,
+      "sha256": "661e659f69af5deeab93acf60a32ead542d26504a20863ab89ff7a0ebb808235"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-17.png",
+      "bytes": 670159,
+      "sha256": "94a62cd8539613c60626f080e39ca87a0e49aac6f0a41bbf38e12be0eed9f5ad"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-18.png",
+      "bytes": 538490,
+      "sha256": "8003d8c5ed3963b26cf0cf84bdc465a7d88c49a44346d10c113ed035daea6658"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-19.png",
+      "bytes": 560030,
+      "sha256": "2cb24da3ee83d361ece39ba71925f076ac4cd5d8a66622f4ae9714d8a924dfcd"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-2.png",
+      "bytes": 35514,
+      "sha256": "b0c4d6a0b665a36a551010d83d7b5cf604066337138fff113ce349002cc0d395"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-20.png",
+      "bytes": 72217,
+      "sha256": "e89fc7d37c0467a275903a5e12ebaff22b97bdb97b2e9522bce20ef3a2a0d368"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-3.png",
+      "bytes": 245539,
+      "sha256": "133d42375199e7fe54da08dd0373b567fb98e43442ca47fe4adcd8bcfc4f2ee5"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-4.png",
+      "bytes": 112679,
+      "sha256": "6aa0e238da006fb6dfe872a643aff817274c2d2978cd24a4303cc761b92c2852"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-5.png",
+      "bytes": 1302244,
+      "sha256": "96fb666b77cc09ec4b5c3b727422d83197c7557b135389d53f9ff1f2c9241811"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-6.png",
+      "bytes": 1275474,
+      "sha256": "4f2031890d56ce00f38d2d330d998cdf7b3bf7e9d08feb26b7f36cc93e25fe41"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-7.png",
+      "bytes": 1277847,
+      "sha256": "807de805b2ffe273d6ffbfe5de80182295724e47c7877df441f903c383496d24"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-8.png",
+      "bytes": 107556,
+      "sha256": "bc7bead37ea7c63a5f54939c3e2fe3ed4d4cb270e032ad4d4b87cef2cce3f40d"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/翠湖云顶二期逐页/slide-9.png",
+      "bytes": 42215,
+      "sha256": "33062031879dd87a7146ae871fce32cca9a3fe20b97091f03d298b7a359fe971"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/01-封面主张.png",
+      "bytes": 51818,
+      "sha256": "0348f41a9c28b424799296669703809015c0b6c3936ea5a87f0cd411ac40a494"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/02-章节切换.png",
+      "bytes": 55395,
+      "sha256": "138d0767fe205a7d16da6fd558f1390a6ef62e4e4d88157b1f7414f5aea1ae74"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/03-研究可信度.png",
+      "bytes": 191688,
+      "sha256": "70317eed9a0996dfe8ff69d1b09f4dc64e05df814c74b09c1886238c62cd4558"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/04-客户原声.png",
+      "bytes": 277731,
+      "sha256": "4f5e473413e2e6a55e2ff51ba40af784cba27aedc061b9f0886f33f572245ec7"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/05-客户选择局面.png",
+      "bytes": 204132,
+      "sha256": "e5593efe8c44c23c07386caf8d63a559f68d3a4147372d49a1e7d2e5a26000fa"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/06-竞争地图.png",
+      "bytes": 1860377,
+      "sha256": "98fe0c8f9bbf93ea8c5e9c2baf05dd816ee6576e84821c430fd01268e652aa16"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/07-优势收敛.png",
+      "bytes": 197516,
+      "sha256": "06e41053aa2e9164277adf41fb5250419b666ab67b0e1f737a9b13311f568ff3"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/08-价值锚点.png",
+      "bytes": 161175,
+      "sha256": "79e612c921b7879e749e0938f928ccb4fad7a1742d7b1e5f975be646a473f8bb"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/09-超级竞争力总览.png",
+      "bytes": 207416,
+      "sha256": "1b118e485f4fb467b2434cea46badca3e0f8f17560b8090caa108b4adbdd6530"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/10-竞争力场景.png",
+      "bytes": 1073148,
+      "sha256": "067b4205c192d84034c98c658e9d2d0347fdfd5ad49107bfa93a28b469e7ee26"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/11-竞争力证明.png",
+      "bytes": 1090378,
+      "sha256": "9449a25a6e31ec3ac378988ccbb03289ebbe6d6c1d699f175ba725bd5b440bc6"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/12-全屏UE展示.png",
+      "bytes": 462610,
+      "sha256": "b90ed448b6449051891b4fc61a0860f2a46e81f8233c3831cf7d548333fcad04"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/13-家庭分类.png",
+      "bytes": 410025,
+      "sha256": "b26eec48eca2a9780bd92657b52ff7abd7133ebbd1493940993936a11cec88f3"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/14-家庭路径.png",
+      "bytes": 1055477,
+      "sha256": "a143491302d5b2d202c706ed6d330becbdd41dd52681a2ff4ecab196b15d194f"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/15-UE制作蓝图.png",
+      "bytes": 161616,
+      "sha256": "48fd0c0d61c006ca78faefb44055250437eec778651d6e2b245084b650680d18"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/16-AI推荐官.png",
+      "bytes": 733177,
+      "sha256": "e31cbc8c1d2bbc67be5205ad2403fa485ea9d7a4e2cd6fda9d83a6eba414a6a9"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/页面语义卡/17-最终收口.png",
+      "bytes": 97464,
+      "sha256": "39f6504f62cfbb6939399380230c3295834fa1b6bb1ba7b05d2862f03b4193fd"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-1.png",
+      "bytes": 51818,
+      "sha256": "0348f41a9c28b424799296669703809015c0b6c3936ea5a87f0cd411ac40a494"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-10.png",
+      "bytes": 1073148,
+      "sha256": "067b4205c192d84034c98c658e9d2d0347fdfd5ad49107bfa93a28b469e7ee26"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-11.png",
+      "bytes": 1090378,
+      "sha256": "9449a25a6e31ec3ac378988ccbb03289ebbe6d6c1d699f175ba725bd5b440bc6"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-12.png",
+      "bytes": 1158812,
+      "sha256": "87ded9972830108d0d8541a91d51fe25fbe5119ddd6fd458b0f96d34df67bd41"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-13.png",
+      "bytes": 957931,
+      "sha256": "be054d1a6f372a01d202dfb1f123293907eabae7f87740f17cec9b69662c2351"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-14.png",
+      "bytes": 1242942,
+      "sha256": "0e8b5137e2e8ade1252bf96c2685496ca71bfa527dd62a1fd86710158dfa760a"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-15.png",
+      "bytes": 1326078,
+      "sha256": "2b9bab5b3cd9004e061fb2dbf52e8b6d906fad5f77637f52e0f9cbbe1cf8d689"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-16.png",
+      "bytes": 410025,
+      "sha256": "b26eec48eca2a9780bd92657b52ff7abd7133ebbd1493940993936a11cec88f3"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-17.png",
+      "bytes": 1055477,
+      "sha256": "a143491302d5b2d202c706ed6d330becbdd41dd52681a2ff4ecab196b15d194f"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-18.png",
+      "bytes": 1168787,
+      "sha256": "4b806265bc8fc0ac558ab67b2d0664bdb68b2c8a39f655b56c7e46c030280fbb"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-19.png",
+      "bytes": 1041874,
+      "sha256": "eabd456d373dd9e20918ac0e996542cb3ff44ff04162a2e0e30f1f58b7be9adf"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-2.png",
+      "bytes": 55395,
+      "sha256": "138d0767fe205a7d16da6fd558f1390a6ef62e4e4d88157b1f7414f5aea1ae74"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-20.png",
+      "bytes": 161616,
+      "sha256": "48fd0c0d61c006ca78faefb44055250437eec778651d6e2b245084b650680d18"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-21.png",
+      "bytes": 97464,
+      "sha256": "39f6504f62cfbb6939399380230c3295834fa1b6bb1ba7b05d2862f03b4193fd"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-3.png",
+      "bytes": 204132,
+      "sha256": "e5593efe8c44c23c07386caf8d63a559f68d3a4147372d49a1e7d2e5a26000fa"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-4.png",
+      "bytes": 1860377,
+      "sha256": "98fe0c8f9bbf93ea8c5e9c2baf05dd816ee6576e84821c430fd01268e652aa16"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-5.png",
+      "bytes": 1918120,
+      "sha256": "3bc2c7b78ef88ac8bac2c4148701dff3620f9a7314205f0b487788c9d03b847f"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-6.png",
+      "bytes": 1923608,
+      "sha256": "eec78e483cd4f1eded6ecdf1f4b634c75c18e53b0fcbd24ea3d5eb24cdb5230c"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-7.png",
+      "bytes": 197516,
+      "sha256": "06e41053aa2e9164277adf41fb5250419b666ab67b0e1f737a9b13311f568ff3"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-8.png",
+      "bytes": 161175,
+      "sha256": "79e612c921b7879e749e0938f928ccb4fad7a1742d7b1e5f975be646a473f8bb"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/previews/高投中和逐页/slide-9.png",
+      "bytes": 53754,
+      "sha256": "a9e19b2b2173678f185f3c0eed37994b25fa8aefbcba4fe26a8a65d590ee3ab1"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/source_decks/B10-德阳金鑫-产物3-V2.7.pptx",
+      "bytes": 70376244,
+      "sha256": "7904304eba5d86b67dd7a76822412b1f36891c6b449ceecd97cd9d05b4d8f345"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/source_decks/GT-高投中和57亩-产物3-V7.pptx",
+      "bytes": 18472844,
+      "sha256": "bb48f54d06ab0436c681ab758d054d51d026a711b87fb2826f03b15f54f8f3eb"
+    },
+    {
+      "path": "references/product3/assets/产物3页面模板库/source_decks/QJ-建投金麟璟源-产物3-V0.4.1.pptx",
+      "bytes": 36166838,
+      "sha256": "2bf3f8bce25024c672649a8bcf4ef09bf97fabb7fb31f97aedeb3ac11dae7107"
     },
     {
       "path": "references/product3/page-semantics.json",
@@ -831,8 +2616,43 @@
     },
     {
       "path": "references/production-reference-index.json",
-      "bytes": 2865,
-      "sha256": "ea480f3d1c2f7bbaeb5b1aeae3c62f8728765523fa2172b6fae6ddc46c527752"
+      "bytes": 5088,
+      "sha256": "67918c74b56a6f26b55331b3aa18a41c8e899672094ce6358ea557215f910669"
+    },
+    {
+      "path": "references/writing/16-断言式书写规范_v1.0.md",
+      "bytes": 14561,
+      "sha256": "6c2d2b7ac13d0e9798b9524346bae8c095ba870bedad8afc569dba7bb5f72f69"
+    },
+    {
+      "path": "references/writing/README.md",
+      "bytes": 924,
+      "sha256": "663389c7bf482fa70042ae4a0efc2a664088877c3bc6800b4c3d34cd356f0e54"
+    },
+    {
+      "path": "references/writing/human-revision-style-samples.json",
+      "bytes": 3319,
+      "sha256": "141358b6ba1fee00ecb9c8c0576661d81073285e2d3c38caf44243f60bdc5e29"
+    },
+    {
+      "path": "references/writing/营销文案表达库/README.md",
+      "bytes": 6052,
+      "sha256": "6a2d9330044519079c8f43ed9b6a72d1d2174c15bc8402cf1748eee08e47358d"
+    },
+    {
+      "path": "references/writing/营销文案表达库/datasets/hpsj_value_expression_reference.v0.1.json",
+      "bytes": 15285,
+      "sha256": "c940920ca8eff67339b79c1be36816c2f997f41ec971930936999638274074c6"
+    },
+    {
+      "path": "references/writing/营销文案表达库/datasets/hpsj_value_expression_reference.v0.2.json",
+      "bytes": 40895,
+      "sha256": "794e119bda31a9a45d9e719cc8a702addfcb1740cefa95fb612463f2f64c6dcc"
+    },
+    {
+      "path": "references/writing/营销文案表达库/datasets/marketing_copy_reference.v0.1.json",
+      "bytes": 719442,
+      "sha256": "0e35a0923efac643877719f72ca9e3443274e646740135b4f66ef3e0879b89c1"
     },
     {
       "path": "schemas/change-impact.schema.json",
@@ -896,8 +2716,8 @@
     },
     {
       "path": "scripts/check_environment.py",
-      "bytes": 11420,
-      "sha256": "c2bda29837c7cea78b5e65435130fa2e0986ee5bf0b60e416be09e16c58a5ef2"
+      "bytes": 13745,
+      "sha256": "29ba1e7d1037c1527e59e878ccb55e3d01330688f389dafdcb3139e792f42fa6"
     },
     {
       "path": "scripts/generate_third_party_inventory.py",
@@ -921,8 +2741,8 @@
     },
     {
       "path": "scripts/verify_capability_parity.py",
-      "bytes": 13812,
-      "sha256": "182e4aa2a7835df3336798ef5625056a49b5adf698b1e44f6b6295b0aa512e1d"
+      "bytes": 13900,
+      "sha256": "65675b52c74857099eee895c484787e1f74872aa9143934b7ef9f761a8c3f1f3"
     },
     {
       "path": "scripts/verify_cross_package_conformance.py",
@@ -1051,8 +2871,13 @@
     },
     {
       "path": "tests/run_public_tests.py",
-      "bytes": 1784,
-      "sha256": "b1316c8bb13b657716eeb51c14db9b9606f2a7d01e41d1e9c9a25a5751007733"
+      "bytes": 1833,
+      "sha256": "e70de731e4772f493cdb9bc7b78b410af21328937fb2b5d3ece1404b74c69f4f"
+    },
+    {
+      "path": "tests/test_authorized_reference_assets.py",
+      "bytes": 4510,
+      "sha256": "def7f090473e26b1c1f1f7261f05b9f154bb0691e0baa60aa9f4ca4f44c5ec21"
     },
     {
       "path": "tests/test_business_gates_public.py",
@@ -1081,8 +2906,8 @@
     },
     {
       "path": "tests/test_installation_doctor.py",
-      "bytes": 2311,
-      "sha256": "dd7903a1530a5b6d24f78ddee179146cd82e12a516c3158eb93d338a4ffe3257"
+      "bytes": 2411,
+      "sha256": "32d5bb39501bc3080cbe08e01e39461654cc02afc1f0e87f2b216d76357470c3"
     },
     {
       "path": "tests/test_product3_gold_authority.py",
@@ -1101,8 +2926,8 @@
     },
     {
       "path": "tests/test_public_release_state.py",
-      "bytes": 5283,
-      "sha256": "6f29c162317b0532b5517f07f92299803de4a0b83a9f4ecbb3f83c276fbd657d"
+      "bytes": 5448,
+      "sha256": "6803e9366079c862ddbdf057f29e441e287b076261e67f817d16531f95a088fd"
     },
     {
       "path": "tests/test_rc1_contracts.py",
@@ -1388,6 +3213,21 @@
       "path": "tools/ue_static_bundle/verify_manifest.mjs",
       "bytes": 5030,
       "sha256": "917166991a1223422c3dd335c5503d2e14924fe6cf11e4c976255a27c6de9e13"
+    },
+    {
+      "path": "workflows/chinese-affirmative-business-editor/SKILL.md",
+      "bytes": 3093,
+      "sha256": "7726971d6b7ae026f128220c927f2ab06a5076be0a6a1a31e370831708c39a68"
+    },
+    {
+      "path": "workflows/chinese-research-report-editor/SKILL.md",
+      "bytes": 10330,
+      "sha256": "00e2023251b99d76981c5eb5c34670529f1f7266b26d97d2668891f299174bdd"
+    },
+    {
+      "path": "workflows/chinese-research-report-editor/scripts/audit_chinese_report.py",
+      "bytes": 4868,
+      "sha256": "bfcc696b530ef4e54c1f17599dbde0fe3c89dcb3215fcb2eedf906cfe8b339f1"
     },
     {
       "path": "workflows/product5-presales-focus/SKILL.md",

@@ -1,7 +1,7 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "product3_product5_gold_complete_product4_excluded_learning_complete_install_accepted_not_released",
+  "status": "capability_complete_authorized_reference_assets_complete_install_revalidation_required_not_released",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
     "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
@@ -21,6 +21,7 @@
     "machine_checks_have_veto_not_business_approval": true,
     "client_reports_and_machine_summaries_physically_separated": true,
     "explicitly_authorized_real_client_materials_may_be_included": true,
+    "explicitly_authorized_reference_decks_case_images_and_copy_assets_included": true,
     "unauthorized_client_materials_require_anonymization_or_structural_distillation": true,
     "credentials_paths_internal_runtime_state_always_excluded": true,
     "workbuddy_blind_training_included": false,
@@ -154,9 +155,9 @@
       "domain": "client_facing_writing",
       "classification": "portable_adaptation",
       "source_authority_ids": ["customer_facing_assertion_and_delivery_qa"],
-      "public_targets": ["tools/chinese_copy_lint/affirmative_statement_lint.py", "fixtures/client-review", "AGENT_RULES.md", "workflows/residential-production-orchestrator/references/client-facing-writing.md", "tools/production_core/common.py"],
+      "public_targets": ["workflows/chinese-research-report-editor", "workflows/chinese-affirmative-business-editor", "references/writing", "references/learning-feedback/human_revision_feedback.v0.1.json", "tools/chinese_copy_lint/affirmative_statement_lint.py", "fixtures/client-review", "AGENT_RULES.md", "workflows/residential-production-orchestrator/references/client-facing-writing.md", "tools/production_core/common.py"],
       "load_condition": "client_facing_report_ppt_html_or_pdf",
-      "acceptance": "A级语义审校、B级报告扫描、C级事实优先；客户正文不暴露工程状态和内部任务",
+      "acceptance": "中文研究报告编辑、A级语义审校、B级报告扫描、C级事实优先、营销表达库和十组人工修订语境完整随包；客户正文不暴露工程状态和内部任务",
       "status": "implemented_current",
       "gap": ""
     },
@@ -166,9 +167,9 @@
       "domain": "product3",
       "classification": "portable_adaptation",
       "source_authority_ids": ["product3_strategy_and_ue", "product3_gold_assembly"],
-      "public_targets": ["core/06-产物3从竞争策略到UE解决方案.md", "templates/产物3第二章生产消费合同.template.json", "templates/产物3第三章生产消费合同.template.json", "references/product3", "examples/gold-product3-public-safe", "adapters/presentation/README.md"],
+      "public_targets": ["core/06-产物3从竞争策略到UE解决方案.md", "templates/产物3第二章生产消费合同.template.json", "templates/产物3第三章生产消费合同.template.json", "references/product3", "references/product3/assets/产物3页面模板库", "references/product3/assets/产物3案例截图素材库", "examples/gold-product3-public-safe", "adapters/presentation/README.md"],
       "load_condition": "product3_enabled_or_material_structure_change",
-      "acceptance": "当前20页用户验收终稿是机器可读黄金权威；页面语义、非对称证明、单页轻量AI推荐、真实地图署名、断言门禁、首稿完整度和可编辑PPT形成完整公开参考",
+      "acceptance": "当前20页用户验收终稿是机器可读黄金权威；三份历史成功原稿、124文件页面模板库、229文件案例素材库、页面语义、非对称证明、单页轻量AI推荐、真实地图署名、断言门禁、首稿完整度和可编辑PPT形成完整公开参考",
       "status": "implemented_current",
       "gap": ""
     },
@@ -204,10 +205,10 @@
       "domain": "gold_reference_and_learning",
       "classification": "private_replaced",
       "source_authority_ids": ["shared_production_references", "product1_product2_gold_references", "product3_gold_assembly", "product5_gold_implementation"],
-      "public_targets": ["references/production-reference-index.json", "references/learning-feedback", "examples/production-path-tutorial", "examples/production-path-revision", "examples/end-to-end-public-safe", "examples/gold-product3-public-safe", "examples/gold-product5-public-safe"],
+      "public_targets": ["references/production-reference-index.json", "references/authorized-reference-assets.json", "references/learning-feedback", "references/writing", "references/product3/assets", "examples/production-path-tutorial", "examples/production-path-revision", "examples/end-to-end-public-safe", "examples/gold-product3-public-safe", "examples/gold-product5-public-safe"],
       "planned_public_targets": [],
       "load_condition": "stage_specific_reference_lookup",
-      "acceptance": "至少两至三套完整项目、三份历史成功产物3的匿名结构蒸馏、当前授权真实黄金、正式产物参考、正反例和真人修订反馈可被路由调用",
+      "acceptance": "至少两至三套完整项目、三份获授权历史成功产物3原稿及逐页结构、完整案例图和营销文案资产、当前授权真实黄金、正式产物参考、正反例和真人修订反馈可被路由调用",
       "status": "implemented_current",
       "gap": ""
     },
@@ -241,9 +242,9 @@
       "domain": "installation_and_adapters",
       "classification": "portable_adaptation",
       "source_authority_ids": ["main_entry_and_status"],
-      "public_targets": ["INSTALL.md", "adapters", "scripts/check_environment.py", "templates/平台适配与能力缺口回传.template.json", "tests/test_installation_doctor.py", "SECURITY.md"],
+      "public_targets": ["INSTALL.md", "adapters", "scripts/check_environment.py", "templates/平台适配与能力缺口回传.template.json", "tests/test_installation_doctor.py", "tests/test_authorized_reference_assets.py", "SECURITY.md"],
       "load_condition": "installation_or_carrier_production",
-      "acceptance": "干净克隆中，终端用户可分别检查生产核心、20页产物3黄金与产物5运行时；平台缺失返回结构化gap，不迁移账号态，不让载体改写业务语义",
+      "acceptance": "干净克隆中，终端用户可分别检查生产核心、20页产物3黄金、三份历史原稿、124文件模板、229文件案例素材、中文写作能力与产物5运行时；PPT引擎和Grist由终端安装，Computer Use、浏览器、地图、微信、小红书由终端安装或登录；平台缺失返回结构化gap，不迁移账号态，不让载体改写业务语义",
       "status": "implemented_current",
       "gap": ""
     },
@@ -273,5 +274,5 @@
     }
   ],
   "release_blockers": [],
-  "next_slice": "human_release_authorization_and_formal_cross_package_versioning"
+  "next_slice": "fresh_clone_revalidation_then_human_release_authorization_and_formal_cross_package_versioning"
 }
