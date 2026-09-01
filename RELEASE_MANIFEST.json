@@ -17,7 +17,7 @@
     "RELEASE_MANIFEST.json"
   ],
   "file_count": 649,
-  "tree_sha256": "8ca9d2c0ad6a09b36b742a2be1ffa42462b115bbb6d5e5852082c73743f3740e",
+  "tree_sha256": "6ec029e31b458e85857652b2da8a3e6cad88405c2531f51e042598a6a625a4a4",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -31,8 +31,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1434,
-      "sha256": "570201dc37a811fe420229ce6013bdbad4818e11c43c52e7e86bf3f9a049ed67"
+      "bytes": 1428,
+      "sha256": "ffbd626114866cfa96983f53f524c1dcb32a8c42e7e8ee5cd02bc35e539ff42f"
     },
     {
       "path": "AGENT_RULES.md",
@@ -51,13 +51,13 @@
     },
     {
       "path": "CAPABILITY_PARITY_CONTRACT.md",
-      "bytes": 10192,
-      "sha256": "318a86656bc70ddfe794c85b8ea462120dbab84a1ad39f0cecf3ceb7b36b1fc2"
+      "bytes": 10085,
+      "sha256": "8eab5a7afab7e6ae51f70dc0feacb4c2790993d919490960a1d7d1988e980a6c"
     },
     {
       "path": "CAPABILITY_PARITY_MANIFEST.json",
-      "bytes": 18015,
-      "sha256": "23d2669ad38176cacdd5be272f39d9f9de08af42a16a5d3cd1cf1a95d079895b"
+      "bytes": 17976,
+      "sha256": "718e065bc8ec645380638b4eda4526fe8daa616ff6a6a2259f3563e12925ee93"
     },
     {
       "path": "COLD_START_PROTOCOL.md",
@@ -91,8 +91,8 @@
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
-      "bytes": 4037,
-      "sha256": "b512d478d74aca2934e653a002c4d3d625c3f7624ef3061a7b4ccb332557d4f9"
+      "bytes": 4028,
+      "sha256": "7d1f7695da567b78768fb40ff4186edeb489f948c13258b43379db8fea6fd52a"
     },
     {
       "path": "RC1_E2E_VERIFICATION.json",
@@ -101,13 +101,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4304,
-      "sha256": "e48e3264582c0d159770b7734feb5e155b72df633c24f78384a0373aa35400a3"
+      "bytes": 4301,
+      "sha256": "4a55481a7fa7c8a254411c5445ea2c091f6c4dbf8fa6e293a605381408b3afbe"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 6887,
-      "sha256": "8cd72899c7665294f9a2599b27e0ffc5ee6eb70dbd852e356a3661dcf7d71246"
+      "bytes": 6849,
+      "sha256": "6fa8aa17a331ef68dc1785fad1d06104f96d2fa21f6fe744d73d81bce11689af"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
@@ -2741,8 +2741,8 @@
     },
     {
       "path": "scripts/verify_capability_parity.py",
-      "bytes": 13900,
-      "sha256": "65675b52c74857099eee895c484787e1f74872aa9143934b7ef9f761a8c3f1f3"
+      "bytes": 13891,
+      "sha256": "cc7168c5f39f5e01f459b03fd0cb4486ee502882ad8cf33425a8cb6a081dd9d9"
     },
     {
       "path": "scripts/verify_cross_package_conformance.py",
@@ -2927,7 +2927,7 @@
     {
       "path": "tests/test_public_release_state.py",
       "bytes": 5448,
-      "sha256": "6803e9366079c862ddbdf057f29e441e287b076261e67f817d16531f95a088fd"
+      "sha256": "b248ab80da5d8a165225948010140a66e253119f6d4319f6b08e9e606d37e143"
     },
     {
       "path": "tests/test_rc1_contracts.py",

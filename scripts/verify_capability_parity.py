@@ -74,7 +74,7 @@ def validate_public_manifest(parity: dict[str, Any], authority: dict[str, Any]) 
 
     if parity.get("schema") != "residential.capability_parity_manifest.v1":
         errors.append("CAPABILITY_PARITY_MANIFEST.json: unexpected schema")
-    if parity.get("status") != "capability_complete_authorized_reference_assets_complete_install_revalidation_required_not_released":
+    if parity.get("status") != "capability_complete_authorized_reference_assets_complete_clean_clone_accepted_not_released":
         errors.append("CAPABILITY_PARITY_MANIFEST.json: unexpected current migration state")
 
     principles = parity.get("principles")

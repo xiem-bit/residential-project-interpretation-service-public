@@ -3,7 +3,7 @@
 ## 当前标签与候选
 
 - `v0.1.0-rc.1`：已发布、不可变；定位为“冻结语义核之后的下游合同、平台往返与载体结构演示”。
-- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`capability_complete / authorized_reference_assets_complete / product4_excluded / install_revalidation_required / not_released`。
+- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`capability_complete / authorized_reference_assets_complete / product4_excluded / clean_clone_accepted / not_released`。
 
 ## P0已经成立
 
@@ -25,7 +25,7 @@
 - 共享参考库已经登记两套机制不同的完整公开安全项目：青岚澄境覆盖产物1、2、3、5全链，望川序覆盖城市核心换新与产物1按需收口；两套均通过现行生产校验；
 - 真人修订反馈已经以“原稿问题—真人修改—可迁移原因—不可平移内容”登记报告、产物3、产物5和增量检索的十组平台中立模式，并通过统一参考索引按阶段路由；
 - 公开信息包候选`public_evidence_envelope.v1`与住宅侧三项合同已按原始字节哈希冻结；双方fixture往返和跨包harness已经通过，尚未发布正式版本或证明真实GUI／业务验收；
-- 统一`INSTALL.md`与doctor已经覆盖生产核心、20页产物3黄金、三份历史原稿、124文件模板、229文件案例素材、中文写作能力和产物5运行时；PPT生成引擎与Grist由终端用户自行安装，Computer Use、浏览器、地图、微信、小红书及个人登录态由终端用户自行安装或登录。本轮资产扩容后的干净克隆重验尚待完成；
+- 统一`INSTALL.md`与doctor已经覆盖生产核心、20页产物3黄金、三份历史原稿、124文件模板、229文件案例素材、中文写作能力和产物5运行时；PPT生成引擎与Grist由终端用户自行安装，Computer Use、浏览器、地图、微信、小红书及个人登录态由终端用户自行安装或登录。2026-09-01从提交`ba0d752`建立不复用仓库依赖的干净副本，完成锁定依赖安装、112项公开回归、18项能力对齐、发行清单和产物5运行测试，full doctor为`pass`；
 
 ## 当前尚未成立
 
@@ -53,8 +53,6 @@
 
 ## 当前切片
 
-`dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`、`client_report_machine_summary_separation`、`product3_authorized_gold_authority_corrected`、`product5_public_safe_gold`、`multi_mechanism_learning_reference_library`与`self_install_doctor_and_clean_clone_acceptance`已经进入验证。下一步只处理真人发行授权与双包正式版本协同，不再用安装待办掩盖现行黄金能力。
-
-本轮新增的授权参考资产已经进入机器清单和回归；下一步先完成扩容后的干净克隆重验，再处理真人发行授权与双包正式版本协同。
+`dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`、`client_report_machine_summary_separation`、`product3_authorized_gold_authority_corrected`、`product5_public_safe_gold`、`multi_mechanism_learning_reference_library`与`self_install_doctor_and_clean_clone_acceptance`已经完成候选验证。下一步只处理真人发行授权与双包正式版本协同，不再用安装待办掩盖现行黄金能力。
 
 当前候选不得创建或推送`v0.2.0-rc.1`标签。完成`CAPABILITY_PARITY_MANIFEST.json`中的全部发布阻断项、干净克隆和双包端到端验收后，才能申请正式发布授权。

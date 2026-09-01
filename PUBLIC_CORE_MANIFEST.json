@@ -1,6 +1,6 @@
 {
   "schema": "residential-competitiveness-public-core-manifest.v0.6",
-  "status": "public_prerelease_capability_complete_authorized_assets_revalidation_pending_apache_2_0",
+  "status": "public_prerelease_capability_complete_authorized_assets_clean_clone_accepted_apache_2_0",
   "candidate": "v0.2.0-rc.1",
   "source_commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
   "extraction_policy": "fixed_clean_source_complete_semantic_parity_and_rights_aware_asset_selection",
@@ -76,7 +76,7 @@
     "fresh_install_full_project_acceptance_required": true,
     "maintainer_step_by_step_guidance_allowed": false,
     "presentation_or_web_required": false,
-    "current_status": "capability_complete_authorized_reference_assets_complete_install_revalidation_required_not_release_ready"
+    "current_status": "capability_complete_authorized_reference_assets_complete_clean_clone_accepted_not_release_ready"
   },
   "forbidden_public_content": [
     "unauthorized_real_project_or_customer_materials",
