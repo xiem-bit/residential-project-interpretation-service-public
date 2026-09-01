@@ -1,6 +1,6 @@
 # v0.2 RC1 发行范围
 
-状态：`p0_frozen / parity_migration_in_progress / not_tagged`
+状态：`parity_candidate_complete / clean_clone_passed / not_tagged`
 
 ## 发行目标
 

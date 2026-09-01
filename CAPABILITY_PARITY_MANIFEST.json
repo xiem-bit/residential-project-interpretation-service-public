@@ -1,7 +1,7 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "product3_product5_gold_complete_product4_excluded_learning_complete_install_pending_not_released",
+  "status": "product3_product5_gold_complete_product4_excluded_learning_complete_install_accepted_not_released",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
     "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
@@ -241,11 +241,11 @@
       "domain": "installation_and_adapters",
       "classification": "portable_adaptation",
       "source_authority_ids": ["main_entry_and_status"],
-      "public_targets": ["adapters", "scripts/check_environment.py", "SECURITY.md"],
+      "public_targets": ["INSTALL.md", "adapters", "scripts/check_environment.py", "templates/平台适配与能力缺口回传.template.json", "tests/test_installation_doctor.py", "SECURITY.md"],
       "load_condition": "installation_or_carrier_production",
-      "acceptance": "终端用户独立安装；平台缺失返回结构化gap，不迁移账号态，不让载体改写业务语义",
-      "status": "partial_upgrade_required",
-      "gap": "缺面向完整能力的统一安装说明、doctor和产物3／5专业适配验收"
+      "acceptance": "干净克隆中，终端用户可分别检查生产核心、20页产物3黄金与产物5运行时；平台缺失返回结构化gap，不迁移账号态，不让载体改写业务语义",
+      "status": "implemented_current",
+      "gap": ""
     },
     {
       "id": "CAP-017",
@@ -272,8 +272,6 @@
       "gap": ""
     }
   ],
-  "release_blockers": [
-    "CAP-016"
-  ],
-  "next_slice": "self_install_doctor_and_clean_clone_acceptance"
+  "release_blockers": [],
+  "next_slice": "human_release_authorization_and_formal_cross_package_versioning"
 }

@@ -1,7 +1,7 @@
 {
   "schema": "residential.public_rc_source_manifest.v0.2",
   "version": "v0.2.0-rc.1",
-  "status": "candidate_unpublished_parity_migration_in_progress",
+  "status": "candidate_unpublished_parity_and_clean_clone_accepted",
   "latest_published_tag": "v0.1.0-rc.1",
   "source_commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
   "excluded": [
@@ -17,7 +17,7 @@
     "RELEASE_MANIFEST.json"
   ],
   "file_count": 281,
-  "tree_sha256": "ec4b545952d75925385f58b60a103dec5c6bf43565e37c85e24c638285af9ed5",
+  "tree_sha256": "9c5b873d2e1f4fac4816322152d5128df7cb96d9ea4550fbf7057a3229c0bebb",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -56,8 +56,8 @@
     },
     {
       "path": "CAPABILITY_PARITY_MANIFEST.json",
-      "bytes": 16947,
-      "sha256": "1f8b1733e1828fe622bf03f212e589b6fa5d9f99978a4e7746693e947aef19cd"
+      "bytes": 17045,
+      "sha256": "096997f24f4082bc52f187fbc02dcd645c212f650746d831e544edc5817951c0"
     },
     {
       "path": "COLD_START_PROTOCOL.md",
@@ -106,8 +106,8 @@
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 5803,
-      "sha256": "db15dfaa679b4958d58c5ca7ef65a7d912707b7ef1baba0970ac07bf84e54153"
+      "bytes": 6361,
+      "sha256": "f17add465555d7574de6df726d1905c5f0eeb283180c05ff49959e5c115ad9ce"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
@@ -156,8 +156,8 @@
     },
     {
       "path": "V0_2_RELEASE_SCOPE.md",
-      "bytes": 3452,
-      "sha256": "c4f77351af172c70c6c5eac26f49f12e902d08ecfa12fd25d52f447a85c56442"
+      "bytes": 3458,
+      "sha256": "6dac994a16177c2b8b4fce3bb53ff929d61f42a7d3d5a438431d4bd8ac696e1f"
     },
     {
       "path": "adapters/README.md",
@@ -891,8 +891,8 @@
     },
     {
       "path": "scripts/build_release_manifest.py",
-      "bytes": 3587,
-      "sha256": "1e5dfaaa901bdac76678bec482d868889bb1640d62f32008dae90c57fc9eb2c6"
+      "bytes": 3590,
+      "sha256": "2c8534cdcfa5b5bebcf11780a1ad90569ab377869756466eb84c72c1a76fd079"
     },
     {
       "path": "scripts/check_environment.py",
@@ -921,8 +921,8 @@
     },
     {
       "path": "scripts/verify_capability_parity.py",
-      "bytes": 13811,
-      "sha256": "afe68375ed760c81522d7f6ba6928d6b32c489d4a1cb1cd6fe23becf70e31fad"
+      "bytes": 13812,
+      "sha256": "182e4aa2a7835df3336798ef5625056a49b5adf698b1e44f6b6295b0aa512e1d"
     },
     {
       "path": "scripts/verify_cross_package_conformance.py",
@@ -1061,8 +1061,8 @@
     },
     {
       "path": "tests/test_capability_parity.py",
-      "bytes": 4852,
-      "sha256": "9686c45b75d97e8aa35f468a5088de0b6e6f862975db4d611e1371c3cb0d540b"
+      "bytes": 4850,
+      "sha256": "a23adaac4a53baabe25ad864da5821e31f9056bdf718d31578e72614962e2244"
     },
     {
       "path": "tests/test_cross_package_conformance.py",

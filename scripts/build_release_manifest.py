@@ -61,7 +61,7 @@ def build_manifest() -> dict[str, Any]:
     return {
         "schema": "residential.public_rc_source_manifest.v0.2",
         "version": "v0.2.0-rc.1",
-        "status": "candidate_unpublished_parity_migration_in_progress",
+        "status": "candidate_unpublished_parity_and_clean_clone_accepted",
         "latest_published_tag": "v0.1.0-rc.1",
         "source_commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
         "excluded": [

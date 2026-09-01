@@ -29,7 +29,7 @@ class CapabilityParityTest(unittest.TestCase):
         result = json.loads(completed.stdout)
         self.assertEqual(result["status"], "pass")
         self.assertEqual(result["capabilities"], 18)
-        self.assertGreater(result["release_blockers"], 0)
+        self.assertEqual(result["release_blockers"], 0)
 
     def test_complete_not_simplified_and_progressive(self) -> None:
         principles = self.parity["principles"]

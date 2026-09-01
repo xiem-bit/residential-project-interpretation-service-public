@@ -3,7 +3,7 @@
 ## 当前标签与候选
 
 - `v0.1.0-rc.1`：已发布、不可变；定位为“冻结语义核之后的下游合同、平台往返与载体结构演示”。
-- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`product3_product5_gold_complete / product4_excluded / learning_reference_complete / install_acceptance_pending / not_released`。
+- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`product3_product5_gold_complete / product4_excluded / learning_reference_complete / install_accepted / not_released`。
 
 ## P0已经成立
 
@@ -25,10 +25,12 @@
 - 共享参考库已经登记两套机制不同的完整公开安全项目：青岚澄境覆盖产物1、2、3、5全链，望川序覆盖城市核心换新与产物1按需收口；两套均通过现行生产校验；
 - 真人修订反馈已经以“原稿问题—真人修改—可迁移原因—不可平移内容”登记报告、产物3、产物5和增量检索的十组平台中立模式，并通过统一参考索引按阶段路由；
 - 公开信息包候选`public_evidence_envelope.v1`与住宅侧三项合同已按原始字节哈希冻结；双方fixture往返和跨包harness已经通过，尚未发布正式版本或证明真实GUI／业务验收；
+- 统一`INSTALL.md`与doctor已经覆盖生产核心、20页产物3黄金和产物5运行时；2026-09-01从当前候选重新干净克隆，在不复用仓库`node_modules`的副本中完成锁定依赖安装、104项公开回归、能力对齐、产物5运行测试、第三方清单和发行清单验证；
 
 ## 当前尚未成立
 
-- 统一安装、doctor、产物3／5专业适配和干净安装验收尚未完成。
+- 尚未获得创建或推送`v0.2.0-rc.1`标签的真人授权；候选通过不等于已发布、真实客户接受或业务效果成立。
+- 双包接口当前只证明候选fixture与harness兼容；正式版本发布和真实外部运行仍需各自工程按权限完成。
 
 ## 产物3黄金权威纠正
 
@@ -51,6 +53,6 @@
 
 ## 当前切片
 
-`dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`、`client_report_machine_summary_separation`、`product3_authorized_gold_authority_corrected`、`product5_public_safe_gold`与`multi_mechanism_learning_reference_library`已经进入验证。下一步恢复安装切片，完成统一安装、doctor、干净克隆与产物3／5适配验收。
+`dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`、`client_report_machine_summary_separation`、`product3_authorized_gold_authority_corrected`、`product5_public_safe_gold`、`multi_mechanism_learning_reference_library`与`self_install_doctor_and_clean_clone_acceptance`已经进入验证。下一步只处理真人发行授权与双包正式版本协同，不再用安装待办掩盖现行黄金能力。
 
 当前候选不得创建或推送`v0.2.0-rc.1`标签。完成`CAPABILITY_PARITY_MANIFEST.json`中的全部发布阻断项、干净克隆和双包端到端验收后，才能申请正式发布授权。
