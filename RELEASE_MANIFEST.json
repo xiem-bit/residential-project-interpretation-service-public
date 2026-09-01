@@ -14,8 +14,8 @@
     ".DS_Store",
     "RELEASE_MANIFEST.json"
   ],
-  "file_count": 190,
-  "tree_sha256": "0ef7eb960cd1431f774adbf792e8f11ff798aa98e50b6ad8d162335221320c09",
+  "file_count": 194,
+  "tree_sha256": "9f33165bee88c6adb58ce8ce97ee9d6ff4d1476b046aaf19df9972ee9f2655ed",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -34,8 +34,8 @@
     },
     {
       "path": "AGENT_RULES.md",
-      "bytes": 4385,
-      "sha256": "ee28d5aee8a73498da6f6fe3c0429914cc454349bbb7de294f07558c9a8bbb76"
+      "bytes": 5844,
+      "sha256": "4c58c0cf7b0052fe9c91001b55e44bee3aa7f2560c8c56a6aee72b5119071578"
     },
     {
       "path": "A_CLASS_ALLOWLIST.txt",
@@ -54,8 +54,8 @@
     },
     {
       "path": "CAPABILITY_PARITY_MANIFEST.json",
-      "bytes": 16323,
-      "sha256": "4e4927d3902e914bee3eeedf5290e2bd046374b8400227ff32c0a917cfaf99e7"
+      "bytes": 16232,
+      "sha256": "4b9b67249158c485d4fe262014019a516cc6ceaf3cba42938395fbe36f3973d4"
     },
     {
       "path": "COLD_START_PROTOCOL.md",
@@ -79,13 +79,13 @@
     },
     {
       "path": "PRODUCTION_PATH_MANIFEST.json",
-      "bytes": 5223,
-      "sha256": "a9569b99f4f189387ef34cd00214fcb730b56129f2a31966d70115f8cc92cbce"
+      "bytes": 5441,
+      "sha256": "359db560eea9152d7448e163bdb71687f058847988ca641ffc45df1eade37390"
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
       "bytes": 3480,
-      "sha256": "ee425e6fff5108689c96c6b71cce407e702f0084cda6c29eca379ab4895cdd6b"
+      "sha256": "363800a444b8a61ccab2f408b94b3b2717471f554dfea79e44640891a899650a"
     },
     {
       "path": "RC1_E2E_VERIFICATION.json",
@@ -94,13 +94,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 3365,
-      "sha256": "ef257b5c807fd1eba7fca4520c8c04f7c7f7d2f723ef70d0132459a8d2dc7f6f"
+      "bytes": 3490,
+      "sha256": "933f53c2dbee77a9ea26d0e2b998a640a1471671939ffc974d5539a071fe086e"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 2546,
-      "sha256": "2899d8946211cac63aeafe8f5a88a1f2ba976dd6e2e8df547050a023b2ec7fd8"
+      "bytes": 2598,
+      "sha256": "2add5ec5b8a41dff0142df819c5ee965ac2c1648cf40de22f67aadee1dfe9116"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
@@ -213,6 +213,11 @@
       "sha256": "1250e30bdcde8dce5a1a85ded52304203de1ef8cb267f39a261b1ff2d0befa1d"
     },
     {
+      "path": "contracts/inference-relationships.json",
+      "bytes": 5702,
+      "sha256": "8de68862323122f5310a59ab913f6861517b5a860c2041ad52c0edbf73ab4d1e"
+    },
+    {
       "path": "contracts/presentation_request.schema.json",
       "bytes": 2191,
       "sha256": "4adb93eb38890a1761166bd4c3c77f533a2cf4cf11534293a1e35c9d71326268"
@@ -229,13 +234,13 @@
     },
     {
       "path": "contracts/住宅竞争力方法与生产合同.md",
-      "bytes": 4075,
-      "sha256": "a9d9e011d5dc87bfa67da0c484f3fbaac3144187aad475c5144bcc5ed45c2f22"
+      "bytes": 4395,
+      "sha256": "19fb2c2f18ad80fda2c8aabfdcf341e2449bbde5132bf542915d4ef0a855c9cf"
     },
     {
       "path": "core/00-权威生产路径.md",
-      "bytes": 3681,
-      "sha256": "fd0d711325bb144ad5fd7bbbcf67f838ea070fd2620797e67c6113ecfdf14a51"
+      "bytes": 3717,
+      "sha256": "32253d60628fe2f73ffd5a0896bd1d011f3cda108009ad6088f0c33c19fee1a5"
     },
     {
       "path": "core/01-项目任务与输入治理.md",
@@ -254,13 +259,13 @@
     },
     {
       "path": "core/04-统一语义核与超级竞争力.md",
-      "bytes": 2566,
-      "sha256": "2e5a54262bb530383796dc738567129fb49f22aea5746dad5d2e6b9751a95fc2"
+      "bytes": 3435,
+      "sha256": "f2f37d01e067d88f65718bd69c832baa708c245ff75aa2c14505c42528eda849"
     },
     {
       "path": "core/05-产物启用与生产准入.md",
-      "bytes": 2052,
-      "sha256": "f8a447bb7e83bc1f71728413c48fa6937e7d2beb00333bf252584ddec9df975c"
+      "bytes": 2086,
+      "sha256": "fe08366e9dbf51b9b3f6d28af7d635e87d00806b3ebec22166753a6585485831"
     },
     {
       "path": "core/06-产物3从竞争策略到UE解决方案.md",
@@ -279,8 +284,8 @@
     },
     {
       "path": "core/09-变更回写与重投影.md",
-      "bytes": 1796,
-      "sha256": "4d69f48ffa4fdf0e7c0111b2aa425f3c0eda4dce7cc0924db9f94bf7d204b6a9"
+      "bytes": 1827,
+      "sha256": "5923644929e0d0a612e1b662313e8eb33db202678351ff9f3ab929ce0b750d47"
     },
     {
       "path": "examples/fictional-qinglan-chengjing/README.md",
@@ -374,13 +379,13 @@
     },
     {
       "path": "examples/production-path-tutorial/expected/fact-conflict-gap-register.json",
-      "bytes": 3910,
-      "sha256": "731570c670e5dcd414735c47df552f3d5219c6db3c2ecec2bb47e71a57489128"
+      "bytes": 7182,
+      "sha256": "d5e4ecc7c5a36fcdb7d503d02293d44daaec73d082967d5867c86eedbb99c428"
     },
     {
       "path": "examples/production-path-tutorial/expected/product-enablement-matrix.json",
-      "bytes": 1436,
-      "sha256": "f0004632eaa9b1b747a6e86842b5e6b2e40abdbc03cc3186b010bc9d4f268403"
+      "bytes": 1470,
+      "sha256": "9bd523b28174d1adc764edd20ef071e0e08cf4333a99b57440e16b78752e6964"
     },
     {
       "path": "examples/production-path-tutorial/expected/product1-competition-study.md",
@@ -424,8 +429,8 @@
     },
     {
       "path": "examples/production-path-tutorial/expected/super-competitiveness-plan.json",
-      "bytes": 6980,
-      "sha256": "c8c77ea4d19f8561dec5b9436b68398859733cbddc27753b127cf1d33440589f"
+      "bytes": 10030,
+      "sha256": "0738c83ebd84f88093b9471dd501edcdde59810cb19a3a4425ef176aab6ba6af"
     },
     {
       "path": "examples/production-path-tutorial/expected/ue-solution-handoff.json",
@@ -508,19 +513,24 @@
       "sha256": "26c1ec3f721f32facb3194e6155e66aeb6a322a7a4b6e3d525321d73b6704987"
     },
     {
+      "path": "fixtures/inference-harness/cases.json",
+      "bytes": 2521,
+      "sha256": "70adbf4e62fd0bdf89f7bfc6f559cf626f2ab826a972963571238348c5609100"
+    },
+    {
       "path": "schemas/change-impact.schema.json",
       "bytes": 762,
       "sha256": "e4ac7e833870feecb2efd7fbb1340ced836346a0b392ce485b5c61f18a0a11e3"
     },
     {
       "path": "schemas/fact-gap-register.schema.json",
-      "bytes": 1058,
-      "sha256": "8a19392a1690cb976e28a8793759358c231f92bf9af8dd74b615d3a98c9e5b2d"
+      "bytes": 1448,
+      "sha256": "7ebb586262f7d92df10d223409f09951126a3e321ddef363610cd2524bd5d488"
     },
     {
       "path": "schemas/product-enablement.schema.json",
-      "bytes": 1102,
-      "sha256": "452a79c175a7c6e009fa6f8554cb28eb82af4cf1106288f3473ab614418b1acb"
+      "bytes": 1126,
+      "sha256": "5f66c2cc70a37c060692882425c5b3900797228e083337a66c0618ddd0f0b823"
     },
     {
       "path": "schemas/product1-summary.schema.json",
@@ -554,8 +564,8 @@
     },
     {
       "path": "schemas/super-competitiveness-plan.schema.json",
-      "bytes": 1291,
-      "sha256": "35286995992339e694c343d0f001725d71e8bd44e455cc78212e65a1fe07e778"
+      "bytes": 1669,
+      "sha256": "159eb8b2b337c1cb83f8b52fe38ffa0b36a2b52e1e53885ff78111a5d811b982"
     },
     {
       "path": "schemas/ue-solution-handoff.schema.json",
@@ -594,8 +604,8 @@
     },
     {
       "path": "scripts/verify_capability_parity.py",
-      "bytes": 13561,
-      "sha256": "b010a794c2589f0cb746f50cb5657ae0c6f18d1a0cc8ffa3570692f34259877f"
+      "bytes": 13560,
+      "sha256": "42c98517cb5cefe9699ba99bbb868daa2642d482e48effeb27d5218ea43652cd"
     },
     {
       "path": "scripts/verify_external_cold_start.py",
@@ -619,8 +629,8 @@
     },
     {
       "path": "templates/事实冲突缺口登记表.template.json",
-      "bytes": 856,
-      "sha256": "b1ee33184e2c553e248f5c944db67c2d712bd770eb57b7f14a9c8527ee8da5af"
+      "bytes": 1347,
+      "sha256": "52d5afde86e415c5a54985446a41e722e4266ee6a90fc530cce5beebe1c9b612"
     },
     {
       "path": "templates/产物1竞争态势研究.template.md",
@@ -664,8 +674,8 @@
     },
     {
       "path": "templates/产物启用矩阵.template.json",
-      "bytes": 998,
-      "sha256": "552c717be181ee8acc304458796d5a010742199f3ef4319b5ccadb967b7d1cbf"
+      "bytes": 1032,
+      "sha256": "74dfcbb0ef9d4f56c75bafa4097318da3ab1d40dbcaa8669d7689648900c9dcf"
     },
     {
       "path": "templates/变更影响登记表.template.json",
@@ -689,8 +699,8 @@
     },
     {
       "path": "templates/超级竞争力与制作规划.template.json",
-      "bytes": 1775,
-      "sha256": "f84f1b100fbed026d90713ccce64bb2d09693519715910bbaa0f83b7a395c835"
+      "bytes": 2562,
+      "sha256": "eb2b7c97ebd6badc1295902348a2956ef114aeb1c0e74f68f1d0a42666aa0b5a"
     },
     {
       "path": "templates/附表A-上游检索任务与回传.md",
@@ -699,18 +709,18 @@
     },
     {
       "path": "templates/附表B-超级竞争力与制作规划.md",
-      "bytes": 2227,
-      "sha256": "b0f497fb5195f9238f317e788af9e76a52cd426d2ea8c319f00b5ac5249bdd46"
+      "bytes": 2847,
+      "sha256": "49d5b9cbf12e65dc84f2e222d0bcd815542caea3cc9ad57b183d233fbe0d6e7f"
     },
     {
       "path": "templates/附表C-产物启用与验收矩阵.md",
-      "bytes": 2956,
-      "sha256": "f089580ec44bba72818db3ee5a2ec7eb12bdfc9e7c1da468fcc1f17cdf3fdc25"
+      "bytes": 3007,
+      "sha256": "692d47400e8e6a40df8ffa583f196be8debad0b88e83a623d1993264f44d4c1b"
     },
     {
       "path": "tests/run_public_tests.py",
-      "bytes": 1622,
-      "sha256": "0ce7f727ab8ee21232ea185caf2c864e493c52317a7065b53fbee47f564f9a15"
+      "bytes": 1662,
+      "sha256": "d0c0595bee12c9a3ce652237a7c0a0a72a44162b8c1b2347e1a6129b3e3ac751"
     },
     {
       "path": "tests/test_business_gates_public.py",
@@ -728,14 +738,19 @@
       "sha256": "4dd8e121c4f90492ca5eda70572a092378b4c619d4e8f1ae62f07995524bd390"
     },
     {
+      "path": "tests/test_inference_firewall.py",
+      "bytes": 3451,
+      "sha256": "96325deba3b9d54ed10afa9dc171783d8be96bb29b284b918373a0ff40111b0a"
+    },
+    {
       "path": "tests/test_product4_xmind_public.py",
       "bytes": 2648,
       "sha256": "b7b296e221e385d222078d698781cea95f6e846c6021e56797b15df87a74fdd4"
     },
     {
       "path": "tests/test_production_path_v02.py",
-      "bytes": 9059,
-      "sha256": "914a843c8ef629d21ac77e22353011a834e582443259c916b4762aee311123a4"
+      "bytes": 10637,
+      "sha256": "9511e1f0b4f24302cea718afe45999566e522dfa2029c2fc3c5e9f92ffa2529a"
     },
     {
       "path": "tests/test_public_release_state.py",
@@ -884,8 +899,13 @@
     },
     {
       "path": "tools/production_core/common.py",
-      "bytes": 35061,
-      "sha256": "a14c02b6f74033ee49b6139ff3f76c43df11a2a6dc08feb401f7590f50bb63d1"
+      "bytes": 39193,
+      "sha256": "c52321f199c42a7eba3ac0577c80f5e1496789a8564bdfe39c00a887416c8968"
+    },
+    {
+      "path": "tools/production_core/inference_firewall.py",
+      "bytes": 6609,
+      "sha256": "74887c189dd5e318e83cf72c5145b81c69d5da2dffa526ede76d61a758e79c97"
     },
     {
       "path": "tools/production_core/validate_cross_product_consistency.py",
@@ -949,8 +969,8 @@
     },
     {
       "path": "workflows/residential-production-orchestrator/SKILL.md",
-      "bytes": 4669,
-      "sha256": "332144ac9d55a0cfbad0e453427d602964ef0f1dc331f052be99b2f455f7bc48"
+      "bytes": 5101,
+      "sha256": "ee7b05d44441debd86615adb10671becf97fd8e1aca3337a0e8547c347b97f1e"
     },
     {
       "path": "workflows/residential-production-orchestrator/agents/openai.yaml",
@@ -964,8 +984,8 @@
     },
     {
       "path": "workflows/residential-production-orchestrator/references/routing.md",
-      "bytes": 1718,
-      "sha256": "208aa2fd9612878262b479ed2d2ed39630fee56fa17a540f780cb67aa74430ca"
+      "bytes": 1780,
+      "sha256": "4169c528ede20561fa679b8185ad22d093efbc0bce16bd08da32d9c61f35ad07"
     }
   ]
 }

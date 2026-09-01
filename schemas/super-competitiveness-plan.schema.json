@@ -12,13 +12,19 @@
       "maxItems": 4,
       "items": {
         "type": "object",
-        "required": ["id", "name", "mechanism", "status", "target_customer_refs", "purchase_task_refs", "belief_change", "bounded_claim", "enemy_refs", "project_support_refs", "five_checks", "purchase_stage_effects", "production_items"],
+        "required": ["id", "name", "mechanism", "status", "target_customer_refs", "purchase_task_refs", "belief_change", "bounded_claim", "enemy_refs", "project_support_refs", "causal_chain", "inference_link_refs", "five_checks", "purchase_stage_effects", "production_items"],
         "properties": {
           "status": {"enum": ["candidate", "established", "returned_for_research", "superseded"]},
           "five_checks": {
             "type": "object",
             "required": ["purchase_impact", "bounded_unique_or_best", "enemy_relation", "project_support", "ue_provability"]
-          }
+          },
+          "causal_chain": {
+            "type": "object",
+            "required": ["project_fact", "relative_competition", "customer_importance", "project_response", "ue_proof", "target_action"],
+            "additionalProperties": false
+          },
+          "inference_link_refs": {"type": "array", "minItems": 1, "uniqueItems": true}
         }
       }
     },

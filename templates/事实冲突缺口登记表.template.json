@@ -9,6 +9,7 @@
       "kind": "fact",
       "claim": "材料直接支持的项目事实",
       "source_refs": ["INPUT-01"],
+      "evidence_roles": ["formal_project_fact"],
       "scope": "适用对象、时间和空间",
       "impact": "supports_project_identity",
       "status": "accepted"
@@ -18,11 +19,25 @@
       "kind": "gap",
       "claim": "可能改变竞争判断的缺口",
       "source_refs": [],
+      "evidence_roles": ["missing_evidence"],
       "scope": "当前任务",
       "impact": "may_change_competition_boundary",
       "status": "open",
       "owner": "authorized_upstream_owner",
       "stop_condition": "取得能够支持或推翻该判断的材料"
+    }
+  ],
+  "inference_links": [
+    {
+      "id": "INF-01",
+      "relation_id": "REL-FORMAL-FACT",
+      "source_refs": ["E-01"],
+      "target_claim": "在当前项目与时点内复述该事实",
+      "target_level": "same_scope_fact",
+      "boundary": "保持原对象、原时点与原口径",
+      "bridge_refs": [],
+      "decision": "allowed_bounded",
+      "target_refs": ["SC-01"]
     }
   ],
   "freeze_status": "input_frozen_with_declared_gaps"

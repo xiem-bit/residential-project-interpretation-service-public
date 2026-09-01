@@ -1,7 +1,7 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "p1_dynamic_enablement_complete_parity_migration_in_progress_not_released",
+  "status": "p2_reasoning_harness_complete_parity_migration_in_progress_not_released",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
     "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
@@ -114,11 +114,11 @@
       "domain": "reasoning_harness",
       "classification": "public_required",
       "source_authority_ids": ["cross_product_contract_and_quality_baseline", "platform_neutral_learning_feedback"],
-      "public_targets": ["AGENT_RULES.md", "tools/production_core/common.py", "tests/test_business_gates_public.py"],
+      "public_targets": ["AGENT_RULES.md", "contracts/inference-relationships.json", "tools/production_core/inference_firewall.py", "fixtures/inference-harness/cases.json", "tests/test_inference_firewall.py"],
       "load_condition": "all_research_and_formal_claims",
       "acceptance": "高风险推导关系、正反例和证据角色完整；机器否决但不替代商业判断",
-      "status": "partial_upgrade_required",
-      "gap": "现有规则未完整覆盖用户批准的关系表和成组正反例"
+      "status": "implemented_current",
+      "gap": ""
     },
     {
       "id": "CAP-007",
@@ -129,8 +129,8 @@
       "public_targets": ["core/04-统一语义核与超级竞争力.md", "schemas/semantic-core.schema.json", "schemas/super-competitiveness-plan.schema.json", "tools/production_core/validate_super_competitiveness.py"],
       "load_condition": "after_product1_and_enabled_product2_freeze",
       "acceptance": "每条SC闭合项目事实、相对竞争、客户意义、项目承接、UE证明和行动推动",
-      "status": "partial_upgrade_required",
-      "gap": "现有五项检查需升级为完整六段因果链并增加循环SC／伪SC拒收"
+      "status": "implemented_current",
+      "gap": ""
     },
     {
       "id": "CAP-008",
@@ -274,8 +274,6 @@
     "CAP-003",
     "CAP-004",
     "CAP-005",
-    "CAP-006",
-    "CAP-007",
     "CAP-009",
     "CAP-010",
     "CAP-011",
@@ -284,5 +282,5 @@
     "CAP-015",
     "CAP-016"
   ],
-  "next_slice": "sc_causal_chain_and_inference_firewall"
+  "next_slice": "incremental_research_and_cross_package_receipts"
 }

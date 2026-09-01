@@ -107,6 +107,32 @@ class ProductionPathV02Test(unittest.TestCase):
         self.write("super-competitiveness-plan.json", plan)
         self.assertTrue(any("pass必须有解释和引用" in error for error in self.errors(mode="tutorial")))
 
+    def test_missing_sc_causal_link_fails(self) -> None:
+        plan = self.load("super-competitiveness-plan.json")
+        del plan["items"][0]["causal_chain"]["customer_importance"]
+        self.write("super-competitiveness-plan.json", plan)
+        self.assertTrue(any("必须完整且只能包含六段因果" in error for error in self.errors(mode="tutorial")))
+
+    def test_ue_capability_cannot_be_project_fact(self) -> None:
+        plan = self.load("super-competitiveness-plan.json")
+        plan["items"][0]["causal_chain"]["project_fact"]["refs"] = ["UE-SC-ACCESS"]
+        self.write("super-competitiveness-plan.json", plan)
+        self.assertTrue(any("UE能力不能反向充当事实" in error for error in self.errors(mode="tutorial")))
+
+    def test_sc_causal_chain_cannot_self_repeat(self) -> None:
+        plan = self.load("super-competitiveness-plan.json")
+        repeated = "同一句循环自证"
+        for link in plan["items"][0]["causal_chain"].values():
+            link["statement"] = repeated
+        self.write("super-competitiveness-plan.json", plan)
+        self.assertTrue(any("六段不得用同一句循环自证" in error for error in self.errors(mode="tutorial")))
+
+    def test_rejected_inference_cannot_support_sc(self) -> None:
+        plan = self.load("super-competitiveness-plan.json")
+        plan["items"][0]["inference_link_refs"] = ["INF-SOCIAL-PREVALENCE"]
+        self.write("super-competitiveness-plan.json", plan)
+        self.assertTrue(any("未接受或未指向本SC" in error for error in self.errors(mode="tutorial")))
+
     def test_chapter3_cannot_drift_from_value_anchor(self) -> None:
         chapter3 = self.load("product3-chapter3-contract.json")
         chapter3["value_anchor"]["text"] = "另一个下游自创价值锚点"

@@ -30,7 +30,7 @@ Use [routing.md](references/routing.md) to load only the stage-specific specific
 3. Produce Product 1. Discover candidate competitors through physical space, perception shelf and purchase-task substitution; then adjudicate roles with lifecycle, product, area/price, sales window and purchase task. Acknowledge why each opponent is chosen.
 4. Produce Product 2 when an independent buyer report, buyer decisions or UE routes need deeper work. If not enabled, record the reason in the project contract and enablement matrix; do not create an empty Product 2 file.
 5. Generate `semantic-core.json` from the upstream outputs. Do not import an example semantic core or let a carrier adapter invent it.
-6. Establish three to four mechanism-distinct SCs. Each must include substantive rationale and references for purchase impact, bounded unique-or-best, enemy relation, project support and UE provability. Together cover entering consideration, winning comparison and prompting action.
+6. Establish three to four mechanism-distinct SCs. Each must pass the five substantive checks and close six causal links: project fact, relative competition, customer importance, project response, UE proof and target action. Register high-risk evidence-to-claim links against `contracts/inference-relationships.json`; the machine may veto a prohibited or unbridged inference but may not approve business quality. Together the SCs cover entering consideration, winning comparison and prompting action.
 7. Decide Product 1–5 enablement and high-cost admission. Fewer than three established SCs means return to research; do not continue to project-specific formal carriers.
 8. If Product 3 is enabled, derive Chapter 2 from customer choice to value anchor, then map every SC in Chapter 3 to customer gain, project facts, competitive relation, purchase task, UE scenes and system modules. Produce the UE handoff.
 9. If Product 4 or 5 is enabled, project the same stable IDs into a single business tree or interaction blueprint. Do not create new project value downstream. Do not create files for disabled products.
@@ -51,5 +51,6 @@ Pause only the affected branch for multiple equally valid strategic directions, 
 - Treating same area, distance, label or on-sale status alone as direct competition.
 - Turning an area or unit-size band directly into a family-stage claim.
 - Using a feature list, slogan or UE interaction as an established SC without all five checks.
+- Using non-probability samples, open waiting, future plans, POI existence, product labels, brand participation or UE capability to jump directly to a stronger claim prohibited by the inference relationship table.
 - Letting a presentation or web adapter rewrite frozen business semantics.
 - Claiming strategic quality, human acceptance or business effect from machine validation or visual output.

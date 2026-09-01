@@ -19,6 +19,15 @@
       },
       "enemy_refs": ["COMP-01"],
       "project_support_refs": ["E-01"],
+      "causal_chain": {
+        "project_fact": {"statement": "项目已经具备什么事实或物理条件", "refs": ["E-01"]},
+        "relative_competition": {"statement": "相对真实竞品、替代或不利观念形成什么关系", "refs": ["COMP-01"]},
+        "customer_importance": {"statement": "这对目标客户的购买任务为什么重要", "refs": ["TASK-01"]},
+        "project_response": {"statement": "本案怎样把事实组织成可感知的价值", "refs": ["E-01"]},
+        "ue_proof": {"statement": "UE怎样用画面、比较、交互和销讲证明", "refs": ["UE-SC01-01"]},
+        "target_action": {"statement": "希望推动客户完成什么下一步判断或行动", "refs": ["enter_consideration"]}
+      },
+      "inference_link_refs": ["INF-01"],
       "five_checks": {
         "purchase_impact": {"status": "pass", "rationale": "怎样影响进入候选、赢得比较或促进行动", "refs": ["TASK-01"]},
         "bounded_unique_or_best": {"status": "pass", "rationale": "边界和相对结论", "refs": ["E-01"]},

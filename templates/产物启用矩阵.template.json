@@ -14,6 +14,7 @@
     "semantic_core_frozen": true,
     "established_sc_count": 3,
     "all_five_checks_pass": true,
+    "all_six_links_closed": true,
     "purchase_stage_coverage_complete": true,
     "fact_and_rights_boundary_declared": true
   },

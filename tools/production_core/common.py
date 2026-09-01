@@ -8,6 +8,8 @@ import re
 from pathlib import Path
 from typing import Any, Callable
 
+from inference_firewall import validate_inference_register
+
 
 BASE_REQUIRED_FILES = [
     "project-contract.md",
@@ -40,6 +42,14 @@ FIVE_CHECKS = {
     "enemy_relation",
     "project_support",
     "ue_provability",
+}
+SIX_CAUSAL_LINKS = {
+    "project_fact",
+    "relative_competition",
+    "customer_importance",
+    "project_response",
+    "ue_proof",
+    "target_action",
 }
 PURCHASE_STAGES = {"enter_consideration", "win_comparison", "prompt_action"}
 PLACEHOLDER_MARKERS = (
@@ -265,6 +275,7 @@ def validate_fact_register(data: RunData, errors: list[str]) -> None:
         if item.get("kind") in {"gap", "conflict"} and item.get("status") == "open":
             if not _text(item.get("owner")) or not _text(item.get("stop_condition")):
                 errors.append(f"fact-conflict-gap-register.json.entries[{index}]: 开放缺口必须有owner和停止条件")
+    validate_inference_register(register, errors)
 
 
 def validate_product1(data: RunData, errors: list[str]) -> None:
@@ -360,6 +371,7 @@ def validate_semantic_core(data: RunData, errors: list[str]) -> None:
 def validate_super_competitiveness(data: RunData, errors: list[str]) -> None:
     plan = data["super-competitiveness-plan.json"]
     semantic = data["semantic-core.json"]
+    register = data["fact-conflict-gap-register.json"]
     if plan.get("schema") != "residential.super_competitiveness_plan.v0.2":
         errors.append("super-competitiveness-plan.json: schema错误")
     if plan.get("status") != "minimum_three_sc_pass":
@@ -369,6 +381,16 @@ def validate_super_competitiveness(data: RunData, errors: list[str]) -> None:
     if not 3 <= len(sc_ids) <= 4:
         errors.append("super-competitiveness-plan.json.items: 必须有3—4条SC")
     mechanisms: set[str] = set()
+    fact_ids = {
+        entry.get("id")
+        for entry in register.get("entries") or []
+        if isinstance(entry, dict) and entry.get("kind") == "fact" and entry.get("status") == "accepted"
+    }
+    links = {
+        link.get("id"): link
+        for link in register.get("inference_links") or []
+        if isinstance(link, dict) and isinstance(link.get("id"), str)
+    }
     for index, item in enumerate(items if isinstance(items, list) else []):
         if not isinstance(item, dict):
             continue
@@ -394,6 +416,43 @@ def validate_super_competitiveness(data: RunData, errors: list[str]) -> None:
             for name, check in checks.items():
                 if not isinstance(check, dict) or check.get("status") != "pass" or not _text(check.get("rationale")) or not _list(check.get("refs")):
                     errors.append(f"super-competitiveness-plan.json.items[{index}].five_checks.{name}: pass必须有解释和引用")
+        chain = item.get("causal_chain")
+        if not isinstance(chain, dict) or set(chain) != SIX_CAUSAL_LINKS:
+            errors.append(f"super-competitiveness-plan.json.items[{index}].causal_chain: 必须完整且只能包含六段因果")
+        else:
+            statements: list[str] = []
+            for link_name, link in chain.items():
+                if not isinstance(link, dict) or not _text(link.get("statement")) or not _list(link.get("refs")):
+                    errors.append(f"super-competitiveness-plan.json.items[{index}].causal_chain.{link_name}: 必须有判断和引用")
+                    continue
+                statements.append(link["statement"].strip())
+            if len(statements) == 6 and len(set(statements)) != 6:
+                errors.append(f"super-competitiveness-plan.json.items[{index}].causal_chain: 六段不得用同一句循环自证")
+            if not set(chain.get("project_fact", {}).get("refs") or []).intersection(fact_ids):
+                errors.append(f"super-competitiveness-plan.json.items[{index}].causal_chain.project_fact: 必须引用已接受项目事实，UE能力不能反向充当事实")
+            if not set(chain.get("relative_competition", {}).get("refs") or []).intersection(item.get("enemy_refs") or []):
+                errors.append(f"super-competitiveness-plan.json.items[{index}].causal_chain.relative_competition: 必须连接真实敌人或替代")
+            if not set(chain.get("customer_importance", {}).get("refs") or []).intersection(item.get("purchase_task_refs") or []):
+                errors.append(f"super-competitiveness-plan.json.items[{index}].causal_chain.customer_importance: 必须连接购买任务")
+            if not set(chain.get("project_response", {}).get("refs") or []).intersection(fact_ids):
+                errors.append(f"super-competitiveness-plan.json.items[{index}].causal_chain.project_response: 必须由项目事实承接")
+            ue_refs = set(chain.get("ue_proof", {}).get("refs") or [])
+            check_ue_refs = set(checks.get("ue_provability", {}).get("refs") or []) if isinstance(checks, dict) else set()
+            if not ue_refs or not ue_refs.intersection(check_ue_refs):
+                errors.append(f"super-competitiveness-plan.json.items[{index}].causal_chain.ue_proof: 必须连接已登记UE证明")
+            action_refs = set(chain.get("target_action", {}).get("refs") or [])
+            if not action_refs or not action_refs.issubset(set(item.get("purchase_stage_effects") or [])):
+                errors.append(f"super-competitiveness-plan.json.items[{index}].causal_chain.target_action: 必须连接本SC推动的购买阶段")
+        inference_refs = item.get("inference_link_refs")
+        if not _list(inference_refs):
+            errors.append(f"super-competitiveness-plan.json.items[{index}].inference_link_refs: 至少一项")
+        else:
+            for ref in inference_refs:
+                link = links.get(ref)
+                if not isinstance(link, dict):
+                    errors.append(f"super-competitiveness-plan.json.items[{index}].inference_link_refs: 无效引用 {ref}")
+                elif link.get("decision") == "rejected" or item.get("id") not in set(link.get("target_refs") or []):
+                    errors.append(f"super-competitiveness-plan.json.items[{index}].inference_link_refs: {ref}未接受或未指向本SC")
     if set(semantic.get("super_competitiveness_refs") or []) != sc_ids:
         errors.append("semantic-core.json与super-competitiveness-plan.json的SC集合不一致")
     coverage = plan.get("purchase_stage_coverage")
@@ -439,7 +498,7 @@ def validate_enablement(data: RunData, errors: list[str]) -> None:
             errors.append("product-enablement-matrix.json: 产物3—5启用前必须高成本准入")
         elif admission.get("established_sc_count") != len(plan.get("items") or []):
             errors.append("product-enablement-matrix.json: established_sc_count与SC计划不一致")
-        elif not all(admission.get(key) is True for key in ("semantic_core_frozen", "all_five_checks_pass", "purchase_stage_coverage_complete", "fact_and_rights_boundary_declared")):
+        elif not all(admission.get(key) is True for key in ("semantic_core_frozen", "all_five_checks_pass", "all_six_links_closed", "purchase_stage_coverage_complete", "fact_and_rights_boundary_declared")):
             errors.append("product-enablement-matrix.json: 高成本准入条件未全部成立")
 
 

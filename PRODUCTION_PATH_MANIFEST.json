@@ -53,7 +53,9 @@
       "inputs": ["semantic-core.json", "fact-conflict-gap-register.json"],
       "outputs": ["super-competitiveness-plan.json"],
       "gate": "minimum_three_sc_pass",
-      "checks_per_sc": ["purchase_impact", "bounded_unique_or_best", "enemy_relation", "project_support", "ue_provability"]
+      "checks_per_sc": ["purchase_impact", "bounded_unique_or_best", "enemy_relation", "project_support", "ue_provability"],
+      "causal_chain_per_sc": ["project_fact", "relative_competition", "customer_importance", "project_response", "ue_proof", "target_action"],
+      "inference_relationships": "contracts/inference-relationships.json"
     },
     {
       "id": "S6",

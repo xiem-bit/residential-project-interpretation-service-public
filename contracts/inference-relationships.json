@@ -1,0 +1,109 @@
+{
+  "schema": "residential.inference_relationships.v1",
+  "status": "current_platform_neutral_business_harness",
+  "machine_role": "veto_explicitly_invalid_or_unclosed_links_not_approve_business_judgment",
+  "evidence_roles": [
+    "formal_project_fact",
+    "formal_competitor_fact",
+    "institutional_market_observation",
+    "nonprobability_social_sample",
+    "counterexample",
+    "open_interest_or_waiting",
+    "planned_or_future_status",
+    "poi_or_transit_existence",
+    "feature_attribute",
+    "brand_or_delivery_participation",
+    "ue_capability",
+    "expert_judgment",
+    "factual_conflict",
+    "missing_evidence",
+    "cannot_infer_boundary"
+  ],
+  "relations": [
+    {
+      "id": "REL-FORMAL-FACT",
+      "source_roles": ["formal_project_fact", "formal_competitor_fact", "institutional_market_observation"],
+      "permitted_targets": ["same_scope_fact", "bounded_market_observation"],
+      "bridge_required_targets": ["bounded_comparative_judgment"],
+      "prohibited_targets": [],
+      "obligation": "事实可以在原对象、原时点和原口径内复述；相对竞争判断还必须连接同口径对手与购买任务。"
+    },
+    {
+      "id": "REL-NONPROBABILITY-SOCIAL",
+      "source_roles": ["nonprobability_social_sample"],
+      "permitted_targets": ["bounded_language_signal", "candidate_hypothesis", "counterexample_to_absolute"],
+      "bridge_required_targets": ["purchase_task_hypothesis"],
+      "prohibited_targets": ["population_ratio", "population_prevalence", "market_superlative"],
+      "obligation": "非概率社媒样本只说明已观察到的语言、选择线索、候选假设或绝对命题反例，不外推比例、普遍态度、通常、主流或最大。"
+    },
+    {
+      "id": "REL-COUNTEREXAMPLE",
+      "source_roles": ["counterexample"],
+      "permitted_targets": ["counterexample_to_absolute"],
+      "bridge_required_targets": [],
+      "prohibited_targets": ["population_prevalence", "typical_problem"],
+      "obligation": "一条反例可以否定绝对命题，不能证明某问题普遍或典型。"
+    },
+    {
+      "id": "REL-OPEN-WAITING",
+      "source_roles": ["open_interest_or_waiting"],
+      "permitted_targets": ["open_alternative", "action_barrier_hypothesis"],
+      "bridge_required_targets": [],
+      "prohibited_targets": ["closed_purchase_event", "confirmed_purchase_intent"],
+      "obligation": "开放观望、继续比较和等待信息只说明当前替代与行动阻力，不能冒充闭合购买事件或确认意向。"
+    },
+    {
+      "id": "REL-FUTURE-STATUS",
+      "source_roles": ["planned_or_future_status"],
+      "permitted_targets": ["future_direction", "planned_supply_or_resource"],
+      "bridge_required_targets": [],
+      "prohibited_targets": ["current_operating", "current_realized"],
+      "obligation": "规划、在建和未来方向保持未来时态，不能写成当前运营、当前可用或已经兑现。"
+    },
+    {
+      "id": "REL-SPATIAL-EXISTENCE",
+      "source_roles": ["poi_or_transit_existence"],
+      "permitted_targets": ["resource_exists", "bounded_spatial_relation"],
+      "bridge_required_targets": ["walkable_access", "convenience_claim", "maturity_claim"],
+      "prohibited_targets": ["mature_without_weakness"],
+      "obligation": "POI、轨道或资源存在只证明存在与已核空间关系；步行可达、便利、成熟需要路线、时效、运营与比较证据，不能推出成熟无短板。"
+    },
+    {
+      "id": "REL-FEATURE-ATTRIBUTE",
+      "source_roles": ["feature_attribute"],
+      "permitted_targets": ["feature_exists", "product_configuration"],
+      "bridge_required_targets": ["family_relationship", "privacy_outcome", "efficiency_outcome", "actual_use_outcome"],
+      "prohibited_targets": [],
+      "obligation": "面积、超高层、江景和产品标签只证明属性；家庭关系、私密、得房率或真实使用效果需要额外空间、使用或选择证据。"
+    },
+    {
+      "id": "REL-BRAND-PARTICIPATION",
+      "source_roles": ["brand_or_delivery_participation"],
+      "permitted_targets": ["participation_fact", "contractual_role"],
+      "bridge_required_targets": ["quality_outcome", "delivery_outcome", "realization_guarantee"],
+      "prohibited_targets": [],
+      "obligation": "代建、代销、品牌参与和乙方能力只证明角色；品质、交付和兑现保障需要合同、标准、责任与已发生结果证据。"
+    },
+    {
+      "id": "REL-UE-CAPABILITY",
+      "source_roles": ["ue_capability"],
+      "permitted_targets": ["proof_method", "visualization_feasibility", "interaction_feasibility"],
+      "bridge_required_targets": [],
+      "prohibited_targets": ["project_fact", "project_value_fact", "project_super_competitiveness"],
+      "obligation": "UE负责证明已成立的项目价值，不能反过来充当项目事实、项目价值或超级竞争力。"
+    },
+    {
+      "id": "REL-EXPERT-JUDGMENT",
+      "source_roles": ["expert_judgment"],
+      "permitted_targets": ["working_hypothesis", "bounded_business_judgment"],
+      "bridge_required_targets": [],
+      "prohibited_targets": ["project_fact", "customer_quote", "population_prevalence"],
+      "obligation": "专家判断可以形成有边界的商业假设与判断，不能冒充项目事实、客户原声或总体统计。"
+    }
+  ],
+  "client_surface_obligations": [
+    "甲方成果只呈现业务判断、必要事实、比较逻辑和行动建议",
+    "检索状态、Schema、validator、内部缺口、回执和生产任务留在后台合同",
+    "正式成果自行形成可用判断，不向甲方请求补材料、确认口径或裁定内部任务"
+  ]
+}

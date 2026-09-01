@@ -1,0 +1,20 @@
+{
+  "schema": "residential.inference_harness_cases.v1",
+  "cases": [
+    {"id": "SOCIAL-01", "relation_id": "REL-NONPROBABILITY-SOCIAL", "target_level": "bounded_language_signal", "has_independent_bridge": false, "expected": "allowed_bounded"},
+    {"id": "SOCIAL-02", "relation_id": "REL-NONPROBABILITY-SOCIAL", "target_level": "population_prevalence", "has_independent_bridge": false, "expected": "rejected"},
+    {"id": "COUNTER-01", "relation_id": "REL-COUNTEREXAMPLE", "target_level": "counterexample_to_absolute", "has_independent_bridge": false, "expected": "allowed_bounded"},
+    {"id": "COUNTER-02", "relation_id": "REL-COUNTEREXAMPLE", "target_level": "typical_problem", "has_independent_bridge": false, "expected": "rejected"},
+    {"id": "WAIT-01", "relation_id": "REL-OPEN-WAITING", "target_level": "action_barrier_hypothesis", "has_independent_bridge": false, "expected": "allowed_bounded"},
+    {"id": "WAIT-02", "relation_id": "REL-OPEN-WAITING", "target_level": "closed_purchase_event", "has_independent_bridge": false, "expected": "rejected"},
+    {"id": "FUTURE-01", "relation_id": "REL-FUTURE-STATUS", "target_level": "future_direction", "has_independent_bridge": false, "expected": "allowed_bounded"},
+    {"id": "FUTURE-02", "relation_id": "REL-FUTURE-STATUS", "target_level": "current_realized", "has_independent_bridge": false, "expected": "rejected"},
+    {"id": "SPATIAL-01", "relation_id": "REL-SPATIAL-EXISTENCE", "target_level": "walkable_access", "has_independent_bridge": false, "expected": "rejected"},
+    {"id": "SPATIAL-02", "relation_id": "REL-SPATIAL-EXISTENCE", "target_level": "walkable_access", "has_independent_bridge": true, "expected": "allowed_with_bridge"},
+    {"id": "FEATURE-01", "relation_id": "REL-FEATURE-ATTRIBUTE", "target_level": "actual_use_outcome", "has_independent_bridge": false, "expected": "rejected"},
+    {"id": "FEATURE-02", "relation_id": "REL-FEATURE-ATTRIBUTE", "target_level": "actual_use_outcome", "has_independent_bridge": true, "expected": "allowed_with_bridge"},
+    {"id": "BRAND-01", "relation_id": "REL-BRAND-PARTICIPATION", "target_level": "realization_guarantee", "has_independent_bridge": false, "expected": "rejected"},
+    {"id": "UE-01", "relation_id": "REL-UE-CAPABILITY", "target_level": "proof_method", "has_independent_bridge": false, "expected": "allowed_bounded"},
+    {"id": "UE-02", "relation_id": "REL-UE-CAPABILITY", "target_level": "project_super_competitiveness", "has_independent_bridge": false, "expected": "rejected"}
+  ]
+}

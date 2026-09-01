@@ -20,7 +20,7 @@
     },
     "high_cost_admission": {
       "type": "object",
-      "required": ["status", "semantic_core_frozen", "established_sc_count", "all_five_checks_pass", "purchase_stage_coverage_complete", "fact_and_rights_boundary_declared"],
+      "required": ["status", "semantic_core_frozen", "established_sc_count", "all_five_checks_pass", "all_six_links_closed", "purchase_stage_coverage_complete", "fact_and_rights_boundary_declared"],
       "properties": {"status": {"enum": ["admitted", "research_only", "blocked"]}}
     }
   }
