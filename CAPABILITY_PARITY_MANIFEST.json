@@ -1,7 +1,7 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "p4_client_reports_complete_product3_product5_gold_pending_not_released",
+  "status": "p5_gold_complete_product3_gold_pending_not_released",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
     "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
@@ -191,12 +191,12 @@
       "domain": "product5",
       "classification": "private_replaced",
       "source_authority_ids": ["product4_product5_and_change", "product5_gold_implementation"],
-      "public_targets": ["core/08-产物5交互蓝图.md", "schemas/product5-interaction-blueprint.schema.json", "tools/product5_shell", "adapters/web/README.md"],
-      "planned_public_targets": ["examples/gold-product5-public-safe", "workflows/product5-presales-focus"],
+      "public_targets": ["core/08-产物5交互蓝图.md", "schemas/product5-interaction-blueprint.schema.json", "tools/product5_shell", "adapters/web/README.md", "examples/gold-product5-public-safe", "workflows/product5-presales-focus"],
+      "planned_public_targets": [],
       "load_condition": "product5_enabled",
       "acceptance": "项目中立源码保留状态机、动效、AI推荐、二维码、手机页、同版QA和项目残留扫描",
-      "status": "public_safe_derivative_required",
-      "gap": "当前公开壳层未达到已验收黄金实现的功能和体验完整度"
+      "status": "implemented_current",
+      "gap": ""
     },
     {
       "id": "CAP-013",
@@ -275,9 +275,8 @@
   "release_blockers": [
     "CAP-010",
     "CAP-011",
-    "CAP-012",
     "CAP-013",
     "CAP-016"
   ],
-  "next_slice": "product3_and_product5_public_safe_gold_implementations"
+  "next_slice": "product3_public_safe_page_semantics_and_gold_pptx"
 }

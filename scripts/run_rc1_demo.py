@@ -38,6 +38,7 @@ FIXTURE = ROOT / "examples/fictional-qinglan-chengjing"
 CORE_PATH = FIXTURE / "work/semantic_core.json"
 GAPS_PATH = FIXTURE / "input/evidence_gaps.json"
 ADAPTER_DIR = ROOT / "tools/product3_ppt_pipeline/automizer_adapter"
+PRODUCT5_SOURCE = ROOT / "tools/product5_shell"
 OUTPUT_ROOT = ROOT / "verification-tmp/fictional-demo"
 SECRET_PATTERN = re.compile(
     r"(?:BEGIN (?:RSA |OPENSSH )?PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{20,})"
@@ -116,19 +117,22 @@ def validate_business_pages(request: dict[str, Any], output_path: Path) -> None:
 
 
 def install_node_dependencies(allow_install: bool) -> None:
-    dependency = ADAPTER_DIR / "node_modules/pptxgenjs"
-    if dependency.is_dir():
-        return
-    if not allow_install:
+    requirements = [
+        (ADAPTER_DIR, ADAPTER_DIR / "node_modules/pptxgenjs"),
+        (PRODUCT5_SOURCE, PRODUCT5_SOURCE / "node_modules/vite"),
+    ]
+    missing = [directory for directory, dependency in requirements if not dependency.is_dir()]
+    if missing and not allow_install:
         raise RuntimeError(
             "Node dependencies are missing. Run again with --install-node-deps to execute npm ci."
         )
-    run(["npm", "ci", "--ignore-scripts"], cwd=ADAPTER_DIR)
+    for directory in missing:
+        run(["npm", "ci", "--ignore-scripts"], cwd=directory)
 
 
 def build_site(config_path: Path, site_dir: Path) -> None:
-    source = ROOT / "tools/product5_shell"
-    shutil.copytree(source, site_dir)
+    run(["npm", "run", "build"], cwd=PRODUCT5_SOURCE)
+    shutil.copytree(PRODUCT5_SOURCE / "dist", site_dir)
     config = load_json(config_path)
     payload = "window.__PROJECT_DATA__ = " + json.dumps(config, ensure_ascii=False, indent=2) + ";\n"
     (site_dir / "project-data.js").write_text(payload, encoding="utf-8")
@@ -136,13 +140,22 @@ def build_site(config_path: Path, site_dir: Path) -> None:
     mobile = (site_dir / "m/index.html").read_text(encoding="utf-8")
     app = (site_dir / "assets/app.js").read_text(encoding="utf-8")
     css = (site_dir / "assets/styles.css").read_text(encoding="utf-8")
+    expected_assets = {
+        str(chapter["image"]).removeprefix("/")
+        for chapter in config["experience"]["chapters"]
+    } | {
+        str(route["image"]).removeprefix("/")
+        for route in config["experience"]["advisor"]["routes"]
+    }
     required = {
-        "desktop_entry": "project-data.js" in index and "assets/app.js" in index,
+        "desktop_entry": "project-data.js" in index and "assets/app.js" in index and "assets/styles.css" in index,
         "mobile_entry": "../project-data.js" in mobile and "../assets/app.js" in mobile,
         "offline_csp": "connect-src 'none'" in index and "connect-src 'none'" in mobile,
         "same_semantic_core": all(item["id"] in payload for item in config["super_competitiveness"]),
         "no_external_resource": not re.search(r"(?:src|href)=[\"'](?:https?:)?//", index + mobile),
-        "shell_code_present": len(app) > 1000 and len(css) > 2000,
+        "shell_code_present": len(app) > 20_000 and len(css) > 20_000,
+        "mobile_route_present": "#/m/" in app,
+        "all_scene_assets_present": all((site_dir / item).is_file() for item in expected_assets),
     }
     if not all(required.values()):
         raise ContractError(f"产物5壳层检查失败：{required}")

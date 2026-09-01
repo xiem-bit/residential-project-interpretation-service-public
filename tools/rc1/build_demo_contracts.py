@@ -10,6 +10,9 @@ from pathlib import Path
 from typing import Any
 
 
+ROOT = Path(__file__).resolve().parents[2]
+
+
 VISUAL_SOURCE_POLICY = {
     "allowed": [
         "semantic_company_case_library",
@@ -252,6 +255,9 @@ def build_presentation_request(core: dict[str, Any]) -> dict[str, Any]:
 
 
 def build_product5_config(core: dict[str, Any], gaps: dict[str, Any]) -> dict[str, Any]:
+    template_text = (ROOT / "tools/product5_shell/public/project-data.js").read_text(encoding="utf-8")
+    template_payload = template_text.split("=", 1)[1].strip().removesuffix(";")
+    template = json.loads(template_payload)
     return {
         "schema": "residential.product5_config.v0.1",
         "project": {
@@ -283,6 +289,7 @@ def build_product5_config(core: dict[str, Any], gaps: dict[str, Any]) -> dict[st
         ],
         "mobile_path": "m/index.html",
         "publication_state": "not_published",
+        "experience": copy.deepcopy(template["experience"]),
     }
 
 
@@ -316,4 +323,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

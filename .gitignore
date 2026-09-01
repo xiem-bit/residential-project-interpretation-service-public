@@ -3,4 +3,7 @@ __pycache__/
 *.pyc
 node_modules/
 verification-tmp/
+tools/product5_shell/dist/
+output/playwright/
+.playwright-cli/
 .DS_Store

@@ -1,7 +1,7 @@
 {
   "schema": "residential.production_path_manifest.v0.2",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "candidate_client_reports_and_summaries_separated_product3_product5_gold_pending",
+  "status": "candidate_product5_gold_complete_product3_gold_pending",
   "semantic_core_role": "required_production_output_not_bootstrap_input",
   "entrypoints": {
     "human_or_agent": "START_HERE.md",

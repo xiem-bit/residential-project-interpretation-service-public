@@ -74,7 +74,7 @@ def validate_public_manifest(parity: dict[str, Any], authority: dict[str, Any]) 
 
     if parity.get("schema") != "residential.capability_parity_manifest.v1":
         errors.append("CAPABILITY_PARITY_MANIFEST.json: unexpected schema")
-    if parity.get("status") != "p4_client_reports_complete_product3_product5_gold_pending_not_released":
+    if parity.get("status") != "p5_gold_complete_product3_gold_pending_not_released":
         errors.append("CAPABILITY_PARITY_MANIFEST.json: unexpected current migration state")
 
     principles = parity.get("principles")

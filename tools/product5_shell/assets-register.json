@@ -1,0 +1,14 @@
+{
+  "schema": "residential.public_safe_asset_register.v0.1",
+  "project": "fictional-qinglan-chengjing",
+  "policy": "all visuals are generated fictional references and contain no real client material",
+  "assets": [
+    {"path": "public/assets/scene-city-sandtable.png", "source_type": "generated_visual", "asset_identity": "P5-GEN-001", "business_semantics": "双节点城市关系与低密住区", "proof_purpose": "城市关系UE场景", "page_destination": ["home", "city"], "public_safe": true},
+    {"path": "public/assets/scene-community-garden.png", "source_type": "generated_visual", "asset_identity": "P5-GEN-002", "business_semantics": "园林、架空层与地下空间的连续关系", "proof_purpose": "社区园林UE场景", "page_destination": ["community"], "public_safe": true},
+    {"path": "public/assets/scene-homecoming.png", "source_type": "generated_visual", "asset_identity": "P5-GEN-003", "business_semantics": "家庭雨夜归家与空间秩序", "proof_purpose": "归家UE备用场景", "page_destination": ["community_alternate"], "public_safe": true},
+    {"path": "public/assets/scene-ai-advisor.png", "source_type": "generated_visual", "asset_identity": "P5-GEN-004", "business_semantics": "家庭在售楼处接受数字化讲解", "proof_purpose": "AI推荐官入口", "page_destination": ["advisor"], "public_safe": true},
+    {"path": "public/assets/route-commute.png", "source_type": "generated_visual", "asset_identity": "P5-GEN-005", "business_semantics": "双向通勤与孩子接送", "proof_purpose": "通勤家庭推荐路线", "page_destination": ["advisor:commute", "mobile:commute"], "public_safe": true},
+    {"path": "public/assets/route-family-flex.png", "source_type": "generated_visual", "asset_identity": "P5-GEN-006", "business_semantics": "三代短住、学习与工作并行", "proof_purpose": "家庭弹性推荐路线", "page_destination": ["living", "advisor:family-flex", "mobile:family-flex"], "public_safe": true},
+    {"path": "public/assets/route-price-discipline.png", "source_type": "generated_visual", "asset_identity": "P5-GEN-007", "business_semantics": "价格公布前的理性比较", "proof_purpose": "观望客户推荐路线", "page_destination": ["advisor:price-discipline", "mobile:price-discipline"], "public_safe": true}
+  ]
+}

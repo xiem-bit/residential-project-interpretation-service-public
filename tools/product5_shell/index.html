@@ -1,47 +1,19 @@
 <!doctype html>
 <html lang="zh-CN">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self' data:; media-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'">
-    <title>住宅 UE 公共壳层</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self' data:; media-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'" />
+    <meta
+      name="description"
+      content="公开安全的住宅UE售前交互黄金参考，项目、城市与全部数据均为虚构。"
+    />
+    <link rel="icon" href="%BASE_URL%favicon.svg" type="image/svg+xml" />
+    <title>青岚澄境｜住宅UE售前交互体验（虚构）</title>
   </head>
-  <body data-view="desktop">
-    <main class="app-shell">
-      <aside class="side-rail side-rail-left" aria-label="项目状态">
-        <p class="eyebrow">PUBLIC RC1</p>
-        <h1 id="project-name">住宅项目</h1>
-        <p id="project-location" class="muted"></p>
-        <div id="fixture-notice" class="notice"></div>
-        <nav id="primary-nav" class="primary-nav" aria-label="一级导航"></nav>
-        <a class="mobile-link" href="m/index.html">打开手机家庭路线</a>
-      </aside>
-
-      <section class="stage" aria-live="polite">
-        <header class="stage-header">
-          <p class="eyebrow">住宅竞争力可交互预演</p>
-          <p id="value-anchor" class="value-anchor"></p>
-        </header>
-        <div class="relationship-map" aria-label="城市、社区与家庭关系">
-          <div class="map-node map-node-city">双节点路径</div>
-          <div class="map-line map-line-one"></div>
-          <div class="map-node map-node-community">连续归家</div>
-          <div class="map-line map-line-two"></div>
-          <div class="map-node map-node-home">弹性家庭</div>
-        </div>
-        <section id="competitiveness-cards" class="card-grid" aria-label="超级竞争力"></section>
-      </section>
-
-      <aside class="side-rail side-rail-right" aria-label="事实边界">
-        <p class="eyebrow">已知与待核</p>
-        <h2>交付边界</h2>
-        <ul id="gap-list" class="gap-list"></ul>
-        <p class="boundary-note">本壳层只消费批准语义核，不声明真实项目、发布或客户验收。</p>
-      </aside>
-    </main>
-    <script src="project-data.js"></script>
-    <script src="assets/app.js"></script>
+  <body>
+    <div id="root"></div>
+    <script src="%BASE_URL%project-data.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-

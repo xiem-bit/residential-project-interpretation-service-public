@@ -193,6 +193,23 @@ def validate_product5_config(config: dict[str, Any], expected_sc_ids: set[str]) 
         raise ContractError("产物5缺少家庭路径或证据缺口")
     if config.get("publication_state") != "not_published":
         raise ContractError("RC1产物5必须保持未发布")
+    experience = config.get("experience", {})
+    chapters = experience.get("chapters", [])
+    if [item.get("id") for item in chapters] != ["home", "city", "community", "living", "advisor"]:
+        raise ContractError("产物5缺少完整桌面章节与AI推荐入口")
+    advisor = experience.get("advisor", {})
+    if len(advisor.get("questions", [])) != 4 or len(advisor.get("routes", [])) < 3:
+        raise ContractError("产物5推荐官缺少四问分流或三类专属路线")
+    for route in advisor.get("routes", []):
+        if (
+            len(route.get("reasons", [])) != 3
+            or len(route.get("visit", [])) != 3
+            or len(route.get("compare", [])) != 2
+            or not str(route.get("next", "")).strip()
+        ):
+            raise ContractError(f"产物5路线信息密度不足：{route.get('slug')}")
+        if not str(route.get("image", "")).startswith("/assets/"):
+            raise ContractError(f"产物5路线素材必须使用包内相对资产：{route.get('slug')}")
     assert_no_private_paths(config)
 
 

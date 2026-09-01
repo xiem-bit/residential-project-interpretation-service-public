@@ -13,7 +13,7 @@ const fail = (message) => {
 const sha256 = (value) => crypto.createHash("sha256").update(value).digest("hex");
 const comparePathBytes = (left, right) => Buffer.compare(Buffer.from(left), Buffer.from(right));
 const CSP = "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; font-src 'self' data:; media-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'";
-const PRIVATE_PATTERN = /(?:\/Users\/|\/home\/|\/Applications\/|file:\/{2,3}|[A-Za-z]:[\\/]|CODEX_WORKSPACE|@oai\/artifact-tool)/i;
+const PRIVATE_PATTERN = /(?:\/Users\/|\/home\/|\/Applications\/|file:\/{2,3}|(?<![A-Za-z])[A-Za-z]:[\\/]|CODEX_WORKSPACE|@oai\/artifact-tool)/i;
 const EXTERNAL_RESOURCE_PATTERN = /(?:src|href)\s*=\s*["']\s*(?:https?:)?\/\//i;
 const TEXT_EXTENSIONS = new Set([".html", ".css", ".js", ".json", ".md", ".svg", ".txt"]);
 
@@ -100,4 +100,3 @@ const manifest = {
 };
 fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
 process.stdout.write(`${manifest.treeSha256}\n`);
-

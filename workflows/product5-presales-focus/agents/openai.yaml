@@ -1,0 +1,4 @@
+interface:
+  display_name: "住宅UE交互原型生产"
+  short_description: "从冻结竞争语义生成完整网页、AI推荐和手机路线"
+  default_prompt: "请从当前项目已冻结的竞争判断和交互蓝图，生产可运行的住宅UE售前交互原型，并完成桌面、手机和项目残留检查。"
