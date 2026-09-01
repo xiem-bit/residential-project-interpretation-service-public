@@ -1,0 +1,69 @@
+{
+  "schema": "residential.cross_package_conformance_receipt.v0.2",
+  "status": "pass",
+  "recorded_at": "2026-09-01",
+  "release_state": "both_packages_are_unpublished_release_candidates",
+  "producer": {
+    "repository": "https://github.com/xiem-public-info/public-info-research-kit",
+    "release_candidate": "0.8.0-rc.1",
+    "schema": "public_evidence_envelope.v1",
+    "schema_path": "plugins/public-info-research-kit/schemas/public_evidence_envelope.v1.json",
+    "sha256_raw_file_bytes": "ee303d2ea8eef1bcc2b6e6f7a8b020486aa80c3c3ca3189cb99fedd5b8fc2148",
+    "golden_fixture_path": "plugins/public-info-research-kit/tests/fixtures/golden-tasks/golden_public_evidence_envelope.json",
+    "interop_manifest_path": "plugins/public-info-research-kit/schemas/public_interop_manifest.v1.json",
+    "minimal_conformance": {
+      "command_from_plugin_root": "python3 tests/run_public_evidence_contract.py",
+      "status": "pass",
+      "case_count": 11
+    },
+    "full_harness": {
+      "command_from_plugin_root": "python3 tests/run_release_harness.py",
+      "status": "pass",
+      "fixture_case_count": 94
+    }
+  },
+  "consumer": {
+    "repository": "https://github.com/xiem-bit/residential-project-interpretation-service-public",
+    "release_candidate": "v0.2.0-rc.1",
+    "base_commit": "6876e44",
+    "contracts": [
+      {
+        "schema": "residential.upstream_task.v0.2",
+        "path": "external-capabilities/upstream-task.schema.json",
+        "sha256_raw_file_bytes": "12f7ed916755bc37a870a6eb893210cc7e0fbc35ecea443f8e8d10bbe102b271"
+      },
+      {
+        "schema": "residential.upstream_response.v0.2",
+        "path": "external-capabilities/upstream-response.schema.json",
+        "sha256_raw_file_bytes": "baec010a6a21b44a0f80a9639680fc2dcda2b6bce685d28d8cd29df9dc7ed2e1"
+      },
+      {
+        "schema": "residential.upstream_adoption_receipt.v0.2",
+        "path": "external-capabilities/upstream-adoption-receipt.schema.json",
+        "sha256_raw_file_bytes": "64183f6485ac5fc8c076f7969c3d5bfd07209632a9c9ddd532c6eef7ad2e1414"
+      }
+    ],
+    "conformance_command": "python3 scripts/verify_cross_package_conformance.py --upstream-plugin-root UPSTREAM_PLUGIN_ROOT --full"
+  },
+  "round_trip": {
+    "consumer_request_fixture": "fixtures/upstream-exchange/request.json",
+    "consumer_evidence_fixture": "fixtures/upstream-exchange/public-evidence-envelope.json",
+    "consumer_response_fixture": "fixtures/upstream-exchange/response.json",
+    "consumer_adoption_fixture": "fixtures/upstream-exchange/adoption-receipt.json",
+    "producer_validated_consumer_fixture": true,
+    "consumer_validated_producer_fixture": true,
+    "fields_preserved_end_to_end": ["request_id", "project_id", "negative_hits", "conflicts", "gaps", "stop_reason"],
+    "stopped_status_supported": true,
+    "empty_conflicts_and_gaps_representation": "empty_array",
+    "fulfilled_equals_accepted": false
+  },
+  "boundaries": {
+    "shared_cwd_required": false,
+    "absolute_path_dependency_allowed": false,
+    "network_accessed": false,
+    "platform_opened": false,
+    "real_gui_validated": false,
+    "business_acceptance_validated": false,
+    "release_or_tag_created": false
+  }
+}

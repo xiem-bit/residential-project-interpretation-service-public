@@ -21,10 +21,10 @@ class UpstreamExchangeTest(unittest.TestCase):
         self.response = json.loads((fixture_root / "response.json").read_text(encoding="utf-8"))
         self.adoption = json.loads((fixture_root / "adoption-receipt.json").read_text(encoding="utf-8"))
 
-    def test_public_safe_round_trip_passes_before_upstream_freeze(self) -> None:
+    def test_public_safe_round_trip_passes_against_frozen_candidate(self) -> None:
         receipt = validate_exchange(self.request, self.envelope, self.response, self.adoption)
         self.assertEqual(receipt["status"], "pass", receipt["errors"])
-        self.assertEqual(receipt["compatibility_status"], "awaiting_upstream_freeze")
+        self.assertEqual(receipt["compatibility_status"], "compatible_candidate_frozen")
         self.assertTrue(receipt["adoption_checked"])
 
     def test_response_binds_canonical_envelope_hash(self) -> None:
@@ -66,6 +66,30 @@ class UpstreamExchangeTest(unittest.TestCase):
         receipt = validate_exchange(self.request, self.envelope, self.response, adoption)
         self.assertTrue(any("必须保留所有未解冲突" in error for error in receipt["errors"]))
         self.assertTrue(any("必须保留所有未解缺口" in error for error in receipt["errors"]))
+
+    def test_stopped_and_empty_conflict_gap_arrays_are_valid(self) -> None:
+        envelope = copy.deepcopy(self.envelope)
+        envelope["upstream_status"] = "stopped"
+        envelope["items"] = [item for item in envelope["items"] if item["evidence_class"] not in {"conflict", "gap"}]
+        envelope["conflicts"] = []
+        envelope["gaps"] = []
+        envelope["stop_reason"] = "触发当前授权范围的安全停止线"
+        package_hash = canonical_json_sha256(envelope)
+
+        response = copy.deepcopy(self.response)
+        response["status"] = "stopped"
+        response["evidence_envelope"]["content_sha256"] = package_hash
+        response["conflicts"] = []
+        response["gaps"] = []
+        response["stop_reason"] = envelope["stop_reason"]
+
+        adoption = copy.deepcopy(self.adoption)
+        adoption["upstream_status"] = "stopped"
+        adoption["evidence_package"]["content_sha256"] = package_hash
+        adoption["unresolved_conflicts"] = []
+        adoption["unresolved_gaps"] = []
+        receipt = validate_exchange(self.request, envelope, response, adoption)
+        self.assertEqual(receipt["status"], "pass", receipt["errors"])
 
     def test_incremental_authority_must_come_from_downstream(self) -> None:
         adoption = copy.deepcopy(self.adoption)

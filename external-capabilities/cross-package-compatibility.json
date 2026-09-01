@@ -1,27 +1,49 @@
 {
   "schema": "residential.public_information_compatibility.v0.2",
-  "status": "awaiting_upstream_freeze",
+  "status": "compatible_candidate_frozen",
   "request_contract": {
     "schema": "residential.upstream_task.v0.2",
-    "path": "external-capabilities/upstream-task.schema.json"
+    "path": "external-capabilities/upstream-task.schema.json",
+    "sha256_raw_file_bytes": "12f7ed916755bc37a870a6eb893210cc7e0fbc35ecea443f8e8d10bbe102b271"
   },
   "upstream_evidence_contract": {
     "repository": "https://github.com/xiem-public-info/public-info-research-kit",
+    "release_candidate": "0.8.0-rc.1",
     "schema": "public_evidence_envelope.v1",
-    "expected_path": "plugins/public-info-research-kit/schemas/public_evidence_envelope.v1.json",
-    "schema_sha256": null,
+    "repository_relative_schema_path": "plugins/public-info-research-kit/schemas/public_evidence_envelope.v1.json",
+    "plugin_relative_schema_path": "schemas/public_evidence_envelope.v1.json",
+    "schema_sha256": "ee303d2ea8eef1bcc2b6e6f7a8b020486aa80c3c3ca3189cb99fedd5b8fc2148",
     "hash_basis": "raw_file_bytes_sha256",
-    "golden_fixture_path": null,
-    "conformance_command": null,
-    "freeze_receipt": null
+    "repository_relative_golden_fixture_path": "plugins/public-info-research-kit/tests/fixtures/golden-tasks/golden_public_evidence_envelope.json",
+    "plugin_relative_golden_fixture_path": "tests/fixtures/golden-tasks/golden_public_evidence_envelope.json",
+    "repository_relative_interop_manifest_path": "plugins/public-info-research-kit/schemas/public_interop_manifest.v1.json",
+    "plugin_relative_interop_manifest_path": "schemas/public_interop_manifest.v1.json",
+    "conformance_commands_from_plugin_root": [
+      "python3 tests/run_public_evidence_contract.py",
+      "python3 tests/run_release_harness.py"
+    ],
+    "freeze_receipt": {
+      "status": "candidate_frozen",
+      "minimal_fixture_cases_passed": 11,
+      "full_harness_fixture_cases_passed": 94,
+      "network_accessed": false,
+      "platform_opened": false,
+      "business_acceptance_validated": false
+    }
   },
   "response_contract": {
     "schema": "residential.upstream_response.v0.2",
-    "path": "external-capabilities/upstream-response.schema.json"
+    "path": "external-capabilities/upstream-response.schema.json",
+    "sha256_raw_file_bytes": "baec010a6a21b44a0f80a9639680fc2dcda2b6bce685d28d8cd29df9dc7ed2e1"
   },
   "adoption_contract": {
     "schema": "residential.upstream_adoption_receipt.v0.2",
-    "path": "external-capabilities/upstream-adoption-receipt.schema.json"
+    "path": "external-capabilities/upstream-adoption-receipt.schema.json",
+    "sha256_raw_file_bytes": "64183f6485ac5fc8c076f7969c3d5bfd07209632a9c9ddd532c6eef7ad2e1414"
+  },
+  "conformance": {
+    "command": "python3 scripts/verify_cross_package_conformance.py --upstream-plugin-root UPSTREAM_PLUGIN_ROOT --full",
+    "receipt": "external-capabilities/cross-package-conformance-receipt.json"
   },
   "boundaries": {
     "shared_cwd_required": false,

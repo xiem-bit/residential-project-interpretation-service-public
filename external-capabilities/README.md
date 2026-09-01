@@ -52,7 +52,7 @@ residential.upstream_task.v0.2
 
 ## 双包兼容
 
-`cross-package-compatibility.json`登记双方独立仓库的Schema、哈希、黄金fixture与验证命令。当前只有在上游正式冻结`public_evidence_envelope.v1`并完成双方往返后，状态才可从`awaiting_upstream_freeze`升级为`compatible_frozen`。
+`cross-package-compatibility.json`登记双方独立仓库的Schema、哈希、黄金fixture与验证命令。当前两个未发布候选已经冻结接口并完成双方fixture往返，状态为`compatible_candidate_frozen`；验证结果见`cross-package-conformance-receipt.json`。任一Schema字节变化都必须更新哈希并重跑双方conformance，正式版本发布后再升级稳定兼容状态。
 
 住宅侧可运行：
 

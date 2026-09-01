@@ -115,12 +115,15 @@
         "external-capabilities/upstream-response.schema.json",
         "external-capabilities/upstream-adoption-receipt.schema.json",
         "external-capabilities/cross-package-compatibility.json",
+        "external-capabilities/cross-package-conformance-receipt.json",
         "tools/production_core/validate_upstream_exchange.py",
+        "scripts/verify_cross_package_conformance.py",
         "fixtures/upstream-exchange",
         "tests/test_upstream_exchange.py",
+        "tests/test_cross_package_conformance.py",
         "templates/附表A-上游检索任务与回传.md"
       ],
-      "coverage": "complete_local_incremental_and_adoption_loop_cross_package_freeze_pending"
+      "coverage": "complete_incremental_adoption_and_candidate_cross_package_conformance"
     },
     {
       "authority": "customer_facing_assertion_and_delivery_qa",

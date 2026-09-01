@@ -9,7 +9,7 @@
     "schema": "public_evidence_envelope.v1",
     "package_id": "EVIDENCE-PUBLIC-001",
     "content_sha256": "9bd28d1cf7850ee7a1a117b87eab829b19d4d9dcf831018594f266e941f0eafd",
-    "schema_sha256": null,
+    "schema_sha256": "ee303d2ea8eef1bcc2b6e6f7a8b020486aa80c3c3ca3189cb99fedd5b8fc2148",
     "transfer_mode": "inline",
     "artifact_ref": null
   },

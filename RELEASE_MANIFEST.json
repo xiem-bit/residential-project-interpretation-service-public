@@ -14,8 +14,8 @@
     ".DS_Store",
     "RELEASE_MANIFEST.json"
   ],
-  "file_count": 202,
-  "tree_sha256": "1e8f20828afa7f12a7dd86dbd2f1a6d95a6781c6b3b54715c5df68e88cfa1484",
+  "file_count": 205,
+  "tree_sha256": "137865c6f336806e537f5ced74ce399aea34da8c165b30fc1418a5721f871564",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -54,8 +54,8 @@
     },
     {
       "path": "CAPABILITY_PARITY_MANIFEST.json",
-      "bytes": 16408,
-      "sha256": "5295aef44df2961e00f0d8502792e9d0e60ce6d5b022bae91c81bb5d86b4be47"
+      "bytes": 16568,
+      "sha256": "8f141082fcac0cec9a0eb964e2404dface1aa5d448e2c4144406af991af123d0"
     },
     {
       "path": "COLD_START_PROTOCOL.md",
@@ -74,18 +74,18 @@
     },
     {
       "path": "PRODUCTION_AUTHORITY_MAP.json",
-      "bytes": 11231,
-      "sha256": "9faf05e66a4a89f86b6ec287501c575ab57fa96b774c153d6a64e9f9ed3830bf"
+      "bytes": 11405,
+      "sha256": "c551401bd1c49dbd9df6bad6676a04f182a228479a758d413f5b650f8ac007df"
     },
     {
       "path": "PRODUCTION_PATH_MANIFEST.json",
-      "bytes": 6538,
-      "sha256": "f3f9ab5f2fc3120a91ed1426d4cd7287366c3c9df4c4feaf586eb2a1d671106e"
+      "bytes": 6554,
+      "sha256": "68eb02a5fffc4895409cbb0f0425e6fc1c635c9408554cbd1c2c6f66f245325b"
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
-      "bytes": 3483,
-      "sha256": "a3b26d5aeffa0e4ac03ce95d4c9129c8152d8019bd84ab8dceeabfd98b061fd8"
+      "bytes": 3488,
+      "sha256": "dc93bdc95bf2906ea9262ae73698b91dd24736fae68e1f3df066bfe7900441be"
     },
     {
       "path": "RC1_E2E_VERIFICATION.json",
@@ -99,8 +99,8 @@
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 2806,
-      "sha256": "ef4a0cd99dd1580b295d52669e3d349c08b6ced48d0dd57760b4e5fe39ac520b"
+      "bytes": 2921,
+      "sha256": "08ecd8aec59cf9fbd318d7d782069574898db5eccd52a5d5f65dae1360304a2a"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
@@ -469,13 +469,18 @@
     },
     {
       "path": "external-capabilities/README.md",
-      "bytes": 3732,
-      "sha256": "90dfa658a06c6f74bed77ce114c963b8f393bcf5e0fa9f7818b1d6eb2c654224"
+      "bytes": 3871,
+      "sha256": "31de706c350c3facc89431a8ec4c76360cecf3b218cdf381fdf9ebf2027fc2e2"
     },
     {
       "path": "external-capabilities/cross-package-compatibility.json",
-      "bytes": 1333,
-      "sha256": "ac69df8ba1a0a883cf1811f765b35c61340c87965079d1a58ba274a50e5da2b3"
+      "bytes": 2846,
+      "sha256": "75d0d1252bb15d8ec46792a41319ac934a531d56ab2f96ca49cb2acd0b862835"
+    },
+    {
+      "path": "external-capabilities/cross-package-conformance-receipt.json",
+      "bytes": 3200,
+      "sha256": "3b02b329fc2e8741268d5f293284384dd89cbfbe45c5954d1692b1b1fcc7d0ef"
     },
     {
       "path": "external-capabilities/upstream-adoption-receipt.schema.json",
@@ -544,8 +549,8 @@
     },
     {
       "path": "fixtures/upstream-exchange/response.json",
-      "bytes": 1246,
-      "sha256": "959f51576bdc2a552ab13dd87553f1ad16db4093ef6e5cc92b4e770358807923"
+      "bytes": 1308,
+      "sha256": "2f42108a1f346ef1d0ab0a5a94d9717199b31c58ecfdc7e5397fda2c9c3f4978"
     },
     {
       "path": "schemas/change-impact.schema.json",
@@ -634,8 +639,13 @@
     },
     {
       "path": "scripts/verify_capability_parity.py",
-      "bytes": 13651,
-      "sha256": "ddb3c13b9829da4eb377b5dadf892ad47b08e5d13c757a51d2f7601cac4acacb"
+      "bytes": 13667,
+      "sha256": "e90ce77f67303fb0c140db0b2dd39b28c8eb608453d8ee68e27a712b1dafa580"
+    },
+    {
+      "path": "scripts/verify_cross_package_conformance.py",
+      "bytes": 13114,
+      "sha256": "b0bac8d9bef33c6c902c51811c03750a067355fdbf2b8c16fcca4edd5330e80b"
     },
     {
       "path": "scripts/verify_external_cold_start.py",
@@ -749,8 +759,8 @@
     },
     {
       "path": "tests/run_public_tests.py",
-      "bytes": 1701,
-      "sha256": "c20a0ca0f69bc70e26e43d0de6bf7ab1a5c259448fa2eadb6504520cd3b92fed"
+      "bytes": 1748,
+      "sha256": "7a4e85441746978c532b2daa9774456d2fc9ff30d1d088cd1dafb60bc86c3dd7"
     },
     {
       "path": "tests/test_business_gates_public.py",
@@ -761,6 +771,11 @@
       "path": "tests/test_capability_parity.py",
       "bytes": 2749,
       "sha256": "a3084c5d206977c3e9c6eccc95f78dc42c49aa89ba3eec0c6a54cc54bddcf133"
+    },
+    {
+      "path": "tests/test_cross_package_conformance.py",
+      "bytes": 3026,
+      "sha256": "2eec7e491335411f062b631fc58be2c7e2e7f24c3267a78bde0fa78c149c2033"
     },
     {
       "path": "tests/test_external_cold_start_protocol.py",
@@ -794,8 +809,8 @@
     },
     {
       "path": "tests/test_upstream_exchange.py",
-      "bytes": 5186,
-      "sha256": "3f0ef18582ba5bbf0d7cecbfae4c74646cca70d56d8e4aeda2179a9d32ca77c8"
+      "bytes": 6368,
+      "sha256": "d7f93766f131cc44147a7ef717c37474a66f6334d4e6baf854754bea5292c601"
     },
     {
       "path": "tools/chinese_copy_lint/affirmative_statement_lint.py",
@@ -979,8 +994,8 @@
     },
     {
       "path": "tools/production_core/validate_upstream_exchange.py",
-      "bytes": 27624,
-      "sha256": "1a2234eb0b7ff8aff33d106dcd432cf7f97b716ff5513a64f58c7f0ca2484145"
+      "bytes": 27628,
+      "sha256": "baade5e00b36c940698f3a4e3c07d55faade5e9499f7b1f0d7dec7138199faa3"
     },
     {
       "path": "tools/rc1/build_demo_contracts.py",

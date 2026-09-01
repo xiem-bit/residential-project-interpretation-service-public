@@ -68,7 +68,7 @@
     "fresh_install_full_project_acceptance_required": true,
     "maintainer_step_by_step_guidance_allowed": false,
     "presentation_or_web_required": false,
-    "current_status": "p3_incremental_research_implemented_cross_package_freeze_pending_not_release_ready"
+    "current_status": "p3_cross_package_candidate_conformance_passed_gold_references_pending_not_release_ready"
   },
   "forbidden_public_content": [
     "real_project_or_customer_materials",

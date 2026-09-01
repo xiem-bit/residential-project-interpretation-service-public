@@ -1,7 +1,7 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "p3_incremental_research_complete_cross_package_freeze_pending_not_released",
+  "status": "p3_cross_package_conformance_complete_gold_reference_migration_pending_not_released",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
     "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
@@ -46,7 +46,8 @@
     "absolute_path_dependency_allowed": false,
     "upstream_fulfilled_equals_downstream_accepted": false,
     "upstream_may_adjudicate_competitor_value_anchor_or_sc": false,
-    "status": "cross_package_pending"
+    "conformance_receipt": "external-capabilities/cross-package-conformance-receipt.json",
+    "status": "candidate_conformance_passed"
   },
   "capabilities": [
     {
@@ -227,11 +228,11 @@
       "domain": "cross_package_interface",
       "classification": "portable_adaptation",
       "source_authority_ids": ["public_channel_and_incremental_research"],
-      "public_targets": ["external-capabilities/upstream-task.schema.json", "external-capabilities/upstream-response.schema.json", "external-capabilities/upstream-adoption-receipt.schema.json", "external-capabilities/cross-package-compatibility.json", "external-capabilities/README.md", "tests/test_upstream_exchange.py"],
+      "public_targets": ["external-capabilities/upstream-task.schema.json", "external-capabilities/upstream-response.schema.json", "external-capabilities/upstream-adoption-receipt.schema.json", "external-capabilities/cross-package-compatibility.json", "external-capabilities/cross-package-conformance-receipt.json", "external-capabilities/README.md", "scripts/verify_cross_package_conformance.py", "tests/test_upstream_exchange.py", "tests/test_cross_package_conformance.py"],
       "load_condition": "public_information_task_enabled",
       "acceptance": "两个独立工程通过版本化Schema往返，fulfilled与accepted分离，不共享cwd",
-      "status": "cross_package_pending",
-      "gap": "等待上游公开包冻结public_evidence_envelope.v1和双方conformance方法"
+      "status": "implemented_current",
+      "gap": ""
     },
     {
       "id": "CAP-016",
@@ -278,8 +279,7 @@
     "CAP-011",
     "CAP-012",
     "CAP-013",
-    "CAP-015",
     "CAP-016"
   ],
-  "next_slice": "cross_package_schema_freeze_then_client_report_and_gold_reference_separation"
+  "next_slice": "client_report_machine_summary_separation_and_public_safe_gold_references"
 }

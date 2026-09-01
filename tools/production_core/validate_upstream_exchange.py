@@ -33,7 +33,7 @@ RESEARCH_CHARACTERISTICS = {
     "market_or_industry_generalization",
 }
 UPSTREAM_STATUSES = {"fulfilled", "partial", "gap", "stopped"}
-ENVELOPE_STATUSES = {"fulfilled", "partial", "gap"}
+ENVELOPE_STATUSES = {"fulfilled", "partial", "gap", "stopped"}
 EVIDENCE_CLASSES = {"fact_candidate", "soft_evidence", "platform_observation", "conflict", "gap"}
 SOFT_CLASSES = {"soft_evidence", "platform_observation"}
 HARD_FACT_USES = {
@@ -305,7 +305,7 @@ def validate_response(
             errors.append(f"response.{field}: 请求、证据包和回传必须一致")
     if response.get("status") not in UPSTREAM_STATUSES:
         errors.append("response.status: 无效")
-    if response.get("status") != "stopped" and response.get("status") != envelope.get("upstream_status"):
+    if response.get("status") != envelope.get("upstream_status"):
         errors.append("response.status: 必须与证据包上游状态一致")
     if response.get("upstream_does_not_adjudicate_strategy") is not True:
         errors.append("response: 上游不得裁定直接竞品、价值锚点或SC")
@@ -322,7 +322,7 @@ def validate_response(
             errors.append("response.evidence_envelope.content_sha256: 与证据包内容不一致")
         expected_schema_hash = compatibility.get("upstream_evidence_contract", {}).get("schema_sha256")
         actual_schema_hash = envelope_ref.get("schema_sha256")
-        if compatibility.get("status") == "compatible_frozen":
+        if compatibility.get("status") in {"compatible_candidate_frozen", "compatible_frozen"}:
             if not _nonempty(expected_schema_hash) or actual_schema_hash != expected_schema_hash:
                 errors.append("response.evidence_envelope.schema_sha256: 未匹配冻结上游Schema")
         elif actual_schema_hash is not None and not SHA256.fullmatch(str(actual_schema_hash)):
