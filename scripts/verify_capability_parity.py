@@ -74,7 +74,7 @@ def validate_public_manifest(parity: dict[str, Any], authority: dict[str, Any]) 
 
     if parity.get("schema") != "residential.capability_parity_manifest.v1":
         errors.append("CAPABILITY_PARITY_MANIFEST.json: unexpected schema")
-    if parity.get("status") != "p2_reasoning_harness_complete_parity_migration_in_progress_not_released":
+    if parity.get("status") != "p3_incremental_research_complete_cross_package_freeze_pending_not_released":
         errors.append("CAPABILITY_PARITY_MANIFEST.json: unexpected current migration state")
 
     principles = parity.get("principles")
@@ -221,6 +221,7 @@ def validate_public_manifest(parity: dict[str, Any], authority: dict[str, Any]) 
             "upstream_request_schema": "residential.upstream_task.v0.2",
             "public_evidence_schema": "public_evidence_envelope.v1",
             "upstream_response_schema": "residential.upstream_response.v0.2",
+            "downstream_adoption_schema": "residential.upstream_adoption_receipt.v0.2",
             "shared_cwd_required": False,
             "absolute_path_dependency_allowed": False,
             "upstream_fulfilled_equals_downstream_accepted": False,

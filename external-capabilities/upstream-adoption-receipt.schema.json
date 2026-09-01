@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "residential.upstream_adoption_receipt.v0.2",
+  "title": "住宅研究上游证据采用回执",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "request_id",
+    "task_id",
+    "project_id",
+    "evidence_package",
+    "upstream_status",
+    "downstream_acceptance",
+    "accepted_items",
+    "rejected_items",
+    "unresolved_conflicts",
+    "unresolved_gaps",
+    "incremental_decision",
+    "judgment_effect",
+    "accepted_by",
+    "accepted_at",
+    "machine_check_does_not_approve_business_quality"
+  ],
+  "properties": {
+    "schema": {"const": "residential.upstream_adoption_receipt.v0.2"},
+    "request_id": {"type": "string", "minLength": 1},
+    "task_id": {"type": "string", "minLength": 1},
+    "project_id": {"type": "string", "minLength": 1},
+    "evidence_package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "package_id", "content_sha256"],
+      "properties": {
+        "schema": {"const": "public_evidence_envelope.v1"},
+        "package_id": {"type": "string", "minLength": 1},
+        "content_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "upstream_status": {"enum": ["fulfilled", "partial", "gap", "stopped"]},
+    "downstream_acceptance": {"enum": ["accepted", "accepted_with_conditions", "rejected"]},
+    "accepted_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["item_id", "evidence_role", "allowed_uses", "target_refs", "interpretation_boundary"],
+        "properties": {
+          "item_id": {"type": "string", "minLength": 1},
+          "evidence_role": {"type": "string", "minLength": 1},
+          "allowed_uses": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "target_refs": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "interpretation_boundary": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "rejected_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["item_id", "reason"],
+        "properties": {
+          "item_id": {"type": "string", "minLength": 1},
+          "reason": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "unresolved_conflicts": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "unresolved_gaps": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "incremental_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "authorized_query_ids", "reason", "limits"],
+      "properties": {
+        "decision": {"enum": ["stop_search", "authorize_incremental", "hold", "not_applicable"]},
+        "authorized_query_ids": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "reason": {"type": "string", "minLength": 1},
+        "limits": {"type": ["string", "null"]}
+      }
+    },
+    "judgment_effect": {"enum": ["supports", "modifies", "refutes", "no_change", "pending"]},
+    "accepted_by": {"type": "string", "minLength": 1},
+    "accepted_at": {"type": "string", "minLength": 1},
+    "machine_check_does_not_approve_business_quality": {"const": true}
+  }
+}

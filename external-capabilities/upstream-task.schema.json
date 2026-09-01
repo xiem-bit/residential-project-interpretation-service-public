@@ -1,12 +1,197 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/residential/upstream-task.schema.json",
+  "$id": "residential.upstream_task.v0.2",
+  "title": "住宅研究上游检索任务合同",
   "type": "object",
-  "required": ["schema", "request_id", "project_id", "business_question", "judgment_gap", "owner", "requested_evidence", "object_scope", "time_scope", "downstream_destination", "quota", "stop_condition", "authorization", "status"],
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "request_id",
+    "task_id",
+    "project_id",
+    "owner",
+    "business_question",
+    "judgment_gap",
+    "requested_evidence_roles",
+    "object_scope",
+    "time_scope",
+    "geo_scope",
+    "downstream_destination",
+    "acceptance_contract",
+    "query_plan",
+    "incremental_policy",
+    "stop_conditions",
+    "authorization",
+    "status",
+    "portability_boundary"
+  ],
   "properties": {
     "schema": {"const": "residential.upstream_task.v0.2"},
-    "owner": {"enum": ["client_material_owner", "public_information_owner", "institutional_data_owner", "residential_production_owner", "expert_owner"]},
+    "request_id": {"type": "string", "minLength": 1},
+    "task_id": {"type": "string", "minLength": 1},
+    "project_id": {"type": "string", "minLength": 1},
+    "owner": {
+      "enum": [
+        "client_material_owner",
+        "public_information_owner",
+        "institutional_data_owner",
+        "residential_production_owner",
+        "expert_owner"
+      ]
+    },
+    "business_question": {"type": "string", "minLength": 1},
+    "judgment_gap": {"type": "string", "minLength": 1},
+    "requested_evidence_roles": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "formal_project_fact",
+          "official_public_fact",
+          "structured_market_observation",
+          "competitor_official_expression",
+          "nonprobability_social_sample",
+          "customer_language",
+          "counterexample",
+          "spatial_existence",
+          "future_status",
+          "institutional_observation",
+          "expert_judgment"
+        ]
+      }
+    },
+    "object_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical_subject", "aliases", "comparison_objects", "identity_boundary"],
+      "properties": {
+        "canonical_subject": {"type": "string", "minLength": 1},
+        "aliases": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "comparison_objects": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "identity_boundary": {"type": "string", "minLength": 1}
+      }
+    },
+    "time_scope": {"type": "string", "minLength": 1},
+    "geo_scope": {"type": "string", "minLength": 1},
+    "downstream_destination": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["products", "judgment_refs", "allowed_uses", "blocked_uses"],
+      "properties": {
+        "products": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "integer", "minimum": 1, "maximum": 5}
+        },
+        "judgment_refs": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "allowed_uses": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "blocked_uses": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "acceptance_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "acceptance_mode",
+        "qualified_match_classes",
+        "quality_criteria",
+        "count_threshold",
+        "diversity_requirements",
+        "research_characteristics"
+      ],
+      "properties": {
+        "acceptance_mode": {"enum": ["count_based", "quality_sufficiency", "hybrid"]},
+        "qualified_match_classes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "quality_criteria": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "count_threshold": {"type": ["integer", "null"], "minimum": 1},
+        "diversity_requirements": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["minimum_source_role_count", "minimum_project_or_brand_count", "maximum_qualified_items_per_project_or_brand"],
+          "properties": {
+            "minimum_source_role_count": {"type": "integer", "minimum": 1},
+            "minimum_project_or_brand_count": {"type": "integer", "minimum": 1},
+            "maximum_qualified_items_per_project_or_brand": {"type": "integer", "minimum": 1}
+          }
+        },
+        "research_characteristics": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "multiple_independent_queries",
+              "support_and_counterevidence_required",
+              "source_or_project_diversity_required",
+              "comparative_or_pattern_judgment",
+              "adaptive_extension_possible",
+              "market_or_industry_generalization"
+            ]
+          }
+        }
+      }
+    },
+    "query_plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "plan_schema", "plan_version", "channel_scope", "frozen_queries", "simple_direct_retrieval_exemption"],
+      "properties": {
+        "mode": {"enum": ["research_retrieval", "simple_direct_retrieval"]},
+        "plan_schema": {"type": ["string", "null"]},
+        "plan_version": {"type": ["string", "null"]},
+        "channel_scope": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "frozen_queries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["query_id", "exact_query_text", "object_identity", "term_provenance", "minimum_result_batches", "minimum_actual_opens"],
+            "properties": {
+              "query_id": {"type": "string", "minLength": 1},
+              "exact_query_text": {"type": "string", "minLength": 1},
+              "object_identity": {"type": "string", "minLength": 1},
+              "term_provenance": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+              "minimum_result_batches": {"type": "integer", "minimum": 1},
+              "minimum_actual_opens": {"type": "integer", "minimum": 1}
+            }
+          }
+        },
+        "simple_direct_retrieval_exemption": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["exemption_type", "evidence_target", "stop_condition", "human_authorization_ref"],
+          "properties": {
+            "exemption_type": {"enum": ["known_url_read", "specified_document_fetch", "single_fact_verification", "exact_record_retrieval"]},
+            "evidence_target": {"type": "string", "minLength": 1},
+            "stop_condition": {"type": "string", "minLength": 1},
+            "human_authorization_ref": {"type": "string", "minLength": 1}
+          }
+        }
+      }
+    },
+    "incremental_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["proposal_allowed", "execution_authorized", "authorization_ref", "maximum_incremental_batches", "time_limit_minutes", "cost_limit", "minimum_marginal_information_gain"],
+      "properties": {
+        "proposal_allowed": {"type": "boolean"},
+        "execution_authorized": {"type": "boolean"},
+        "authorization_ref": {"type": ["string", "null"]},
+        "maximum_incremental_batches": {"type": "integer", "minimum": 0},
+        "time_limit_minutes": {"type": "integer", "minimum": 0},
+        "cost_limit": {"type": ["string", "null"]},
+        "minimum_marginal_information_gain": {"enum": ["high", "medium", "low", "none"]}
+      }
+    },
+    "stop_conditions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
     "authorization": {"enum": ["confirmed", "synthetic_fixture"]},
-    "status": {"enum": ["pending", "in_progress", "fulfilled", "partial", "gap", "stopped"]}
+    "status": {"enum": ["pending", "in_progress", "fulfilled", "partial", "gap", "stopped"]},
+    "portability_boundary": {"const": "no_shared_cwd_no_absolute_path_no_private_runtime_state"}
   }
 }

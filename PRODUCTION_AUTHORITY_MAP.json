@@ -57,7 +57,7 @@
         "templates/附表B-超级竞争力与制作规划.md",
         "templates/附表C-产物启用与验收矩阵.md"
       ],
-      "coverage": "partial_incremental_and_receipt_fields_upgrade_required"
+      "coverage": "complete_current_annexes_with_incremental_and_adoption_fields"
     },
     {
       "authority": "project_contract_and_upstream",
@@ -113,9 +113,14 @@
         "external-capabilities/README.md",
         "external-capabilities/upstream-task.schema.json",
         "external-capabilities/upstream-response.schema.json",
+        "external-capabilities/upstream-adoption-receipt.schema.json",
+        "external-capabilities/cross-package-compatibility.json",
+        "tools/production_core/validate_upstream_exchange.py",
+        "fixtures/upstream-exchange",
+        "tests/test_upstream_exchange.py",
         "templates/附表A-上游检索任务与回传.md"
       ],
-      "coverage": "partial_cross_package_and_incremental_contract_upgrade_required"
+      "coverage": "complete_local_incremental_and_adoption_loop_cross_package_freeze_pending"
     },
     {
       "authority": "customer_facing_assertion_and_delivery_qa",

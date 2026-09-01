@@ -11,7 +11,7 @@
 | Product 4 | `core/07-产物4单树价值框架.md` | existing Product 4 contract template when enabled |
 | Product 5 | `core/08-产物5交互蓝图.md` | Product 5 blueprint template when enabled |
 | Material change | `core/09-变更回写与重投影.md` | change-impact template and revision tutorial |
-| External upstream | `external-capabilities/README.md` | task and response contracts; accept evidence and gap only |
+| External upstream | `external-capabilities/README.md` | request, evidence, response and adoption contracts; preserve sufficiency, negative hits, conflicts, gaps and stop reason |
 | Carrier production | `adapters/README.md` | platform adapter after business semantics are frozen |
 | Release acceptance | `V0_2_RELEASE_SCOPE.md` | package-level clean install, full public-safe project and human acceptance |
 

@@ -1,14 +1,64 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/residential/upstream-response.schema.json",
+  "$id": "residential.upstream_response.v0.2",
+  "title": "住宅研究上游回传合同",
   "type": "object",
-  "required": ["schema", "request_id", "project_id", "status", "evidence", "negative_hits", "gaps", "stop_reason", "upstream_does_not_adjudicate_strategy"],
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "request_id",
+    "task_id",
+    "project_id",
+    "upstream_owner",
+    "status",
+    "evidence_envelope",
+    "sufficiency",
+    "negative_hits",
+    "conflicts",
+    "gaps",
+    "stop_reason",
+    "upstream_does_not_adjudicate_strategy",
+    "fulfilled_does_not_equal_accepted"
+  ],
   "properties": {
     "schema": {"const": "residential.upstream_response.v0.2"},
+    "request_id": {"type": "string", "minLength": 1},
+    "task_id": {"type": "string", "minLength": 1},
+    "project_id": {"type": "string", "minLength": 1},
+    "upstream_owner": {"enum": ["public_information_owner", "institutional_data_owner", "client_material_owner", "expert_owner"]},
     "status": {"enum": ["fulfilled", "partial", "gap", "stopped"]},
-    "evidence": {"type": "array"},
-    "negative_hits": {"type": "array"},
-    "gaps": {"type": "array"},
-    "upstream_does_not_adjudicate_strategy": {"const": true}
+    "evidence_envelope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "package_id", "content_sha256", "schema_sha256", "transfer_mode", "artifact_ref"],
+      "properties": {
+        "schema": {"const": "public_evidence_envelope.v1"},
+        "package_id": {"type": "string", "minLength": 1},
+        "content_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "schema_sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+        "transfer_mode": {"enum": ["inline", "artifact"]},
+        "artifact_ref": {"type": ["string", "null"]}
+      }
+    },
+    "sufficiency": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["acceptance_mode", "evidence_sufficiency_status", "coverage_summary", "marginal_information_gain", "executed_query_ids", "proposed_incremental_query_ids", "failure_attribution_complete"],
+      "properties": {
+        "acceptance_mode": {"enum": ["count_based", "quality_sufficiency", "hybrid"]},
+        "evidence_sufficiency_status": {"enum": ["sufficient", "partially_sufficient", "expression_supply_gap", "not_assessed"]},
+        "coverage_summary": {"type": "string", "minLength": 1},
+        "marginal_information_gain": {"enum": ["high", "medium", "low", "none", "unknown"]},
+        "executed_query_ids": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "proposed_incremental_query_ids": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "failure_attribution_complete": {"type": "boolean"}
+      }
+    },
+    "negative_hits": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "conflicts": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "gaps": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "stop_reason": {"type": "string", "minLength": 1},
+    "upstream_does_not_adjudicate_strategy": {"const": true},
+    "fulfilled_does_not_equal_accepted": {"const": true}
   }
 }

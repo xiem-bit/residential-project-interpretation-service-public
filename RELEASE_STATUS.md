@@ -3,7 +3,7 @@
 ## 当前标签与候选
 
 - `v0.1.0-rc.1`：已发布、不可变；定位为“冻结语义核之后的下游合同、平台往返与载体结构演示”。
-- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`p0_frozen / parity_migration_in_progress / not_released`。
+- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`p3_incremental_research_complete / cross_package_freeze_pending / not_released`。
 
 ## P0已经成立
 
@@ -16,7 +16,7 @@
 ## 当前尚未成立
 
 - 动态产物启用已经实现：产物1默认，产物2—5按矩阵生成，未启用产物无空文件，变更登记按实际语义变化出现；
-- 产物1／2增量检索、充分性和采用回执尚未达到现行主线完整能力；
+- 产物1／2的任务冻结、充分性、查询执行下限、增量提案／授权、负命中／冲突／gap保留和采用／拒绝回执已经进入现行公开路径；
 - 允许／禁止推导关系、六段SC因果和成组正反例已经进入现行机器Harness；机器只否决显式跨步，不替代商业判断；
 - 产物1／2甲方级公开报告、产物3页面语义与黄金PPT、产物4单树样例、产物5黄金源码尚未形成公开安全替代；
 - 公开信息包的`public_evidence_envelope.v1`和双包conformance尚未冻结；
@@ -30,6 +30,6 @@
 
 ## 当前切片
 
-`dynamic_enablement_and_harness_decoupling`与`sc_causal_chain_and_inference_firewall`已经进入验证。下一步补齐产物1／2的增量检索、充分性、停止线、回传采用／拒收，并与上游公开信息包完成版本化接口联调。
+`dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`与`incremental_research_and_adoption_receipts`已经进入验证。下一步等待上游公开信息包冻结`public_evidence_envelope.v1`的路径、哈希、黄金fixture和验证命令，完成双包联调；随后补齐甲方报告与产物3—5公开黄金参考。
 
 当前候选不得创建或推送`v0.2.0-rc.1`标签。完成`CAPABILITY_PARITY_MANIFEST.json`中的全部发布阻断项、干净克隆和双包端到端验收后，才能申请正式发布授权。

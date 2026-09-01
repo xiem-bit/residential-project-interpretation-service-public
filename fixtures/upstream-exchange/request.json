@@ -1,0 +1,82 @@
+{
+  "schema": "residential.upstream_task.v0.2",
+  "request_id": "RQ-PUBLIC-001",
+  "task_id": "TASK-PUBLIC-001",
+  "project_id": "PROJECT-PUBLIC-001",
+  "owner": "public_information_owner",
+  "business_question": "哪些公开证据支持或反驳目标项目在有效竞争圈中的归家体验判断",
+  "judgment_gap": "现有正式资料能够说明空间设计，仍缺真实客户语言、反例和同口径公开比较",
+  "requested_evidence_roles": [
+    "official_public_fact",
+    "nonprobability_social_sample",
+    "customer_language",
+    "counterexample"
+  ],
+  "object_scope": {
+    "canonical_subject": "某城市某住宅项目",
+    "aliases": ["示例项目"],
+    "comparison_objects": ["同一购买任务下的示例竞品"],
+    "identity_boundary": "仅限本轮虚构公开样例，不关联任何真实项目"
+  },
+  "time_scope": "截至2026-09-01当前可见公开资料",
+  "geo_scope": "某城市核心改善竞争圈",
+  "downstream_destination": {
+    "products": [1, 2],
+    "judgment_refs": ["COMP-01", "BUYER-TASK-01", "SC-CANDIDATE-01"],
+    "allowed_uses": ["竞品发现", "客户语言", "反例检查", "事实候选"],
+    "blocked_uses": ["自动裁定直接竞品", "自动生成超级竞争力", "把社媒样本外推为总体比例"]
+  },
+  "acceptance_contract": {
+    "acceptance_mode": "hybrid",
+    "qualified_match_classes": ["direct", "supporting"],
+    "quality_criteria": ["对象身份闭合", "原文可回源", "支持与反例同时保留", "证据用途边界明确"],
+    "count_threshold": 4,
+    "diversity_requirements": {
+      "minimum_source_role_count": 2,
+      "minimum_project_or_brand_count": 2,
+      "maximum_qualified_items_per_project_or_brand": 2
+    },
+    "research_characteristics": [
+      "multiple_independent_queries",
+      "support_and_counterevidence_required",
+      "source_or_project_diversity_required",
+      "comparative_or_pattern_judgment",
+      "adaptive_extension_possible"
+    ]
+  },
+  "query_plan": {
+    "mode": "research_retrieval",
+    "plan_schema": "social_query_plan.v1",
+    "plan_version": "v1",
+    "channel_scope": ["public_web", "xhs"],
+    "frozen_queries": [
+      {
+        "query_id": "q01",
+        "exact_query_text": "某城市 示例项目 归家体验 入住后",
+        "object_identity": "某城市某住宅项目及同购买任务示例竞品",
+        "term_provenance": ["business_question", "customer_task", "counterevidence_required"],
+        "minimum_result_batches": 2,
+        "minimum_actual_opens": 2
+      }
+    ],
+    "simple_direct_retrieval_exemption": null
+  },
+  "incremental_policy": {
+    "proposal_allowed": true,
+    "execution_authorized": false,
+    "authorization_ref": null,
+    "maximum_incremental_batches": 0,
+    "time_limit_minutes": 0,
+    "cost_limit": null,
+    "minimum_marginal_information_gain": "low"
+  },
+  "stop_conditions": [
+    "达到质量、数量和来源多样性合同",
+    "边际信息增益降至none",
+    "触发登录、安全或不可读停止线",
+    "当前批次完成但增量尚未获下游授权"
+  ],
+  "authorization": "synthetic_fixture",
+  "status": "pending",
+  "portability_boundary": "no_shared_cwd_no_absolute_path_no_private_runtime_state"
+}

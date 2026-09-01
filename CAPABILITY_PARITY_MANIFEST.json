@@ -1,7 +1,7 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "p2_reasoning_harness_complete_parity_migration_in_progress_not_released",
+  "status": "p3_incremental_research_complete_cross_package_freeze_pending_not_released",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
     "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
@@ -41,6 +41,7 @@
     "upstream_request_schema": "residential.upstream_task.v0.2",
     "public_evidence_schema": "public_evidence_envelope.v1",
     "upstream_response_schema": "residential.upstream_response.v0.2",
+    "downstream_adoption_schema": "residential.upstream_adoption_receipt.v0.2",
     "shared_cwd_required": false,
     "absolute_path_dependency_allowed": false,
     "upstream_fulfilled_equals_downstream_accepted": false,
@@ -82,7 +83,7 @@
       "load_condition": "default_for_residential_research",
       "acceptance": "市场、区域、有效竞争圈和本案答案围绕当前项目递进，检索计划进入默认生产链",
       "status": "partial_upgrade_required",
-      "gap": "缺甲方级公开安全黄金报告和完整增量检索闭环"
+      "gap": "缺甲方级公开安全黄金报告"
     },
     {
       "id": "CAP-004",
@@ -102,11 +103,11 @@
       "domain": "incremental_research",
       "classification": "portable_adaptation",
       "source_authority_ids": ["public_channel_and_incremental_research", "formal_annexes"],
-      "public_targets": ["external-capabilities/README.md", "external-capabilities/upstream-task.schema.json", "external-capabilities/upstream-response.schema.json", "templates/附表A-上游检索任务与回传.md"],
+      "public_targets": ["external-capabilities/README.md", "external-capabilities/upstream-task.schema.json", "external-capabilities/upstream-response.schema.json", "external-capabilities/upstream-adoption-receipt.schema.json", "templates/附表A-上游检索任务与回传.md", "tools/production_core/validate_upstream_exchange.py", "fixtures/upstream-exchange", "tests/test_upstream_exchange.py"],
       "load_condition": "material_judgment_gap",
       "acceptance": "请求、首轮覆盖、增量批次、边际信息增益、停止线、gap和下游采用形成闭环",
-      "status": "partial_upgrade_required",
-      "gap": "当前Schema缺充分性、增量、证据冲突、来源角色和采用回执的完整字段"
+      "status": "implemented_current",
+      "gap": ""
     },
     {
       "id": "CAP-006",
@@ -226,8 +227,7 @@
       "domain": "cross_package_interface",
       "classification": "portable_adaptation",
       "source_authority_ids": ["public_channel_and_incremental_research"],
-      "public_targets": ["external-capabilities/upstream-task.schema.json", "external-capabilities/upstream-response.schema.json", "external-capabilities/README.md"],
-      "planned_public_targets": ["external-capabilities/cross-package-compatibility.json", "tests/test_cross_package_conformance.py"],
+      "public_targets": ["external-capabilities/upstream-task.schema.json", "external-capabilities/upstream-response.schema.json", "external-capabilities/upstream-adoption-receipt.schema.json", "external-capabilities/cross-package-compatibility.json", "external-capabilities/README.md", "tests/test_upstream_exchange.py"],
       "load_condition": "public_information_task_enabled",
       "acceptance": "两个独立工程通过版本化Schema往返，fulfilled与accepted分离，不共享cwd",
       "status": "cross_package_pending",
@@ -273,7 +273,6 @@
   "release_blockers": [
     "CAP-003",
     "CAP-004",
-    "CAP-005",
     "CAP-009",
     "CAP-010",
     "CAP-011",
@@ -282,5 +281,5 @@
     "CAP-015",
     "CAP-016"
   ],
-  "next_slice": "incremental_research_and_cross_package_receipts"
+  "next_slice": "cross_package_schema_freeze_then_client_report_and_gold_reference_separation"
 }

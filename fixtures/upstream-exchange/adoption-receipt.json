@@ -1,0 +1,42 @@
+{
+  "schema": "residential.upstream_adoption_receipt.v0.2",
+  "request_id": "RQ-PUBLIC-001",
+  "task_id": "TASK-PUBLIC-001",
+  "project_id": "PROJECT-PUBLIC-001",
+  "evidence_package": {
+    "schema": "public_evidence_envelope.v1",
+    "package_id": "EVIDENCE-PUBLIC-001",
+    "content_sha256": "9bd28d1cf7850ee7a1a117b87eab829b19d4d9dcf831018594f266e941f0eafd"
+  },
+  "upstream_status": "partial",
+  "downstream_acceptance": "accepted_with_conditions",
+  "accepted_items": [
+    {
+      "item_id": "ITEM-F1",
+      "evidence_role": "official_public_fact_candidate",
+      "allowed_uses": ["internal_fact_candidate", "source_backlink"],
+      "target_refs": ["FACT-CANDIDATE-01"],
+      "interpretation_boundary": "只作为内部事实候选，进入甲方正文前继续核对项目字段与当前时点"
+    },
+    {
+      "item_id": "ITEM-S1",
+      "evidence_role": "nonprobability_social_sample",
+      "allowed_uses": ["customer_language", "followup_research_lead"],
+      "target_refs": ["BUYER-TASK-01", "SC-CANDIDATE-01"],
+      "interpretation_boundary": "只说明一位公开表达者的体验与关注点，不代表总体态度、比例或项目硬事实"
+    }
+  ],
+  "rejected_items": [],
+  "unresolved_conflicts": ["ITEM-C1"],
+  "unresolved_gaps": ["ITEM-G1"],
+  "incremental_decision": {
+    "decision": "authorize_incremental",
+    "authorized_query_ids": ["q02-proposal"],
+    "reason": "当前证据可以进入候选层，但尚不足以稳定来源多样性与反例覆盖",
+    "limits": "仅执行一个增量批次；达到第二个独立来源或边际信息增益为none即停止"
+  },
+  "judgment_effect": "modifies",
+  "accepted_by": "residential_production_owner",
+  "accepted_at": "2026-09-01",
+  "machine_check_does_not_approve_business_quality": true
+}

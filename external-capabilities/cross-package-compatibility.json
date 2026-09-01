@@ -1,0 +1,34 @@
+{
+  "schema": "residential.public_information_compatibility.v0.2",
+  "status": "awaiting_upstream_freeze",
+  "request_contract": {
+    "schema": "residential.upstream_task.v0.2",
+    "path": "external-capabilities/upstream-task.schema.json"
+  },
+  "upstream_evidence_contract": {
+    "repository": "https://github.com/xiem-public-info/public-info-research-kit",
+    "schema": "public_evidence_envelope.v1",
+    "expected_path": "plugins/public-info-research-kit/schemas/public_evidence_envelope.v1.json",
+    "schema_sha256": null,
+    "hash_basis": "raw_file_bytes_sha256",
+    "golden_fixture_path": null,
+    "conformance_command": null,
+    "freeze_receipt": null
+  },
+  "response_contract": {
+    "schema": "residential.upstream_response.v0.2",
+    "path": "external-capabilities/upstream-response.schema.json"
+  },
+  "adoption_contract": {
+    "schema": "residential.upstream_adoption_receipt.v0.2",
+    "path": "external-capabilities/upstream-adoption-receipt.schema.json"
+  },
+  "boundaries": {
+    "shared_cwd_required": false,
+    "absolute_path_dependency_allowed": false,
+    "private_runtime_state_allowed": false,
+    "upstream_fulfilled_equals_downstream_accepted": false,
+    "upstream_may_adjudicate_competitor_value_anchor_or_sc": false,
+    "soft_evidence_may_be_promoted_to_hard_fact_without_bridge": false
+  }
+}

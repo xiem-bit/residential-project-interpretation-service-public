@@ -51,6 +51,7 @@ class CapabilityParityTest(unittest.TestCase):
         self.assertEqual(interface["upstream_request_schema"], "residential.upstream_task.v0.2")
         self.assertEqual(interface["public_evidence_schema"], "public_evidence_envelope.v1")
         self.assertEqual(interface["upstream_response_schema"], "residential.upstream_response.v0.2")
+        self.assertEqual(interface["downstream_adoption_schema"], "residential.upstream_adoption_receipt.v0.2")
         self.assertFalse(interface["shared_cwd_required"])
         self.assertFalse(interface["upstream_fulfilled_equals_downstream_accepted"])
         self.assertFalse(interface["upstream_may_adjudicate_competitor_value_anchor_or_sc"])
@@ -58,4 +59,3 @@ class CapabilityParityTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

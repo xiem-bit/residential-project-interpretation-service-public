@@ -14,7 +14,12 @@
       "capability": "authorized_upstream_evidence",
       "owner": "selected_external_owner",
       "task_schema": "external-capabilities/upstream-task.schema.json",
+      "evidence_schema": "public_evidence_envelope.v1",
       "response_schema": "external-capabilities/upstream-response.schema.json",
+      "adoption_schema": "external-capabilities/upstream-adoption-receipt.schema.json",
+      "compatibility_contract": "external-capabilities/cross-package-compatibility.json",
+      "verification": "python3 tools/production_core/validate_upstream_exchange.py --request REQUEST --envelope ENVELOPE --response RESPONSE --adoption ADOPTION",
+      "fulfilled_equals_accepted": false,
       "may_adjudicate_competitors_or_sc": false,
       "fallback": "return_partial_gap_or_stopped"
     },

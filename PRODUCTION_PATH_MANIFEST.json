@@ -1,7 +1,7 @@
 {
   "schema": "residential.production_path_manifest.v0.2",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "candidate_dynamic_enablement_implemented_harness_upgrade_in_progress",
+  "status": "candidate_incremental_research_and_adoption_loop_implemented_cross_package_freeze_pending",
   "semantic_core_role": "required_production_output_not_bootstrap_input",
   "entrypoints": {
     "human_or_agent": "START_HERE.md",
@@ -23,6 +23,15 @@
       "inputs": ["project-contract.md", "authorized_raw_inputs"],
       "outputs": ["fact-conflict-gap-register.json"],
       "gate": "project_identity_closed"
+    },
+    {
+      "id": "S1R",
+      "name": "external_research_and_evidence_adoption",
+      "condition": "material_judgment_gap_requires_external_owner",
+      "inputs": ["project-contract.md", "fact-conflict-gap-register.json", "authorized_research_scope"],
+      "outputs": ["residential.upstream_task.v0.2", "public_evidence_envelope.v1", "residential.upstream_response.v0.2", "residential.upstream_adoption_receipt.v0.2"],
+      "gate": "evidence_accepted_rejected_or_gap_preserved",
+      "return_to": ["authorized_incremental_batch", "input_freeze", "business_gap"]
     },
     {
       "id": "S2",
@@ -126,6 +135,15 @@
   "adapter_pass_cannot_satisfy_business_gate": true,
   "machine_validation_scope": "enabled_files_structure_references_states_and_veto_rules_only",
   "machine_pass_cannot_claim": ["strategic_quality", "human_business_accepted", "published", "adopted", "business_effect_observed"],
+  "external_research_contract": {
+    "request": "external-capabilities/upstream-task.schema.json",
+    "upstream_envelope": "public_evidence_envelope.v1",
+    "response": "external-capabilities/upstream-response.schema.json",
+    "adoption": "external-capabilities/upstream-adoption-receipt.schema.json",
+    "compatibility": "external-capabilities/cross-package-compatibility.json",
+    "validator": "tools/production_core/validate_upstream_exchange.py",
+    "fulfilled_equals_accepted": false
+  },
   "release_acceptance": {
     "scope": "package_level_not_per_project_blind_training",
     "protocol": "V0_2_RELEASE_SCOPE.md",

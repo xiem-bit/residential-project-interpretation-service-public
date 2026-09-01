@@ -7,6 +7,7 @@
 ```text
 原始材料与项目身份
 → 事实／冲突／缺口
+→ 按缺口形成上游任务、证据回传与采用／拒绝回执
 → 产物1竞争态势研究
 → 按需产物2购买决策研究
 → 统一业务语义核
@@ -73,6 +74,18 @@ python3 scripts/verify_production_run.py verification-tmp/my-production-run
 ```
 
 机器校验只证明：实际启用文件、字段、引用、状态、数量、成立检查和跨产物编号关系符合合同。它拥有否决权，但不能单独证明竞争结论专业或甲方接受；正式业务判断仍需专业语义审查，客户成果仍按任务完成真人验收。
+
+任务消费公开信息证据包时，再运行：
+
+```bash
+python3 tools/production_core/validate_upstream_exchange.py \
+  --request <request.json> \
+  --envelope <public-evidence-envelope.json> \
+  --response <response.json> \
+  --adoption <adoption-receipt.json>
+```
+
+该检查确认请求、证据、回传和采用回执没有丢失边界，不会替住宅生产 Owner 判断证据是否足以形成商业结论。
 
 ## 五、业务通过与载体通过分开记录
 

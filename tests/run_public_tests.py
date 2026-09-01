@@ -18,6 +18,7 @@ TEST_FILES = (
     "tools/product4/test_validate_product4_contract.py",
     "tests/test_business_gates_public.py",
     "tests/test_inference_firewall.py",
+    "tests/test_upstream_exchange.py",
     "tests/test_product4_xmind_public.py",
     "tests/test_rc1_contracts.py",
     "tests/test_production_path_v02.py",

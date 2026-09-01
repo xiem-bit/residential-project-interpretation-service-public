@@ -1,0 +1,31 @@
+{
+  "schema": "residential.upstream_response.v0.2",
+  "request_id": "RQ-PUBLIC-001",
+  "task_id": "TASK-PUBLIC-001",
+  "project_id": "PROJECT-PUBLIC-001",
+  "upstream_owner": "public_information_owner",
+  "status": "partial",
+  "evidence_envelope": {
+    "schema": "public_evidence_envelope.v1",
+    "package_id": "EVIDENCE-PUBLIC-001",
+    "content_sha256": "9bd28d1cf7850ee7a1a117b87eab829b19d4d9dcf831018594f266e941f0eafd",
+    "schema_sha256": null,
+    "transfer_mode": "inline",
+    "artifact_ref": null
+  },
+  "sufficiency": {
+    "acceptance_mode": "hybrid",
+    "evidence_sufficiency_status": "partially_sufficient",
+    "coverage_summary": "官方事实候选、单条真实公开表达、反例、冲突和缺口均已返回，来源多样性仍未达到合同",
+    "marginal_information_gain": "medium",
+    "executed_query_ids": ["q01"],
+    "proposed_incremental_query_ids": ["q02-proposal"],
+    "failure_attribution_complete": true
+  },
+  "negative_hits": ["NEG-HIT-01"],
+  "conflicts": ["ITEM-C1"],
+  "gaps": ["ITEM-G1"],
+  "stop_reason": "初始冻结查询完成，当前部分充分；未获增量授权，不执行增量提案",
+  "upstream_does_not_adjudicate_strategy": true,
+  "fulfilled_does_not_equal_accepted": true
+}

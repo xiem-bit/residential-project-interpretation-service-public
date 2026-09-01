@@ -85,6 +85,7 @@
 residential.upstream_task.v0.2
 → public_evidence_envelope.v1
 → residential.upstream_response.v0.2
+→ residential.upstream_adoption_receipt.v0.2
 ```
 
 接口必须保留 `request_id`、`project_id`、业务问题、判断缺口、证据、反例、冲突、gap 和停止原因。`fulfilled`只表示上游任务履行，不表示住宅工程已经接受；公开信息工程不裁定直接竞品、价值锚点或 SC。双方不依赖共享工作目录、相对路径或另一工程的内部实现。
@@ -132,4 +133,3 @@ P0以 `CAPABILITY_PARITY_MANIFEST.json`登记每项能力的当前公开状态�
 4. 匿名黄金参考与真人修订反馈；
 5. 产物 3、5 黄金载体；
 6. 自助安装、干净克隆和候选发行。
-

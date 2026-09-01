@@ -1,0 +1,144 @@
+{
+  "schema": "public_evidence_envelope.v1",
+  "package_id": "EVIDENCE-PUBLIC-001",
+  "task_id": "TASK-PUBLIC-001",
+  "request_id": "RQ-PUBLIC-001",
+  "project_id": "PROJECT-PUBLIC-001",
+  "subject": "某城市某住宅项目",
+  "release_version": "0.8.0-rc.1",
+  "upstream_status": "partial",
+  "downstream_acceptance": {
+    "status": "not_assessed",
+    "decided_by": null,
+    "reason": "上游只交付证据、负命中、冲突与缺口，是否采用由住宅生产Owner独立决定"
+  },
+  "request": {
+    "business_question": "哪些公开证据支持或反驳目标项目在有效竞争圈中的归家体验判断",
+    "requested_evidence": ["官方事实候选", "真实公开表达", "反例", "冲突", "缺口"],
+    "channel_scope": ["public_web", "xhs"],
+    "time_scope": "截至2026-09-01当前可见公开资料",
+    "geo_scope": "某城市核心改善竞争圈",
+    "usage_boundary": "内部研究候选，不直接升级为项目硬事实、总体比例或超级竞争力",
+    "stop_condition": "完成初始冻结查询；当前部分充分且增量尚未获授权"
+  },
+  "query_execution": {
+    "mode": "research_retrieval",
+    "plan_schema": "social_query_plan.v1",
+    "plan_version": "v1",
+    "acceptance_mode": "hybrid",
+    "evidence_sufficiency_status": "partially_sufficient",
+    "executed_query_ids": ["q01"],
+    "proposed_incremental_query_ids": ["q02-proposal"],
+    "adaptive_extension_authorized": false,
+    "result_batch_count": 2,
+    "actual_open_count": 2,
+    "failure_attribution_complete": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-OFFICIAL-01",
+      "channel": "public_web",
+      "source_role": "official_fact_source",
+      "source_strength": "primary_official",
+      "stable_pointer": "https://example.gov.cn/public/example-001",
+      "title": "某公开公示",
+      "publisher": "某政府部门",
+      "observed_at": "2026-09-01",
+      "discovery_mode": "known_url_or_direct",
+      "query_ref": null
+    },
+    {
+      "source_id": "SRC-SOCIAL-01",
+      "channel": "xhs",
+      "source_role": "owner_experience",
+      "source_strength": "soft",
+      "stable_pointer": "https://www.xiaohongshu.com/explore/example-note",
+      "title": "某项目公开体验笔记",
+      "publisher": "公开笔记作者",
+      "observed_at": "2026-09-01",
+      "discovery_mode": "query_results_discovery",
+      "query_ref": {
+        "query_id": "q01",
+        "exact_query_text": "某城市 示例项目 归家体验 入住后",
+        "plan_version": "v1",
+        "searcher_mode": "researcher",
+        "result_batch_count": 2,
+        "actual_open_count": 2
+      }
+    },
+    {
+      "source_id": "SRC-MEDIA-01",
+      "channel": "public_web",
+      "source_role": "media_narrative",
+      "source_strength": "visible_original",
+      "stable_pointer": "https://example.com/report-001",
+      "title": "某公开媒体报道",
+      "publisher": "某媒体",
+      "observed_at": "2026-09-01",
+      "discovery_mode": "known_url_or_direct",
+      "query_ref": null
+    }
+  ],
+  "items": [
+    {
+      "item_id": "ITEM-F1",
+      "evidence_class": "fact_candidate",
+      "status": "fulfilled",
+      "certainty": "candidate",
+      "original_claim": "官方公示确认了示例事项的公开发布日期与发布主体",
+      "source_refs": ["SRC-OFFICIAL-01"],
+      "usage_boundary": "可作内部官方事实候选，正式对外使用前仍需按字段复核",
+      "allowed_use": ["internal_fact_candidate", "source_backlink"],
+      "blocked_use": ["automatic_customer_claim"]
+    },
+    {
+      "item_id": "ITEM-S1",
+      "evidence_class": "soft_evidence",
+      "status": "fulfilled",
+      "certainty": "soft_signal",
+      "original_claim": "一条公开笔记认可归家体验，同时提出停车动线不便",
+      "source_refs": ["SRC-SOCIAL-01"],
+      "usage_boundary": "只作个人公开表达、客户语言和后续检索线索，不代表总体比例",
+      "allowed_use": ["customer_language", "followup_research_lead"],
+      "blocked_use": ["project_hard_fact", "market_generalization", "statistical_ratio"]
+    },
+    {
+      "item_id": "ITEM-C1",
+      "evidence_class": "conflict",
+      "status": "partial",
+      "certainty": "conflicted",
+      "original_claim": "官方公示与媒体报道对同一时间点的表述不一致",
+      "source_refs": ["SRC-OFFICIAL-01", "SRC-MEDIA-01"],
+      "conflict_refs": ["SRC-OFFICIAL-01", "SRC-MEDIA-01"],
+      "usage_boundary": "冲突未解前不得择一静默覆盖",
+      "allowed_use": ["conflict_tracking", "followup_verification"],
+      "blocked_use": ["single_source_final_claim"]
+    },
+    {
+      "item_id": "ITEM-G1",
+      "evidence_class": "gap",
+      "status": "gap",
+      "certainty": "gap",
+      "source_refs": [],
+      "gap_reason": "当前公开批次尚未找到第二个独立真实使用者来源",
+      "retry_condition": "住宅生产Owner授权增量查询，或提供新的具名公开来源",
+      "blocking_level": "non_blocking",
+      "usage_boundary": "只保留为来源多样性缺口，不写成全网没有",
+      "allowed_use": ["gap_tracking"],
+      "blocked_use": []
+    }
+  ],
+  "negative_hits": [
+    {
+      "negative_hit_id": "NEG-HIT-01",
+      "query_id": "q01",
+      "observed": "一个结果批次出现跨城市同名项目，已排除且不计入合格样本",
+      "source_refs": [],
+      "usage_boundary": "只说明本查询批次的身份漂移，不评价目标项目"
+    }
+  ],
+  "conflicts": ["ITEM-C1"],
+  "gaps": ["ITEM-G1"],
+  "stop_reason": "初始冻结查询完成，当前部分充分；未获增量授权，不执行增量提案",
+  "package_boundary": "上游履行状态不等于下游采用；软证据、负命中、冲突和缺口保持原层级"
+}
