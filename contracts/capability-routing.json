@@ -7,7 +7,7 @@
       "owner": "public_business_orchestrator",
       "entrypoint": "workflows/residential-production-orchestrator/SKILL.md",
       "verification": "python3 scripts/verify_production_run.py RUN_DIR",
-      "strategic_quality": "independent_blind_human_review_required",
+      "strategic_quality": "professional_semantic_review_and_task_appropriate_human_acceptance",
       "fallback": "return_to_research_or_emit_structured_gap"
     },
     {
@@ -23,14 +23,14 @@
       "owner": "carrier_adapter",
       "input_schema": "contracts/presentation_request.schema.json",
       "output_schema": "contracts/presentation_response.schema.json",
-      "can_satisfy_business_replication_gate": false,
+      "can_satisfy_business_acceptance": false,
       "fallback": "return_presentation_adapter_gap"
     },
     {
       "capability": "product5_implementation",
       "owner": "carrier_adapter",
       "business_input": "product5-interaction-blueprint.json",
-      "can_satisfy_business_replication_gate": false,
+      "can_satisfy_business_acceptance": false,
       "fallback": "return_web_adapter_gap"
     },
     {
@@ -38,14 +38,14 @@
       "owner": "public_core",
       "entrypoint": "scripts/verify_production_run.py",
       "scope": "structure_references_states_only",
-      "cannot_claim": "business_judgment_blind_review_pass"
+      "cannot_claim": "strategic_quality_or_human_business_accepted"
     },
     {
-      "capability": "business_replication_acceptance",
-      "owner": "independent_participant_and_blind_reviewer",
-      "protocol": "BUSINESS_COLD_START_PROTOCOL.md",
+      "capability": "release_package_acceptance",
+      "owner": "release_maintainer_and_human_acceptance_owner",
+      "protocol": "V0_2_RELEASE_SCOPE.md",
       "visual_carrier_required": false,
-      "fallback": "business_judgment_returned_for_research"
+      "fallback": "fix_release_package_and_repeat_clean_install_acceptance"
     }
   ]
 }

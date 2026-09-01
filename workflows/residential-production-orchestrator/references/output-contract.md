@@ -1,21 +1,24 @@
 # Output and state contract
 
-## Required run files
+## Base required run files
 
 1. `project-contract.md`
 2. `fact-conflict-gap-register.json`
 3. `product1-competition-study.md`
-4. `product2-buyer-decision-study.md`
-5. `semantic-core.json`
-6. `super-competitiveness-plan.json`
-7. `product-enablement-matrix.json`
-8. `product3-chapter2-contract.json`
-9. `product3-chapter3-contract.json`
-10. `ue-solution-handoff.json`
-11. `change-impact-registry.json`
-12. `production-receipt.json`
+4. `semantic-core.json`
+5. `super-competitiveness-plan.json`
+6. `product-enablement-matrix.json`
+7. `production-receipt.json`
 
-The three Markdown files begin with a JSON summary block. Keep the human-readable analysis below it; do not replace the report with JSON only.
+## Conditional files
+
+- Product 2: `product2-buyer-decision-study.md`
+- Product 3: `product3-chapter2-contract.json`, `product3-chapter3-contract.json`, `ue-solution-handoff.json`
+- Product 4: `product4-value-framework-contract.json`
+- Product 5: `product5-interaction-blueprint.json`
+- Material semantic change only: `change-impact-registry.json`
+
+Only enabled product files may exist. Disabled products are explained in the project contract and enablement matrix; they do not get empty placeholders. Markdown reports begin with a JSON summary block and retain human-readable analysis below it.
 
 ## Stable identifiers
 
@@ -35,9 +38,9 @@ Reuse an ID while its meaning remains stable. When meaning changes, create a new
 
 ## State order
 
-`rules_loaded → project_identity_closed → product1_complete → product2_complete_or_not_enabled → semantic_core_frozen → minimum_three_sc_pass → business_judgment_blind_review_pass → ue_solution_bridge_pass → cross_product_consistency_pass → production_path_replication_pass`
+`rules_loaded → project_identity_closed → product1_complete → semantic_core_frozen → minimum_three_sc_pass → cross_product_consistency_pass`
 
-The public machine verifier may confirm all structural states except `business_judgment_blind_review_pass` and `production_path_replication_pass`. Only the independent hidden-answer protocol may set those two to pass.
+Add `product2_complete`, `ue_solution_bridge_pass`, `product4_contract_pass` or `product5_blueprint_pass` only for enabled branches. The public machine verifier can reject structural and reference defects; it cannot set `human_business_accepted`, publication, adoption or business-effect states.
 
 ## Carrier separation
 

@@ -74,8 +74,8 @@ def validate_public_manifest(parity: dict[str, Any], authority: dict[str, Any]) 
 
     if parity.get("schema") != "residential.capability_parity_manifest.v1":
         errors.append("CAPABILITY_PARITY_MANIFEST.json: unexpected schema")
-    if parity.get("status") != "p0_frozen_parity_migration_in_progress_not_released":
-        errors.append("CAPABILITY_PARITY_MANIFEST.json: P0 status is not frozen migration state")
+    if parity.get("status") != "p1_dynamic_enablement_complete_parity_migration_in_progress_not_released":
+        errors.append("CAPABILITY_PARITY_MANIFEST.json: unexpected current migration state")
 
     principles = parity.get("principles")
     required_true = {
@@ -327,4 +327,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

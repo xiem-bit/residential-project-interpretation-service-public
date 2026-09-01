@@ -4,7 +4,7 @@
 {
   "schema": "residential.project_contract.v0.2",
   "task_id": "TUTORIAL-QC-001",
-  "mode": "hidden_answer_replay",
+  "mode": "tutorial",
   "business_question": "青岚澄境面对什么真实替代，怎样形成三条能够进入候选、赢得比较并促进行动的竞争武器，并落到住宅UE售前方案",
   "primary_audience": "虚构甲方营销与销售团队",
   "use_case": "住宅UE售前提案的业务输入",

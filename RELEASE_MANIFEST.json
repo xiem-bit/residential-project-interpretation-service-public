@@ -14,8 +14,8 @@
     ".DS_Store",
     "RELEASE_MANIFEST.json"
   ],
-  "file_count": 196,
-  "tree_sha256": "ab94c856b759edd2660b0bd51d05b3e452725c979002f807612ebe1d8c4b10b6",
+  "file_count": 190,
+  "tree_sha256": "0ef7eb960cd1431f774adbf792e8f11ff798aa98e50b6ad8d162335221320c09",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -29,23 +29,18 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 805,
-      "sha256": "c9a406b2c53dd547b7d331697ff9f6e9e5a2c5e682d89eb90127935f1d3e65f8"
+      "bytes": 809,
+      "sha256": "a651d2bacd1bbff5802ef756bbb60492b31722203f7c4f386a6e6d78ce3a654a"
     },
     {
       "path": "AGENT_RULES.md",
-      "bytes": 4380,
-      "sha256": "be0e74d256d74cd8192601f62ff182d650d33cc0e2a2cf546ae52ad7e0f70122"
+      "bytes": 4385,
+      "sha256": "ee28d5aee8a73498da6f6fe3c0429914cc454349bbb7de294f07558c9a8bbb76"
     },
     {
       "path": "A_CLASS_ALLOWLIST.txt",
       "bytes": 1315,
       "sha256": "574c563b0d5c46e221d2bf1471f8c6e76c972b4872446f4ec58a20a0459c20ef"
-    },
-    {
-      "path": "BUSINESS_COLD_START_PROTOCOL.md",
-      "bytes": 4047,
-      "sha256": "4a77372b25cf6a73c22cd3ce898c4d4e51cb180775d528b49242fe66031d682b"
     },
     {
       "path": "B_CLASS_PROMOTION_MANIFEST.json",
@@ -59,8 +54,8 @@
     },
     {
       "path": "CAPABILITY_PARITY_MANIFEST.json",
-      "bytes": 16549,
-      "sha256": "90c91f387710818f7a79cd75b12d0b88b779510563f6ba431b7745a8930ee48a"
+      "bytes": 16323,
+      "sha256": "4e4927d3902e914bee3eeedf5290e2bd046374b8400227ff32c0a917cfaf99e7"
     },
     {
       "path": "COLD_START_PROTOCOL.md",
@@ -84,13 +79,13 @@
     },
     {
       "path": "PRODUCTION_PATH_MANIFEST.json",
-      "bytes": 4914,
-      "sha256": "073f6f28a8d4e6431803cbac8cc27d98be6a867e76928b442f082b29b01123f6"
+      "bytes": 5223,
+      "sha256": "a9569b99f4f189387ef34cd00214fcb730b56129f2a31966d70115f8cc92cbce"
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
-      "bytes": 3573,
-      "sha256": "be08cac0ab29786f72705383fcfe0fbc126cd196ae7091ead9f0aeafea387142"
+      "bytes": 3480,
+      "sha256": "ee425e6fff5108689c96c6b71cce407e702f0084cda6c29eca379ab4895cdd6b"
     },
     {
       "path": "RC1_E2E_VERIFICATION.json",
@@ -104,8 +99,8 @@
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 2403,
-      "sha256": "c453e273860e5635731e6f2935609ef8e43a9af4ac72da18d5718b983c1b2ef9"
+      "bytes": 2546,
+      "sha256": "2899d8946211cac63aeafe8f5a88a1f2ba976dd6e2e8df547050a023b2ec7fd8"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
@@ -129,8 +124,8 @@
     },
     {
       "path": "START_HERE.md",
-      "bytes": 4283,
-      "sha256": "95c5c021ac90acafc1994c4373df8bf79e74716dedd772b7f0afcc2594110630"
+      "bytes": 4320,
+      "sha256": "0abad08a619b94504ea99e36c96f144b78baaacf43369623e9bfbf481d82cf2a"
     },
     {
       "path": "THIRD_PARTY_LICENSES.json",
@@ -149,8 +144,8 @@
     },
     {
       "path": "V0_2_CANDIDATE_VERIFICATION.json",
-      "bytes": 3231,
-      "sha256": "8799f3d4f94b71876c6ff308df2dbb4610640dac9fbd0675c506c8b596fd3751"
+      "bytes": 3200,
+      "sha256": "b799bae2d62117c553b51d11dc3710c50723c1a98b79c5eedc08d1af45acf247"
     },
     {
       "path": "V0_2_RELEASE_SCOPE.md",
@@ -164,8 +159,8 @@
     },
     {
       "path": "adapters/codex/README.md",
-      "bytes": 322,
-      "sha256": "82178cf7c81bd76b538db8295ef48507165446b21a9f13eca34d244dae2568ae"
+      "bytes": 354,
+      "sha256": "7a5f56e0199ced2962e356ef6f49810c74474e1698f1e00dd5eede68d56e2d14"
     },
     {
       "path": "adapters/generic/README.md",
@@ -179,8 +174,8 @@
     },
     {
       "path": "adapters/presentation/README.md",
-      "bytes": 395,
-      "sha256": "1645431a4bbd8d28c267211bb0c849117afaa5cac4df69fa2b3e864d27a0e79e"
+      "bytes": 404,
+      "sha256": "ecce3f642452401bf252986c4c8adb49870b92119b1f716fd470425a1e622b6c"
     },
     {
       "path": "adapters/web/README.md",
@@ -209,8 +204,8 @@
     },
     {
       "path": "contracts/capability-routing.json",
-      "bytes": 2033,
-      "sha256": "62f364af5c5b2526848b06faa82d401949e62b0d65de0157331d22cd0d7293e4"
+      "bytes": 2061,
+      "sha256": "a554140216fe29c53aa9a5655303aad68970ca785cfd85b78a3f9c54c78786c2"
     },
     {
       "path": "contracts/delivery_receipt.schema.json",
@@ -234,18 +229,18 @@
     },
     {
       "path": "contracts/住宅竞争力方法与生产合同.md",
-      "bytes": 3924,
-      "sha256": "49b276f14e329fcf0c38b78dcda641e588a1208e33bdb266ca4fa7b4b0939789"
+      "bytes": 4075,
+      "sha256": "a9d9e011d5dc87bfa67da0c484f3fbaac3144187aad475c5144bcc5ed45c2f22"
     },
     {
       "path": "core/00-权威生产路径.md",
-      "bytes": 3549,
-      "sha256": "20bd82c9c84b7a5310299220b390b526fdcdf118ff6e647973eaf7dd642a9e99"
+      "bytes": 3681,
+      "sha256": "fd0d711325bb144ad5fd7bbbcf67f838ea070fd2620797e67c6113ecfdf14a51"
     },
     {
       "path": "core/01-项目任务与输入治理.md",
-      "bytes": 2605,
-      "sha256": "c65630434f4365b5dd0574e427dd19b9998e1085fc34520e3fe4a6c57a0b4122"
+      "bytes": 2635,
+      "sha256": "0555981337595f6a00e8863e1d58844baf4aef9ddc254800bdf8befed7425764"
     },
     {
       "path": "core/02-产物1竞争态势研究.md",
@@ -254,8 +249,8 @@
     },
     {
       "path": "core/03-产物2购买决策研究.md",
-      "bytes": 1889,
-      "sha256": "fcd32f9f6a22fff5dd80a189c80caab77410ce427a6fd75ac3cc4aa5bf24efd6"
+      "bytes": 1839,
+      "sha256": "ec35d24ddd0f6333551759e2e8bf720551e2f30e065e9f64717e90006b0321b9"
     },
     {
       "path": "core/04-统一语义核与超级竞争力.md",
@@ -284,33 +279,8 @@
     },
     {
       "path": "core/09-变更回写与重投影.md",
-      "bytes": 1724,
-      "sha256": "208bff8cd50601b744fd26d5105ab263b191b5c1cc51fd230212684f563884c3"
-    },
-    {
-      "path": "evaluation/hidden-answer/README.md",
-      "bytes": 837,
-      "sha256": "888d0a5838082c0e993b21362e1bb4f8c80ca0674e797aef784f80fd19a680e5"
-    },
-    {
-      "path": "evaluation/hidden-answer/observation.template.json",
-      "bytes": 970,
-      "sha256": "1398625cd5ca68f3c75f0c9840adc589ce17b9a1f452989fc8a1534e7a84a945"
-    },
-    {
-      "path": "evaluation/hidden-answer/review.template.json",
-      "bytes": 826,
-      "sha256": "b3e8e29ea6ffde5664a04464f053b2b5a9384d237b591d8fca3e257ef73e4c6f"
-    },
-    {
-      "path": "evaluation/hidden-answer/rubric.json",
-      "bytes": 3085,
-      "sha256": "608ddac869756919fc3c5df623c6fe9ed3e89f55b19f69d04ba1f5030c902946"
-    },
-    {
-      "path": "evaluation/hidden-answer/task.template.md",
-      "bytes": 1023,
-      "sha256": "f295fd961342d0364f807214720b441f7e72f9cd62e0f6b6495500f8c2680af9"
+      "bytes": 1796,
+      "sha256": "4d69f48ffa4fdf0e7c0111b2aa425f3c0eda4dce7cc0924db9f94bf7d204b6a9"
     },
     {
       "path": "examples/fictional-qinglan-chengjing/README.md",
@@ -394,8 +364,8 @@
     },
     {
       "path": "examples/production-path-tutorial/README.md",
-      "bytes": 875,
-      "sha256": "00e223ed420e69d2298f469b9afd5e755d7dee91843d48e1ce1ccb9bc3165453"
+      "bytes": 917,
+      "sha256": "66b648ac4f3bc500d53ce2295fee5636a44de9ae2d01d9fc6c476e8f3583d95d"
     },
     {
       "path": "examples/production-path-tutorial/expected/change-impact-registry.json",
@@ -439,18 +409,18 @@
     },
     {
       "path": "examples/production-path-tutorial/expected/production-receipt.json",
-      "bytes": 1435,
-      "sha256": "f3dc6cfd25dc790a062cb98d360002188a31afefeb7860748c62473c196b527a"
+      "bytes": 1016,
+      "sha256": "12feb7703fea8b1ebb85feee88e43dfbe8f58460fe9d93724b9035a3b302e166"
     },
     {
       "path": "examples/production-path-tutorial/expected/project-contract.md",
-      "bytes": 3131,
-      "sha256": "a9e104894e089806ab7cc4881c47ffa397ef3e7c9bfd064703ac68c1c23eaca0"
+      "bytes": 3119,
+      "sha256": "82566aeaec8491e89db6369eb48b81d91c371e976deb110cde012bd8cc753f1d"
     },
     {
       "path": "examples/production-path-tutorial/expected/semantic-core.json",
-      "bytes": 3018,
-      "sha256": "3fa5da166238a84fee1dec0b1b36a7cba04fd7d20a14b770d00bbe95ba567242"
+      "bytes": 3006,
+      "sha256": "908e377a8314c9267ec0e142a23b89c303109caefd38f3d32941ad016aa34a73"
     },
     {
       "path": "examples/production-path-tutorial/expected/super-competitiveness-plan.json",
@@ -569,13 +539,13 @@
     },
     {
       "path": "schemas/production-receipt.schema.json",
-      "bytes": 1246,
-      "sha256": "1a4e6597d26e452d693d4e9caad858b1f8cabb0e4278b21664fb9dfedf9049af"
+      "bytes": 1025,
+      "sha256": "cbb4d782fe98968e6f38e900f43ab972375828e652a01c87afdfd2fc97da3f51"
     },
     {
       "path": "schemas/project-contract.schema.json",
-      "bytes": 1939,
-      "sha256": "4e2089f6f437e470370b36dacbe29c1171d6a6cc5330fd48e3cf336a57d95375"
+      "bytes": 1927,
+      "sha256": "dcf9e2481b3af42abb550f99128de17bfdc99660fd5d5273ddd942c898c50e05"
     },
     {
       "path": "schemas/semantic-core.schema.json",
@@ -609,8 +579,8 @@
     },
     {
       "path": "scripts/init_production_run.py",
-      "bytes": 2261,
-      "sha256": "7121da603535d6783dcd2167736ae71ef7a3547e314c135ee76edb445dc08c16"
+      "bytes": 5577,
+      "sha256": "990ebb1c8da27db9e92b6d062d7934e7789cb5cb29af9b7d1b5909cf1869b2ec"
     },
     {
       "path": "scripts/prepare_external_cold_start.py",
@@ -624,8 +594,8 @@
     },
     {
       "path": "scripts/verify_capability_parity.py",
-      "bytes": 13546,
-      "sha256": "0518160db98e1bdda9eb693e17171605e3bec142043fc1b295750c991441d461"
+      "bytes": 13561,
+      "sha256": "b010a794c2589f0cb746f50cb5657ae0c6f18d1a0cc8ffa3570692f34259877f"
     },
     {
       "path": "scripts/verify_external_cold_start.py",
@@ -634,8 +604,8 @@
     },
     {
       "path": "scripts/verify_production_run.py",
-      "bytes": 1234,
-      "sha256": "5cfaa524e518a7bf31b8d2adb9ce71e6d8d616345e01bc4e4fd0276102a239b0"
+      "bytes": 1116,
+      "sha256": "656f5d501cbfa049347e0e4b611f13f559717beee510ff50a3e9266342f62b1d"
     },
     {
       "path": "scripts/verify_revision_tutorial.py",
@@ -659,8 +629,8 @@
     },
     {
       "path": "templates/产物2购买决策研究.template.md",
-      "bytes": 1404,
-      "sha256": "861b9cfd4e5f14e9807e6372d3ee096a1403b9c67113db79ddecc3970da43161"
+      "bytes": 1394,
+      "sha256": "b650a989104173db97368571ac06e0f800ca4a0662a195e2ce25416f699e162d"
     },
     {
       "path": "templates/产物3第三章UE合同.template.json",
@@ -694,8 +664,8 @@
     },
     {
       "path": "templates/产物启用矩阵.template.json",
-      "bytes": 1119,
-      "sha256": "f7fd73f19c4f79746c99c20085b4363a8fd2345c1dcd7a6eb44e6c0964aa1084"
+      "bytes": 998,
+      "sha256": "552c717be181ee8acc304458796d5a010742199f3ef4319b5ccadb967b7d1cbf"
     },
     {
       "path": "templates/变更影响登记表.template.json",
@@ -704,18 +674,18 @@
     },
     {
       "path": "templates/生产回执.template.json",
-      "bytes": 1213,
-      "sha256": "b31c979f1c6ff5d22397a1d5dc051b2b475dbda9d9f7b2e5f5b94351718980fb"
+      "bytes": 753,
+      "sha256": "76d9d88c491b8cde5d3042c624992529d8747f467be7a64d7813162f300ab1bc"
     },
     {
       "path": "templates/真实项目有效任务合同.md",
-      "bytes": 2537,
-      "sha256": "c28f9a644d59e275a978d0c2c281d35e581cd2ccd07004d8f753902f853348d7"
+      "bytes": 2659,
+      "sha256": "cf62916f8d7f236d9b0f4d01e2f270bb755f33263b7b262f7b15bbfcd62f3b2f"
     },
     {
       "path": "templates/统一语义核.template.json",
-      "bytes": 1592,
-      "sha256": "9ee4126e8b54b20ec5fe92649fe2314b9fb52520e4279f34314679c2e49f0131"
+      "bytes": 1556,
+      "sha256": "12eb97452713460c6bc6d061a195d0153a0446a11e4bba92ea6b3cebc65ef4c0"
     },
     {
       "path": "templates/超级竞争力与制作规划.template.json",
@@ -739,8 +709,8 @@
     },
     {
       "path": "tests/run_public_tests.py",
-      "bytes": 1672,
-      "sha256": "1dba789e2943c6d73b5412b4a6b4d9abadbe595532a03a62891a2639859ea154"
+      "bytes": 1622,
+      "sha256": "0ce7f727ab8ee21232ea185caf2c864e493c52317a7065b53fbee47f564f9a15"
     },
     {
       "path": "tests/test_business_gates_public.py",
@@ -764,13 +734,13 @@
     },
     {
       "path": "tests/test_production_path_v02.py",
-      "bytes": 8900,
-      "sha256": "8e1a1a96ce74c635c2b000d5e758be042363288aa2d61c95082d4b8df83c4805"
+      "bytes": 9059,
+      "sha256": "914a843c8ef629d21ac77e22353011a834e582443259c916b4762aee311123a4"
     },
     {
       "path": "tests/test_public_release_state.py",
-      "bytes": 5184,
-      "sha256": "fff6744841e1789bc98141ad434c8308e4574be16c603b0dfa6d1cf601eca72d"
+      "bytes": 4957,
+      "sha256": "2e3514d2e3327e6fb1eeb15daa214bb90039ac1ef13d643638f67fc3c8fc44cf"
     },
     {
       "path": "tests/test_rc1_contracts.py",
@@ -909,18 +879,18 @@
     },
     {
       "path": "tools/production_core/cli.py",
-      "bytes": 699,
-      "sha256": "5f79484478929cfd3c1c03340db517eece30232e54ea5ae9c1f26e959e5881a5"
+      "bytes": 690,
+      "sha256": "8d43c9627e284817047ce3d1ffef00ec4e624e2cc22d564484192d8d49044242"
     },
     {
       "path": "tools/production_core/common.py",
-      "bytes": 34901,
-      "sha256": "b8af68ee278014d1584688e279df6e8abbb2d8092b01f444ef1276abc379c2b9"
+      "bytes": 35061,
+      "sha256": "a14c02b6f74033ee49b6139ff3f76c43df11a2a6dc08feb401f7590f50bb63d1"
     },
     {
       "path": "tools/production_core/validate_cross_product_consistency.py",
-      "bytes": 868,
-      "sha256": "c6187a1122a9898b14cca713a8f65aea7a1a9c0c7c9131cfba06bfcae7a7083d"
+      "bytes": 775,
+      "sha256": "f82b34e5fed923750535717bc1d8b0fc91c5c331af0521883ca37b5de3c8fbd4"
     },
     {
       "path": "tools/production_core/validate_product1.py",
@@ -979,8 +949,8 @@
     },
     {
       "path": "workflows/residential-production-orchestrator/SKILL.md",
-      "bytes": 4448,
-      "sha256": "7c4a57d9b53d9fe816bd5924109e783262953edd680641379a6b132d9a0cf2b3"
+      "bytes": 4669,
+      "sha256": "332144ac9d55a0cfbad0e453427d602964ef0f1dc331f052be99b2f455f7bc48"
     },
     {
       "path": "workflows/residential-production-orchestrator/agents/openai.yaml",
@@ -989,13 +959,13 @@
     },
     {
       "path": "workflows/residential-production-orchestrator/references/output-contract.md",
-      "bytes": 1787,
-      "sha256": "45b12590bc2e6936c29550170bf3735fd35c74c75335a0d71c76313d6056d964"
+      "bytes": 2003,
+      "sha256": "c8cc52a7281102e91e993de00602f2d332a892138bd72beb66fe89a4a190d30f"
     },
     {
       "path": "workflows/residential-production-orchestrator/references/routing.md",
-      "bytes": 1700,
-      "sha256": "ada2e9729672e8197e5a16b069a0d7646b3f3fa8b6ed3441c144dae11514f08c"
+      "bytes": 1718,
+      "sha256": "208aa2fd9612878262b479ed2d2ed39630fee56fa17a540f780cb67aa74430ca"
     }
   ]
 }

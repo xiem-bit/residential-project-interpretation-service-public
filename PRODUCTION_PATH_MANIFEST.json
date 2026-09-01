@@ -1,7 +1,7 @@
 {
   "schema": "residential.production_path_manifest.v0.2",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "candidate_business_cold_start_pending",
+  "status": "candidate_dynamic_enablement_implemented_harness_upgrade_in_progress",
   "semantic_core_role": "required_production_output_not_bootstrap_input",
   "entrypoints": {
     "human_or_agent": "START_HERE.md",
@@ -35,14 +35,15 @@
     {
       "id": "S3",
       "name": "product2_buyer_decision_study",
+      "condition": "product2_enabled",
       "inputs": ["product1-competition-study.md", "authorized_customer_inputs"],
       "outputs": ["product2-buyer-decision-study.md"],
-      "gate": "product2_complete_or_not_enabled"
+      "gate": "product2_complete"
     },
     {
       "id": "S4",
       "name": "unified_semantic_core",
-      "inputs": ["project-contract.md", "product1-competition-study.md", "product2-buyer-decision-study.md"],
+      "inputs": ["project-contract.md", "product1-competition-study.md", "enabled_upstream_products"],
       "outputs": ["semantic-core.json"],
       "gate": "semantic_core_frozen"
     },
@@ -71,61 +72,63 @@
     },
     {
       "id": "S8",
-      "name": "product4_and_product5_projection",
+      "name": "product4_or_product5_projection",
       "condition": "product4_or_product5_enabled",
-      "inputs": ["semantic-core.json", "ue-solution-handoff.json", "product-enablement-matrix.json"],
-      "outputs": ["optional_product4_contract", "optional_product5_blueprint"],
-      "gate": "cross_product_consistency_pass"
+      "inputs": ["semantic-core.json", "super-competitiveness-plan.json", "enabled_upstream_products"],
+      "outputs": ["enabled_product4_or_product5_files"],
+      "gate": "enabled_branch_contract_pass"
     },
     {
       "id": "S9",
       "name": "change_control_and_reprojection",
+      "condition": "material_semantic_change_occurred",
       "inputs": ["new_fact_or_decision", "current_semantic_version"],
       "outputs": ["change-impact-registry.json", "updated_affected_outputs"],
       "gate": "cross_product_consistency_pass"
-    },
-    {
-      "id": "S10",
-      "name": "independent_business_review",
-      "inputs": ["frozen_blind_output", "blind_review_rubric"],
-      "outputs": ["production-receipt.json"],
-      "gate": "production_path_replication_pass",
-      "human_review_required": true
     }
   ],
-  "required_run_files": [
+  "base_required_run_files": [
     "project-contract.md",
     "fact-conflict-gap-register.json",
     "product1-competition-study.md",
-    "product2-buyer-decision-study.md",
     "semantic-core.json",
     "super-competitiveness-plan.json",
     "product-enablement-matrix.json",
-    "product3-chapter2-contract.json",
-    "product3-chapter3-contract.json",
-    "ue-solution-handoff.json",
-    "change-impact-registry.json",
     "production-receipt.json"
   ],
-  "business_status_order": [
+  "conditional_product_files": {
+    "2": ["product2-buyer-decision-study.md"],
+    "3": ["product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json"],
+    "4": ["product4-value-framework-contract.json"],
+    "5": ["product5-interaction-blueprint.json"]
+  },
+  "optional_process_files": {
+    "material_semantic_change": ["change-impact-registry.json"]
+  },
+  "disabled_product_file_policy": "must_be_absent",
+  "base_business_status_order": [
     "rules_loaded",
     "project_identity_closed",
     "product1_complete",
-    "product2_complete_or_not_enabled",
     "semantic_core_frozen",
     "minimum_three_sc_pass",
-    "business_judgment_blind_review_pass",
-    "ue_solution_bridge_pass",
-    "cross_product_consistency_pass",
-    "production_path_replication_pass"
+    "cross_product_consistency_pass"
   ],
+  "conditional_business_statuses": {
+    "2": "product2_complete",
+    "3": "ue_solution_bridge_pass",
+    "4": "product4_contract_pass",
+    "5": "product5_blueprint_pass"
+  },
   "adapter_status_namespace": "adapter_statuses",
   "adapter_pass_cannot_satisfy_business_gate": true,
-  "evaluation": {
-    "protocol": "BUSINESS_COLD_START_PROTOCOL.md",
-    "rubric": "evaluation/hidden-answer/rubric.json",
+  "machine_validation_scope": "enabled_files_structure_references_states_and_veto_rules_only",
+  "machine_pass_cannot_claim": ["strategic_quality", "human_business_accepted", "published", "adopted", "business_effect_observed"],
+  "release_acceptance": {
+    "scope": "package_level_not_per_project_blind_training",
+    "protocol": "V0_2_RELEASE_SCOPE.md",
     "private_holdout_included": false,
-    "machine_validation_scope": "structure_references_states_only",
-    "strategic_quality_requires_blind_human_review": true
+    "fresh_install_full_public_safe_project_required": true,
+    "human_acceptance_required": true
   }
 }

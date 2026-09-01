@@ -2,25 +2,21 @@
   "schema": "residential.production_receipt.v0.2",
   "project_id": "fictional-qinglan-chengjing-production",
   "run_mode": "tutorial",
-  "candidate_commit": "source-tree-manifest",
-  "input_manifest_sha256": "4eea6ff233982587355bd973bc5376d24c43f6998a1b615a3f35c4d4cd811c75",
-  "output_manifest_sha256": "99c2330502b42d8ebd29d255d143bb050b5299a57dd2f2ef33e7d9f02b40e83a",
-  "content_guidance_count": 0,
+  "enabled_products": [1, 2, 3, 5],
   "business_statuses": {
     "rules_loaded": "pass",
     "project_identity_closed": "pass",
     "product1_complete": "pass",
-    "product2_complete_or_not_enabled": "pass",
+    "product2_complete": "pass",
     "semantic_core_frozen": "pass",
     "minimum_three_sc_pass": "pass",
-    "business_judgment_blind_review_pass": "not_run",
     "ue_solution_bridge_pass": "pass",
     "cross_product_consistency_pass": "pass",
-    "production_path_replication_pass": "not_run"
+    "product5_blueprint_pass": "pass"
   },
   "machine_validation": {"status": "pass", "scope": "structure_references_states_only", "errors": []},
-  "blind_review": {"status": "not_run", "reviewer_independent": false, "score": null, "rubric": "evaluation/hidden-answer/rubric.json", "review_file": null, "observation_file": null},
+  "human_review": {"status": "not_run", "decision": null, "notes": ["公开教程仅证明结构与业务链示范，不冒充真人接受"]},
   "adapter_statuses": {"presentation": "not_requested", "web": "not_requested", "publication": "not_authorized"},
-  "gaps": ["Tutorial reference is not an independent hidden-answer result", "Formal visual and real client effects are outside this run"],
+  "gaps": ["Formal visual and real client effects are outside this run"],
   "final_status": "tutorial_reference_complete"
 }

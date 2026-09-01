@@ -1,7 +1,8 @@
 {
   "schema": "residential.v0_2_candidate_verification.v0.1",
   "verified_at": "2026-08-26",
-  "status": "local_candidate_pass_external_business_cold_start_pending",
+  "status": "superseded_pre_parity_snapshot_not_current_release_gate",
+  "superseded_by": ["CAPABILITY_PARITY_CONTRACT.md", "CAPABILITY_PARITY_MANIFEST.json", "RELEASE_STATUS.md"],
   "private_source_baseline": {
     "commit": "21a68a543ee7322a0a2532a0c254ecf211d1a878",
     "main_matches_origin_main": true,
@@ -58,14 +59,8 @@
     "change_writeback_and_targeted_reprojection": "pass",
     "business_and_carrier_status_separation": "pass"
   },
-  "remaining_release_gates": {
-    "independent_participant": "not_run",
-    "zero_content_guidance": "not_run",
-    "private_hidden_answer_blind_review": "not_run",
-    "change_probe": "not_run",
-    "production_path_replication_pass": "not_run",
-    "v0_2_0_rc_1_tag": "not_created"
-  },
+  "retired_gate_family": "platform_teaching_blind_evaluation_removed_from_current_release",
+  "current_release_gate_pointer": "V0_2_RELEASE_SCOPE.md",
   "explicit_non_claims": [
     "tutorial machine pass is not independent strategic-quality proof",
     "presentation or web adapter pass is not business-path proof",

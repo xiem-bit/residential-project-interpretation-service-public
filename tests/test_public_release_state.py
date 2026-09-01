@@ -40,7 +40,6 @@ class PublicReleaseStateTest(unittest.TestCase):
         self.assertEqual(manifest["public_release"]["latest_published_tag"], "v0.1.0-rc.1")
         self.assertFalse(manifest["public_release"]["candidate_tag_created"])
         self.assertFalse(manifest["business_acceptance"]["presentation_or_web_required"])
-        self.assertFalse(manifest["business_acceptance"]["independent_blind_review_required"])
         self.assertFalse(manifest["business_acceptance"]["workbuddy_style_blind_training_included"])
         self.assertTrue(manifest["business_acceptance"]["fresh_install_full_project_acceptance_required"])
         self.assertEqual(manifest["capability_parity_contract"], "CAPABILITY_PARITY_CONTRACT.md")
@@ -54,16 +53,10 @@ class PublicReleaseStateTest(unittest.TestCase):
             for relative in mapping["public"]:
                 self.assertTrue((ROOT / relative).exists(), relative)
 
-    def test_public_evaluation_contains_protocol_not_private_holdout(self) -> None:
-        files = {
-            path.relative_to(ROOT / "evaluation" / "hidden-answer").as_posix()
-            for path in (ROOT / "evaluation" / "hidden-answer").rglob("*")
-            if path.is_file()
-        }
-        self.assertEqual(
-            files,
-            {"README.md", "task.template.md", "rubric.json", "observation.template.json", "review.template.json"},
-        )
+    def test_current_release_has_no_hidden_answer_training_tree(self) -> None:
+        self.assertFalse((ROOT / "evaluation" / "hidden-answer").exists())
+        manifest = json.loads((ROOT / "PUBLIC_CORE_MANIFEST.json").read_text(encoding="utf-8"))
+        self.assertNotIn("evaluation/hidden-answer", manifest["v0_2_public_roots"])
 
     def test_v02_roots_have_no_absolute_user_paths(self) -> None:
         manifest = json.loads((ROOT / "PUBLIC_CORE_MANIFEST.json").read_text(encoding="utf-8"))

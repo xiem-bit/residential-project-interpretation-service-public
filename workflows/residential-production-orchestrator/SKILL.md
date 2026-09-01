@@ -19,7 +19,7 @@ Read, in order:
 4. `core/00-权威生产路径.md`
 5. the current raw inputs
 
-Then declare exactly one mode: `real_project_delivery`, `hidden_answer_replay`, or `non_research_task`. For a tutorial, make one independent attempt before opening `expected/`.
+Then declare exactly one mode: `real_project_delivery`, `non_research_task`, or `tutorial`. Public-safe tutorial answers are production references, not hidden tests; never copy their project facts into a real project.
 
 Use [routing.md](references/routing.md) to load only the stage-specific specifications. Use [output-contract.md](references/output-contract.md) for filenames, identifiers and status transitions.
 
@@ -28,15 +28,15 @@ Use [routing.md](references/routing.md) to load only the stage-specific specific
 1. Build `project-contract.md`. Close project identity, task boundary, audience, usage, authorized inputs, enabled products, current decisions and superseded decisions.
 2. Build `fact-conflict-gap-register.json`. Separate facts, limited observations, judgments, assumptions, gaps, conflicts and `cannot_infer`.
 3. Produce Product 1. Discover candidate competitors through physical space, perception shelf and purchase-task substitution; then adjudicate roles with lifecycle, product, area/price, sales window and purchase task. Acknowledge why each opponent is chosen.
-4. Produce Product 2 when buyer decisions or UE routes need deeper work. If not enabled, keep the required file and state the business reason plus the equivalent source.
+4. Produce Product 2 when an independent buyer report, buyer decisions or UE routes need deeper work. If not enabled, record the reason in the project contract and enablement matrix; do not create an empty Product 2 file.
 5. Generate `semantic-core.json` from the upstream outputs. Do not import an example semantic core or let a carrier adapter invent it.
 6. Establish three to four mechanism-distinct SCs. Each must include substantive rationale and references for purchase impact, bounded unique-or-best, enemy relation, project support and UE provability. Together cover entering consideration, winning comparison and prompting action.
 7. Decide Product 1–5 enablement and high-cost admission. Fewer than three established SCs means return to research; do not continue to project-specific formal carriers.
 8. If Product 3 is enabled, derive Chapter 2 from customer choice to value anchor, then map every SC in Chapter 3 to customer gain, project facts, competitive relation, purchase task, UE scenes and system modules. Produce the UE handoff.
-9. If Product 4 or 5 is enabled, project the same stable IDs into a single business tree or interaction blueprint. Do not create new project value downstream.
-10. When material facts or decisions change, update upstream authority first and reproject only affected downstream references.
+9. If Product 4 or 5 is enabled, project the same stable IDs into a single business tree or interaction blueprint. Do not create new project value downstream. Do not create files for disabled products.
+10. When material facts or decisions change, update upstream authority first, create the change-impact registry, and reproject only affected downstream references. Do not create a no-op registry for a new unchanged run.
 11. Run `python3 scripts/verify_production_run.py <run-dir>`. Treat the result as a machine contract check only.
-12. For a replication claim, follow `BUSINESS_COLD_START_PROTOCOL.md`. Require an independent participant, zero content guidance and blind human review. Keep all adapter statuses separate.
+12. Complete professional semantic review and the task-appropriate human acceptance. Keep machine, human, adapter, publication, adoption and business-effect states separate.
 
 ## Return conditions
 
@@ -52,4 +52,4 @@ Pause only the affected branch for multiple equally valid strategic directions, 
 - Turning an area or unit-size band directly into a family-stage claim.
 - Using a feature list, slogan or UE interaction as an established SC without all five checks.
 - Letting a presentation or web adapter rewrite frozen business semantics.
-- Claiming blind-review pass from machine validation, author self-review or same-run visual output.
+- Claiming strategic quality, human acceptance or business effect from machine validation or visual output.

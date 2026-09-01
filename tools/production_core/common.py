@@ -9,20 +9,30 @@ from pathlib import Path
 from typing import Any, Callable
 
 
-REQUIRED_FILES = [
+BASE_REQUIRED_FILES = [
     "project-contract.md",
     "fact-conflict-gap-register.json",
     "product1-competition-study.md",
-    "product2-buyer-decision-study.md",
     "semantic-core.json",
     "super-competitiveness-plan.json",
     "product-enablement-matrix.json",
-    "product3-chapter2-contract.json",
-    "product3-chapter3-contract.json",
-    "ue-solution-handoff.json",
-    "change-impact-registry.json",
     "production-receipt.json",
 ]
+
+PRODUCT_OUTPUT_FILES = {
+    1: ("product1-competition-study.md",),
+    2: ("product2-buyer-decision-study.md",),
+    3: (
+        "product3-chapter2-contract.json",
+        "product3-chapter3-contract.json",
+        "ue-solution-handoff.json",
+    ),
+    4: ("product4-value-framework-contract.json",),
+    5: ("product5-interaction-blueprint.json",),
+}
+
+OPTIONAL_PROCESS_FILES = ("change-impact-registry.json",)
+ENABLED_PRODUCT_STATUSES = {"enabled", "complete", "in_progress"}
 
 FIVE_CHECKS = {
     "purchase_impact",
@@ -43,12 +53,10 @@ PRIVATE_OR_LOCAL = re.compile(
     r"(?:/" + "Users/|" + "file" + r"://|[A-Za-z]:\\|\.workbuddy/" + "binaries/)"
 )
 JSON_BLOCK = re.compile(r"```json\s*(\{.*?\})\s*```", re.DOTALL)
-HEX_40 = re.compile(r"^[0-9a-f]{40}$")
-HEX_64 = re.compile(r"^[0-9a-f]{64}$")
-
-
 class RunData(dict[str, Any]):
     root: Path
+    enabled_products: set[int]
+    loaded_files: set[str]
 
 
 def _text(value: Any) -> bool:
@@ -92,21 +100,61 @@ def _load_markdown_summary(path: Path, errors: list[str]) -> dict[str, Any]:
     return data
 
 
+def _load_named_file(root: Path, name: str, errors: list[str]) -> dict[str, Any]:
+    path = root / name
+    if path.suffix == ".md":
+        return _load_markdown_summary(path, errors)
+    return _load_json(path, errors)
+
+
 def load_run(root: Path) -> tuple[RunData, list[str]]:
     root = root.resolve()
     errors: list[str] = []
     data = RunData()
     data.root = root
-    for name in REQUIRED_FILES:
+    data.enabled_products = {1}
+    data.loaded_files = set()
+    for name in BASE_REQUIRED_FILES:
         path = root / name
         if not path.is_file():
             errors.append(f"缺少必需文件：{name}")
             data[name] = {}
             continue
-        if path.suffix == ".md":
-            data[name] = _load_markdown_summary(path, errors)
-        else:
-            data[name] = _load_json(path, errors)
+        data[name] = _load_named_file(root, name, errors)
+        data.loaded_files.add(name)
+
+    products = data.get("product-enablement-matrix.json", {}).get("products")
+    if isinstance(products, list):
+        enabled = {
+            item.get("product")
+            for item in products
+            if isinstance(item, dict)
+            and item.get("status") in ENABLED_PRODUCT_STATUSES
+            and isinstance(item.get("product"), int)
+        }
+        if enabled:
+            data.enabled_products = enabled
+
+    for product_id, names in PRODUCT_OUTPUT_FILES.items():
+        if product_id == 1:
+            continue
+        for name in names:
+            path = root / name
+            if product_id in data.enabled_products:
+                if not path.is_file():
+                    errors.append(f"产物{product_id}已启用但缺少文件：{name}")
+                    data[name] = {}
+                    continue
+                data[name] = _load_named_file(root, name, errors)
+                data.loaded_files.add(name)
+            elif path.exists():
+                errors.append(f"产物{product_id}未启用，不应保留空置或过期文件：{name}")
+
+    for name in OPTIONAL_PROCESS_FILES:
+        path = root / name
+        if path.is_file():
+            data[name] = _load_named_file(root, name, errors)
+            data.loaded_files.add(name)
     return data, errors
 
 
@@ -153,7 +201,7 @@ def validate_project_identity(data: RunData, errors: list[str]) -> None:
     for field in ("task_id", "business_question", "primary_audience", "use_case", "business_stage"):
         if not _text(contract.get(field)):
             errors.append(f"project-contract.md.{field}: 不能为空")
-    if contract.get("mode") not in {"real_project_delivery", "hidden_answer_replay", "non_research_task", "tutorial"}:
+    if contract.get("mode") not in {"real_project_delivery", "non_research_task", "tutorial"}:
         errors.append("project-contract.md.mode: 模式无效")
     project = contract.get("project")
     if not isinstance(project, dict):
@@ -268,30 +316,25 @@ def validate_product2(data: RunData, errors: list[str]) -> None:
     product2 = data["product2-buyer-decision-study.md"]
     if product2.get("schema") != "residential.product2_buyer_decision_study.v0.2":
         errors.append("product2-buyer-decision-study.md: schema错误")
-    enabled = product2.get("enabled")
-    if enabled is True:
-        if product2.get("status") != "product2_complete":
-            errors.append("product2-buyer-decision-study.md.status: 启用时必须complete")
-        tasks = product2.get("purchase_tasks")
-        _ids(tasks, "product2-buyer-decision-study.md.purchase_tasks", errors)
-        if not tasks:
-            errors.append("product2-buyer-decision-study.md.purchase_tasks: 至少一条")
-        for index, item in enumerate(tasks if isinstance(tasks, list) else []):
-            if not isinstance(item, dict):
-                continue
-            for field in ("roles_and_relations", "circumstance", "trigger", "desired_progress", "project_fit", "boundary", "source_kind"):
-                if not _text(item.get(field)):
-                    errors.append(f"product2-buyer-decision-study.md.purchase_tasks[{index}].{field}: 不能为空")
-            for field in ("alternatives", "gains", "tolerances", "facilitators", "blockers", "evidence_refs"):
-                if not _list(item.get(field)):
-                    errors.append(f"product2-buyer-decision-study.md.purchase_tasks[{index}].{field}: 至少一项")
-        if not _list(product2.get("counterexamples")):
-            errors.append("product2-buyer-decision-study.md.counterexamples: 至少一条反例或失效边界")
-    elif enabled is False:
-        if product2.get("status") != "not_enabled" or not _text(product2.get("not_enabled_reason")) or not _list(product2.get("covered_by")):
-            errors.append("product2-buyer-decision-study.md: 未启用时必须说明理由与等价来源")
-    else:
-        errors.append("product2-buyer-decision-study.md.enabled: 必须为布尔值")
+    if product2.get("enabled") is not True:
+        errors.append("product2-buyer-decision-study.md.enabled: 已启用产物必须为true")
+    if product2.get("status") != "product2_complete":
+        errors.append("product2-buyer-decision-study.md.status: 必须为product2_complete")
+    tasks = product2.get("purchase_tasks")
+    _ids(tasks, "product2-buyer-decision-study.md.purchase_tasks", errors)
+    if not tasks:
+        errors.append("product2-buyer-decision-study.md.purchase_tasks: 至少一条")
+    for index, item in enumerate(tasks if isinstance(tasks, list) else []):
+        if not isinstance(item, dict):
+            continue
+        for field in ("roles_and_relations", "circumstance", "trigger", "desired_progress", "project_fit", "boundary", "source_kind"):
+            if not _text(item.get(field)):
+                errors.append(f"product2-buyer-decision-study.md.purchase_tasks[{index}].{field}: 不能为空")
+        for field in ("alternatives", "gains", "tolerances", "facilitators", "blockers", "evidence_refs"):
+            if not _list(item.get(field)):
+                errors.append(f"product2-buyer-decision-study.md.purchase_tasks[{index}].{field}: 至少一项")
+    if not _list(product2.get("counterexamples")):
+        errors.append("product2-buyer-decision-study.md.counterexamples: 至少一条反例或失效边界")
 
 
 def validate_semantic_core(data: RunData, errors: list[str]) -> None:
@@ -377,40 +420,58 @@ def validate_enablement(data: RunData, errors: list[str]) -> None:
     for product_id, item in by_id.items():
         if not _text(item.get("reason")) or not isinstance(item.get("deliverables"), list):
             errors.append(f"product-enablement-matrix.json.products[{product_id}]: 必须有理由和deliverables")
+            continue
+        status = item.get("status")
+        expected = list(PRODUCT_OUTPUT_FILES.get(product_id, ())) if status in ENABLED_PRODUCT_STATUSES else []
+        if item.get("deliverables") != expected:
+            errors.append(
+                f"product-enablement-matrix.json.products[{product_id}].deliverables: "
+                f"必须与启用状态对应，期望{expected}"
+            )
+    contract_enabled = set(data["project-contract.md"].get("enabled_products") or [])
+    matrix_enabled = {product_id for product_id, item in by_id.items() if item.get("status") in ENABLED_PRODUCT_STATUSES}
+    if contract_enabled != matrix_enabled:
+        errors.append("project-contract.md.enabled_products与产物启用矩阵不一致")
     admission = matrix.get("high_cost_admission")
-    product3_enabled = by_id.get(3, {}).get("status") in {"enabled", "complete", "in_progress"}
-    if product3_enabled:
+    high_cost_enabled = any(by_id.get(product_id, {}).get("status") in ENABLED_PRODUCT_STATUSES for product_id in (3, 4, 5))
+    if high_cost_enabled:
         if not isinstance(admission, dict) or admission.get("status") != "admitted":
-            errors.append("product-enablement-matrix.json: 产物3启用前必须高成本准入")
+            errors.append("product-enablement-matrix.json: 产物3—5启用前必须高成本准入")
         elif admission.get("established_sc_count") != len(plan.get("items") or []):
             errors.append("product-enablement-matrix.json: established_sc_count与SC计划不一致")
         elif not all(admission.get(key) is True for key in ("semantic_core_frozen", "all_five_checks_pass", "purchase_stage_coverage_complete", "fact_and_rights_boundary_declared")):
             errors.append("product-enablement-matrix.json: 高成本准入条件未全部成立")
-    product5_enabled = by_id.get(5, {}).get("status") in {"enabled", "complete", "in_progress"}
-    if product5_enabled:
-        path = data.root / "product5-interaction-blueprint.json"
-        if not path.is_file():
-            errors.append("product5-interaction-blueprint.json: 产物5启用但缺少蓝图")
-        else:
-            blueprint = _load_json(path, errors)
-            data["product5-interaction-blueprint.json"] = blueprint
-            if blueprint.get("schema") != "residential.product5_interaction_blueprint.v0.2":
-                errors.append("product5-interaction-blueprint.json: schema错误")
-            if blueprint.get("project_id") != matrix.get("project_id") or blueprint.get("semantic_version") != matrix.get("semantic_version"):
-                errors.append("product5-interaction-blueprint.json: 项目或语义版本不一致")
-            sc_ids = {item.get("id") for item in plan.get("items") or [] if isinstance(item, dict)}
-            scene_sc_ids = {item.get("sc_id") for item in blueprint.get("sc_scenes") or [] if isinstance(item, dict)}
-            if scene_sc_ids != sc_ids:
-                errors.append("product5-interaction-blueprint.json: 必须完整映射当前SC集合")
-            if blueprint.get("ai_advisor", {}).get("creates_new_sc") is not False:
-                errors.append("product5-interaction-blueprint.json: AI推荐官不得新增SC")
-            for text in _walk_strings(blueprint):
-                if any(marker in text for marker in PLACEHOLDER_MARKERS):
-                    errors.append("product5-interaction-blueprint.json: 仍含模板占位符")
-                    break
-                if PRIVATE_OR_LOCAL.search(text):
-                    errors.append("product5-interaction-blueprint.json: 含本机或平台私有路径")
-                    break
+
+
+def validate_product4(data: RunData, errors: list[str]) -> None:
+    contract = data["product4-value-framework-contract.json"]
+    if not str(contract.get("contract_version", "")).startswith("product4_value_framework.v1.2"):
+        errors.append("product4-value-framework-contract.json: contract_version错误")
+    task = contract.get("task") if isinstance(contract.get("task"), dict) else {}
+    if task.get("project_id") != data["project-contract.md"].get("project", {}).get("id"):
+        errors.append("product4-value-framework-contract.json.task.project_id: 与项目合同不一致")
+    if task.get("lifecycle_stage") != "post_contract_first_delivery":
+        errors.append("product4-value-framework-contract.json.task.lifecycle_stage: 产物4仅用于签约后生产")
+    sc_ids = {item.get("id") for item in data["super-competitiveness-plan.json"].get("items") or [] if isinstance(item, dict)}
+    p4_sc_ids = set(contract.get("stable_semantic_refs", {}).get("super_competitiveness_refs") or [])
+    if p4_sc_ids != sc_ids:
+        errors.append("product4-value-framework-contract.json: 必须继承当前完整SC集合")
+
+
+def validate_product5(data: RunData, errors: list[str]) -> None:
+    blueprint = data["product5-interaction-blueprint.json"]
+    matrix = data["product-enablement-matrix.json"]
+    plan = data["super-competitiveness-plan.json"]
+    if blueprint.get("schema") != "residential.product5_interaction_blueprint.v0.2":
+        errors.append("product5-interaction-blueprint.json: schema错误")
+    if blueprint.get("project_id") != matrix.get("project_id") or blueprint.get("semantic_version") != matrix.get("semantic_version"):
+        errors.append("product5-interaction-blueprint.json: 项目或语义版本不一致")
+    sc_ids = {item.get("id") for item in plan.get("items") or [] if isinstance(item, dict)}
+    scene_sc_ids = {item.get("sc_id") for item in blueprint.get("sc_scenes") or [] if isinstance(item, dict)}
+    if scene_sc_ids != sc_ids:
+        errors.append("product5-interaction-blueprint.json: 必须完整映射当前SC集合")
+    if blueprint.get("ai_advisor", {}).get("creates_new_sc") is not False:
+        errors.append("product5-interaction-blueprint.json: AI推荐官不得新增SC")
 
 
 def validate_ue_solution_bridge(data: RunData, errors: list[str]) -> None:
@@ -488,118 +549,101 @@ def validate_ue_solution_bridge(data: RunData, errors: list[str]) -> None:
         errors.append("ue-solution-handoff.json.status: 必须为ue_solution_bridge_pass")
 
 
-def validate_cross_product_consistency(data: RunData, errors: list[str], mode: str = "normal", require_replication_pass: bool = False) -> None:
+def validate_cross_product_consistency(data: RunData, errors: list[str], mode: str = "normal") -> None:
     contract = data["project-contract.md"]
     expected_project_id = contract.get("project", {}).get("id")
-    for name in REQUIRED_FILES:
+    for name in sorted(data.loaded_files):
         item = data[name]
-        project_id = item.get("project_id") if isinstance(item, dict) else None
-        if name == "project-contract.md":
+        if name in {"project-contract.md", "product4-value-framework-contract.json"}:
             continue
+        project_id = item.get("project_id") if isinstance(item, dict) else None
         if project_id != expected_project_id:
             errors.append(f"{name}.project_id: 与项目合同不一致")
     semantic_version = data["semantic-core.json"].get("version")
-    for name in ("super-competitiveness-plan.json", "product-enablement-matrix.json", "product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json"):
+    semantic_files = ["super-competitiveness-plan.json", "product-enablement-matrix.json"]
+    if 3 in data.enabled_products:
+        semantic_files.extend(PRODUCT_OUTPUT_FILES[3])
+    if 5 in data.enabled_products:
+        semantic_files.extend(PRODUCT_OUTPUT_FILES[5])
+    for name in semantic_files:
         if data[name].get("semantic_version") != semantic_version:
             errors.append(f"{name}.semantic_version: 与语义核不一致")
-    changes = data["change-impact-registry.json"]
-    if changes.get("current_semantic_version") != semantic_version:
-        errors.append("change-impact-registry.json.current_semantic_version: 与当前语义核不一致")
-    if changes.get("status") == "reprojection_complete" and not changes.get("changes"):
-        errors.append("change-impact-registry.json: 声称重投影完成但没有变更")
+    if "change-impact-registry.json" in data:
+        changes = data["change-impact-registry.json"]
+        if changes.get("current_semantic_version") != semantic_version:
+            errors.append("change-impact-registry.json.current_semantic_version: 与当前语义核不一致")
+        if changes.get("status") == "reprojection_complete" and not changes.get("changes"):
+            errors.append("change-impact-registry.json: 声称重投影完成但没有变更")
     receipt = data["production-receipt.json"]
+    if receipt.get("run_mode") != contract.get("mode"):
+        errors.append("production-receipt.json.run_mode: 与项目合同不一致")
+    if set(receipt.get("enabled_products") or []) != data.enabled_products:
+        errors.append("production-receipt.json.enabled_products: 与启用矩阵不一致")
     statuses = receipt.get("business_statuses")
     expected_pass = {
         "rules_loaded",
         "project_identity_closed",
         "product1_complete",
-        "product2_complete_or_not_enabled",
         "semantic_core_frozen",
         "minimum_three_sc_pass",
-        "ue_solution_bridge_pass",
         "cross_product_consistency_pass",
     }
+    if 2 in data.enabled_products:
+        expected_pass.add("product2_complete")
+    if 3 in data.enabled_products:
+        expected_pass.add("ue_solution_bridge_pass")
+    if 4 in data.enabled_products:
+        expected_pass.add("product4_contract_pass")
+    if 5 in data.enabled_products:
+        expected_pass.add("product5_blueprint_pass")
     if not isinstance(statuses, dict):
         errors.append("production-receipt.json.business_statuses: 缺少")
         statuses = {}
+    extra_statuses = set(statuses) - expected_pass
+    if extra_statuses:
+        errors.append(f"production-receipt.json.business_statuses: 含未启用分支或退役状态 {sorted(extra_statuses)}")
     for key in expected_pass:
         if statuses.get(key) != "pass":
             errors.append(f"production-receipt.json.business_statuses.{key}: 应为pass")
-    blind = receipt.get("blind_review")
     final_status = receipt.get("final_status")
     if mode == "tutorial":
-        if statuses.get("business_judgment_blind_review_pass") != "not_run" or statuses.get("production_path_replication_pass") != "not_run":
-            errors.append("教程回执不得声称独立盲审或生产路径复刻通过")
         if final_status != "tutorial_reference_complete":
             errors.append("教程回执final_status必须为tutorial_reference_complete")
-    if require_replication_pass or final_status == "production_path_replication_pass":
-        if receipt.get("run_mode") != "hidden_answer_replay":
-            errors.append("production_path_replication_pass只能来自hidden_answer_replay")
-        if receipt.get("content_guidance_count") != 0:
-            errors.append("首次生产路径冷启动要求content_guidance_count=0")
-        if not isinstance(blind, dict) or blind.get("status") != "pass" or blind.get("reviewer_independent") is not True or not isinstance(blind.get("score"), (int, float)) or blind.get("score") < 80:
-            errors.append("production_path_replication_pass要求独立盲审通过且总分至少80")
-        if statuses.get("business_judgment_blind_review_pass") != "pass" or statuses.get("production_path_replication_pass") != "pass":
-            errors.append("生产路径最终业务状态未全部pass")
-        if not HEX_40.fullmatch(str(receipt.get("candidate_commit", ""))):
-            errors.append("production_path_replication_pass要求固定40位候选提交")
-        for field in ("input_manifest_sha256", "output_manifest_sha256"):
-            if not HEX_64.fullmatch(str(receipt.get(field, ""))):
-                errors.append(f"production_path_replication_pass要求有效{field}")
-        review_file = blind.get("review_file") if isinstance(blind, dict) else None
-        observation_file = blind.get("observation_file") if isinstance(blind, dict) else None
-        if not _text(review_file) or not _text(observation_file):
-            errors.append("production_path_replication_pass要求独立盲审文件和观察文件")
-        else:
-            review_path = data.root / str(review_file)
-            observation_path = data.root / str(observation_file)
-            if not review_path.is_file() or not observation_path.is_file():
-                errors.append("独立盲审文件或观察文件不存在")
-            else:
-                review = _load_json(review_path, errors)
-                observation = _load_json(observation_path, errors)
-                if review.get("schema") != "residential.hidden_answer_review.v0.2" or review.get("reviewer_independent") is not True or review.get("decision") != "pass" or review.get("automatic_failures"):
-                    errors.append("独立盲审文件未形成无自动失败的pass")
-                if review.get("total") != blind.get("score") or not isinstance(review.get("total"), (int, float)) or review.get("total") < 80:
-                    errors.append("盲审文件总分与回执不一致或不足80")
-                rubric_path = Path(__file__).resolve().parents[2] / "evaluation" / "hidden-answer" / "rubric.json"
-                rubric = _load_json(rubric_path, errors)
-                scores = review.get("scores") if isinstance(review.get("scores"), dict) else {}
-                calculated_total = 0
-                for dimension in rubric.get("dimensions") or []:
-                    dimension_id = dimension.get("id")
-                    score_item = scores.get(dimension_id)
-                    score = score_item.get("score") if isinstance(score_item, dict) else None
-                    if not isinstance(score, (int, float)) or score < dimension.get("minimum", 0) or score > dimension.get("weight", 0):
-                        errors.append(f"盲审维度{dimension_id}未达到最低分或超过权重")
-                    else:
-                        calculated_total += score
-                if calculated_total != review.get("total"):
-                    errors.append("盲审维度合计与total不一致")
-                if observation.get("schema") != "residential.hidden_answer_observation.v0.2" or observation.get("content_guidance_count") != 0 or observation.get("participant", {}).get("independent_from_release_design") is not True or observation.get("participant", {}).get("prior_access_to_holdout_answer") is not False or observation.get("final_status") != "production_path_replication_pass":
-                    errors.append("观察文件未证明独立、零内容指导的正式冷启动")
-                if observation.get("candidate_commit") != receipt.get("candidate_commit") or observation.get("input_manifest_sha256") != receipt.get("input_manifest_sha256") or observation.get("output_manifest_sha256") != receipt.get("output_manifest_sha256"):
-                    errors.append("观察文件与生产回执的提交或输入输出哈希不一致")
+    elif final_status not in {"machine_contract_pass", "business_review_pending", "human_business_accepted", "returned_for_research", "blocked"}:
+        errors.append("production-receipt.json.final_status: 无效或使用了退役评测状态")
+    human_review = receipt.get("human_review")
+    if not isinstance(human_review, dict):
+        errors.append("production-receipt.json.human_review: 缺少")
+    elif final_status == "human_business_accepted" and not (
+        human_review.get("status") == "complete" and human_review.get("decision") == "accepted"
+    ):
+        errors.append("production-receipt.json: 真人业务接受必须有complete且accepted的真人回执")
 
 
 STAGE_VALIDATORS: dict[str, Callable[[RunData, list[str]], None]] = {
     "identity": validate_project_identity,
     "fact_register": validate_fact_register,
     "product1": validate_product1,
-    "product2": validate_product2,
     "semantic_core": validate_semantic_core,
     "super_competitiveness": validate_super_competitiveness,
     "enablement": validate_enablement,
-    "ue_bridge": validate_ue_solution_bridge,
 }
 
 
-def validate_all(root: Path, mode: str = "normal", require_replication_pass: bool = False) -> tuple[RunData, list[str]]:
+def validate_all(root: Path, mode: str = "normal") -> tuple[RunData, list[str]]:
     data, errors = load_run(root)
     validate_no_placeholders_or_local_paths(data, errors)
     for validator in STAGE_VALIDATORS.values():
         validator(data, errors)
-    validate_cross_product_consistency(data, errors, mode=mode, require_replication_pass=require_replication_pass)
+    if 2 in data.enabled_products:
+        validate_product2(data, errors)
+    if 3 in data.enabled_products:
+        validate_ue_solution_bridge(data, errors)
+    if 4 in data.enabled_products:
+        validate_product4(data, errors)
+    if 5 in data.enabled_products:
+        validate_product5(data, errors)
+    validate_cross_product_consistency(data, errors, mode=mode)
     return data, errors
 
 
@@ -608,5 +652,18 @@ def validate_one(root: Path, stage: str) -> list[str]:
     if errors:
         return errors
     validate_no_placeholders_or_local_paths(data, errors)
-    STAGE_VALIDATORS[stage](data, errors)
+    conditional = {
+        "product2": (2, validate_product2),
+        "ue_bridge": (3, validate_ue_solution_bridge),
+        "product4": (4, validate_product4),
+        "product5": (5, validate_product5),
+    }
+    if stage in conditional:
+        product_id, validator = conditional[stage]
+        if product_id not in data.enabled_products:
+            errors.append(f"产物{product_id}未启用，不能执行该阶段校验")
+        else:
+            validator(data, errors)
+    else:
+        STAGE_VALIDATORS[stage](data, errors)
     return errors

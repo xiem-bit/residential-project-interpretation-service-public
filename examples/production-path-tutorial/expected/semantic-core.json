@@ -6,7 +6,7 @@
   "source_outputs": ["project-contract.md", "product1-competition-study.md", "product2-buyer-decision-study.md"],
   "project_and_task_identity": {
     "project_name": "青岚澄境（全量虚构）",
-    "task_mode": "hidden_answer_replay",
+    "task_mode": "tutorial",
     "business_question": "从真实替代和购买任务形成三条竞争武器并落到UE售前方案",
     "fact_cutoff": "2026-08-01"
   },

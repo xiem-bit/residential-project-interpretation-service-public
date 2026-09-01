@@ -1,7 +1,7 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "p0_frozen_parity_migration_in_progress_not_released",
+  "status": "p1_dynamic_enablement_complete_parity_migration_in_progress_not_released",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
     "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
@@ -57,8 +57,8 @@
       "public_targets": ["START_HERE.md", "AGENT_RULES.md", "PRODUCTION_PATH_MANIFEST.json", "workflows/residential-production-orchestrator/SKILL.md"],
       "load_condition": "every_task_then_stage_specific",
       "acceptance": "完整能力随包，产物1默认，产物2至5按需；不生成未启用产物空文件",
-      "status": "partial_upgrade_required",
-      "gap": "当前候选仍固定十二文件、产物2占位和产物3合同必交"
+      "status": "implemented_current",
+      "gap": ""
     },
     {
       "id": "CAP-002",
@@ -94,7 +94,7 @@
       "load_condition": "buyer_decision_gap_or_enabled_product2",
       "acceptance": "以生活任务和决策机制组织客群，闭合处境、触发、进展、替代、代价与行动阻力",
       "status": "partial_upgrade_required",
-      "gap": "缺甲方级公开安全黄金报告；未启用时仍要求占位文件"
+      "gap": "缺甲方级公开安全黄金报告"
     },
     {
       "id": "CAP-005",
@@ -217,8 +217,8 @@
       "public_targets": ["tools/production_core", "schemas/production-receipt.schema.json", "templates/生产回执.template.json", "tests"],
       "load_condition": "before_formal_handoff_and_release",
       "acceptance": "机器只否决结构、边界和显式不一致；已生成、已检查、已接受、已发布和业务效果分开",
-      "status": "partial_upgrade_required",
-      "gap": "当前Harness与固定十二文件和隐藏盲审深度耦合，需解耦为按启用矩阵验证"
+      "status": "implemented_current",
+      "gap": ""
     },
     {
       "id": "CAP-015",
@@ -271,7 +271,6 @@
     }
   ],
   "release_blockers": [
-    "CAP-001",
     "CAP-003",
     "CAP-004",
     "CAP-005",
@@ -282,9 +281,8 @@
     "CAP-011",
     "CAP-012",
     "CAP-013",
-    "CAP-014",
     "CAP-015",
     "CAP-016"
   ],
-  "next_slice": "dynamic_enablement_and_harness_decoupling"
+  "next_slice": "sc_causal_chain_and_inference_firewall"
 }

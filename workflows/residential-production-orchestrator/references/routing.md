@@ -13,6 +13,6 @@
 | Material change | `core/09-变更回写与重投影.md` | change-impact template and revision tutorial |
 | External upstream | `external-capabilities/README.md` | task and response contracts; accept evidence and gap only |
 | Carrier production | `adapters/README.md` | platform adapter after business semantics are frozen |
-| Replication evaluation | `BUSINESS_COLD_START_PROTOCOL.md` | hidden-answer task, rubric and observation |
+| Release acceptance | `V0_2_RELEASE_SCOPE.md` | package-level clean install, full public-safe project and human acceptance |
 
 For a complete technical-bid Product 3, the detailed legacy-compatible templates in `templates/产物3第二章生产消费合同.template.json` and `templates/产物3第三章生产消费合同.template.json` remain available. They deepen page-level production but do not replace the v0.2 upstream path.

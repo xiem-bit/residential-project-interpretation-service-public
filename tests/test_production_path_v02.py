@@ -39,6 +39,46 @@ class ProductionPathV02Test(unittest.TestCase):
     def errors(self, **kwargs):
         return validate_all(self.run_dir, **kwargs)[1]
 
+    def make_product1_only(self) -> None:
+        matrix = self.load("product-enablement-matrix.json")
+        for item in matrix["products"]:
+            product_id = item["product"]
+            if product_id == 1:
+                continue
+            item.update(status="not_enabled", reason="unit test does not enable this product", deliverables=[])
+        matrix["high_cost_admission"]["status"] = "research_only"
+        self.write("product-enablement-matrix.json", matrix)
+
+        contract_path = self.run_dir / "project-contract.md"
+        text = contract_path.read_text(encoding="utf-8")
+        text = text.replace('"enabled_products": [1, 2, 3, 5]', '"enabled_products": [1]')
+        contract_path.write_text(text, encoding="utf-8")
+
+        semantic = self.load("semantic-core.json")
+        semantic["source_outputs"] = ["project-contract.md", "product1-competition-study.md"]
+        semantic["product_package"] = {"enabled": [1], "not_enabled": [2, 3, 4, 5]}
+        self.write("semantic-core.json", semantic)
+
+        receipt = self.load("production-receipt.json")
+        receipt["enabled_products"] = [1]
+        receipt["business_statuses"] = {
+            "rules_loaded": "pass",
+            "project_identity_closed": "pass",
+            "product1_complete": "pass",
+            "semantic_core_frozen": "pass",
+            "minimum_three_sc_pass": "pass",
+            "cross_product_consistency_pass": "pass",
+        }
+        self.write("production-receipt.json", receipt)
+        for name in (
+            "product2-buyer-decision-study.md",
+            "product3-chapter2-contract.json",
+            "product3-chapter3-contract.json",
+            "ue-solution-handoff.json",
+            "product5-interaction-blueprint.json",
+        ):
+            (self.run_dir / name).unlink()
+
     def test_complete_tutorial_machine_contract_passes_without_blind_claim(self) -> None:
         self.assertEqual(self.errors(mode="tutorial"), [])
 
@@ -79,69 +119,19 @@ class ProductionPathV02Test(unittest.TestCase):
         self.write("product5-interaction-blueprint.json", blueprint)
         self.assertTrue(any("AI推荐官不得新增SC" in error for error in self.errors(mode="tutorial")))
 
-    def test_tutorial_cannot_claim_blind_business_pass(self) -> None:
-        receipt = self.load("production-receipt.json")
-        receipt["business_statuses"]["business_judgment_blind_review_pass"] = "pass"
-        receipt["business_statuses"]["production_path_replication_pass"] = "pass"
-        receipt["final_status"] = "production_path_replication_pass"
-        self.write("production-receipt.json", receipt)
-        self.assertTrue(any("教程回执不得声称" in error for error in self.errors(mode="tutorial")))
+    def test_product1_only_run_passes_without_disabled_product_files(self) -> None:
+        self.make_product1_only()
+        self.assertEqual(self.errors(mode="tutorial"), [])
 
-    def test_replication_pass_requires_review_and_observation_files(self) -> None:
-        receipt = self.load("production-receipt.json")
-        receipt["run_mode"] = "hidden_answer_replay"
-        receipt["candidate_commit"] = "a" * 40
-        receipt["business_statuses"]["business_judgment_blind_review_pass"] = "pass"
-        receipt["business_statuses"]["production_path_replication_pass"] = "pass"
-        receipt["blind_review"].update({"status": "pass", "reviewer_independent": True, "score": 82})
-        receipt["final_status"] = "production_path_replication_pass"
-        self.write("production-receipt.json", receipt)
-        self.assertTrue(any("要求独立盲审文件和观察文件" in error for error in self.errors(require_replication_pass=True)))
+    def test_disabled_product_stale_file_fails(self) -> None:
+        product2 = (FIXTURE / "product2-buyer-decision-study.md").read_text(encoding="utf-8")
+        self.make_product1_only()
+        (self.run_dir / "product2-buyer-decision-study.md").write_text(product2, encoding="utf-8")
+        self.assertTrue(any("产物2未启用" in error for error in self.errors(mode="tutorial")))
 
-    def test_evidence_backed_hidden_replication_receipt_passes_contract(self) -> None:
-        scores = {
-            "competition_problem": 12,
-            "competitor_boundary": 11,
-            "buyer_tasks": 10,
-            "semantic_core_and_value_anchor": 7,
-            "super_competitiveness": 17,
-            "five_checks": 8,
-            "ue_solution": 10,
-            "cross_product_consistency": 3,
-            "change_handling": 2,
-            "honest_boundaries": 2,
-        }
-        review = {
-            "schema": "residential.hidden_answer_review.v0.2",
-            "task_id": "UNIT-HOLDOUT",
-            "reviewer_independent": True,
-            "rubric": "evaluation/hidden-answer/rubric.json",
-            "scores": {key: {"score": value, "evidence": "unit fixture"} for key, value in scores.items()},
-            "total": sum(scores.values()),
-            "automatic_failures": [],
-            "decision": "pass",
-        }
-        commit = "b" * 40
-        input_hash = "c" * 64
-        output_hash = "d" * 64
-        observation = {
-            "schema": "residential.hidden_answer_observation.v0.2",
-            "candidate_commit": commit,
-            "input_manifest_sha256": input_hash,
-            "output_manifest_sha256": output_hash,
-            "participant": {"independent_from_release_design": True, "prior_access_to_holdout_answer": False},
-            "content_guidance_count": 0,
-            "final_status": "production_path_replication_pass",
-        }
-        self.write("blind-review.json", review)
-        self.write("cold-start-observation.json", observation)
-        receipt = self.load("production-receipt.json")
-        receipt.update({"run_mode": "hidden_answer_replay", "candidate_commit": commit, "input_manifest_sha256": input_hash, "output_manifest_sha256": output_hash, "final_status": "production_path_replication_pass"})
-        receipt["business_statuses"]["business_judgment_blind_review_pass"] = "pass"
-        receipt["business_statuses"]["production_path_replication_pass"] = "pass"
-        receipt["blind_review"].update({"status": "pass", "reviewer_independent": True, "score": 82, "review_file": "blind-review.json", "observation_file": "cold-start-observation.json"})
-        self.write("production-receipt.json", receipt)
-        self.assertEqual(self.errors(require_replication_pass=True), [])
+    def test_enabled_product_missing_file_fails(self) -> None:
+        (self.run_dir / "product5-interaction-blueprint.json").unlink()
+        self.assertTrue(any("产物5已启用但缺少文件" in error for error in self.errors(mode="tutorial")))
 
     def test_initializer_creates_blank_outputs_not_tutorial_answers(self) -> None:
         output = Path(self.temp.name) / "blank"
@@ -153,9 +143,34 @@ class ProductionPathV02Test(unittest.TestCase):
         )
         self.assertEqual(completed.returncode, 0, completed.stderr)
         self.assertTrue((output / "semantic-core.json").is_file())
+        self.assertFalse((output / "product2-buyer-decision-study.md").exists())
+        self.assertFalse((output / "product3-chapter2-contract.json").exists())
         self.assertNotIn("SC-ACCESS", (output / "semantic-core.json").read_text(encoding="utf-8"))
         _, errors = validate_all(output)
         self.assertTrue(any("模板占位符" in error for error in errors))
+
+    def test_initializer_creates_only_explicitly_enabled_product_templates(self) -> None:
+        output = Path(self.temp.name) / "enabled"
+        completed = subprocess.run(
+            [
+                sys.executable,
+                str(ROOT / "scripts" / "init_production_run.py"),
+                "--input-dir",
+                str(ROOT / "examples" / "production-path-tutorial" / "input"),
+                "--output-dir",
+                str(output),
+                "--products",
+                "1,2,3,5",
+            ],
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(completed.returncode, 0, completed.stderr)
+        self.assertTrue((output / "product2-buyer-decision-study.md").is_file())
+        self.assertTrue((output / "product3-chapter2-contract.json").is_file())
+        self.assertTrue((output / "product5-interaction-blueprint.json").is_file())
+        self.assertFalse((output / "product4-value-framework-contract.json").exists())
 
     def test_revision_tutorial_verifier_passes(self) -> None:
         completed = subprocess.run(

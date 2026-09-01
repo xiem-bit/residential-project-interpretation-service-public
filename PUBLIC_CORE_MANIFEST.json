@@ -42,33 +42,33 @@
     "tools/production_core",
     "examples/production-path-tutorial",
     "examples/production-path-revision",
-    "evaluation/hidden-answer",
     "external-capabilities",
     "adapters"
   ],
-  "v0_2_legacy_fixed_outputs_pending_dynamic_enablement_migration": [
+  "v0_2_base_required_outputs": [
     "project-contract.md",
     "fact-conflict-gap-register.json",
     "product1-competition-study.md",
-    "product2-buyer-decision-study.md",
     "semantic-core.json",
     "super-competitiveness-plan.json",
     "product-enablement-matrix.json",
-    "product3-chapter2-contract.json",
-    "product3-chapter3-contract.json",
-    "ue-solution-handoff.json",
-    "change-impact-registry.json",
     "production-receipt.json"
   ],
+  "v0_2_conditional_outputs": {
+    "product2": ["product2-buyer-decision-study.md"],
+    "product3": ["product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json"],
+    "product4": ["product4-value-framework-contract.json"],
+    "product5": ["product5-interaction-blueprint.json"],
+    "material_semantic_change": ["change-impact-registry.json"]
+  },
   "semantic_core_role": "production_output",
   "business_acceptance": {
     "machine_scope": "structure_references_states_only",
-    "independent_blind_review_required": false,
     "workbuddy_style_blind_training_included": false,
     "fresh_install_full_project_acceptance_required": true,
     "maintainer_step_by_step_guidance_allowed": false,
     "presentation_or_web_required": false,
-    "current_status": "p0_parity_frozen_migration_in_progress_not_release_ready"
+    "current_status": "p1_dynamic_enablement_implemented_harness_upgrade_in_progress_not_release_ready"
   },
   "forbidden_public_content": [
     "real_project_or_customer_materials",
@@ -79,7 +79,5 @@
     "private_git_history"
   ],
   "release_scope": "V0_2_RELEASE_SCOPE.md",
-  "historical_business_cold_start_protocol": "BUSINESS_COLD_START_PROTOCOL.md",
-  "historical_business_cold_start_protocol_status": "retired_from_current_release_gate_pending_removal_from_active_roots",
   "dependency_exceptions": "DEPENDENCY_EXCEPTIONS.json"
 }

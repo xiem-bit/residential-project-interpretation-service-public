@@ -18,16 +18,15 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("run_dir", type=Path)
     parser.add_argument("--mode", choices=["normal", "tutorial"], default="normal")
-    parser.add_argument("--require-replication-pass", action="store_true")
     args = parser.parse_args()
-    _, errors = validate_all(args.run_dir, mode=args.mode, require_replication_pass=args.require_replication_pass)
+    _, errors = validate_all(args.run_dir, mode=args.mode)
     if errors:
         for error in errors:
             print("ERROR:", error, file=sys.stderr)
         print(f"PRODUCTION PATH MACHINE CONTRACT: FAIL ({len(errors)} errors)", file=sys.stderr)
         return 1
     print("PRODUCTION PATH MACHINE CONTRACT: PASS")
-    print("Boundary: structure, references and honest states only; strategic quality still requires blind human review.")
+    print("Boundary: structure, references and honest states only; strategic quality and business acceptance remain human judgments.")
     return 0
 
 

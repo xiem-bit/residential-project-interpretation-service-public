@@ -27,23 +27,26 @@
 7. 当前任务的原始材料；
 8. 仅按 Skill 路由读取本轮需要的核心规范、模板和 Schema。
 
-不得先读取教程的 `expected/` 再声称独立发现了战略答案。教程答案只用于完成首次独立尝试后的对照和结构测试。
+教程的 `expected/` 是公开安全生产参考，可用于理解完整路径、字段关系和交付水位；不得把其中的项目事实、竞品、客群或SC复制为当前项目事实。
 
 ## 二、开始一个新项目
 
 先声明任务模式：
 
 - `real_project_delivery`：从一开始消费全部已授权资料；
-- `hidden_answer_replay`：只消费冻结的盲态输入，产出后再揭晓参考答案；
 - `non_research_task`：纯转译、导出、排版或发布，继承既有业务语义，不重开研究。
+- `tutorial`：运行公开安全样例与回归，不代表真实客户接受。
 
 初始化一个空白工作目录：
 
 ```bash
 python3 scripts/init_production_run.py \
   --input-dir examples/production-path-tutorial/input \
-  --output-dir verification-tmp/my-production-run
+  --output-dir verification-tmp/my-production-run \
+  --products 1,2,3,5
 ```
+
+`--products`默认仅启用产物1；只有任务确实需要时才加入产物2—5。发生实质语义变化时再增加`--include-change-registry`。
 
 随后按 `workflows/residential-production-orchestrator/SKILL.md` 完成工作目录中的必需输出。统一语义核是本流程的产出，不能由初始化脚本或下游载体适配器代写。
 
@@ -55,18 +58,13 @@ python3 scripts/init_production_run.py \
 project-contract.md
 fact-conflict-gap-register.json
 product1-competition-study.md
-product2-buyer-decision-study.md
 semantic-core.json
 super-competitiveness-plan.json
 product-enablement-matrix.json
-product3-chapter2-contract.json
-product3-chapter3-contract.json
-ue-solution-handoff.json
-change-impact-registry.json
 production-receipt.json
 ```
 
-产物 2 未启用时仍保留同名 Markdown，并在机器摘要中明确 `not_enabled` 及理由。产物 3—5 未启用时由启用矩阵记录，不为凑齐形式生产空载体。三个 Markdown 文件都包含一个可由公共校验器读取的 JSON 摘要块，同时保留面向人的完整正文。
+产物2—5只在启用时增加各自产物文件；未启用时只在项目合同和启用矩阵中记录理由，不生成空占位。`change-impact-registry.json`只在发生实质语义变化时生成。Markdown正式报告包含可由公共校验器读取的JSON摘要块，同时保留面向人的完整正文。
 
 ## 四、验证一次生产运行
 
@@ -74,9 +72,7 @@ production-receipt.json
 python3 scripts/verify_production_run.py verification-tmp/my-production-run
 ```
 
-机器校验只证明：文件、字段、引用、状态、数量、五项检查和跨产物编号关系符合合同。它不能判断竞争结论是否真正专业。
-
-业务能力通过还需要隐藏答案盲审：只给一套未公开的虚构原始材料，由未参与发行工程的使用者或 Agent 独立完成，然后由真人按 `evaluation/hidden-answer/rubric.json` 评分。验收协议见 `BUSINESS_COLD_START_PROTOCOL.md`。
+机器校验只证明：实际启用文件、字段、引用、状态、数量、成立检查和跨产物编号关系符合合同。它拥有否决权，但不能单独证明竞争结论专业或甲方接受；正式业务判断仍需专业语义审查，客户成果仍按任务完成真人验收。
 
 ## 五、业务通过与载体通过分开记录
 
@@ -85,13 +81,11 @@ python3 scripts/verify_production_run.py verification-tmp/my-production-run
 - `rules_loaded`
 - `project_identity_closed`
 - `product1_complete`
-- `product2_complete_or_not_enabled`
 - `semantic_core_frozen`
 - `minimum_three_sc_pass`
-- `business_judgment_blind_review_pass`
-- `ue_solution_bridge_pass`
 - `cross_product_consistency_pass`
-- `production_path_replication_pass`
+
+条件状态只在相应产物启用时出现：`product2_complete`、`ue_solution_bridge_pass`、`product4_contract_pass`、`product5_blueprint_pass`。机器合同通过、真人业务接受、载体完成、发布和业务效果继续分开记录。
 
 PPTX、网页、XMind、发布和视觉复核使用独立的 adapter 状态。任何 adapter pass 都不能替代上述业务状态。
 
