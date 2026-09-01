@@ -1,0 +1,46 @@
+{
+  "schema": "residential.authorized_reference_assets.v1",
+  "status": "explicit_user_authorization_candidate_not_released",
+  "source_baseline": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
+  "authorization_record": "references/AUTHORIZED_REFERENCE_ASSETS.md",
+  "page_template_library": {
+    "path": "references/product3/assets/产物3页面模板库",
+    "file_count": 124,
+    "source_deck_count": 3,
+    "source_slide_count": 76,
+    "all_reviewed_slide_count_with_current_gold": 96,
+    "page_semantic_count": 17,
+    "visual_prototype_count": 19,
+    "source_decks": [
+      {"file": "source_decks/QJ-建投金麟璟源-产物3-V0.4.1.pptx", "slides": 28, "sha256": "2bf3f8bce25024c672649a8bcf4ef09bf97fabb7fb31f97aedeb3ac11dae7107", "sanitization": "local_path_notes_removed_visible_render_28_of_28_equal"},
+      {"file": "source_decks/B10-德阳金鑫-产物3-V2.7.pptx", "slides": 27, "sha256": "7904304eba5d86b67dd7a76822412b1f36891c6b449ceecd97cd9d05b4d8f345", "sanitization": "source_package_no_local_path_hit"},
+      {"file": "source_decks/GT-高投中和57亩-产物3-V7.pptx", "slides": 21, "sha256": "bb48f54d06ab0436c681ab758d054d51d026a711b87fb2826f03b15f54f8f3eb", "sanitization": "source_package_no_local_path_hit"}
+    ]
+  },
+  "case_asset_library": {
+    "path": "references/product3/assets/产物3案例截图素材库",
+    "file_count": 229,
+    "valid_original_count": 224,
+    "inventory": "references/product3/assets/产物3案例截图素材库/case_asset_inventory.json",
+    "usage": "product3_reference_only"
+  },
+  "writing_library": {
+    "path": "references/writing",
+    "marketing_project_count": 100,
+    "marketing_expression_count": 500,
+    "writing_rule_count": 10,
+    "external_article_count": 16,
+    "human_revision_sample_count": 10,
+    "absolute_source_paths_removed": true
+  },
+  "external_runtime_not_bundled": [
+    "presentation_engine",
+    "grist",
+    "computer_use",
+    "browser",
+    "map_service",
+    "wechat_login",
+    "xiaohongshu_login",
+    "publishing_accounts"
+  ]
+}

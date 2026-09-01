@@ -33,6 +33,46 @@
       "may_supply_project_facts": false
     },
     {
+      "id": "REF-P3-LIB-001",
+      "type": "production_reference",
+      "stage": "product3_page_templates_and_source_decks",
+      "path": "references/product3/assets/产物3页面模板库",
+      "mechanisms": ["three_authorized_source_decks", "ninety_six_page_annotations", "seventeen_page_semantics", "nineteen_visual_prototypes"],
+      "authorization": "explicit_user_publication_authorization_2026_09_01",
+      "load_when": "新的完整产物3、页面结构选择、历史成功原稿对照或多来源原生页装配",
+      "may_supply_project_facts": false
+    },
+    {
+      "id": "REF-P3-CASE-001",
+      "type": "production_reference",
+      "stage": "product3_case_asset_routing",
+      "path": "references/product3/assets/产物3案例截图素材库",
+      "mechanisms": ["case_semantic_inventory", "page_value_routing", "ue_visual_reference", "asset_identity_boundary"],
+      "authorization": "explicit_user_publication_authorization_2026_09_01",
+      "load_when": "产物3页面需要UE案例画面证明且当前项目业务语义已经冻结",
+      "may_supply_project_facts": false
+    },
+    {
+      "id": "REF-WRITING-001",
+      "type": "production_reference",
+      "stage": "chinese_writing_and_marketing_expression",
+      "path": "references/writing",
+      "mechanisms": ["chinese_report_editing", "assertion_first_writing", "marketing_expression_patterns", "human_revision_style_samples"],
+      "authorization": "explicit_user_publication_authorization_2026_09_01",
+      "load_when": "中文报告、策略、PPT、HTML或客户可见文案的新写、实质改写与审校",
+      "may_supply_project_facts": false
+    },
+    {
+      "id": "REF-LF-HUMAN-001",
+      "type": "learning_feedback",
+      "stage": "human_revision_operating_preferences",
+      "path": "references/learning-feedback/human_revision_feedback.v0.1.json",
+      "mechanisms": ["human_visible_surface", "non_blank_first_draft", "structure_only_reuse", "duplicate_page_removal"],
+      "authorization": "explicit_user_publication_authorization_2026_09_01",
+      "load_when": "产物3装配、素材调度、前台字段或首次审阅出现重复返工",
+      "may_supply_project_facts": false
+    },
+    {
       "id": "REF-P5-QC-001",
       "type": "production_reference",
       "stage": "product5_complete_gold",

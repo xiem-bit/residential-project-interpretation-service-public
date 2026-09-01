@@ -1,0 +1,657 @@
+{
+  "schemaVersion": "residential.external_marketing_copy_reference.v0.2",
+  "dataset": {
+    "datasetId": "RES-MARKETING-COPY-HPSJ-001",
+    "name": "豪品审局价值表达全量吸收参考",
+    "class": "production_reference",
+    "status": "full_batch_reviewed_reference",
+    "version": "v0.2",
+    "generatedAt": "2026-08-21",
+    "owner": "住宅项目竞争力工程",
+    "scope": "吸收001至016共16篇的短原句、表达模式与使用职责；不吸收外部图片和项目事实。"
+  },
+  "sourceBatch": {
+    "batchId": "HPSJ-VALUE-VISUAL-PAIRING-20260820",
+    "type": "external_public_account_method_reference",
+    "upstreamRoot": "external-source:hpsj-wechat-pairing-20260820",
+    "readmeSha256": "21951d675134e285d794df790edf245a08ec7ba77be9c3043d15a2d3a71e99bc",
+    "indexSha256": "6c062ca2c145f291d0cf5028bf8ce18ee2f57298ab23ec1017581cde89a8f177",
+    "traceability": "文章页缺少稳定公开URL，以顺序、日期、完整标题、项目主题和原文结构定位回查。",
+    "runtimeDependency": false
+  },
+  "contract": {
+    "allowed": [
+      "保留短原句及其开题、转折、命名、证明或收束职责",
+      "按当前项目业务语义检索表达机制并重写当前项目文案",
+      "将原句作为学习锚点，与转述、抽象模式和风险边界并列保存"
+    ],
+    "forbidden": [
+      "把来源项目事实、数字、权益、价格、排名和唯一性主张写成当前项目事实",
+      "把来源账号的稳定写法升级为行业普遍规律",
+      "直接复制来源项目专属口号作为当前项目答案",
+      "导入来源文章图片、截图、效果图、地图、榜单或规划图到案例图素材库"
+    ],
+    "externalImagesImported": false,
+    "caseAssetLibraryMutation": false,
+    "directReuseAllowed": false
+  },
+  "articles": [
+    {
+      "articleId": "HPSJ-009",
+      "sequence": 9,
+      "date": "2026-06-09",
+      "title": "今年千万级赛道的独角兽",
+      "projectOrTopic": "保利金沙天曜／千万级市场分化与联排产品迭代",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/009_2026-06-09_今年千万级赛道的独角兽.md",
+      "sourceCardSha256": "fd3c0e960bd2258aeb09729481e6187fea3e4aabb054c201335f61012d70d0d1",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {
+          "sentenceId": "HPSJ-S009-01",
+          "text": "千万级赛道的独角兽",
+          "role": "用物种比喻同时压缩供给少、辨识度高和替代品少",
+          "mechanism": "稀缺品类命名",
+          "riskFlags": ["metaphorical_superlative", "current_project_boundary_required"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S009-02",
+          "text": "大平层对于板块能级要求更高，而别墅的土地适配性则更强",
+          "role": "切开两类产品的成立条件，重设品类比较逻辑",
+          "mechanism": "品类分野",
+          "riskFlags": ["expert_judgment", "comparison_scope_required"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S009-03",
+          "text": "层层是更优解，联排是唯一解",
+          "role": "用对照排比完成产品判断收束",
+          "mechanism": "对照式终局判断",
+          "riskFlags": ["absolute_claim_requires_boundary"],
+          "directReuseAllowed": false
+        }
+      ]
+    },
+    {
+      "articleId": "HPSJ-010",
+      "sequence": 10,
+      "date": "2026-06-05",
+      "title": "豪宅真的要变天了",
+      "projectOrTopic": "东大街、国贸双子星／城市核心回归与原创定制",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/010_2026-06-05_豪宅真的要变天了.md",
+      "sourceCardSha256": "8bc3dac1bbf1aacbbcf4fe26e243b0b740efb22a0059816915731abf7647479a",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {
+          "sentenceId": "HPSJ-S010-01",
+          "text": "豪宅真的要变天了",
+          "role": "以时代转折标题制造判断张力",
+          "mechanism": "时代切换开题",
+          "riskFlags": ["question_or_flip_context"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S010-02",
+          "text": "不同的城市发展阶段，豪宅有不同的生成规律",
+          "role": "把个案提升为阶段性解释框架",
+          "mechanism": "阶段规律命名",
+          "riskFlags": ["single_source_generalization"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S010-03",
+          "text": "四维一体的城市核心区",
+          "role": "把复杂区域门槛压缩成可记忆模型",
+          "mechanism": "多维标准压缩",
+          "riskFlags": ["dimensions_need_current_project_definition"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S010-04",
+          "text": "无需轮动，无需等待",
+          "role": "用短促排比表达成熟资源已经兑现",
+          "mechanism": "双重否定式确定性",
+          "riskFlags": ["asset_or_investment_implication"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S010-05",
+          "text": "坚持原创定制，能搬上全国舞台的城市级豪宅",
+          "role": "把产品方法、项目等级和传播尺度绑定",
+          "mechanism": "方法加等级命名",
+          "riskFlags": ["grade_claim_requires_support"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S010-06",
+          "text": "顶豪的总图规划卖相，比户型产品的首位度更高",
+          "role": "建立鲜明专业立场并重排产品叙事顺序",
+          "mechanism": "专业排序判断",
+          "riskFlags": ["expert_judgment", "product_type_boundary_required"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S010-07",
+          "text": "气韵流动的立体庭院",
+          "role": "把抬高、架空、排水和视线转成生活画面",
+          "mechanism": "参数诗意化",
+          "riskFlags": ["current_project_mechanism_required"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S010-08",
+          "text": "豪宅迭代的终极逻辑，从来不是追新逐热，而是择优而居",
+          "role": "从卖点回到购买价值观完成收束",
+          "mechanism": "价值观反转收束",
+          "riskFlags": ["absolute_tone_requires_review"],
+          "directReuseAllowed": false
+        }
+      ]
+    },
+    {
+      "articleId": "HPSJ-015",
+      "sequence": 15,
+      "date": "2026-04-30",
+      "title": "广州又一次走在全国前列",
+      "projectOrTopic": "南泰路、保利海韵／城市更新与豪宅技术普惠",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/015_2026-04-30_广州又一次走在全国前列.md",
+      "sourceCardSha256": "c04441b0a18def940fbe051de9d21ab7760f13ad9a991b6a7179e772e3361b6e",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {
+          "sentenceId": "HPSJ-S015-01",
+          "text": "为新一代主流住宅开发，确立更高标准",
+          "role": "把项目产品升级写成更广泛的行业任务",
+          "mechanism": "使命式定位",
+          "riskFlags": ["industry_claim_requires_context"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S015-02",
+          "text": "好房子是功能价值、精神价值、资产价值的三重叠加",
+          "role": "建立可传播的产品评价公式",
+          "mechanism": "三重价值公式",
+          "riskFlags": ["asset_value_claim"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S015-03",
+          "text": "研发豪宅的开始，是服务于极少数人；研发豪宅的最后，一定是服务于大多数人",
+          "role": "解释旗舰技术向主流产品下放的方向",
+          "mechanism": "起点终点对照",
+          "riskFlags": ["industry_generalization"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S015-04",
+          "text": "来时的路",
+          "role": "用极短命名连接品牌历史、城市记忆和旧业主情感",
+          "mechanism": "品牌记忆命名",
+          "riskFlags": ["brand_history_support_required"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S015-05",
+          "text": "一个板块、一个住区，确立基本格局和面貌的机会可能只有一次",
+          "role": "强化城市更新的一次成型与长期主义",
+          "mechanism": "不可逆机会判断",
+          "riskFlags": ["absolute_claim_requires_boundary"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S015-06",
+          "text": "城市由旧向新转换的榫卯节点",
+          "role": "把住区、商业、学校和公园的连接压缩成结构性意象",
+          "mechanism": "结构隐喻命名",
+          "riskFlags": ["current_project_spatial_relation_required"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S015-07",
+          "text": "城市之眼",
+          "role": "给社区商业赋予城市公共角色",
+          "mechanism": "公共界面命名",
+          "riskFlags": ["current_project_function_required"],
+          "directReuseAllowed": false
+        },
+        {
+          "sentenceId": "HPSJ-S015-08",
+          "text": "立体漫游系统",
+          "role": "把天桥、商业、学校、公园和住区组织成连续体验",
+          "mechanism": "系统式场景命名",
+          "riskFlags": ["current_project_path_required"],
+          "directReuseAllowed": false
+        }
+      ]
+    },
+    {
+      "articleId": "HPSJ-001",
+      "sequence": 1,
+      "date": "2026-08-08",
+      "title": "它成爆款，我完全不意外",
+      "projectOrTopic": "长住集团／组织人格、长期业主意识与控量市场",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/001_2026-08-08_它成爆款我完全不意外.md",
+      "sourceCardSha256": "7700b70e4324d232dec8c41936e7cf0b0891ec2907e94893739a2948ce3c125a",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {"sentenceId":"HPSJ-S001-01","text":"长住才是家","role":"把产品、服务周期和业主关系压缩成生活主张","mechanism":"品牌生活主张","riskFlags":["brand_specific"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S001-02","text":"眼里有光、手里有活、心中有业主","role":"用人格化排比替代企业规模背书","mechanism":"组织人格排比","riskFlags":["organization_claim_requires_support"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S001-03","text":"小而美的产品主义者","role":"给企业建立可感知的产品性格","mechanism":"组织类型命名","riskFlags":["brand_evaluation"],"directReuseAllowed":false}
+      ]
+    },
+    {
+      "articleId": "HPSJ-002",
+      "sequence": 2,
+      "date": "2026-07-24",
+      "title": "最能代表成都的豪宅",
+      "projectOrTopic": "D10望江／城市代表豪宅资格与观看权",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/002_2026-07-24_最能代表成都的豪宅.md",
+      "sourceCardSha256": "608544dcee92b3e66f515a5abffb6db2385211e4243803ddf80562f9188674a0",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {"sentenceId":"HPSJ-S002-01","text":"只有这里有","role":"把土地、文脉与景观的重合压成稀缺判断","mechanism":"在地唯一性短句","riskFlags":["absolute_claim_requires_boundary"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S002-02","text":"只有这里最高","role":"把高度放入城市同尺度比较","mechanism":"高度稀缺短句","riskFlags":["ranking_requires_verification"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S002-03","text":"视野是大平层的灵魂","role":"把观看权提升为产品首位判断","mechanism":"产品灵魂命名","riskFlags":["expert_judgment"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S002-04","text":"前期看设计、中期看呈现、后期看服务","role":"建立豪宅全周期评价次序","mechanism":"阶段式评价标准","riskFlags":["service_delivery_boundary"],"directReuseAllowed":false}
+      ]
+    },
+    {
+      "articleId": "HPSJ-003",
+      "sequence": 3,
+      "date": "2026-07-17",
+      "title": "你可以继续相信天新",
+      "projectOrTopic": "天府新区／宏观信号、购买力投票与公园生活网络",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/003_2026-07-17_你可以继续相信天新.md",
+      "sourceCardSha256": "dffcbb6f71a39cfb4de31f7c3569ab8802cca9c2936b26b1798fe9b0354f86e5",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {"sentenceId":"HPSJ-S003-01","text":"你可以继续相信天新","role":"把宏观信号、成交选择和产品兑现收束为区域信心","mechanism":"信心式结论","riskFlags":["market_claim_requires_current_evidence"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S003-02","text":"公园不是背景，而是生活网络","role":"把公园从景观名词改写为日常系统","mechanism":"资源角色反转","riskFlags":["current_project_connection_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S003-03","text":"购买力投票","role":"用真实选择替代单向市场看好","mechanism":"市场选择命名","riskFlags":["transaction_data_required"],"directReuseAllowed":false}
+      ]
+    },
+    {
+      "articleId": "HPSJ-004",
+      "sequence": 4,
+      "date": "2026-07-15",
+      "title": "深圳豪宅最该补齐的短板",
+      "projectOrTopic": "后海招商玺／三能级、立体规划与隐性系统",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/004_2026-07-15_深圳豪宅最该补齐的短板.md",
+      "sourceCardSha256": "93d2ac7c5d998c29eccf81392424a750b5297d6f43d77e929b7f2e28e7fb178e",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {"sentenceId":"HPSJ-S004-01","text":"城市能级、配套能级和产品能级","role":"把豪宅成立条件压缩为三项同看标准","mechanism":"三能级公式","riskFlags":["dimensions_need_definition"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S004-02","text":"超级底盘—浮岛花园—云端住宅","role":"把复杂竖向总图转成三层生活结构","mechanism":"立体系统命名","riskFlags":["current_project_structure_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S004-03","text":"好房子的隐性系统","role":"把静音、用水、微气候与安全提升为长期产品力","mechanism":"隐性价值命名","riskFlags":["system_delivery_requires_support"],"directReuseAllowed":false}
+      ]
+    },
+    {
+      "articleId": "HPSJ-005",
+      "sequence": 5,
+      "date": "2026-07-06",
+      "title": "和高新万象天地一起站到光里",
+      "projectOrTopic": "高新万象天地／板块演进、商业造中心与供给断层",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/005_2026-07-06_和高新万象天地一起站到光里.md",
+      "sourceCardSha256": "1a5b882b892c2c741a4f13582c7edd8dd9486ae320d1096d2108cf44817a2d3c",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {"sentenceId":"HPSJ-S005-01","text":"站到光里","role":"把产业、板块和项目进入主流视野压成标题意象","mechanism":"阶段显影命名","riskFlags":["metaphorical"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S005-02","text":"做三四月的事，在八九月自有答案","role":"为长期建设和兑现等待建立耐心语气","mechanism":"时间延迟比喻","riskFlags":["delivery_boundary"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S005-03","text":"不吃饼","role":"把高总价客户对兑现确定性的要求转成口语","mechanism":"客户心理口语化","riskFlags":["colloquial_tone_review"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S005-04","text":"放眼全城，都是塔尖级别的存在","role":"把项目从板块比较抬升到全城产品坐标","mechanism":"竞争坐标升级","riskFlags":["grade_claim_requires_support"],"directReuseAllowed":false}
+      ]
+    },
+    {
+      "articleId": "HPSJ-006",
+      "sequence": 6,
+      "date": "2026-06-26",
+      "title": "豪宅不一定就是好房子",
+      "projectOrTopic": "好房子标准／标准制定、展示与执行闭环",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/006_2026-06-26_豪宅不一定就是好房子.md",
+      "sourceCardSha256": "b5962cb7f876d0c7e63c5e55cdbb83da9512a7ef2595c24a06336106cae0d470",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {"sentenceId":"HPSJ-S006-01","text":"豪宅不一定就是好房子","role":"切开价格身份与长期居住质量","mechanism":"反常识开题","riskFlags":["category_judgment"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S006-02","text":"制定标准、传达标准、执行标准","role":"建立从价值判断到产品兑现的闭环","mechanism":"标准执行三段式","riskFlags":["execution_evidence_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S006-03","text":"交付什么就展示什么","role":"要求展示口径与实际交付一致","mechanism":"展示真实性原则","riskFlags":["delivery_scope_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S006-04","text":"先确保住得舒服，再追求住得漂亮","role":"重排舒适系统与视觉豪华的优先级","mechanism":"居住价值排序","riskFlags":["expert_judgment"],"directReuseAllowed":false}
+      ]
+    },
+    {
+      "articleId": "HPSJ-007",
+      "sequence": 7,
+      "date": "2026-06-16",
+      "title": "华润置地将再次改变成都地理",
+      "projectOrTopic": "城市系数／商业运营与住宅承接中心",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/007_2026-06-16_华润置地将再次改变成都地理.md",
+      "sourceCardSha256": "9ae9da051345920a282e254c9501229fc6385bbfd2ea4f1ffe928bae64b1d9ce",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {"sentenceId":"HPSJ-S007-01","text":"城市系数","role":"给项目与城市相互增益能力建立传播概念","mechanism":"关系系数命名","riskFlags":["author_construct_not_metric"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S007-02","text":"低城市系数项目消耗城市能量，高城市系数项目为城市持续提供能量","role":"区分借势城市与反向造城两类项目","mechanism":"正反类型对照","riskFlags":["single_source_framework"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S007-03","text":"商业先造中心、住宅承接中心","role":"解释运营如何先聚人再形成居住价值","mechanism":"业态生成链","riskFlags":["causal_claim_requires_evidence"],"directReuseAllowed":false}
+      ]
+    },
+    {
+      "articleId": "HPSJ-008",
+      "sequence": 8,
+      "date": "2026-06-11",
+      "title": "桐梓林的第二次城市化",
+      "projectOrTopic": "桐梓林／成熟街区更新、生活方式与城市记忆",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/008_2026-06-11_桐梓林的第二次城市化.md",
+      "sourceCardSha256": "3914b86df0c740d2cb653e71913eaa3b1f3821d20d8c66f2f1391e28e99ace56",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {"sentenceId":"HPSJ-S008-01","text":"推窗见世界，自在桐梓林","role":"把国际生活界面与熟悉日常压成区域主张","mechanism":"双重生活主张","riskFlags":["place_specific"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S008-02","text":"第二次城市化","role":"给成熟街区更新和新一代居民回流命名","mechanism":"街区阶段命名","riskFlags":["author_construct"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S008-03","text":"世界可以是旅程，桐梓林仍是生活原点","role":"把全球流动与城市归属连接为情感收束","mechanism":"远方原点对照","riskFlags":["place_specific"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S008-04","text":"城市更新容易造新房，最难复制的是生活方式与消费场景","role":"把成熟街区的难复制性落到日常网络","mechanism":"更新难点判断","riskFlags":["expert_judgment"],"directReuseAllowed":false}
+      ]
+    },
+    {
+      "articleId": "HPSJ-011",
+      "sequence": 11,
+      "date": "2026-06-03",
+      "title": "把联排别墅重新做一遍",
+      "projectOrTopic": "新规联排／垂直家庭系统与第三生活空间",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/011_2026-06-03_把联排别墅重新做一遍.md",
+      "sourceCardSha256": "37d767761f52f5d02d182adc21db8ff2b6f71e608ea6e39651ed0eaf9a579d25",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {"sentenceId":"HPSJ-S011-01","text":"把联排别墅重新做一遍","role":"以品类重做统领传统痛点与新解法","mechanism":"品类重做命题","riskFlags":["category_scope_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S011-02","text":"4+2垂直家庭系统","role":"把六层空间改写为家庭分层任务","mechanism":"垂直系统命名","riskFlags":["current_project_layout_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S011-03","text":"日照平权","role":"把多层采光分配转成家庭公平权益","mechanism":"空间权益命名","riskFlags":["technical_verification_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S011-04","text":"第三生活空间","role":"为社区商业与家庭之外的日常交往赋予角色","mechanism":"生活空间命名","riskFlags":["operation_required"],"directReuseAllowed":false}
+      ]
+    },
+    {
+      "articleId": "HPSJ-012",
+      "sequence": 12,
+      "date": "2026-05-27",
+      "title": "最能买的那群人正悄悄进场",
+      "projectOrTopic": "高总价市场／钱包投票、产品人格与价值错位",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/012_2026-05-27_最能买的那群人正悄悄进场.md",
+      "sourceCardSha256": "fcbb82ea6c53866998edbefe4b2b285e048b13706097dd116a3206f7388eb260",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {"sentenceId":"HPSJ-S012-01","text":"有就买，没有就不买","role":"把稀缺供给与真实购买时机绑定","mechanism":"供给选择短句","riskFlags":["transaction_context_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S012-02","text":"从‘嘴上看好’到‘真掏腰包’","role":"把观点共识升级为付款证据","mechanism":"言行反差对照","riskFlags":["transaction_data_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S012-03","text":"住得好 > 卖得好","role":"将销售表现与长期居住价值重新排序","mechanism":"价值不等式","riskFlags":["expert_judgment"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S012-04","text":"不需要取悦所有人，只需要打动真正懂它的人","role":"把原创产品与精准客群互选连接起来","mechanism":"客群筛选价值观","riskFlags":["audience_stereotype_review"],"directReuseAllowed":false}
+      ]
+    },
+    {
+      "articleId": "HPSJ-013",
+      "sequence": 13,
+      "date": "2026-05-20",
+      "title": "所有的落后都是前期投入不够",
+      "projectOrTopic": "G29元岛／前期投入、原创系统与现房验真",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/013_2026-05-20_所有的落后都是前期投入不够.md",
+      "sourceCardSha256": "f52a0f88549f146d3d4f88bf33660371584da64dfcb62ec8414b9fc147497721",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {"sentenceId":"HPSJ-S013-01","text":"所有的落后都是前期投入不够","role":"用反常识总判断统领产品抗淘汰逻辑","mechanism":"前置投入判断","riskFlags":["absolute_tone_review"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S013-02","text":"一体设计，小地块大格局","role":"把场地限制转成系统组织能力","mechanism":"小大对照","riskFlags":["current_project_plan_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S013-03","text":"成本投入，宁多给不少给","role":"把预算原则写成可验真的品牌价值观","mechanism":"投入原则短句","riskFlags":["cost_and_delivery_evidence_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S013-04","text":"不紧凑、不将就","role":"把户型尺度转译成家庭情绪","mechanism":"双重生活结果","riskFlags":["current_project_space_required"],"directReuseAllowed":false}
+      ]
+    },
+    {
+      "articleId": "HPSJ-014",
+      "sequence": 14,
+      "date": "2026-05-06",
+      "title": "在广州看见中国豪宅下一个十年",
+      "projectOrTopic": "广州甲第／城市更新、在地原创与精工落地",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/014_2026-05-06_在广州看见中国豪宅下一个十年.md",
+      "sourceCardSha256": "a0bf00d4cda57068e9c80f4e6decfca3c47ffc441e781b4c117a122b9977e827",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {"sentenceId":"HPSJ-S014-01","text":"城市板块逻辑、产品营造逻辑、客户心态逻辑","role":"用三重逻辑搭建全文骨架","mechanism":"三逻辑框架","riskFlags":["framework_requires_current_content"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S014-02","text":"一城一甲第，一席一传奇","role":"连接城市唯一性与居住唯一性","mechanism":"城市席位对仗","riskFlags":["brand_specific","absolute_claim"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S014-03","text":"请顶级设计师不难，难的是理解尊重设计，极致精工落地","role":"把大师名单转为执行门槛","mechanism":"名家到落地转折","riskFlags":["craft_delivery_evidence_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S014-04","text":"从远观到中观，再到微观","role":"组织城市地标、空间体验和工艺细节的观看路径","mechanism":"三级观看路径","riskFlags":[],"directReuseAllowed":false}
+      ]
+    },
+    {
+      "articleId": "HPSJ-016",
+      "sequence": 16,
+      "date": "2026-04-28",
+      "title": "做自己的榜一大哥",
+      "projectOrTopic": "华宸府／区域标杆、定制选择与运营上限",
+      "sourceCard": "external-source:hpsj-wechat-pairing-20260820/cards/016_2026-04-28_做自己的榜一大哥.md",
+      "sourceCardSha256": "935257a142faf220ffc0dc8d0d9d8c796ef84eac943f8344bb4a53f53a67c90b",
+      "readingStatus": "full_to_bottom_no_comments",
+      "factsUse": "source_claim_only_reverify_for_current_project",
+      "originalSentences": [
+        {"sentenceId":"HPSJ-S016-01","text":"做自己的榜一大哥","role":"把项目写成凭自身证据确立的区域标杆","mechanism":"自我标杆命名","riskFlags":["ranking_requires_boundary"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S016-02","text":"私享定制化","role":"把同面积段的不同家庭方案升级为选择权","mechanism":"定制选择命名","riskFlags":["current_project_options_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S016-03","text":"公园+住宅","role":"把城市绿地和社区总图组织为一体","mechanism":"双系统组合命名","riskFlags":["spatial_connection_required"],"directReuseAllowed":false},
+        {"sentenceId":"HPSJ-S016-04","text":"产品力是基线，上限取决于运营","role":"建立物理产品与长期运营的递进关系","mechanism":"基线上限判断","riskFlags":["operation_commitment_boundary"],"directReuseAllowed":false}
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "patternId": "HPSJ-PAT-01",
+      "name": "时代或市场转折开题",
+      "responsibility": "先说明旧规律为什么失效，再说明新判断为何现在成立。",
+      "abstractStructure": "阶段变化／市场分化 → 旧认知失效 → 新判断标准 → 项目成为样本",
+      "sourceArticleIds": ["HPSJ-009", "HPSJ-010", "HPSJ-015"],
+      "applicableSemanticIds": ["P3-MARKET-TURN-CANDIDATE", "P3-CHOICE-SITUATION"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-02",
+      "name": "品类成立条件切分",
+      "responsibility": "不在同一配置表里比较不同产品，而先说清各自依赖什么条件。",
+      "abstractStructure": "品类A依赖条件 → 品类B依赖条件 → 本案适配条件 → 重新定义比较集合",
+      "sourceArticleIds": ["HPSJ-009"],
+      "applicableSemanticIds": ["P3-COMPETITION-MAP", "P3-SC-SCENE"],
+      "maturity": "single_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-03",
+      "name": "城市到生活权益下钻",
+      "responsibility": "把宏观判断逐级落到客户能够取得的生活结果。",
+      "abstractStructure": "城市 → 区域 → 板块 → 项目 → 产品 → 生活权益",
+      "sourceArticleIds": ["HPSJ-009", "HPSJ-010", "HPSJ-015"],
+      "applicableSemanticIds": ["P3-COMPETITION-MAP", "P3-ADVANTAGE-SYNTHESIS", "P3-SC-SCENE"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-04",
+      "name": "资源清单改写为生成机制",
+      "responsibility": "解释资源如何持续产生板块、项目或生活价值。",
+      "abstractStructure": "外部条件 → 生成机制 → 项目承接 → 客户为什么在意",
+      "sourceArticleIds": ["HPSJ-010", "HPSJ-015"],
+      "applicableSemanticIds": ["P3-COMPETITION-MAP", "P3-SC-SCENE"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-05",
+      "name": "参数转生活体验",
+      "responsibility": "让技术参数进入空间动作和日常结果，而不是孤立报数。",
+      "abstractStructure": "工程参数 → 空间动作 → 使用体验 → 价值判断",
+      "sourceArticleIds": ["HPSJ-009", "HPSJ-010", "HPSJ-015"],
+      "applicableSemanticIds": ["P3-SC-SCENE", "P3-SC-PROOF"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-06",
+      "name": "旧痛点与新解法对照",
+      "responsibility": "先承认传统方案为何会被淘汰，再逐项证明新方案解决了什么。",
+      "abstractStructure": "传统痛点 → 形成原因 → 新机制 → 客户结果",
+      "sourceArticleIds": ["HPSJ-009", "HPSJ-010"],
+      "applicableSemanticIds": ["P3-SC-SCENE", "P3-SC-PROOF"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-07",
+      "name": "专业排序判断",
+      "responsibility": "重排客户理解产品的先后顺序，形成鲜明顾问立场。",
+      "abstractStructure": "对某类购买任务而言 → A的首位度高于B → 因为A决定长期结果",
+      "sourceArticleIds": ["HPSJ-009", "HPSJ-010"],
+      "applicableSemanticIds": ["P3-VALUE-ANCHOR", "P3-SC-SCENE"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-08",
+      "name": "旗舰技术普惠",
+      "responsibility": "把高端研发能力转成主流家庭可获得的真实产品结果。",
+      "abstractStructure": "旗舰研发 → 稳定技术／空间能力 → 下放主流产品 → 扩大受益人群",
+      "sourceArticleIds": ["HPSJ-015"],
+      "applicableSemanticIds": ["P3-VALUE-ANCHOR", "P3-SC-SCENE", "P3-SC-PROOF"],
+      "maturity": "single_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-09",
+      "name": "一次成型长期主义",
+      "responsibility": "把更新机会的不可逆性转成前期投入、耐久和长期使用价值。",
+      "abstractStructure": "机会稀缺 → 前期高规格投入 → 长期维持 → 客户获得",
+      "sourceArticleIds": ["HPSJ-010", "HPSJ-015"],
+      "applicableSemanticIds": ["P3-SC-SCENE", "P3-SC-PROOF"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-10",
+      "name": "价值观终局收束",
+      "responsibility": "在事实和机制证明之后，把购买行为收束为清楚的生活选择。",
+      "abstractStructure": "前文事实与机制 → 放弃旧价值排序 → 选择新的生活原则",
+      "sourceArticleIds": ["HPSJ-009", "HPSJ-010", "HPSJ-015"],
+      "applicableSemanticIds": ["P3-CLOSING-OUTCOME"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-11",
+      "name": "先定义价值资格再评价项目",
+      "responsibility": "先公开好房子、城市代表作或完整产品力的成立条件，再逐项判断本案。",
+      "abstractStructure": "提出问题 → 定义资格／标准 → 逐项验算 → 保留兑现边界",
+      "sourceArticleIds": ["HPSJ-002", "HPSJ-006", "HPSJ-014"],
+      "applicableSemanticIds": ["P3-VALUE-CRITERIA-CANDIDATE", "P3-COMPETITION-MAP"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-12",
+      "name": "组织人格到品牌主张",
+      "responsibility": "不用规模替代产品判断，而从组织选择、作品和业主关系建立品牌性格。",
+      "abstractStructure": "组织人格 → 产品取舍 → 业主关系 → 一句生活主张",
+      "sourceArticleIds": ["HPSJ-001", "HPSJ-013"],
+      "applicableSemanticIds": ["P3-VALUE-ANCHOR", "P3-CLOSING-OUTCOME"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-13",
+      "name": "宏观信号到钱包投票",
+      "responsibility": "让政策或趋势判断经过真实购买选择校验，再进入项目解释。",
+      "abstractStructure": "宏观信号 → 市场质疑 → 同口径成交／选择 → 项目承接",
+      "sourceArticleIds": ["HPSJ-003", "HPSJ-005", "HPSJ-012", "HPSJ-016"],
+      "applicableSemanticIds": ["P3-MARKET-TURN-CANDIDATE", "P3-CHOICE-SITUATION"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-14",
+      "name": "资源类型到生活网络",
+      "responsibility": "先区分公园、商业或文化资源的角色，再说明它们如何进入日常。",
+      "abstractStructure": "资源分类 → 空间／运营连接 → 日常路径 → 生活权益",
+      "sourceArticleIds": ["HPSJ-003", "HPSJ-007", "HPSJ-008", "HPSJ-016"],
+      "applicableSemanticIds": ["P3-COMPETITION-MAP", "P3-SC-SCENE"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-15",
+      "name": "总图重写为资源分配",
+      "responsibility": "不只说明楼栋排列，而说明不同家庭分别获得什么景观、私密、动线和公共权益。",
+      "abstractStructure": "总图机制 → 楼栋／户型落位 → 权益分配 → 公平性与取舍",
+      "sourceArticleIds": ["HPSJ-002", "HPSJ-003", "HPSJ-004", "HPSJ-011", "HPSJ-016"],
+      "applicableSemanticIds": ["P3-SC-SCENE", "P3-SC-PROOF"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-16",
+      "name": "可见豪华与隐性系统双证",
+      "responsibility": "把立面、园林、会所等可见品质与静音、用水、微气候、安全等长期系统并列证明。",
+      "abstractStructure": "可见形象 → 隐性系统 → 使用过程 → 长期舒适结果",
+      "sourceArticleIds": ["HPSJ-004", "HPSJ-006", "HPSJ-013", "HPSJ-014"],
+      "applicableSemanticIds": ["P3-SC-SCENE", "P3-SC-PROOF"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-17",
+      "name": "板块演进到中心生成",
+      "responsibility": "用时间轴说明成熟中心如何被产业、商业或公共界面持续生成。",
+      "abstractStructure": "板块阶段 → 中心迁移／升级 → 人群与消费聚集 → 住宅承接",
+      "sourceArticleIds": ["HPSJ-005", "HPSJ-007", "HPSJ-008"],
+      "applicableSemanticIds": ["P3-MARKET-TURN-CANDIDATE", "P3-COMPETITION-MAP"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-18",
+      "name": "标准到交付的执行闭环",
+      "responsibility": "把价值标准落实到展示、工艺、现房或交付范围，避免设计名词替代兑现。",
+      "abstractStructure": "定义标准 → 可见展示 → 执行机制 → 交付／现房验真",
+      "sourceArticleIds": ["HPSJ-006", "HPSJ-013", "HPSJ-014"],
+      "applicableSemanticIds": ["P3-VALUE-CRITERIA-CANDIDATE", "P3-SC-PROOF"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-19",
+      "name": "产品人格筛选目标客群",
+      "responsibility": "让鲜明产品与真正认可其取舍的人群互选，不用泛化标签代替购买任务。",
+      "abstractStructure": "产品独特取舍 → 适配购买任务 → 不适配边界 → 目标人群选择",
+      "sourceArticleIds": ["HPSJ-001", "HPSJ-012", "HPSJ-016"],
+      "applicableSemanticIds": ["P3-FAMILY-PATH", "P3-SC-SCENE"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-20",
+      "name": "双生活模型提供选择权",
+      "responsibility": "同一面积或空间底盘不设唯一答案，而用不同动线与房间关系服务不同家庭任务。",
+      "abstractStructure": "共同底盘 → 家庭模型A／B → 各自得到与取舍 → 选择理由",
+      "sourceArticleIds": ["HPSJ-011", "HPSJ-016"],
+      "applicableSemanticIds": ["P3-FAMILY-PATH", "P3-SC-SCENE"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-21",
+      "name": "产品基线与运营上限",
+      "responsibility": "先证明物理产品完成基本价值，再说明持续运营能够增加什么长期结果。",
+      "abstractStructure": "产品基线 → 运营机制 → 持续场景 → 长期客户获得",
+      "sourceArticleIds": ["HPSJ-005", "HPSJ-007", "HPSJ-008", "HPSJ-016"],
+      "applicableSemanticIds": ["P3-SC-SCENE", "P3-SC-PROOF", "P3-CLOSING-OUTCOME"],
+      "maturity": "cross_source_candidate"
+    },
+    {
+      "patternId": "HPSJ-PAT-22",
+      "name": "供给断层到价值缓冲",
+      "responsibility": "先用同口径供给缺口定位稀缺，再解释总价、产品或运营形成的购买缓冲。",
+      "abstractStructure": "供给结构 → 缺口／断层 → 本案补位 → 预算或选择缓冲",
+      "sourceArticleIds": ["HPSJ-005", "HPSJ-009", "HPSJ-012", "HPSJ-016"],
+      "applicableSemanticIds": ["P3-COMPETITION-MAP", "P3-ADVANTAGE-SYNTHESIS"],
+      "maturity": "cross_source_candidate"
+    }
+  ],
+  "qualitySummary": {
+    "articleCount": 16,
+    "originalSentenceCount": 67,
+    "patternCount": 22,
+    "crossSourcePatternCount": 20,
+    "singleSourcePatternCount": 2,
+    "externalImageCount": 0,
+    "nextBatch": "16篇本批已完成；等待下一组外部参考后再比较跨批稳定性"
+  }
+}

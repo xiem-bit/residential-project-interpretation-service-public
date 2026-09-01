@@ -75,7 +75,7 @@
 
 ## 7A. 甲方成果执行A／B／C三级写作与后台隔离
 
-产物1、产物2以及客户可见的PPT、HTML、PDF和网页文案，必须读取`workflows/residential-production-orchestrator/references/client-facing-writing.md`：
+产物1、产物2以及客户可见的PPT、HTML、PDF和网页文案，必须依次读取`workflows/chinese-research-report-editor/SKILL.md`、`workflows/chinese-affirmative-business-editor/SKILL.md`、`references/writing/16-断言式书写规范_v1.0.md`和`workflows/residential-production-orchestrator/references/client-facing-writing.md`：
 
 - A级包括价值锚点、超级竞争力、策略标题、PPT可见主标题、核心论点与金句。强制完成肯定式语义审校、语义覆盖、so-what测试和机械扫描；命中必须人工复核，不要求全文零命中。
 - B级包括正文判断句、小节句、卡片观点与支撑。正式交付前使用`--report-only`整体扫描，只处理削弱结论、制造歧义或暴露内部方法的命中。
@@ -93,7 +93,9 @@ A级新写、实质改写或审校必须运行`tools/chinese_copy_lint/affirmati
 
 ## 8A. 产物3黄金权威与默认组合
 
-新的完整产物3默认先读取`examples/gold-product3-public-safe/gold-authority.json`、当前20页授权真实黄金终稿和`PAGE_RESPONSIBILITIES.md`，再使用`references/product3/page-semantics.json`按当前项目增删、调序与重组。权威优先级是：用户验收终稿及其机器权威→该终稿页面职责→17种页面语义→三份历史成功稿的匿名结构蒸馏→孤立视觉变体。
+新的完整产物3默认先读取`examples/gold-product3-public-safe/gold-authority.json`、当前20页授权真实黄金终稿和`PAGE_RESPONSIBILITIES.md`，再读取`references/product3/assets/产物3页面模板库/`中的三份获授权历史原稿、96页预览与17种页面语义，按当前项目增删、调序与重组。权威优先级是：用户验收终稿及其机器权威→该终稿页面职责→17种页面语义→三份历史成功原稿与逐页标注→孤立视觉变体。
+
+产物3装配按“页面语义与视觉结构＋当前项目文案＋案例图／项目化画面”执行。页面结构从124文件模板资产读取，画面候选从229文件案例素材库按生效语义检索，表达从100项目500条营销文案参考中学习；历史项目事实、标题、数字、客户结论和图片身份不得平移为当前项目事实。
 
 当前黄金组合固定说明它自身的20页事实：第5—7页是三张同底图竞争关系；三条竞争力按3／4／2页非对称展开；第19页只做一页轻量AI推荐官预告；第20页收口。家庭分类、家庭路径与UE蓝图仍是按项目启用的通用页面语义，不是本终稿默认组合。新项目不刚性继承20页、具体页序或证明页数，也不得用“可重组”绕过黄金权威选择。
 

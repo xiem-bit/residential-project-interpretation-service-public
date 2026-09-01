@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "product3.page_semantic_pairing_profiles.v0.1",
+  "dataset": {
+    "datasetId": "P3-SEMANTIC-PAIRING-001",
+    "name": "页面语义与文案及图证联动关系",
+    "class": "production_reference",
+    "status": "pilot_reviewed_reference",
+    "version": "v0.1",
+    "generatedAt": "2026-08-21",
+    "owner": "产物3页面装配资产",
+    "isFourthLibrary": false,
+    "responsibility": "只登记页面语义、文案模式和图证职责之间的路由关系，不保存当前项目事实、外部图片或新的案例素材。"
+  },
+  "sourceReference": {
+    "copyDataset": "references/writing/营销文案表达库/datasets/hpsj_value_expression_reference.v0.1.json",
+    "sourceArticleIds": ["HPSJ-009", "HPSJ-010", "HPSJ-015"],
+    "externalImagesImported": false
+  },
+  "semanticCandidates": [
+    {
+      "semanticCandidateId": "P3-MARKET-TURN-CANDIDATE",
+      "name": "市场／时代转折",
+      "responsibility": "证明旧有市场、城市或产品规律为什么失效，并建立本轮项目判断必须采用的新标准。",
+      "distinctFrom": {
+        "P3-CHOICE-SITUATION": "客户选择局面负责摆出替代选择，不负责证明旧规律失效。",
+        "P3-COMPETITION-MAP": "竞争地图负责同口径比较，不负责回答为什么现在必须换比较标准。"
+      },
+      "sourceArticleIds": ["HPSJ-009", "HPSJ-010", "HPSJ-015"],
+      "crossSourceEvidence": [
+        "009以千万级成交分化建立品类机会",
+        "010以增量扩张转向存量提质建立核心回归",
+        "015以城市更新和旗舰技术普惠建立主流住宅升级"
+      ],
+      "status": "candidate_external_cross_source_not_current",
+      "productionSelectable": false,
+      "promotionCondition": "至少一个真实住宅项目独立采用，并证明该页不能由客户选择局面或竞争地图承担；完成页面职责、转场、视觉结构和前后台边界复核后再进入正式页面语义库。"
+    }
+  ],
+  "profiles": [
+    {
+      "pairingProfileId": "PAIR-HPSJ-01",
+      "name": "市场转折建立新标准",
+      "semanticId": "P3-MARKET-TURN-CANDIDATE",
+      "businessPurpose": "回答为什么是现在、为什么旧判断已经不够。",
+      "copyPatternIds": ["HPSJ-PAT-01"],
+      "proofType": "当前项目市场数据图、政策节点、供给变化或可核验时间轴",
+      "visualLogic": "变化前后对照 → 旧规律失效 → 新标准 → 本案进入条件",
+      "assetRoute": "system_generated_current_project_fact_diagram",
+      "caseAssetUse": "none",
+      "forbiddenEvidence": ["外部文章截图", "来源项目成交图直接复用", "未经核验的政策或市场数字"],
+      "sourceArticleIds": ["HPSJ-009", "HPSJ-010", "HPSJ-015"],
+      "status": "candidate_until_semantic_promotion"
+    },
+    {
+      "pairingProfileId": "PAIR-HPSJ-02",
+      "name": "区域或品类筛选模型",
+      "semanticId": "P3-COMPETITION-MAP",
+      "businessPurpose": "用一组明确条件重设区域、板块或品类比较标准。",
+      "copyPatternIds": ["HPSJ-PAT-02", "HPSJ-PAT-03"],
+      "proofType": "当前项目地图、同口径指标和条件筛选关系图",
+      "visualLogic": "筛选条件总览 → 本案与替代选择同口径比较 → 机会结论",
+      "assetRoute": "system_generated_map_or_comparison_diagram",
+      "caseAssetUse": "none",
+      "forbiddenEvidence": ["只画距离不解释购买任务", "直接照搬外部来源的城市模型"],
+      "sourceArticleIds": ["HPSJ-009", "HPSJ-010"],
+      "status": "reviewed_reference"
+    },
+    {
+      "pairingProfileId": "PAIR-HPSJ-03",
+      "name": "资源清单变生成机制",
+      "semanticId": "P3-SC-SCENE",
+      "businessPurpose": "解释资源如何持续产生板块价值，并由本案承接为购买意义。",
+      "copyPatternIds": ["HPSJ-PAT-03", "HPSJ-PAT-04"],
+      "proofType": "当前项目空间关系、运营关系、时间累积或资源连接图",
+      "visualLogic": "外部条件 → 生成机制 → 项目承接 → 客户获得",
+      "assetRoute": "current_project_fact_diagram_first",
+      "caseAssetUse": "仅在需要证明明源UE如何展示该关系时，检索现有CASE编号",
+      "forbiddenEvidence": ["把附近配套清单当成生成机制", "把CASE图当成本案事实"],
+      "sourceArticleIds": ["HPSJ-010", "HPSJ-015"],
+      "status": "reviewed_reference"
+    },
+    {
+      "pairingProfileId": "PAIR-HPSJ-04",
+      "name": "传统痛点到产品重做",
+      "semanticId": "P3-SC-SCENE",
+      "businessPurpose": "先让客户看懂传统方案为什么不好用，再建立本案的新解法。",
+      "copyPatternIds": ["HPSJ-PAT-06", "HPSJ-PAT-07"],
+      "proofType": "当前项目产品对比图、结构剖面、户型关系或逻辑结构图",
+      "visualLogic": "传统痛点 → 痛点形成原因 → 本案机制 → 客户结果",
+      "assetRoute": "current_project_product_diagram_first",
+      "caseAssetUse": "仅用于证明UE可采用的对比展示方式",
+      "forbiddenEvidence": ["贬低竞品", "把来源项目户型或效果图作为本案图证"],
+      "sourceArticleIds": ["HPSJ-009", "HPSJ-010"],
+      "status": "reviewed_reference"
+    },
+    {
+      "pairingProfileId": "PAIR-HPSJ-05",
+      "name": "参数进入生活体验",
+      "semanticId": "P3-SC-PROOF",
+      "businessPurpose": "把数字、结构和工程动作证明为客户能够感知的使用结果。",
+      "copyPatternIds": ["HPSJ-PAT-05"],
+      "proofType": "当前项目剖面、总图、户型、尺寸关系或系统制作逻辑图",
+      "visualLogic": "参数标注 → 空间动作 → 生活体验 → 价值回扣",
+      "assetRoute": "current_project_fact_or_generated_diagram",
+      "caseAssetUse": "可检索明源UE截图证明展示方式，但CASE图不承担本案参数事实",
+      "forbiddenEvidence": ["孤立报数", "用外部效果图替代本案尺寸证明"],
+      "sourceArticleIds": ["HPSJ-009", "HPSJ-010", "HPSJ-015"],
+      "status": "reviewed_reference"
+    },
+    {
+      "pairingProfileId": "PAIR-HPSJ-06",
+      "name": "旗舰技术向主流家庭下放",
+      "semanticId": "P3-VALUE-ANCHOR",
+      "businessPurpose": "把高端研发能力压缩成主流家庭实际获得的统一价值。",
+      "copyPatternIds": ["HPSJ-PAT-08"],
+      "proofType": "当前项目产品标准、面积段覆盖、功能兑现和家庭任务关系图",
+      "visualLogic": "旗舰能力 → 可稳定复用的技术 → 当前产品承接 → 家庭获得",
+      "assetRoute": "current_project_fact_diagram",
+      "caseAssetUse": "none_at_anchor_page",
+      "forbiddenEvidence": ["把行业使命替代项目承接", "没有当前项目产品事实仍宣称技术普惠"],
+      "sourceArticleIds": ["HPSJ-015"],
+      "status": "single_source_reviewed_candidate"
+    },
+    {
+      "pairingProfileId": "PAIR-HPSJ-07",
+      "name": "一次成型与长期兑现",
+      "semanticId": "P3-SC-PROOF",
+      "businessPurpose": "用前期投入、空间耐久和长期使用解释一次更新机会的价值。",
+      "copyPatternIds": ["HPSJ-PAT-09"],
+      "proofType": "当前项目工艺、公共界面、结构机制、运营责任或维护逻辑图",
+      "visualLogic": "机会稀缺 → 前期投入 → 可见机制 → 长期使用结果",
+      "assetRoute": "current_project_fact_first_case_asset_optional",
+      "caseAssetUse": "CASE图只能证明UE展示方式，不能证明本案已经交付或长期兑现",
+      "forbiddenEvidence": ["把效果图写成已交付", "用来源文章工艺图证明本案"],
+      "sourceArticleIds": ["HPSJ-010", "HPSJ-015"],
+      "status": "reviewed_reference"
+    },
+    {
+      "pairingProfileId": "PAIR-HPSJ-08",
+      "name": "生活价值观收束",
+      "semanticId": "P3-CLOSING-OUTCOME",
+      "businessPurpose": "把前文事实和机制收束成甲方与客户能记住的生活选择。",
+      "copyPatternIds": ["HPSJ-PAT-10"],
+      "proofType": "不新增证据，回扣前文已成立判断和已出现图证",
+      "visualLogic": "旧价值排序 → 本案建立的新选择 → 2至4个可兑现结果",
+      "assetRoute": "reuse_prior_page_evidence_summary",
+      "caseAssetUse": "none",
+      "forbiddenEvidence": ["新增未经证明的价值", "虚构客户采纳、成交或业务效果"],
+      "sourceArticleIds": ["HPSJ-009", "HPSJ-010", "HPSJ-015"],
+      "status": "reviewed_reference"
+    }
+  ],
+  "qualitySummary": {
+    "profileCount": 8,
+    "currentSemanticProfileCount": 7,
+    "candidateSemanticProfileCount": 1,
+    "semanticCandidateCount": 1,
+    "externalImageCount": 0,
+    "caseAssetIdCount": 0
+  }
+}

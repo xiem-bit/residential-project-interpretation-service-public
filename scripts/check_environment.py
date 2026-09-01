@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PRODUCT5_ROOT = ROOT / "tools" / "product5_shell"
 PRODUCT3_GOLD_ROOT = ROOT / "examples" / "gold-product3-public-safe"
 PRODUCT3_AUTHORITY = PRODUCT3_GOLD_ROOT / "gold-authority.json"
+AUTHORIZED_ASSET_MANIFEST = ROOT / "references" / "authorized-reference-assets.json"
 
 
 def _version(command: str) -> str | None:
@@ -123,7 +124,38 @@ def _product3_check() -> dict[str, str]:
             f"inspect_slides={inspect_slides}, inspect_notes={inspect_notes}",
             f"恢复{expected_slides}页授权公开黄金参考、逐页备注与检查记录",
         )
-    return _check("pass", f"editable PPTX package: {len(slide_names)} slides, {len(note_names)} notes, inspect records present")
+    try:
+        assets = json.loads(AUTHORIZED_ASSET_MANIFEST.read_text(encoding="utf-8"))
+        page_library = ROOT / assets["page_template_library"]["path"]
+        case_library = ROOT / assets["case_asset_library"]["path"]
+        writing_library = ROOT / assets["writing_library"]["path"]
+        page_files = sum(path.is_file() for path in page_library.rglob("*"))
+        case_files = sum(path.is_file() for path in case_library.rglob("*"))
+        source_decks = list((page_library / "source_decks").glob("*.pptx"))
+        required_writing = (
+            ROOT / "workflows/chinese-research-report-editor/SKILL.md",
+            ROOT / "workflows/chinese-affirmative-business-editor/SKILL.md",
+            writing_library / "16-断言式书写规范_v1.0.md",
+            writing_library / "human-revision-style-samples.json",
+        )
+    except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
+        return _check("fail", f"authorized Product 3 assets are invalid: {exc}", "恢复授权参考资产清单")
+    expected_pages = int(assets["page_template_library"]["file_count"])
+    expected_cases = int(assets["case_asset_library"]["file_count"])
+    expected_decks = int(assets["page_template_library"]["source_deck_count"])
+    if page_files != expected_pages or case_files != expected_cases or len(source_decks) != expected_decks:
+        return _check(
+            "fail",
+            f"authorized Product 3 assets incomplete: page_files={page_files}, case_files={case_files}, source_decks={len(source_decks)}",
+            "重新取得包含页面模板、案例图和三份历史原稿的完整发行包",
+        )
+    missing_writing = [str(path.relative_to(ROOT)) for path in required_writing if not path.is_file()]
+    if missing_writing:
+        return _check("fail", "writing capability incomplete: " + ", ".join(missing_writing), "恢复中文写作与断言写作能力")
+    return _check(
+        "pass",
+        f"editable gold: {len(slide_names)} slides; authorized assets: {page_files} page files, {case_files} case files, {len(source_decks)} source decks; writing skills present",
+    )
 
 
 def _product5_source_check() -> dict[str, str]:
@@ -216,8 +248,9 @@ def check_environment(
         "gaps": gaps,
         "manual_boundaries": {
             "codex_workspace": "打开仓库根目录后由AGENTS.md和现行Skill路由；脚本不证明Agent已理解业务",
-            "product3_generation": "黄金PPTX随包；当前Codex或其他平台的演示文稿能力需按适配器合同现场确认",
-            "external_channels": "账号、权限、登录态和渠道健康不随包迁移",
+            "product3_generation": "黄金PPTX、历史原稿、模板与案例资产随包；演示文稿引擎由终端用户自行安装并现场确认",
+            "grist_console": "本机Grist装配控制台不随包迁移；需要可视装配时由终端用户自行安装Grist",
+            "external_channels": "Computer Use、浏览器、地图、微信、小红书等平台能力及账号登录态不随包迁移；由终端用户自行安装或登录",
             "human_business_acceptance": "机器doctor通过不代表真人业务接受、发布或业务效果",
         },
     }

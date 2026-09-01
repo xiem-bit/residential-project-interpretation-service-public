@@ -47,11 +47,17 @@
     "inherit_page_semantics_visual_structure_and_rhythm": true
   },
   "historical_structural_basis": {
-    "prior_success_decks": 3,
+    "prior_success_deck_count": 3,
     "prior_success_pages": 76,
     "current_authority_pages": 20,
     "total_reviewed_pages": 96,
-    "prior_client_materials_included": false,
+    "prior_client_materials_included": true,
+    "prior_success_asset_root": "references/product3/assets/产物3页面模板库",
+    "prior_success_deck_files": [
+      {"file": "source_decks/QJ-建投金麟璟源-产物3-V0.4.1.pptx", "slides": 28, "sha256": "2bf3f8bce25024c672649a8bcf4ef09bf97fabb7fb31f97aedeb3ac11dae7107", "sanitization": "local_path_notes_removed_visible_render_28_of_28_equal"},
+      {"file": "source_decks/B10-德阳金鑫-产物3-V2.7.pptx", "slides": 27, "sha256": "7904304eba5d86b67dd7a76822412b1f36891c6b449ceecd97cd9d05b4d8f345", "sanitization": "source_package_no_local_path_hit"},
+      {"file": "source_decks/GT-高投中和57亩-产物3-V7.pptx", "slides": 21, "sha256": "bb48f54d06ab0436c681ab758d054d51d026a711b87fb2826f03b15f54f8f3eb", "sanitization": "source_package_no_local_path_hit"}
+    ],
     "distilled_semantics": 17,
     "distilled_visual_prototypes": 19
   },

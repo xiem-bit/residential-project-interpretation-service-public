@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "residential.human_revision_feedback.v0.1",
+  "dataset": {
+    "datasetId": "RES-LEARNING-FEEDBACK-001",
+    "name": "真人裁定与修订经验集",
+    "class": "learning_feedback",
+    "status": "mainline_seed",
+    "version": "v0.1",
+    "createdAt": "2026-08-18",
+    "productionTruth": false,
+    "purpose": "记录真人对流程、页面、文案与素材调度的修正，用于改进下一次预排和后台路由；不得直接充当项目事实或营销答案。"
+  },
+  "accessPolicy": {
+    "productionUse": "只允许学习稳定的操作偏好和纠错模式；具体项目答案仍按现行消费合同生成。",
+    "promotionRule": "跨任务重复有效并完成规则审阅后，才可升格为生产参考规则。",
+    "forbidden": [
+      "把一次项目裁定平移为其他项目事实",
+      "把真人界面偏好改造成新的业务阶段",
+      "用反馈记录绕过当前项目语义验收"
+    ]
+  },
+  "entries": [
+    {
+      "feedbackId": "LFB-001",
+      "date": "2026-08-17",
+      "scope": "产物3装配控制台",
+      "before": "前台展示待图片检查、进入PPT生产等工程状态。",
+      "humanDecision": "真人不操作工程状态；前台省略，后台自行维护。",
+      "stableLearning": "真人控制面只保留能改变业务装配和可见成果的操作。",
+      "reuseScope": "控制台信息架构"
+    },
+    {
+      "feedbackId": "LFB-002",
+      "date": "2026-08-17",
+      "scope": "案例图调度",
+      "before": "真人在控制台逐项检索和绑定案例图。",
+      "humanDecision": "Codex先按业务语义自动配图；没有合适素材时留空，再由真人顾问补充。",
+      "stableLearning": "案例图是后台推荐能力，不是强制真人配置流程。",
+      "reuseScope": "产物3预排与素材路由"
+    },
+    {
+      "feedbackId": "LFB-003",
+      "date": "2026-08-17",
+      "scope": "视觉参考",
+      "before": "前台要求真人选择视觉参考来源页。",
+      "humanDecision": "隐藏来源页选择，保留视觉变体、底图标准和可见参考缩略图。",
+      "stableLearning": "真人按画面和标准裁定，来源 ID 留在后台。",
+      "reuseScope": "产物3装配控制台"
+    },
+    {
+      "feedbackId": "LFB-004",
+      "date": "2026-08-17",
+      "scope": "逐页审阅",
+      "before": "前台暴露页面职责、演讲动作、转场和视觉结构等工程字段。",
+      "humanDecision": "前台重点呈现页面标题与按结构梳理的页面文案；工程字段在后台由系统维护。",
+      "stableLearning": "真人以可见页面和文案进行沟通，后台字段负责精确执行。",
+      "reuseScope": "产物3逐页控制面"
+    },
+    {
+      "feedbackId": "LFB-005",
+      "date": "2026-08-18",
+      "scope": "共享样例数据集架构",
+      "before": "拟单列UE证明机制样例集。",
+      "humanDecision": "不单列；用页面语义与视觉结构、当前项目文案、案例图共同完成购买价值证明。",
+      "stableLearning": "共享资产按真人可理解的业务对象组织，工程关系保留在后台字段。",
+      "reuseScope": "工程级数据集设计"
+    },
+    {
+      "feedbackId": "LFB-006",
+      "date": "2026-08-18",
+      "scope": "营销文案表达库",
+      "before": "把文案库描述为营销语义核冻结后的独立优化阶段。",
+      "humanDecision": "文案库是生产Owner执行现行消费合同的后台参考，不新增流程，也不取代业务内核。",
+      "stableLearning": "生产参考集通过现有合同字段和专业规范被自动调用。",
+      "reuseScope": "跨产物文案生产"
+    },
+    {
+      "feedbackId": "LFB-007",
+      "date": "2026-08-17",
+      "scope": "产物3首次装配",
+      "before": "真人可能面对空白表从零装配。",
+      "humanDecision": "上游冻结后，Codex先交付完整非空白预排，再由真人增删、调序和换结构。",
+      "stableLearning": "真人裁定建立在专业初稿上，不承担从零编排。",
+      "reuseScope": "产物3全流程"
+    },
+    {
+      "feedbackId": "LFB-008",
+      "date": "2026-08-19",
+      "scope": "历史产物3页面复用",
+      "before": "把历史项目原生页整页带入新项目，页面结构和来源项目文案同时保留。",
+      "humanDecision": "历史页只提供页面布局、对象版位与表达节奏；当前项目标题、卡片和正文必须重新装载。",
+      "stableLearning": "跨项目模板复用以结构为边界，来源项目文案不能随页面进入当前项目。",
+      "reuseScope": "产物3装配与PPT生产"
+    },
+    {
+      "feedbackId": "LFB-009",
+      "date": "2026-08-19",
+      "scope": "客群肖像素材路由",
+      "before": "客群页保留空人物位，默认等待每个项目重新生产图片。",
+      "humanDecision": "先按家庭角色和业务语义检索共享案例图；无命中时才新生产，复核并入库后再使用。",
+      "stableLearning": "人物肖像执行检索优先、补产兜底；必装肖像空槽不能进入正式PPT。",
+      "reuseScope": "产物3家庭分类与客群分流页"
+    },
+    {
+      "feedbackId": "LFB-010",
+      "date": "2026-08-19",
+      "scope": "客户正文页面资格",
+      "before": "相邻两页表达同一件事，后一页用价值账和家庭优先级重算展示内部方法。",
+      "humanDecision": "相邻页必须增加新的客户判断、项目关系或独立图证；内部方法留在后台。",
+      "stableLearning": "重复页合并或重组，客户正文只呈现项目价值、客户获得和可见证明。",
+      "reuseScope": "产物3逐页装配与正式导出门禁"
+    }
+  ]
+}
