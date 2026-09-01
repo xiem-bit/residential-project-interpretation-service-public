@@ -1,7 +1,7 @@
 {
   "schema": "residential.production_path_manifest.v0.2",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "candidate_product5_gold_complete_product3_gold_pending",
+  "status": "candidate_product3_product5_gold_complete_product4_excluded",
   "semantic_core_role": "required_production_output_not_bootstrap_input",
   "entrypoints": {
     "human_or_agent": "START_HERE.md",
@@ -83,11 +83,11 @@
     },
     {
       "id": "S8",
-      "name": "product4_or_product5_projection",
-      "condition": "product4_or_product5_enabled",
+      "name": "product5_projection",
+      "condition": "product5_enabled",
       "inputs": ["semantic-core.json", "super-competitiveness-plan.json", "enabled_upstream_products"],
-      "outputs": ["enabled_product4_or_product5_files"],
-      "gate": "enabled_branch_contract_pass"
+      "outputs": ["product5-interaction-blueprint.json"],
+      "gate": "product5_blueprint_pass"
     },
     {
       "id": "S9",
@@ -111,7 +111,6 @@
   "conditional_product_files": {
     "2": ["product2-buyer-decision-study.md", "product2-buyer-decision-summary.json"],
     "3": ["product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json"],
-    "4": ["product4-value-framework-contract.json"],
     "5": ["product5-interaction-blueprint.json"]
   },
   "optional_process_files": {
@@ -129,7 +128,6 @@
   "conditional_business_statuses": {
     "2": "product2_complete",
     "3": "ue_solution_bridge_pass",
-    "4": "product4_contract_pass",
     "5": "product5_blueprint_pass"
   },
   "adapter_status_namespace": "adapter_statuses",

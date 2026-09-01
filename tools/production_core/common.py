@@ -30,7 +30,6 @@ PRODUCT_OUTPUT_FILES = {
         "product3-chapter3-contract.json",
         "ue-solution-handoff.json",
     ),
-    4: ("product4-value-framework-contract.json",),
     5: ("product5-interaction-blueprint.json",),
 }
 
@@ -543,8 +542,8 @@ def validate_enablement(data: RunData, errors: list[str]) -> None:
         errors.append("product-enablement-matrix.json: schema错误")
     products = matrix.get("products")
     ids = {item.get("product") for item in products if isinstance(item, dict)} if isinstance(products, list) else set()
-    if ids != {1, 2, 3, 4, 5} or len(products or []) != 5:
-        errors.append("product-enablement-matrix.json.products: 必须且只能登记产物1—5")
+    if ids != {1, 2, 3, 5} or len(products or []) != 4:
+        errors.append("product-enablement-matrix.json.products: 本次发行必须且只能登记产物1、2、3、5")
     by_id = {item.get("product"): item for item in products or [] if isinstance(item, dict)}
     if by_id.get(1, {}).get("status") != "complete":
         errors.append("product-enablement-matrix.json: 研究型任务产物1必须complete")
@@ -564,29 +563,14 @@ def validate_enablement(data: RunData, errors: list[str]) -> None:
     if contract_enabled != matrix_enabled:
         errors.append("project-contract.md.enabled_products与产物启用矩阵不一致")
     admission = matrix.get("high_cost_admission")
-    high_cost_enabled = any(by_id.get(product_id, {}).get("status") in ENABLED_PRODUCT_STATUSES for product_id in (3, 4, 5))
+    high_cost_enabled = any(by_id.get(product_id, {}).get("status") in ENABLED_PRODUCT_STATUSES for product_id in (3, 5))
     if high_cost_enabled:
         if not isinstance(admission, dict) or admission.get("status") != "admitted":
-            errors.append("product-enablement-matrix.json: 产物3—5启用前必须高成本准入")
+            errors.append("product-enablement-matrix.json: 产物3或5启用前必须高成本准入")
         elif admission.get("established_sc_count") != len(plan.get("items") or []):
             errors.append("product-enablement-matrix.json: established_sc_count与SC计划不一致")
         elif not all(admission.get(key) is True for key in ("semantic_core_frozen", "all_five_checks_pass", "all_six_links_closed", "purchase_stage_coverage_complete", "fact_and_rights_boundary_declared")):
             errors.append("product-enablement-matrix.json: 高成本准入条件未全部成立")
-
-
-def validate_product4(data: RunData, errors: list[str]) -> None:
-    contract = data["product4-value-framework-contract.json"]
-    if not str(contract.get("contract_version", "")).startswith("product4_value_framework.v1.2"):
-        errors.append("product4-value-framework-contract.json: contract_version错误")
-    task = contract.get("task") if isinstance(contract.get("task"), dict) else {}
-    if task.get("project_id") != data["project-contract.md"].get("project", {}).get("id"):
-        errors.append("product4-value-framework-contract.json.task.project_id: 与项目合同不一致")
-    if task.get("lifecycle_stage") != "post_contract_first_delivery":
-        errors.append("product4-value-framework-contract.json.task.lifecycle_stage: 产物4仅用于签约后生产")
-    sc_ids = {item.get("id") for item in data["super-competitiveness-plan.json"].get("items") or [] if isinstance(item, dict)}
-    p4_sc_ids = set(contract.get("stable_semantic_refs", {}).get("super_competitiveness_refs") or [])
-    if p4_sc_ids != sc_ids:
-        errors.append("product4-value-framework-contract.json: 必须继承当前完整SC集合")
 
 
 def validate_product5(data: RunData, errors: list[str]) -> None:
@@ -685,7 +669,7 @@ def validate_cross_product_consistency(data: RunData, errors: list[str], mode: s
     expected_project_id = contract.get("project", {}).get("id")
     for name in sorted(data.loaded_files):
         item = data[name]
-        if name in {"project-contract.md", "product4-value-framework-contract.json"} or name in CLIENT_REPORT_FILES:
+        if name == "project-contract.md" or name in CLIENT_REPORT_FILES:
             continue
         project_id = item.get("project_id") if isinstance(item, dict) else None
         if project_id != expected_project_id:
@@ -723,8 +707,6 @@ def validate_cross_product_consistency(data: RunData, errors: list[str], mode: s
         expected_pass.add("product2_complete")
     if 3 in data.enabled_products:
         expected_pass.add("ue_solution_bridge_pass")
-    if 4 in data.enabled_products:
-        expected_pass.add("product4_contract_pass")
     if 5 in data.enabled_products:
         expected_pass.add("product5_blueprint_pass")
     if not isinstance(statuses, dict):
@@ -770,8 +752,6 @@ def validate_all(root: Path, mode: str = "normal") -> tuple[RunData, list[str]]:
         validate_product2(data, errors)
     if 3 in data.enabled_products:
         validate_ue_solution_bridge(data, errors)
-    if 4 in data.enabled_products:
-        validate_product4(data, errors)
     if 5 in data.enabled_products:
         validate_product5(data, errors)
     validate_cross_product_consistency(data, errors, mode=mode)
@@ -786,7 +766,6 @@ def validate_one(root: Path, stage: str) -> list[str]:
     conditional = {
         "product2": (2, validate_product2),
         "ue_bridge": (3, validate_ue_solution_bridge),
-        "product4": (4, validate_product4),
         "product5": (5, validate_product5),
     }
     if stage in conditional:

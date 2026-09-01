@@ -57,7 +57,6 @@
   "v0_2_conditional_outputs": {
     "product2": ["product2-buyer-decision-study.md"],
     "product3": ["product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json"],
-    "product4": ["product4-value-framework-contract.json"],
     "product5": ["product5-interaction-blueprint.json"],
     "material_semantic_change": ["change-impact-registry.json"]
   },
@@ -68,7 +67,7 @@
     "fresh_install_full_project_acceptance_required": true,
     "maintainer_step_by_step_guidance_allowed": false,
     "presentation_or_web_required": false,
-    "current_status": "p3_cross_package_candidate_conformance_passed_gold_references_pending_not_release_ready"
+    "current_status": "product3_product5_gold_complete_product4_excluded_learning_feedback_and_install_pending_not_release_ready"
   },
   "forbidden_public_content": [
     "real_project_or_customer_materials",

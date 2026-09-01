@@ -41,7 +41,7 @@
     "sc_refs": ["SC-ACCESS", "SC-CONTINUITY", "SC-FLEXIBILITY"]
   },
   "super_competitiveness_refs": ["SC-ACCESS", "SC-CONTINUITY", "SC-FLEXIBILITY"],
-  "product_package": {"enabled": [1, 2, 3, 5], "not_enabled": [4]},
+  "product_package": {"enabled": [1, 2, 3, 5], "not_enabled": []},
   "key_upstream_gaps": ["GAP-PRICE", "GAP-SCHOOL", "GAP-DELIVERY", "GAP-VISUAL"],
   "current_decisions": ["DEC-AREA", "DEC-RAIL"],
   "superseded_decisions": [],

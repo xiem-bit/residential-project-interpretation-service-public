@@ -74,7 +74,7 @@ def validate_public_manifest(parity: dict[str, Any], authority: dict[str, Any]) 
 
     if parity.get("schema") != "residential.capability_parity_manifest.v1":
         errors.append("CAPABILITY_PARITY_MANIFEST.json: unexpected schema")
-    if parity.get("status") != "product3_product5_gold_complete_product4_learning_install_pending_not_released":
+    if parity.get("status") != "product3_product5_gold_complete_product4_excluded_learning_install_pending_not_released":
         errors.append("CAPABILITY_PARITY_MANIFEST.json: unexpected current migration state")
 
     principles = parity.get("principles")
@@ -82,7 +82,7 @@ def validate_public_manifest(parity: dict[str, Any], authority: dict[str, Any]) 
         "complete_semantic_parity_required",
         "simplified_subset_is_not_acceptable",
         "normal_runtime_progressive_loading",
-        "product1_default_product2_to_5_on_demand",
+        "product1_default_product2_3_5_on_demand",
         "machine_checks_have_veto_not_business_approval",
         "public_safe_structural_derivatives_required",
     }

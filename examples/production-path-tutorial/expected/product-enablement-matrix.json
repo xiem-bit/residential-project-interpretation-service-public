@@ -6,7 +6,6 @@
     {"product": 1, "status": "complete", "reason": "新住宅研究默认先形成竞争态势研究", "deliverables": ["product1-competition-study.md", "product1-competition-summary.json"]},
     {"product": 2, "status": "complete", "reason": "第三章需要家庭任务、等待机制和产品适配", "deliverables": ["product2-buyer-decision-study.md", "product2-buyer-decision-summary.json"]},
     {"product": 3, "status": "enabled", "reason": "任务要求UE售前提案业务输入", "deliverables": ["product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json"]},
-    {"product": 4, "status": "not_enabled", "reason": "尚未签约，不启动签约后单树生产", "deliverables": []},
     {"product": 5, "status": "enabled", "reason": "任务要求售前交互蓝图但不要求正式网页", "deliverables": ["product5-interaction-blueprint.json"]}
   ],
   "high_cost_admission": {

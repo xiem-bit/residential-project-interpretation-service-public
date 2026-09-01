@@ -12,8 +12,7 @@
     {"id": "product3-chapter2-contract", "action": "updated", "result": "DIM-CONTINUITY和价值锚点同步"},
     {"id": "product3-chapter3-contract", "action": "updated", "result": "UE场景明确露天连廊与雨天边界"},
     {"id": "ue-solution-handoff", "action": "updated", "result": "SC与场景映射换为新ID"},
-    {"id": "product5-interaction-blueprint", "action": "updated", "result": "导航、场景和交互状态换为P5-DAILY-ROUTE"},
-    {"id": "product4", "action": "not_enabled_no_reprojection_required", "result": "本轮未启用"}
+    {"id": "product5-interaction-blueprint", "action": "updated", "result": "导航、场景和交互状态换为P5-DAILY-ROUTE"}
   ],
   "unchanged_refs": ["SC-ACCESS", "SC-FLEXIBILITY", "TASK-COMMUTE-IMPROVE", "TASK-FAMILY-FLEX"],
   "cross_product_consistency": "pass"

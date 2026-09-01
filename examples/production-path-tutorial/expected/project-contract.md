@@ -31,7 +31,7 @@
     {"id": "INPUT-UE", "path": "input/ue-notes.json", "role": "formal_material", "authorization": "synthetic_public_fixture"}
   ],
   "enabled_products": [1, 2, 3, 5],
-  "disabled_products": [{"product": 4, "reason": "尚未签约，不启动签约后单树价值框架"}],
+  "disabled_products": [],
   "current_decisions": [
     {"id": "DEC-AREA", "decision": "教程分析采用较高用地数值62300平方米，同时保留61800平方米原始差异"},
     {"id": "DEC-RAIL", "decision": "只使用2.4公里直线距离，2.1公里步行距离保持待核实"}

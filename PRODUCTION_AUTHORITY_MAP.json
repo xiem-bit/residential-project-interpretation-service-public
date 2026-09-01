@@ -63,7 +63,7 @@
       "authority": "project_contract_and_upstream",
       "source": [
         {"path": "templates/真实项目有效任务合同.md", "git_blob": "db33b0958f975892f3f40bfcb075370653ab6e99"},
-        {"path": "docs/23-产物1至2搜索前置与产物4价值框架生产规范_v1.0.md", "git_blob": "352137752baba001fa6c5553c9e7f73ac3cd5b64"}
+        {"path": "docs/30-住宅项目竞争力生产消费主合同_v1.0.md", "git_blob": "292262ab276585680c496c96227f6b511f1cb452"}
       ],
       "public": [
         "core/01-项目任务与输入治理.md",
@@ -90,13 +90,12 @@
       "coverage": "partial_public_safe_gold_and_assembly_required"
     },
     {
-      "authority": "product4_product5_and_change",
+      "authority": "product5_and_change",
       "source": [
-        {"path": "docs/24-产物1至5统一语义核与产物3-4-5交付接口决策记录_v0.1.md", "git_blob": "4be846430a9b34b0945d2a87238afdb2e668060c"},
-        {"path": "docs/28-产物5住宅UE交互视觉原型生产规范_v1.0.md", "git_blob": "b305daacfd89c107e2adb34e9fd1b146d3a3d2ac"}
+        {"path": "docs/28-产物5住宅UE交互视觉原型生产规范_v1.0.md", "git_blob": "b305daacfd89c107e2adb34e9fd1b146d3a3d2ac"},
+        {"path": "docs/30-住宅项目竞争力生产消费主合同_v1.0.md", "git_blob": "292262ab276585680c496c96227f6b511f1cb452"}
       ],
       "public": [
-        "core/07-产物4单树价值框架.md",
         "core/08-产物5交互蓝图.md",
         "core/09-变更回写与重投影.md"
       ],
@@ -106,7 +105,6 @@
       "authority": "public_channel_and_incremental_research",
       "source": [
         {"path": "docs/04-二期四渠道业务消费方法.md", "git_blob": "91f24cbca9cc08b0361bdd9ed66b76160968c786"},
-        {"path": "docs/23-产物1至2搜索前置与产物4价值框架生产规范_v1.0.md", "git_blob": "352137752baba001fa6c5553c9e7f73ac3cd5b64"},
         {"path": "templates/住宅项目上游检索任务与回传表_v1.0.md", "git_blob": "41c86cd2dd107cf6dc9e02e63d345eca7f6b6d4e"}
       ],
       "public": [
@@ -195,8 +193,7 @@
       "source": [
         {"path": "assets/共享样例数据集索引.md", "git_blob": "44104d3add6fb3421109f66a2daa5f1a9acb25d2"},
         {"path": "assets/产物3案例截图素材库/README.md", "git_blob": "929a0205ab2eedfc6c80dc3ceece1fe370e81356"},
-        {"path": "assets/营销文案表达库/README.md", "git_blob": "8356e007002f36f3a2b6f0f314b4d903d9d94627"},
-        {"path": "assets/产物4标准样例/README.md", "git_blob": "9d379559293ba1e623811da1c6871d2a4f52f61d"}
+        {"path": "assets/营销文案表达库/README.md", "git_blob": "8356e007002f36f3a2b6f0f314b4d903d9d94627"}
       ],
       "public": [
         "examples/production-path-tutorial",
@@ -228,7 +225,8 @@
     "private_evaluation_holdout_and_answers",
     "credentials_and_runtime_state",
     "private_git_history",
-    "platform_specific_visual_engines"
+    "platform_specific_visual_engines",
+    "product4_current_implementation_pending_user_redesign"
   ],
   "license": "Apache-2.0"
 }

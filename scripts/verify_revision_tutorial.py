@@ -46,12 +46,11 @@ def main() -> int:
         "product3-chapter3-contract",
         "ue-solution-handoff",
         "product5-interaction-blueprint",
-        "product4",
     }
     if set(affected) != required:
         errors.append("affected output set is incomplete")
-    if affected.get("product2") != "reviewed_no_content_change" or affected.get("product4") != "not_enabled_no_reprojection_required":
-        errors.append("reviewed and non-enabled dispositions are missing")
+    if affected.get("product2") != "reviewed_no_content_change":
+        errors.append("reviewed disposition is missing")
     if projection.get("cross_product_consistency") != "pass":
         errors.append("cross-product consistency is not pass")
     if errors:

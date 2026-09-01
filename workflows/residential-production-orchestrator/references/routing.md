@@ -9,7 +9,6 @@
 | Semantic core and SC | `core/04-统一语义核与超级竞争力.md`, `contracts/inference-relationships.json` | semantic-core template, SC template, inference links and Annex B |
 | Product enablement | `core/05-产物启用与生产准入.md` | enablement template and Annex C |
 | Product 3 | `core/06-产物3从竞争策略到UE解决方案.md`, `references/product3/README.md` | Chapter 2/3 strategy templates, UE handoff, page semantics and the complete public-safe gold combination |
-| Product 4 | `core/07-产物4单树价值框架.md` | existing Product 4 contract template when enabled |
 | Product 5 | `core/08-产物5交互蓝图.md` | Product 5 blueprint template when enabled |
 | Material change | `core/09-变更回写与重投影.md` | change-impact template and revision tutorial |
 | External upstream | `external-capabilities/README.md` | request, evidence, response and adoption contracts; preserve sufficiency, negative hits, conflicts, gaps and stop reason |

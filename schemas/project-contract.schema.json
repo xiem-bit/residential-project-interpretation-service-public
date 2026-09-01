@@ -32,7 +32,7 @@
         }
       }
     },
-    "enabled_products": {"type": "array", "items": {"type": "integer", "minimum": 1, "maximum": 5}},
+    "enabled_products": {"type": "array", "uniqueItems": true, "items": {"enum": [1, 2, 3, 5]}},
     "status": {"enum": ["project_identity_closed", "blocked_by_identity_or_rights"]}
   }
 }

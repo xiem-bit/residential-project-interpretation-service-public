@@ -6,7 +6,6 @@
     {"product": 1, "status": "complete", "reason": "住宅研究默认首要", "deliverables": ["product1-competition-study.md", "product1-competition-summary.json"]},
     {"product": 2, "status": "not_enabled", "reason": "本轮不需要独立购买决策报告", "deliverables": []},
     {"product": 3, "status": "not_enabled", "reason": "本轮不要求UE售前提案", "deliverables": []},
-    {"product": 4, "status": "not_enabled", "reason": "尚未进入签约后生产", "deliverables": []},
     {"product": 5, "status": "not_enabled", "reason": "本轮不要求交互原型", "deliverables": []}
   ],
   "high_cost_admission": {

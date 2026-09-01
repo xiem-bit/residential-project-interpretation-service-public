@@ -3,7 +3,7 @@
 ## 当前标签与候选
 
 - `v0.1.0-rc.1`：已发布、不可变；定位为“冻结语义核之后的下游合同、平台往返与载体结构演示”。
-- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`product3_product5_gold_complete / product4_learning_install_pending / not_released`。
+- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`product3_product5_gold_complete / product4_excluded / learning_install_pending / not_released`。
 
 ## P0已经成立
 
@@ -15,7 +15,7 @@
 
 ## 当前已经进入候选
 
-- 动态产物启用已经实现：产物1默认，产物2—5按矩阵生成，未启用产物无空文件，变更登记按实际语义变化出现；
+- 动态产物启用已经实现：产物1默认，产物2、3、5按矩阵生成，未启用产物无空文件，变更登记按实际语义变化出现；
 - 产物1／2的任务冻结、充分性、查询执行下限、增量提案／授权、负命中／冲突／gap保留和采用／拒绝回执已经进入现行公开路径；
 - 允许／禁止推导关系、六段SC因果和成组正反例已经进入现行机器Harness；机器只否决显式跨步，不替代商业判断；
 - 产物1／2甲方正式报告已经与机器摘要物理分离，现有青岚澄境全量虚构教程已升级为第一套正式报告级公开安全参考；
@@ -26,9 +26,13 @@
 
 ## 当前尚未成立
 
-- 产物4单树样例尚未形成完整公开安全替代；
 - 共享参考库仍只有一套完整报告级虚构项目，尚未达到多机制项目与真人修订反馈的目标；
 - 统一安装、doctor、产物3／5专业适配和干净安装验收尚未完成。
+
+## 本次发行明确排除
+
+- 产物4即将由上游进行实质大修，本次候选不检查、不发布，也不提供模板、校验器、样例、运行分支或安装入口；
+- 这是当前发行范围裁定，不是永久退役结论。后续版本只能基于大修后的新方案重新评估，不得恢复本次已移除实现。
 
 ## 已取消的旧候选门禁
 
@@ -38,6 +42,6 @@
 
 ## 当前切片
 
-`dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`、`client_report_machine_summary_separation`、`product3_public_safe_gold`与`product5_public_safe_gold`已经进入验证。下一步补齐产物4单树黄金参考和学习反馈参考，再完成多机制项目覆盖与自助安装验收。
+`dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`、`client_report_machine_summary_separation`、`product3_public_safe_gold`与`product5_public_safe_gold`已经进入验证。下一步补齐学习反馈参考与多机制项目覆盖，再完成自助安装验收。
 
 当前候选不得创建或推送`v0.2.0-rc.1`标签。完成`CAPABILITY_PARITY_MANIFEST.json`中的全部发布阻断项、干净克隆和双包端到端验收后，才能申请正式发布授权。

@@ -13,7 +13,7 @@
       "from_semantic_version": "SEM-QC-001",
       "to_semantic_version": "SEM-QC-002",
       "affected_refs": ["E-ROUTE", "DEC-ROUTE", "product1", "semantic-core", "SC-CONTINUITY", "SC-DAILY-ROUTE", "DIM-CONTINUITY", "UE-SC-CONTINUITY", "P5-CONTINUITY"],
-      "unaffected_outputs": ["SC-ACCESS", "SC-FLEXIBILITY", "TASK-COMMUTE-IMPROVE", "TASK-FAMILY-FLEX", "product4:not_enabled"],
+      "unaffected_outputs": ["SC-ACCESS", "SC-FLEXIBILITY", "TASK-COMMUTE-IMPROVE", "TASK-FAMILY-FLEX"],
       "status": "reprojection_complete",
       "verification_refs": ["after/semantic-delta.json", "after/reprojection-map.json"]
     }

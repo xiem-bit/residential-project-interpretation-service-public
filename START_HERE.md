@@ -13,7 +13,7 @@
 → 统一业务语义核
 → 3—4条成立的超级竞争力
 → 产物启用与高成本生产准入
-→ 产物3／4／5的UE业务投影
+→ 产物3／5的UE业务投影
 → 变更回写与定向重投影
 ```
 
@@ -47,7 +47,7 @@ python3 scripts/init_production_run.py \
   --products 1,2,3,5
 ```
 
-`--products`默认仅启用产物1；只有任务确实需要时才加入产物2—5。发生实质语义变化时再增加`--include-change-registry`。
+`--products`默认仅启用产物1；本次公开发行只支持产物1、2、3、5，只有任务确实需要时才加入产物2、3或5。产物4不在本次发行范围内。发生实质语义变化时再增加`--include-change-registry`。
 
 随后按 `workflows/residential-production-orchestrator/SKILL.md` 完成工作目录中的必需输出。统一语义核是本流程的产出，不能由初始化脚本或下游载体适配器代写。
 
@@ -66,7 +66,7 @@ product-enablement-matrix.json
 production-receipt.json
 ```
 
-产物2—5只在启用时增加各自产物文件；未启用时只在项目合同和启用矩阵中记录理由，不生成空占位。`change-impact-registry.json`只在发生实质语义变化时生成。产物1、2的甲方正式报告与机器摘要物理分开：Markdown只承载甲方正文，配对JSON侧车只供校验、引用和跨产物消费。
+产物2、3、5只在启用时增加各自产物文件；未启用时只在项目合同和启用矩阵中记录理由，不生成空占位。`change-impact-registry.json`只在发生实质语义变化时生成。产物1、2的甲方正式报告与机器摘要物理分开：Markdown只承载甲方正文，配对JSON侧车只供校验、引用和跨产物消费。
 
 ## 四、验证一次生产运行
 
@@ -99,9 +99,9 @@ python3 tools/production_core/validate_upstream_exchange.py \
 - `minimum_three_sc_pass`
 - `cross_product_consistency_pass`
 
-条件状态只在相应产物启用时出现：`product2_complete`、`ue_solution_bridge_pass`、`product4_contract_pass`、`product5_blueprint_pass`。机器合同通过、真人业务接受、载体完成、发布和业务效果继续分开记录。
+条件状态只在相应产物启用时出现：`product2_complete`、`ue_solution_bridge_pass`、`product5_blueprint_pass`。机器合同通过、真人业务接受、载体完成、发布和业务效果继续分开记录。
 
-PPTX、网页、XMind、发布和视觉复核使用独立的 adapter 状态。任何 adapter pass 都不能替代上述业务状态。
+PPTX、网页、发布和视觉复核使用独立的 adapter 状态。任何 adapter pass 都不能替代上述业务状态。
 
 ## 六、必须停下的情形
 

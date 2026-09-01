@@ -32,7 +32,6 @@ PRODUCT_TEMPLATES = {
         "产物3第三章UE合同.template.json": "product3-chapter3-contract.json",
         "UE解决方案交接.template.json": "ue-solution-handoff.json",
     },
-    4: {"产物4价值框架生产消费合同.template.json": "product4-value-framework-contract.json"},
     5: {"产物5交互蓝图.template.json": "product5-interaction-blueprint.json"},
 }
 
@@ -43,9 +42,9 @@ def parse_products(value: str) -> set[int]:
     try:
         products = {int(item.strip()) for item in value.split(",") if item.strip()}
     except ValueError as exc:
-        raise argparse.ArgumentTypeError("products must be comma-separated integers from 1 to 5") from exc
-    if 1 not in products or not products.issubset({1, 2, 3, 4, 5}):
-        raise argparse.ArgumentTypeError("Product 1 is required; allowed products are 1 to 5")
+        raise argparse.ArgumentTypeError("products must be comma-separated integers from 1,2,3,5") from exc
+    if 1 not in products or not products.issubset({1, 2, 3, 5}):
+        raise argparse.ArgumentTypeError("Product 1 is required; this release supports only products 1,2,3,5")
     return products
 
 
@@ -56,7 +55,6 @@ def configure_enablement(output_dir: Path, products: set[int]) -> None:
         1: ["product1-competition-study.md", "product1-competition-summary.json"],
         2: ["product2-buyer-decision-study.md", "product2-buyer-decision-summary.json"],
         3: ["product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json"],
-        4: ["product4-value-framework-contract.json"],
         5: ["product5-interaction-blueprint.json"],
     }
     for item in matrix["products"]:
@@ -67,7 +65,7 @@ def configure_enablement(output_dir: Path, products: set[int]) -> None:
             item.update(status="enabled", reason="由本轮初始化参数启用，正式原因须在项目合同中写明", deliverables=deliverables[product_id])
         else:
             item.update(status="not_enabled", reason="本轮未启用", deliverables=[])
-    matrix["high_cost_admission"]["status"] = "admitted" if products.intersection({3, 4, 5}) else "research_only"
+    matrix["high_cost_admission"]["status"] = "admitted" if products.intersection({3, 5}) else "research_only"
     matrix_path.write_text(json.dumps(matrix, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     contract_path = output_dir / "project-contract.md"
@@ -79,7 +77,7 @@ def configure_enablement(output_dir: Path, products: set[int]) -> None:
     summary["enabled_products"] = sorted(products)
     summary["disabled_products"] = [
         {"product": product_id, "reason": "本轮未启用"}
-        for product_id in sorted({1, 2, 3, 4, 5} - products)
+        for product_id in sorted({1, 2, 3, 5} - products)
     ]
     replacement = "```json\n" + json.dumps(summary, ensure_ascii=False, indent=2) + "\n```"
     contract_path.write_text(text[: match.start()] + replacement + text[match.end() :], encoding="utf-8")

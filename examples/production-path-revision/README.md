@@ -11,8 +11,7 @@
 5. 将语义版本升为 `SEM-QC-002`；
 6. 用 `SC-DAILY-ROUTE`取代 `SC-CONTINUITY`并重新通过五项检查；
 7. 同步第二章、第三章、UE交接和产物5目标；
-8. 产物4未启用，明确免于重投影；
-9. 只重做受影响的路径内容，SC-ACCESS和SC-FLEXIBILITY保持不变。
+8. 只重做受影响的路径内容，SC-ACCESS和SC-FLEXIBILITY保持不变。
 
 运行：
 

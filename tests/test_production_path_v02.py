@@ -56,7 +56,7 @@ class ProductionPathV02Test(unittest.TestCase):
 
         semantic = self.load("semantic-core.json")
         semantic["source_outputs"] = ["project-contract.md", "product1-competition-study.md"]
-        semantic["product_package"] = {"enabled": [1], "not_enabled": [2, 3, 4, 5]}
+        semantic["product_package"] = {"enabled": [1], "not_enabled": [2, 3, 5]}
         self.write("semantic-core.json", semantic)
 
         receipt = self.load("production-receipt.json")
@@ -216,6 +216,27 @@ class ProductionPathV02Test(unittest.TestCase):
         self.assertTrue((output / "product3-chapter2-contract.json").is_file())
         self.assertTrue((output / "product5-interaction-blueprint.json").is_file())
         self.assertFalse((output / "product4-value-framework-contract.json").exists())
+
+    def test_initializer_rejects_product4_in_current_release(self) -> None:
+        output = Path(self.temp.name) / "product4-rejected"
+        completed = subprocess.run(
+            [
+                sys.executable,
+                str(ROOT / "scripts" / "init_production_run.py"),
+                "--input-dir",
+                str(ROOT / "examples" / "production-path-tutorial" / "input"),
+                "--output-dir",
+                str(output),
+                "--products",
+                "1,4",
+            ],
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertNotEqual(completed.returncode, 0)
+        self.assertIn("this release supports only products 1,2,3,5", completed.stderr)
+        self.assertFalse(output.exists())
 
     def test_revision_tutorial_verifier_passes(self) -> None:
         completed = subprocess.run(

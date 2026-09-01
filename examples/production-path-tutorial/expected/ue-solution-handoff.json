@@ -5,9 +5,9 @@
   "status": "ue_solution_bridge_pass",
   "value_anchor_ref": "VALUE-ANCHOR",
   "mappings": [
-    {"sc_id": "SC-ACCESS", "purchase_task_refs": ["TASK-COMMUTE-IMPROVE"], "chapter2_refs": ["DIM-ACCESS", "REL-COMMUTE"], "chapter3_scene_refs": ["UE-SC-ACCESS"], "module_refs": ["MODULE-REGION"], "product4_node_refs": [], "product5_target_refs": ["P5-ACCESS"]},
-    {"sc_id": "SC-CONTINUITY", "purchase_task_refs": ["TASK-FAMILY-FLEX"], "chapter2_refs": ["DIM-CONTINUITY", "REL-LOWDENSITY"], "chapter3_scene_refs": ["UE-SC-CONTINUITY"], "module_refs": ["MODULE-GARDEN"], "product4_node_refs": [], "product5_target_refs": ["P5-CONTINUITY"]},
-    {"sc_id": "SC-FLEXIBILITY", "purchase_task_refs": ["TASK-FAMILY-FLEX"], "chapter2_refs": ["DIM-FLEX", "REL-WAIT"], "chapter3_scene_refs": ["UE-SC-FLEXIBILITY"], "module_refs": ["MODULE-UNIT"], "product4_node_refs": [], "product5_target_refs": ["P5-FLEXIBILITY"]}
+    {"sc_id": "SC-ACCESS", "purchase_task_refs": ["TASK-COMMUTE-IMPROVE"], "chapter2_refs": ["DIM-ACCESS", "REL-COMMUTE"], "chapter3_scene_refs": ["UE-SC-ACCESS"], "module_refs": ["MODULE-REGION"], "product5_target_refs": ["P5-ACCESS"]},
+    {"sc_id": "SC-CONTINUITY", "purchase_task_refs": ["TASK-FAMILY-FLEX"], "chapter2_refs": ["DIM-CONTINUITY", "REL-LOWDENSITY"], "chapter3_scene_refs": ["UE-SC-CONTINUITY"], "module_refs": ["MODULE-GARDEN"], "product5_target_refs": ["P5-CONTINUITY"]},
+    {"sc_id": "SC-FLEXIBILITY", "purchase_task_refs": ["TASK-FAMILY-FLEX"], "chapter2_refs": ["DIM-FLEX", "REL-WAIT"], "chapter3_scene_refs": ["UE-SC-FLEXIBILITY"], "module_refs": ["MODULE-UNIT"], "product5_target_refs": ["P5-FLEXIBILITY"]}
   ],
   "gaps": ["GAP-VISUAL", "GAP-PRICE", "GAP-SCHOOL", "GAP-DELIVERY"]
 }

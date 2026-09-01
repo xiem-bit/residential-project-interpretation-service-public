@@ -11,7 +11,6 @@
       "chapter2_refs": ["DIM-01"],
       "chapter3_scene_refs": ["UE-SC01-01"],
       "module_refs": ["MODULE-01"],
-      "product4_node_refs": [],
       "product5_target_refs": ["P5-SC01-01"]
     }
   ],

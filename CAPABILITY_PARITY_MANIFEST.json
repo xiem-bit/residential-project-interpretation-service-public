@@ -1,7 +1,7 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "product3_product5_gold_complete_product4_learning_install_pending_not_released",
+  "status": "product3_product5_gold_complete_product4_excluded_learning_install_pending_not_released",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
     "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
@@ -16,7 +16,7 @@
     "complete_semantic_parity_required": true,
     "simplified_subset_is_not_acceptable": true,
     "normal_runtime_progressive_loading": true,
-    "product1_default_product2_to_5_on_demand": true,
+    "product1_default_product2_3_5_on_demand": true,
     "empty_disabled_product_files_required": false,
     "machine_checks_have_veto_not_business_approval": true,
     "client_reports_and_machine_summaries_physically_separated": true,
@@ -59,7 +59,7 @@
       "source_authority_ids": ["main_entry_and_status", "cross_product_contract_and_quality_baseline"],
       "public_targets": ["START_HERE.md", "AGENT_RULES.md", "PRODUCTION_PATH_MANIFEST.json", "workflows/residential-production-orchestrator/SKILL.md"],
       "load_condition": "every_task_then_stage_specific",
-      "acceptance": "完整能力随包，产物1默认，产物2至5按需；不生成未启用产物空文件",
+      "acceptance": "完整能力随包，产物1默认，产物2、3、5按需；产物4不在本次发行范围，不生成未启用产物空文件",
       "status": "implemented_current",
       "gap": ""
     },
@@ -128,7 +128,7 @@
       "name": "统一语义核与超级竞争力完整因果链",
       "domain": "semantic_core_and_sc",
       "classification": "public_required",
-      "source_authority_ids": ["cross_product_contract_and_quality_baseline", "product4_product5_and_change"],
+      "source_authority_ids": ["cross_product_contract_and_quality_baseline", "product5_and_change"],
       "public_targets": ["core/04-统一语义核与超级竞争力.md", "schemas/semantic-core.schema.json", "schemas/super-competitiveness-plan.schema.json", "tools/production_core/validate_super_competitiveness.py"],
       "load_condition": "after_product1_and_enabled_product2_freeze",
       "acceptance": "每条SC闭合项目事实、相对竞争、客户意义、项目承接、UE证明和行动推动",
@@ -140,7 +140,7 @@
       "name": "跨产物一致性、状态诚实与定向重投影",
       "domain": "cross_product_governance",
       "classification": "public_required",
-      "source_authority_ids": ["product4_product5_and_change", "cross_product_contract_and_quality_baseline"],
+      "source_authority_ids": ["product5_and_change", "cross_product_contract_and_quality_baseline"],
       "public_targets": ["core/09-变更回写与重投影.md", "schemas/change-impact.schema.json", "tools/production_core/validate_cross_product_consistency.py"],
       "load_condition": "multiple_products_or_semantic_change",
       "acceptance": "项目事实、竞品、客户任务、SC和状态跨产物一致，纯载体修改不重开研究",
@@ -173,23 +173,23 @@
     },
     {
       "id": "CAP-011",
-      "name": "产物4单树价值框架",
+      "name": "产物4当前版不进入公开发行",
       "domain": "product4",
-      "classification": "private_replaced",
-      "source_authority_ids": ["product4_product5_and_change", "shared_production_references"],
-      "public_targets": ["core/07-产物4单树价值框架.md", "templates/产物4价值框架生产消费合同.template.json", "tools/product4/validate_product4_contract.py"],
-      "planned_public_targets": ["examples/gold-product4-public-safe"],
-      "load_condition": "product4_enabled",
-      "acceptance": "一棵业务树连接甲方上层价值与深层生产节点，稳定编号桥可验证",
-      "status": "public_safe_derivative_required",
-      "gap": "缺公开安全原生XMind黄金参考"
+      "classification": "retired_excluded",
+      "source_authority_ids": ["main_entry_and_status"],
+      "public_targets": ["RETIRED_AND_PRIVATE_BOUNDARY.md"],
+      "planned_public_targets": [],
+      "load_condition": "not_loadable_in_current_release",
+      "acceptance": "当前发行无产物4入口、模板、校验器、样例或运行文件；上游大修完成后由后续版本重新评估",
+      "status": "retired_excluded",
+      "gap": ""
     },
     {
       "id": "CAP-012",
       "name": "产物5黄金交互实现与QA",
       "domain": "product5",
       "classification": "private_replaced",
-      "source_authority_ids": ["product4_product5_and_change", "product5_gold_implementation"],
+      "source_authority_ids": ["product5_and_change", "product5_gold_implementation"],
       "public_targets": ["core/08-产物5交互蓝图.md", "schemas/product5-interaction-blueprint.schema.json", "tools/product5_shell", "adapters/web/README.md", "examples/gold-product5-public-safe", "workflows/product5-presales-focus"],
       "planned_public_targets": [],
       "load_condition": "product5_enabled",
@@ -272,9 +272,8 @@
     }
   ],
   "release_blockers": [
-    "CAP-011",
     "CAP-013",
     "CAP-016"
   ],
-  "next_slice": "product4_single_tree_gold_and_learning_feedback_references"
+  "next_slice": "learning_feedback_multi_mechanism_references_and_self_install"
 }

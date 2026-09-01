@@ -36,7 +36,7 @@ class CapabilityParityTest(unittest.TestCase):
         self.assertTrue(principles["complete_semantic_parity_required"])
         self.assertTrue(principles["simplified_subset_is_not_acceptable"])
         self.assertTrue(principles["normal_runtime_progressive_loading"])
-        self.assertTrue(principles["product1_default_product2_to_5_on_demand"])
+        self.assertTrue(principles["product1_default_product2_3_5_on_demand"])
         self.assertFalse(principles["empty_disabled_product_files_required"])
         self.assertTrue(principles["client_reports_and_machine_summaries_physically_separated"])
 
@@ -65,6 +65,18 @@ class CapabilityParityTest(unittest.TestCase):
         self.assertTrue(principles["public_safe_structural_derivatives_required"])
         self.assertFalse(principles["workbuddy_blind_training_included"])
         self.assertFalse(principles["private_evaluation_holdout_included"])
+
+    def test_product4_has_no_current_release_entrypoint(self) -> None:
+        capability = next(item for item in self.parity["capabilities"] if item["id"] == "CAP-011")
+        self.assertEqual(capability["status"], "retired_excluded")
+        self.assertEqual(capability["load_condition"], "not_loadable_in_current_release")
+        self.assertNotIn("CAP-011", self.parity["release_blockers"])
+        self.assertFalse((ROOT / "core" / "07-产物4单树价值框架.md").exists())
+        self.assertFalse((ROOT / "templates" / "产物4价值框架生产消费合同.template.json").exists())
+        self.assertFalse((ROOT / "tools" / "product4").exists())
+        path_manifest = json.loads((ROOT / "PRODUCTION_PATH_MANIFEST.json").read_text(encoding="utf-8"))
+        self.assertNotIn("4", path_manifest["conditional_product_files"])
+        self.assertNotIn("4", path_manifest["conditional_business_statuses"])
 
     def test_cross_package_contract_is_explicit(self) -> None:
         interface = self.parity["cross_package_interface"]
