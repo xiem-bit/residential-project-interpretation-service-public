@@ -9,6 +9,7 @@
   "upstream_evidence_contract": {
     "repository": "https://github.com/xiem-public-info/public-info-research-kit",
     "release_candidate": "0.8.0-rc.1",
+    "source_commit": "208d3defc03c0d7f30e93ea543634f11a55b9d0b",
     "schema": "public_evidence_envelope.v1",
     "repository_relative_schema_path": "plugins/public-info-research-kit/schemas/public_evidence_envelope.v1.json",
     "plugin_relative_schema_path": "schemas/public_evidence_envelope.v1.json",
@@ -25,7 +26,8 @@
     "freeze_receipt": {
       "status": "candidate_frozen",
       "minimal_fixture_cases_passed": 11,
-      "full_harness_fixture_cases_passed": 94,
+      "producer_core_conformance_fixture_cases_passed": 94,
+      "full_harness_fixture_cases_passed": 101,
       "network_accessed": false,
       "platform_opened": false,
       "business_acceptance_validated": false

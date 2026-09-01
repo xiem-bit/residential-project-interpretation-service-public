@@ -59,13 +59,14 @@ python3 scripts/init_production_run.py \
 project-contract.md
 fact-conflict-gap-register.json
 product1-competition-study.md
+product1-competition-summary.json
 semantic-core.json
 super-competitiveness-plan.json
 product-enablement-matrix.json
 production-receipt.json
 ```
 
-产物2—5只在启用时增加各自产物文件；未启用时只在项目合同和启用矩阵中记录理由，不生成空占位。`change-impact-registry.json`只在发生实质语义变化时生成。Markdown正式报告包含可由公共校验器读取的JSON摘要块，同时保留面向人的完整正文。
+产物2—5只在启用时增加各自产物文件；未启用时只在项目合同和启用矩阵中记录理由，不生成空占位。`change-impact-registry.json`只在发生实质语义变化时生成。产物1、2的甲方正式报告与机器摘要物理分开：Markdown只承载甲方正文，配对JSON侧车只供校验、引用和跨产物消费。
 
 ## 四、验证一次生产运行
 

@@ -38,6 +38,26 @@ class CapabilityParityTest(unittest.TestCase):
         self.assertTrue(principles["normal_runtime_progressive_loading"])
         self.assertTrue(principles["product1_default_product2_to_5_on_demand"])
         self.assertFalse(principles["empty_disabled_product_files_required"])
+        self.assertTrue(principles["client_reports_and_machine_summaries_physically_separated"])
+
+    def test_client_writing_rules_are_loaded_by_existing_orchestrator(self) -> None:
+        rules = (ROOT / "AGENT_RULES.md").read_text(encoding="utf-8")
+        reference = (
+            ROOT
+            / "workflows"
+            / "residential-production-orchestrator"
+            / "references"
+            / "client-facing-writing.md"
+        ).read_text(encoding="utf-8")
+        skill = (
+            ROOT / "workflows" / "residential-production-orchestrator" / "SKILL.md"
+        ).read_text(encoding="utf-8")
+        for marker in ("A级", "B级", "C级", "语义覆盖", "so-what", "后台隔离"):
+            self.assertIn(marker, rules + reference)
+        self.assertIn("client-facing-writing.md", skill)
+        self.assertNotIn("CAP-003", self.parity["release_blockers"])
+        self.assertNotIn("CAP-004", self.parity["release_blockers"])
+        self.assertNotIn("CAP-009", self.parity["release_blockers"])
 
     def test_private_material_and_training_routes_are_excluded(self) -> None:
         principles = self.parity["principles"]

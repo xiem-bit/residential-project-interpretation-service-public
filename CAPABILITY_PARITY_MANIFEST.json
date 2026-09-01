@@ -1,7 +1,7 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "p3_cross_package_conformance_complete_gold_reference_migration_pending_not_released",
+  "status": "p4_client_reports_complete_product3_product5_gold_pending_not_released",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
     "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
@@ -19,6 +19,7 @@
     "product1_default_product2_to_5_on_demand": true,
     "empty_disabled_product_files_required": false,
     "machine_checks_have_veto_not_business_approval": true,
+    "client_reports_and_machine_summaries_physically_separated": true,
     "real_client_materials_included": false,
     "public_safe_structural_derivatives_required": true,
     "workbuddy_blind_training_included": false,
@@ -80,11 +81,11 @@
       "domain": "product1",
       "classification": "public_required",
       "source_authority_ids": ["cross_product_contract_and_quality_baseline", "project_contract_and_upstream", "product1_product2_gold_references"],
-      "public_targets": ["core/02-产物1竞争态势研究.md", "templates/产物1竞争态势研究.template.md", "schemas/product1-summary.schema.json"],
+      "public_targets": ["core/02-产物1竞争态势研究.md", "templates/产物1竞争态势研究.template.md", "templates/产物1竞争态势研究摘要.template.json", "schemas/product1-summary.schema.json", "examples/production-path-tutorial/expected/product1-competition-study.md", "examples/production-path-tutorial/expected/product1-competition-summary.json"],
       "load_condition": "default_for_residential_research",
       "acceptance": "市场、区域、有效竞争圈和本案答案围绕当前项目递进，检索计划进入默认生产链",
-      "status": "partial_upgrade_required",
-      "gap": "缺甲方级公开安全黄金报告"
+      "status": "implemented_current",
+      "gap": ""
     },
     {
       "id": "CAP-004",
@@ -92,11 +93,11 @@
       "domain": "product2",
       "classification": "public_required",
       "source_authority_ids": ["cross_product_contract_and_quality_baseline", "project_contract_and_upstream", "product1_product2_gold_references"],
-      "public_targets": ["core/03-产物2购买决策研究.md", "templates/产物2购买决策研究.template.md", "schemas/product2-summary.schema.json"],
+      "public_targets": ["core/03-产物2购买决策研究.md", "templates/产物2购买决策研究.template.md", "templates/产物2购买决策研究摘要.template.json", "schemas/product2-summary.schema.json", "examples/production-path-tutorial/expected/product2-buyer-decision-study.md", "examples/production-path-tutorial/expected/product2-buyer-decision-summary.json"],
       "load_condition": "buyer_decision_gap_or_enabled_product2",
       "acceptance": "以生活任务和决策机制组织客群，闭合处境、触发、进展、替代、代价与行动阻力",
-      "status": "partial_upgrade_required",
-      "gap": "缺甲方级公开安全黄金报告"
+      "status": "implemented_current",
+      "gap": ""
     },
     {
       "id": "CAP-005",
@@ -152,11 +153,11 @@
       "domain": "client_facing_writing",
       "classification": "portable_adaptation",
       "source_authority_ids": ["customer_facing_assertion_and_delivery_qa"],
-      "public_targets": ["tools/chinese_copy_lint/affirmative_statement_lint.py", "fixtures/client-review", "AGENT_RULES.md"],
+      "public_targets": ["tools/chinese_copy_lint/affirmative_statement_lint.py", "fixtures/client-review", "AGENT_RULES.md", "workflows/residential-production-orchestrator/references/client-facing-writing.md", "tools/production_core/common.py"],
       "load_condition": "client_facing_report_ppt_html_or_pdf",
       "acceptance": "A级语义审校、B级报告扫描、C级事实优先；客户正文不暴露工程状态和内部任务",
-      "status": "partial_upgrade_required",
-      "gap": "现有公开包保留扫描器，但缺完整A/B/C职责、人工语义审校和正式交付检查"
+      "status": "implemented_current",
+      "gap": ""
     },
     {
       "id": "CAP-010",
@@ -272,14 +273,11 @@
     }
   ],
   "release_blockers": [
-    "CAP-003",
-    "CAP-004",
-    "CAP-009",
     "CAP-010",
     "CAP-011",
     "CAP-012",
     "CAP-013",
     "CAP-016"
   ],
-  "next_slice": "client_report_machine_summary_separation_and_public_safe_gold_references"
+  "next_slice": "product3_and_product5_public_safe_gold_implementations"
 }

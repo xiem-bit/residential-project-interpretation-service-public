@@ -1,7 +1,7 @@
 {
   "schema": "residential.production_path_manifest.v0.2",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "candidate_incremental_research_and_cross_package_conformance_implemented_gold_reference_migration_pending",
+  "status": "candidate_client_reports_and_summaries_separated_product3_product5_gold_pending",
   "semantic_core_role": "required_production_output_not_bootstrap_input",
   "entrypoints": {
     "human_or_agent": "START_HERE.md",
@@ -37,7 +37,7 @@
       "id": "S2",
       "name": "product1_competition_study",
       "inputs": ["project-contract.md", "fact-conflict-gap-register.json", "authorized_raw_inputs"],
-      "outputs": ["product1-competition-study.md"],
+      "outputs": ["product1-competition-study.md", "product1-competition-summary.json"],
       "gate": "product1_complete",
       "return_to": ["upstream_task", "competition_boundary_adjustment", "expert_reasoning"]
     },
@@ -46,7 +46,7 @@
       "name": "product2_buyer_decision_study",
       "condition": "product2_enabled",
       "inputs": ["product1-competition-study.md", "authorized_customer_inputs"],
-      "outputs": ["product2-buyer-decision-study.md"],
+      "outputs": ["product2-buyer-decision-study.md", "product2-buyer-decision-summary.json"],
       "gate": "product2_complete"
     },
     {
@@ -102,13 +102,14 @@
     "project-contract.md",
     "fact-conflict-gap-register.json",
     "product1-competition-study.md",
+    "product1-competition-summary.json",
     "semantic-core.json",
     "super-competitiveness-plan.json",
     "product-enablement-matrix.json",
     "production-receipt.json"
   ],
   "conditional_product_files": {
-    "2": ["product2-buyer-decision-study.md"],
+    "2": ["product2-buyer-decision-study.md", "product2-buyer-decision-summary.json"],
     "3": ["product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json"],
     "4": ["product4-value-framework-contract.json"],
     "5": ["product5-interaction-blueprint.json"]

@@ -15,6 +15,7 @@ CORE_TEMPLATES = {
     "真实项目有效任务合同.md": "project-contract.md",
     "事实冲突缺口登记表.template.json": "fact-conflict-gap-register.json",
     "产物1竞争态势研究.template.md": "product1-competition-study.md",
+    "产物1竞争态势研究摘要.template.json": "product1-competition-summary.json",
     "统一语义核.template.json": "semantic-core.json",
     "超级竞争力与制作规划.template.json": "super-competitiveness-plan.json",
     "产物启用矩阵.template.json": "product-enablement-matrix.json",
@@ -22,7 +23,10 @@ CORE_TEMPLATES = {
 }
 
 PRODUCT_TEMPLATES = {
-    2: {"产物2购买决策研究.template.md": "product2-buyer-decision-study.md"},
+    2: {
+        "产物2购买决策研究.template.md": "product2-buyer-decision-study.md",
+        "产物2购买决策研究摘要.template.json": "product2-buyer-decision-summary.json",
+    },
     3: {
         "产物3第二章战略合同.template.json": "product3-chapter2-contract.json",
         "产物3第三章UE合同.template.json": "product3-chapter3-contract.json",
@@ -49,8 +53,8 @@ def configure_enablement(output_dir: Path, products: set[int]) -> None:
     matrix_path = output_dir / "product-enablement-matrix.json"
     matrix = json.loads(matrix_path.read_text(encoding="utf-8"))
     deliverables = {
-        1: ["product1-competition-study.md"],
-        2: ["product2-buyer-decision-study.md"],
+        1: ["product1-competition-study.md", "product1-competition-summary.json"],
+        2: ["product2-buyer-decision-study.md", "product2-buyer-decision-summary.json"],
         3: ["product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json"],
         4: ["product4-value-framework-contract.json"],
         5: ["product5-interaction-blueprint.json"],

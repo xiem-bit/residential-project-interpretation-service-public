@@ -3,7 +3,7 @@
 ## 当前标签与候选
 
 - `v0.1.0-rc.1`：已发布、不可变；定位为“冻结语义核之后的下游合同、平台往返与载体结构演示”。
-- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`p3_cross_package_conformance_complete / gold_reference_migration_pending / not_released`。
+- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`p4_client_reports_complete / product3_product5_gold_pending / not_released`。
 
 ## P0已经成立
 
@@ -13,13 +13,19 @@
 - [退役与私有边界](RETIRED_AND_PRIVATE_BOUNDARY.md)已经区分现行能力、公开安全替代、历史退役和运行现场；
 - 现有公开仓结构继续使用，不新建平行发行体系或平行Skill。
 
-## 当前尚未成立
+## 当前已经进入候选
 
 - 动态产物启用已经实现：产物1默认，产物2—5按矩阵生成，未启用产物无空文件，变更登记按实际语义变化出现；
 - 产物1／2的任务冻结、充分性、查询执行下限、增量提案／授权、负命中／冲突／gap保留和采用／拒绝回执已经进入现行公开路径；
 - 允许／禁止推导关系、六段SC因果和成组正反例已经进入现行机器Harness；机器只否决显式跨步，不替代商业判断；
-- 产物1／2甲方级公开报告、产物3页面语义与黄金PPT、产物4单树样例、产物5黄金源码尚未形成公开安全替代；
-- 公开信息包候选`public_evidence_envelope.v1`与住宅侧三项合同已按原始字节哈希冻结；双方fixture往返、上游最小11项与完整94项harness已经通过，尚未发布正式版本或证明真实GUI／业务验收；
+- 产物1／2甲方正式报告已经与机器摘要物理分离，现有青岚澄境全量虚构教程已升级为第一套正式报告级公开安全参考；
+- A／B／C三级断言写作、去内部化、来源邻接和正式载体检查已经进入现有住宅生产总控，不新增平行Skill；
+- 公开信息包候选`public_evidence_envelope.v1`与住宅侧三项合同已按原始字节哈希冻结；双方fixture往返和跨包harness已经通过，尚未发布正式版本或证明真实GUI／业务验收；
+
+## 当前尚未成立
+
+- 产物3页面语义与黄金PPT、产物4单树样例、产物5黄金源码尚未形成完整公开安全替代；
+- 共享参考库仍只有一套完整报告级虚构项目，尚未达到多机制项目与真人修订反馈的目标；
 - 统一安装、doctor、产物3／5专业适配和干净安装验收尚未完成。
 
 ## 已取消的旧候选门禁
@@ -30,6 +36,6 @@
 
 ## 当前切片
 
-`dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`与`cross_package_candidate_conformance`已经进入验证。下一步分离产物1／2甲方正式报告与机器摘要，并补齐产物1—5公开安全黄金参考。
+`dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`与`client_report_machine_summary_separation`已经进入验证。下一步补齐产物3与产物5公开安全黄金实现，再扩展多机制项目参考和安装验收。
 
 当前候选不得创建或推送`v0.2.0-rc.1`标签。完成`CAPABILITY_PARITY_MANIFEST.json`中的全部发布阻断项、干净克隆和双包端到端验收后，才能申请正式发布授权。

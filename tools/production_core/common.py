@@ -15,6 +15,7 @@ BASE_REQUIRED_FILES = [
     "project-contract.md",
     "fact-conflict-gap-register.json",
     "product1-competition-study.md",
+    "product1-competition-summary.json",
     "semantic-core.json",
     "super-competitiveness-plan.json",
     "product-enablement-matrix.json",
@@ -22,8 +23,8 @@ BASE_REQUIRED_FILES = [
 ]
 
 PRODUCT_OUTPUT_FILES = {
-    1: ("product1-competition-study.md",),
-    2: ("product2-buyer-decision-study.md",),
+    1: ("product1-competition-study.md", "product1-competition-summary.json"),
+    2: ("product2-buyer-decision-study.md", "product2-buyer-decision-summary.json"),
     3: (
         "product3-chapter2-contract.json",
         "product3-chapter3-contract.json",
@@ -34,6 +35,10 @@ PRODUCT_OUTPUT_FILES = {
 }
 
 OPTIONAL_PROCESS_FILES = ("change-impact-registry.json",)
+CLIENT_REPORT_FILES = {
+    "product1-competition-study.md",
+    "product2-buyer-decision-study.md",
+}
 ENABLED_PRODUCT_STATUSES = {"enabled", "complete", "in_progress"}
 
 FIVE_CHECKS = {
@@ -63,6 +68,20 @@ PRIVATE_OR_LOCAL = re.compile(
     r"(?:/" + "Users/|" + "file" + r"://|[A-Za-z]:\\|\.workbuddy/" + "binaries/)"
 )
 JSON_BLOCK = re.compile(r"```json\s*(\{.*?\})\s*```", re.DOTALL)
+CLIENT_INTERNAL_PATTERNS = (
+    ("JSON机器摘要", re.compile(r"```json\b", re.IGNORECASE)),
+    (
+        "机器字段",
+        re.compile(
+            r"(?<![A-Za-z0-9_])(?:schema|validator|stop_search|input_freeze_id|gap_refs|not_enabled_reason)(?![A-Za-z0-9_])",
+            re.IGNORECASE,
+        ),
+    ),
+    ("内部编号", re.compile(r"(?<![A-Za-z0-9])(?:GAP|CONFLICT|EVIDENCE|SC-C|TASK)-[A-Z0-9_-]+", re.IGNORECASE)),
+    ("后台任务语言", re.compile(r"(?:机器摘要|检索状态|生产状态|回传状态|缺口登记表|等待甲方|请甲方(?:补充|确认|裁定))")),
+)
+
+
 class RunData(dict[str, Any]):
     root: Path
     enabled_products: set[int]
@@ -89,7 +108,7 @@ def _load_json(path: Path, errors: list[str]) -> dict[str, Any]:
     return data
 
 
-def _load_markdown_summary(path: Path, errors: list[str]) -> dict[str, Any]:
+def _load_internal_markdown_summary(path: Path, errors: list[str]) -> dict[str, Any]:
     try:
         text = path.read_text(encoding="utf-8")
     except Exception as exc:
@@ -110,10 +129,21 @@ def _load_markdown_summary(path: Path, errors: list[str]) -> dict[str, Any]:
     return data
 
 
+def _load_client_report(path: Path, errors: list[str]) -> dict[str, Any]:
+    try:
+        text = path.read_text(encoding="utf-8")
+    except Exception as exc:
+        errors.append(f"{path.name}: 无法读取Markdown：{exc}")
+        return {}
+    return {"client_report_text": text}
+
+
 def _load_named_file(root: Path, name: str, errors: list[str]) -> dict[str, Any]:
     path = root / name
-    if path.suffix == ".md":
-        return _load_markdown_summary(path, errors)
+    if name == "project-contract.md":
+        return _load_internal_markdown_summary(path, errors)
+    if name in CLIENT_REPORT_FILES:
+        return _load_client_report(path, errors)
     return _load_json(path, errors)
 
 
@@ -278,14 +308,50 @@ def validate_fact_register(data: RunData, errors: list[str]) -> None:
     validate_inference_register(register, errors)
 
 
+def validate_client_report(
+    data: RunData,
+    errors: list[str],
+    *,
+    report_name: str,
+    title_term: str,
+) -> None:
+    report = data.get(report_name)
+    text = report.get("client_report_text") if isinstance(report, dict) else None
+    if not _text(text):
+        errors.append(f"{report_name}: 甲方正式报告不能为空")
+        return
+    assert isinstance(text, str)
+    visible_text = re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL)
+    headings = [line.strip() for line in visible_text.splitlines() if line.lstrip().startswith("#")]
+    h1 = [line for line in headings if re.match(r"^#\s+", line)]
+    h2 = [line for line in headings if re.match(r"^##\s+", line)]
+    if not h1 or title_term not in h1[0]:
+        errors.append(f"{report_name}: 一级标题必须明确“{title_term}”")
+    if len(h2) < 4:
+        errors.append(f"{report_name}: 甲方正式报告至少需要四个承担不同判断职责的正文段落")
+    prose = re.sub(r"[#>*_`|\-\s]", "", visible_text)
+    if len(prose) < 600:
+        errors.append(f"{report_name}: 正文信息不足，不能作为完整甲方报告")
+    for label, pattern in CLIENT_INTERNAL_PATTERNS:
+        match = pattern.search(visible_text)
+        if match:
+            errors.append(f"{report_name}: 客户正文暴露{label}：{match.group(0)}")
+
+
 def validate_product1(data: RunData, errors: list[str]) -> None:
-    product1 = data["product1-competition-study.md"]
+    validate_client_report(
+        data,
+        errors,
+        report_name="product1-competition-study.md",
+        title_term="竞争态势研究",
+    )
+    product1 = data["product1-competition-summary.json"]
     if product1.get("schema") != "residential.product1_competition_study.v0.2":
-        errors.append("product1-competition-study.md: schema错误")
+        errors.append("product1-competition-summary.json: schema错误")
     if product1.get("status") != "product1_complete":
-        errors.append("product1-competition-study.md.status: 必须为product1_complete")
+        errors.append("product1-competition-summary.json.status: 必须为product1_complete")
     competitors = product1.get("competitors")
-    _ids(competitors, "product1-competition-study.md.competitors", errors)
+    _ids(competitors, "product1-competition-summary.json.competitors", errors)
     role_count = 0
     for index, item in enumerate(competitors if isinstance(competitors, list) else []):
         if not isinstance(item, dict):
@@ -294,58 +360,64 @@ def validate_product1(data: RunData, errors: list[str]) -> None:
             role_count += 1
         for field in ("name", "role_boundary", "why_chosen"):
             if not _text(item.get(field)):
-                errors.append(f"product1-competition-study.md.competitors[{index}].{field}: 不能为空")
+                errors.append(f"product1-competition-summary.json.competitors[{index}].{field}: 不能为空")
         for field in ("substitution_basis", "strengths", "tradeoffs", "evidence_refs"):
             if not _list(item.get(field)):
-                errors.append(f"product1-competition-study.md.competitors[{index}].{field}: 至少一项")
+                errors.append(f"product1-competition-summary.json.competitors[{index}].{field}: 至少一项")
         if "purchase_task" not in set(item.get("substitution_basis") or []):
-            errors.append(f"product1-competition-study.md.competitors[{index}]: 替代依据必须包含purchase_task")
+            errors.append(f"product1-competition-summary.json.competitors[{index}]: 替代依据必须包含purchase_task")
     if role_count == 0:
-        errors.append("product1-competition-study.md: 至少裁定一个直接、局部或内部替代")
+        errors.append("product1-competition-summary.json: 至少裁定一个直接、局部或内部替代")
     problem = product1.get("competition_problem")
     if not isinstance(problem, dict):
-        errors.append("product1-competition-study.md.competition_problem: 缺少竞争问题")
+        errors.append("product1-competition-summary.json.competition_problem: 缺少竞争问题")
     else:
         for field in ("adverse_belief", "target_belief"):
             if not _text(problem.get(field)):
-                errors.append(f"product1-competition-study.md.competition_problem.{field}: 不能为空")
+                errors.append(f"product1-competition-summary.json.competition_problem.{field}: 不能为空")
         for field in ("tangible_enemies", "intangible_enemies", "evidence_refs"):
             if not _list(problem.get(field)):
-                errors.append(f"product1-competition-study.md.competition_problem.{field}: 至少一项")
+                errors.append(f"product1-competition-summary.json.competition_problem.{field}: 至少一项")
     boundary = product1.get("effective_boundary")
     for field in ("geography", "customer", "area_and_price", "product_form", "purchase_task", "lifecycle_window", "rationale"):
         if not isinstance(boundary, dict) or not _text(boundary.get(field)):
-            errors.append(f"product1-competition-study.md.effective_boundary.{field}: 不能为空")
+            errors.append(f"product1-competition-summary.json.effective_boundary.{field}: 不能为空")
     if len(product1.get("sc_candidates") or []) < 3:
-        errors.append("product1-competition-study.md.sc_candidates: 至少三条候选机制")
+        errors.append("product1-competition-summary.json.sc_candidates: 至少三条候选机制")
     stop = product1.get("stop_search")
     if not isinstance(stop, dict) or not isinstance(stop.get("value"), bool) or not _text(stop.get("reason")):
-        errors.append("product1-competition-study.md.stop_search: 必须说明是否停止及理由")
+        errors.append("product1-competition-summary.json.stop_search: 必须说明是否停止及理由")
 
 
 def validate_product2(data: RunData, errors: list[str]) -> None:
-    product2 = data["product2-buyer-decision-study.md"]
+    validate_client_report(
+        data,
+        errors,
+        report_name="product2-buyer-decision-study.md",
+        title_term="目标客群与购买决策研究",
+    )
+    product2 = data["product2-buyer-decision-summary.json"]
     if product2.get("schema") != "residential.product2_buyer_decision_study.v0.2":
-        errors.append("product2-buyer-decision-study.md: schema错误")
+        errors.append("product2-buyer-decision-summary.json: schema错误")
     if product2.get("enabled") is not True:
-        errors.append("product2-buyer-decision-study.md.enabled: 已启用产物必须为true")
+        errors.append("product2-buyer-decision-summary.json.enabled: 已启用产物必须为true")
     if product2.get("status") != "product2_complete":
-        errors.append("product2-buyer-decision-study.md.status: 必须为product2_complete")
+        errors.append("product2-buyer-decision-summary.json.status: 必须为product2_complete")
     tasks = product2.get("purchase_tasks")
-    _ids(tasks, "product2-buyer-decision-study.md.purchase_tasks", errors)
+    _ids(tasks, "product2-buyer-decision-summary.json.purchase_tasks", errors)
     if not tasks:
-        errors.append("product2-buyer-decision-study.md.purchase_tasks: 至少一条")
+        errors.append("product2-buyer-decision-summary.json.purchase_tasks: 至少一条")
     for index, item in enumerate(tasks if isinstance(tasks, list) else []):
         if not isinstance(item, dict):
             continue
         for field in ("roles_and_relations", "circumstance", "trigger", "desired_progress", "project_fit", "boundary", "source_kind"):
             if not _text(item.get(field)):
-                errors.append(f"product2-buyer-decision-study.md.purchase_tasks[{index}].{field}: 不能为空")
+                errors.append(f"product2-buyer-decision-summary.json.purchase_tasks[{index}].{field}: 不能为空")
         for field in ("alternatives", "gains", "tolerances", "facilitators", "blockers", "evidence_refs"):
             if not _list(item.get(field)):
-                errors.append(f"product2-buyer-decision-study.md.purchase_tasks[{index}].{field}: 至少一项")
+                errors.append(f"product2-buyer-decision-summary.json.purchase_tasks[{index}].{field}: 至少一项")
     if not _list(product2.get("counterexamples")):
-        errors.append("product2-buyer-decision-study.md.counterexamples: 至少一条反例或失效边界")
+        errors.append("product2-buyer-decision-summary.json.counterexamples: 至少一条反例或失效边界")
 
 
 def validate_semantic_core(data: RunData, errors: list[str]) -> None:
@@ -613,7 +685,7 @@ def validate_cross_product_consistency(data: RunData, errors: list[str], mode: s
     expected_project_id = contract.get("project", {}).get("id")
     for name in sorted(data.loaded_files):
         item = data[name]
-        if name in {"project-contract.md", "product4-value-framework-contract.json"}:
+        if name in {"project-contract.md", "product4-value-framework-contract.json"} or name in CLIENT_REPORT_FILES:
             continue
         project_id = item.get("project_id") if isinstance(item, dict) else None
         if project_id != expected_project_id:

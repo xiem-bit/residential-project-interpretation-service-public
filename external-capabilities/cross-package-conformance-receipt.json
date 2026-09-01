@@ -6,6 +6,7 @@
   "producer": {
     "repository": "https://github.com/xiem-public-info/public-info-research-kit",
     "release_candidate": "0.8.0-rc.1",
+    "source_commit": "208d3defc03c0d7f30e93ea543634f11a55b9d0b",
     "schema": "public_evidence_envelope.v1",
     "schema_path": "plugins/public-info-research-kit/schemas/public_evidence_envelope.v1.json",
     "sha256_raw_file_bytes": "ee303d2ea8eef1bcc2b6e6f7a8b020486aa80c3c3ca3189cb99fedd5b8fc2148",
@@ -19,13 +20,15 @@
     "full_harness": {
       "command_from_plugin_root": "python3 tests/run_release_harness.py",
       "status": "pass",
-      "fixture_case_count": 94
+      "producer_core_conformance_fixture_case_count": 94,
+      "fixture_case_count": 101
     }
   },
   "consumer": {
     "repository": "https://github.com/xiem-bit/residential-project-interpretation-service-public",
     "release_candidate": "v0.2.0-rc.1",
-    "base_commit": "6876e44",
+    "interface_freeze_commit": "0a0c08eefc5ba4d5d36e9b5658ea648c44628585",
+    "current_regression_case_count": 106,
     "contracts": [
       {
         "schema": "residential.upstream_task.v0.2",

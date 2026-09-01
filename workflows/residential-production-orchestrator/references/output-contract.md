@@ -5,20 +5,21 @@
 1. `project-contract.md`
 2. `fact-conflict-gap-register.json`
 3. `product1-competition-study.md`
-4. `semantic-core.json`
-5. `super-competitiveness-plan.json`
-6. `product-enablement-matrix.json`
-7. `production-receipt.json`
+4. `product1-competition-summary.json`
+5. `semantic-core.json`
+6. `super-competitiveness-plan.json`
+7. `product-enablement-matrix.json`
+8. `production-receipt.json`
 
 ## Conditional files
 
-- Product 2: `product2-buyer-decision-study.md`
+- Product 2: `product2-buyer-decision-study.md`, `product2-buyer-decision-summary.json`
 - Product 3: `product3-chapter2-contract.json`, `product3-chapter3-contract.json`, `ue-solution-handoff.json`
 - Product 4: `product4-value-framework-contract.json`
 - Product 5: `product5-interaction-blueprint.json`
 - Material semantic change only: `change-impact-registry.json`
 
-Only enabled product files may exist. Disabled products are explained in the project contract and enablement matrix; they do not get empty placeholders. Markdown reports begin with a JSON summary block and retain human-readable analysis below it.
+Only enabled product files may exist. Disabled products are explained in the project contract and enablement matrix; they do not get empty placeholders. Product 1 and Product 2 client reports are plain Markdown deliverables; their paired JSON sidecars carry machine-readable summaries. Internal fields, IDs, search states and validator output never appear in the client report.
 
 ## Stable identifiers
 

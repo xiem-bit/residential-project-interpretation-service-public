@@ -42,6 +42,9 @@ class CrossPackageConformanceTest(unittest.TestCase):
     def test_producer_hash_and_contract_ids_match_receipt(self) -> None:
         producer = self.compatibility["upstream_evidence_contract"]
         self.assertEqual(producer["schema_sha256"], self.receipt["producer"]["sha256_raw_file_bytes"])
+        self.assertEqual(producer["source_commit"], self.receipt["producer"]["source_commit"])
+        self.assertRegex(producer["source_commit"], r"^[0-9a-f]{40}$")
+        self.assertEqual(self.receipt["producer"]["full_harness"]["fixture_case_count"], 101)
         self.assertEqual(
             {item["schema"] for item in self.receipt["consumer"]["contracts"]},
             {

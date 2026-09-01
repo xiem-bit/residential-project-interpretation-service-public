@@ -72,6 +72,7 @@ class ProductionPathV02Test(unittest.TestCase):
         self.write("production-receipt.json", receipt)
         for name in (
             "product2-buyer-decision-study.md",
+            "product2-buyer-decision-summary.json",
             "product3-chapter2-contract.json",
             "product3-chapter3-contract.json",
             "ue-solution-handoff.json",
@@ -95,11 +96,27 @@ class ProductionPathV02Test(unittest.TestCase):
         self.assertTrue(any("机制重复" in error for error in self.errors(mode="tutorial")))
 
     def test_competitor_without_acknowledged_strength_fails(self) -> None:
-        path = self.run_dir / "product1-competition-study.md"
-        text = path.read_text(encoding="utf-8")
-        text = text.replace('"strengths": ["距既有轨道站约650米", "成熟商业和学校更集中"]', '"strengths": []', 1)
-        path.write_text(text, encoding="utf-8")
+        product1 = self.load("product1-competition-summary.json")
+        product1["competitors"][0]["strengths"] = []
+        self.write("product1-competition-summary.json", product1)
         self.assertTrue(any("strengths: 至少一项" in error for error in self.errors(mode="tutorial")))
+
+    def test_client_reports_are_physically_separate_from_machine_summaries(self) -> None:
+        for name in ("product1-competition-study.md", "product2-buyer-decision-study.md"):
+            text = (self.run_dir / name).read_text(encoding="utf-8")
+            self.assertNotIn("```json", text)
+            self.assertNotIn('"schema"', text)
+        self.assertTrue((self.run_dir / "product1-competition-summary.json").is_file())
+        self.assertTrue((self.run_dir / "product2-buyer-decision-summary.json").is_file())
+
+    def test_client_report_internal_machine_field_fails(self) -> None:
+        path = self.run_dir / "product1-competition-study.md"
+        path.write_text(path.read_text(encoding="utf-8") + "\n内部 stop_search 已完成。\n", encoding="utf-8")
+        self.assertTrue(any("客户正文暴露机器字段" in error for error in self.errors(mode="tutorial")))
+
+    def test_product1_summary_is_required(self) -> None:
+        (self.run_dir / "product1-competition-summary.json").unlink()
+        self.assertTrue(any("缺少必需文件：product1-competition-summary.json" in error for error in self.errors(mode="tutorial")))
 
     def test_boolean_only_five_check_fails(self) -> None:
         plan = self.load("super-competitiveness-plan.json")
@@ -170,6 +187,7 @@ class ProductionPathV02Test(unittest.TestCase):
         self.assertEqual(completed.returncode, 0, completed.stderr)
         self.assertTrue((output / "semantic-core.json").is_file())
         self.assertFalse((output / "product2-buyer-decision-study.md").exists())
+        self.assertFalse((output / "product2-buyer-decision-summary.json").exists())
         self.assertFalse((output / "product3-chapter2-contract.json").exists())
         self.assertNotIn("SC-ACCESS", (output / "semantic-core.json").read_text(encoding="utf-8"))
         _, errors = validate_all(output)
@@ -194,6 +212,7 @@ class ProductionPathV02Test(unittest.TestCase):
         )
         self.assertEqual(completed.returncode, 0, completed.stderr)
         self.assertTrue((output / "product2-buyer-decision-study.md").is_file())
+        self.assertTrue((output / "product2-buyer-decision-summary.json").is_file())
         self.assertTrue((output / "product3-chapter2-contract.json").is_file())
         self.assertTrue((output / "product5-interaction-blueprint.json").is_file())
         self.assertFalse((output / "product4-value-framework-contract.json").exists())

@@ -1,0 +1,30 @@
+{
+  "schema": "residential.product2_buyer_decision_study.v0.2",
+  "project_id": "PROJECT-001",
+  "enabled": true,
+  "status": "product2_complete",
+  "not_enabled_reason": "",
+  "covered_by": [],
+  "purchase_tasks": [
+    {
+      "id": "TASK-01",
+      "priority": "primary",
+      "roles_and_relations": "家庭角色与关系",
+      "circumstance": "当前处境",
+      "trigger": "改变触发",
+      "desired_progress": "希望取得的进展",
+      "alternatives": ["替代选择"],
+      "gains": ["希望得到"],
+      "tolerances": ["愿意忍耐"],
+      "facilitators": ["促成因素"],
+      "blockers": ["阻断因素"],
+      "project_fit": "为什么本案更适合",
+      "boundary": "适用边界与失效条件",
+      "source_kind": "choice_event",
+      "evidence_refs": ["E-VOICE-01"]
+    }
+  ],
+  "counterexamples": ["反例或不适配情形"],
+  "updates_to_product1": ["对产物1的修正"],
+  "inputs_to_product3": ["对第三章家庭路线的输入"]
+}

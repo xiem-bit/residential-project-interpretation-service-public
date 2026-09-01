@@ -14,8 +14,8 @@
     ".DS_Store",
     "RELEASE_MANIFEST.json"
   ],
-  "file_count": 205,
-  "tree_sha256": "137865c6f336806e537f5ced74ce399aea34da8c165b30fc1418a5721f871564",
+  "file_count": 210,
+  "tree_sha256": "8d1a30e89516b8060489a48a1a2ff5118be69a1976141bded16d96c3fe5992a4",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -34,8 +34,8 @@
     },
     {
       "path": "AGENT_RULES.md",
-      "bytes": 6612,
-      "sha256": "51a275d1f2796edf2853734255bd904654bc847e682b50549c15407eed71e516"
+      "bytes": 8196,
+      "sha256": "55afddf8ddff1edbcd4e009245f8513295d03ebc9df3480996c145ffb53401a2"
     },
     {
       "path": "A_CLASS_ALLOWLIST.txt",
@@ -54,8 +54,8 @@
     },
     {
       "path": "CAPABILITY_PARITY_MANIFEST.json",
-      "bytes": 16568,
-      "sha256": "8f141082fcac0cec9a0eb964e2404dface1aa5d448e2c4144406af991af123d0"
+      "bytes": 16934,
+      "sha256": "7099b5b725c8648d39e92d20b1a569df3427f4f828edfc929f7855564b1b3ea6"
     },
     {
       "path": "COLD_START_PROTOCOL.md",
@@ -79,8 +79,8 @@
     },
     {
       "path": "PRODUCTION_PATH_MANIFEST.json",
-      "bytes": 6554,
-      "sha256": "68eb02a5fffc4895409cbb0f0425e6fc1c635c9408554cbd1c2c6f66f245325b"
+      "bytes": 6686,
+      "sha256": "0e1d125f2114729ea1cd1458a8a5f748723084bc97c3c3a0c084be1000938c29"
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
@@ -99,8 +99,8 @@
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 2921,
-      "sha256": "08ecd8aec59cf9fbd318d7d782069574898db5eccd52a5d5f65dae1360304a2a"
+      "bytes": 3354,
+      "sha256": "a04bc17acb897cca51eb7951d09d31d02d71eca82cc835380f2e7051e78ef4a7"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
@@ -124,8 +124,8 @@
     },
     {
       "path": "START_HERE.md",
-      "bytes": 4813,
-      "sha256": "3672be386fb247c3057468a30737d8bf9eb8035306ea881aaec78c80d9b522a2"
+      "bytes": 4888,
+      "sha256": "4f5ae7fcdf01e9c42d9c686c96ee53851545e718962ae1f6aa6b097108821589"
     },
     {
       "path": "THIRD_PARTY_LICENSES.json",
@@ -249,13 +249,13 @@
     },
     {
       "path": "core/02-产物1竞争态势研究.md",
-      "bytes": 2478,
-      "sha256": "d3ddc7b1c8f953519ec0ebff973a926dffd0ff26083a4cd5a1ea0c1e171dd60e"
+      "bytes": 2971,
+      "sha256": "fbd47d10ff226b8844f7e1ebdd7e78f5ace87f439fd22c43c46af8513cf163ae"
     },
     {
       "path": "core/03-产物2购买决策研究.md",
-      "bytes": 1839,
-      "sha256": "ec35d24ddd0f6333551759e2e8bf720551e2f30e065e9f64717e90006b0321b9"
+      "bytes": 2149,
+      "sha256": "319e4083464dde6885ee4fa0617628d5213f0b069940d0c1eee79b8de40184ed"
     },
     {
       "path": "core/04-统一语义核与超级竞争力.md",
@@ -384,18 +384,28 @@
     },
     {
       "path": "examples/production-path-tutorial/expected/product-enablement-matrix.json",
-      "bytes": 1470,
-      "sha256": "9bd523b28174d1adc764edd20ef071e0e08cf4333a99b57440e16b78752e6964"
+      "bytes": 1547,
+      "sha256": "2ecfa61715c898ae28f26e6c61d88210c844cb6e522753003bf117b824505f27"
     },
     {
       "path": "examples/production-path-tutorial/expected/product1-competition-study.md",
-      "bytes": 6003,
-      "sha256": "a543ed482d451effc50e5fc2977966ba890d0c40fdd012a1e134944e41174bc9"
+      "bytes": 6932,
+      "sha256": "efa61c300264c65f0852f7ef7d48782355aa711078832de8e5c0fb8f24d004bd"
+    },
+    {
+      "path": "examples/production-path-tutorial/expected/product1-competition-summary.json",
+      "bytes": 5206,
+      "sha256": "19d4ed09d3659e8f111c05586d9df524b8f926db4b33289e0fe6ae47c1977247"
     },
     {
       "path": "examples/production-path-tutorial/expected/product2-buyer-decision-study.md",
-      "bytes": 4390,
-      "sha256": "160f3da7725b1d30aed480288a0e2cdbe69c5d73f13983f2d0d488a7604ca0ec"
+      "bytes": 6806,
+      "sha256": "daacb9a55b122e6aa0ed90daeaf778ea711554dcaef8e4c85fdcf13bdf90dcd1"
+    },
+    {
+      "path": "examples/production-path-tutorial/expected/product2-buyer-decision-summary.json",
+      "bytes": 3790,
+      "sha256": "1192bfe083c602f42630a7790797c483a37e96d63b2d617b94f4a9c87dc44646"
     },
     {
       "path": "examples/production-path-tutorial/expected/product3-chapter2-contract.json",
@@ -474,13 +484,13 @@
     },
     {
       "path": "external-capabilities/cross-package-compatibility.json",
-      "bytes": 2846,
-      "sha256": "75d0d1252bb15d8ec46792a41319ac934a531d56ab2f96ca49cb2acd0b862835"
+      "bytes": 2972,
+      "sha256": "cf5a72a652bf7151f6f6ad40ad6dd0268570a6c2f014394839b8d30d49ae8b5c"
     },
     {
       "path": "external-capabilities/cross-package-conformance-receipt.json",
-      "bytes": 3200,
-      "sha256": "3b02b329fc2e8741268d5f293284384dd89cbfbe45c5954d1692b1b1fcc7d0ef"
+      "bytes": 3411,
+      "sha256": "53f1f1779bf3f183f384df197dc7842d8b85c0e3ed7b321007f59cfa26c9afcd"
     },
     {
       "path": "external-capabilities/upstream-adoption-receipt.schema.json",
@@ -624,8 +634,8 @@
     },
     {
       "path": "scripts/init_production_run.py",
-      "bytes": 5577,
-      "sha256": "990ebb1c8da27db9e92b6d062d7934e7789cb5cb29af9b7d1b5909cf1869b2ec"
+      "bytes": 5856,
+      "sha256": "4e47ae091c936da332c72733ba97bb875aa9c9c370e67b5bc26ccb201ef75dda"
     },
     {
       "path": "scripts/prepare_external_cold_start.py",
@@ -639,8 +649,8 @@
     },
     {
       "path": "scripts/verify_capability_parity.py",
-      "bytes": 13667,
-      "sha256": "e90ce77f67303fb0c140db0b2dd39b28c8eb608453d8ee68e27a712b1dafa580"
+      "bytes": 13654,
+      "sha256": "86c005b3961db8ec9e20ad8fb99c7644b864e47942a19bc0ecd911c41d503f03"
     },
     {
       "path": "scripts/verify_cross_package_conformance.py",
@@ -674,13 +684,23 @@
     },
     {
       "path": "templates/产物1竞争态势研究.template.md",
-      "bytes": 1935,
-      "sha256": "e7fb8b48dd092371854fb2fe18e86286bf4d4793177684c17750814aca677ad6"
+      "bytes": 1055,
+      "sha256": "c46dea31014b586f628fc73c5741b20f6f67238f6c487e29183d6971fbd02bb7"
+    },
+    {
+      "path": "templates/产物1竞争态势研究摘要.template.json",
+      "bytes": 1616,
+      "sha256": "278eaf1b627bcb4dc85bc77d66eed296dbe367f61a9b212f031b00bfd2fc0c72"
     },
     {
       "path": "templates/产物2购买决策研究.template.md",
-      "bytes": 1394,
-      "sha256": "b650a989104173db97368571ac06e0f800ca4a0662a195e2ce25416f699e162d"
+      "bytes": 1008,
+      "sha256": "fe44eae1a9a419af9937676a4970fc9359d7de4ee739092ed02683d852fe57f6"
+    },
+    {
+      "path": "templates/产物2购买决策研究摘要.template.json",
+      "bytes": 987,
+      "sha256": "70f9a8108e05b5dd8f14bf21995c9bb18ef1ffff86b8bc8d9960a42a2a6e0e81"
     },
     {
       "path": "templates/产物3第三章UE合同.template.json",
@@ -714,8 +734,8 @@
     },
     {
       "path": "templates/产物启用矩阵.template.json",
-      "bytes": 1032,
-      "sha256": "74dfcbb0ef9d4f56c75bafa4097318da3ab1d40dbcaa8669d7689648900c9dcf"
+      "bytes": 1069,
+      "sha256": "e08bc5d7813cee4a6cbea686b7ca27ea786fc3b0899ecfe4484e36ec571eb0f8"
     },
     {
       "path": "templates/变更影响登记表.template.json",
@@ -769,13 +789,13 @@
     },
     {
       "path": "tests/test_capability_parity.py",
-      "bytes": 2749,
-      "sha256": "a3084c5d206977c3e9c6eccc95f78dc42c49aa89ba3eec0c6a54cc54bddcf133"
+      "bytes": 3773,
+      "sha256": "e8a5e2022973419f01a7be72ef53aa73fd4415fce0318674051d7b7b6d24a746"
     },
     {
       "path": "tests/test_cross_package_conformance.py",
-      "bytes": 3026,
-      "sha256": "2eec7e491335411f062b631fc58be2c7e2e7f24c3267a78bde0fa78c149c2033"
+      "bytes": 3286,
+      "sha256": "db79bb25ca45cd92003619c4c049e8f6d01470f7cfb658826eb2dc0522ab4797"
     },
     {
       "path": "tests/test_external_cold_start_protocol.py",
@@ -794,8 +814,8 @@
     },
     {
       "path": "tests/test_production_path_v02.py",
-      "bytes": 10637,
-      "sha256": "9511e1f0b4f24302cea718afe45999566e522dfa2029c2fc3c5e9f92ffa2529a"
+      "bytes": 11907,
+      "sha256": "30b65154875161c633dbcdd9c2f6393a87fc2e662f0b405a1dccbdc9c77be1f5"
     },
     {
       "path": "tests/test_public_release_state.py",
@@ -949,8 +969,8 @@
     },
     {
       "path": "tools/production_core/common.py",
-      "bytes": 39193,
-      "sha256": "c52321f199c42a7eba3ac0577c80f5e1496789a8564bdfe39c00a887416c8968"
+      "bytes": 42204,
+      "sha256": "c4c5518d22e3294e26dfcd099642c47b551f5e5a486cd79fd688183749c5f078"
     },
     {
       "path": "tools/production_core/inference_firewall.py",
@@ -1024,8 +1044,8 @@
     },
     {
       "path": "workflows/residential-production-orchestrator/SKILL.md",
-      "bytes": 5824,
-      "sha256": "f63a533bb7b1b253d0e5d6cd5ef23f4339ce1f139adb5b84dd886d605a980757"
+      "bytes": 6500,
+      "sha256": "7f42c3be869d5e3440413fd3ce2171e840d66318cc5c667b49f8dab70adf3c48"
     },
     {
       "path": "workflows/residential-production-orchestrator/agents/openai.yaml",
@@ -1033,14 +1053,19 @@
       "sha256": "4cfe3700c16b748ced55e5f54d6acd2cc5b48d1294d7316cf95fb14756bdcd46"
     },
     {
+      "path": "workflows/residential-production-orchestrator/references/client-facing-writing.md",
+      "bytes": 7309,
+      "sha256": "9cb40a7a1c6c222a10b6d9d965fe8f4e959a79188c514d35807b4792605678ec"
+    },
+    {
       "path": "workflows/residential-production-orchestrator/references/output-contract.md",
-      "bytes": 2003,
-      "sha256": "c8cc52a7281102e91e993de00602f2d332a892138bd72beb66fe89a4a190d30f"
+      "bytes": 2213,
+      "sha256": "ed15698f87cfedc962b2212061660db6b8d01c486b69bf194ede02f37e48dc4b"
     },
     {
       "path": "workflows/residential-production-orchestrator/references/routing.md",
-      "bytes": 1843,
-      "sha256": "892cd38a1865b3e8daa40830349a6f875d7e42ec707a61b78a173f58ff43716c"
+      "bytes": 2059,
+      "sha256": "99fb8aa6edd96450dc1b604ff4bb69a9ea3d143df3eaecf1d700f8683d9b80a8"
     }
   ]
 }

@@ -23,13 +23,15 @@ Then declare exactly one mode: `real_project_delivery`, `non_research_task`, or 
 
 Use [routing.md](references/routing.md) to load only the stage-specific specifications. Use [output-contract.md](references/output-contract.md) for filenames, identifiers and status transitions.
 
+When Product 1, Product 2 or any client-facing PPT, HTML, PDF or web copy is produced or materially rewritten, also read [client-facing-writing.md](references/client-facing-writing.md). It carries the full A/B/C writing, de-internalization, source adjacency and carrier-review rules inside this existing orchestrator; do not create a parallel writing Skill.
+
 ## Workflow
 
 1. Build `project-contract.md`. Close project identity, task boundary, audience, usage, authorized inputs, enabled products, current decisions and superseded decisions.
 2. Build `fact-conflict-gap-register.json`. Separate facts, limited observations, judgments, assumptions, gaps, conflicts and `cannot_infer`.
 3. When a judgment-changing gap needs an external owner, issue `residential.upstream_task.v0.2` before formal Product 1 writing. Freeze the business question, identity, evidence roles, acceptance mode, quality/count/diversity requirements, exact queries, execution floors, incremental authority and stop conditions. Consume `public_evidence_envelope.v1`, preserve negative hits/conflicts/gaps/stop reason, then record accepted and rejected uses in `residential.upstream_adoption_receipt.v0.2`. Upstream `fulfilled` never means downstream `accepted`; only the residential owner may authorize an incremental proposal or adjudicate strategy.
-4. Produce Product 1. Discover candidate competitors through physical space, perception shelf and purchase-task substitution; then adjudicate roles with lifecycle, product, area/price, sales window and purchase task. Acknowledge why each opponent is chosen.
-5. Produce Product 2 when an independent buyer report, buyer decisions or UE routes need deeper work. If not enabled, record the reason in the project contract and enablement matrix; do not create an empty Product 2 file.
+4. Produce Product 1 as a paired client report and machine summary. Discover candidate competitors through physical space, perception shelf and purchase-task substitution; then adjudicate roles with lifecycle, product, area/price, sales window and purchase task. Acknowledge why each opponent is chosen. Keep the Markdown report free of machine fields and internal tasks.
+5. Produce Product 2 as a paired client report and machine summary when an independent buyer report, buyer decisions or UE routes need deeper work. If not enabled, record the reason in the project contract and enablement matrix; do not create either empty Product 2 file.
 6. Generate `semantic-core.json` from the upstream outputs. Do not import an example semantic core or let a carrier adapter invent it.
 7. Establish three to four mechanism-distinct SCs. Each must pass the five substantive checks and close six causal links: project fact, relative competition, customer importance, project response, UE proof and target action. Register high-risk evidence-to-claim links against `contracts/inference-relationships.json`; the machine may veto a prohibited or unbridged inference but may not approve business quality. Together the SCs cover entering consideration, winning comparison and prompting action.
 8. Decide Product 1–5 enablement and high-cost admission. Fewer than three established SCs means return to research; do not continue to project-specific formal carriers.
@@ -37,7 +39,7 @@ Use [routing.md](references/routing.md) to load only the stage-specific specific
 10. If Product 4 or 5 is enabled, project the same stable IDs into a single business tree or interaction blueprint. Do not create new project value downstream. Do not create files for disabled products.
 11. When material facts or decisions change, update upstream authority first, create the change-impact registry, and reproject only affected downstream references. Do not create a no-op registry for a new unchanged run.
 12. Run `python3 scripts/verify_production_run.py <run-dir>` and the upstream exchange validator when an external evidence package is consumed. Treat both results as machine contract checks only.
-13. Complete professional semantic review and the task-appropriate human acceptance. Keep machine, human, adapter, publication, adoption and business-effect states separate.
+13. Complete A-level semantic review, B-level report scan, C-level fact-and-boundary protection, de-internalization and source-adjacency review for client-facing work. Then complete the task-appropriate professional and human acceptance. Keep machine, human, adapter, publication, adoption and business-effect states separate.
 
 ## Return conditions
 
