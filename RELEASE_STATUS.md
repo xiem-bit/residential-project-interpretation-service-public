@@ -3,7 +3,7 @@
 ## 当前标签与候选
 
 - `v0.1.0-rc.1`：已发布、不可变；定位为“冻结语义核之后的下游合同、平台往返与载体结构演示”。
-- `v0.2.0-rc.1`：候选分支存在、尚未创建标签；当前状态为`capability_complete / authorized_reference_assets_complete / product4_excluded / clean_clone_accepted / not_released`。
+- `v0.2.0-rc.1`：已获用户发行授权并作为公开预发行版发布；当前状态为`capability_complete / authorized_reference_assets_complete / product4_excluded / clean_clone_accepted / public_prerelease_published`。
 
 ## P0已经成立
 
@@ -27,10 +27,10 @@
 - 公开信息包候选`public_evidence_envelope.v1`与住宅侧三项合同已按原始字节哈希冻结；双方fixture往返和跨包harness已经通过，尚未发布正式版本或证明真实GUI／业务验收；
 - 统一`INSTALL.md`与doctor已经覆盖生产核心、20页产物3黄金、三份历史原稿、124文件模板、229文件案例素材、中文写作能力和产物5运行时；PPT生成引擎与Grist由终端用户自行安装，Computer Use、浏览器、地图、微信、小红书及个人登录态由终端用户自行安装或登录。2026-09-01从提交`ba0d752`建立不复用仓库依赖的干净副本，完成锁定依赖安装、112项公开回归、18项能力对齐、发行清单和产物5运行测试，full doctor为`pass`；
 
-## 当前尚未成立
+## 发布后仍未成立
 
-- 尚未获得创建或推送`v0.2.0-rc.1`标签的真人授权；候选通过不等于已发布、真实客户接受或业务效果成立。
-- 双包接口当前只证明候选fixture与harness兼容；正式版本发布和真实外部运行仍需各自工程按权限完成。
+- 公开预发行已经成立，但不等于真实客户接受、正式业务交付或业务效果成立。
+- 双包接口当前只证明候选fixture与harness兼容；后续正式版本和真实外部运行仍需两个工程分别按权限完成。
 
 ## 产物3黄金权威纠正
 
@@ -55,4 +55,4 @@
 
 `dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`、`client_report_machine_summary_separation`、`product3_authorized_gold_authority_corrected`、`product5_public_safe_gold`、`multi_mechanism_learning_reference_library`与`self_install_doctor_and_clean_clone_acceptance`已经完成候选验证。下一步只处理真人发行授权与双包正式版本协同，不再用安装待办掩盖现行黄金能力。
 
-当前候选不得创建或推送`v0.2.0-rc.1`标签。完成`CAPABILITY_PARITY_MANIFEST.json`中的全部发布阻断项、干净克隆和双包端到端验收后，才能申请正式发布授权。
+`v0.2.0-rc.1`固定标签和GitHub Prerelease构成本次公开发行权威。后续修改必须使用新版本号，不得覆盖或移动该标签。

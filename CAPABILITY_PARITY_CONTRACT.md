@@ -1,6 +1,6 @@
 # v0.2.0 公开发行能力同构合同
 
-状态：`p0_frozen / capability_and_authorized_reference_assets_complete / clean_clone_accepted / candidate_not_released`
+状态：`p0_frozen / capability_and_authorized_reference_assets_complete / clean_clone_accepted / v0.2.0-rc.1_published`
 
 本合同冻结住宅项目竞争力工程公开发行包的能力目标。公开包不是私有研发主线的文件副本，也不是只保留演示文稿和网页载体的简化版；它必须让终端使用者在自己的 Codex、账号和项目资料中，尽量取得与现行黄金生产路径一致的业务判断与交付质量。
 
@@ -128,10 +128,10 @@ residential.upstream_task.v0.2
 
 ## 七、P0冻结结果与后续顺序
 
-P0以 `CAPABILITY_PARITY_MANIFEST.json`登记每项能力的当前公开状态，以 `RETIRED_AND_PRIVATE_BOUNDARY.md`登记不进入当前入口的历史和私有资产。能力面和本轮授权参考资产已经补齐，扩容后的干净克隆重验已经通过；候选在真人发行授权与正式版本协同完成前保持`not_released`。
+P0以 `CAPABILITY_PARITY_MANIFEST.json`登记每项能力的当前公开状态，以 `RETIRED_AND_PRIVATE_BOUNDARY.md`登记不进入当前入口的历史和私有资产。能力面和本轮授权参考资产已经补齐，扩容后的干净克隆重验已经通过；用户已授权将该候选作为`v0.2.0-rc.1`公开预发行版发布。
 
 后续按以下顺序推进：
 
-1. 取得真人发行授权；
-2. 与公开信息包协同正式版本；
-3. 在明确授权后创建并推送候选标签。
+1. 收集独立终端安装反馈；
+2. 与公开信息包协同后续正式版本；
+3. 将真实渠道、载体质量、真人业务接受和业务效果继续分层记录。

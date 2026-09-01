@@ -1,7 +1,7 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
   "candidate_version": "v0.2.0-rc.1",
-  "status": "capability_complete_authorized_reference_assets_complete_clean_clone_accepted_not_released",
+  "status": "capability_complete_authorized_reference_assets_complete_clean_clone_accepted_v0_2_0_rc_1_published",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
     "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
@@ -10,7 +10,7 @@
   "public_candidate": {
     "branch": "codex/v0.2.0-rc.1-production-path",
     "p0_started_from_commit": "69efd01e760636e312be3af75b17a107ae037ee0",
-    "tag_created": false
+    "tag_created": true
   },
   "principles": {
     "complete_semantic_parity_required": true,
@@ -274,5 +274,5 @@
     }
   ],
   "release_blockers": [],
-  "next_slice": "human_release_authorization_and_formal_cross_package_versioning"
+  "next_slice": "post_release_installation_feedback_and_formal_cross_package_versioning"
 }

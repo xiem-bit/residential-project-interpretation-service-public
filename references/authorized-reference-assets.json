@@ -1,6 +1,6 @@
 {
   "schema": "residential.authorized_reference_assets.v1",
-  "status": "explicit_user_authorization_candidate_not_released",
+  "status": "explicit_user_authorization_v0_2_0_rc_1_published",
   "source_baseline": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
   "authorization_record": "references/AUTHORIZED_REFERENCE_ASSETS.md",
   "page_template_library": {

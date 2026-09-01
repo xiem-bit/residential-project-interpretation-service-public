@@ -1,8 +1,8 @@
 {
   "schema": "residential.public_rc_source_manifest.v0.2",
   "version": "v0.2.0-rc.1",
-  "status": "candidate_unpublished_parity_and_clean_clone_accepted",
-  "latest_published_tag": "v0.1.0-rc.1",
+  "status": "v0_2_0_rc_1_public_prerelease_published_parity_and_clean_clone_accepted",
+  "latest_published_tag": "v0.2.0-rc.1",
   "source_commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
   "excluded": [
     ".git/**",
@@ -17,7 +17,7 @@
     "RELEASE_MANIFEST.json"
   ],
   "file_count": 649,
-  "tree_sha256": "6ec029e31b458e85857652b2da8a3e6cad88405c2531f51e042598a6a625a4a4",
+  "tree_sha256": "a454ed1458e65a6aab228667d18da62167c7f164c904f1d11f7c9fd634b56a05",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -31,8 +31,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1428,
-      "sha256": "ffbd626114866cfa96983f53f524c1dcb32a8c42e7e8ee5cd02bc35e539ff42f"
+      "bytes": 1455,
+      "sha256": "c3364c73654152e23f7675312a12021795c6af891b5054859d1f3ba767d5f470"
     },
     {
       "path": "AGENT_RULES.md",
@@ -51,13 +51,13 @@
     },
     {
       "path": "CAPABILITY_PARITY_CONTRACT.md",
-      "bytes": 10085,
-      "sha256": "8eab5a7afab7e6ae51f70dc0feacb4c2790993d919490960a1d7d1988e980a6c"
+      "bytes": 10128,
+      "sha256": "3b13905f23d5d2037cf0fffc39c0439ccf70379bd95d3a93899dfebdcb46dd09"
     },
     {
       "path": "CAPABILITY_PARITY_MANIFEST.json",
-      "bytes": 17976,
-      "sha256": "718e065bc8ec645380638b4eda4526fe8daa616ff6a6a2259f3563e12925ee93"
+      "bytes": 17991,
+      "sha256": "1418a2acc17794e9df966d10657522be11ad2cc4e609684dd6398507e60b898f"
     },
     {
       "path": "COLD_START_PROTOCOL.md",
@@ -71,8 +71,8 @@
     },
     {
       "path": "INSTALL.md",
-      "bytes": 5671,
-      "sha256": "ec73931c0bd9cfc2560260948003a9d17cb0ddb48a5c8c06f9609325ba3ce512"
+      "bytes": 5631,
+      "sha256": "f538a1de79c224d93958bf63cb9e289098bd51962fdce39c52a06656f93b512d"
     },
     {
       "path": "LICENSE",
@@ -91,8 +91,8 @@
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
-      "bytes": 4028,
-      "sha256": "7d1f7695da567b78768fb40ff4186edeb489f948c13258b43379db8fea6fd52a"
+      "bytes": 3993,
+      "sha256": "94875cd71c0ccb799afcb814dc655874fb90a92a4b4820a71f2c17b663af561e"
     },
     {
       "path": "RC1_E2E_VERIFICATION.json",
@@ -101,13 +101,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4301,
-      "sha256": "4a55481a7fa7c8a254411c5445ea2c091f6c4dbf8fa6e293a605381408b3afbe"
+      "bytes": 4241,
+      "sha256": "605cc6cf73378cc6b99898be37d28ddfa004680b71fdca3738f5ea61535cb163"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 6849,
-      "sha256": "6fa8aa17a331ef68dc1785fad1d06104f96d2fa21f6fe744d73d81bce11689af"
+      "bytes": 6808,
+      "sha256": "3e6ec9ffcbdf81b08eccbee6f5a39bdcbe953b17a2e5c6be6704d0bfdeb3afca"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
@@ -406,8 +406,8 @@
     },
     {
       "path": "examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md",
-      "bytes": 1807,
-      "sha256": "0a6e9c08da2c81d2602dbd785cfe484c7bce21e02c54679ec7f7be67fb743b0f"
+      "bytes": 1809,
+      "sha256": "ae541844e9e531e42781facb7e863908418b43c8772cfe73e8b6948183b41b80"
     },
     {
       "path": "examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md",
@@ -421,8 +421,8 @@
     },
     {
       "path": "examples/gold-product3-public-safe/gold-authority.json",
-      "bytes": 3821,
-      "sha256": "cbe22024908cc2ab65fa01ee3cd307887e5883ede9b13f10d006966af52d07f6"
+      "bytes": 3820,
+      "sha256": "201c5ca45cf0c64265e963c74f7508d22a763c019d1a038fdd3d70224a007cdf"
     },
     {
       "path": "examples/gold-product3-public-safe/qa/deck-montage.png",
@@ -431,8 +431,8 @@
     },
     {
       "path": "examples/gold-product3-public-safe/qa/design-qa.md",
-      "bytes": 2379,
-      "sha256": "5b381d47dee6b3eb14766378514f7e18bf22a8a7e93277ea54f0c187aed8fbf0"
+      "bytes": 2397,
+      "sha256": "b6845bfe94ff0f0343189a038ed83d7f5fda73507136f39c9649d44f896b2a2d"
     },
     {
       "path": "examples/gold-product3-public-safe/qa/slide-01.png",
@@ -721,8 +721,8 @@
     },
     {
       "path": "external-capabilities/README.md",
-      "bytes": 3871,
-      "sha256": "31de706c350c3facc89431a8ec4c76360cecf3b218cdf381fdf9ebf2027fc2e2"
+      "bytes": 3953,
+      "sha256": "cfca58a177444fb3048ff35695c1e007ce042f3454cfe55d1ec7c22d34094ae7"
     },
     {
       "path": "external-capabilities/cross-package-compatibility.json",
@@ -806,13 +806,13 @@
     },
     {
       "path": "references/AUTHORIZED_REFERENCE_ASSETS.md",
-      "bytes": 1609,
-      "sha256": "611b6ffb4d14d69e2f7d0391ddd52bcffa992874ed75921e216d196c44f8bed3"
+      "bytes": 1624,
+      "sha256": "ddc41f57fa3be5b5056cc2c0b54b4a5e26d0288c5f905b3e3a7e29ec0aadcf0a"
     },
     {
       "path": "references/authorized-reference-assets.json",
-      "bytes": 2040,
-      "sha256": "62e964fc1196703f8498cd8141110620fa28e9b8ff3da541e4028062a18d6def"
+      "bytes": 2039,
+      "sha256": "19ded8f2cade93585efa98f23c9f786afd3db5911a90daca598375a97d1da912"
     },
     {
       "path": "references/learning-feedback/README.md",
@@ -2711,8 +2711,8 @@
     },
     {
       "path": "scripts/build_release_manifest.py",
-      "bytes": 3590,
-      "sha256": "2c8534cdcfa5b5bebcf11780a1ad90569ab377869756466eb84c72c1a76fd079"
+      "bytes": 3608,
+      "sha256": "b8b48f62b438d71592a8b6d3c487e23a4219d8c498572bb93e2a5f5dc5643c0f"
     },
     {
       "path": "scripts/check_environment.py",
@@ -2741,8 +2741,8 @@
     },
     {
       "path": "scripts/verify_capability_parity.py",
-      "bytes": 13891,
-      "sha256": "cc7168c5f39f5e01f459b03fd0cb4486ee502882ad8cf33425a8cb6a081dd9d9"
+      "bytes": 13900,
+      "sha256": "0b845652e38501ab96937a2b8d2bd253c2d5acfb596b51cdd3aba6821c68652c"
     },
     {
       "path": "scripts/verify_cross_package_conformance.py",
@@ -2927,7 +2927,7 @@
     {
       "path": "tests/test_public_release_state.py",
       "bytes": 5448,
-      "sha256": "b248ab80da5d8a165225948010140a66e253119f6d4319f6b08e9e606d37e143"
+      "sha256": "e1c2f3816793250c963293d267759f6197213e2de764a83f4f0f8dcccb4751b0"
     },
     {
       "path": "tests/test_rc1_contracts.py",

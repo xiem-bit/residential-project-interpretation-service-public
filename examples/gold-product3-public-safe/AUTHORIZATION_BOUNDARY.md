@@ -1,8 +1,8 @@
 # 授权公开边界
 
-状态：`explicit_client_publication_authorization_confirmed / candidate_not_released`
+状态：`explicit_client_publication_authorization_confirmed / v0.2.0-rc.1_published`
 
-## 本轮允许进入公开候选
+## 本轮允许进入公开发行包
 
 - 昆明碧桂园翠湖云顶二期产物3用户验收阶段终稿中的甲方可见文字、真实项目事实、项目与竞品名称、图片和页面结构；
 - 第5—7页真实标准地图及其`© OpenStreetMap contributors`署名；

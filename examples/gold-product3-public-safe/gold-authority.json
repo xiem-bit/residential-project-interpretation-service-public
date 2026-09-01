@@ -1,6 +1,6 @@
 {
   "schema": "residential.product3_gold_authority.v1",
-  "status": "authorized_current_gold_candidate_not_released",
+  "status": "authorized_current_gold_v0_2_0_rc_1_published",
   "authority_file": "产物3-昆明碧桂园翠湖云顶二期-CHYD2-M9-v1.8-授权公开黄金参考.pptx",
   "authority_sha256": "29a4fc51d698725f728672ecffa769d19e855f3a87671e8cd948a5c813fe61fa",
   "accepted_source_sha256": "3b8270767227c2871abd278037f03000181dbc7131c2a06304bbc1525bae6891",
