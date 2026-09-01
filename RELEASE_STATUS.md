@@ -3,7 +3,8 @@
 ## 当前标签与候选
 
 - `v0.1.0-rc.1`：已发布、不可变；定位为“冻结语义核之后的下游合同、平台往返与载体结构演示”。
-- `v0.2.0-rc.1`：已获用户发行授权并作为公开预发行版发布；当前状态为`capability_complete / authorized_reference_assets_complete / product4_excluded / clean_clone_accepted / public_prerelease_published`。
+- `v0.2.0-rc.1`：已发布且保持不可移动；GitHub CI暴露历史RC1参考流缺少依赖安装参数及扫描器字段名误报，由`rc.2`取代。
+- `v0.2.0-rc.2`：当前公开预发行版；状态为`capability_complete / authorized_reference_assets_complete / product4_excluded / clean_clone_and_ci_accepted / public_prerelease_published`。
 
 ## P0已经成立
 
@@ -55,4 +56,4 @@
 
 `dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`、`client_report_machine_summary_separation`、`product3_authorized_gold_authority_corrected`、`product5_public_safe_gold`、`multi_mechanism_learning_reference_library`与`self_install_doctor_and_clean_clone_acceptance`已经完成候选验证。下一步只处理真人发行授权与双包正式版本协同，不再用安装待办掩盖现行黄金能力。
 
-`v0.2.0-rc.1`固定标签和GitHub Prerelease构成本次公开发行权威。后续修改必须使用新版本号，不得覆盖或移动该标签。
+`v0.2.0-rc.2`固定标签和GitHub Prerelease构成本次公开发行权威。`rc.1`保留为不可移动的被取代版本；后续修改必须继续使用新版本号，不得覆盖或移动既有标签。

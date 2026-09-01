@@ -2,7 +2,7 @@
 
 ## 检查结论
 
-- 状态：`authorized_gold_authority_corrected / human_review_accepted_source / v0.2.0-rc.1_published`；
+- 状态：`authorized_gold_authority_corrected / human_review_accepted_source / v0.2.0-rc.2_published`；
 - 页数：20页；画幅16:9；最终渲染1600×900；
 - 黄金身份：用户验收的甲方可见阶段终稿为唯一可见内容权威，公开副本仅重写演讲者备注；
 - 可见一致：权威终稿与授权公开副本20张渲染逐页SHA-256完全一致；
@@ -33,4 +33,4 @@
 
 ## 授权与使用
 
-本轮明确授权允许真实项目可见文字、事实、图片与地图进入`v0.2.0-rc.1`公开预发行版。授权不扩展到本机路径、内部生产备注、账号状态、发布配置、私有运行记录或其他未授权客户材料。长期边界见`../AUTHORIZATION_BOUNDARY.md`。
+本轮明确授权允许真实项目可见文字、事实、图片与地图进入`v0.2.0-rc.2`公开预发行版。授权不扩展到本机路径、内部生产备注、账号状态、发布配置、私有运行记录或其他未授权客户材料。长期边界见`../AUTHORIZATION_BOUNDARY.md`。

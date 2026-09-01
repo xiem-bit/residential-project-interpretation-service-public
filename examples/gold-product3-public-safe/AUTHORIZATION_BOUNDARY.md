@@ -1,6 +1,6 @@
 # 授权公开边界
 
-状态：`explicit_client_publication_authorization_confirmed / v0.2.0-rc.1_published`
+状态：`explicit_client_publication_authorization_confirmed / v0.2.0-rc.2_published`
 
 ## 本轮允许进入公开发行包
 

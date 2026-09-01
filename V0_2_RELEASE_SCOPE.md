@@ -1,6 +1,6 @@
-# v0.2 RC1 发行范围
+# v0.2 预发行范围
 
-状态：`parity_candidate_complete / clean_clone_passed / not_tagged`
+状态：`parity_complete / clean_clone_and_ci_passed / v0.2.0-rc.2_published`
 
 ## 发行目标
 
@@ -45,7 +45,7 @@
 7. 产物3通过黄金来源、正式文件、地图署名、断言门禁、渲染和逐页检查；
 8. 产物5通过桌面端、手机端、动效、推荐和交互检查；
 9. 全新Codex安装不依赖维护者逐题辅导即可完成上述路径；
-10. 真人批准后才创建并推送`v0.2.0-rc.1`标签。
+10. 真人批准后创建并推送固定标签；已公开标签不得覆盖或移动。
 
 ## 验收状态分层
 

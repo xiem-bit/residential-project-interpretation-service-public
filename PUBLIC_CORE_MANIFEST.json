@@ -1,7 +1,7 @@
 {
   "schema": "residential-competitiveness-public-core-manifest.v0.6",
-  "status": "public_prerelease_v0_2_0_rc_1_published_capability_complete_authorized_assets_apache_2_0",
-  "candidate": "v0.2.0-rc.1",
+  "status": "public_prerelease_v0_2_0_rc_2_published_capability_complete_authorized_assets_ci_accepted_apache_2_0",
+  "candidate": "v0.2.0-rc.2",
   "source_commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
   "extraction_policy": "fixed_clean_source_complete_semantic_parity_and_rights_aware_asset_selection",
   "authority_map": "PRODUCTION_AUTHORITY_MAP.json",
@@ -25,9 +25,9 @@
   "public_release": {
     "repository": "https://github.com/xiem-bit/residential-project-interpretation-service-public",
     "visibility": "public",
-    "latest_published_tag": "v0.2.0-rc.1",
+    "latest_published_tag": "v0.2.0-rc.2",
     "latest_published_tag_immutable": true,
-    "candidate_tag": "v0.2.0-rc.1",
+    "candidate_tag": "v0.2.0-rc.2",
     "candidate_tag_created": true,
     "candidate_publish_gate": "capability_parity_release_blockers_zero_cross_package_e2e_and_fresh_install_full_project_acceptance"
   },
@@ -76,7 +76,7 @@
     "fresh_install_full_project_acceptance_required": true,
     "maintainer_step_by_step_guidance_allowed": false,
     "presentation_or_web_required": false,
-    "current_status": "v0_2_0_rc_1_public_prerelease_published_clean_clone_accepted"
+    "current_status": "v0_2_0_rc_2_public_prerelease_published_clean_clone_and_ci_accepted"
   },
   "forbidden_public_content": [
     "unauthorized_real_project_or_customer_materials",

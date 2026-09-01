@@ -27,7 +27,7 @@ class PublicReleaseStateTest(unittest.TestCase):
 
     def test_manifest_declares_public_apache_release(self) -> None:
         manifest = json.loads((ROOT / "PUBLIC_CORE_MANIFEST.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["status"], "public_prerelease_v0_2_0_rc_1_published_capability_complete_authorized_assets_apache_2_0")
+        self.assertEqual(manifest["status"], "public_prerelease_v0_2_0_rc_2_published_capability_complete_authorized_assets_ci_accepted_apache_2_0")
         self.assertEqual(manifest["rights"]["license"], "Apache-2.0")
         self.assertTrue(manifest["rights"]["rights_holder_approval_confirmed"])
         self.assertTrue(manifest["rights"]["public_distribution_authorized"])
@@ -41,7 +41,7 @@ class PublicReleaseStateTest(unittest.TestCase):
             "https://github.com/xiem-bit/residential-project-interpretation-service-public",
         )
         self.assertEqual(manifest["semantic_core_role"], "production_output")
-        self.assertEqual(manifest["public_release"]["latest_published_tag"], "v0.2.0-rc.1")
+        self.assertEqual(manifest["public_release"]["latest_published_tag"], "v0.2.0-rc.2")
         self.assertTrue(manifest["public_release"]["candidate_tag_created"])
         self.assertFalse(manifest["business_acceptance"]["presentation_or_web_required"])
         self.assertFalse(manifest["business_acceptance"]["workbuddy_style_blind_training_included"])

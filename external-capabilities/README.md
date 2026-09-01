@@ -52,7 +52,7 @@ residential.upstream_task.v0.2
 
 ## 双包兼容
 
-`cross-package-compatibility.json`登记双方独立仓库的Schema、哈希、黄金fixture与验证命令。住宅包已发布`v0.2.0-rc.1`公开预发行版，公开信息包仍处于候选状态；双方已经冻结接口并完成fixture往返，兼容状态仍为`compatible_candidate_frozen`。验证结果见`cross-package-conformance-receipt.json`。任一Schema字节变化都必须更新哈希并重跑双方conformance；双方正式版本均发布后再升级稳定兼容状态。
+`cross-package-compatibility.json`登记双方独立仓库的Schema、哈希、黄金fixture与验证命令。住宅包已发布`v0.2.0-rc.2`公开预发行版，公开信息包仍处于候选状态；双方已经冻结接口并完成fixture往返，兼容状态仍为`compatible_candidate_frozen`。验证结果见`cross-package-conformance-receipt.json`，该回执保留接口冻结时的候选版本快照。任一Schema字节变化都必须更新哈希并重跑双方conformance；双方正式版本均发布后再升级稳定兼容状态。
 
 住宅侧可运行：
 

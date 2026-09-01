@@ -11,7 +11,7 @@ from typing import Any, Iterable
 
 
 ABSOLUTE_OR_PRIVATE = re.compile(
-    r"(?:/Users/|/home/|/Applications/|file://|(?<![A-Za-z])[A-Za-z]:[\\/]|CODEX_WORKSPACE|@oai/artifact-tool)",
+    r"(?:/Users/|/home/|/Applications/|file://|(?<![A-Za-z])[A-Za-z]:[\\/]|\$\{?CODEX_WORKSPACE\}?|@oai/artifact-tool)",
     re.IGNORECASE,
 )
 

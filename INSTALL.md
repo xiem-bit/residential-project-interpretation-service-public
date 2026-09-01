@@ -2,10 +2,10 @@
 
 这套公开包的推荐安装方式是完整克隆仓库，并把仓库根目录作为Codex项目打开。`AGENTS.md`、现行生产Skill、业务合同、机器门禁、黄金参考和学习反馈必须一起存在；只复制PPT模板、网页源码或单个Skill无法继承完整能力。
 
-当前公开预发行标签为`v0.2.0-rc.1`。`v0.1.0-rc.1`只代表历史载体演示，不包含本版完整住宅生产能力。推荐固定标签安装：
+当前公开预发行标签为`v0.2.0-rc.2`。`v0.1.0-rc.1`只代表历史载体演示，`v0.2.0-rc.1`已由CI修复版`rc.2`取代。推荐固定标签安装：
 
 ```bash
-git clone --branch v0.2.0-rc.1 \
+git clone --branch v0.2.0-rc.2 \
   https://github.com/xiem-bit/residential-project-interpretation-service-public.git
 cd residential-project-interpretation-service-public
 python3 scripts/check_environment.py --profile production-core --run-tests

@@ -56,7 +56,7 @@ jobs:
         run: node --test tools/ue_static_bundle/test/*.test.mjs
 
       - name: Run historical RC1 carrier reference flow
-        run: python3 scripts/run_rc1_demo.py
+        run: python3 scripts/run_rc1_demo.py --install-node-deps
 
       - name: Prepare historical RC1 carrier handoff
         run: python3 scripts/prepare_external_cold_start.py

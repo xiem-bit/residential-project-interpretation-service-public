@@ -73,6 +73,13 @@ class Rc1ContractsTest(unittest.TestCase):
             }
         )
 
+    def test_workspace_boundary_field_name_is_not_misread_as_runtime_path(self) -> None:
+        assert_no_private_paths({"codex_workspace": "打开仓库根目录后读取AGENTS.md"})
+
+    def test_workspace_environment_variable_is_rejected(self) -> None:
+        with self.assertRaises(ContractError):
+            assert_no_private_paths({"artifact": "${CODEX_WORKSPACE}/private.pptx"})
+
 
 if __name__ == "__main__":
     unittest.main()
