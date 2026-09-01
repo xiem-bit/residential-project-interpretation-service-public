@@ -14,8 +14,8 @@
     ".DS_Store",
     "RELEASE_MANIFEST.json"
   ],
-  "file_count": 295,
-  "tree_sha256": "ca1846d4ec06f114cd9fdb051bddc24e98c0d9233e2094397afedc10d666ce79",
+  "file_count": 315,
+  "tree_sha256": "deb5939477f21b0bb55181f1dc5ecf9ce20de3e9b5243a3dcd863bf55c5f149f",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -154,8 +154,8 @@
     },
     {
       "path": "AGENT_RULES.md",
-      "bytes": 8241,
-      "sha256": "bb6a57d84388f3d1700efb84caec58a9722b24918563eafea2412ee46babdf06"
+      "bytes": 10004,
+      "sha256": "5efa51fc5e8279ca61fac5e2a850d158cd76369be6102ed484db87e8cfc49a80"
     },
     {
       "path": "A_CLASS_ALLOWLIST.txt",
@@ -169,13 +169,13 @@
     },
     {
       "path": "CAPABILITY_PARITY_CONTRACT.md",
-      "bytes": 8684,
-      "sha256": "19d411afb5741c87335c6f2d287cd1971d2946dc78eb4faa41e304b29adc19ca"
+      "bytes": 9843,
+      "sha256": "10e61102da8c0a683826f823b601c64e12ffc6b069480c73156f7740045971b6"
     },
     {
       "path": "CAPABILITY_PARITY_MANIFEST.json",
-      "bytes": 16485,
-      "sha256": "4fcc62404e36274991595161738fb3b49a6f2f0c41912462d6966af1eed5c5c7"
+      "bytes": 16947,
+      "sha256": "1f8b1733e1828fe622bf03f212e589b6fa5d9f99978a4e7746693e947aef19cd"
     },
     {
       "path": "COLD_START_PROTOCOL.md",
@@ -194,18 +194,18 @@
     },
     {
       "path": "PRODUCTION_AUTHORITY_MAP.json",
-      "bytes": 11126,
-      "sha256": "028cd8d716ae9bf41af68cbbd2e697d6b0ee7acf27a5f05c14636d6ce103bbc4"
+      "bytes": 11175,
+      "sha256": "243b44a78cbcddcc7d68124c75bccbd2047937e41c21284ceea66512d2ee39e2"
     },
     {
       "path": "PRODUCTION_PATH_MANIFEST.json",
-      "bytes": 6550,
-      "sha256": "8a18f4a0019a52bd6edf2e636d4e9b4d8637d30f8fb3e30c98e09a05b8769ea3"
+      "bytes": 6964,
+      "sha256": "cde1d41b356a234e55320f0d6a77191f52df44fbfb913fbb1f506e1e70167f59"
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
-      "bytes": 3592,
-      "sha256": "f75cfc1cbda5f41d761b8b2c83b69971270a68d0b2ba1a8e58eb1ae3f505b4fe"
+      "bytes": 3939,
+      "sha256": "c8266f6fcbf64e59793fc278dbefc5418e943703565d7b4043327c0bee1769cc"
     },
     {
       "path": "RC1_E2E_VERIFICATION.json",
@@ -214,18 +214,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 3612,
-      "sha256": "a7f2657d0a4af04c0fb919949d814be66bc2daea43ce8c29b7fd43b357eb0f58"
+      "bytes": 3819,
+      "sha256": "d062f22f3126ec546910db548f22df983db708d972cdac9096ae0c31ec352466"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 4604,
-      "sha256": "3a1dba3d922ac6ce0d908bf5142d6ee0c103c5fea03237f8422d3697a901cdc1"
+      "bytes": 5803,
+      "sha256": "db15dfaa679b4958d58c5ca7ef65a7d912707b7ef1baba0970ac07bf84e54153"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
-      "bytes": 4820,
-      "sha256": "342bdff921363e7076904ecc95f8dc01c16200c9fc35134e6115cecddd299e23"
+      "bytes": 5556,
+      "sha256": "cfa369cadcd19eb20f97021d34b0079b1f1c7f781c5920710f06c6039048470a"
     },
     {
       "path": "SECURITY.md",
@@ -269,8 +269,8 @@
     },
     {
       "path": "V0_2_RELEASE_SCOPE.md",
-      "bytes": 3123,
-      "sha256": "cb2e469c9942548ce7e1ef26bd9f56aca332a2a24f1e915c6d9b7f3db07c3822"
+      "bytes": 3452,
+      "sha256": "c4f77351af172c70c6c5eac26f49f12e902d08ecfa12fd25d52f447a85c56442"
     },
     {
       "path": "adapters/README.md",
@@ -294,8 +294,8 @@
     },
     {
       "path": "adapters/presentation/README.md",
-      "bytes": 1001,
-      "sha256": "485e84b2e3d493eba80ea233427be6f8cad632895c1b543113af3da7bb270dd5"
+      "bytes": 1549,
+      "sha256": "87ab2c7e79c614871228632ce15f6ffccc4b30cfa9cf49554ce0a6ff612d46be"
     },
     {
       "path": "adapters/web/README.md",
@@ -389,8 +389,8 @@
     },
     {
       "path": "core/06-产物3从竞争策略到UE解决方案.md",
-      "bytes": 2330,
-      "sha256": "6a68d14e39091de50788c2fac7249b5b998e568418c7df5389e634edb5ebdc53"
+      "bytes": 3116,
+      "sha256": "1cc5d8b0ce8499c3c96aea70b884a01173558d9d0ade08af67bcd5673c7067a6"
     },
     {
       "path": "core/08-产物5交互蓝图.md",
@@ -518,54 +518,144 @@
       "sha256": "cf2449702e19e1df5375f6cbc37268bb902b85bc3b60d8caa064ffbed9a158e4"
     },
     {
-      "path": "examples/gold-product3-public-safe/README.md",
-      "bytes": 2725,
-      "sha256": "11b568c3ee0baf7722853bce2062f444fd40693d001e22111dd833dc232dc09f"
+      "path": "examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md",
+      "bytes": 1338,
+      "sha256": "765005318de25be22a5900fa16875ab299cb1e99ae263e5c81191bf9f1abe145"
     },
     {
-      "path": "examples/gold-product3-public-safe/qa/deck-montage.webp",
-      "bytes": 202086,
-      "sha256": "bf1b3f715558748bb7655d1c369f98786398cf03d70b573d8256196382a88c11"
+      "path": "examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md",
+      "bytes": 2695,
+      "sha256": "f4dacea7f8d844dba71a03bcb6d579d88e68c05f8f09c002f0b728d741846005"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/README.md",
+      "bytes": 3545,
+      "sha256": "6659ef79c13e25be8c3e2d24776b4ce756d440eedb2210798bf2d6471e7010a1"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/gold-authority.json",
+      "bytes": 3028,
+      "sha256": "3daae9f8d94d55e563a07ac478a413a633652f9e2e41269d16b5a526f19444bc"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/deck-montage.png",
+      "bytes": 1824745,
+      "sha256": "70111aa80d84698a6ffd89e93dc428cd40b4e1d9a2cbb7015e172834615fcd91"
     },
     {
       "path": "examples/gold-product3-public-safe/qa/design-qa.md",
-      "bytes": 2073,
-      "sha256": "c1465a2b5daccd9253071786b3bafc76f4b3fdda2d23dae52ae019e6ee063450"
+      "bytes": 2379,
+      "sha256": "5b381d47dee6b3eb14766378514f7e18bf22a8a7e93277ea54f0c187aed8fbf0"
     },
     {
-      "path": "examples/gold-product3-public-safe/qa/slide-01-cover.png",
-      "bytes": 1458474,
-      "sha256": "4e5a20fcd8d352472530e8e5d86a2332d72c1f985fb54b0802fa9c64c9c59008"
+      "path": "examples/gold-product3-public-safe/qa/slide-01.png",
+      "bytes": 43254,
+      "sha256": "0ddd7b3e0f5c47b8dc6637091c03cae1323a51f8d4e5e939ef3c986db28a615c"
     },
     {
-      "path": "examples/gold-product3-public-safe/qa/slide-08-value-anchor.png",
-      "bytes": 1561749,
-      "sha256": "168d1bb09a30dd537aa81af34c2513d98eeb4401dc5085c74c397673a89fddd0"
+      "path": "examples/gold-product3-public-safe/qa/slide-02.png",
+      "bytes": 35514,
+      "sha256": "b0c4d6a0b665a36a551010d83d7b5cf604066337138fff113ce349002cc0d395"
     },
     {
-      "path": "examples/gold-product3-public-safe/qa/slide-14-family-segments.png",
-      "bytes": 892753,
-      "sha256": "f50bfc611911c963cf41afa91b705a99c5b097930232d6f083886895dec8462c"
+      "path": "examples/gold-product3-public-safe/qa/slide-03.png",
+      "bytes": 245539,
+      "sha256": "133d42375199e7fe54da08dd0373b567fb98e43442ca47fe4adcd8bcfc4f2ee5"
     },
     {
-      "path": "examples/gold-product3-public-safe/qa/slide-18-ai-advisor.png",
-      "bytes": 780391,
-      "sha256": "7bd36a240935ad7f63780be84bbd3adde60369a03ee372283cf06330f8b4d4bb"
+      "path": "examples/gold-product3-public-safe/qa/slide-04.png",
+      "bytes": 112679,
+      "sha256": "6aa0e238da006fb6dfe872a643aff817274c2d2978cd24a4303cc761b92c2852"
     },
     {
-      "path": "examples/gold-product3-public-safe/qa/slide-19-closing.png",
-      "bytes": 182539,
-      "sha256": "7a5093679f472796197d01767a4998cfaaedd57052067bc25a5441fd9de76301"
+      "path": "examples/gold-product3-public-safe/qa/slide-05.png",
+      "bytes": 1302244,
+      "sha256": "96fb666b77cc09ec4b5c3b727422d83197c7557b135389d53f9ff1f2c9241811"
     },
     {
-      "path": "examples/gold-product3-public-safe/青岚澄境-住宅UE售前解决方案与销讲展示策略_公开安全黄金参考.pptx",
-      "bytes": 17338306,
-      "sha256": "2720871fcad3874c23ae2173c03e99521fa007182b6ffe4fde8e853130bc7c6d"
+      "path": "examples/gold-product3-public-safe/qa/slide-06.png",
+      "bytes": 1275474,
+      "sha256": "4f2031890d56ce00f38d2d330d998cdf7b3bf7e9d08feb26b7f36cc93e25fe41"
     },
     {
-      "path": "examples/gold-product3-public-safe/青岚澄境-住宅UE售前解决方案与销讲展示策略_公开安全黄金参考.pptx.inspect.ndjson",
-      "bytes": 63343,
-      "sha256": "f40a5ec4c6106cfd25f2096e836dbb78fb216b54b438906388a0e785bd56f07e"
+      "path": "examples/gold-product3-public-safe/qa/slide-07.png",
+      "bytes": 1277847,
+      "sha256": "807de805b2ffe273d6ffbfe5de80182295724e47c7877df441f903c383496d24"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/slide-08.png",
+      "bytes": 107556,
+      "sha256": "bc7bead37ea7c63a5f54939c3e2fe3ed4d4cb270e032ad4d4b87cef2cce3f40d"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/slide-09.png",
+      "bytes": 42215,
+      "sha256": "33062031879dd87a7146ae871fce32cca9a3fe20b97091f03d298b7a359fe971"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/slide-10.png",
+      "bytes": 819992,
+      "sha256": "04014204924763a395f6ea8711b3b91f7d798e35a03d5be95ec3f419ae85c419"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/slide-11.png",
+      "bytes": 828618,
+      "sha256": "7b470dcd7ad8ac06e41fa205b835800ea8168719935c76fce44827513e488360"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/slide-12.png",
+      "bytes": 854076,
+      "sha256": "4a002a2355333d5abae7268569e8db9fc56f837917cc661115a67e5c3abaf8df"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/slide-13.png",
+      "bytes": 805996,
+      "sha256": "3ee2f7ee1855d101deb2fce44875a524b89320e9bd95ddda4a30aaf391143841"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/slide-14.png",
+      "bytes": 812590,
+      "sha256": "fde41cab89579ba4bd476ff9f392c6e70ce1cd9cfad95c11fbf5eadd899f4275"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/slide-15.png",
+      "bytes": 819979,
+      "sha256": "8b98da221614cd294f81d720d03264a4fa3b2db9e9af4d8ebe7ee9dce25ba44b"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/slide-16.png",
+      "bytes": 795542,
+      "sha256": "661e659f69af5deeab93acf60a32ead542d26504a20863ab89ff7a0ebb808235"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/slide-17.png",
+      "bytes": 670159,
+      "sha256": "94a62cd8539613c60626f080e39ca87a0e49aac6f0a41bbf38e12be0eed9f5ad"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/slide-18.png",
+      "bytes": 538490,
+      "sha256": "8003d8c5ed3963b26cf0cf84bdc465a7d88c49a44346d10c113ed035daea6658"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/slide-19.png",
+      "bytes": 560030,
+      "sha256": "2cb24da3ee83d361ece39ba71925f076ac4cd5d8a66622f4ae9714d8a924dfcd"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/qa/slide-20.png",
+      "bytes": 72217,
+      "sha256": "e89fc7d37c0467a275903a5e12ebaff22b97bdb97b2e9522bce20ef3a2a0d368"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/产物3-昆明碧桂园翠湖云顶二期-CHYD2-M9-v1.8-授权公开黄金参考.pptx",
+      "bytes": 53040869,
+      "sha256": "29a4fc51d698725f728672ecffa769d19e855f3a87671e8cd948a5c813fe61fa"
+    },
+    {
+      "path": "examples/gold-product3-public-safe/产物3-昆明碧桂园翠湖云顶二期-CHYD2-M9-v1.8-授权公开黄金参考.pptx.inspect.ndjson",
+      "bytes": 89921,
+      "sha256": "4034979038789c51da92597ca818deb4b13d1269c994e445619b8fb1ac660e04"
     },
     {
       "path": "examples/gold-product5-public-safe/README.md",
@@ -834,23 +924,28 @@
     },
     {
       "path": "references/learning-feedback/cases.json",
-      "bytes": 7584,
-      "sha256": "67fb924cc1475f2170932e72575a0835db66eae672f29ecd417f56fa4d1a011a"
+      "bytes": 9034,
+      "sha256": "fa7204a0646356a5cf86574a3b2f05b066976249dda5aacf8466c07e3bd65aca"
+    },
+    {
+      "path": "references/product3/HISTORICAL_SUCCESS_DISTILLATION.md",
+      "bytes": 2334,
+      "sha256": "4ab16e825c43e4321a02759c681e2f8a420bdfbe89f8b78d97b9f914bb60ad16"
     },
     {
       "path": "references/product3/README.md",
-      "bytes": 3721,
-      "sha256": "47f8b28147c2d3532b8947be998ddf6a1545aa68a190d11bcfcc181725c48290"
+      "bytes": 4773,
+      "sha256": "c772c2b821ccb0952a73f1827872e17a0e8ba733a5ae52523156b564749e995c"
     },
     {
       "path": "references/product3/page-semantics.json",
-      "bytes": 11591,
-      "sha256": "2a24c5c285268f74ab94b6eb53943eb3410349db1f339d9f65752e91789f99f9"
+      "bytes": 11960,
+      "sha256": "b52e40ecf56eded336e780c2a00a9bc76260a71f839312abc6a4dd4df23e3821"
     },
     {
       "path": "references/production-reference-index.json",
-      "bytes": 2578,
-      "sha256": "a7f104ef494aeda02f1ca5666bbeb29d62308be4be99bf48491bd6454016549a"
+      "bytes": 2865,
+      "sha256": "ea480f3d1c2f7bbaeb5b1aeae3c62f8728765523fa2172b6fae6ddc46c527752"
     },
     {
       "path": "schemas/change-impact.schema.json",
@@ -939,8 +1034,8 @@
     },
     {
       "path": "scripts/verify_capability_parity.py",
-      "bytes": 13679,
-      "sha256": "2cedaa0a452817d607004d65e7c75423859ddc90c7394b6fdb7b510fa550be5e"
+      "bytes": 13811,
+      "sha256": "afe68375ed760c81522d7f6ba6928d6b32c489d4a1cb1cd6fe23becf70e31fad"
     },
     {
       "path": "scripts/verify_cross_package_conformance.py",
@@ -1064,8 +1159,8 @@
     },
     {
       "path": "tests/run_public_tests.py",
-      "bytes": 1698,
-      "sha256": "47859d8ab604c5aa0ea12b943b91404dbfd2bd8b28eb7d2b6d4f8b25e856ef3b"
+      "bytes": 1743,
+      "sha256": "349d20c58bd6542f4df14f08ccd5997673b2dc94888c9267c25149d06ec2a06e"
     },
     {
       "path": "tests/test_business_gates_public.py",
@@ -1074,8 +1169,8 @@
     },
     {
       "path": "tests/test_capability_parity.py",
-      "bytes": 4690,
-      "sha256": "946509ccdc41be32981af25bc7facfa07f1620ab4ef106d81db301857dfad706"
+      "bytes": 4852,
+      "sha256": "9686c45b75d97e8aa35f468a5088de0b6e6f862975db4d611e1371c3cb0d540b"
     },
     {
       "path": "tests/test_cross_package_conformance.py",
@@ -1093,6 +1188,11 @@
       "sha256": "96325deba3b9d54ed10afa9dc171783d8be96bb29b284b918373a0ff40111b0a"
     },
     {
+      "path": "tests/test_product3_gold_authority.py",
+      "bytes": 4398,
+      "sha256": "c571aa35b1f5f04bf258a456689f489a9aabcb7e8791be67c3582498246e7e36"
+    },
+    {
       "path": "tests/test_production_path_v02.py",
       "bytes": 12701,
       "sha256": "6e2ba9905be065ccaa2d5c33280f12720dfd3b01c55ab8b75f5d4c937a17435f"
@@ -1104,8 +1204,8 @@
     },
     {
       "path": "tests/test_public_release_state.py",
-      "bytes": 4957,
-      "sha256": "2e3514d2e3327e6fb1eeb15daa214bb90039ac1ef13d643638f67fc3c8fc44cf"
+      "bytes": 5283,
+      "sha256": "6f29c162317b0532b5517f07f92299803de4a0b83a9f4ecbb3f83c276fbd657d"
     },
     {
       "path": "tests/test_rc1_contracts.py",
@@ -1469,8 +1569,8 @@
     },
     {
       "path": "workflows/residential-production-orchestrator/SKILL.md",
-      "bytes": 7209,
-      "sha256": "b4bac2ee46ae4d5625841c8ed5b716326d101cc39237d81bb239c986793af7ba"
+      "bytes": 7641,
+      "sha256": "7a29675fd6308b584cfeb2d3d02a083fe159d0cdf761f576e482138c6dc12fa5"
     },
     {
       "path": "workflows/residential-production-orchestrator/agents/openai.yaml",
@@ -1489,8 +1589,8 @@
     },
     {
       "path": "workflows/residential-production-orchestrator/references/routing.md",
-      "bytes": 2532,
-      "sha256": "42592fffdd9cc1847e8ef2c902c610fb6c1e9c5c94fe57832b5a435959ec9d00"
+      "bytes": 2684,
+      "sha256": "35acba1c22669b89052f23caa42790c902c77a9329850fa1fec790b288f21bcb"
     }
   ]
 }

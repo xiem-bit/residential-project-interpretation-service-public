@@ -59,10 +59,11 @@ class CapabilityParityTest(unittest.TestCase):
         self.assertNotIn("CAP-004", self.parity["release_blockers"])
         self.assertNotIn("CAP-009", self.parity["release_blockers"])
 
-    def test_private_material_and_training_routes_are_excluded(self) -> None:
+    def test_rights_aware_material_policy_and_training_exclusions(self) -> None:
         principles = self.parity["principles"]
-        self.assertFalse(principles["real_client_materials_included"])
-        self.assertTrue(principles["public_safe_structural_derivatives_required"])
+        self.assertTrue(principles["explicitly_authorized_real_client_materials_may_be_included"])
+        self.assertTrue(principles["unauthorized_client_materials_require_anonymization_or_structural_distillation"])
+        self.assertTrue(principles["credentials_paths_internal_runtime_state_always_excluded"])
         self.assertFalse(principles["workbuddy_blind_training_included"])
         self.assertFalse(principles["private_evaluation_holdout_included"])
 

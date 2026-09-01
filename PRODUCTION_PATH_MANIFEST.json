@@ -3,6 +3,13 @@
   "candidate_version": "v0.2.0-rc.1",
   "status": "candidate_product3_product5_gold_complete_product4_excluded",
   "semantic_core_role": "required_production_output_not_bootstrap_input",
+  "product3_gold_authority": {
+    "authority_file": "examples/gold-product3-public-safe/gold-authority.json",
+    "page_responsibilities": "examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md",
+    "historical_success_distillation": "references/product3/HISTORICAL_SUCCESS_DISTILLATION.md",
+    "accepted_gold_precedes_recomposable_semantics": true,
+    "ai_recommender_max_pages_in_current_gold": 1
+  },
   "entrypoints": {
     "human_or_agent": "START_HERE.md",
     "rules": "AGENT_RULES.md",

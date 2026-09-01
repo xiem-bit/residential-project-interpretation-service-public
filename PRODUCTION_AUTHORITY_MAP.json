@@ -162,13 +162,12 @@
       ],
       "public": [
         "core/06-产物3从竞争策略到UE解决方案.md",
-        "adapters/presentation/README.md"
-      ],
-      "planned_public": [
+        "adapters/presentation/README.md",
         "references/product3",
         "examples/gold-product3-public-safe"
       ],
-      "coverage": "public_safe_page_semantics_gold_deck_and_first_draft_threshold_required"
+      "planned_public": [],
+      "coverage": "accepted_authorized_gold_plus_three_private_success_decks_structurally_distilled_with_page_semantics_and_first_draft_threshold"
     },
     {
       "authority": "product5_gold_implementation",

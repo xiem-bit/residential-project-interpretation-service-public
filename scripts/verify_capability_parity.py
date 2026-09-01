@@ -84,11 +84,12 @@ def validate_public_manifest(parity: dict[str, Any], authority: dict[str, Any]) 
         "normal_runtime_progressive_loading",
         "product1_default_product2_3_5_on_demand",
         "machine_checks_have_veto_not_business_approval",
-        "public_safe_structural_derivatives_required",
+        "explicitly_authorized_real_client_materials_may_be_included",
+        "unauthorized_client_materials_require_anonymization_or_structural_distillation",
+        "credentials_paths_internal_runtime_state_always_excluded",
     }
     required_false = {
         "empty_disabled_product_files_required",
-        "real_client_materials_included",
         "workbuddy_blind_training_included",
         "private_evaluation_holdout_included",
     }

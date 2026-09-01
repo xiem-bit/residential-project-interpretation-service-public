@@ -1,0 +1,440 @@
+{"kind":"deck","id":"pr/p3l1jy","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"","type":"master"}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"最懂翠湖生活的城市新居","textShapes":3}
+{"kind":"textbox","id":"sh/65g3298r","slide":1,"name":"矩形 1","text":"最懂翠湖生活的城市新居","textPreview":"最懂翠湖生活的城市新居","textChars":11,"textLines":1,"bbox":[78,170,720,88]}
+{"kind":"textbox","id":"sh/547294r6","slide":1,"name":"矩形 2","text":"昆明碧桂园翠湖云顶二期","textPreview":"昆明碧桂园翠湖云顶二期","textChars":11,"textLines":1,"bbox":[78,278,760,72]}
+{"kind":"shape","id":"sh/k3yl0zql","slide":1,"name":"矩形 3","bbox":[78,390,350,5]}
+{"kind":"textbox","id":"sh/7qp4be9c","slide":1,"name":"矩形 4","text":"明源云UE电子沙盘解决方案","textPreview":"明源云UE电子沙盘解决方案","textChars":13,"textLines":1,"bbox":[78,430,620,86]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P01\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n[/Sources]\n\n[Speaker] 以翠湖生活为题，说明本方案要证明成熟城市、新社区与长期好住可以同时获得。"}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"第二章｜翠湖生活的下一种答案","textShapes":2}
+{"kind":"textbox","id":"sh/b29kza94","slide":2,"name":"矩形 2","text":"第二章｜翠湖生活的下一种答案","textPreview":"第二章｜翠湖生活的下一种答案","textChars":14,"textLines":1,"bbox":[80,225,980,92]}
+{"kind":"textbox","id":"sh/9072xkry","slide":2,"name":"矩形 3","text":"成熟城市与崭新居所，在翠湖成为同一个答案","textPreview":"成熟城市与崭新居所，在翠湖成为同一个答案","textChars":20,"textLines":1,"bbox":[80,348,930,84]}
+{"kind":"shape","id":"sh/ozy1ofad","slide":2,"name":"矩形 4","bbox":[80,500,390,5]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P02\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n[/Sources]\n\n[Speaker] 回收封面主张，提出客户为什么会在成熟核心、跨板块新品和继续等待之间犹豫。"}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"看过一轮昆明改善住宅，购房者还在反复追问这些问题……","textShapes":32}
+{"kind":"textbox","id":"sh/qtofadkf","slide":3,"name":"voice-title","text":"看过一轮昆明改善住宅，购房者还在反复追问这些问题……","textPreview":"看过一轮昆明改善住宅，购房者还在反复追问这些问题……","textChars":26,"textLines":1,"bbox":[64,48,1152,62]}
+{"kind":"shape","id":"sh/cza94vmx","slide":3,"name":"voice-title-line","bbox":[64,126,92,4]}
+{"kind":"shape","id":"sh/d0jax03i","slide":3,"name":"voice-card-1","bbox":[64,150,552,98]}
+{"kind":"textbox","id":"sh/3ah8rqlg","slide":3,"name":"voice-quote-1","text":"“认筹转房款了，以后的日子有期待，还得充满鸡血为房贷而努力”","textPreview":"“认筹转房款了，以后的日子有期待，还得充满鸡血为房贷而努力”","textChars":30,"textLines":1,"bbox":[82,159,518,48]}
+{"kind":"shape","id":"sh/obq90bml","slide":3,"name":"voice-footer-1","bbox":[70,212,546,36]}
+{"kind":"textbox","id":"sh/pcjqtg36","slide":3,"name":"voice-author-1","text":"可可｜公开笔记正文","textPreview":"可可｜公开笔记正文","textChars":9,"textLines":1,"bbox":[82,214,518,14]}
+{"kind":"textbox","id":"sh/m5cra54z","slide":3,"name":"voice-source-1","text":"来自《人生的第一套房》｜项目：义承·丹霞翠屿","textPreview":"来自《人生的第一套房》｜项目：义承·丹霞翠屿","textChars":22,"textLines":1,"bbox":[82,229,518,14]}
+{"kind":"shape","id":"sh/n6ls3alk","slide":3,"name":"voice-card-2","bbox":[64,255,552,98]}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"name":"voice-quote-2","text":"“春城书院加入对比了吗，在华府旁边，也是春城小学，我只看过这个和翠湖一品（不行🙅‍♀️）”","textPreview":"“春城书院加入对比了吗，在华府旁边，也是春城小学，我只看过这个和翠湖一品（不行🙅‍♀️）”","textChars":46,"textLines":1,"bbox":[82,264,518,48]}
+{"kind":"shape","id":"sh/943mhgre","slide":3,"name":"voice-footer-2","bbox":[70,317,546,36]}
+{"kind":"textbox","id":"sh/83ulovat","slide":3,"name":"voice-author-2","text":"每天吃巧克力｜可见评论","textPreview":"每天吃巧克力｜可见评论","textChars":11,"textLines":1,"bbox":[82,319,518,14]}
+{"kind":"textbox","id":"sh/v6l4jq94","slide":3,"name":"voice-source-2","text":"来自《昆明改善型大平层实际看房记录》｜项目：翠湖一品","textPreview":"来自《昆明改善型大平层实际看房记录》｜项目：翠湖一品","textChars":26,"textLines":1,"bbox":[82,334,518,14]}
+{"kind":"shape","id":"sh/a5c3ql8z","slide":3,"name":"voice-card-3","bbox":[64,360,552,98]}
+{"kind":"textbox","id":"sh/w7ulsvqp","slide":3,"name":"voice-quote-3","text":"“人民西路1979、金地都会风华、大华星耀这几个怎么选择”","textPreview":"“人民西路1979、金地都会风华、大华星耀这几个怎么选择”","textChars":29,"textLines":1,"bbox":[82,369,518,48]}
+{"kind":"shape","id":"sh/ja54na9g","slide":3,"name":"voice-footer-3","bbox":[70,422,546,36]}
+{"kind":"textbox","id":"sh/i9w3u58v","slide":3,"name":"voice-author-3","text":"不穿百大褂｜可见评论","textPreview":"不穿百大褂｜可见评论","textChars":10,"textLines":1,"bbox":[82,424,518,14]}
+{"kind":"textbox","id":"sh/e10f2twf","slide":3,"name":"voice-source-3","text":"来自《买房必须要清醒，个人认为昆明没有好房子》｜项目：融创·人民路1979","textPreview":"来自《买房必须要清醒，个人认为昆明没有好房子》｜项目：融创·人民路1979","textChars":37,"textLines":1,"bbox":[82,439,518,14]}
+{"kind":"shape","id":"sh/f29gbyx0","slide":3,"name":"voice-card-4","bbox":[64,465,552,98]}
+{"kind":"textbox","id":"sh/14ryd8fq","slide":3,"name":"voice-quote-4","text":"“洪府最小的户型127那个又挨着主干道，估计会有噪音问题。他左边又是融创1979，北边受噪音影响，东边这采光。”","textPreview":"“洪府最小的户型127那个又挨着主干道，估计会有噪音问题。他左边又是融创1979，北边受噪音影响，东边这采光。”","textChars":56,"textLines":1,"bbox":[82,474,518,48]}
+{"kind":"shape","id":"sh/6d0fytg3","slide":3,"name":"voice-footer-4","bbox":[70,527,546,36]}
+{"kind":"textbox","id":"sh/re9g7yxo","slide":3,"name":"voice-author-4","text":"瓏｜可见评论","textPreview":"瓏｜可见评论","textChars":6,"textLines":1,"bbox":[82,529,518,14]}
+{"kind":"textbox","id":"sh/sfix03y9","slide":3,"name":"voice-source-4","text":"来自《西市区改善盘比较（原笔记无可见标题）》｜项目：建投·春城洪府","textPreview":"来自《西市区改善盘比较（原笔记无可见标题）》｜项目：建投·春城洪府","textChars":33,"textLines":1,"bbox":[82,544,518,14]}
+{"kind":"shape","id":"sh/tgry9ofu","slide":3,"name":"voice-card-5","bbox":[64,570,552,98]}
+{"kind":"textbox","id":"sh/batgjixs","slide":3,"name":"voice-quote-5","text":"“我看了观云。买了峯萃。观云大阳台没20万做不好。但是20万我拿去首付一个吉普牧马人，去哪烧烤都行。”","textPreview":"“我看了观云。买了峯萃。观云大阳台没20万做不好。但是20万我拿去首付一个吉普牧马人，去哪烧烤都行。”","textChars":51,"textLines":1,"bbox":[82,579,518,48]}
+{"kind":"shape","id":"sh/l4fi9cza","slide":3,"name":"voice-footer-5","bbox":[70,632,546,36]}
+{"kind":"textbox","id":"sh/k3m1g7yp","slide":3,"name":"voice-author-5","text":"鸡龟骨滚羹｜可见评论","textPreview":"鸡龟骨滚羹｜可见评论","textChars":10,"textLines":1,"bbox":[82,634,518,14]}
+{"kind":"textbox","id":"sh/z2d07mh4","slide":3,"name":"voice-source-5","text":"来自《昆明邦泰锦华序，看房观后感！朋友们给点建议》｜项目：邦泰·观云","textPreview":"来自《昆明邦泰锦华序，看房观后感！朋友们给点建议》｜项目：邦泰·观云","textChars":34,"textLines":1,"bbox":[82,649,518,14]}
+{"kind":"shape","id":"sh/y14jehgj","slide":3,"name":"voice-card-6","bbox":[664,150,552,98]}
+{"kind":"textbox","id":"sh/czmhc7id","slide":3,"name":"voice-quote-6","text":"“看了大半年大平层，本来根本不考虑北市区的，但是看了很多南边的，小孩转学是个大问题，就看了万科和美的。北京路9号觉得比京江隐翠好，但最终还是决定下手京江隐翠了。”","textPreview":"“看了大半年大平层，本来根本不考虑北市区的，但是看了很多南边的，小孩转学是个大问题，就看了万科和美的。北京路9号觉得比京江隐翠好，但最终还是决定下手京江隐翠了。”","textChars":81,"textLines":1,"bbox":[682,159,518,48]}
+{"kind":"shape","id":"sh/byd032h8","slide":3,"name":"voice-footer-6","bbox":[670,212,546,36]}
+{"kind":"textbox","id":"sh/ax4zax0n","slide":3,"name":"voice-author-6","text":"YXY崽｜公开笔记正文","textPreview":"YXY崽｜公开笔记正文","textChars":11,"textLines":1,"bbox":[682,214,518,14]}
+{"kind":"textbox","id":"sh/hwzihwzi","slide":3,"name":"voice-source-6","text":"来自《决定下手京江隐翠了》｜项目：京江隐翠","textPreview":"来自《决定下手京江隐翠了》｜项目：京江隐翠","textChars":21,"textLines":1,"bbox":[682,229,518,14]}
+{"kind":"shape","id":"sh/wv61obyx","slide":3,"name":"voice-card-7","bbox":[664,255,552,98]}
+{"kind":"textbox","id":"sh/po3ilcvm","slide":3,"name":"voice-quote-7","text":"“单身人士想选择环境好的区域，很难不为自己不需要的‘大面积’买单。”","textPreview":"“单身人士想选择环境好的区域，很难不为自己不需要的‘大面积’买单。”","textChars":34,"textLines":1,"bbox":[682,264,518,48]}
+{"kind":"shape","id":"sh/21szqxcb","slide":3,"name":"voice-footer-7","bbox":[670,317,546,36]}
+{"kind":"textbox","id":"sh/32l0j2dw","slide":3,"name":"voice-author-7","text":"温小暖Dona Xu｜公开笔记正文","textPreview":"温小暖Dona Xu｜公开笔记正文","textChars":17,"textLines":1,"bbox":[682,319,518,14]}
+{"kind":"textbox","id":"sh/cruhwrud","slide":3,"name":"voice-source-7","text":"来自《在昆明看了几天房子，写点感想》｜项目：昆明改善住宅","textPreview":"来自《在昆明看了几天房子，写点感想》｜项目：昆明改善住宅","textChars":28,"textLines":1,"bbox":[682,334,518,14]}
+{"kind":"shape","id":"sh/ds3ipcvy","slide":3,"name":"voice-card-8","bbox":[664,360,552,98]}
+{"kind":"textbox","id":"sh/rql0nmds","slide":3,"name":"voice-quote-8","text":"“记录2025年初昆明买房，在一环边1.2万单价买了05年的房子，花了一百三十多个，买后有些后悔。咨询下，这种一梯两户电梯小高层，人车分流，带不错小学的房子到底值不值得这个价，有经验的朋友们一起探讨探讨”","textPreview":"“记录2025年初昆明买房，在一环边1.2万单价买了05年的房子，花了一百三十多个，买后有些后悔。咨询下，这种一梯两户电梯小高层，人车分流，带不错小学的房子到底值不值得这个价，有经验的朋友们一起探讨探讨”","textChars":102,"textLines":1,"bbox":[682,369,518,48]}
+{"kind":"shape","id":"sh/0ve10ru9","slide":3,"name":"voice-footer-8","bbox":[670,422,546,36]}
+{"kind":"textbox","id":"sh/1wnitwvu","slide":3,"name":"voice-author-8","text":"啦啦啦｜公开笔记正文","textPreview":"啦啦啦｜公开笔记正文","textChars":10,"textLines":1,"bbox":[682,424,518,14]}
+{"kind":"textbox","id":"sh/v29cfu18","slide":3,"name":"voice-source-8","text":"来自《买房后的惆怅》｜项目：昆明一环边存量住宅","textPreview":"来自《买房后的惆怅》｜项目：昆明一环边存量住宅","textChars":23,"textLines":1,"bbox":[682,439,518,14]}
+{"kind":"shape","id":"sh/a10b6p03","slide":3,"name":"voice-card-9","bbox":[664,465,552,98]}
+{"kind":"textbox","id":"sh/w3it8zit","slide":3,"name":"voice-quote-9","text":"“作为旅居的讲究生活住房环境的我可能选择租，买的话还要看整个交房后二级市场表现。”","textPreview":"“作为旅居的讲究生活住房环境的我可能选择租，买的话还要看整个交房后二级市场表现。”","textChars":41,"textLines":1,"bbox":[682,474,518,48]}
+{"kind":"shape","id":"sh/nypcba1c","slide":3,"name":"voice-footer-9","bbox":[670,527,546,36]}
+{"kind":"textbox","id":"sh/mxgb250r","slide":3,"name":"voice-author-9","text":"Eva溪｜公开笔记正文","textPreview":"Eva溪｜公开笔记正文","textChars":11,"textLines":1,"bbox":[682,529,518,14]}
+{"kind":"textbox","id":"sh/90rudkji","slide":3,"name":"voice-source-9","text":"来自《昆明龙湖峯萃看房，作为普通购房者客观评价》｜项目：龙湖·峯萃","textPreview":"来自《昆明龙湖峯萃看房，作为普通购房者客观评价》｜项目：龙湖·峯萃","textChars":33,"textLines":1,"bbox":[682,544,518,14]}
+{"kind":"shape","id":"sh/8zit4fix","slide":3,"name":"voice-card-10","bbox":[664,570,552,98]}
+{"kind":"textbox","id":"sh/6tkve90v","slide":3,"name":"voice-quote-10","text":"“经过思考对比 还是决定放弃四代宅 要传统的洋房”","textPreview":"“经过思考对比 还是决定放弃四代宅 要传统的洋房”","textChars":25,"textLines":1,"bbox":[682,579,518,48]}
+{"kind":"shape","id":"sh/2p4f6dk3","slide":3,"name":"voice-footer-10","bbox":[670,632,546,36]}
+{"kind":"textbox","id":"sh/3qxwfilo","slide":3,"name":"voice-author-10","text":"贪吃de小喵｜作者置顶评论","textPreview":"贪吃de小喵｜作者置顶评论","textChars":13,"textLines":1,"bbox":[682,634,518,14]}
+{"kind":"textbox","id":"sh/or6x8329","slide":3,"name":"voice-source-10","text":"来自《有公摊的198平还是有赠送面积的140平》｜项目：四代宅与传统洋房","textPreview":"来自《有公摊的198平还是有赠送面积的140平》｜项目：四代宅与传统洋房","textChars":36,"textLines":1,"bbox":[682,649,518,14]}
+{"kind":"textbox","id":"sh/psfeh83u","slide":3,"name":"voice-page-number","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1180,684,36,18]}
+{"kind":"shape","id":"sh/298ryl4v","slide":3,"name":"voice-accent-1","bbox":[64,150,6,98]}
+{"kind":"shape","id":"sh/n2l4fq98","slide":3,"name":"voice-accent-2","bbox":[64,255,6,98]}
+{"kind":"shape","id":"sh/x8nml0ra","slide":3,"name":"voice-accent-3","bbox":[64,360,6,98]}
+{"kind":"shape","id":"sh/03ix43e5","slide":3,"name":"voice-accent-4","bbox":[64,465,6,98]}
+{"kind":"shape","id":"sh/a9kfadwn","slide":3,"name":"voice-accent-5","bbox":[64,570,6,98]}
+{"kind":"shape","id":"sh/x0vi5czy","slide":3,"name":"voice-accent-6","bbox":[664,150,6,98]}
+{"kind":"shape","id":"sh/4nuhs7uh","slide":3,"name":"voice-accent-7","bbox":[664,255,6,98]}
+{"kind":"shape","id":"sh/qpczuhc7","slide":3,"name":"voice-accent-8","bbox":[664,360,6,98]}
+{"kind":"shape","id":"sh/xoruhkje","slide":3,"name":"voice-accent-9","bbox":[664,465,6,98]}
+{"kind":"shape","id":"sh/7utcne1g","slide":3,"name":"voice-accent-10","bbox":[664,570,6,98]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P03\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 公开客户声音来源见本页正文；有限样本只用于识别比较条件，不外推市场总体比例\n[/Sources]\n\n[Speaker] 十条原声来自十篇不同笔记；五个已闭合竞品各出现一次，另以真实购买、租买、存量与产品取舍补足市场张力。有限样本只用于识别比较条件。"}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"四种生活选择，都在寻找同一个翠湖答案","textShapes":13}
+{"kind":"textbox","id":"sh/oz29krqh","slide":4,"name":"choice-title","text":"四种生活选择，都在寻找同一个翠湖答案","textPreview":"四种生活选择，都在寻找同一个翠湖答案","textChars":18,"textLines":1,"bbox":[64,60,1152,62]}
+{"kind":"textbox","id":"sh/1cj2d8b6","slide":4,"name":"choice-lead","text":"有人留在熟悉日常，有人追随更新产品，有人愿意迁往更松弛的社区，也有人把决定留给以后。","textPreview":"有人留在熟悉日常，有人追随更新产品，有人愿意迁往更松弛的社区，也有人把决定留给以后。","textChars":42,"textLines":1,"bbox":[64,132,1140,42]}
+{"kind":"shape","id":"sh/0ba143al","slide":4,"name":"choice-card-1","bbox":[64,222,320,142]}
+{"kind":"textbox","id":"sh/rm1k7yt4","slide":4,"name":"choice-card-title-1","text":"留在核心区存量","textPreview":"留在核心区存量","textChars":7,"textLines":1,"bbox":[86,244,276,24]}
+{"kind":"textbox","id":"sh/ql8jytsj","slide":4,"name":"choice-card-body-1","text":"熟悉的教育、医疗、通勤与家人照应都不必重新开始。","textPreview":"熟悉的教育、医疗、通勤与家人照应都不必重新开始。","textChars":24,"textLines":1,"bbox":[86,284,276,54]}
+{"kind":"shape","id":"sh/doj29oba","slide":4,"name":"choice-card-2","bbox":[896,222,320,142]}
+{"kind":"textbox","id":"sh/sna103ap","slide":4,"name":"choice-card-title-2","text":"选择近场新品","textPreview":"选择近场新品","textChars":6,"textLines":1,"bbox":[918,244,276,24]}
+{"kind":"textbox","id":"sh/3ihk3et8","slide":4,"name":"choice-card-body-2","text":"在熟悉生活半径里，获得更新的产品与社区体验。","textPreview":"在熟悉生活半径里，获得更新的产品与社区体验。","textChars":22,"textLines":1,"bbox":[918,284,276,54]}
+{"kind":"shape","id":"sh/ih8ju9sn","slide":4,"name":"choice-card-3","bbox":[64,424,320,142]}
+{"kind":"textbox","id":"sh/kbm987y5","slide":4,"name":"choice-card-title-3","text":"迁往跨板块新品","textPreview":"迁往跨板块新品","textChars":7,"textLines":1,"bbox":[86,446,276,24]}
+{"kind":"textbox","id":"sh/5cva1cfq","slide":4,"name":"choice-card-body-3","text":"用更大的尺度与更松弛的社区，交换通勤与生活路径的重建。","textPreview":"用更大的尺度与更松弛的社区，交换通勤与生活路径的重建。","textChars":27,"textLines":1,"bbox":[86,486,276,54]}
+{"kind":"shape","id":"sh/i94r6xgz","slide":4,"name":"choice-card-4","bbox":[896,424,320,142]}
+{"kind":"textbox","id":"sh/jadsz2xk","slide":4,"name":"choice-card-title-4","text":"继续居住或等待","textPreview":"继续居住或等待","textChars":7,"textLines":1,"bbox":[918,446,276,24]}
+{"kind":"textbox","id":"sh/w72947yt","slide":4,"name":"choice-card-body-4","text":"把资金与决定留在手里，也把焕新的机会留到以后。","textPreview":"把资金与决定留在手里，也把焕新的机会留到以后。","textChars":23,"textLines":1,"bbox":[918,486,276,54]}
+{"kind":"shape","id":"sh/x8vaxsfe","slide":4,"name":"choice-axis-v","bbox":[639,255,2,318]}
+{"kind":"shape","id":"sh/a5kr2xg3","slide":4,"name":"choice-axis-h","bbox":[372,398,536,2]}
+{"kind":"shape","id":"sh/v6tsv2xo","slide":4,"name":"choice-case","bbox":[456,282,368,236]}
+{"kind":"textbox","id":"sh/g36tgryd","slide":4,"name":"choice-case-title","text":"翠湖云顶二期","textPreview":"翠湖云顶二期","textChars":6,"textLines":1,"bbox":[484,316,312,44]}
+{"kind":"textbox","id":"sh/h4fa9wfy","slide":4,"name":"choice-case-body","text":"让成熟城市与崭新居所，\n成为同一个答案。","textPreview":"让成熟城市与崭新居所， | 成为同一个答案。","textChars":20,"textLines":2,"bbox":[492,388,296,82]}
+{"kind":"textbox","id":"sh/p0batw72","slide":4,"name":"choice-page-number","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1172,676,44,18]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P04\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n[/Sources]\n\n[Speaker] 先承认四类选择各自成立的理由，再说明本案必须把成熟城市与崭新居所组织成同一个答案。"}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"翠湖云顶二期","textShapes":25}
+{"kind":"shape","id":"sh/yhkbe1o7","slide":5,"name":"map-5-project-dot","bbox":[660.06,183.01,12,12]}
+{"kind":"textbox","id":"sh/l4bupwny","slide":5,"name":"map-5-project-label","text":"翠湖云顶二期","textPreview":"翠湖云顶二期","textChars":6,"textLines":1,"bbox":[680.06,166.01,112,22]}
+{"kind":"shape","id":"sh/032tgr6d","slide":5,"name":"map-5-stock1-dot","bbox":[668.48,140.14,7,7]}
+{"kind":"textbox","id":"sh/n6dcr65o","slide":5,"name":"map-5-stock1-label","text":"翠湖一品","textPreview":"翠湖一品","textChars":4,"textLines":1,"bbox":[632.98,100.64,92,20]}
+{"kind":"shape","id":"sh/m5kbi1oj","slide":5,"name":"map-5-stock2-dot","bbox":[534.76,198.12,7,7]}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"name":"map-5-stock2-label","text":"人民路1979","textPreview":"人民路1979","textChars":7,"textLines":1,"bbox":[422.26,179.62,96,20]}
+{"kind":"shape","id":"sh/x4vedgvm","slide":5,"name":"map-5-near1-dot","bbox":[636.55,230.66,7,7]}
+{"kind":"textbox","id":"sh/ahkvi1cb","slide":5,"name":"map-5-near1-label","text":"丹霞翠屿","textPreview":"丹霞翠屿","textChars":4,"textLines":1,"bbox":[522.05,246.16,96,20]}
+{"kind":"shape","id":"sh/v2twb6dw","slide":5,"name":"map-5-near2-dot","bbox":[652.21,235.87,7,7]}
+{"kind":"textbox","id":"sh/k7mxovud","slide":5,"name":"map-5-near2-label","text":"春城曜府","textPreview":"春城曜府","textChars":4,"textLines":1,"bbox":[615.71,273.37,96,20]}
+{"kind":"shape","id":"sh/58vehgvy","slide":5,"name":"map-5-near3-dot","bbox":[521.9,196.84,7,7]}
+{"kind":"textbox","id":"sh/i54fmlc7","slide":5,"name":"map-5-near3-label","text":"春城洪府","textPreview":"春城洪府","textChars":4,"textLines":1,"bbox":[407.4,210.34,96,20]}
+{"kind":"shape","id":"sh/j6dwfqds","slide":5,"name":"map-5-cross1-dot","bbox":[591.55,526.2,7,7]}
+{"kind":"textbox","id":"sh/sb6xsvu9","slide":5,"name":"map-5-cross1-label","text":"邦泰·观云二期","textPreview":"邦泰·观云二期","textChars":7,"textLines":1,"bbox":[609.05,511.7,108,20]}
+{"kind":"shape","id":"sh/tcfel0vu","slide":5,"name":"map-5-school-dot","bbox":[654.71,203.77,7,7]}
+{"kind":"textbox","id":"sh/hgrmpwj2","slide":5,"name":"map-5-school-label","text":"昆一中西南门\n约314米／5分钟","textPreview":"昆一中西南门 | 约314米／5分钟","textChars":16,"textLines":2,"bbox":[512.21,265.27,126,32]}
+{"kind":"shape","id":"sh/gfi5grih","slide":5,"name":"map-5-metro-dot","bbox":[682.9,231.5,7,7]}
+{"kind":"textbox","id":"sh/fe94nm1w","slide":5,"name":"map-5-metro-label","text":"潘家湾A口\n约700米／10分钟","textPreview":"潘家湾A口 | 约700米／10分钟","textChars":16,"textLines":2,"bbox":[612.4,305,112,32]}
+{"kind":"shape","id":"sh/ud0ne10b","slide":5,"name":"map-5-hospital-dot","bbox":[676.39,246.56,7,7]}
+{"kind":"textbox","id":"sh/pkr6tgjy","slide":5,"name":"map-5-hospital-label","text":"云大医院东门\n约880米／12分钟","textPreview":"云大医院东门 | 约880米／12分钟","textChars":17,"textLines":2,"bbox":[725.89,320.06,124,32]}
+{"kind":"shape","id":"sh/4ji5kbid","slide":5,"name":"map-5-lake-dot","bbox":[733.27,187.9,7,7]}
+{"kind":"textbox","id":"sh/3i94r61s","slide":5,"name":"map-5-lake-label","text":"翠湖西门\n约1.1公里／15分钟","textPreview":"翠湖西门 | 约1.1公里／15分钟","textChars":16,"textLines":2,"bbox":[760.77,174.4,112,32]}
+{"kind":"shape","id":"sh/2h0ni107","slide":5,"name":"map-5-card-1","bbox":[40,214,270,132]}
+{"kind":"shape","id":"sh/5o7mhcju","slide":5,"name":"map-5-card-accent-1","bbox":[40,214,5,132]}
+{"kind":"textbox","id":"sh/kny587i9","slide":5,"name":"map-5-card-title-1","text":"核心区存量","textPreview":"核心区存量","textChars":5,"textLines":1,"bbox":[56,227,236,23]}
+{"kind":"textbox","id":"sh/atcjidg7","slide":5,"name":"map-5-card-body-1","text":"熟悉的生活与看得见的现房，带来确定；产品年代、公区体验与长期维护，决定下一次改善。","textPreview":"熟悉的生活与看得见的现房，带来确定；产品年代、公区体验与长期维护，决定下一次改善。","textChars":41,"textLines":1,"bbox":[56,257,236,77]}
+{"kind":"shape","id":"sh/vu5kbihc","slide":5,"name":"map-5-card-2","bbox":[970,210,270,132]}
+{"kind":"shape","id":"sh/wve1knyx","slide":5,"name":"map-5-card-accent-2","bbox":[970,210,5,132]}
+{"kind":"textbox","id":"sh/xwn2dszi","slide":5,"name":"map-5-card-title-2","text":"一环与跨板块新品","textPreview":"一环与跨板块新品","textChars":8,"textLines":1,"bbox":[986,223,236,23]}
+{"kind":"textbox","id":"sh/ihw3mxg3","slide":5,"name":"map-5-card-body-2","text":"更新的产品与社区打开焕新想象；通勤、接送、就医与家庭照应，也随位置重新排列。","textPreview":"更新的产品与社区打开焕新想象；通勤、接送、就医与家庭照应，也随位置重新排列。","textChars":38,"textLines":1,"bbox":[986,253,236,77]}
+{"kind":"shape","id":"sh/ji5kf2ho","slide":5,"name":"map-5-card-3","bbox":[970,370,270,132]}
+{"kind":"shape","id":"sh/kjelony9","slide":5,"name":"map-5-card-accent-3","bbox":[970,370,5,132]}
+{"kind":"textbox","id":"sh/5kn2hszu","slide":5,"name":"map-5-card-title-3","text":"翠湖云顶二期","textPreview":"翠湖云顶二期","textChars":6,"textLines":1,"bbox":[986,383,236,23]}
+{"kind":"textbox","id":"sh/e1sjatgz","slide":5,"name":"map-5-card-body-3","text":"成熟教育、医疗、轨交、文化与休闲留在身边，一座城市新居让熟悉生活就地焕新。","textPreview":"成熟教育、医疗、轨交、文化与休闲留在身边，一座城市新居让熟悉生活就地焕新。","textChars":37,"textLines":1,"bbox":[986,413,236,77]}
+{"kind":"shape","id":"sh/zmlk3yhk","slide":5,"name":"map-5-legend-bg","bbox":[40,665,378,25]}
+{"kind":"shape","id":"sh/fid07u98","slide":5,"name":"map-5-legend-dot-1","bbox":[53,674,6,6]}
+{"kind":"textbox","id":"sh/ehkzepsn","slide":5,"name":"map-5-legend-text-1","text":"本案","textPreview":"本案","textChars":2,"textLines":1,"bbox":[62,668,32,18]}
+{"kind":"shape","id":"sh/1kvi94re","slide":5,"name":"map-5-legend-dot-2","bbox":[102,674,6,6]}
+{"kind":"textbox","id":"sh/gjmhgzqt","slide":5,"name":"map-5-legend-text-2","text":"核心存量","textPreview":"核心存量","textChars":4,"textLines":1,"bbox":[111,668,46,18]}
+{"kind":"shape","id":"sh/3md0bu94","slide":5,"name":"map-5-legend-dot-3","bbox":[165,674,6,6]}
+{"kind":"textbox","id":"sh/2l4zip8j","slide":5,"name":"map-5-legend-text-3","text":"近场新品","textPreview":"近场新品","textChars":4,"textLines":1,"bbox":[174,668,46,18]}
+{"kind":"shape","id":"sh/povid4ra","slide":5,"name":"map-5-legend-dot-4","bbox":[228,674,6,6]}
+{"kind":"textbox","id":"sh/onmhkzqp","slide":5,"name":"map-5-legend-text-4","text":"跨板块新品","textPreview":"跨板块新品","textChars":5,"textLines":1,"bbox":[237,668,53,18]}
+{"kind":"shape","id":"sh/bqx0fe9g","slide":5,"name":"map-5-legend-dot-5","bbox":[298,674,6,6]}
+{"kind":"textbox","id":"sh/qp4jm98v","slide":5,"name":"map-5-legend-text-5","text":"生活资源","textPreview":"生活资源","textChars":4,"textLines":1,"bbox":[307,668,46,18]}
+{"kind":"textbox","id":"sh/8f6hcj6t","slide":5,"name":"map-5-attribution","text":"© OpenStreetMap contributors","textPreview":"© OpenStreetMap contributors","textChars":28,"textLines":1,"bbox":[1092,690,148,15]}
+{"kind":"shape","id":"sh/dgbulwnm","slide":5,"name":"map-5-title-scrim","bbox":[0,0,1280,158]}
+{"kind":"textbox","id":"sh/cf2tcr61","slide":5,"name":"map-5-title","text":"以翠湖为原点，收藏昆明最难复制的城市核心居住区","textPreview":"以翠湖为原点，收藏昆明最难复制的城市核心居住区","textChars":23,"textLines":1,"bbox":[48,34,1184,48]}
+{"kind":"textbox","id":"sh/z2tcnm5s","slide":5,"name":"map-5-lead","text":"核心区存量，拥有熟悉与确定；跨板块新品，带来产品与社区的焕新。翠湖及周边的教育、轨交、医疗与文化依然围绕日常，一座城市新居由此接续生活的下一程。","textPreview":"核心区存量，拥有熟悉与确定；跨板块新品，带来产品与社区的焕新。翠湖及周边的教育、轨交、医疗与文化依然围绕日常，一座城市新居由此接续生活的下一程。","textChars":72,"textLines":1,"bbox":[48,92,1176,52]}
+{"kind":"image","id":"im/i10fulg3","slide":5,"name":"图片 51","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P05\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 地图底图：© OpenStreetMap contributors\n[/Sources]\n\n[Speaker] 第一张竞争地图回答进入候选：城市核心存量与跨板块新品各有优势，本案以成熟城市中的新居重设标准。"}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"把地下归家与下沉庭院贯通，展开核心居住区最稀缺的松弛与秩序","textShapes":18}
+{"kind":"shape","id":"sh/yhg7epsj","slide":6,"name":"map-6-title-scrim","bbox":[0,0,1280,158]}
+{"kind":"textbox","id":"sh/zi98nu94","slide":6,"name":"map-6-title","text":"把地下归家与下沉庭院贯通，展开核心居住区最稀缺的松弛与秩序","textPreview":"把地下归家与下沉庭院贯通，展开核心居住区最稀缺的松弛与秩序","textChars":29,"textLines":1,"bbox":[48,34,1184,48]}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"name":"map-6-lead","text":"低密与会所新品，用丰富公共空间打开松弛想象；核心区存量，以熟悉与成熟带来长久安心。地下归家、下沉庭院与架空生活层层贯通，让松弛、秩序与私密沿每天的归家展开。","textPreview":"低密与会所新品，用丰富公共空间打开松弛想象；核心区存量，以熟悉与成熟带来长久安心。地下归家、下沉庭院与架空生活层层贯通，让松弛、秩序与私密沿每天的归家展开。","textChars":78,"textLines":1,"bbox":[48,92,1176,52]}
+{"kind":"shape","id":"sh/98rqt4r6","slide":6,"name":"map-6-project-dot","bbox":[660.06,183.01,12,12]}
+{"kind":"textbox","id":"sh/ml07i9sv","slide":6,"name":"map-6-project-label","text":"翠湖云顶二期","textPreview":"翠湖云顶二期","textChars":6,"textLines":1,"bbox":[680.06,166.01,112,22]}
+{"kind":"shape","id":"sh/7m98ru9g","slide":6,"name":"map-6-near1-dot","bbox":[636.55,230.66,7,7]}
+{"kind":"textbox","id":"sh/oryp8fah","slide":6,"name":"map-6-near1-label","text":"丹霞翠屿","textPreview":"丹霞翠屿","textChars":4,"textLines":1,"bbox":[522.05,246.16,96,20]}
+{"kind":"shape","id":"sh/pc76hkr2","slide":6,"name":"map-6-near2-dot","bbox":[652.21,235.87,7,7]}
+{"kind":"textbox","id":"sh/h4bupgn6","slide":6,"name":"map-6-near2-label","text":"春城曜府","textPreview":"春城曜府","textChars":4,"textLines":1,"bbox":[673.71,262.37,96,20]}
+{"kind":"shape","id":"sh/w32twb6l","slide":6,"name":"map-6-cross1-dot","bbox":[591.55,526.2,7,7]}
+{"kind":"textbox","id":"sh/v2tcn650","slide":6,"name":"map-6-cross1-label","text":"邦泰·观云二期","textPreview":"邦泰·观云二期","textChars":7,"textLines":1,"bbox":[609.05,511.7,108,20]}
+{"kind":"shape","id":"sh/u1kbu1ov","slide":6,"name":"map-6-card-1","bbox":[40,214,270,142]}
+{"kind":"shape","id":"sh/5svutgni","slide":6,"name":"map-6-card-accent-1","bbox":[40,214,5,142]}
+{"kind":"textbox","id":"sh/47mt0b6x","slide":6,"name":"map-6-card-title-1","text":"丹霞翠屿","textPreview":"丹霞翠屿","textChars":4,"textLines":1,"bbox":[56,227,236,23]}
+{"kind":"textbox","id":"sh/j6dcr65c","slide":6,"name":"map-6-card-body-1","text":"门廊、水景、连廊与中庭，把一环新居的园林松弛落在地面。","textPreview":"门廊、水景、连廊与中庭，把一环新居的园林松弛落在地面。","textChars":27,"textLines":1,"bbox":[56,257,236,87]}
+{"kind":"shape","id":"sh/i54bylor","slide":6,"name":"map-6-card-2","bbox":[40,382,270,142]}
+{"kind":"shape","id":"sh/twfux0ne","slide":6,"name":"map-6-card-accent-2","bbox":[40,382,5,142]}
+{"kind":"textbox","id":"sh/svmt4v6t","slide":6,"name":"map-6-card-title-2","text":"春城曜府","textPreview":"春城曜府","textChars":4,"textLines":1,"bbox":[56,395,236,23]}
+{"kind":"textbox","id":"sh/cbe5g3ih","slide":6,"name":"map-6-card-body-2","text":"下沉庭院、架空连廊与公共活动空间，打开低密新品的社区尺度。","textPreview":"下沉庭院、架空连廊与公共活动空间，打开低密新品的社区尺度。","textChars":29,"textLines":1,"bbox":[56,425,236,87]}
+{"kind":"shape","id":"sh/dcnm98zm","slide":6,"name":"map-6-card-3","bbox":[970,214,270,142]}
+{"kind":"shape","id":"sh/qpwnet0b","slide":6,"name":"map-6-card-accent-3","bbox":[970,214,5,142]}
+{"kind":"textbox","id":"sh/bq547yhw","slide":6,"name":"map-6-card-title-3","text":"邦泰·观云二期","textPreview":"邦泰·观云二期","textChars":7,"textLines":1,"bbox":[986,227,236,23]}
+{"kind":"textbox","id":"sh/0fy5k3id","slide":6,"name":"map-6-card-body-3","text":"下沉园林、多层会所、泳池与空中图书馆，形成另一套强公区生活。","textPreview":"下沉园林、多层会所、泳池与空中图书馆，形成另一套强公区生活。","textChars":30,"textLines":1,"bbox":[986,257,236,87]}
+{"kind":"shape","id":"sh/lg76d8zy","slide":6,"name":"map-6-card-4","bbox":[970,382,270,142]}
+{"kind":"shape","id":"sh/ydgnit07","slide":6,"name":"map-6-card-accent-4","bbox":[970,382,5,142]}
+{"kind":"textbox","id":"sh/zep4byhs","slide":6,"name":"map-6-card-title-4","text":"翠湖云顶二期","textPreview":"翠湖云顶二期","textChars":6,"textLines":1,"bbox":[986,395,236,23]}
+{"kind":"textbox","id":"sh/gju58ji9","slide":6,"name":"map-6-card-body-4","text":"地下三层归家、负一层下沉庭院与架空公共空间彼此贯通，把停车归家、庭院停留与邻里生活完整串联。","textPreview":"地下三层归家、负一层下沉庭院与架空公共空间彼此贯通，把停车归家、庭院停留与邻里生活完整串联。","textChars":46,"textLines":1,"bbox":[986,425,236,87]}
+{"kind":"shape","id":"sh/1k3mhozu","slide":6,"name":"map-6-legend-bg","bbox":[40,665,286,25]}
+{"kind":"shape","id":"sh/jet8nm1c","slide":6,"name":"map-6-legend-dot-1","bbox":[53,674,6,6]}
+{"kind":"textbox","id":"sh/idk7ehkr","slide":6,"name":"map-6-legend-text-1","text":"本案","textPreview":"本案","textChars":2,"textLines":1,"bbox":[62,668,32,18]}
+{"kind":"shape","id":"sh/50bqpcj2","slide":6,"name":"map-6-legend-dot-2","bbox":[102,674,6,6]}
+{"kind":"textbox","id":"sh/4f2pgr2h","slide":6,"name":"map-6-legend-text-2","text":"核心近场新品","textPreview":"核心近场新品","textChars":6,"textLines":1,"bbox":[111,668,60,18]}
+{"kind":"shape","id":"sh/va98j210","slide":6,"name":"map-6-legend-dot-3","bbox":[179,674,6,6]}
+{"kind":"textbox","id":"sh/u907axkf","slide":6,"name":"map-6-legend-text-3","text":"跨板块参照","textPreview":"跨板块参照","textChars":5,"textLines":1,"bbox":[188,668,53,18]}
+{"kind":"textbox","id":"sh/hcrqlcj6","slide":6,"name":"map-6-attribution","text":"© OpenStreetMap contributors","textPreview":"© OpenStreetMap contributors","textChars":28,"textLines":1,"bbox":[1092,690,148,15]}
+{"kind":"image","id":"im/ji9of2ps","slide":6,"name":"图片 37","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P06\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 地图底图：© OpenStreetMap contributors\n[/Sources]\n\n[Speaker] 第二张竞争地图回答赢得园林与归家比较：把地下归家、下沉庭院与架空空间连成完整日常。"}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"把长期居住的最真实需要，做成每种产品的标准配置","textShapes":18}
+{"kind":"shape","id":"sh/cb2tkvap","slide":7,"name":"map-7-title-scrim","bbox":[0,0,1280,158]}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"name":"map-7-title","text":"把长期居住的最真实需要，做成每种产品的标准配置","textPreview":"把长期居住的最真实需要，做成每种产品的标准配置","textChars":23,"textLines":1,"bbox":[48,34,1184,48]}
+{"kind":"textbox","id":"sh/ydkbm5sv","slide":7,"name":"map-7-lead","text":"日照与真实视线、公私与通行、高频使用与长期养护，共同决定大尺度能否成为经得起日常的好住。","textPreview":"日照与真实视线、公私与通行、高频使用与长期养护，共同决定大尺度能否成为经得起日常的好住。","textChars":44,"textLines":1,"bbox":[48,92,1176,52]}
+{"kind":"shape","id":"sh/zedcfa9g","slide":7,"name":"map-7-project-dot","bbox":[660.06,183.01,12,12]}
+{"kind":"textbox","id":"sh/kzmdova1","slide":7,"name":"map-7-project-label","text":"翠湖云顶二期","textPreview":"翠湖云顶二期","textChars":6,"textLines":1,"bbox":[680.06,166.01,112,22]}
+{"kind":"shape","id":"sh/l0vuh0rm","slide":7,"name":"map-7-near1-dot","bbox":[636.55,230.66,7,7]}
+{"kind":"textbox","id":"sh/eh0ba1sr","slide":7,"name":"map-7-near1-label","text":"丹霞翠屿","textPreview":"丹霞翠屿","textChars":4,"textLines":1,"bbox":[522.05,246.16,96,20]}
+{"kind":"shape","id":"sh/fi9c369c","slide":7,"name":"map-7-near2-dot","bbox":[652.21,235.87,7,7]}
+{"kind":"textbox","id":"sh/baxkjqlk","slide":7,"name":"map-7-near2-label","text":"春城曜府","textPreview":"春城曜府","textChars":4,"textLines":1,"bbox":[673.71,262.37,96,20]}
+{"kind":"shape","id":"sh/a9ojq5kz","slide":7,"name":"map-7-cross1-dot","bbox":[591.55,526.2,7,7]}
+{"kind":"textbox","id":"sh/xcz2l03q","slide":7,"name":"map-7-cross1-label","text":"邦泰·观云二期","textPreview":"邦泰·观云二期","textChars":7,"textLines":1,"bbox":[609.05,511.7,108,20]}
+{"kind":"shape","id":"sh/cbq1sv25","slide":7,"name":"map-7-card-1","bbox":[40,214,270,142]}
+{"kind":"shape","id":"sh/n6x0fqlo","slide":7,"name":"map-7-card-accent-1","bbox":[40,214,5,142]}
+{"kind":"textbox","id":"sh/25ojml43","slide":7,"name":"map-7-card-title-1","text":"丹霞翠屿｜日照与养护","textPreview":"丹霞翠屿｜日照与养护","textChars":10,"textLines":1,"bbox":[56,227,236,23]}
+{"kind":"textbox","id":"sh/p8fih03e","slide":7,"name":"map-7-card-body-1","text":"143㎡空中庭院放大尺度与自然感，北向露台的直射日照、风雨灰尘与清洁养护仍需长期权衡。","textPreview":"143㎡空中庭院放大尺度与自然感，北向露台的直射日照、风雨灰尘与清洁养护仍需长期权衡。","textChars":43,"textLines":1,"bbox":[56,257,236,87]}
+{"kind":"shape","id":"sh/o761ov2t","slide":7,"name":"map-7-card-2","bbox":[40,382,270,142]}
+{"kind":"shape","id":"sh/f2d0b6lc","slide":7,"name":"map-7-card-accent-2","bbox":[40,382,5,142]}
+{"kind":"textbox","id":"sh/eh4jil4r","slide":7,"name":"map-7-card-title-2","text":"春城曜府｜基础日照","textPreview":"春城曜府｜基础日照","textChars":9,"textLines":1,"bbox":[56,395,236,23]}
+{"kind":"textbox","id":"sh/id4ju1oz","slide":7,"name":"map-7-card-body-2","text":"高厅与露台打开第一眼尺度；部分花园平台与日照、楼间距形成直接取舍。","textPreview":"高厅与露台打开第一眼尺度；部分花园平台与日照、楼间距形成直接取舍。","textChars":33,"textLines":1,"bbox":[56,425,236,87]}
+{"kind":"shape","id":"sh/jedkn654","slide":7,"name":"map-7-card-3","bbox":[970,214,270,142]}
+{"kind":"shape","id":"sh/4fm1wb6p","slide":7,"name":"map-7-card-accent-3","bbox":[970,214,5,142]}
+{"kind":"textbox","id":"sh/50v2pgna","slide":7,"name":"map-7-card-title-3","text":"邦泰·观云二期｜公私与通行","textPreview":"邦泰·观云二期｜公私与通行","textChars":13,"textLines":1,"bbox":[986,227,236,23]}
+{"kind":"textbox","id":"sh/q143ylov","slide":7,"name":"map-7-card-body-3","text":"大客厅、私梯、多套房与露台拉开尺度；部分户型的主卧门位、客厅双侧通行与低频入户光厅仍需权衡。","textPreview":"大客厅、私梯、多套房与露台拉开尺度；部分户型的主卧门位、客厅双侧通行与低频入户光厅仍需权衡。","textChars":46,"textLines":1,"bbox":[986,257,236,87]}
+{"kind":"shape","id":"sh/r2dkrq5g","slide":7,"name":"map-7-card-4","bbox":[970,382,270,142]}
+{"kind":"shape","id":"sh/s3ml0v61","slide":7,"name":"map-7-card-accent-4","bbox":[970,382,5,142]}
+{"kind":"textbox","id":"sh/d4f2t0nm","slide":7,"name":"map-7-card-title-4","text":"翠湖云顶二期｜光·秩序·好用","textPreview":"翠湖云顶二期｜光·秩序·好用","textChars":14,"textLines":1,"bbox":[986,395,236,23]}
+{"kind":"textbox","id":"sh/e5o32lor","slide":7,"name":"map-7-card-body-4","text":"光先于景，秩序先于尺度，好用先于更多。日照与视线、公私与通行、高频使用与长期养护，成为每种产品共同的长期标准。","textPreview":"光先于景，秩序先于尺度，好用先于更多。日照与视线、公私与通行、高频使用与长期养护，成为每种产品共同的长期标准。","textChars":55,"textLines":1,"bbox":[986,425,236,87]}
+{"kind":"shape","id":"sh/f6xkvq5c","slide":7,"name":"map-7-legend-bg","bbox":[40,665,286,25]}
+{"kind":"shape","id":"sh/p0zmlk7u","slide":7,"name":"map-7-legend-dot-1","bbox":[53,674,6,6]}
+{"kind":"textbox","id":"sh/ozq5szq9","slide":7,"name":"map-7-legend-text-1","text":"本案","textPreview":"本案","textChars":2,"textLines":1,"bbox":[62,668,32,18]}
+{"kind":"shape","id":"sh/nyh4jupo","slide":7,"name":"map-7-legend-dot-2","bbox":[102,674,6,6]}
+{"kind":"textbox","id":"sh/2x8nqp83","slide":7,"name":"map-7-legend-text-2","text":"核心近场新品","textPreview":"核心近场新品","textChars":6,"textLines":1,"bbox":[111,668,60,18]}
+{"kind":"shape","id":"sh/x4j6p47q","slide":7,"name":"map-7-legend-dot-3","bbox":[179,674,6,6]}
+{"kind":"textbox","id":"sh/c3a5wzq5","slide":7,"name":"map-7-legend-text-3","text":"跨板块参照","textPreview":"跨板块参照","textChars":5,"textLines":1,"bbox":[188,668,53,18]}
+{"kind":"textbox","id":"sh/b2h4nupk","slide":7,"name":"map-7-attribution","text":"© OpenStreetMap contributors","textPreview":"© OpenStreetMap contributors","textChars":28,"textLines":1,"bbox":[1092,690,148,15]}
+{"kind":"image","id":"im/lgr2xk36","slide":7,"name":"图片 37","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P07\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 地图底图：© OpenStreetMap contributors\n[/Sources]\n\n[Speaker] 第三张竞争地图回答长期产品选择：把日照、视线、公私、通行、使用频率与养护变成共同标准。"}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"最懂翠湖生活的城市新居","textShapes":24}
+{"kind":"textbox","id":"sh/l8ja9s3a","slide":8,"name":"value-title","text":"最懂翠湖生活的城市新居","textPreview":"最懂翠湖生活的城市新居","textChars":11,"textLines":1,"bbox":[64,62,1120,60]}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"name":"value-lead","text":"成熟城市、立体社区与长期好房，共同构成一座新居的三重价值。","textPreview":"成熟城市、立体社区与长期好房，共同构成一座新居的三重价值。","textChars":29,"textLines":1,"bbox":[64,135,1110,42]}
+{"kind":"shape","id":"sh/g72x4zyd","slide":8,"name":"value-card-1","bbox":[64,226,360,410]}
+{"kind":"shape","id":"sh/ri9g7uhw","slide":8,"name":"value-header-1","bbox":[86,246,316,64]}
+{"kind":"textbox","id":"sh/6h0fypgb","slide":8,"name":"value-header-text-1","text":"以翠湖为原点，收藏昆明最难复制的城市核心居住区","textPreview":"以翠湖为原点，收藏昆明最难复制的城市核心居住区","textChars":23,"textLines":1,"bbox":[96,253,296,50]}
+{"kind":"textbox","id":"sh/tkby9kzm","slide":8,"name":"value-1-row-1-title","text":"翠湖原点","textPreview":"翠湖原点","textChars":4,"textLines":1,"bbox":[88,326,312,22]}
+{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"name":"value-1-row-1-body","text":"收藏一整套成熟城市日常","textPreview":"收藏一整套成熟城市日常","textChars":11,"textLines":1,"bbox":[88,354,312,42]}
+{"kind":"shape","id":"sh/je9g3ahk","slide":8,"name":"value-1-divider-1","bbox":[88,404,312,1]}
+{"kind":"textbox","id":"sh/id0fu50z","slide":8,"name":"value-1-row-2-title","text":"成熟资源","textPreview":"成熟资源","textChars":4,"textLines":1,"bbox":[88,422,312,22]}
+{"kind":"textbox","id":"sh/o7ydoret","slide":8,"name":"value-1-row-2-body","text":"教育、轨交、医疗、文化与休闲围绕每天","textPreview":"教育、轨交、医疗、文化与休闲围绕每天","textChars":18,"textLines":1,"bbox":[88,450,312,42]}
+{"kind":"shape","id":"sh/98rehwve","slide":8,"name":"value-1-divider-2","bbox":[88,500,312,1]}
+{"kind":"textbox","id":"sh/m5gvmhwn","slide":8,"name":"value-1-row-3-title","text":"城市新居","textPreview":"城市新居","textChars":4,"textLines":1,"bbox":[88,518,312,22]}
+{"kind":"textbox","id":"sh/n6pwfmd8","slide":8,"name":"value-1-row-3-body","text":"让熟悉生活就地焕新","textPreview":"让熟悉生活就地焕新","textChars":9,"textLines":1,"bbox":[88,546,312,42]}
+{"kind":"shape","id":"sh/0jydkreh","slide":8,"name":"value-card-2","bbox":[456,226,360,410]}
+{"kind":"shape","id":"sh/1k7edwv2","slide":8,"name":"value-header-2","bbox":[478,246,316,64]}
+{"kind":"textbox","id":"sh/ehgvihwr","slide":8,"name":"value-header-text-2","text":"把地下归家与下沉庭院贯通，展开核心居住区最稀缺的松弛与秩序","textPreview":"把地下归家与下沉庭院贯通，展开核心居住区最稀缺的松弛与秩序","textChars":29,"textLines":1,"bbox":[488,253,296,50]}
+{"kind":"textbox","id":"sh/zipwbmdc","slide":8,"name":"value-2-row-1-title","text":"地下归家","textPreview":"地下归家","textChars":4,"textLines":1,"bbox":[480,326,312,22]}
+{"kind":"textbox","id":"sh/kfixwbe1","slide":8,"name":"value-2-row-1-body","text":"松弛从回家的第一步开始","textPreview":"松弛从回家的第一步开始","textChars":11,"textLines":1,"bbox":[480,354,312,42]}
+{"kind":"shape","id":"sh/lgbepgvm","slide":8,"name":"value-2-divider-1","bbox":[480,404,312,1]}
+{"kind":"textbox","id":"sh/tw7e9gnq","slide":8,"name":"value-2-row-2-title","text":"下沉庭院","textPreview":"下沉庭院","textChars":4,"textLines":1,"bbox":[480,422,312,22]}
+{"kind":"textbox","id":"sh/svydgb65","slide":8,"name":"value-2-row-2-body","text":"连接地上生活与地下到达","textPreview":"连接地上生活与地下到达","textChars":11,"textLines":1,"bbox":[480,450,312,42]}
+{"kind":"shape","id":"sh/7u5w765k","slide":8,"name":"value-2-divider-2","bbox":[480,500,312,1]}
+{"kind":"textbox","id":"sh/6twve1oz","slide":8,"name":"value-2-row-3-title","text":"架空生活","textPreview":"架空生活","textChars":4,"textLines":1,"bbox":[480,518,312,22]}
+{"kind":"textbox","id":"sh/5sne5wne","slide":8,"name":"value-2-row-3-body","text":"让停留与邻里交往自然发生","textPreview":"让停留与邻里交往自然发生","textChars":12,"textLines":1,"bbox":[480,546,312,42]}
+{"kind":"shape","id":"sh/kredcr6t","slide":8,"name":"value-card-3","bbox":[848,226,360,410]}
+{"kind":"shape","id":"sh/jq5w365o","slide":8,"name":"value-header-3","bbox":[870,246,316,64]}
+{"kind":"textbox","id":"sh/i5wva1o3","slide":8,"name":"value-header-text-3","text":"把长期居住的最真实需要，做成每种产品的标准配置","textPreview":"把长期居住的最真实需要，做成每种产品的标准配置","textChars":23,"textLines":1,"bbox":[880,253,296,50]}
+{"kind":"textbox","id":"sh/x4ne1wni","slide":8,"name":"value-3-row-1-title","text":"长期好住","textPreview":"长期好住","textChars":4,"textLines":1,"bbox":[872,326,312,22]}
+{"kind":"textbox","id":"sh/w3ed8r6x","slide":8,"name":"value-3-row-1-body","text":"让每一种产品都服务真实日常","textPreview":"让每一种产品都服务真实日常","textChars":13,"textLines":1,"bbox":[872,354,312,42]}
+{"kind":"shape","id":"sh/m9sb2x4v","slide":8,"name":"value-3-divider-1","bbox":[872,404,312,1]}
+{"kind":"textbox","id":"sh/na1sb2lg","slide":8,"name":"value-3-row-2-title","text":"空间秩序","textPreview":"空间秩序","textChars":4,"textLines":1,"bbox":[872,422,312,22]}
+{"kind":"textbox","id":"sh/8bat47ml","slide":8,"name":"value-3-row-2-body","text":"公私、家政、采光视线与使用频率共同成立","textPreview":"公私、家政、采光视线与使用频率共同成立","textChars":19,"textLines":1,"bbox":[872,450,312,42]}
+{"kind":"shape","id":"sh/9w3uds36","slide":8,"name":"value-3-divider-2","bbox":[872,500,312,1]}
+{"kind":"textbox","id":"sh/y5sbed4j","slide":8,"name":"value-3-row-3-title","text":"长期价值","textPreview":"长期价值","textChars":4,"textLines":1,"bbox":[872,518,312,22]}
+{"kind":"textbox","id":"sh/z61s7il4","slide":8,"name":"value-3-row-3-body","text":"每一平方米都值得长期拥有","textPreview":"每一平方米都值得长期拥有","textChars":12,"textLines":1,"bbox":[872,546,312,42]}
+{"kind":"textbox","id":"sh/07atgnmp","slide":8,"name":"value-page-number","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1172,676,44,18]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P08\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n[/Sources]\n\n[Speaker] 本页是三条超级竞争力的唯一词典；第三章的总纲与证明页必须逐项承接，不增加平行价值主张。"}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"第三章｜明源云UE电子沙盘解决方案","textShapes":2}
+{"kind":"textbox","id":"sh/nex4jq5k","slide":9,"name":"矩形 2","text":"第三章｜明源云UE电子沙盘解决方案","textPreview":"第三章｜明源云UE电子沙盘解决方案","textChars":17,"textLines":1,"bbox":[80,225,980,92]}
+{"kind":"textbox","id":"sh/1cfmhgne","slide":9,"name":"矩形 3","text":"翠湖生活、立体社区与长期好房，在一座电子沙盘里完整展开","textPreview":"翠湖生活、立体社区与长期好房，在一座电子沙盘里完整展开","textChars":27,"textLines":1,"bbox":[80,348,930,84]}
+{"kind":"shape","id":"sh/0b65obm9","slide":9,"name":"矩形 4","bbox":[80,500,390,5]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P09\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n[/Sources]\n\n[Speaker] 回收第二章三条超级竞争力，说明第三章只展示UE如何证明、讲解并推动选择。"}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"以翠湖为原点，收藏昆明最难复制的城市核心居住区","textShapes":8}
+{"kind":"textbox","id":"sh/cbu58j2h","slide":10,"name":"title","text":"以翠湖为原点，收藏昆明最难复制的城市核心居住区","textPreview":"以翠湖为原点，收藏昆明最难复制的城市核心居住区","textChars":23,"textLines":1,"bbox":[64,72,1120,48]}
+{"kind":"textbox","id":"sh/zelojyl8","slide":10,"name":"矩形 3","text":"一座城市新居，接住翠湖生活已经成熟的一切，让改善不必离开熟悉的城市关系。","textPreview":"一座城市新居，接住翠湖生活已经成熟的一切，让改善不必离开熟悉的城市关系。","textChars":36,"textLines":1,"bbox":[64,122,1120,28]}
+{"kind":"shape","id":"sh/ydcnatkn","slide":10,"name":"圆角矩形 4","bbox":[64,160,360,105]}
+{"kind":"shape","id":"sh/l036l83y","slide":10,"name":"圆角矩形 5","bbox":[80,176,160,30]}
+{"kind":"textbox","id":"sh/kzu5c32t","slide":10,"name":"矩形 6","text":"翠湖原点","textPreview":"翠湖原点","textChars":4,"textLines":1,"bbox":[90,181,140,20]}
+{"kind":"textbox","id":"sh/725onyl4","slide":10,"name":"矩形 7","text":"翠湖、一环与城市文化共同沉淀的生活坐标，承接昆明最难复制的核心日常。","textPreview":"翠湖、一环与城市文化共同沉淀的生活坐标，承接昆明最难复制的核心日常。","textChars":34,"textLines":1,"bbox":[82,218,324,33]}
+{"kind":"shape","id":"sh/m1cnetkj","slide":10,"name":"圆角矩形 8","bbox":[456,160,360,105]}
+{"kind":"shape","id":"sh/s7yt4b21","slide":10,"name":"圆角矩形 9","bbox":[472,176,160,30]}
+{"kind":"textbox","id":"sh/d87uxg3m","slide":10,"name":"矩形 10","text":"成熟资源","textPreview":"成熟资源","textChars":4,"textLines":1,"bbox":[482,181,140,20]}
+{"kind":"textbox","id":"sh/q5gb21kb","slide":10,"name":"矩形 11","text":"昆一中、潘家湾、云大医院与翠湖，分别接住教育、通勤、照护与休闲。","textPreview":"昆一中、潘家湾、云大医院与翠湖，分别接住教育、通勤、照护与休闲。","textChars":32,"textLines":1,"bbox":[474,218,324,33]}
+{"kind":"shape","id":"sh/r6pcv6lw","slide":10,"name":"圆角矩形 12","bbox":[848,160,360,105]}
+{"kind":"shape","id":"sh/0bit8b2d","slide":10,"name":"圆角矩形 13","bbox":[864,176,160,30]}
+{"kind":"textbox","id":"sh/1cru1g3y","slide":10,"name":"矩形 14","text":"城市新居","textPreview":"城市新居","textChars":4,"textLines":1,"bbox":[874,181,140,20]}
+{"kind":"textbox","id":"sh/e9gb61k7","slide":10,"name":"矩形 15","text":"4栋新住宅进入成熟核心，让熟悉生活与居住焕新在同一处发生。","textPreview":"4栋新住宅进入成熟核心，让熟悉生活与居住焕新在同一处发生。","textChars":29,"textLines":1,"bbox":[866,218,324,33]}
+{"kind":"image","id":"im/sfeh4j2l","slide":10,"name":"图片 33","bbox":[64,328,360,304]}
+{"kind":"image","id":"im/ra907i14","slide":10,"name":"图片 34","bbox":[456,328,360,304]}
+{"kind":"image","id":"im/q90jedkz","slide":10,"name":"图片 35","bbox":[848,328,360,304]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P10\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 本页承接已验收的竞争态势、客群判断与超级竞争力；公开发行以本终稿正文为准\n[/Sources]\n\n[Speaker] 第一条超级竞争力总纲保持完整主张，三项事实承接可以直接用于汇报朗读。"}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"翠湖核心的一整套成熟生活，一图尽览","textShapes":5}
+{"kind":"textbox","id":"sh/xcryxg7y","slide":11,"name":"圆角矩形 1","text":"翠湖核心的一整套成熟生活，一图尽览","textPreview":"翠湖核心的一整套成熟生活，一图尽览","textChars":17,"textLines":1,"bbox":[64,68,1152,66]}
+{"kind":"shape","id":"sh/wbih4b6d","slide":11,"name":"圆角矩形 2","bbox":[64,143,90,4]}
+{"kind":"textbox","id":"sh/n69grmpw","slide":11,"name":"圆角矩形 3","text":"资源关系｜昆一中、潘家湾、云大医院和翠湖，把教育、通勤、医疗、文化与休闲汇入同一生活半径。\n步行尺度｜约5分钟到昆一中、10分钟到地铁、12分钟到医院、15分钟到翠湖，熟悉日常不必重建。\n系统画面｜城市资源总览与项目落位一键切换，让“留在翠湖、住进新居”的价值一图看清。","textPreview":"资源关系｜昆一中、潘家湾、云大医院和翠湖，把教育、通勤、医疗、文化与休闲汇入同一生活半径。 | 步行尺度｜约5分钟到昆一中、10分钟到地铁、12分钟到医院、15分钟到翠湖，熟悉日常不必重建。 | 系统画面｜城市资源总览与项目落位一键切换，让“留在翠湖、住进新居”的价值一图看清。","textChars":135,"textLines":3,"bbox":[64,154,1120,58]}
+{"kind":"shape","id":"sh/250zy18b","slide":11,"name":"圆角矩形 4","bbox":[64,220,548,404]}
+{"kind":"shape","id":"sh/98rytw72","slide":11,"name":"圆角矩形 5","bbox":[668,220,548,404]}
+{"kind":"textbox","id":"sh/o7ih0r6h","slide":11,"name":"圆角矩形 6","text":"教育、医疗、文化、商业与体育共同聚合，翠湖核心的一整套成熟生活一图可见","textPreview":"教育、医疗、文化、商业与体育共同聚合，翠湖核心的一整套成熟生活一图可见","textChars":35,"textLines":1,"bbox":[82,230,512,44]}
+{"kind":"textbox","id":"sh/72t03qp0","slide":11,"name":"圆角矩形 7","text":"4栋城市新居接入成熟资源网络，熟悉生活与居住焕新同时拥有","textPreview":"4栋城市新居接入成熟资源网络，熟悉生活与居住焕新同时拥有","textChars":28,"textLines":1,"bbox":[686,230,512,44]}
+{"kind":"textbox","id":"sh/mdobedg3","slide":11,"name":"圆角矩形 11","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1180,684,44,18]}
+{"kind":"image","id":"im/cre5or2h","slide":11,"name":"图片 22","bbox":[82,284,512,316]}
+{"kind":"image","id":"im/3m5orml0","slide":11,"name":"图片 23","bbox":[686,284,512,316]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P11\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 本页承接已验收的竞争态势、客群判断与超级竞争力；公开发行以本终稿正文为准\n[/Sources]\n\n[Speaker] 把城市资源关系、步行尺度与系统画面组织成一页可直接朗读的业务证明。"}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"从清晨到夜晚，成熟城市持续为家庭工作","textShapes":5}
+{"kind":"textbox","id":"sh/1gbm9s3a","slide":12,"name":"圆角矩形 1","text":"从清晨到夜晚，成熟城市持续为家庭工作","textPreview":"从清晨到夜晚，成熟城市持续为家庭工作","textChars":18,"textLines":1,"bbox":[64,68,1152,66]}
+{"kind":"shape","id":"sh/0f2lgnmp","slide":12,"name":"圆角矩形 2","bbox":[64,143,90,4]}
+{"kind":"textbox","id":"sh/ra943il8","slide":12,"name":"圆角矩形 3","text":"清晨日程｜上学、通勤与临时就医，在熟悉半径内高效完成，一家人的时间不被迁移重新切割。\n傍晚日常｜运动、散步、会友与文化休闲，接住一天之后的松弛，熟悉生活继续自然发生。\n系统画面｜城市节点按时段点亮，一天生活路径连续播放，成熟城市如何服务家庭清楚可见。","textPreview":"清晨日程｜上学、通勤与临时就医，在熟悉半径内高效完成，一家人的时间不被迁移重新切割。 | 傍晚日常｜运动、散步、会友与文化休闲，接住一天之后的松弛，熟悉生活继续自然发生。 | 系统画面｜城市节点按时段点亮，一天生活路径连续播放，成熟城市如何服务家庭清楚可见。","textChars":125,"textLines":3,"bbox":[64,154,1120,58]}
+{"kind":"shape","id":"sh/q903ad4n","slide":12,"name":"圆角矩形 4","bbox":[64,220,548,404]}
+{"kind":"shape","id":"sh/dcbm583y","slide":12,"name":"圆角矩形 5","bbox":[668,220,548,404]}
+{"kind":"textbox","id":"sh/sb2lcnmd","slide":12,"name":"圆角矩形 6","text":"清晨至白天｜上学、通勤与照护保持连续，全家日程不必重新适应","textPreview":"清晨至白天｜上学、通勤与照护保持连续，全家日程不必重新适应","textChars":29,"textLines":1,"bbox":[82,230,512,44]}
+{"kind":"textbox","id":"sh/b6d4f2lc","slide":12,"name":"圆角矩形 7","text":"傍晚至夜间｜运动、散步、会友与文化休闲，熟悉日常继续自然发生","textPreview":"傍晚至夜间｜运动、散步、会友与文化休闲，熟悉日常继续自然发生","textChars":30,"textLines":1,"bbox":[686,230,512,44]}
+{"kind":"textbox","id":"sh/atc7epon","slide":12,"name":"圆角矩形 11","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1180,684,44,18]}
+{"kind":"image","id":"im/srmp0vmd","slide":12,"name":"图片 22","bbox":[82,284,512,316]}
+{"kind":"image","id":"im/fudovqlo","slide":12,"name":"图片 23","bbox":[686,284,512,316]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P12\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 本页承接已验收的竞争态势、客群判断与超级竞争力；公开发行以本终稿正文为准\n[/Sources]\n\n[Speaker] 用清晨到夜晚的家庭日程证明成熟城市持续工作，城市价值回到每天真实使用。"}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"把地下归家与下沉庭院贯通，展开核心居住区最稀缺的松弛与秩序","textShapes":8}
+{"kind":"textbox","id":"sh/bq9orito","slide":13,"name":"title","text":"把地下归家与下沉庭院贯通，展开核心居住区最稀缺的松弛与秩序","textPreview":"把地下归家与下沉庭院贯通，展开核心居住区最稀缺的松弛与秩序","textChars":29,"textLines":1,"bbox":[64,72,1120,48]}
+{"kind":"textbox","id":"sh/o3i5w3ad","slide":13,"name":"矩形 3","text":"三层地下空间、负一层下沉庭院、架空公共空间与4栋住宅彼此衔接，让松弛从到达、停留一直延续到归家。","textPreview":"三层地下空间、负一层下沉庭院、架空公共空间与4栋住宅彼此衔接，让松弛从到达、停留一直延续到归家。","textChars":48,"textLines":1,"bbox":[64,122,1120,28]}
+{"kind":"shape","id":"sh/p4r6p8by","slide":13,"name":"圆角矩形 4","bbox":[64,160,360,105]}
+{"kind":"shape","id":"sh/21gnuts7","slide":13,"name":"圆角矩形 5","bbox":[80,176,160,30]}
+{"kind":"textbox","id":"sh/32ponyts","slide":13,"name":"矩形 6","text":"地下归家","textPreview":"地下归家","textChars":4,"textLines":1,"bbox":[90,181,140,20]}
+{"kind":"textbox","id":"sh/gzy5s3a1","slide":13,"name":"矩形 7","text":"停车、下客、步行与入户被重新组织，归家从第一步开始从容。","textPreview":"停车、下客、步行与入户被重新组织，归家从第一步开始从容。","textChars":28,"textLines":1,"bbox":[82,218,324,33]}
+{"kind":"shape","id":"sh/1076lobm","slide":13,"name":"圆角矩形 8","bbox":[456,160,360,105]}
+{"kind":"shape","id":"sh/hcfy9k3u","slide":13,"name":"圆角矩形 9","bbox":[472,176,160,30]}
+{"kind":"textbox","id":"sh/gb6x0zm9","slide":13,"name":"矩形 10","text":"下沉庭院","textPreview":"下沉庭院","textChars":4,"textLines":1,"bbox":[482,181,140,20]}
+{"kind":"textbox","id":"sh/vaxg7ulo","slide":13,"name":"矩形 11","text":"中央下沉空间连接地下到达与地上园林，高差成为每天经过的生活场。","textPreview":"中央下沉空间连接地下到达与地上园林，高差成为每天经过的生活场。","textChars":31,"textLines":1,"bbox":[474,218,324,33]}
+{"kind":"shape","id":"sh/u9ofyp43","slide":13,"name":"圆角矩形 12","bbox":[848,160,360,105]}
+{"kind":"shape","id":"sh/t8fy5k3i","slide":13,"name":"圆角矩形 13","bbox":[864,176,160,30]}
+{"kind":"textbox","id":"sh/876xwfmx","slide":13,"name":"矩形 14","text":"架空生活","textPreview":"架空生活","textChars":4,"textLines":1,"bbox":[874,181,140,20]}
+{"kind":"textbox","id":"sh/7mdg3als","slide":13,"name":"矩形 15","text":"1、2、5号楼架空公共空间延展休憩与邻里交往，公共生活向上生长。","textPreview":"1、2、5号楼架空公共空间延展休憩与邻里交往，公共生活向上生长。","textChars":32,"textLines":1,"bbox":[866,218,324,33]}
+{"kind":"image","id":"im/9czix0b6","slide":13,"name":"图片 33","bbox":[64,328,360,304]}
+{"kind":"image","id":"im/y5ozilcj","slide":13,"name":"图片 34","bbox":[456,328,360,304]}
+{"kind":"image","id":"im/z6h0r6t4","slide":13,"name":"图片 35","bbox":[848,328,360,304]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P13\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 本页承接已验收的竞争态势、客群判断与超级竞争力；公开发行以本终稿正文为准\n[/Sources]\n\n[Speaker] 第二条超级竞争力总纲保持完整主张，三项空间承接从地下归家一直延续到架空生活。"}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"核心土地的每一层，都服务真实社区生活","textShapes":5}
+{"kind":"textbox","id":"sh/xc7eds76","slide":14,"name":"圆角矩形 1","text":"核心土地的每一层，都服务真实社区生活","textPreview":"核心土地的每一层，都服务真实社区生活","textChars":18,"textLines":1,"bbox":[64,68,1152,66]}
+{"kind":"shape","id":"sh/wbydknq1","slide":14,"name":"圆角矩形 2","bbox":[64,143,90,4]}
+{"kind":"textbox","id":"sh/jepwf2pc","slide":14,"name":"圆角矩形 3","text":"土地组织｜约20.74亩土地以4栋住宅围合中央空间，楼栋、庭院与归家关系在有限土地上清楚展开。\n立体关系｜三层地下空间、负一层下沉庭院、地上园林与架空层层层衔接，形成连续的社区生活界面。\n系统画面｜总图旋转、地上地下分层与纵向剖切，让每一层空间怎样服务日常一目了然。","textPreview":"土地组织｜约20.74亩土地以4栋住宅围合中央空间，楼栋、庭院与归家关系在有限土地上清楚展开。 | 立体关系｜三层地下空间、负一层下沉庭院、地上园林与架空层层层衔接，形成连续的社区生活界面。 | 系统画面｜总图旋转、地上地下分层与纵向剖切，让每一层空间怎样服务日常一目了然。","textChars":133,"textLines":3,"bbox":[64,154,1120,58]}
+{"kind":"shape","id":"sh/idgvmx8r","slide":14,"name":"圆角矩形 4","bbox":[64,220,548,404]}
+{"kind":"shape","id":"sh/5grehs7i","slide":14,"name":"圆角矩形 5","bbox":[668,220,548,404]}
+{"kind":"textbox","id":"sh/kfidonqx","slide":14,"name":"圆角矩形 6","text":"总图统筹楼栋、庭院与归家关系，城市密度被组织成清楚秩序","textPreview":"总图统筹楼栋、庭院与归家关系，城市密度被组织成清楚秩序","textChars":27,"textLines":1,"bbox":[82,230,512,44]}
+{"kind":"textbox","id":"sh/zi5c3y98","slide":14,"name":"圆角矩形 7","text":"地下到地上层层联动，1、2、5号楼架空空间继续延展公共生活","textPreview":"地下到地上层层联动，1、2、5号楼架空空间继续延展公共生活","textChars":29,"textLines":1,"bbox":[686,230,512,44]}
+{"kind":"textbox","id":"sh/a1wze9g7","slide":14,"name":"圆角矩形 11","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1180,684,44,18]}
+{"kind":"image","id":"im/0vud8v2d","slide":14,"name":"图片 22","bbox":[82,284,512,316]}
+{"kind":"image","id":"im/rq1cvq1g","slide":14,"name":"图片 23","bbox":[686,284,512,316]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P14\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 本页承接已验收的竞争态势、客群判断与超级竞争力；公开发行以本终稿正文为准\n[/Sources]\n\n[Speaker] 用总图与分层画面证明核心土地的每一层怎样服务真实社区生活。"}
+{"kind":"slide","id":"sl/vaxsvy10","slide":15,"title":"地下空间，从停车配套升级为松弛感的第一段体验","textShapes":5}
+{"kind":"textbox","id":"sh/547mhg3m","slide":15,"name":"圆角矩形 1","text":"地下空间，从停车配套升级为松弛感的第一段体验","textPreview":"地下空间，从停车配套升级为松弛感的第一段体验","textChars":22,"textLines":1,"bbox":[64,68,1152,66]}
+{"kind":"shape","id":"sh/k3y5ov21","slide":15,"name":"圆角矩形 2","bbox":[64,143,90,4]}
+{"kind":"textbox","id":"sh/76p4jqls","slide":15,"name":"圆角矩形 3","text":"归家序列｜三层地下空间把停车、下客、步行穿庭和楼栋入户串成完整归家动线。\n下沉庭院｜中央负一层把地下到达带向自然光与庭院景观，到达、停留与入户层层递进。\n系统画面｜车库低位视角、步行路径与纵向剖面连续切换，松弛从回家第一步一直看到入户。","textPreview":"归家序列｜三层地下空间把停车、下客、步行穿庭和楼栋入户串成完整归家动线。 | 下沉庭院｜中央负一层把地下到达带向自然光与庭院景观，到达、停留与入户层层递进。 | 系统画面｜车库低位视角、步行路径与纵向剖面连续切换，松弛从回家第一步一直看到入户。","textChars":118,"textLines":3,"bbox":[64,154,1120,58]}
+{"kind":"shape","id":"sh/65gnqlk7","slide":15,"name":"圆角矩形 4","bbox":[64,220,548,404]}
+{"kind":"shape","id":"sh/t87ml0ji","slide":15,"name":"圆角矩形 5","bbox":[668,220,548,404]}
+{"kind":"textbox","id":"sh/s7y5sv2x","slide":15,"name":"圆角矩形 6","text":"下沉庭院让地下到达见光、见绿、可停留，归家不再只是穿过车库","textPreview":"下沉庭院让地下到达见光、见绿、可停留，归家不再只是穿过车库","textChars":29,"textLines":1,"bbox":[82,230,512,44]}
+{"kind":"textbox","id":"sh/na5476l8","slide":15,"name":"圆角矩形 7","text":"停车、下客、步行与入户一线串联，让归家更从容、更有秩序","textPreview":"停车、下客、步行与入户一线串联，让归家更从容、更有秩序","textChars":27,"textLines":1,"bbox":[686,230,512,44]}
+{"kind":"textbox","id":"sh/upkrilwj","slide":15,"name":"圆角矩形 11","text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1180,684,44,18]}
+{"kind":"image","id":"im/wbalg3a1","slide":15,"name":"图片 22","bbox":[82,284,512,316]}
+{"kind":"image","id":"im/je14bi9s","slide":15,"name":"图片 23","bbox":[686,284,512,316]}
+{"kind":"notes","id":"nt/vaxsvy10","slide":15,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P15\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 本页承接已验收的竞争态势、客群判断与超级竞争力；公开发行以本终稿正文为准\n[/Sources]\n\n[Speaker] 用车库、下沉庭院与步行路径证明松弛感从归家第一步开始。"}
+{"kind":"slide","id":"sl/gny5sjyp","slide":16,"title":"把城市便利留在外部，把松弛生活留在内部","textShapes":5}
+{"kind":"textbox","id":"sh/8z2h8bq1","slide":16,"name":"圆角矩形 1","text":"把城市便利留在外部，把松弛生活留在内部","textPreview":"把城市便利留在外部，把松弛生活留在内部","textChars":19,"textLines":1,"bbox":[64,68,1152,66]}
+{"kind":"shape","id":"sh/9kby1g7m","slide":16,"name":"圆角矩形 2","bbox":[64,143,90,4]}
+{"kind":"textbox","id":"sh/ytkf2h8j","slide":16,"name":"圆角矩形 3","text":"内外边界｜沿街商业与城市便利停在外部界面，中央庭院与架空空间把安静、停留和家庭交往留在内部。\n全天使用｜从城市到庭院再到楼栋，开放与私密形成清楚层次，不同时段、不同天气都有自然停留的空间。\n系统画面｜外部界面、中央庭院和架空层分层点亮，城市便利与社区松弛的边界随视角切换清楚呈现。","textPreview":"内外边界｜沿街商业与城市便利停在外部界面，中央庭院与架空空间把安静、停留和家庭交往留在内部。 | 全天使用｜从城市到庭院再到楼栋，开放与私密形成清楚层次，不同时段、不同天气都有自然停留的空间。 | 系统画面｜外部界面、中央庭院和架空层分层点亮，城市便利与社区松弛的边界随视角...","textChars":140,"textLines":3,"bbox":[64,154,1120,58]}
+{"kind":"shape","id":"sh/zutgvm94","slide":16,"name":"圆角矩形 4","bbox":[64,220,548,404]}
+{"kind":"shape","id":"sh/kv2h4rqp","slide":16,"name":"圆角矩形 5","bbox":[668,220,548,404]}
+{"kind":"textbox","id":"sh/lwbyxwra","slide":16,"name":"圆角矩形 6","text":"庭院归内｜城市便利触手可及，社区内部仍然安静、松弛","textPreview":"庭院归内｜城市便利触手可及，社区内部仍然安静、松弛","textChars":25,"textLines":1,"bbox":[82,230,512,44]}
+{"kind":"textbox","id":"sh/ip4zel83","slide":16,"name":"圆角矩形 7","text":"架空层延展｜1、2、5号楼下方承接休憩、交往与全天候停留","textPreview":"架空层延展｜1、2、5号楼下方承接休憩、交往与全天候停留","textChars":28,"textLines":1,"bbox":[686,230,512,44]}
+{"kind":"textbox","id":"sh/1ojy10ne","slide":16,"name":"圆角矩形 11","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1180,684,44,18]}
+{"kind":"image","id":"im/7mtsba9g","slide":16,"name":"图片 22","bbox":[82,284,512,316]}
+{"kind":"image","id":"im/kji90fa5","slide":16,"name":"图片 23","bbox":[686,284,512,316]}
+{"kind":"notes","id":"nt/gny5sjyp","slide":16,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P16\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 本页承接已验收的竞争态势、客群判断与超级竞争力；公开发行以本终稿正文为准\n[/Sources]\n\n[Speaker] 用内外边界与全天使用证明城市便利留在外部，社区松弛留在内部。"}
+{"kind":"slide","id":"sl/14bup87q","slide":17,"title":"把长期居住的最真实需要，做成每种产品的标准配置","textShapes":8}
+{"kind":"textbox","id":"sh/gbedwfmx","slide":17,"name":"title","text":"把长期居住的最真实需要，做成每种产品的标准配置","textPreview":"把长期居住的最真实需要，做成每种产品的标准配置","textChars":23,"textLines":1,"bbox":[64,72,1120,48]}
+{"kind":"textbox","id":"sh/rm5czq50","slide":17,"name":"矩形 3","text":"本案以公私秩序、生活后场、采光视线、使用频率与长期维护作为每一种产品的共同标准，让纸面面积真正回到每天好住。","textPreview":"本案以公私秩序、生活后场、采光视线、使用频率与长期维护作为每一种产品的共同标准，让纸面面积真正回到每天好住。","textChars":54,"textLines":1,"bbox":[64,122,1120,28]}
+{"kind":"shape","id":"sh/6lwvql4v","slide":17,"name":"圆角矩形 4","bbox":[64,160,360,105]}
+{"kind":"shape","id":"sh/t8ne10n6","slide":17,"name":"圆角矩形 5","bbox":[80,176,160,30]}
+{"kind":"textbox","id":"sh/snedsvml","slide":17,"name":"矩形 6","text":"长期好住","textPreview":"长期好住","textChars":4,"textLines":1,"bbox":[90,181,140,20]}
+{"kind":"textbox","id":"sh/jilcvq54","slide":17,"name":"矩形 7","text":"公共生活与私密休息各得其所，多人共居依然保持从容。","textPreview":"公共生活与私密休息各得其所，多人共居依然保持从容。","textChars":25,"textLines":1,"bbox":[82,218,324,33]}
+{"kind":"shape","id":"sh/ihcvml4j","slide":17,"name":"圆角矩形 8","bbox":[456,160,360,105]}
+{"kind":"shape","id":"sh/4by9or6l","slide":17,"name":"圆角矩形 9","bbox":[472,176,160,30]}
+{"kind":"textbox","id":"sh/pc7qhwn6","slide":17,"name":"矩形 10","text":"空间秩序","textPreview":"空间秩序","textChars":4,"textLines":1,"bbox":[482,181,140,20]}
+{"kind":"textbox","id":"sh/29grm1of","slide":17,"name":"矩形 11","text":"收纳家政退出主要生活界面，采光、视线与动线经得住每天。","textPreview":"收纳家政退出主要生活界面，采光、视线与动线经得住每天。","textChars":27,"textLines":1,"bbox":[474,218,324,33]}
+{"kind":"shape","id":"sh/3ap8fm50","slide":17,"name":"圆角矩形 12","bbox":[848,160,360,105]}
+{"kind":"shape","id":"sh/gnepkr69","slide":17,"name":"圆角矩形 13","bbox":[864,176,160,30]}
+{"kind":"textbox","id":"sh/honqdwnu","slide":17,"name":"矩形 14","text":"长期价值","textPreview":"长期价值","textChars":4,"textLines":1,"bbox":[874,181,140,20]}
+{"kind":"textbox","id":"sh/ulw7ihoj","slide":17,"name":"矩形 15","text":"高频空间持续好用，低频空间也有明确用途，让每一平方米都经得起时间。","textPreview":"高频空间持续好用，低频空间也有明确用途，让每一平方米都经得起时间。","textChars":33,"textLines":1,"bbox":[866,218,324,33]}
+{"kind":"image","id":"im/w3mhgvip","slide":17,"name":"图片 33","bbox":[64,328,360,304]}
+{"kind":"image","id":"im/r69gv610","slide":17,"name":"图片 34","bbox":[456,328,360,304]}
+{"kind":"image","id":"im/q50z210f","slide":17,"name":"图片 35","bbox":[848,328,360,304]}
+{"kind":"notes","id":"nt/14bup87q","slide":17,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P17\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 本页承接已验收的竞争态势、客群判断与超级竞争力；公开发行以本终稿正文为准\n[/Sources]\n\n[Speaker] 第三条超级竞争力总纲保持完整主张，长期好住、空间秩序与长期价值逐项成立。"}
+{"kind":"slide","id":"sl/y5wne50z","slide":18,"title":"每一种产品，都把长期好住做成共同标准","textShapes":5}
+{"kind":"textbox","id":"sh/wrelszu9","slide":18,"name":"圆角矩形 1","text":"每一种产品，都把长期好住做成共同标准","textPreview":"每一种产品，都把长期好住做成共同标准","textChars":18,"textLines":1,"bbox":[64,68,1152,66]}
+{"kind":"shape","id":"sh/hsn2l4bu","slide":18,"name":"圆角矩形 2","bbox":[64,143,90,4]}
+{"kind":"textbox","id":"sh/itw3upcf","slide":18,"name":"圆角矩形 3","text":"空间秩序｜公共生活与私密休息各得其所，多人同时工作、学习、会客与休息，空间依然保持秩序。\n长期好住｜收纳、家政与服务退回生活后场，采光、通风、视线与入户关系经得住楼层、时段和长期使用。\n系统画面｜楼层、时段、视角与生活模式联动切换，让纸面户型回到真实可感的长期生活。","textPreview":"空间秩序｜公共生活与私密休息各得其所，多人同时工作、学习、会客与休息，空间依然保持秩序。 | 长期好住｜收纳、家政与服务退回生活后场，采光、通风、视线与入户关系经得住楼层、时段和长期使用。 | 系统画面｜楼层、时段、视角与生活模式联动切换，让纸面户型回到真实可感的长期生活。","textChars":133,"textLines":3,"bbox":[64,154,1120,58]}
+{"kind":"shape","id":"sh/je5knut0","slide":18,"name":"圆角矩形 4","bbox":[64,220,548,404]}
+{"kind":"shape","id":"sh/4felwzu5","slide":18,"name":"圆角矩形 5","bbox":[668,220,548,404]}
+{"kind":"textbox","id":"sh/5gnmp4bq","slide":18,"name":"圆角矩形 6","text":"空间秩序｜公私分开、多人并发互不挤占，家的每一处都能被高频使用","textPreview":"空间秩序｜公私分开、多人并发互不挤占，家的每一处都能被高频使用","textChars":31,"textLines":1,"bbox":[82,230,512,44]}
+{"kind":"textbox","id":"sh/6hw3y9sb","slide":18,"name":"圆角矩形 7","text":"长期价值｜高频空间持续好用，低频空间也有明确用途，维护与居住同样从容","textPreview":"长期价值｜高频空间持续好用，低频空间也有明确用途，维护与居住同样从容","textChars":34,"textLines":1,"bbox":[686,230,512,44]}
+{"kind":"textbox","id":"sh/1cr2tg72","slide":18,"name":"圆角矩形 11","text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1180,684,44,18]}
+{"kind":"image","id":"im/vmhknex4","slide":18,"name":"图片 22","bbox":[82,284,512,316]}
+{"kind":"image","id":"im/4balkjyl","slide":18,"name":"图片 23","bbox":[686,284,512,316]}
+{"kind":"notes","id":"nt/y5wne50z","slide":18,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P18\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 本页承接已验收的竞争态势、客群判断与超级竞争力；公开发行以本终稿正文为准\n[/Sources]\n\n[Speaker] 用楼层、时段、视角与生活模式切换，让纸面户型回到真实可感的长期生活。"}
+{"kind":"slide","id":"sl/nid43ytk","slide":19,"title":"四种生活向往，打开四种更适合的产品答案","textShapes":11}
+{"kind":"textbox","id":"sh/k3y1wri9","slide":19,"name":"ai-preview-title","text":"四种生活向往，打开四种更适合的产品答案","textPreview":"四种生活向往，打开四种更适合的产品答案","textChars":19,"textLines":1,"bbox":[64,54,1152,56]}
+{"kind":"shape","id":"sh/9gb6xgbi","slide":19,"name":"ai-preview-title-line","bbox":[64,126,92,4]}
+{"kind":"textbox","id":"sh/8v2pobax","slide":19,"name":"ai-preview-subtitle","text":"从每天高频生活到长期多元使用，每一种向往都有更适合的空间答案。","textPreview":"从每天高频生活到长期多元使用，每一种向往都有更适合的空间答案。","textChars":31,"textLines":1,"bbox":[64,144,1152,30]}
+{"kind":"shape","id":"sh/vitozqt8","slide":19,"name":"ai-preview-card-1","bbox":[67,194,270,438]}
+{"kind":"shape","id":"sh/ahk7qls3","slide":19,"name":"ai-preview-image-well-1","bbox":[79,206,246,300]}
+{"kind":"textbox","id":"sh/wj2psvat","slide":19,"name":"ai-preview-card-title-1","text":"高频改善","textPreview":"高频改善","textChars":4,"textLines":1,"bbox":[85,520,234,30]}
+{"kind":"textbox","id":"sh/jmd83atk","slide":19,"name":"ai-preview-card-body-1","text":"在可控支付内，让房间、公共生活、收纳与家务一次排开。","textPreview":"在可控支付内，让房间、公共生活、收纳与家务一次排开。","textChars":26,"textLines":1,"bbox":[85,552,234,62]}
+{"kind":"shape","id":"sh/il47u5sz","slide":19,"name":"ai-preview-card-2","bbox":[359,194,270,438]}
+{"kind":"shape","id":"sh/cri1gnql","slide":19,"name":"ai-preview-image-well-2","bbox":[371,206,246,300]}
+{"kind":"textbox","id":"sh/qpgjex8f","slide":19,"name":"ai-preview-card-title-2","text":"家庭秩序","textPreview":"家庭秩序","textChars":4,"textLines":1,"bbox":[377,520,234,30]}
+{"kind":"textbox","id":"sh/rqp07290","slide":19,"name":"ai-preview-card-body-2","text":"让多人工作、学习、会客与休息互不挤占。","textPreview":"让多人工作、学习、会客与休息互不挤占。","textChars":19,"textLines":1,"bbox":[377,552,234,62]}
+{"kind":"shape","id":"sh/0vi1k7qx","slide":19,"name":"ai-preview-card-3","bbox":[651,194,270,438]}
+{"kind":"shape","id":"sh/1gridcr2","slide":19,"name":"ai-preview-image-well-3","bbox":[663,206,246,300]}
+{"kind":"textbox","id":"sh/zu90b29c","slide":19,"name":"ai-preview-card-title-3","text":"长期共居","textPreview":"长期共居","textChars":4,"textLines":1,"bbox":[669,520,234,30]}
+{"kind":"textbox","id":"sh/oj21o7qt","slide":19,"name":"ai-preview-card-body-3","text":"让会客、家政、照护与私密彼此成全。","textPreview":"让会客、家政、照护与私密彼此成全。","textChars":17,"textLines":1,"bbox":[669,552,234,62]}
+{"kind":"shape","id":"sh/9kb2hcre","slide":19,"name":"ai-preview-card-4","bbox":[943,194,270,438]}
+{"kind":"shape","id":"sh/x07i1cji","slide":19,"name":"ai-preview-image-well-4","bbox":[955,206,246,300]}
+{"kind":"textbox","id":"sh/vep0z21c","slide":19,"name":"ai-preview-card-title-4","text":"高阶多元","textPreview":"高阶多元","textChars":4,"textLines":1,"bbox":[961,520,234,30]}
+{"kind":"textbox","id":"sh/adgjqx0r","slide":19,"name":"ai-preview-card-body-4","text":"让大家庭、会客、独处、退休与低频使用拥有长期理由。","textPreview":"让大家庭、会客、独处、退休与低频使用拥有长期理由。","textChars":25,"textLines":1,"bbox":[961,552,234,62]}
+{"kind":"textbox","id":"sh/54ri5wje","slide":19,"name":"ai-preview-page-number","text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1180,684,36,18]}
+{"kind":"image","id":"im/kfup07md","slide":19,"name":"图片 29","bbox":[102.16,206,199.67,300]}
+{"kind":"image","id":"im/lg3qtc3y","slide":19,"name":"图片 34","bbox":[394,206,200,300]}
+{"kind":"image","id":"im/i9w7a14b","slide":19,"name":"图片 39","bbox":[686,206,200,300]}
+{"kind":"image","id":"im/ja5836lw","slide":19,"name":"图片 44","bbox":[978,206,200,300]}
+{"kind":"notes","id":"nt/nid43ytk","slide":19,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P19\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n- 本页只预告AI推荐官的四类生活向往，不展开具体面积、总价或看房路线\n[/Sources]\n\n[Speaker] 本页只预告AI推荐官识别四种生活向往；详细分流、具体推荐路线、二维码和手机延续进入产物5。"}
+{"kind":"slide","id":"sl/zyxsni5k","slide":20,"title":"最懂翠湖生活的城市新居，值得被看见，更值得被选择","textShapes":8}
+{"kind":"textbox","id":"sh/rid4nuhs","slide":20,"name":"矩形 2","text":"最懂翠湖生活的城市新居，值得被看见，更值得被选择","textPreview":"最懂翠湖生活的城市新居，值得被看见，更值得被选择","textChars":24,"textLines":1,"bbox":[70,160,1120,110]}
+{"kind":"textbox","id":"sh/qpwjmh8n","slide":20,"name":"矩形 3","text":"一座电子沙盘，完整收藏翠湖生活的下一种答案。","textPreview":"一座电子沙盘，完整收藏翠湖生活的下一种答案。","textChars":22,"textLines":1,"bbox":[70,300,1050,56]}
+{"kind":"shape","id":"sh/rq50vmp8","slide":20,"name":"圆角矩形 4","bbox":[70,420,350,145]}
+{"kind":"textbox","id":"sh/4nu1krqh","slide":20,"name":"矩形 5","text":"成熟城市","textPreview":"成熟城市","textChars":4,"textLines":1,"bbox":[94,447,300,36]}
+{"kind":"textbox","id":"sh/po3itc72","slide":20,"name":"矩形 6","text":"成熟城市在新居里继续","textPreview":"成熟城市在新居里继续","textChars":10,"textLines":1,"bbox":[94,505,300,42]}
+{"kind":"shape","id":"sh/2lczih8r","slide":20,"name":"圆角矩形 7","bbox":[460,420,350,145]}
+{"kind":"textbox","id":"sh/3ml0rmpw","slide":20,"name":"矩形 8","text":"立体社区","textPreview":"立体社区","textChars":4,"textLines":1,"bbox":[484,447,300,36]}
+{"kind":"textbox","id":"sh/gjuhg7ql","slide":20,"name":"矩形 9","text":"从地下到地上完整展开","textPreview":"从地下到地上完整展开","textChars":10,"textLines":1,"bbox":[484,505,315.2,42]}
+{"kind":"shape","id":"sh/hk3ipcr6","slide":20,"name":"圆角矩形 10","bbox":[850,420,350,145]}
+{"kind":"textbox","id":"sh/dkfmp4zy","slide":20,"name":"矩形 11","text":"长期好住","textPreview":"长期好住","textChars":4,"textLines":1,"bbox":[874,447,300,36]}
+{"kind":"textbox","id":"sh/cj65wzyd","slide":20,"name":"矩形 12","text":"成为每一种产品的共同标准","textPreview":"成为每一种产品的共同标准","textChars":12,"textLines":1,"bbox":[874,505,318.33,42]}
+{"kind":"notes","id":"nt/zyxsni5k","slide":20,"text":"[Sources]\n- 授权真实案例：昆明碧桂园翠湖云顶二期产物3阶段终稿\n- 页面语义与演讲职责：examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md#P20\n- 公开授权边界：examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md\n[/Sources]\n\n[Speaker] 回收购买问题、三条超级竞争力与UE证明方式，明确本轮采购获得一套连续销讲与选择系统。"}

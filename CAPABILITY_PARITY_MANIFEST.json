@@ -20,15 +20,16 @@
     "empty_disabled_product_files_required": false,
     "machine_checks_have_veto_not_business_approval": true,
     "client_reports_and_machine_summaries_physically_separated": true,
-    "real_client_materials_included": false,
-    "public_safe_structural_derivatives_required": true,
+    "explicitly_authorized_real_client_materials_may_be_included": true,
+    "unauthorized_client_materials_require_anonymization_or_structural_distillation": true,
+    "credentials_paths_internal_runtime_state_always_excluded": true,
     "workbuddy_blind_training_included": false,
     "private_evaluation_holdout_included": false
   },
   "classification_definitions": {
     "public_required": "现行平台中立能力，必须公开继承",
     "portable_adaptation": "保留完整能力，替换本机路径、身份或平台实现",
-    "private_replaced": "私有原件不公开，以结构等价匿名或虚构资产替代",
+    "private_replaced": "未获公开授权的私有原件不公开，以结构等价匿名、虚构或蒸馏资产替代；已明确获权的真实材料可按边界进入",
     "retired_excluded": "历史退役或非黄金路径，不进入当前入口"
   },
   "status_definitions": {
@@ -163,11 +164,11 @@
       "id": "CAP-010",
       "name": "产物3策略推导、页面语义与完整装配",
       "domain": "product3",
-      "classification": "private_replaced",
+      "classification": "portable_adaptation",
       "source_authority_ids": ["product3_strategy_and_ue", "product3_gold_assembly"],
       "public_targets": ["core/06-产物3从竞争策略到UE解决方案.md", "templates/产物3第二章生产消费合同.template.json", "templates/产物3第三章生产消费合同.template.json", "references/product3", "examples/gold-product3-public-safe", "adapters/presentation/README.md"],
       "load_condition": "product3_enabled_or_material_structure_change",
-      "acceptance": "页面语义、视觉结构、组合范式、删除禁用、首稿完整度和可编辑PPT形成完整公开参考",
+      "acceptance": "当前20页用户验收终稿是机器可读黄金权威；页面语义、非对称证明、单页轻量AI推荐、真实地图署名、断言门禁、首稿完整度和可编辑PPT形成完整公开参考",
       "status": "implemented_current",
       "gap": ""
     },
@@ -206,7 +207,7 @@
       "public_targets": ["references/production-reference-index.json", "references/learning-feedback", "examples/production-path-tutorial", "examples/production-path-revision", "examples/end-to-end-public-safe", "examples/gold-product3-public-safe", "examples/gold-product5-public-safe"],
       "planned_public_targets": [],
       "load_condition": "stage_specific_reference_lookup",
-      "acceptance": "至少两至三套完整项目、正式产物参考、正反例和真人修订反馈可被路由调用",
+      "acceptance": "至少两至三套完整项目、三份历史成功产物3的匿名结构蒸馏、当前授权真实黄金、正式产物参考、正反例和真人修订反馈可被路由调用",
       "status": "implemented_current",
       "gap": ""
     },
@@ -254,7 +255,7 @@
       "source_authority_ids": ["main_entry_and_status"],
       "public_targets": ["RELEASE_STATUS.md", "RELEASE_MANIFEST.json", "PUBLIC_CORE_MANIFEST.json", "CAPABILITY_PARITY_CONTRACT.md", "CAPABILITY_PARITY_MANIFEST.json"],
       "load_condition": "every_release_change",
-      "acceptance": "所有能力已分类，公开目标存在，敏感扫描和干净克隆通过，标签状态真实",
+      "acceptance": "所有能力已分类，公开目标存在，资料授权状态可机读，未授权材料与路径凭据扫描、干净克隆通过，标签状态真实",
       "status": "implemented_current",
       "gap": ""
     },
@@ -266,7 +267,7 @@
       "source_authority_ids": ["main_entry_and_status", "platform_neutral_learning_feedback"],
       "public_targets": ["RETIRED_AND_PRIVATE_BOUNDARY.md"],
       "load_condition": "release_extraction_or_history_dispute",
-      "acceptance": "退役路径只保留索引，真实材料用结构等价替代，运行现场不冒充可继承能力",
+      "acceptance": "退役路径只保留索引；真实材料按明确授权进入或用结构等价替代；运行现场不冒充可继承能力",
       "status": "retired_excluded",
       "gap": ""
     }

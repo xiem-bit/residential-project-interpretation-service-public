@@ -1,7 +1,9 @@
 {
   "schema": "residential.product3_page_semantics.v1",
   "concept_rule": "page_responsibility_is_a_field_of_page_semantics_not_a_parallel_library",
-  "default_priority": "complete_gold_combination_then_project_specific_recomposition",
+  "default_priority": "accepted_gold_authority_then_page_responsibilities_then_semantics_then_historical_distillation",
+  "gold_authority": "examples/gold-product3-public-safe/gold-authority.json",
+  "historical_basis": "three_prior_success_decks_76_pages_plus_current_accepted_gold_20_pages",
   "groups": [
     {"id": "P3-G0-FRAME", "name": "叙事定题与转场", "responsibility": "定题、换章和收口，不承担中段论证"},
     {"id": "P3-G1-OBSERVE", "name": "研究与选择局面", "responsibility": "说明判断从哪里来，并把真实替代放进同一选择"},
@@ -108,9 +110,10 @@
     },
     {
       "id": "P3-AI-RECOMMENDER", "name": "AI推荐官", "group_id": "P3-G5-SCOPE",
-      "responsibility": "说明推荐分流怎样打开适合内容", "use_when": "推荐官已启用且选择条件与内容分流闭合",
-      "required_content": "输入条件、判断逻辑、打开内容和人工接待衔接", "visual_structure": "条件与逻辑连接桌面结果和手机延续",
-      "speaking_action": "提出条件、演示分流、说明顾问如何继续", "evidence_responsibility": "不夸大模型能力，不把概念演示写成已上线效果", "transition": "进入最终收口"
+      "responsibility": "用一页轻量预告说明推荐分流怎样打开适合内容", "use_when": "推荐官已启用、能力可兑现且选择条件与内容分流闭合",
+      "max_pages_in_product3": 1, "full_experience_owner": "product5",
+      "required_content": "有限输入条件、分流答案和人工接待衔接", "visual_structure": "一页呈现条件与对应产品或内容答案",
+      "speaking_action": "提出条件、预告分流、说明顾问如何继续", "evidence_responsibility": "不夸大模型能力，不把概念演示写成已上线效果；二维码、手机延续和完整推荐结果留在产物5", "transition": "进入最终收口"
     },
     {
       "id": "P3-CLOSING-OUTCOME", "name": "最终收口", "group_id": "P3-G0-FRAME",

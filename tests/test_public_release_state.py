@@ -31,6 +31,9 @@ class PublicReleaseStateTest(unittest.TestCase):
         self.assertEqual(manifest["rights"]["license"], "Apache-2.0")
         self.assertTrue(manifest["rights"]["rights_holder_approval_confirmed"])
         self.assertTrue(manifest["rights"]["public_distribution_authorized"])
+        self.assertTrue(manifest["rights"]["authorized_real_client_materials_may_be_included"])
+        self.assertTrue(manifest["rights"]["unauthorized_client_materials_require_anonymization_or_structural_distillation"])
+        self.assertTrue(manifest["rights"]["credentials_paths_internal_runtime_state_always_excluded"])
         self.assertEqual(manifest["public_release"]["visibility"], "public")
         self.assertEqual(
             manifest["public_release"]["repository"],

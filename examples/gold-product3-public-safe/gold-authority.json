@@ -1,0 +1,60 @@
+{
+  "schema": "residential.product3_gold_authority.v1",
+  "status": "authorized_current_gold_candidate_not_released",
+  "authority_file": "产物3-昆明碧桂园翠湖云顶二期-CHYD2-M9-v1.8-授权公开黄金参考.pptx",
+  "authority_sha256": "29a4fc51d698725f728672ecffa769d19e855f3a87671e8cd948a5c813fe61fa",
+  "accepted_source_sha256": "3b8270767227c2871abd278037f03000181dbc7131c2a06304bbc1525bae6891",
+  "visible_render_identity": "20_of_20_png_sha256_equal",
+  "slide_count": 20,
+  "notes_sources_count": 20,
+  "qa_render_count": 20,
+  "map_policy": {
+    "standard_map_slides": [5, 6, 7],
+    "same_base_map": true,
+    "ai_generated_map": false,
+    "required_visible_attribution": "© OpenStreetMap contributors"
+  },
+  "page_roles": [
+    {"slide": 1, "semantic": "P3-COVER-CLAIM", "role": "cover"},
+    {"slide": 2, "semantic": "P3-SECTION-PROMISE", "role": "chapter_2"},
+    {"slide": 3, "semantic": "P3-BUYER-VOICE", "role": "ten_buyer_voices"},
+    {"slide": 4, "semantic": "P3-CHOICE-SITUATION", "role": "four_choices"},
+    {"slide": 5, "semantic": "P3-COMPETITION-MAP", "role": "city_relationship"},
+    {"slide": 6, "semantic": "P3-COMPETITION-MAP", "role": "community_relationship"},
+    {"slide": 7, "semantic": "P3-COMPETITION-MAP", "role": "product_relationship"},
+    {"slide": 8, "semantic": "P3-SC-OVERVIEW", "role": "three_sc_dictionary"},
+    {"slide": 9, "semantic": "P3-SECTION-PROMISE", "role": "chapter_3"},
+    {"slide": 10, "semantic": "P3-SC-SCENE", "role": "sc_1_open"},
+    {"slide": 11, "semantic": "P3-SC-PROOF", "role": "sc_1_proof_1"},
+    {"slide": 12, "semantic": "P3-SC-PROOF", "role": "sc_1_proof_2"},
+    {"slide": 13, "semantic": "P3-SC-SCENE", "role": "sc_2_open"},
+    {"slide": 14, "semantic": "P3-SC-PROOF", "role": "sc_2_proof_1"},
+    {"slide": 15, "semantic": "P3-SC-PROOF", "role": "sc_2_proof_2"},
+    {"slide": 16, "semantic": "P3-SC-PROOF", "role": "sc_2_proof_3"},
+    {"slide": 17, "semantic": "P3-SC-SCENE", "role": "sc_3_open"},
+    {"slide": 18, "semantic": "P3-SC-PROOF", "role": "sc_3_proof_1"},
+    {"slide": 19, "semantic": "P3-AI-RECOMMENDER", "role": "lightweight_ai_recommender_preview"},
+    {"slide": 20, "semantic": "P3-CLOSING-OUTCOME", "role": "closing"}
+  ],
+  "proof_depth_by_sc": [3, 4, 2],
+  "ai_recommender_slides": [19],
+  "default_combination_excludes": ["P3-FAMILY-SEGMENT", "P3-FAMILY-PATH", "P3-UE-BLUEPRINT"],
+  "new_project_inheritance": {
+    "fixed_slide_count": false,
+    "fixed_slide_order": false,
+    "fixed_proof_depth": false,
+    "inherit_project_facts": false,
+    "inherit_page_semantics_visual_structure_and_rhythm": true
+  },
+  "historical_structural_basis": {
+    "prior_success_decks": 3,
+    "prior_success_pages": 76,
+    "current_authority_pages": 20,
+    "total_reviewed_pages": 96,
+    "prior_client_materials_included": false,
+    "distilled_semantics": 17,
+    "distilled_visual_prototypes": 19
+  },
+  "authorization_boundary": "AUTHORIZATION_BOUNDARY.md",
+  "page_responsibilities": "PAGE_RESPONSIBILITIES.md"
+}

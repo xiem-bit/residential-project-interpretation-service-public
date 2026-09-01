@@ -25,9 +25,9 @@
       "id": "LF-P3-001",
       "stage": "product3_assembly",
       "before_problem": "把一套成功终稿拆成过细逐页合同、差异审批和新页面体系，工程成本超过首稿质量收益。",
-      "human_revision": "保留一个完整黄金组合、现有页面语义字段、删除禁用清单和首稿完整度门槛；完整组合的默认优先级高于零散页面拼装。",
+      "human_revision": "把用户验收的20页终稿设为机器可读黄金权威，保留现有页面语义字段、三份历史成功稿的匿名结构蒸馏、删除禁用清单和首稿完整度门槛；完整组合的默认优先级高于零散页面拼装。",
       "transferable_reason": "完整组合保留叙事节奏与真人取舍，页面语义支持按项目重组，两者共同覆盖质量与弹性。",
-      "do_not_transfer": "来源终稿的固定页数、具体页序、项目文案、图片和证明页数量。",
+      "do_not_transfer": "来源终稿的固定页数、具体页序、项目事实和证明页数量；真实文案和图片只有在明确公开授权范围内保留。",
       "resulting_rule_refs": ["references/product3/README.md", "references/product3/page-semantics.json"]
     },
     {
@@ -47,6 +47,15 @@
       "transferable_reason": "真人首轮应判断业务表达与取舍，而不是补全机器尚未完成的基础生产。",
       "do_not_transfer": "把机器检查、渲染完成或文件生成写成真人已经接受。",
       "resulting_rule_refs": ["references/product3/README.md", "examples/gold-product3-public-safe/README.md"]
+    },
+    {
+      "id": "LF-P3-004",
+      "stage": "product3_gold_authority",
+      "before_problem": "19页虚构结构稿的目录、说明、代表页和结构测试彼此自洽，因此被误升格为黄金；测试只证明文件完整，没有核对私有主工程已经冻结的20页用户验收终稿、三份历史成功稿蒸馏结论、轻量AI推荐官和断言门禁。",
+      "human_revision": "以20页用户验收终稿及其哈希建立gold-authority机器权威，逐页锁定三张同底图竞争关系、3／4／2页非对称证明、第19页轻量AI推荐和第20页收口；把其他三份成功PPT只作为未授权结构蒸馏，并新增拒收旧19页资产、错误页数、地图署名缺失和断言门禁缺失的回归。",
+      "transferable_reason": "黄金来源选择必须先于结构完整性验证；文档自洽、可编辑、可渲染和测试通过都不能证明选中了真人验收权威。",
+      "do_not_transfer": "把20页、具体页序、当前项目事实或3／4／2证明深度机械复制到新项目；也不公开其他三份未授权客户PPT。",
+      "resulting_rule_refs": ["AGENT_RULES.md", "examples/gold-product3-public-safe/gold-authority.json", "references/product3/HISTORICAL_SUCCESS_DISTILLATION.md", "tests/test_product3_gold_authority.py"]
     },
     {
       "id": "LF-P5-001",
@@ -95,4 +104,3 @@
     }
   ]
 }
-

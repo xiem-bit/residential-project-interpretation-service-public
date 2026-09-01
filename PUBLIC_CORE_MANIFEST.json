@@ -3,7 +3,7 @@
   "status": "public_prerelease_parity_migration_apache_2_0",
   "candidate": "v0.2.0-rc.1",
   "source_commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
-  "extraction_policy": "fixed_clean_source_complete_semantic_parity_and_public_safe_asset_replacement",
+  "extraction_policy": "fixed_clean_source_complete_semantic_parity_and_rights_aware_asset_selection",
   "authority_map": "PRODUCTION_AUTHORITY_MAP.json",
   "capability_parity_contract": "CAPABILITY_PARITY_CONTRACT.md",
   "capability_parity_manifest": "CAPABILITY_PARITY_MANIFEST.json",
@@ -15,7 +15,11 @@
     "license_file": "LICENSE",
     "rights_holder_approval_confirmed": true,
     "public_distribution_authorized": true,
-    "use_modify_redistribute_open_to_anyone_under_license": true
+    "use_modify_redistribute_open_to_anyone_under_license": true,
+    "authorized_real_client_materials_may_be_included": true,
+    "unauthorized_client_materials_require_anonymization_or_structural_distillation": true,
+    "credentials_paths_internal_runtime_state_always_excluded": true,
+    "product3_authorization_boundary": "examples/gold-product3-public-safe/AUTHORIZATION_BOUNDARY.md"
   },
   "public_release": {
     "repository": "https://github.com/xiem-bit/residential-project-interpretation-service-public",
@@ -74,10 +78,10 @@
     "current_status": "product3_product5_gold_complete_product4_excluded_learning_feedback_complete_install_pending_not_release_ready"
   },
   "forbidden_public_content": [
-    "real_project_or_customer_materials",
+    "unauthorized_real_project_or_customer_materials",
     "restricted_assets",
     "credentials_or_private_runtime_state",
-    "real_private_gold_assets_without_public_safe_replacement",
+    "unauthorized_private_gold_assets_without_public_safe_replacement",
     "private_evaluation_materials",
     "private_git_history"
   ],

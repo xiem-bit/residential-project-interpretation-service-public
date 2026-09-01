@@ -26,8 +26,10 @@
       "type": "production_reference",
       "stage": "product3_complete_gold",
       "path": "examples/gold-product3-public-safe",
-      "mechanisms": ["complete_combination", "page_semantics", "first_review_threshold"],
-      "load_when": "新的完整产物3、整套重制或实质改变页面组合",
+      "mechanisms": ["accepted_gold_authority", "three_historical_success_decks_distilled", "same_base_real_maps", "asymmetric_sc_proof", "single_lightweight_ai_recommender", "assertive_writing_gate"],
+      "authorization": "explicit_client_publication_authorization_confirmed",
+      "authority": "examples/gold-product3-public-safe/gold-authority.json",
+      "load_when": "新的完整产物3、整套重制、实质改变页面组合或黄金身份争议",
       "may_supply_project_facts": false
     },
     {
@@ -59,4 +61,3 @@
     }
   ]
 }
-

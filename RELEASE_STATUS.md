@@ -20,7 +20,7 @@
 - 允许／禁止推导关系、六段SC因果和成组正反例已经进入现行机器Harness；机器只否决显式跨步，不替代商业判断；
 - 产物1／2甲方正式报告已经与机器摘要物理分离，现有青岚澄境全量虚构教程已升级为第一套正式报告级公开安全参考；
 - A／B／C三级断言写作、去内部化、来源邻接和正式载体检查已经进入现有住宅生产总控，不新增平行Skill；
-- 产物3已经形成统一的页面语义库、黄金组合、删除禁用清单和首稿完整度门槛，并提供19页可编辑PPTX、逐页来源备注、同版渲染和19／19视觉检查；“页面职责”继续作为页面语义字段，不另建平行概念或Skill；
+- 产物3黄金权威已纠正为用户验收的20页授权真实终稿：提供可编辑PPTX、20／20逐页来源备注、同版渲染、真实标准地图与OpenStreetMap署名、20／20视觉检查和机器权威；三份历史成功稿76页只以匿名结构蒸馏进入17种页面语义，不公开未授权原件；
 - 产物5已经形成项目中立的完整运行时、四问分流、三类高密度推荐、手机路线、正式网址触发二维码、动效、公开安全生成式画面和桌面／手机同版QA；唯一源码继续位于`tools/product5_shell/`，黄金参考不复制平行实现；
 - 共享参考库已经登记两套机制不同的完整公开安全项目：青岚澄境覆盖产物1、2、3、5全链，望川序覆盖城市核心换新与产物1按需收口；两套均通过现行生产校验；
 - 真人修订反馈已经以“原稿问题—真人修改—可迁移原因—不可平移内容”登记报告、产物3、产物5和增量检索的十组平台中立模式，并通过统一参考索引按阶段路由；
@@ -29,6 +29,14 @@
 ## 当前尚未成立
 
 - 统一安装、doctor、产物3／5专业适配和干净安装验收尚未完成。
+
+## 产物3黄金权威纠正
+
+此前19页虚构稿错误占据黄金入口。它的文件、README、代表页和结构检查彼此自洽，但其叙事链包含家庭分类、家庭路径、UE蓝图和更重的推荐机制，未继承私有主工程已经冻结的20页用户验收终稿。该状态已退役，不再构成现行黄金、回归输入或安装预期。
+
+修正后的默认组合是：01封面；02第二章；03十条客户声音；04四种选择；05—07三张同底图竞争关系；08三条超级竞争力总词典；09第三章；10—12第一条竞争力；13—16第二条竞争力；17—18第三条竞争力；19一页轻量AI推荐官预告；20收口。三条证明采用3／4／2页非对称深度；新项目不刚性继承20页、具体页序或证明页数量。
+
+漂移修复不只替换文件：`gold-authority.json`锁定黄金文件、哈希、20页职责、地图署名与AI推荐官页数；公开测试拒收旧19页资产、错误页数、错误备注、缺失地图署名和断言门禁缺失。结构测试或渲染成功不再能够单独证明黄金来源选择正确。
 
 ## 本次发行明确排除
 
@@ -43,6 +51,6 @@
 
 ## 当前切片
 
-`dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`、`client_report_machine_summary_separation`、`product3_public_safe_gold`、`product5_public_safe_gold`与`multi_mechanism_learning_reference_library`已经进入验证。下一步完成统一安装、doctor、干净克隆与产物3／5适配验收。
+`dynamic_enablement_and_harness_decoupling`、`sc_causal_chain_and_inference_firewall`、`incremental_research_and_adoption_receipts`、`cross_package_candidate_conformance`、`client_report_machine_summary_separation`、`product3_authorized_gold_authority_corrected`、`product5_public_safe_gold`与`multi_mechanism_learning_reference_library`已经进入验证。下一步恢复安装切片，完成统一安装、doctor、干净克隆与产物3／5适配验收。
 
 当前候选不得创建或推送`v0.2.0-rc.1`标签。完成`CAPABILITY_PARITY_MANIFEST.json`中的全部发布阻断项、干净克隆和双包端到端验收后，才能申请正式发布授权。
