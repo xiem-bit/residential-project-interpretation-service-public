@@ -3,14 +3,16 @@
   "candidate_version": "v0.2.0-rc.1",
   "source_baseline": {
     "repository_role": "private_method_authority",
-    "commit": "21a68a543ee7322a0a2532a0c254ecf211d1a878",
+    "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
     "worktree_required_clean": true,
-    "extraction_method": "public_safe_operational_distillation"
+    "extraction_method": "public_safe_semantic_parity_with_private_asset_replacement"
   },
   "precedence": [
     "START_HERE.md",
     "AGENT_RULES.md",
     "RELEASE_STATUS.md",
+    "CAPABILITY_PARITY_CONTRACT.md",
+    "CAPABILITY_PARITY_MANIFEST.json",
     "core/00-权威生产路径.md",
     "PRODUCTION_PATH_MANIFEST.json",
     "workflows/residential-production-orchestrator/SKILL.md",
@@ -26,7 +28,7 @@
         {"path": "docs/当前状态.md", "git_blob": "41ba4caa5a070a7b6b382dfa042fc34927820068"}
       ],
       "public": ["START_HERE.md", "AGENT_RULES.md", "RELEASE_STATUS.md", "core/00-权威生产路径.md"],
-      "coverage": "full_operational_distillation"
+      "coverage": "partial_dynamic_routing_upgrade_required"
     },
     {
       "authority": "cross_product_contract_and_quality_baseline",
@@ -41,7 +43,7 @@
         "core/05-产物启用与生产准入.md",
         "PRODUCTION_PATH_MANIFEST.json"
       ],
-      "coverage": "full_operational_distillation"
+      "coverage": "partial_reasoning_harness_upgrade_required"
     },
     {
       "authority": "formal_annexes",
@@ -55,7 +57,7 @@
         "templates/附表B-超级竞争力与制作规划.md",
         "templates/附表C-产物启用与验收矩阵.md"
       ],
-      "coverage": "full_operational_distillation"
+      "coverage": "partial_incremental_and_receipt_fields_upgrade_required"
     },
     {
       "authority": "project_contract_and_upstream",
@@ -69,7 +71,7 @@
         "core/03-产物2购买决策研究.md",
         "templates/真实项目有效任务合同.md"
       ],
-      "coverage": "full_operational_distillation"
+      "coverage": "partial_gold_and_incremental_research_upgrade_required"
     },
     {
       "authority": "product3_strategy_and_ue",
@@ -85,7 +87,7 @@
         "templates/产物3第三章生产消费合同.template.json",
         "templates/UE解决方案交接.template.json"
       ],
-      "coverage": "full_business_path_adapter_implementation_separate"
+      "coverage": "partial_public_safe_gold_and_assembly_required"
     },
     {
       "authority": "product4_product5_and_change",
@@ -98,7 +100,117 @@
         "core/08-产物5交互蓝图.md",
         "core/09-变更回写与重投影.md"
       ],
-      "coverage": "full_operational_distillation"
+      "coverage": "partial_public_safe_gold_implementation_required"
+    },
+    {
+      "authority": "public_channel_and_incremental_research",
+      "source": [
+        {"path": "docs/04-二期四渠道业务消费方法.md", "git_blob": "91f24cbca9cc08b0361bdd9ed66b76160968c786"},
+        {"path": "docs/23-产物1至2搜索前置与产物4价值框架生产规范_v1.0.md", "git_blob": "352137752baba001fa6c5553c9e7f73ac3cd5b64"},
+        {"path": "templates/住宅项目上游检索任务与回传表_v1.0.md", "git_blob": "41c86cd2dd107cf6dc9e02e63d345eca7f6b6d4e"}
+      ],
+      "public": [
+        "external-capabilities/README.md",
+        "external-capabilities/upstream-task.schema.json",
+        "external-capabilities/upstream-response.schema.json",
+        "templates/附表A-上游检索任务与回传.md"
+      ],
+      "coverage": "partial_cross_package_and_incremental_contract_upgrade_required"
+    },
+    {
+      "authority": "customer_facing_assertion_and_delivery_qa",
+      "source": [
+        {"path": "docs/16-断言式书写规范_v1.0.md", "git_blob": "9c94fe6d6d12d7fda0585b4d50f78302fa6fdd9d"},
+        {"path": "tools/skills/chinese-affirmative-business-editor/SKILL.md", "git_blob": "20927260a755eaa10c412d00730e2201fb6a0099"},
+        {"path": "templates/正式甲方成果轻量交付检查清单.md", "git_blob": "e4afd378fe4f580dd50e1f0f27041b4a486d5295"}
+      ],
+      "public": [
+        "AGENT_RULES.md",
+        "tools/chinese_copy_lint/affirmative_statement_lint.py",
+        "fixtures/client-review"
+      ],
+      "coverage": "partial_abc_semantic_review_and_delivery_qa_required"
+    },
+    {
+      "authority": "product1_product2_gold_references",
+      "source": [
+        {"path": "assets/产物1标准样例/翠湖云顶二期/README.md", "git_blob": "399849b4c5806d693f41ed37d625b61c8b8e0858"},
+        {"path": "assets/产物2标准样例/翠湖云顶二期/README.md", "git_blob": "97293a445ccd456c02ab0b3a556f67a6fd46d7de"}
+      ],
+      "public": [
+        "examples/production-path-tutorial"
+      ],
+      "planned_public": [
+        "examples/gold-product1-public-safe",
+        "examples/gold-product2-public-safe"
+      ],
+      "coverage": "public_safe_gold_reports_required"
+    },
+    {
+      "authority": "product3_gold_assembly",
+      "source": [
+        {"path": "docs/33-产物3预排版装配控制台生产规范_v0.1.md", "git_blob": "47b9fcec2be81d399837b945cd0398b6dc392214"},
+        {"path": "docs/34-产物3装配清单到可编辑PPTX全流程生产与定向修订设计_v0.1.md", "git_blob": "aaf7d7a090c7c9780e62c75ea33691867f2a13ea"},
+        {"path": "tools/skills/product3-assembly-console/SKILL.md", "git_blob": "fb843a2a66efaf8075d22cc26ed6a6887b05c88e"},
+        {"path": "assets/产物3页面模板库/README.md", "git_blob": "e675c81643faacb05c33758d759a2eeddee99f33"}
+      ],
+      "public": [
+        "core/06-产物3从竞争策略到UE解决方案.md",
+        "adapters/presentation/README.md"
+      ],
+      "planned_public": [
+        "references/product3",
+        "examples/gold-product3-public-safe"
+      ],
+      "coverage": "public_safe_page_semantics_gold_deck_and_first_draft_threshold_required"
+    },
+    {
+      "authority": "product5_gold_implementation",
+      "source": [
+        {"path": "docs/28-产物5住宅UE交互视觉原型生产规范_v1.0.md", "git_blob": "b305daacfd89c107e2adb34e9fd1b146d3a3d2ac"},
+        {"path": "tools/skills/product5-presales-focus-production/SKILL.md", "git_blob": "2ec852fb436733877d221067862320a4dbca8c8a"},
+        {"path": "assets/产物5标准实现/翠湖云顶二期/README.md", "git_blob": "b12b0d056bbedb9c7683d1acf27321bc442e5ecc"}
+      ],
+      "public": [
+        "core/08-产物5交互蓝图.md",
+        "tools/product5_shell",
+        "adapters/web/README.md"
+      ],
+      "planned_public": [
+        "examples/gold-product5-public-safe",
+        "workflows/product5-presales-focus"
+      ],
+      "coverage": "public_safe_gold_source_motion_ai_mobile_and_qa_required"
+    },
+    {
+      "authority": "shared_production_references",
+      "source": [
+        {"path": "assets/共享样例数据集索引.md", "git_blob": "44104d3add6fb3421109f66a2daa5f1a9acb25d2"},
+        {"path": "assets/产物3案例截图素材库/README.md", "git_blob": "929a0205ab2eedfc6c80dc3ceece1fe370e81356"},
+        {"path": "assets/营销文案表达库/README.md", "git_blob": "8356e007002f36f3a2b6f0f314b4d903d9d94627"},
+        {"path": "assets/产物4标准样例/README.md", "git_blob": "9d379559293ba1e623811da1c6871d2a4f52f61d"}
+      ],
+      "public": [
+        "examples/production-path-tutorial",
+        "examples/production-path-revision"
+      ],
+      "planned_public": [
+        "references/production-reference-index.json",
+        "references/learning-feedback",
+        "examples/end-to-end-public-safe"
+      ],
+      "coverage": "public_safe_reference_registry_and_learning_feedback_required"
+    },
+    {
+      "authority": "platform_neutral_learning_feedback",
+      "source": [
+        {"path": "docs/37-WorkBuddy住宅UE售前能力迁移_阶段工程审计与经验沉淀_20260830.md", "git_blob": "aa002112e3466f21b78b1c6d4ab877a8d5ae162d"}
+      ],
+      "public": [
+        "CAPABILITY_PARITY_CONTRACT.md",
+        "RETIRED_AND_PRIVATE_BOUNDARY.md"
+      ],
+      "coverage": "platform_neutral_relationship_rules_only_platform_process_excluded"
     }
   ],
   "excluded_from_public": [

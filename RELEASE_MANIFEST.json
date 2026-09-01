@@ -1,9 +1,9 @@
 {
   "schema": "residential.public_rc_source_manifest.v0.2",
   "version": "v0.2.0-rc.1",
-  "status": "candidate_unpublished_business_cold_start_pending",
+  "status": "candidate_unpublished_parity_migration_in_progress",
   "latest_published_tag": "v0.1.0-rc.1",
-  "source_commit": "21a68a543ee7322a0a2532a0c254ecf211d1a878",
+  "source_commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
   "excluded": [
     ".git/**",
     ".venv/**",
@@ -14,8 +14,8 @@
     ".DS_Store",
     "RELEASE_MANIFEST.json"
   ],
-  "file_count": 191,
-  "tree_sha256": "1bd9b6cc577bf815269cb74a6080a78fe22b48b26cc1932ee20a3f23340ac3fd",
+  "file_count": 196,
+  "tree_sha256": "ab94c856b759edd2660b0bd51d05b3e452725c979002f807612ebe1d8c4b10b6",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -29,8 +29,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 424,
-      "sha256": "e0dd52fedca8486312e4231712d66a537355621dc00bc809fe08cbe0b28ad1dc"
+      "bytes": 805,
+      "sha256": "c9a406b2c53dd547b7d331697ff9f6e9e5a2c5e682d89eb90127935f1d3e65f8"
     },
     {
       "path": "AGENT_RULES.md",
@@ -53,6 +53,16 @@
       "sha256": "c647af05cbf3775cdee1e328bf49822deae3c26f3754c9fda461d21640b6d265"
     },
     {
+      "path": "CAPABILITY_PARITY_CONTRACT.md",
+      "bytes": 8339,
+      "sha256": "762d8c0e882bb9198acaae6ccb6054370b14b6a941f6d25eb11de23414a2a1be"
+    },
+    {
+      "path": "CAPABILITY_PARITY_MANIFEST.json",
+      "bytes": 16549,
+      "sha256": "90c91f387710818f7a79cd75b12d0b88b779510563f6ba431b7745a8930ee48a"
+    },
+    {
       "path": "COLD_START_PROTOCOL.md",
       "bytes": 3835,
       "sha256": "f6168a5e595dcadbb47c790a550b1381d30d290670ebb01cd49973349dfde848"
@@ -69,8 +79,8 @@
     },
     {
       "path": "PRODUCTION_AUTHORITY_MAP.json",
-      "bytes": 5396,
-      "sha256": "7028f3b0b34e8632cb1d4fe8844b840d6f19b98ad2c563fa5b49859792b71a16"
+      "bytes": 10934,
+      "sha256": "4ba869c4d61f444b26bf2a75d8cd03cf7d84bc6f09a9c51443b59e7af2a42669"
     },
     {
       "path": "PRODUCTION_PATH_MANIFEST.json",
@@ -79,8 +89,8 @@
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
-      "bytes": 2999,
-      "sha256": "786c1db6bc7aaf398c6304b9daf265c3de3e51ce37d15df22457b5f7422df6d8"
+      "bytes": 3573,
+      "sha256": "be08cac0ab29786f72705383fcfe0fbc126cd196ae7091ead9f0aeafea387142"
     },
     {
       "path": "RC1_E2E_VERIFICATION.json",
@@ -89,13 +99,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 2925,
-      "sha256": "d0912ba2d672ebdbda2bd545a957f5b36f7790fd7799550243a70f66e230a59e"
+      "bytes": 3365,
+      "sha256": "ef257b5c807fd1eba7fca4520c8c04f7c7f7d2f723ef70d0132459a8d2dc7f6f"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 1709,
-      "sha256": "088f2b37b653082104e417c311de1b96ac25c45a92d5b07b13b687a72a013e49"
+      "bytes": 2403,
+      "sha256": "c453e273860e5635731e6f2935609ef8e43a9af4ac72da18d5718b983c1b2ef9"
+    },
+    {
+      "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
+      "bytes": 4518,
+      "sha256": "d7d28fa0e69acffe8fe878caf421cd9c2b4746c994029c4e5fd43929bd81deb0"
     },
     {
       "path": "SECURITY.md",
@@ -139,8 +154,8 @@
     },
     {
       "path": "V0_2_RELEASE_SCOPE.md",
-      "bytes": 2149,
-      "sha256": "440ef332ec0edb8419d5c3e7bf120322620a98eacb6ae314f38dc12c919d49ce"
+      "bytes": 2916,
+      "sha256": "7336ae504afdbfb0cd469e1cdd8f54abf126ae0a0b87402f1dfb7efdf6c6cd25"
     },
     {
       "path": "adapters/README.md",
@@ -579,8 +594,8 @@
     },
     {
       "path": "scripts/build_release_manifest.py",
-      "bytes": 3468,
-      "sha256": "367c608f978b33b9321952b000d65c340f409ddf7470402d6e0c99925e2ee14d"
+      "bytes": 3469,
+      "sha256": "a107585094e956d0ee26929a643862309f1b1be984df0a9f43e8dcdea2928ba0"
     },
     {
       "path": "scripts/check_environment.py",
@@ -606,6 +621,11 @@
       "path": "scripts/run_rc1_demo.py",
       "bytes": 15214,
       "sha256": "04b28332542f5c05781ac0cb9b9c20d0923e6105cdd70d6edc91f063c79a8682"
+    },
+    {
+      "path": "scripts/verify_capability_parity.py",
+      "bytes": 13546,
+      "sha256": "0518160db98e1bdda9eb693e17171605e3bec142043fc1b295750c991441d461"
     },
     {
       "path": "scripts/verify_external_cold_start.py",
@@ -719,13 +739,18 @@
     },
     {
       "path": "tests/run_public_tests.py",
-      "bytes": 1633,
-      "sha256": "97affb943c226be96fb8997d907c09add29aac6a352e8035c29cb7b37ce647df"
+      "bytes": 1672,
+      "sha256": "1dba789e2943c6d73b5412b4a6b4d9abadbe595532a03a62891a2639859ea154"
     },
     {
       "path": "tests/test_business_gates_public.py",
       "bytes": 3047,
       "sha256": "b1b4934f68abf548cac5cbfa03569ab8fdb8e607d20b8bcbdbd08253167683dc"
+    },
+    {
+      "path": "tests/test_capability_parity.py",
+      "bytes": 2638,
+      "sha256": "f2f43c9258fa8b67f5e4323b0e13c2adde50f7efa8453b495baf12e96c9c3bb3"
     },
     {
       "path": "tests/test_external_cold_start_protocol.py",
@@ -744,8 +769,8 @@
     },
     {
       "path": "tests/test_public_release_state.py",
-      "bytes": 4689,
-      "sha256": "2c10d9c9715040fca0a1bc79fed9bb4f964c755217eae0885fc98cb24d598565"
+      "bytes": 5184,
+      "sha256": "fff6744841e1789bc98141ad434c8308e4574be16c603b0dfa6d1cf601eca72d"
     },
     {
       "path": "tests/test_rc1_contracts.py",

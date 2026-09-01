@@ -27,7 +27,7 @@ class PublicReleaseStateTest(unittest.TestCase):
 
     def test_manifest_declares_public_apache_release(self) -> None:
         manifest = json.loads((ROOT / "PUBLIC_CORE_MANIFEST.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["status"], "public_prerelease_apache_2_0")
+        self.assertEqual(manifest["status"], "public_prerelease_parity_migration_apache_2_0")
         self.assertEqual(manifest["rights"]["license"], "Apache-2.0")
         self.assertTrue(manifest["rights"]["rights_holder_approval_confirmed"])
         self.assertTrue(manifest["rights"]["public_distribution_authorized"])
@@ -40,12 +40,17 @@ class PublicReleaseStateTest(unittest.TestCase):
         self.assertEqual(manifest["public_release"]["latest_published_tag"], "v0.1.0-rc.1")
         self.assertFalse(manifest["public_release"]["candidate_tag_created"])
         self.assertFalse(manifest["business_acceptance"]["presentation_or_web_required"])
+        self.assertFalse(manifest["business_acceptance"]["independent_blind_review_required"])
+        self.assertFalse(manifest["business_acceptance"]["workbuddy_style_blind_training_included"])
+        self.assertTrue(manifest["business_acceptance"]["fresh_install_full_project_acceptance_required"])
+        self.assertEqual(manifest["capability_parity_contract"], "CAPABILITY_PARITY_CONTRACT.md")
+        self.assertEqual(manifest["capability_parity_manifest"], "CAPABILITY_PARITY_MANIFEST.json")
 
     def test_v02_authority_map_targets_existing_public_files(self) -> None:
         authority = json.loads((ROOT / "PRODUCTION_AUTHORITY_MAP.json").read_text(encoding="utf-8"))
-        self.assertEqual(authority["source_baseline"]["commit"], "21a68a543ee7322a0a2532a0c254ecf211d1a878")
+        self.assertEqual(authority["source_baseline"]["commit"], "8c917683b8f7a118aa584698cf4cd484a8ed73cd")
         for mapping in authority["mappings"]:
-            self.assertEqual(mapping["coverage"].split("_")[0], "full")
+            self.assertTrue(mapping["coverage"])
             for relative in mapping["public"]:
                 self.assertTrue((ROOT / relative).exists(), relative)
 
