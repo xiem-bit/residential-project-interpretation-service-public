@@ -59,3 +59,7 @@ Pause only the affected branch for multiple equally valid strategic directions, 
 - Using non-probability samples, open waiting, future plans, POI existence, product labels, brand participation or UE capability to jump directly to a stronger claim prohibited by the inference relationship table.
 - Letting a presentation or web adapter rewrite frozen business semantics.
 - Claiming strategic quality, human acceptance or business effect from machine validation or visual output.
+
+## Current mainline consumption
+
+Read AGENT_RULES.md section 12 and the enabled product core. Apply direct user-input consumption, dual-timepoint competitor review, family responsibilities, policy applicability and adaptive query learning within existing task records. Product 1 converges into the project answer and then sales/display proof duties. Keep existing schemas; do not invent fixed family categories or extra approval gates.

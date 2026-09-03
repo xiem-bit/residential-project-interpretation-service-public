@@ -1,6 +1,6 @@
 # v0.2 预发行范围
 
-状态：`parity_complete / clean_clone_and_ci_passed / v0.2.0-rc.2_published`
+状态：`parity_complete / clean_clone_and_ci_passed / v0.2.0-rc.3_published`
 
 ## 发行目标
 

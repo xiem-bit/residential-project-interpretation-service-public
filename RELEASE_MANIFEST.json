@@ -1,9 +1,9 @@
 {
   "schema": "residential.public_rc_source_manifest.v0.2",
-  "version": "v0.2.0-rc.2",
-  "status": "v0_2_0_rc_2_public_prerelease_published_parity_clean_clone_and_ci_accepted",
-  "latest_published_tag": "v0.2.0-rc.2",
-  "source_commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
+  "version": "v0.2.0-rc.3",
+  "status": "v0_2_0_rc_3_public_prerelease_published_parity_clean_clone_and_ci_accepted",
+  "latest_published_tag": "v0.2.0-rc.3",
+  "source_commit": "7aa80d7e8e76d1900b9c758bb46f9aba18ebd28f",
   "excluded": [
     ".git/**",
     ".playwright-cli/**",
@@ -16,8 +16,8 @@
     ".DS_Store",
     "RELEASE_MANIFEST.json"
   ],
-  "file_count": 649,
-  "tree_sha256": "46b1aa816b7fcc902ade9ee780a1f41dbae6e28c2c67caba3702a200c2427890",
+  "file_count": 650,
+  "tree_sha256": "04afa4c8c1c848403335c1b4f2136e160cbf563756f3a6bdbacf3f36866346b4",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -32,12 +32,12 @@
     {
       "path": "AGENTS.md",
       "bytes": 1473,
-      "sha256": "4b5589dc81398ca1d0b18024c681659a828b59b2ff2d156415c31b4e7cb3546b"
+      "sha256": "f9c58d8301f7f54538849cfda86360647094e0392eca849eb52fdb0b6b785afe"
     },
     {
       "path": "AGENT_RULES.md",
-      "bytes": 10632,
-      "sha256": "7b5c2a08cbea1995fb3fe123ca977a4f989a6e38704278198585623b4586a50b"
+      "bytes": 14518,
+      "sha256": "477fa2b2ebb55d9fe01d9abfc873d46c482edc394625638d0d80d6500f35a31a"
     },
     {
       "path": "A_CLASS_ALLOWLIST.txt",
@@ -52,12 +52,12 @@
     {
       "path": "CAPABILITY_PARITY_CONTRACT.md",
       "bytes": 10149,
-      "sha256": "5c8b64a52b854ea7bcbb179ffd77167d54ffd13865b8e68de93184d501a5311d"
+      "sha256": "6efa01eb8054eb8aba34b68d9f216a09ef4b282b6425665de528792d9fb96955"
     },
     {
       "path": "CAPABILITY_PARITY_MANIFEST.json",
-      "bytes": 17998,
-      "sha256": "0f175fc720c39109fa16f2d6be78cb7ce2fcce1e7074541cf6d6352248954bbf"
+      "bytes": 19337,
+      "sha256": "c1103bafadd791deed90aaea4e2f78694bc2687cd71d903aa61bfd618c520160"
     },
     {
       "path": "COLD_START_PROTOCOL.md",
@@ -72,7 +72,7 @@
     {
       "path": "INSTALL.md",
       "bytes": 5634,
-      "sha256": "743efa26243b8146fded5a826befee11a5dc68733ea03586bb3dcaebb364c67c"
+      "sha256": "91d14789ee8c1025053081512edd893284dae7f0ee9d002960f0ad4e541f0fae"
     },
     {
       "path": "LICENSE",
@@ -80,19 +80,24 @@
       "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c"
     },
     {
+      "path": "MAINLINE_SYNC_20260903.md",
+      "bytes": 1931,
+      "sha256": "66b7fe8152169943ed6baf942f6fb4a7a4eaa315374aaa695ceea66d53468867"
+    },
+    {
       "path": "PRODUCTION_AUTHORITY_MAP.json",
-      "bytes": 11835,
-      "sha256": "e27f26ad0be30e92acdd61c0e6f3fa4b4072432e2add54fc48b7892d48ef3e3e"
+      "bytes": 13015,
+      "sha256": "ff5216406a712c22853fe551ced756c16bfcfc55c5a64181479d61ba9b1c3235"
     },
     {
       "path": "PRODUCTION_PATH_MANIFEST.json",
       "bytes": 6972,
-      "sha256": "bda8d3791083def332de2f62a97304068d63a467bd5cdd7c5dab76e93d831d8d"
+      "sha256": "b56a1772f4e88778d03edd2214b1f4c56c72c7146a6db71682f63d3c14ed6eec"
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
       "bytes": 4012,
-      "sha256": "b892926fad7064c4c7f36fa271cf6dd8492b1dc183e324c11bc12b2f56801820"
+      "sha256": "c9795ca9c32803e752dc0d63ab0319b946e5d8bc037400ff1a3b689a64278081"
     },
     {
       "path": "RC1_E2E_VERIFICATION.json",
@@ -102,12 +107,12 @@
     {
       "path": "README.md",
       "bytes": 4232,
-      "sha256": "c8ebf8895451818eaffc25f5ee4bd8de0a10b193e96e83f7913a100a499e07f0"
+      "sha256": "f22d312d52778f2d28a059af1573a53b5ba26a895f4288e8a0918d67f95ce7c4"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 6990,
-      "sha256": "afc464b8315d4fc82f6391cdbf294339feaef7d248dd85677806fc43f2834643"
+      "bytes": 1171,
+      "sha256": "712f63cd2ee2705eb5267e92b74ddc860a005763a0e570997a902bba9c758ed5"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
@@ -157,7 +162,7 @@
     {
       "path": "V0_2_RELEASE_SCOPE.md",
       "bytes": 3494,
-      "sha256": "e243af74defdfe8467590935c20e1cffbaa8ee30b63b1c5b7850605cae39eafe"
+      "sha256": "ff525767b06c9cd4ef6f5a5f211f2304601981368aef9ac00741329aaba136d7"
     },
     {
       "path": "adapters/README.md",
@@ -251,18 +256,18 @@
     },
     {
       "path": "core/01-项目任务与输入治理.md",
-      "bytes": 3036,
-      "sha256": "b8f2de2e8578e4da6dd5b438dff1caccd98eb65d4c32cca815eb3a05bea43057"
+      "bytes": 4241,
+      "sha256": "1adabc2c288a54557904a10e63d889d0afde4dc7a2517be28cd2b7871d5d5d5e"
     },
     {
       "path": "core/02-产物1竞争态势研究.md",
-      "bytes": 2971,
-      "sha256": "fbd47d10ff226b8844f7e1ebdd7e78f5ace87f439fd22c43c46af8513cf163ae"
+      "bytes": 4432,
+      "sha256": "1c44044e2a2766fba49ee44ed036868520a1f9d2c48548bd98ba1e91e4934fef"
     },
     {
       "path": "core/03-产物2购买决策研究.md",
-      "bytes": 2149,
-      "sha256": "319e4083464dde6885ee4fa0617628d5213f0b069940d0c1eee79b8de40184ed"
+      "bytes": 2756,
+      "sha256": "e8b9f1a5874140c11be7457327681b8764b449aa57331be75af4dbd80ae75095"
     },
     {
       "path": "core/04-统一语义核与超级竞争力.md",
@@ -276,13 +281,13 @@
     },
     {
       "path": "core/06-产物3从竞争策略到UE解决方案.md",
-      "bytes": 3116,
-      "sha256": "1cc5d8b0ce8499c3c96aea70b884a01173558d9d0ade08af67bcd5673c7067a6"
+      "bytes": 4172,
+      "sha256": "47db2fff91079bddf72f9738aafe2c64b938b19837a2ae41472bc5e8bc6c8510"
     },
     {
       "path": "core/08-产物5交互蓝图.md",
-      "bytes": 3610,
-      "sha256": "c5c914f086b52af2baae60c9f251fab39219bd9d694b3bb1986892b51cb802d4"
+      "bytes": 4480,
+      "sha256": "70c93a09a57a1c55fe7a7c1e411bcd30203c6288d6250a086c14276c4809a37a"
     },
     {
       "path": "core/09-变更回写与重投影.md",
@@ -2712,7 +2717,7 @@
     {
       "path": "scripts/build_release_manifest.py",
       "bytes": 3611,
-      "sha256": "5bb7b6a6b9eb6c4f3f74828272ae2fde1b8a14c2f89b238fa40cb7ffa4c5da85"
+      "sha256": "fc967dd8c4d78aab84325e5d7977429d14cb7664f55bd17b9df6b9b45f85fc7c"
     },
     {
       "path": "scripts/check_environment.py",
@@ -2742,7 +2747,7 @@
     {
       "path": "scripts/verify_capability_parity.py",
       "bytes": 13907,
-      "sha256": "50d5a5f7c6b8dd1fc323a445cfad9995d84c968806dd933eae0f385e6676cdb8"
+      "sha256": "2dc2f10c9b0ebb4174c0e65e2ef57954667ef2bc59bf3578d7a8976febd627ab"
     },
     {
       "path": "scripts/verify_cross_package_conformance.py",
@@ -2841,8 +2846,8 @@
     },
     {
       "path": "templates/真实项目有效任务合同.md",
-      "bytes": 2672,
-      "sha256": "485806a32c588f2d290b2f78c93b40002d7040e2247113883ec8546b0d74a7fc"
+      "bytes": 4369,
+      "sha256": "8f03e17513e19c4f9b64e978d5761235f1824c4ef08101cc1d443ec41f21a207"
     },
     {
       "path": "templates/统一语义核.template.json",
@@ -2856,18 +2861,18 @@
     },
     {
       "path": "templates/附表A-上游检索任务与回传.md",
-      "bytes": 3844,
-      "sha256": "a9bc83f9d4ac6d1f3bc4ee4be30a0f0f72fc1a23f84cb8209178b6396fc16ce7"
+      "bytes": 5753,
+      "sha256": "f70fa260cc7b39116f53d0114b2a41a901928fd6425a1e5d79c039813fb70c34"
     },
     {
       "path": "templates/附表B-超级竞争力与制作规划.md",
-      "bytes": 2822,
-      "sha256": "83a511efcc3e4a35543ee4057a1edee01c85bb61759c17f940949bd422787d43"
+      "bytes": 4001,
+      "sha256": "1d52de38b4f5d8e68584268c57768544a24e747e96599956c3005455e2277aba"
     },
     {
       "path": "templates/附表C-产物启用与验收矩阵.md",
-      "bytes": 2780,
-      "sha256": "265feb74b576f3d980eacdf8b5995d577dde624715164c2bcd0e1a897bbf533d"
+      "bytes": 3639,
+      "sha256": "a02df60ad88de4cc23894d8687c13f762bdd23a4077058a089676bc362d769a6"
     },
     {
       "path": "tests/run_public_tests.py",
@@ -2927,7 +2932,7 @@
     {
       "path": "tests/test_public_release_state.py",
       "bytes": 5460,
-      "sha256": "64029362faf1f3307a85ebe38bc50537d510b6e2cd2aa2aefebe4198b98356b3"
+      "sha256": "47f9a44dbee9668ba2eac889d74803a38e7037f1cc6d785c68470e01e559e827"
     },
     {
       "path": "tests/test_rc1_contracts.py",
@@ -3231,8 +3236,8 @@
     },
     {
       "path": "workflows/product5-presales-focus/SKILL.md",
-      "bytes": 4766,
-      "sha256": "367ff7a7dc0ad4a3f48bea02f040bf59a2eb4371ebed78f75a7bc0d90158ac3e"
+      "bytes": 5640,
+      "sha256": "d273c648df79d663e24a43218126b58d82038b8c71e1301134ff80108b39c3f9"
     },
     {
       "path": "workflows/product5-presales-focus/agents/openai.yaml",
@@ -3241,8 +3246,8 @@
     },
     {
       "path": "workflows/residential-production-orchestrator/SKILL.md",
-      "bytes": 7641,
-      "sha256": "7a29675fd6308b584cfeb2d3d02a083fe159d0cdf761f576e482138c6dc12fa5"
+      "bytes": 8078,
+      "sha256": "919b652cd952d71ff34fc14a9a8fa954d8f212a23e566e2df2658ad52bd40dac"
     },
     {
       "path": "workflows/residential-production-orchestrator/agents/openai.yaml",

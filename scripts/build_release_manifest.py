@@ -60,10 +60,10 @@ def build_manifest() -> dict[str, Any]:
     tree_input = "".join(f"{item['sha256']}  {item['path']}\n" for item in records)
     return {
         "schema": "residential.public_rc_source_manifest.v0.2",
-        "version": "v0.2.0-rc.2",
-        "status": "v0_2_0_rc_2_public_prerelease_published_parity_clean_clone_and_ci_accepted",
-        "latest_published_tag": "v0.2.0-rc.2",
-        "source_commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
+        "version": "v0.2.0-rc.3",
+        "status": "v0_2_0_rc_3_public_prerelease_published_parity_clean_clone_and_ci_accepted",
+        "latest_published_tag": "v0.2.0-rc.3",
+        "source_commit": "7aa80d7e8e76d1900b9c758bb46f9aba18ebd28f",
         "excluded": [
             ".git/**",
             ".playwright-cli/**",

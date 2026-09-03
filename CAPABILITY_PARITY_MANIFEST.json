@@ -1,14 +1,14 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
-  "candidate_version": "v0.2.0-rc.2",
-  "status": "capability_complete_authorized_reference_assets_complete_clean_clone_and_ci_accepted_v0_2_0_rc_2_published",
+  "candidate_version": "v0.2.0-rc.3",
+  "status": "capability_complete_authorized_reference_assets_complete_clean_clone_and_ci_accepted_v0_2_0_rc_3_published",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
-    "commit": "8c917683b8f7a118aa584698cf4cd484a8ed73cd",
+    "commit": "7aa80d7e8e76d1900b9c758bb46f9aba18ebd28f",
     "authority_map": "PRODUCTION_AUTHORITY_MAP.json"
   },
   "public_candidate": {
-    "branch": "codex/v0.2.0-rc.1-production-path",
+    "branch": "main",
     "p0_started_from_commit": "69efd01e760636e312be3af75b17a107ae037ee0",
     "tag_created": true
   },
@@ -58,8 +58,16 @@
       "name": "根入口与按任务渐进路由",
       "domain": "entry_and_orchestration",
       "classification": "public_required",
-      "source_authority_ids": ["main_entry_and_status", "cross_product_contract_and_quality_baseline"],
-      "public_targets": ["START_HERE.md", "AGENT_RULES.md", "PRODUCTION_PATH_MANIFEST.json", "workflows/residential-production-orchestrator/SKILL.md"],
+      "source_authority_ids": [
+        "main_entry_and_status",
+        "cross_product_contract_and_quality_baseline"
+      ],
+      "public_targets": [
+        "START_HERE.md",
+        "AGENT_RULES.md",
+        "PRODUCTION_PATH_MANIFEST.json",
+        "workflows/residential-production-orchestrator/SKILL.md"
+      ],
       "load_condition": "every_task_then_stage_specific",
       "acceptance": "完整能力随包，产物1默认，产物2、3、5按需；产物4不在本次发行范围，不生成未启用产物空文件",
       "status": "implemented_current",
@@ -70,8 +78,15 @@
       "name": "项目身份、输入职责与当前任务合同",
       "domain": "input_governance",
       "classification": "public_required",
-      "source_authority_ids": ["project_contract_and_upstream", "main_entry_and_status"],
-      "public_targets": ["core/01-项目任务与输入治理.md", "templates/真实项目有效任务合同.md", "schemas/project-contract.schema.json"],
+      "source_authority_ids": [
+        "project_contract_and_upstream",
+        "main_entry_and_status"
+      ],
+      "public_targets": [
+        "core/01-项目任务与输入治理.md",
+        "templates/真实项目有效任务合同.md",
+        "schemas/project-contract.schema.json"
+      ],
       "load_condition": "new_research_or_material_change",
       "acceptance": "项目身份闭合，正式资料、顾问成果、客户声音职责分离，冲突与假设诚实",
       "status": "implemented_current",
@@ -82,8 +97,19 @@
       "name": "产物1竞争态势研究与原产物6合并职责",
       "domain": "product1",
       "classification": "public_required",
-      "source_authority_ids": ["cross_product_contract_and_quality_baseline", "project_contract_and_upstream", "product1_product2_gold_references"],
-      "public_targets": ["core/02-产物1竞争态势研究.md", "templates/产物1竞争态势研究.template.md", "templates/产物1竞争态势研究摘要.template.json", "schemas/product1-summary.schema.json", "examples/production-path-tutorial/expected/product1-competition-study.md", "examples/production-path-tutorial/expected/product1-competition-summary.json"],
+      "source_authority_ids": [
+        "cross_product_contract_and_quality_baseline",
+        "project_contract_and_upstream",
+        "product1_product2_gold_references"
+      ],
+      "public_targets": [
+        "core/02-产物1竞争态势研究.md",
+        "templates/产物1竞争态势研究.template.md",
+        "templates/产物1竞争态势研究摘要.template.json",
+        "schemas/product1-summary.schema.json",
+        "examples/production-path-tutorial/expected/product1-competition-study.md",
+        "examples/production-path-tutorial/expected/product1-competition-summary.json"
+      ],
       "load_condition": "default_for_residential_research",
       "acceptance": "市场、区域、有效竞争圈和本案答案围绕当前项目递进，检索计划进入默认生产链",
       "status": "implemented_current",
@@ -94,8 +120,19 @@
       "name": "产物2客群与购买决策研究",
       "domain": "product2",
       "classification": "public_required",
-      "source_authority_ids": ["cross_product_contract_and_quality_baseline", "project_contract_and_upstream", "product1_product2_gold_references"],
-      "public_targets": ["core/03-产物2购买决策研究.md", "templates/产物2购买决策研究.template.md", "templates/产物2购买决策研究摘要.template.json", "schemas/product2-summary.schema.json", "examples/production-path-tutorial/expected/product2-buyer-decision-study.md", "examples/production-path-tutorial/expected/product2-buyer-decision-summary.json"],
+      "source_authority_ids": [
+        "cross_product_contract_and_quality_baseline",
+        "project_contract_and_upstream",
+        "product1_product2_gold_references"
+      ],
+      "public_targets": [
+        "core/03-产物2购买决策研究.md",
+        "templates/产物2购买决策研究.template.md",
+        "templates/产物2购买决策研究摘要.template.json",
+        "schemas/product2-summary.schema.json",
+        "examples/production-path-tutorial/expected/product2-buyer-decision-study.md",
+        "examples/production-path-tutorial/expected/product2-buyer-decision-summary.json"
+      ],
       "load_condition": "buyer_decision_gap_or_enabled_product2",
       "acceptance": "以生活任务和决策机制组织客群，闭合处境、触发、进展、替代、代价与行动阻力",
       "status": "implemented_current",
@@ -106,8 +143,20 @@
       "name": "上游任务、覆盖检查、缺口补检与输入冻结",
       "domain": "incremental_research",
       "classification": "portable_adaptation",
-      "source_authority_ids": ["public_channel_and_incremental_research", "formal_annexes"],
-      "public_targets": ["external-capabilities/README.md", "external-capabilities/upstream-task.schema.json", "external-capabilities/upstream-response.schema.json", "external-capabilities/upstream-adoption-receipt.schema.json", "templates/附表A-上游检索任务与回传.md", "tools/production_core/validate_upstream_exchange.py", "fixtures/upstream-exchange", "tests/test_upstream_exchange.py"],
+      "source_authority_ids": [
+        "public_channel_and_incremental_research",
+        "formal_annexes"
+      ],
+      "public_targets": [
+        "external-capabilities/README.md",
+        "external-capabilities/upstream-task.schema.json",
+        "external-capabilities/upstream-response.schema.json",
+        "external-capabilities/upstream-adoption-receipt.schema.json",
+        "templates/附表A-上游检索任务与回传.md",
+        "tools/production_core/validate_upstream_exchange.py",
+        "fixtures/upstream-exchange",
+        "tests/test_upstream_exchange.py"
+      ],
       "load_condition": "material_judgment_gap",
       "acceptance": "请求、首轮覆盖、增量批次、边际信息增益、停止线、gap和下游采用形成闭环",
       "status": "implemented_current",
@@ -118,8 +167,17 @@
       "name": "允许与禁止推导关系防火墙",
       "domain": "reasoning_harness",
       "classification": "public_required",
-      "source_authority_ids": ["cross_product_contract_and_quality_baseline", "platform_neutral_learning_feedback"],
-      "public_targets": ["AGENT_RULES.md", "contracts/inference-relationships.json", "tools/production_core/inference_firewall.py", "fixtures/inference-harness/cases.json", "tests/test_inference_firewall.py"],
+      "source_authority_ids": [
+        "cross_product_contract_and_quality_baseline",
+        "platform_neutral_learning_feedback"
+      ],
+      "public_targets": [
+        "AGENT_RULES.md",
+        "contracts/inference-relationships.json",
+        "tools/production_core/inference_firewall.py",
+        "fixtures/inference-harness/cases.json",
+        "tests/test_inference_firewall.py"
+      ],
       "load_condition": "all_research_and_formal_claims",
       "acceptance": "高风险推导关系、正反例和证据角色完整；机器否决但不替代商业判断",
       "status": "implemented_current",
@@ -130,8 +188,16 @@
       "name": "统一语义核与超级竞争力完整因果链",
       "domain": "semantic_core_and_sc",
       "classification": "public_required",
-      "source_authority_ids": ["cross_product_contract_and_quality_baseline", "product5_and_change"],
-      "public_targets": ["core/04-统一语义核与超级竞争力.md", "schemas/semantic-core.schema.json", "schemas/super-competitiveness-plan.schema.json", "tools/production_core/validate_super_competitiveness.py"],
+      "source_authority_ids": [
+        "cross_product_contract_and_quality_baseline",
+        "product5_and_change"
+      ],
+      "public_targets": [
+        "core/04-统一语义核与超级竞争力.md",
+        "schemas/semantic-core.schema.json",
+        "schemas/super-competitiveness-plan.schema.json",
+        "tools/production_core/validate_super_competitiveness.py"
+      ],
       "load_condition": "after_product1_and_enabled_product2_freeze",
       "acceptance": "每条SC闭合项目事实、相对竞争、客户意义、项目承接、UE证明和行动推动",
       "status": "implemented_current",
@@ -142,8 +208,15 @@
       "name": "跨产物一致性、状态诚实与定向重投影",
       "domain": "cross_product_governance",
       "classification": "public_required",
-      "source_authority_ids": ["product5_and_change", "cross_product_contract_and_quality_baseline"],
-      "public_targets": ["core/09-变更回写与重投影.md", "schemas/change-impact.schema.json", "tools/production_core/validate_cross_product_consistency.py"],
+      "source_authority_ids": [
+        "product5_and_change",
+        "cross_product_contract_and_quality_baseline"
+      ],
+      "public_targets": [
+        "core/09-变更回写与重投影.md",
+        "schemas/change-impact.schema.json",
+        "tools/production_core/validate_cross_product_consistency.py"
+      ],
       "load_condition": "multiple_products_or_semantic_change",
       "acceptance": "项目事实、竞品、客户任务、SC和状态跨产物一致，纯载体修改不重开研究",
       "status": "implemented_current",
@@ -154,8 +227,20 @@
       "name": "断言式甲方表达与后台隔离",
       "domain": "client_facing_writing",
       "classification": "portable_adaptation",
-      "source_authority_ids": ["customer_facing_assertion_and_delivery_qa"],
-      "public_targets": ["workflows/chinese-research-report-editor", "workflows/chinese-affirmative-business-editor", "references/writing", "references/learning-feedback/human_revision_feedback.v0.1.json", "tools/chinese_copy_lint/affirmative_statement_lint.py", "fixtures/client-review", "AGENT_RULES.md", "workflows/residential-production-orchestrator/references/client-facing-writing.md", "tools/production_core/common.py"],
+      "source_authority_ids": [
+        "customer_facing_assertion_and_delivery_qa"
+      ],
+      "public_targets": [
+        "workflows/chinese-research-report-editor",
+        "workflows/chinese-affirmative-business-editor",
+        "references/writing",
+        "references/learning-feedback/human_revision_feedback.v0.1.json",
+        "tools/chinese_copy_lint/affirmative_statement_lint.py",
+        "fixtures/client-review",
+        "AGENT_RULES.md",
+        "workflows/residential-production-orchestrator/references/client-facing-writing.md",
+        "tools/production_core/common.py"
+      ],
       "load_condition": "client_facing_report_ppt_html_or_pdf",
       "acceptance": "中文研究报告编辑、A级语义审校、B级报告扫描、C级事实优先、营销表达库和十组人工修订语境完整随包；客户正文不暴露工程状态和内部任务",
       "status": "implemented_current",
@@ -166,8 +251,20 @@
       "name": "产物3策略推导、页面语义与完整装配",
       "domain": "product3",
       "classification": "portable_adaptation",
-      "source_authority_ids": ["product3_strategy_and_ue", "product3_gold_assembly"],
-      "public_targets": ["core/06-产物3从竞争策略到UE解决方案.md", "templates/产物3第二章生产消费合同.template.json", "templates/产物3第三章生产消费合同.template.json", "references/product3", "references/product3/assets/产物3页面模板库", "references/product3/assets/产物3案例截图素材库", "examples/gold-product3-public-safe", "adapters/presentation/README.md"],
+      "source_authority_ids": [
+        "product3_strategy_and_ue",
+        "product3_gold_assembly"
+      ],
+      "public_targets": [
+        "core/06-产物3从竞争策略到UE解决方案.md",
+        "templates/产物3第二章生产消费合同.template.json",
+        "templates/产物3第三章生产消费合同.template.json",
+        "references/product3",
+        "references/product3/assets/产物3页面模板库",
+        "references/product3/assets/产物3案例截图素材库",
+        "examples/gold-product3-public-safe",
+        "adapters/presentation/README.md"
+      ],
       "load_condition": "product3_enabled_or_material_structure_change",
       "acceptance": "当前20页用户验收终稿是机器可读黄金权威；三份历史成功原稿、124文件页面模板库、229文件案例素材库、页面语义、非对称证明、单页轻量AI推荐、真实地图署名、断言门禁、首稿完整度和可编辑PPT形成完整公开参考",
       "status": "implemented_current",
@@ -178,8 +275,12 @@
       "name": "产物4当前版不进入公开发行",
       "domain": "product4",
       "classification": "retired_excluded",
-      "source_authority_ids": ["main_entry_and_status"],
-      "public_targets": ["RETIRED_AND_PRIVATE_BOUNDARY.md"],
+      "source_authority_ids": [
+        "main_entry_and_status"
+      ],
+      "public_targets": [
+        "RETIRED_AND_PRIVATE_BOUNDARY.md"
+      ],
       "planned_public_targets": [],
       "load_condition": "not_loadable_in_current_release",
       "acceptance": "当前发行无产物4入口、模板、校验器、样例或运行文件；上游大修完成后由后续版本重新评估",
@@ -191,8 +292,18 @@
       "name": "产物5黄金交互实现与QA",
       "domain": "product5",
       "classification": "private_replaced",
-      "source_authority_ids": ["product5_and_change", "product5_gold_implementation"],
-      "public_targets": ["core/08-产物5交互蓝图.md", "schemas/product5-interaction-blueprint.schema.json", "tools/product5_shell", "adapters/web/README.md", "examples/gold-product5-public-safe", "workflows/product5-presales-focus"],
+      "source_authority_ids": [
+        "product5_and_change",
+        "product5_gold_implementation"
+      ],
+      "public_targets": [
+        "core/08-产物5交互蓝图.md",
+        "schemas/product5-interaction-blueprint.schema.json",
+        "tools/product5_shell",
+        "adapters/web/README.md",
+        "examples/gold-product5-public-safe",
+        "workflows/product5-presales-focus"
+      ],
       "planned_public_targets": [],
       "load_condition": "product5_enabled",
       "acceptance": "项目中立源码保留状态机、动效、AI推荐、二维码、手机页、同版QA和项目残留扫描",
@@ -204,8 +315,24 @@
       "name": "共享黄金参考、学习反馈与公开回归",
       "domain": "gold_reference_and_learning",
       "classification": "private_replaced",
-      "source_authority_ids": ["shared_production_references", "product1_product2_gold_references", "product3_gold_assembly", "product5_gold_implementation"],
-      "public_targets": ["references/production-reference-index.json", "references/authorized-reference-assets.json", "references/learning-feedback", "references/writing", "references/product3/assets", "examples/production-path-tutorial", "examples/production-path-revision", "examples/end-to-end-public-safe", "examples/gold-product3-public-safe", "examples/gold-product5-public-safe"],
+      "source_authority_ids": [
+        "shared_production_references",
+        "product1_product2_gold_references",
+        "product3_gold_assembly",
+        "product5_gold_implementation"
+      ],
+      "public_targets": [
+        "references/production-reference-index.json",
+        "references/authorized-reference-assets.json",
+        "references/learning-feedback",
+        "references/writing",
+        "references/product3/assets",
+        "examples/production-path-tutorial",
+        "examples/production-path-revision",
+        "examples/end-to-end-public-safe",
+        "examples/gold-product3-public-safe",
+        "examples/gold-product5-public-safe"
+      ],
       "planned_public_targets": [],
       "load_condition": "stage_specific_reference_lookup",
       "acceptance": "至少两至三套完整项目、三份获授权历史成功产物3原稿及逐页结构、完整案例图和营销文案资产、当前授权真实黄金、正式产物参考、正反例和真人修订反馈可被路由调用",
@@ -217,8 +344,17 @@
       "name": "机器Harness、回执验证与状态分层",
       "domain": "machine_harness_and_receipts",
       "classification": "public_required",
-      "source_authority_ids": ["cross_product_contract_and_quality_baseline", "formal_annexes", "platform_neutral_learning_feedback"],
-      "public_targets": ["tools/production_core", "schemas/production-receipt.schema.json", "templates/生产回执.template.json", "tests"],
+      "source_authority_ids": [
+        "cross_product_contract_and_quality_baseline",
+        "formal_annexes",
+        "platform_neutral_learning_feedback"
+      ],
+      "public_targets": [
+        "tools/production_core",
+        "schemas/production-receipt.schema.json",
+        "templates/生产回执.template.json",
+        "tests"
+      ],
       "load_condition": "before_formal_handoff_and_release",
       "acceptance": "机器只否决结构、边界和显式不一致；已生成、已检查、已接受、已发布和业务效果分开",
       "status": "implemented_current",
@@ -229,8 +365,20 @@
       "name": "公开信息双包标准接口",
       "domain": "cross_package_interface",
       "classification": "portable_adaptation",
-      "source_authority_ids": ["public_channel_and_incremental_research"],
-      "public_targets": ["external-capabilities/upstream-task.schema.json", "external-capabilities/upstream-response.schema.json", "external-capabilities/upstream-adoption-receipt.schema.json", "external-capabilities/cross-package-compatibility.json", "external-capabilities/cross-package-conformance-receipt.json", "external-capabilities/README.md", "scripts/verify_cross_package_conformance.py", "tests/test_upstream_exchange.py", "tests/test_cross_package_conformance.py"],
+      "source_authority_ids": [
+        "public_channel_and_incremental_research"
+      ],
+      "public_targets": [
+        "external-capabilities/upstream-task.schema.json",
+        "external-capabilities/upstream-response.schema.json",
+        "external-capabilities/upstream-adoption-receipt.schema.json",
+        "external-capabilities/cross-package-compatibility.json",
+        "external-capabilities/cross-package-conformance-receipt.json",
+        "external-capabilities/README.md",
+        "scripts/verify_cross_package_conformance.py",
+        "tests/test_upstream_exchange.py",
+        "tests/test_cross_package_conformance.py"
+      ],
       "load_condition": "public_information_task_enabled",
       "acceptance": "两个独立工程通过版本化Schema往返，fulfilled与accepted分离，不共享cwd",
       "status": "implemented_current",
@@ -241,8 +389,18 @@
       "name": "平台适配、自助安装与能力缺口回传",
       "domain": "installation_and_adapters",
       "classification": "portable_adaptation",
-      "source_authority_ids": ["main_entry_and_status"],
-      "public_targets": ["INSTALL.md", "adapters", "scripts/check_environment.py", "templates/平台适配与能力缺口回传.template.json", "tests/test_installation_doctor.py", "tests/test_authorized_reference_assets.py", "SECURITY.md"],
+      "source_authority_ids": [
+        "main_entry_and_status"
+      ],
+      "public_targets": [
+        "INSTALL.md",
+        "adapters",
+        "scripts/check_environment.py",
+        "templates/平台适配与能力缺口回传.template.json",
+        "tests/test_installation_doctor.py",
+        "tests/test_authorized_reference_assets.py",
+        "SECURITY.md"
+      ],
       "load_condition": "installation_or_carrier_production",
       "acceptance": "干净克隆中，终端用户可分别检查生产核心、20页产物3黄金、三份历史原稿、124文件模板、229文件案例素材、中文写作能力与产物5运行时；PPT引擎和Grist由终端安装，Computer Use、浏览器、地图、微信、小红书由终端安装或登录；平台缺失返回结构化gap，不迁移账号态，不让载体改写业务语义",
       "status": "implemented_current",
@@ -253,8 +411,16 @@
       "name": "发行权威、能力漂移与版本治理",
       "domain": "release_governance",
       "classification": "public_required",
-      "source_authority_ids": ["main_entry_and_status"],
-      "public_targets": ["RELEASE_STATUS.md", "RELEASE_MANIFEST.json", "PUBLIC_CORE_MANIFEST.json", "CAPABILITY_PARITY_CONTRACT.md", "CAPABILITY_PARITY_MANIFEST.json"],
+      "source_authority_ids": [
+        "main_entry_and_status"
+      ],
+      "public_targets": [
+        "RELEASE_STATUS.md",
+        "RELEASE_MANIFEST.json",
+        "PUBLIC_CORE_MANIFEST.json",
+        "CAPABILITY_PARITY_CONTRACT.md",
+        "CAPABILITY_PARITY_MANIFEST.json"
+      ],
       "load_condition": "every_release_change",
       "acceptance": "所有能力已分类，公开目标存在，资料授权状态可机读，未授权材料与路径凭据扫描、干净克隆通过，标签状态真实",
       "status": "implemented_current",
@@ -265,8 +431,13 @@
       "name": "历史退役与私有资产隔离",
       "domain": "history_and_rights_boundary",
       "classification": "retired_excluded",
-      "source_authority_ids": ["main_entry_and_status", "platform_neutral_learning_feedback"],
-      "public_targets": ["RETIRED_AND_PRIVATE_BOUNDARY.md"],
+      "source_authority_ids": [
+        "main_entry_and_status",
+        "platform_neutral_learning_feedback"
+      ],
+      "public_targets": [
+        "RETIRED_AND_PRIVATE_BOUNDARY.md"
+      ],
       "load_condition": "release_extraction_or_history_dispute",
       "acceptance": "退役路径只保留索引；真实材料按明确授权进入或用结构等价替代；运行现场不冒充可继承能力",
       "status": "retired_excluded",

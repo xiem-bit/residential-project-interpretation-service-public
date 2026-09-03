@@ -48,3 +48,9 @@ The source includes QR capability but displays a code only when `VITE_PUBLIC_BAS
 ## Completion standard
 
 The first user-review build is complete, project-specific, runnable and visually inspected. It contains no empty slots, placeholder copy, missing images, internal-status panels or fake public links. The Qinglan gold reference proves the production method only; it never supplies facts or conclusions for another project.
+
+## Presales service and family semantics
+
+产物5让甲方提前体验UE怎样进入销售接待、帮助客户比较、完成家庭任务分流，并承接带看、核价、选房或跟进。它保持可运行交互视觉原型身份，真实系统开发、上线、交付与业务效果另行验收。
+
+先把购房者理解为同时处理现实家庭责任、资源约束与长期生活目标的人，从本案识别实际成立的责任、矛盾、希望取得的整体生活进展，以及愿意牺牲与不能牺牲，再形成购买任务、替代选择和项目承接。上班挣钱、养育孩子、照顾老人、长期生活只作启发，可缺席、合并或由项目特有责任替代，不构成固定四栏、固定问卷或每案必填类别。面积、户型、学校、通勤、采光、收纳与空间尺度是承接上位家庭任务的产品证据。
