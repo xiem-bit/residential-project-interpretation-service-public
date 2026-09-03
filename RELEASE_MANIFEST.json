@@ -17,7 +17,7 @@
     "RELEASE_MANIFEST.json"
   ],
   "file_count": 650,
-  "tree_sha256": "04afa4c8c1c848403335c1b4f2136e160cbf563756f3a6bdbacf3f36866346b4",
+  "tree_sha256": "35c2ea8b5831e7a4ef6c8343080bcfebbd4de47eb8e0f8e998ec818759a36976",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -81,8 +81,8 @@
     },
     {
       "path": "MAINLINE_SYNC_20260903.md",
-      "bytes": 1931,
-      "sha256": "66b7fe8152169943ed6baf942f6fb4a7a4eaa315374aaa695ceea66d53468867"
+      "bytes": 2738,
+      "sha256": "39d6dc674ffcb516c24126cd8e3581e09854448197e841976decd5944bc3a8c7"
     },
     {
       "path": "PRODUCTION_AUTHORITY_MAP.json",
