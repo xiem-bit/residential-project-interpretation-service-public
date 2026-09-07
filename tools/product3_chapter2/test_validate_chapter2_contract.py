@@ -38,6 +38,17 @@ class Chapter2ContractValidatorTest(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn("3项客户决策机制", result.stdout)
 
+    def test_choice_basis_types_keep_their_actual_identity(self) -> None:
+        for basis in (
+            "真实选择事件：受访家庭保留原接送安排，比较南侧两处住房；未记录成交结局。",
+            "可信市场信号：已登记的咨询记录多次涉及接送安排；仅支持对应样本范围。",
+            "顾问综合判断：依据当前项目位置与已有选择材料推演保留生活联系的需要，不代表真人经历。",
+        ):
+            contract = deepcopy(self.template)
+            contract["customer_decision_registry"][0]["choice_event"] = basis
+            result = self.run_contract(contract)
+            self.assertEqual(result.returncode, 0, result.stderr)
+
     def test_conclusion_requires_customer_decision_reference(self) -> None:
         contract = deepcopy(self.template)
         del contract["chapter2"]["dimensions"][0]["conclusions"][0]["customer_decision_refs"]

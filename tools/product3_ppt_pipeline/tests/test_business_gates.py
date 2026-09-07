@@ -12,7 +12,7 @@ PIPELINE_DIR = Path(__file__).resolve().parents[1]
 PROJECT_ROOT = PIPELINE_DIR.parents[1]
 sys.path.insert(0, str(PIPELINE_DIR))
 
-from business_gates import is_audience_portrait, rank_portrait_assets  # noqa: E402
+from business_gates import is_audience_portrait, rank_portrait_assets, required_portrait_count  # noqa: E402
 from validate_production_input import validate_payload  # noqa: E402
 sys.path.insert(0, str(PROJECT_ROOT / "tools/product3_assembly_console/scripts"))
 from export_approved_blueprint import build_payload, markdown  # noqa: E402
@@ -99,6 +99,7 @@ class BusinessGateTests(unittest.TestCase):
                 "三类家庭肖像＋家庭任务＋产品入口",
             ),
         ]
+        pages[-1]["case_slots"] = [{"id": f"person-{i}", "asset_id": "", "purpose": "家庭角色"} for i in range(3)]
         payload = {
             "schema": "product3.assembly_blueprint.v0.1",
             "export_status": "approved_for_ppt_production",
@@ -114,9 +115,53 @@ class BusinessGateTests(unittest.TestCase):
         )
         joined = "\n".join(errors)
         self.assertIn("价值账", joined)
-        self.assertIn("相邻页复用同一页面语义", joined)
+        self.assertNotIn("相邻页复用同一页面语义", joined)
         self.assertIn("需要3张按业务语义匹配的肖像图", joined)
         self.assertEqual(evidence["family_asset_selection"][0]["result"], "generation_required")
+
+    def test_continuous_maps_do_not_use_layout_or_filename_as_duplicate_verdict(self):
+        from copy import deepcopy
+        from validate_production_input import parse_asset_bindings
+        for binding in ("", None, [], "[]", '{"proof": []}', {"proof": []}):
+            self.assertEqual(parse_asset_bindings(binding), ([], None))
+            for different_map in (False, True):
+                pages = [page(i, f"MAP-{i}", "工作与生活联系", "两处工作安排需要同时兼顾。", "P3-COMPETITION-MAP", "", "全屏地图与两侧卡片") for i in (1, 2)]
+                for i, record in enumerate(pages):
+                    record["素材编号"] = binding
+                    record["视觉变体ID"] = "MAP-OSM-STANDARD"
+                    record["视觉参考页ID"] = "当前认可地图版式"
+                    record["本项目图形"] = [f"MAP-{i if different_map else 0}"]
+                for different_copy in (False, True):
+                    sample = deepcopy(pages)
+                    if different_copy:
+                        sample[1]["页面文案"] = "现有接送安排在南侧，换房仍需保留这段联系。"
+                    payload = {"schema": "product3.assembly_blueprint.v0.1", "export_status": "approved_for_ppt_production", "fixture_only": False, "project_id": "MAP-TEST", "project_name": "局部检查", "assembly_version": "maps", "page_count": 2, "pages": sample}
+                    errors, _ = validate_payload(payload, SEMANTIC_DATASET, SOURCE_DATASET, [], False)
+                    self.assertEqual(errors, [])
+
+    def test_family_slots_are_required_and_bound_to_real_portrait_assets(self):
+        from unittest.mock import patch
+        record = page(1, "FAMILY", "三类家庭", "各有实际生活安排。", "P3-FAMILY-SEGMENT", "", "已选两个人物版位")
+        payload = {"schema": "product3.assembly_blueprint.v0.1", "export_status": "approved_for_ppt_production", "fixture_only": False, "project_id": "FAMILY-TEST", "project_name": "局部检查", "assembly_version": "family", "page_count": 1, "pages": [record]}
+        errors, _ = validate_payload(payload, SEMANTIC_DATASET, SOURCE_DATASET, [], False)
+        self.assertTrue(any("家庭总览必须" in error for error in errors))
+        record["case_slots"] = [{"id": f"portrait-{i}", "asset_id": f"CASE-{i}", "purpose": "家庭角色"} for i in range(2)]
+        self.assertEqual(required_portrait_count(record), 2)  # 不由“三类家庭”猜数量
+        record["素材编号"] = {"proof": ["CASE-0", "CASE-1"]}
+        assets = [{"asset_id": f"CASE-{i}", "asset_class": "audience_portrait", "effective_business_semantic": "家庭人物肖像", "original_asset": f"portrait-{i}.png", "status": "approved"} for i in range(2)]
+        with tempfile.TemporaryDirectory() as folder, patch("validate_production_input.SHARED_ASSET_ROOT", Path(folder)):
+            for i in range(2):
+                (Path(folder) / f"portrait-{i}.png").write_bytes(bytes([i]))
+            errors, evidence = validate_payload(payload, SEMANTIC_DATASET, SOURCE_DATASET, assets, False)
+            self.assertEqual(errors, [])
+            self.assertEqual(evidence["family_asset_selection"][0]["result"], "bound")
+            assets[1]["asset_class"] = "case_reference"
+            errors, _ = validate_payload(payload, SEMANTIC_DATASET, SOURCE_DATASET, assets, False)
+            self.assertTrue(any("需要2张" in error for error in errors))
+            assets[1]["asset_class"] = "audience_portrait"
+            record["case_slots"][1]["asset_id"] = "CASE-0"
+            errors, _ = validate_payload(payload, SEMANTIC_DATASET, SOURCE_DATASET, assets, False)
+            self.assertTrue(any("需要2张" in error for error in errors))
 
     def test_portrait_routing_uses_semantics_not_any_person_image(self) -> None:
         assets = [

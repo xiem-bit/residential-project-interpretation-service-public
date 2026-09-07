@@ -42,7 +42,7 @@ class PublicReleaseStateTest(unittest.TestCase):
         )
         self.assertEqual(manifest["semantic_core_role"], "production_output")
         self.assertEqual(manifest["public_release"]["release_tag"], manifest["candidate"])
-        self.assertEqual(manifest["candidate"], "v0.2.0-rc.4")
+        self.assertEqual(manifest["candidate"], "v0.2.0-rc.5")
         self.assertFalse(manifest["business_acceptance"]["presentation_or_web_required"])
         self.assertFalse(manifest["business_acceptance"]["workbuddy_style_blind_training_included"])
         self.assertFalse(manifest["business_acceptance"]["fresh_install_full_project_acceptance_required"])

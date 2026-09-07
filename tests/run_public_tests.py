@@ -16,6 +16,7 @@ TEST_FILES = (
     "tools/product3_chapter23/test_validate_chapter23_bridge.py",
     "tools/product3_chapter3/test_validate_chapter3_contract.py",
     "tests/test_business_gates_public.py",
+    "tools/product3_ppt_pipeline/tests/test_business_gates.py",
     "tests/test_inference_firewall.py",
     "tests/test_upstream_exchange.py",
     "tests/test_cross_package_conformance.py",

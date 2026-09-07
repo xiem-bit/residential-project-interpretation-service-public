@@ -111,7 +111,16 @@ async function gallery(){
  steps.forEach((v,i)=>{const x=72+i*(1456+25)/3;rect('step-rule-'+i,x,772,468.67,1,K.line);text('step-summary-'+i,v,x,788,468.67,47,22,K.ink,false,{line:1.3});});
 }
 function choiceCards(){
- const cc=p.body.cards,w=(1456-48)/3;
+ const cc=p.body.cards;
+ if(cc.length===4){
+  cc.forEach((a,i)=>{const x=72+(i%2)*748,y=239+Math.floor(i/2)*275,w=708;
+   rect('choice-bg-'+i,x,y,w,247,'#EBECE2');rect('choice-rule-'+i,x,y,w,2,K.gold);
+   text('choice-number-'+i,'0'+(i+1),x+24,y+22,80,80,60,'#90A89A',false,{serif:true,line:1.1});
+   text('card-title-'+i,clean(a[0]),x+126,y+22,w-150,82,30,K.ink,true,{line:1.3});
+   text('card-body-'+i,a[1],x+126,y+122,w-150,105,23,'#5D6F63',false,{line:1.4});});
+  text('conclusion',p.body.conclusion,72,777,1456,55,25,K.ink,false,{align:'center',line:1.4});return;
+ }
+ const w=(1456-48)/3;
  cc.forEach((a,i)=>{const x=72+i*(w+24);rect('choice-bg-'+i,x,239,w,493,'#EBECE2');rect('choice-rule-'+i,x,239,w,2,K.gold);
   text('choice-number-'+i,'0'+(i+1),x+24,263,w-48,78,60,'#90A89A',false,{serif:true,line:1.1});
   text('card-title-'+i,clean(a[0]),x+24,365,w-48,140,30,K.ink,true,{line:1.4});
@@ -119,14 +128,29 @@ function choiceCards(){
  text('conclusion',p.body.conclusion,72,764,1456,68,25,K.ink,false,{align:'center',line:1.4});
 }
 function sequence(){
+ if(p.body.cards.length===4){
+  p.body.cards.forEach((a,i)=>{const y=242+i*148;rect('sequence-line-'+i,72,y,1456,1,'#607C6B');
+   text('sequence-number-'+i,'0'+(i+1),72,y+18,100,77,48,'#C39761',false,{serif:true,line:1.2});
+   text('card-title-'+i,a[0],182,y+23,320,85,30,K.paper,true,{line:1.4});
+   text('card-body-'+i,clean(a[1]),522,y+18,1006,78,26,K.paper,false,{line:1.4});
+   text('row-note-'+i,p.body.row_notes[i],522,y+105,1006,32,20,K.pale,false,{line:1.3});});return;
+ }
  p.body.cards.forEach((a,i)=>{const y=252+i*171;rect('sequence-line-'+i,72,y,1456,1,'#607C6B');
   text('sequence-number-'+i,'0'+(i+1),72,y+24,100,90,57,'#C39761',false,{serif:true,line:1.2});
   text('card-title-'+i,a[0],182,y+35,320,88,32,K.paper,true,{line:1.4});
-  text('card-body-'+i,clean(a[1]),522,y+28,1006,70,28,K.paper,false,{line:1.55});
-  text('row-note-'+i,p.body.row_notes[i],522,y+107,1006,42,22,K.pale,false,{line:1.4});});
+  text('card-body-'+i,clean(a[1]),522,y+28,1006,85,28,K.paper,false,{line:1.3});
+  text('row-note-'+i,p.body.row_notes[i],522,y+125,1006,33,22,K.pale,false,{line:1.3});});
 }
 function claims(){
  const benefits=p.body.benefits;
+ if(p.body.cards.length===4){
+  p.body.cards.forEach((a,i)=>{const x=72+(i%2)*748,y=246+Math.floor(i/2)*300,w=708;
+   rect('claim-rule-'+i,x,y,w,1,'#6E8978');
+   text('claim-number-'+i,'0'+(i+1),x,y+16,87,87,60,'#C09965',false,{serif:true,line:1.1});
+   text('card-title-'+i,clean(a[0]),x+108,y+15,w-128,84,32,K.paper,true,{serif:true,line:1.3});
+   text('claim-benefit-'+i,benefits[i],x+108,y+108,w-128,37,23,'#D9BB8E',false,{line:1.4});
+   text('card-body-'+i,a[1],x+108,y+162,w-128,106,23,K.pale,false,{line:1.45});});return;
+ }
  p.body.cards.forEach((a,i)=>{const x=72+i*(1456+40)/3,w=458.67;rect('claim-rule-'+i,x,250,w,1,'#6E8978');
   text('claim-number-'+i,'0'+(i+1),x,269,w,91,75,'#C09965',false,{serif:true,line:1.1});
   text('card-title-'+i,clean(a[0]),x,369,w-30,181,36,K.paper,true,{serif:true,line:1.5});
@@ -150,6 +174,18 @@ function ai(){
  text('conclusion',p.body.conclusion,838,574,690,187,24,'#C0D0BD',false,{line:1.8});
  text('note',p.body.note,838,773,690,55,17,'#B0C0B5',false,{line:1.5});
 }
+async function family(){
+ const pairs=p.body.pairs,slots=plan.pages.find(v=>v.page_id===p.id).case_slots || [];
+ if(!Array.isArray(pairs)||pairs.length<2||pairs.length>4||pairs.length!==slots.length||pairs.some((v,i)=>v[0]!==slots[i].asset_id))throw Error(p.id+'人物图片须逐一装入已裁定版位；当前家庭卡片支持2至4个版位');
+ const gap=24,w=(1456-gap*(pairs.length-1))/pairs.length;
+ for(let i=0;i<pairs.length;i++){
+  const [id,title,caption]=pairs[i],x=72+i*(w+gap);
+  await caseImage(id,x,239,w,300,'portrait_image_'+(i+1));
+  rect('family-caption-bg-'+i,x,539,w,265,K.sage);
+  text('image-title-'+i,title,x+20,557,w-40,68,28,K.ink,true,{line:1.3});
+  text('image-caption-'+i,caption,x+20,641,w-40,144,22,'#586D5D',false,{line:1.45});
+ }
+}
 async function cover(){
  if(p.body.cover_image)await imageFile(p.body.cover_image,925,0,675,900,'cover_map',p.body.cover_image_id,'cover');
  rect('cover-fade',0,0,1600,900,{type:'gradient',gradientKind:'linear',angleDeg:0,stops:[{offset:0,color:K.dark},{offset:48000,color:K.dark},{offset:100000,color:'#102F29/64'}]});
@@ -172,8 +208,9 @@ function closing(){
 for(let index=0;index<ps.length;index++){
  p=ps[index];const pp=plan.pages[index];
  if(!p || p.id!==pp.page_id)throw Error('页面内容与装配清单身份不一致');
- if(!['cover','map','gallery','deck_gallery','anchor','sequence','overview','scope','ai','close','choices'].includes(p.layout))throw Error('未支持的版式：'+p.layout+'；按现有模板补充实现，不得回退历史文案');
+ if(!['cover','map','gallery','deck_gallery','anchor','sequence','overview','scope','ai','close','choices','family'].includes(p.layout))throw Error('未支持的版式：'+p.layout+'；按现有模板补充实现，不得回退历史文案');
  if(pp.semantic_id==='P3-COMPETITION-MAP' && pp.visual_structure?.includes('全屏') && p.layout!=='map')throw Error(p.id+'已指定全屏空间比较，不得换成小地图或表格');
+ if(pp.semantic_id==='P3-FAMILY-SEGMENT' && (!['family','gallery'].includes(p.layout) || JSON.stringify((p.body.pairs||[]).map(v=>v[0]))!==JSON.stringify((pp.case_slots||[]).map(v=>v.asset_id))))throw Error(p.id+'实际人物版位与已选版位不一致');
  if((p.layout==='gallery'||p.layout==='deck_gallery')&&(p.body.pairs?.length!==2 || (p.body.steps||[]).some(v=>typeof v!=='string')))throw Error(p.id+'双图模板需两处画面及当前项目的短句');
  s=pres.slides.add();const dark=['cover','anchor','ai','close','sequence'].includes(p.layout)||p.theme==='dark';s.background.fill=dark?K.dark:K.paper;
  m={page_id:p.id,order:index+1,objects:[]};mapping.push(m);
@@ -185,6 +222,7 @@ for(let index=0;index<ps.length;index++){
   if(p.layout==='choices'){
    const w=(1456-32)/3;p.body.cards.forEach((v,i)=>{const x=72+i*(w+16);rect('voice-bg-'+i,x,239,w,575,'#FFFEF9');rect('voice-rule-'+i,x,239,w,3,i%2?'#608876':'#BD9765');text('voice-title-'+i,v[0],x+21,270,w-42,62,27,K.ink,true,{line:1.4});text('voice-copy-'+i,v[1],x+21,354,w-42,242,23,'#364C42',false,{line:1.6});if(v[2])text('quote-'+i,v[2],x+21,650,w-42,117,23,K.gold,true,{line:1.6});});
   }else if(['gallery','deck_gallery'].includes(p.layout))await gallery();
+  else if(p.layout==='family')await family();
   else if(p.layout==='anchor')claims();
   else if(p.layout==='sequence')sequence();
   else if(p.layout==='overview')choiceCards();

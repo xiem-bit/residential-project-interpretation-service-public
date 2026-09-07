@@ -134,6 +134,7 @@ def main() -> int:
             "visual_reference": page.get("视觉参考页ID") or page.get("来源页ID") or "",
             "visual_variant_id": page.get("视觉变体ID") or "",
             "asset_bindings": page.get("素材编号") or "",
+            "case_slots": page.get("case_slots") or [],
             "assembly_action": page.get("装配动作") or "assemble",
             "change_scope": classify_change(str(page.get("装配动作") or "assemble")),
             "production_route": route,
@@ -156,6 +157,11 @@ def main() -> int:
             # Layout data adds no second content authority: the builder compares all
             # rendered wording to 页面文案 before exporting, then re-reads the PPTX.
             current["order"] = page["页序"]
+            if semantic_id == "P3-FAMILY-SEGMENT":
+                slot_assets = [slot["asset_id"] for slot in page["case_slots"]]
+                pairs = current.get("body", {}).get("pairs", [])
+                if current.get("layout") not in {"family", "gallery"} or (current.get("layout") == "gallery" and len(pairs) != 2) or [pair[0] for pair in pairs] != slot_assets:
+                    raise SystemExit(f"{page['页面ID']}实际人物版位与已裁定case_slots不一致，不能改版式或少装肖像")
             resolved = []
             case_ids, error = parse_asset_bindings(page.get("素材编号"))
             if error:

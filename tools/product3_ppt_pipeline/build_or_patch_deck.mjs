@@ -236,7 +236,7 @@ async function main() {
     const blueprint = await loadJson(plan.blueprint_path);
     const digest = crypto.createHash("sha256").update(JSON.stringify(sorted(blueprint))).digest("hex");
     if (digest !== plan.blueprint_sha256) throw new Error("装配清单已变化，请更新生产计划");
-    if (plan.pages.length !== blueprint.pages.length || plan.pages.some((p,i)=>p.page_id!==blueprint.pages[i]["页面ID"] || p.visible_copy!==blueprint.pages[i]["页面文案"])) throw new Error("计划页序或可见文字与冻结清单不一致");
+    if (plan.pages.length !== blueprint.pages.length || plan.pages.some((p,i)=>p.page_id!==blueprint.pages[i]["页面ID"] || p.visible_copy!==blueprint.pages[i]["页面文案"] || JSON.stringify(sorted(p.case_slots||[]))!==JSON.stringify(sorted(blueprint.pages[i].case_slots||[])))) throw new Error("计划页序或可见文字与冻结清单不一致");
     const {resolvePresentationFont, finalizePresentation} = await import(pathToFileURL(path.join(skill,"container_tools/artifact_tool_utils.mjs")).href);
     const created = await composeProjectPages(plan,{Presentation,resolvePresentationFont,projectRoot:PROJECT_ROOT});
     await fs.mkdir(path.resolve(args["work-dir"]),{recursive:true});

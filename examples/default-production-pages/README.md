@@ -9,3 +9,5 @@
 正式新任务用自己的研究、判断、名称、点位、脚本和图片用途替换输入。代表页通过只证明这一读取与导出路径可用，不证明陌生项目首次交稿的业务质量已稳定。
 
 产物1、2的两页输入分别为product1-content.json与product2-content.json，图片和来源在report-assets。通过tools/product12_reports的render_report、export_pdf、inspect_pdf依次生成；它们是原公开教程的局部表达示范，不是新增完整项目。
+
+本次补丁的`layout-assembly-input.json`与`layout-content.json`沿同一默认入口运行：分别包含anchor、overview、sequence的三／四项及两张连续地图。它们是局部容量与装载示例，不增加完整项目或固定产物页数；人物肖像规则通过现有正反检查保留，未将无肖像的旧两项目倒推为人物版式示范。

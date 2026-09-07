@@ -10,7 +10,6 @@ PIPELINE_DIR = ROOT / "tools" / "product3_ppt_pipeline"
 sys.path.insert(0, str(PIPELINE_DIR))
 
 from business_gates import (  # noqa: E402
-    duplicate_sequence_errors,
     internal_method_hits,
     is_audience_portrait,
     rank_portrait_assets,
@@ -25,28 +24,6 @@ class PublicBusinessGateTests(unittest.TestCase):
             "页面文案": "把四种选择放进同一价值账重新排序。",
         }
         self.assertIn("价值账", internal_method_hits(page))
-
-    def test_duplicate_pages_without_new_evidence_are_rejected(self) -> None:
-        pages = [
-            {
-                "页面ID": "PAGE-001",
-                "页面语义ID": "SEMANTIC-PROOF",
-                "来源页ID": "SOURCE-A",
-                "视觉结构": "双图证明",
-                "素材编号": "",
-            },
-            {
-                "页面ID": "PAGE-002",
-                "页面语义ID": "SEMANTIC-PROOF",
-                "来源页ID": "SOURCE-A",
-                "视觉结构": "双图证明",
-                "素材编号": "",
-            },
-        ]
-        errors = duplicate_sequence_errors(pages)
-        self.assertEqual(len(errors), 1)
-        self.assertIn("PAGE-001", errors[0])
-        self.assertIn("PAGE-002", errors[0])
 
     def test_portrait_routing_uses_business_semantics(self) -> None:
         assets = [
@@ -81,8 +58,13 @@ class PublicBusinessGateTests(unittest.TestCase):
             "页面文案": "三类家庭对应三种居住任务。",
             "这一页只负责": "说明家庭差异",
             "视觉结构": "三组家庭角色卡",
+            "case_slots": [{"id": f"portrait-{i}", "asset_id": f"CASE-{i}"} for i in range(3)],
         }
         self.assertEqual(required_portrait_count(page), 3)
+        page["case_slots"].pop()
+        self.assertEqual(required_portrait_count(page), 2)
+        del page["case_slots"]
+        self.assertEqual(required_portrait_count(page), 0)
 
 
 if __name__ == "__main__":

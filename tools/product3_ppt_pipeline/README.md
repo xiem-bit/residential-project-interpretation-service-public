@@ -56,3 +56,5 @@ node tools/product3_ppt_pipeline/build_or_patch_deck.mjs \
 - 公司章节只按任务启用，当前内置组合承接第二／三章；第四章不默认制作。完整系统开发、S3原型、AI推荐官实时能力均不由PPT导出证明。
 
 公开包的可运行输入见[默认入口代表页](../../examples/default-production-pages/README.md)。它只验证代表布局与装载，不替代完整项目研究或真人验收。
+
+三／四项内容：`anchor`、`overview`、`sequence`沿当前原生入口分别承接三项与四项，三项保持现有组织。家庭总览必配人物肖像：装配页沿用`case_slots`登记人物版位`id/purpose/asset_id`，内容用`family`的`body.pairs`逐位装载（2—4位）；已有双图`gallery`对应两位。实际版位及绑定必须与已裁定输入一致，不以标题中的家庭数量或删改版位绕过缺图。

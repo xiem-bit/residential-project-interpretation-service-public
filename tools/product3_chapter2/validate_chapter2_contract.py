@@ -98,7 +98,7 @@ def main() -> int:
 
     customer_decision_registry = data.get("customer_decision_registry")
     if not isinstance(customer_decision_registry, list) or not customer_decision_registry:
-        err("customer_decision_registry", "至少登记一项客户决策机制与真实选择事件")
+        err("customer_decision_registry", "至少登记一项客户决策机制及选择依据（真实事件、可信市场信号或有依据的顾问综合判断；如实区分类型）")
         customer_decision_registry = []
     customer_decision_ids: set[str] = set()
     for index, decision in enumerate(customer_decision_registry):
@@ -245,7 +245,7 @@ def main() -> int:
         require_text(dimension.get("customer_question"), f"{path}.customer_question")
         dimension_customer_refs = dimension.get("customer_decision_refs")
         if not isinstance(dimension_customer_refs, list) or not dimension_customer_refs:
-            err(f"{path}.customer_decision_refs", "至少引用一项与本维度相关的真实选择事件")
+            err(f"{path}.customer_decision_refs", "至少引用一项与本维度相关的选择依据（真实事件、可信市场信号或有依据的顾问综合判断）")
             dimension_customer_refs = []
         else:
             for ref in dimension_customer_refs:

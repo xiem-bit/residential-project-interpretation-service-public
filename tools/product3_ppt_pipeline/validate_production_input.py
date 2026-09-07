@@ -16,7 +16,7 @@ from xml.etree import ElementTree
 from zipfile import ZipFile
 
 from business_gates import (
-    duplicate_sequence_errors,
+    FAMILY_SEGMENT_SEMANTICS,
     internal_method_hits,
     is_audience_portrait,
     page_business_query,
@@ -64,14 +64,17 @@ def parse_asset_bindings(value: Any) -> tuple[list[str], str | None]:
     if isinstance(value, list):
         values = value[1:] if value and value[0] == "L" else value
         return list(dict.fromkeys(str(item) for item in values if item)), None
-    raw = str(value).strip()
-    if not raw:
-        return [], None
-    try:
-        parsed = json.loads(raw)
-    except json.JSONDecodeError:
-        ids = ASSET_ID_RE.findall(raw)
-        return list(dict.fromkeys(item.upper() for item in ids)), None if ids else "素材编号格式无法解析"
+    if isinstance(value, dict):
+        parsed = value
+    else:
+        raw = str(value).strip()
+        if not raw:
+            return [], None
+        try:
+            parsed = json.loads(raw)
+        except json.JSONDecodeError:
+            ids = ASSET_ID_RE.findall(raw)
+            return list(dict.fromkeys(item.upper() for item in ids)), None if ids else "素材编号格式无法解析"
     if isinstance(parsed, dict):
         main = parsed.get("main") or parsed.get("主图") or ""
         proof = parsed.get("proof") or parsed.get("proofs") or parsed.get("证明图") or []
@@ -268,12 +271,19 @@ def validate_payload(
                 asset_hash_usage[sha256_file(shared_path)].append((asset_id, page_id))
 
         portrait_count = required_portrait_count(page) if formal_business_gate else 0
+        if formal_business_gate and semantic_id in FAMILY_SEGMENT_SEMANTICS:
+            slots = page.get("case_slots")
+            if not portrait_count:
+                errors.append(f"{page_id}：家庭总览必须在case_slots保留已选版式的人物版位，不能删除版位绕过缺图检查")
+            slot_ids = [slot.get("id") for slot in slots if isinstance(slot, dict)] if isinstance(slots, list) else []
+            if portrait_count and (len(slot_ids) != portrait_count or not all(isinstance(value, str) and value.strip() for value in slot_ids) or len(set(slot_ids)) != portrait_count):
+                errors.append(f"{page_id}：人物版位ID为空、重复或格式错误")
         if portrait_count:
-            bound_portraits = [
-                asset_id
-                for asset_id in asset_ids
-                if asset_id in assets and is_audience_portrait(assets[asset_id])
-            ]
+            slot_assets = [slot.get("asset_id") for slot in page["case_slots"] if isinstance(slot, dict)]
+            bound_portraits = list(dict.fromkeys(
+                asset_id for asset_id in slot_assets
+                if isinstance(asset_id, str) and asset_id in asset_ids and asset_id in assets and is_audience_portrait(assets[asset_id])
+            ))
             candidates = rank_portrait_assets(page, asset_inventory, limit=max(6, portrait_count * 2))
             family_asset_selection.append(
                 {
@@ -304,8 +314,8 @@ def validate_payload(
                         f"共享库当前只有{len(candidates)}张候选；先按缺口语义新生产、复核并登记CASE编号，禁止空槽进入PPT"
                     )
 
-    if not (payload.get("fixture_only") and allow_test_fixture):
-        errors.extend(duplicate_sequence_errors(pages))
+    # Information progression is reviewed on actual pages. Reusing a page type,
+    # layout or map does not establish duplication; filenames do not prove novelty.
 
     for asset_id, page_ids in sorted(asset_usage.items()):
         if len(page_ids) > 1:

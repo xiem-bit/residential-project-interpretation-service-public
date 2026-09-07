@@ -1,9 +1,9 @@
 {
   "schema": "residential.production_authority_map.v0.2",
-  "candidate_version": "v0.2.0-rc.4",
+  "candidate_version": "v0.2.0-rc.5",
   "source_baseline": {
     "repository_role": "private_method_authority",
-    "commit": "05f7817ca043e7104ef82fd84f1538d45a7235c7",
+    "commit": "6de48e99c620ff899abc96fb53ecca259f58d928",
     "worktree_required_clean": false,
     "extraction_method": "explicit_committed_git_paths_with_public_safe_adaptation",
     "incremental_sync_record": "MAINLINE_SYNC_20260903.md"
@@ -37,7 +37,7 @@
         },
         {
           "path": "docs/当前状态.md",
-          "git_blob": "fc8136629c4df58cefdcd34519520607a11bdeb1"
+          "git_blob": "4069fb0735d852d716a3e61047589d78e492e7b4"
         }
       ],
       "public": [
@@ -128,7 +128,7 @@
       "source": [
         {
           "path": "docs/18-产物3第二章竞争理解与价值推导生产规范_v1.0.md",
-          "git_blob": "e374946b3b22ba69fe2e3a9ee150c952b36cd2fd"
+          "git_blob": "37eaf00ae13fc522e3db770c2dc1c8dd414485ba"
         },
         {
           "path": "docs/19-产物3第三章住宅UE系统解决方案生产规范_v1.0.md",
@@ -136,7 +136,7 @@
         },
         {
           "path": "docs/33-产物3预排版装配控制台生产规范_v0.1.md",
-          "git_blob": "fb5959c435b09e562a69e2ddc40f2213cc128596"
+          "git_blob": "5f4f2f14ddcc62d1e2c4aac1f80ce982c3181dfd"
         },
         {
           "path": "docs/34-产物3装配清单到可编辑PPTX全流程生产与定向修订设计_v0.1.md",
@@ -267,7 +267,7 @@
       "source": [
         {
           "path": "docs/33-产物3预排版装配控制台生产规范_v0.1.md",
-          "git_blob": "fb5959c435b09e562a69e2ddc40f2213cc128596"
+          "git_blob": "5f4f2f14ddcc62d1e2c4aac1f80ce982c3181dfd"
         },
         {
           "path": "docs/34-产物3装配清单到可编辑PPTX全流程生产与定向修订设计_v0.1.md",
@@ -283,19 +283,31 @@
         },
         {
           "path": "tools/product3_ppt_pipeline/compose_project_pages.mjs",
-          "git_blob": "5c4d79d9a28797fcca8763adcfb08c31cbc3ac60"
+          "git_blob": "52fca7425aede9fa827c54807aeae59623d9b127"
         },
         {
           "path": "tools/product3_ppt_pipeline/plan_production.py",
-          "git_blob": "0056035a127871cfdbd264ba30454772045f7a1e"
+          "git_blob": "5c92ea4fabfe4c94f5186eebf60f5d7ac3344a79"
         },
         {
           "path": "tools/product3_ppt_pipeline/build_or_patch_deck.mjs",
-          "git_blob": "7ef9b26202dd1565a9b8836e98a3c4d6f6d2fe94"
+          "git_blob": "44f96e0ab657bd2eadeed0f4323e05eaed5771b9"
         },
         {
           "path": "tools/product3_assembly_console/scripts/export_approved_blueprint.py",
           "git_blob": "f0ee88bcfdfe6fce6487bacce93aa4d7179ab010"
+        },
+        {
+          "path": "tools/product3_ppt_pipeline/business_gates.py",
+          "git_blob": "ad3e8b54e59a609f95bc548d18be60ad44f72b1a"
+        },
+        {
+          "path": "tools/product3_ppt_pipeline/validate_production_input.py",
+          "git_blob": "f9901662bf672a8b27fb31c726ab291abe2fea41"
+        },
+        {
+          "path": "templates/产物3第二章生产消费合同.template.json",
+          "git_blob": "0b3af075747f866dba0c8422f7b3b3645019400b"
         }
       ],
       "public": [
@@ -347,7 +359,7 @@
         },
         {
           "path": "assets/产物3案例截图素材库/README.md",
-          "git_blob": "5eb0b97294101be6011cf4e13be0d0ef4c2289ae"
+          "git_blob": "729adeffc1fae51860a8b2be50a3f343c42c6b21"
         },
         {
           "path": "assets/营销文案表达库/README.md",

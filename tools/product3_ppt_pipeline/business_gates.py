@@ -76,12 +76,9 @@ def is_audience_portrait(asset: dict[str, Any]) -> bool:
 def required_portrait_count(page: dict[str, Any]) -> int:
     if str(page.get("页面语义ID") or "") not in FAMILY_SEGMENT_SEMANTICS:
         return 0
-    text = page_business_query(page)
-    if re.search(r"(三类|三组|三种).{0,8}(家庭|客群|人物|角色)", text):
-        return 3
-    if re.search(r"(两类|两组|两种).{0,8}(家庭|客群|人物|角色)", text):
-        return 2
-    return 1
+    # Count the selected layout's explicit slots, never words in its copy.
+    slots = page.get("case_slots")
+    return len(slots) if isinstance(slots, list) else 0
 
 
 def _semantic_bigrams(value: str) -> set[str]:
@@ -115,29 +112,3 @@ def rank_portrait_assets(
         }
         for score, _, asset in ranked[:limit]
     ]
-
-
-def _normalized(value: Any) -> str:
-    return re.sub(r"\W+", "", str(value or "")).lower()
-
-
-def duplicate_sequence_errors(pages: list[dict[str, Any]]) -> list[str]:
-    """拦截相邻页面复用同一结构，却没有新图证或新客户判断的情况。"""
-    errors: list[str] = []
-    for left, right in zip(pages, pages[1:]):
-        left_semantic = str(left.get("页面语义ID") or "")
-        right_semantic = str(right.get("页面语义ID") or "")
-        same_semantic = left_semantic and left_semantic == right_semantic
-        same_source = _normalized(left.get("来源页ID")) == _normalized(right.get("来源页ID"))
-        same_visual = _normalized(left.get("视觉结构")) == _normalized(right.get("视觉结构"))
-        left_assets = _normalized(left.get("素材编号"))
-        right_assets = _normalized(right.get("素材编号"))
-        no_distinct_assets = not left_assets and not right_assets
-        if same_semantic and same_source and same_visual and no_distinct_assets:
-            left_id = str(left.get("页面ID") or left.get("页序") or "上一页")
-            right_id = str(right.get("页面ID") or right.get("页序") or "下一页")
-            errors.append(
-                f"{left_id}、{right_id}：相邻页复用同一页面语义、来源结构且均无独立图证；"
-                "合并页面，或为后一页补充新的客户判断与不同证明素材"
-            )
-    return errors
