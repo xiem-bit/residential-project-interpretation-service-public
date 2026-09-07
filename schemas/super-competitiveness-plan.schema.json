@@ -2,35 +2,111 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/residential/super-competitiveness-plan.schema.json",
   "type": "object",
-  "required": ["schema", "project_id", "semantic_version", "status", "items", "purchase_stage_coverage"],
+  "required": [
+    "schema",
+    "project_id",
+    "semantic_version",
+    "status",
+    "items",
+    "purchase_stage_coverage"
+  ],
   "properties": {
-    "schema": {"const": "residential.super_competitiveness_plan.v0.2"},
-    "status": {"enum": ["minimum_three_sc_pass", "returned_for_research"]},
+    "schema": {
+      "const": "residential.super_competitiveness_plan.v0.2"
+    },
+    "status": {
+      "enum": [
+        "minimum_three_sc_pass",
+        "returned_for_research"
+      ]
+    },
     "items": {
       "type": "array",
       "minItems": 3,
       "maxItems": 4,
       "items": {
         "type": "object",
-        "required": ["id", "name", "mechanism", "status", "target_customer_refs", "purchase_task_refs", "belief_change", "bounded_claim", "enemy_refs", "project_support_refs", "causal_chain", "inference_link_refs", "five_checks", "purchase_stage_effects", "production_items"],
+        "required": [
+          "id",
+          "name",
+          "mechanism",
+          "status",
+          "target_customer_refs",
+          "purchase_task_refs",
+          "belief_change",
+          "bounded_claim",
+          "enemy_refs",
+          "project_support_refs",
+          "causal_chain",
+          "inference_link_refs",
+          "five_checks",
+          "purchase_stage_effects"
+        ],
         "properties": {
-          "status": {"enum": ["candidate", "established", "returned_for_research", "superseded"]},
+          "status": {
+            "enum": [
+              "candidate",
+              "established",
+              "returned_for_research",
+              "superseded"
+            ]
+          },
           "five_checks": {
             "type": "object",
-            "required": ["purchase_impact", "bounded_unique_or_best", "enemy_relation", "project_support", "ue_provability"]
+            "required": [
+              "purchase_impact",
+              "bounded_unique_or_best",
+              "enemy_relation",
+              "project_support"
+            ]
           },
           "causal_chain": {
             "type": "object",
-            "required": ["project_fact", "relative_competition", "customer_importance", "project_response", "ue_proof", "target_action"],
-            "additionalProperties": false
+            "required": [
+              "project_fact",
+              "relative_competition",
+              "customer_importance",
+              "project_response",
+              "target_action"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "project_fact": {
+                "type": "object"
+              },
+              "relative_competition": {
+                "type": "object"
+              },
+              "customer_importance": {
+                "type": "object"
+              },
+              "project_response": {
+                "type": "object"
+              },
+              "target_action": {
+                "type": "object"
+              },
+              "ue_proof": {
+                "type": "object"
+              }
+            }
           },
-          "inference_link_refs": {"type": "array", "minItems": 1, "uniqueItems": true}
+          "inference_link_refs": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true
+          }
         }
       }
     },
     "purchase_stage_coverage": {
       "type": "object",
-      "required": ["enter_consideration", "win_comparison", "prompt_action"]
+      "required": [
+        "enter_consideration",
+        "win_comparison",
+        "prompt_action"
+      ]
     }
-  }
+  },
+  "description": "研究成立字段通用；UE及制作字段在产物3或5启用时由现有任务校验器要求。"
 }

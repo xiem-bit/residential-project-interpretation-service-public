@@ -36,7 +36,9 @@ jobs:
           python3 scripts/build_release_manifest.py --check
 
       - name: Run Python public-core tests
-        run: python3 tests/run_public_tests.py
+        run: |
+          python3 -m pip install Pillow
+          python3 tests/run_public_tests.py
 
       - name: Verify v0.2 production-path tutorial
         run: |

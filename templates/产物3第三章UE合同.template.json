@@ -3,15 +3,25 @@
   "project_id": "PROJECT-001",
   "semantic_version": "SEM-001",
   "status": "complete",
-  "value_anchor": {"text": "与第二章一致的价值锚点", "source_ref": "VALUE-ANCHOR", "usage": "textual_recap_only"},
+  "value_anchor": {
+    "text": "与第二章一致的价值锚点",
+    "source_ref": "VALUE-ANCHOR",
+    "usage": "textual_recap_only"
+  },
   "solutions": [
     {
       "sc_id": "SC-01",
       "name": "与第二章一致的竞争武器",
       "customer_gain": "客户获得",
-      "project_fact_refs": ["E-01"],
-      "competition_relation_refs": ["REL-01"],
-      "purchase_task_refs": ["TASK-01"],
+      "project_fact_refs": [
+        "E-01"
+      ],
+      "competition_relation_refs": [
+        "REL-01"
+      ],
+      "purchase_task_refs": [
+        "TASK-01"
+      ],
       "bounded_claim": "与第二章一致的边界内结论",
       "ue_scenes": [
         {
@@ -21,12 +31,130 @@
           "interaction": "自由视角、分层点亮、路径漫游或角色切换",
           "sales_logic": "置业顾问怎样讲解",
           "target_judgment": "希望形成的新判断",
-          "module_refs": ["MODULE-01"],
+          "module_refs": [
+            "MODULE-01"
+          ],
           "product5_target": "P5-SC01-01"
+        }
+      ],
+      "ue_page_refs": [
+        "UE-PAGE-01"
+      ]
+    }
+  ],
+  "family_routes": [
+    {
+      "id": "ROUTE-01",
+      "purchase_task_ref": "TASK-01",
+      "sc_order": [
+        "SC-01"
+      ],
+      "recommendation": "适配结论",
+      "exit_condition": "不适配或需要转人工的条件",
+      "scenes": [
+        {
+          "id": "ROUTE-01-S1",
+          "ue_page_refs": [
+            "UE-PAGE-01"
+          ],
+          "module_refs": [
+            "MODULE-01"
+          ],
+          "script": "[完整预写讲稿，不只写操作名]",
+          "focus": "[本次聚焦对象]",
+          "emphasis": "[停留和讲解重点]"
         }
       ]
     }
   ],
-  "family_routes": [{"id": "ROUTE-01", "purchase_task_ref": "TASK-01", "sc_order": ["SC-01"], "recommendation": "适配结论", "exit_condition": "不适配或需要转人工的条件"}],
-  "system_modules": [{"id": "MODULE-01", "name": "系统模块", "supports_sc_refs": ["SC-01"], "customer_value": "模块怎样改变客户理解", "product5_targets": ["P5-SC01-01"]}]
+  "system_modules": [
+    {
+      "id": "MODULE-01",
+      "name": "系统模块",
+      "supports_sc_refs": [
+        "SC-01"
+      ],
+      "customer_value": "模块怎样改变客户理解",
+      "product5_targets": [
+        "P5-SC01-01"
+      ],
+      "production_items": [
+        {
+          "id": "ITEM-01",
+          "content": "[填写实际制作内容，可跨页引用]",
+          "basis": "[填写制作依据]",
+          "status": "planned"
+        }
+      ],
+      "ue_pages": [
+        {
+          "id": "UE-PAGE-01",
+          "production_level": "区域",
+          "narrative_task": "[填写本页对当前购买判断的具体论证]",
+          "base_object": "[本页固定底图，平面或三维均可]",
+          "panel_content": "[面板承担的具体信息]",
+          "interaction": "[已知可行的动作]",
+          "basis": "[制作依据]",
+          "production_item_refs": [
+            "ITEM-01"
+          ],
+          "supports_super_competitiveness_refs": [
+            "SC-01"
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "ue_production_mapping_version": 1,
+    "production_basis": [
+      "[填写本轮实际可用的生产依据；缺少明细只限制相关细节]"
+    ]
+  },
+  "system_scope_close": {
+    "scope_decisions": [
+      {
+        "level": "品牌",
+        "status": "deferred",
+        "reason": "[按本轮范围说明安排，不要求每条竞争力全部展开]",
+        "module_refs": []
+      },
+      {
+        "level": "城市",
+        "status": "deferred",
+        "reason": "[按本轮范围说明安排，不要求每条竞争力全部展开]",
+        "module_refs": []
+      },
+      {
+        "level": "区域",
+        "status": "deferred",
+        "reason": "[按本轮范围说明安排，不要求每条竞争力全部展开]",
+        "module_refs": []
+      },
+      {
+        "level": "板块",
+        "status": "deferred",
+        "reason": "[按本轮范围说明安排，不要求每条竞争力全部展开]",
+        "module_refs": []
+      },
+      {
+        "level": "土地",
+        "status": "deferred",
+        "reason": "[按本轮范围说明安排，不要求每条竞争力全部展开]",
+        "module_refs": []
+      },
+      {
+        "level": "配套",
+        "status": "deferred",
+        "reason": "[按本轮范围说明安排，不要求每条竞争力全部展开]",
+        "module_refs": []
+      },
+      {
+        "level": "项目",
+        "status": "deferred",
+        "reason": "[按本轮范围说明安排，不要求每条竞争力全部展开]",
+        "module_refs": []
+      }
+    ]
+  }
 }

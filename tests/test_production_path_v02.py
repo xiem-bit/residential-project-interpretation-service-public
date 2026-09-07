@@ -166,6 +166,60 @@ class ProductionPathV02Test(unittest.TestCase):
         self.make_product1_only()
         self.assertEqual(self.errors(mode="tutorial"), [])
 
+    def test_independent_product1_needs_no_sc_or_ue_files(self) -> None:
+        self.make_product1_only()
+        for name in ("semantic-core.json", "super-competitiveness-plan.json"):
+            (self.run_dir / name).unlink()
+        (self.run_dir / "change-impact-registry.json").unlink(missing_ok=True)
+        receipt = self.load("production-receipt.json")
+        for key in ("semantic_core_frozen", "minimum_three_sc_pass"):
+            receipt["business_statuses"].pop(key, None)
+        self.write("production-receipt.json", receipt)
+        summary = self.load("product1-competition-summary.json")
+        summary["sc_candidates"] = []
+        self.write("product1-competition-summary.json", summary)
+        self.assertEqual(self.errors(mode="tutorial"), [])
+
+    def test_independent_product2_keeps_research_without_ue_or_product1(self) -> None:
+        matrix = self.load("product-enablement-matrix.json")
+        for item in matrix["products"]:
+            if item["product"] != 2:
+                item.update(status="not_enabled", reason="本轮独立产物2", deliverables=[])
+        matrix["high_cost_admission"]["status"] = "research_only"
+        self.write("product-enablement-matrix.json", matrix)
+        contract = self.run_dir / "project-contract.md"
+        contract.write_text(contract.read_text().replace('"enabled_products": [1, 2, 3, 5]', '"enabled_products": [2]'))
+        semantic = self.load("semantic-core.json")
+        semantic["product_package"] = {"enabled": [2], "not_enabled": [1, 3, 5]}
+        semantic["source_outputs"] = ["project-contract.md", "product2-buyer-decision-study.md"]
+        self.write("semantic-core.json", semantic)
+        plan = self.load("super-competitiveness-plan.json")
+        for item in plan["items"]:
+            item.pop("production_items", None)
+            item["five_checks"].pop("ue_provability", None)
+            item["causal_chain"].pop("ue_proof", None)
+        self.write("super-competitiveness-plan.json", plan)
+        for name in ("product1-competition-study.md", "product1-competition-summary.json", "product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json", "product5-interaction-blueprint.json"):
+            (self.run_dir / name).unlink()
+        receipt = self.load("production-receipt.json")
+        receipt["enabled_products"] = [2]
+        for key in ("product1_complete", "ue_solution_bridge_pass", "product5_blueprint_pass"):
+            receipt["business_statuses"].pop(key, None)
+        self.write("production-receipt.json", receipt)
+        self.assertEqual(self.errors(mode="tutorial"), [])
+
+    def test_page_reuse_keeps_two_scripts_and_rejects_broken_relations(self) -> None:
+        chapter3 = self.load("product3-chapter3-contract.json")
+        self.assertEqual(len(chapter3["family_routes"]), 2)
+        self.assertEqual(self.errors(mode="tutorial"), [])
+        chapter3["system_modules"][1]["ue_pages"][0]["production_item_refs"] = ["MISSING"]
+        self.write("product3-chapter3-contract.json", chapter3)
+        self.assertTrue(any("production_item_refs" in e for e in self.errors(mode="tutorial")))
+        chapter3 = json.loads((FIXTURE / "product3-chapter3-contract.json").read_text())
+        chapter3["family_routes"][0]["scenes"][0]["script"] = ""
+        self.write("product3-chapter3-contract.json", chapter3)
+        self.assertTrue(any(".script" in e for e in self.errors(mode="tutorial")))
+
     def test_disabled_product_stale_file_fails(self) -> None:
         product2 = (FIXTURE / "product2-buyer-decision-study.md").read_text(encoding="utf-8")
         self.make_product1_only()
@@ -174,7 +228,7 @@ class ProductionPathV02Test(unittest.TestCase):
 
     def test_enabled_product_missing_file_fails(self) -> None:
         (self.run_dir / "product5-interaction-blueprint.json").unlink()
-        self.assertTrue(any("产物5已启用但缺少文件" in error for error in self.errors(mode="tutorial")))
+        self.assertTrue(any("缺少必需文件：product5-interaction-blueprint.json" in error for error in self.errors(mode="tutorial")))
 
     def test_initializer_creates_blank_outputs_not_tutorial_answers(self) -> None:
         output = Path(self.temp.name) / "blank"
@@ -185,11 +239,11 @@ class ProductionPathV02Test(unittest.TestCase):
             check=False,
         )
         self.assertEqual(completed.returncode, 0, completed.stderr)
-        self.assertTrue((output / "semantic-core.json").is_file())
+        self.assertFalse((output / "semantic-core.json").exists())
         self.assertFalse((output / "product2-buyer-decision-study.md").exists())
         self.assertFalse((output / "product2-buyer-decision-summary.json").exists())
         self.assertFalse((output / "product3-chapter2-contract.json").exists())
-        self.assertNotIn("SC-ACCESS", (output / "semantic-core.json").read_text(encoding="utf-8"))
+        self.assertNotIn("SC-ACCESS", (output / "product1-competition-study.md").read_text(encoding="utf-8"))
         _, errors = validate_all(output)
         self.assertTrue(any("模板占位符" in error for error in errors))
 
@@ -235,7 +289,7 @@ class ProductionPathV02Test(unittest.TestCase):
             check=False,
         )
         self.assertNotEqual(completed.returncode, 0)
-        self.assertIn("this release supports only products 1,2,3,5", completed.stderr)
+        self.assertIn("Enable only the requested products from 1,2,3,5", completed.stderr)
         self.assertFalse(output.exists())
 
     def test_revision_tutorial_verifier_passes(self) -> None:
@@ -250,7 +304,9 @@ class ProductionPathV02Test(unittest.TestCase):
 
     def test_authority_manifest_marks_semantic_core_as_output(self) -> None:
         manifest = json.loads((ROOT / "PRODUCTION_PATH_MANIFEST.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["semantic_core_role"], "required_production_output_not_bootstrap_input")
+        self.assertEqual(manifest["semantic_core_role"], "current_production_basis_when_task_requires_complete_research_or_solution")
+        self.assertNotIn("semantic-core.json", manifest["base_required_run_files"])
+        self.assertIn("semantic-core.json", manifest["complete_research_or_solution_files"])
         self.assertTrue(manifest["adapter_pass_cannot_satisfy_business_gate"])
 
 

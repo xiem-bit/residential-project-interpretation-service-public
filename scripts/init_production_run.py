@@ -14,15 +14,12 @@ ROOT = Path(__file__).resolve().parents[1]
 CORE_TEMPLATES = {
     "真实项目有效任务合同.md": "project-contract.md",
     "事实冲突缺口登记表.template.json": "fact-conflict-gap-register.json",
-    "产物1竞争态势研究.template.md": "product1-competition-study.md",
-    "产物1竞争态势研究摘要.template.json": "product1-competition-summary.json",
-    "统一语义核.template.json": "semantic-core.json",
-    "超级竞争力与制作规划.template.json": "super-competitiveness-plan.json",
     "产物启用矩阵.template.json": "product-enablement-matrix.json",
     "生产回执.template.json": "production-receipt.json",
 }
 
 PRODUCT_TEMPLATES = {
+    1: {"产物1竞争态势研究.template.md": "product1-competition-study.md", "产物1竞争态势研究摘要.template.json": "product1-competition-summary.json"},
     2: {
         "产物2购买决策研究.template.md": "product2-buyer-decision-study.md",
         "产物2购买决策研究摘要.template.json": "product2-buyer-decision-summary.json",
@@ -43,8 +40,8 @@ def parse_products(value: str) -> set[int]:
         products = {int(item.strip()) for item in value.split(",") if item.strip()}
     except ValueError as exc:
         raise argparse.ArgumentTypeError("products must be comma-separated integers from 1,2,3,5") from exc
-    if 1 not in products or not products.issubset({1, 2, 3, 5}):
-        raise argparse.ArgumentTypeError("Product 1 is required; this release supports only products 1,2,3,5")
+    if not products or not products.issubset({1, 2, 3, 5}):
+        raise argparse.ArgumentTypeError("Enable only the requested products from 1,2,3,5; products 1 and 2 are independent")
     return products
 
 
@@ -59,9 +56,7 @@ def configure_enablement(output_dir: Path, products: set[int]) -> None:
     }
     for item in matrix["products"]:
         product_id = item["product"]
-        if product_id == 1:
-            item.update(status="complete", reason="住宅研究默认首要", deliverables=deliverables[1])
-        elif product_id in products:
+        if product_id in products:
             item.update(status="enabled", reason="由本轮初始化参数启用，正式原因须在项目合同中写明", deliverables=deliverables[product_id])
         else:
             item.update(status="not_enabled", reason="本轮未启用", deliverables=[])
@@ -99,13 +94,23 @@ def main() -> int:
     output_dir.mkdir(parents=True)
     shutil.copytree(input_dir, output_dir / "input")
     templates = dict(CORE_TEMPLATES)
-    for product_id in sorted(args.products - {1}):
+    for product_id in sorted(args.products):
         templates.update(PRODUCT_TEMPLATES[product_id])
+    if args.products.intersection({2, 3, 5}):
+        templates.update({"统一语义核.template.json": "semantic-core.json", "超级竞争力与制作规划.template.json": "super-competitiveness-plan.json"})
     if args.include_change_registry:
         templates["变更影响登记表.template.json"] = "change-impact-registry.json"
     for source_name, target_name in templates.items():
         shutil.copy2(ROOT / "templates" / source_name, output_dir / target_name)
     configure_enablement(output_dir, args.products)
+    if not args.products.intersection({3, 5}) and (output_dir / "super-competitiveness-plan.json").exists():
+        plan_path = output_dir / "super-competitiveness-plan.json"
+        plan = json.loads(plan_path.read_text(encoding="utf-8"))
+        for item in plan.get("items", []):
+            item.pop("production_items", None)
+            item.get("five_checks", {}).pop("ue_provability", None)
+            item.get("causal_chain", {}).pop("ue_proof", None)
+        plan_path.write_text(json.dumps(plan, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"initialized blank production run: {output_dir}")
     print(f"enabled product templates: {','.join(str(item) for item in sorted(args.products))}")
     print("The semantic core remains a blank production output; follow the public workflow to create the business judgments.")

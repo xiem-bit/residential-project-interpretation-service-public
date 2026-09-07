@@ -3,51 +3,377 @@
   "project_id": "fictional-qinglan-chengjing-production",
   "semantic_version": "SEM-QC-001",
   "status": "complete",
-  "value_anchor": {"text": "澄川东岸双向就业生活里，把低密归家与三代弹性放进同一套日常的改善住区", "source_ref": "VALUE-ANCHOR", "usage": "textual_recap_only"},
+  "value_anchor": {
+    "text": "澄川东岸双向就业生活里，把低密归家与三代弹性放进同一套日常的改善住区",
+    "source_ref": "VALUE-ANCHOR",
+    "usage": "textual_recap_only"
+  },
   "solutions": [
     {
       "sc_id": "SC-ACCESS",
       "name": "双向就业低密选择",
       "customer_gain": "先用两条就业方向判断新区位置，再把低密空间纳入同一次比较",
-      "project_fact_refs": ["E-BRIEF", "CONFLICT-RAIL"],
-      "competition_relation_refs": ["REL-COMMUTE"],
-      "purchase_task_refs": ["TASK-COMMUTE-IMPROVE"],
+      "project_fact_refs": [
+        "E-BRIEF",
+        "CONFLICT-RAIL"
+      ],
+      "competition_relation_refs": [
+        "REL-COMMUTE"
+      ],
+      "purchase_task_refs": [
+        "TASK-COMMUTE-IMPROVE"
+      ],
       "bounded_claim": "本虚构样本内唯一同时提供双向就业关系与1.45低密底盘的改善选择",
       "ue_scenes": [
-        {"id": "UE-SC-ACCESS", "customer_problem": "担心新区位置把日常通勤押在单一路径", "visual_proof": "项目、两个就业方向、既有轨道节点和主要道路的抽象关系", "interaction": "切换两个就业方向并分层显示已知距离与待核信息", "sales_logic": "先承认北湾府成熟轨道优势，再说明本案为何以双向就业加低密进入候选", "target_judgment": "新区位置可以用两条就业方向共同判断，而不是只按最近轨道站判断", "module_refs": ["MODULE-REGION"], "product5_target": "P5-ACCESS"}
+        {
+          "id": "UE-SC-ACCESS",
+          "customer_problem": "担心新区位置把日常通勤押在单一路径",
+          "visual_proof": "项目、两个就业方向、既有轨道节点和主要道路的抽象关系",
+          "interaction": "切换两个就业方向并分层显示已知距离与待核信息",
+          "sales_logic": "先承认北湾府成熟轨道优势，再说明本案为何以双向就业加低密进入候选",
+          "target_judgment": "新区位置可以用两条就业方向共同判断，而不是只按最近轨道站判断",
+          "module_refs": [
+            "MODULE-REGION"
+          ],
+          "product5_target": "P5-ACCESS"
+        }
+      ],
+      "ue_page_refs": [
+        "PAGE-REGION"
       ]
     },
     {
       "sc_id": "SC-CONTINUITY",
       "name": "全天候连续归家",
       "customer_gain": "沿一条归家路线看懂园林、架空层和地下会所怎样共同服务日常",
-      "project_fact_refs": ["E-ROUTE", "GAP-VISUAL"],
-      "competition_relation_refs": ["REL-LOWDENSITY"],
-      "purchase_task_refs": ["TASK-FAMILY-FLEX"],
+      "project_fact_refs": [
+        "E-ROUTE",
+        "GAP-VISUAL"
+      ],
+      "competition_relation_refs": [
+        "REL-LOWDENSITY"
+      ],
+      "purchase_task_refs": [
+        "TASK-FAMILY-FLEX"
+      ],
       "bounded_claim": "本虚构样本内唯一把首层园林、架空层与地下会所组织成连续归家路径的低密社区",
       "ue_scenes": [
-        {"id": "UE-SC-CONTINUITY", "customer_problem": "园林和会所仍像彼此分离的配置清单", "visual_proof": "入口、园林、架空层和地下会所的空间与时间连续性", "interaction": "按归家顺序逐层点亮并漫游", "sales_logic": "先承认栖霞里会所已开放，再把比较标准转为家庭每天怎样经过和使用", "target_judgment": "低密价值是一条全天候生活路径，而不是配置数量", "module_refs": ["MODULE-GARDEN"], "product5_target": "P5-CONTINUITY"}
+        {
+          "id": "UE-SC-CONTINUITY",
+          "customer_problem": "园林和会所仍像彼此分离的配置清单",
+          "visual_proof": "入口、园林、架空层和地下会所的空间与时间连续性",
+          "interaction": "按归家顺序逐层点亮并漫游",
+          "sales_logic": "先承认栖霞里会所已开放，再把比较标准转为家庭每天怎样经过和使用",
+          "target_judgment": "低密价值是一条全天候生活路径，而不是配置数量",
+          "module_refs": [
+            "MODULE-GARDEN"
+          ],
+          "product5_target": "P5-CONTINUITY"
+        }
+      ],
+      "ue_page_refs": [
+        "PAGE-GARDEN"
       ]
     },
     {
       "sc_id": "SC-FLEXIBILITY",
       "name": "三代弹性空间先验",
       "customer_gain": "父母短住、居家办公和儿童学习可以按家庭状态切换并保留成员边界",
-      "project_fact_refs": ["E-PRODUCT", "GAP-PRICE"],
-      "competition_relation_refs": ["REL-LOWDENSITY", "REL-WAIT"],
-      "purchase_task_refs": ["TASK-FAMILY-FLEX"],
+      "project_fact_refs": [
+        "E-PRODUCT",
+        "GAP-PRICE"
+      ],
+      "competition_relation_refs": [
+        "REL-LOWDENSITY",
+        "REL-WAIT"
+      ],
+      "purchase_task_refs": [
+        "TASK-FAMILY-FLEX"
+      ],
       "bounded_claim": "本虚构样本内唯一同时设置双套房与可变书房、并可先完成家庭空间适配的产品组合",
       "ue_scenes": [
-        {"id": "UE-SC-FLEXIBILITY", "customer_problem": "价格未出时把户型适配也推迟，父母短住与办公矛盾无法关闭", "visual_proof": "143平方米日常、父母短住和居家办公三种状态", "interaction": "切换空间状态并比较独立卫浴、书房和共同生活关系", "sales_logic": "不制造价格紧迫感，先帮助家庭确认空间是否适合", "target_judgment": "等待价格不妨碍先完成家庭空间适配判断", "module_refs": ["MODULE-UNIT"], "product5_target": "P5-FLEXIBILITY"}
+        {
+          "id": "UE-SC-FLEXIBILITY",
+          "customer_problem": "价格未出时把户型适配也推迟，父母短住与办公矛盾无法关闭",
+          "visual_proof": "143平方米日常、父母短住和居家办公三种状态",
+          "interaction": "切换空间状态并比较独立卫浴、书房和共同生活关系",
+          "sales_logic": "不制造价格紧迫感，先帮助家庭确认空间是否适合",
+          "target_judgment": "等待价格不妨碍先完成家庭空间适配判断",
+          "module_refs": [
+            "MODULE-UNIT"
+          ],
+          "product5_target": "P5-FLEXIBILITY"
+        }
+      ],
+      "ue_page_refs": [
+        "PAGE-GARDEN",
+        "PAGE-UNIT"
       ]
     }
   ],
   "family_routes": [
-    {"id": "ROUTE-DUAL-CITY-FAMILY", "purchase_task_ref": "TASK-FAMILY-FLEX", "sc_order": ["SC-ACCESS", "SC-CONTINUITY", "SC-FLEXIBILITY"], "recommendation": "先验证双向就业，再看连续归家，最后用143平方米三种状态确认空间适配", "exit_condition": "任一就业方向不可接受、正式价格超支付边界或双套房任务不存在时转入其他方案"}
+    {
+      "id": "ROUTE-COMMUTE",
+      "purchase_task_ref": "TASK-COMMUTE-IMPROVE",
+      "sc_order": [
+        "SC-ACCESS",
+        "SC-CONTINUITY",
+        "SC-FLEXIBILITY"
+      ],
+      "scenes": [
+        {
+          "id": "ROUTE-COMMUTE-1",
+          "ue_page_refs": [
+            "PAGE-REGION"
+          ],
+          "module_refs": [
+            "MODULE-REGION"
+          ],
+          "script": "两个人在不同方向工作，住宅位置要同时照顾两条日常路线。北湾府的成熟轨道有直接吸引力；青岚澄境的比较理由，是在两条就业方向可接受时，把低密住区纳入选择。",
+          "focus": "两条就业方向",
+          "emphasis": "详讲当前路线与取舍"
+        },
+        {
+          "id": "ROUTE-COMMUTE-2",
+          "ue_page_refs": [
+            "PAGE-GARDEN"
+          ],
+          "module_refs": [
+            "MODULE-GARDEN"
+          ],
+          "script": "回到社区，园林、架空层与地下会所处于同一归家关系里。低密带来的变化也发生在住宅外，每天回家经过的公共空间是其中一部分。",
+          "focus": "归家路线",
+          "emphasis": "简述住区日常"
+        },
+        {
+          "id": "ROUTE-COMMUTE-3",
+          "ue_page_refs": [
+            "PAGE-UNIT"
+          ],
+          "module_refs": [
+            "MODULE-UNIT"
+          ],
+          "script": "住宅最终还要适合家里的房间安排。143平方米的双套房与可变书房，适合需要父母短住和工作学习空间的家庭；这项需要并非双向就业家庭必然具备。",
+          "focus": "双套房与书房",
+          "emphasis": "仅核对相关需要"
+        }
+      ]
+    },
+    {
+      "id": "ROUTE-FAMILY",
+      "purchase_task_ref": "TASK-FAMILY-FLEX",
+      "sc_order": [
+        "SC-CONTINUITY",
+        "SC-FLEXIBILITY",
+        "SC-ACCESS"
+      ],
+      "scenes": [
+        {
+          "id": "ROUTE-FAMILY-1",
+          "ue_page_refs": [
+            "PAGE-GARDEN"
+          ],
+          "module_refs": [
+            "MODULE-GARDEN"
+          ],
+          "script": "家人共同生活的空间延伸到住宅之外。园林、架空层与地下会所的连续归家安排，为社区日常提供相连的空间关系。",
+          "focus": "住宅外的共同生活",
+          "emphasis": "先讲社区日常"
+        },
+        {
+          "id": "ROUTE-FAMILY-2",
+          "ue_page_refs": [
+            "PAGE-UNIT"
+          ],
+          "module_refs": [
+            "MODULE-UNIT"
+          ],
+          "script": "父母短住期间，独立卫浴和工作学习空间的安排会更受关注。143平方米的双套房与可变书房，能够按教程中的家庭状态组织；正式价格仍决定最终支付取舍。",
+          "focus": "父母短住与工作学习",
+          "emphasis": "重点停留在房间安排"
+        },
+        {
+          "id": "ROUTE-FAMILY-3",
+          "ue_page_refs": [
+            "PAGE-REGION"
+          ],
+          "module_refs": [
+            "MODULE-REGION"
+          ],
+          "script": "空间合适以后，仍需核对日常就业方向。通勤条件是另一项判断，不能由户型的吸引力代替。",
+          "focus": "实际相关的就业方向",
+          "emphasis": "只核对有关方向"
+        }
+      ]
+    }
   ],
   "system_modules": [
-    {"id": "MODULE-REGION", "name": "城市与区域关系", "supports_sc_refs": ["SC-ACCESS"], "customer_value": "把通勤可接受度转成可比较关系", "product5_targets": ["P5-ACCESS"]},
-    {"id": "MODULE-GARDEN", "name": "园林公区与归家路径", "supports_sc_refs": ["SC-CONTINUITY"], "customer_value": "把低密配置转成每天使用路径", "product5_targets": ["P5-CONTINUITY"]},
-    {"id": "MODULE-UNIT", "name": "户型状态与房源适配", "supports_sc_refs": ["SC-FLEXIBILITY"], "customer_value": "让家庭提前验证三代短住与工作学习适配", "product5_targets": ["P5-FLEXIBILITY"]}
-  ]
+    {
+      "id": "MODULE-REGION",
+      "name": "城市与区域关系",
+      "supports_sc_refs": [
+        "SC-ACCESS"
+      ],
+      "customer_value": "把通勤可接受度转成可比较关系",
+      "product5_targets": [
+        "P5-ACCESS"
+      ],
+      "production_items": [
+        {
+          "id": "ITEM-REGION",
+          "content": "城市平面底图、两个就业方向与当前道路节点；北湾府成熟轨道条件与本案低密取舍",
+          "basis": "E-BRIEF",
+          "status": "planned"
+        }
+      ],
+      "ue_pages": [
+        {
+          "id": "PAGE-REGION",
+          "production_level": "区域",
+          "narrative_task": "在两条就业方向中比较新区位置与低密取舍",
+          "base_object": "城市平面底图、两个就业方向与当前道路节点",
+          "panel_content": "北湾府成熟轨道条件与本案低密取舍",
+          "interaction": "切换方向，聚焦已知节点",
+          "basis": "E-BRIEF",
+          "production_item_refs": [
+            "ITEM-REGION"
+          ],
+          "supports_super_competitiveness_refs": [
+            "SC-ACCESS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MODULE-GARDEN",
+      "name": "园林公区与归家路径",
+      "supports_sc_refs": [
+        "SC-CONTINUITY",
+        "SC-FLEXIBILITY"
+      ],
+      "customer_value": "把低密配置转成每天使用路径",
+      "product5_targets": [
+        "P5-CONTINUITY"
+      ],
+      "production_items": [
+        {
+          "id": "ITEM-GARDEN",
+          "content": "项目模型中的入口、园林、架空层与地下会所；分层关系与日常经过位置",
+          "basis": "E-ROUTE",
+          "status": "planned"
+        }
+      ],
+      "ue_pages": [
+        {
+          "id": "PAGE-GARDEN",
+          "production_level": "项目",
+          "narrative_task": "归家路线中的园林、公区和地下会所是否形成连续体验",
+          "base_object": "项目模型中的入口、园林、架空层与地下会所",
+          "panel_content": "分层关系与日常经过位置",
+          "interaction": "沿同一模型的固定观察位切换",
+          "basis": "E-ROUTE",
+          "production_item_refs": [
+            "ITEM-GARDEN"
+          ],
+          "supports_super_competitiveness_refs": [
+            "SC-CONTINUITY",
+            "SC-FLEXIBILITY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MODULE-UNIT",
+      "name": "户型状态与房源适配",
+      "supports_sc_refs": [
+        "SC-FLEXIBILITY"
+      ],
+      "customer_value": "让家庭提前验证三代短住与工作学习适配",
+      "product5_targets": [
+        "P5-FLEXIBILITY"
+      ],
+      "production_items": [
+        {
+          "id": "ITEM-UNIT",
+          "content": "143平方米户型与室内场景；独立卫浴、书房状态与共同生活空间",
+          "basis": "E-PRODUCT",
+          "status": "planned"
+        }
+      ],
+      "ue_pages": [
+        {
+          "id": "PAGE-UNIT",
+          "production_level": "项目",
+          "narrative_task": "父母短住与工作学习能否分别安排",
+          "base_object": "143平方米户型与室内场景",
+          "panel_content": "独立卫浴、书房状态与共同生活空间",
+          "interaction": "按预制状态切换观察位",
+          "basis": "E-PRODUCT",
+          "production_item_refs": [
+            "ITEM-UNIT"
+          ],
+          "supports_super_competitiveness_refs": [
+            "SC-FLEXIBILITY"
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "ue_production_mapping_version": 1,
+    "production_basis": [
+      "虚构教程现有UE语义说明及E-BRIEF、E-ROUTE、E-PRODUCT；只示范方案关系，不替代完整生产端标准"
+    ]
+  },
+  "system_scope_close": {
+    "scope_decisions": [
+      {
+        "level": "品牌",
+        "status": "deferred",
+        "module_refs": [],
+        "reason": "本轮抽样页面承接已明确购买判断；七级完整内容与项目层八页基准不因抽样而删除"
+      },
+      {
+        "level": "城市",
+        "status": "deferred",
+        "module_refs": [],
+        "reason": "本轮抽样页面承接已明确购买判断；七级完整内容与项目层八页基准不因抽样而删除"
+      },
+      {
+        "level": "区域",
+        "status": "included",
+        "module_refs": [
+          "MODULE-REGION"
+        ],
+        "reason": "本轮抽样页面承接已明确购买判断；七级完整内容与项目层八页基准不因抽样而删除"
+      },
+      {
+        "level": "板块",
+        "status": "deferred",
+        "module_refs": [],
+        "reason": "本轮抽样页面承接已明确购买判断；七级完整内容与项目层八页基准不因抽样而删除"
+      },
+      {
+        "level": "土地",
+        "status": "deferred",
+        "module_refs": [],
+        "reason": "本轮抽样页面承接已明确购买判断；七级完整内容与项目层八页基准不因抽样而删除"
+      },
+      {
+        "level": "配套",
+        "status": "deferred",
+        "module_refs": [],
+        "reason": "本轮抽样页面承接已明确购买判断；七级完整内容与项目层八页基准不因抽样而删除"
+      },
+      {
+        "level": "项目",
+        "status": "included",
+        "module_refs": [
+          "MODULE-GARDEN",
+          "MODULE-UNIT"
+        ],
+        "reason": "本轮抽样页面承接已明确购买判断；七级完整内容与项目层八页基准不因抽样而删除"
+      }
+    ]
+  }
 }

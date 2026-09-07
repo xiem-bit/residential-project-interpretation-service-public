@@ -28,7 +28,7 @@
     "adverse_belief": "当前不利观念",
     "target_belief": "希望建立的新判断",
     "tangible_enemies": ["COMP-01"],
-    "intangible_enemies": ["观望或旧标准"],
+    "intangible_enemies": ["当前实际成立的选择阻力"],
     "evidence_refs": ["E-01", "E-02"]
   },
   "effective_boundary": {

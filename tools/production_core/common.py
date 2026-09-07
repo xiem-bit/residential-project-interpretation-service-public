@@ -5,19 +5,19 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Any, Callable
 
 from inference_firewall import validate_inference_register
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "product3_chapter3"))
+from validate_chapter3_contract import validate_ue_production_mapping
+
 
 BASE_REQUIRED_FILES = [
     "project-contract.md",
     "fact-conflict-gap-register.json",
-    "product1-competition-study.md",
-    "product1-competition-summary.json",
-    "semantic-core.json",
-    "super-competitiveness-plan.json",
     "product-enablement-matrix.json",
     "production-receipt.json",
 ]
@@ -175,19 +175,26 @@ def load_run(root: Path) -> tuple[RunData, list[str]]:
             data.enabled_products = enabled
 
     for product_id, names in PRODUCT_OUTPUT_FILES.items():
-        if product_id == 1:
-            continue
         for name in names:
             path = root / name
             if product_id in data.enabled_products:
                 if not path.is_file():
-                    errors.append(f"产物{product_id}已启用但缺少文件：{name}")
+                    errors.append(f"缺少必需文件：{name}（产物{product_id}已启用）")
                     data[name] = {}
                     continue
                 data[name] = _load_named_file(root, name, errors)
                 data.loaded_files.add(name)
             elif path.exists():
                 errors.append(f"产物{product_id}未启用，不应保留空置或过期文件：{name}")
+
+    for name in ("semantic-core.json", "super-competitiveness-plan.json"):
+        if (root / name).is_file():
+            data[name] = _load_named_file(root, name, errors)
+            data.loaded_files.add(name)
+        else:
+            data[name] = {}
+            if data.enabled_products.intersection({2, 3, 5}):
+                errors.append(f"缺少必需文件：{name}（完整深化或方案任务）")
 
     for name in OPTIONAL_PROCESS_FILES:
         path = root / name
@@ -381,8 +388,6 @@ def validate_product1(data: RunData, errors: list[str]) -> None:
     for field in ("geography", "customer", "area_and_price", "product_form", "purchase_task", "lifecycle_window", "rationale"):
         if not isinstance(boundary, dict) or not _text(boundary.get(field)):
             errors.append(f"product1-competition-summary.json.effective_boundary.{field}: 不能为空")
-    if len(product1.get("sc_candidates") or []) < 3:
-        errors.append("product1-competition-summary.json.sc_candidates: 至少三条候选机制")
     stop = product1.get("stop_search")
     if not isinstance(stop, dict) or not isinstance(stop.get("value"), bool) or not _text(stop.get("reason")):
         errors.append("product1-competition-summary.json.stop_search: 必须说明是否停止及理由")
@@ -435,8 +440,9 @@ def validate_semantic_core(data: RunData, errors: list[str]) -> None:
     if not isinstance(sc_refs, list) or not 3 <= len(sc_refs) <= 4 or len(set(sc_refs)) != len(sc_refs):
         errors.append("semantic-core.json.super_competitiveness_refs: 必须是3—4个唯一ID")
     source_outputs = set(semantic.get("source_outputs") or [])
-    if not {"project-contract.md", "product1-competition-study.md"}.issubset(source_outputs):
-        errors.append("semantic-core.json.source_outputs: 必须证明语义核来自上游生产输出")
+    evidence_outputs = source_outputs - {"project-contract.md"}
+    if "project-contract.md" not in source_outputs or not any((data.root / path).is_file() for path in evidence_outputs):
+        errors.append("semantic-core.json.source_outputs: 必须引用当前研究或已授权已有研究，不要求另做产物1")
 
 
 def validate_super_competitiveness(data: RunData, errors: list[str]) -> None:
@@ -462,6 +468,7 @@ def validate_super_competitiveness(data: RunData, errors: list[str]) -> None:
         for link in register.get("inference_links") or []
         if isinstance(link, dict) and isinstance(link.get("id"), str)
     }
+    ue_enabled = bool(data.enabled_products.intersection({3, 5}))
     for index, item in enumerate(items if isinstance(items, list) else []):
         if not isinstance(item, dict):
             continue
@@ -473,22 +480,24 @@ def validate_super_competitiveness(data: RunData, errors: list[str]) -> None:
         elif mechanism in mechanisms:
             errors.append(f"super-competitiveness-plan.json.items[{index}].mechanism: 机制重复")
         mechanisms.add(mechanism)
-        for field in ("target_customer_refs", "purchase_task_refs", "enemy_refs", "project_support_refs", "purchase_stage_effects", "production_items"):
+        for field in ("target_customer_refs", "purchase_task_refs", "enemy_refs", "project_support_refs", "purchase_stage_effects"):
             if not _list(item.get(field)):
                 errors.append(f"super-competitiveness-plan.json.items[{index}].{field}: 至少一项")
+        if ue_enabled and not _list(item.get("production_items")):
+            errors.append(f"super-competitiveness-plan.json.items[{index}].production_items: 已启用UE方案时至少一项")
         bounded = item.get("bounded_claim")
         for field in ("comparison_set", "boundary", "claim"):
             if not isinstance(bounded, dict) or not _text(bounded.get(field)):
                 errors.append(f"super-competitiveness-plan.json.items[{index}].bounded_claim.{field}: 不能为空")
         checks = item.get("five_checks")
-        if not isinstance(checks, dict) or set(checks) != FIVE_CHECKS:
+        if not isinstance(checks, dict) or (set(checks) != FIVE_CHECKS if ue_enabled else not (FIVE_CHECKS - {"ue_provability"}).issubset(checks)):
             errors.append(f"super-competitiveness-plan.json.items[{index}].five_checks: 必须完整且只能包含五项")
         else:
             for name, check in checks.items():
                 if not isinstance(check, dict) or check.get("status") != "pass" or not _text(check.get("rationale")) or not _list(check.get("refs")):
                     errors.append(f"super-competitiveness-plan.json.items[{index}].five_checks.{name}: pass必须有解释和引用")
         chain = item.get("causal_chain")
-        if not isinstance(chain, dict) or set(chain) != SIX_CAUSAL_LINKS:
+        if not isinstance(chain, dict) or (set(chain) != SIX_CAUSAL_LINKS if ue_enabled else not (SIX_CAUSAL_LINKS - {"ue_proof"}).issubset(chain)):
             errors.append(f"super-competitiveness-plan.json.items[{index}].causal_chain: 必须完整且只能包含六段因果")
         else:
             statements: list[str] = []
@@ -509,7 +518,7 @@ def validate_super_competitiveness(data: RunData, errors: list[str]) -> None:
                 errors.append(f"super-competitiveness-plan.json.items[{index}].causal_chain.project_response: 必须由项目事实承接")
             ue_refs = set(chain.get("ue_proof", {}).get("refs") or [])
             check_ue_refs = set(checks.get("ue_provability", {}).get("refs") or []) if isinstance(checks, dict) else set()
-            if not ue_refs or not ue_refs.intersection(check_ue_refs):
+            if ue_enabled and (not ue_refs or not ue_refs.intersection(check_ue_refs)):
                 errors.append(f"super-competitiveness-plan.json.items[{index}].causal_chain.ue_proof: 必须连接已登记UE证明")
             action_refs = set(chain.get("target_action", {}).get("refs") or [])
             if not action_refs or not action_refs.issubset(set(item.get("purchase_stage_effects") or [])):
@@ -545,8 +554,8 @@ def validate_enablement(data: RunData, errors: list[str]) -> None:
     if ids != {1, 2, 3, 5} or len(products or []) != 4:
         errors.append("product-enablement-matrix.json.products: 本次发行必须且只能登记产物1、2、3、5")
     by_id = {item.get("product"): item for item in products or [] if isinstance(item, dict)}
-    if by_id.get(1, {}).get("status") != "complete":
-        errors.append("product-enablement-matrix.json: 研究型任务产物1必须complete")
+    if 1 in data.enabled_products and by_id.get(1, {}).get("status") != "complete":
+        errors.append("product-enablement-matrix.json: 已启用且宣告完成的产物1必须complete")
     for product_id, item in by_id.items():
         if not _text(item.get("reason")) or not isinstance(item.get("deliverables"), list):
             errors.append(f"product-enablement-matrix.json.products[{product_id}]: 必须有理由和deliverables")
@@ -660,6 +669,19 @@ def validate_ue_solution_bridge(data: RunData, errors: list[str]) -> None:
             errors.append(f"ue-solution-handoff.json.mappings[{index}]: 场景引用无效")
         if not set(mapping.get("module_refs") or []).issubset(module_ids):
             errors.append(f"ue-solution-handoff.json.mappings[{index}]: 模块引用无效")
+    mapped = {
+        "meta": chapter3.get("meta", {}),
+        "chapter3": {
+            "system_modules": chapter3.get("system_modules", []),
+            "common_project_answer": {"super_competitiveness_sections": [
+                {"source_ref": item.get("sc_id"), "ue_page_refs": item.get("ue_page_refs")}
+                for item in solutions if isinstance(item, dict)
+            ]},
+            "family_routes": chapter3.get("family_routes", []),
+            "system_scope_close": chapter3.get("system_scope_close", {}),
+        },
+    }
+    errors.extend(validate_ue_production_mapping(mapped))
     if handoff.get("status") != "ue_solution_bridge_pass":
         errors.append("ue-solution-handoff.json.status: 必须为ue_solution_bridge_pass")
 
@@ -675,7 +697,7 @@ def validate_cross_product_consistency(data: RunData, errors: list[str], mode: s
         if project_id != expected_project_id:
             errors.append(f"{name}.project_id: 与项目合同不一致")
     semantic_version = data["semantic-core.json"].get("version")
-    semantic_files = ["super-competitiveness-plan.json", "product-enablement-matrix.json"]
+    semantic_files = ["super-competitiveness-plan.json", "product-enablement-matrix.json"] if data.get("semantic-core.json") else []
     if 3 in data.enabled_products:
         semantic_files.extend(PRODUCT_OUTPUT_FILES[3])
     if 5 in data.enabled_products:
@@ -698,11 +720,14 @@ def validate_cross_product_consistency(data: RunData, errors: list[str], mode: s
     expected_pass = {
         "rules_loaded",
         "project_identity_closed",
-        "product1_complete",
-        "semantic_core_frozen",
-        "minimum_three_sc_pass",
         "cross_product_consistency_pass",
     }
+    if 1 in data.enabled_products:
+        expected_pass.add("product1_complete")
+    if data.enabled_products.intersection({2, 3, 5}):
+        expected_pass.update({"semantic_core_frozen", "minimum_three_sc_pass"})
+    elif data.get("semantic-core.json") and data.get("super-competitiveness-plan.json"):
+        expected_pass.update(set(statuses or {}) & {"semantic_core_frozen", "minimum_three_sc_pass"})
     if 2 in data.enabled_products:
         expected_pass.add("product2_complete")
     if 3 in data.enabled_products:
@@ -746,7 +771,11 @@ STAGE_VALIDATORS: dict[str, Callable[[RunData, list[str]], None]] = {
 def validate_all(root: Path, mode: str = "normal") -> tuple[RunData, list[str]]:
     data, errors = load_run(root)
     validate_no_placeholders_or_local_paths(data, errors)
-    for validator in STAGE_VALIDATORS.values():
+    for stage, validator in STAGE_VALIDATORS.items():
+        if stage == "product1" and 1 not in data.enabled_products:
+            continue
+        if stage in {"semantic_core", "super_competitiveness"} and not data.enabled_products.intersection({2, 3, 5}):
+            continue
         validator(data, errors)
     if 2 in data.enabled_products:
         validate_product2(data, errors)

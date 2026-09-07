@@ -16,7 +16,7 @@
   },
   "enemies": {
     "tangible": ["COMP-01"],
-    "intangible": ["旧标准或观望"]
+    "intangible": ["当前实际阻碍选择的观念；等待须按原因判断，不预设消除"]
   },
   "target_customers": [{"id": "TG-01", "description": "目标客群", "purchase_task_refs": ["TASK-01"]}],
   "purchase_tasks": [{"id": "TASK-01", "summary": "购买任务", "boundary": "适用边界"}],

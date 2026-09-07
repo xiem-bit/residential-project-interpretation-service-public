@@ -59,8 +59,7 @@ def asset_semantic_text(asset: dict[str, Any]) -> str:
         for label in (
             "effective_business_semantic",
             "product3_recommended_use",
-            "business_semantic_guess",
-            "user_correction",
+            "visual_form",
             "asset_class",
         )
         if str(asset.get(label) or "").strip()
@@ -68,6 +67,8 @@ def asset_semantic_text(asset: dict[str, Any]) -> str:
 
 
 def is_audience_portrait(asset: dict[str, Any]) -> bool:
+    if asset.get("asset_class"):
+        return asset["asset_class"] == "audience_portrait"
     text = asset_semantic_text(asset)
     return any(marker in text for marker in PORTRAIT_MARKERS)
 

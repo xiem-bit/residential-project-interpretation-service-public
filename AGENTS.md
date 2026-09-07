@@ -1,9 +1,11 @@
-# Public repository agent entry
+# 住宅项目公开工程入口
 
-处理本仓任务时，先完整读取 `START_HERE.md`、`AGENT_RULES.md`、`RELEASE_STATUS.md` 和 `CAPABILITY_PARITY_CONTRACT.md`。涉及发行改造、能力缺口或历史边界时，同时读取 `CAPABILITY_PARITY_MANIFEST.json` 与 `RETIRED_AND_PRIVATE_BOUNDARY.md`。住宅项目研究使用 `workflows/residential-production-orchestrator/SKILL.md`。
+默认中文，结论先行。先读当前用户材料与`AGENT_RULES.md`，只按任务查阅`core/`及`workflows/residential-production-orchestrator/SKILL.md`；初次安装读`INSTALL.md`，发行或状态任务再查`RELEASE_STATUS.md`及能力清单。不要求每次通读历史。
 
-涉及中文研究报告、策略方案、PPT或客户可见文案的新写、实质改写与审校时，先使用`workflows/chinese-research-report-editor/SKILL.md`，再使用`workflows/chinese-affirmative-business-editor/SKILL.md`与`references/writing/16-断言式书写规范_v1.0.md`。完整产物3同时读取`references/product3/assets/产物3页面模板库/`、`references/product3/assets/产物3案例截图素材库/`和`references/writing/营销文案表达库/`；这些资产提供结构、画面和表达方法，不生成当前项目事实。
+产物1、2可独立启用和交付，产物3消费已有研究并按页面职责形成甲方方案。中文业务新写、实质改写和审校使用`workflows/chinese-research-report-editor/SKILL.md`与`references/writing/16-断言式书写规范_v1.0.md`，保留原声和事实边界。
 
-本仓验收住宅竞争问题发现、购买任务、超级竞争力与 UE 业务投影。不得把 PPT／网页生成、视觉美观、结构测试或同机运行写成业务生产路径已经复刻。
+默认装配按现行模板使用全屏真实地图、两侧卡片和大图版位，从当前人工台账派生的素材索引选图。参考只提供方法、结构与表达，不提供本案事实。Grist不属于安装或生产依赖。具体运行见`START_HERE.md`及对应工具README。
 
-当前`v0.2.0-rc.3`已完成能力面迁移、授权参考资产补齐、扩容后的干净克隆验收及GitHub CI修复，并以公开预发行标签正式发布。固定十二文件、空占位产物和隐藏答案盲审已退出现行入口，不得从历史标签或旧记录恢复为长期公开规则。
+沿用现有内部输入，仅同步受影响判断和制作关系，不新增固定流程或审查轮次。产物4只作内部衔接，生产端白皮书不改、未授权内容不随包发布；产物5保持当前能力及语义同步。
+
+文件生成、实际检查、真人接受、主线提交、公开发布与业务效果分别报告。只处理和发布明确授权范围，不把私有工作区整包外发。

@@ -17,20 +17,9 @@
 → 变更回写与定向重投影
 ```
 
-## 一、Agent 必读顺序
+## 一、按当前任务读取
 
-1. `START_HERE.md`；
-2. `AGENT_RULES.md`；
-3. `RELEASE_STATUS.md`；
-4. `core/00-权威生产路径.md`；
-5. `PRODUCTION_PATH_MANIFEST.json`；
-6. `workflows/residential-production-orchestrator/SKILL.md`；
-7. 当前任务的原始材料；
-8. 仅按 Skill 路由读取本轮需要的核心规范、模板和 Schema。
-
-教程的 `expected/` 是公开安全生产参考，可用于理解完整路径、字段关系和交付水位；不得把其中的项目事实、竞品、客群或SC复制为当前项目事实。
-
-需要参考成功成果或真人修订原因时，先读取`references/production-reference-index.json`，再按当前阶段定点加载对应`production_reference`或`learning_feedback`。完整参考与反馈都不能生成当前项目事实。
+先读当前用户材料、`AGENT_RULES.md`与对应任务规范；首次安装或发行状态再读安装、发行文件。`references/production-reference-index.json`帮助按问题取用样例，不要求每个任务重读返工历史。公开教程只提供方法与完成度，其事实不成为本案事实。
 
 ## 二、开始一个新项目
 
@@ -51,26 +40,15 @@ python3 scripts/init_production_run.py \
   --products 1,2,3,5
 ```
 
-`--products`默认仅启用产物1；本次公开发行只支持产物1、2、3、5，只有任务确实需要时才加入产物2、3或5。产物4不在本次发行范围内。发生实质语义变化时再增加`--include-change-registry`。
+`--products`默认仅启用产物1；本次公开发行只支持产物1、2、3、5，产物1、2可分别启用，其他产物按实际需要加入。产物4不在本次发行范围内。发生实质语义变化时再增加`--include-change-registry`。
 
 随后按 `workflows/residential-production-orchestrator/SKILL.md` 完成工作目录中的必需输出。统一语义核是本流程的产出，不能由初始化脚本或下游载体适配器代写。
 
-## 三、必需生产输出
+## 三、按启用范围生成内容
 
-一个完整研究型任务至少具有：
+初始化器保留项目合同、事实／冲突／缺口、启用矩阵与回执。产物1、2分别生成自己的甲方报告与后台摘要；完整深化及方案任务再保留必要语义核和竞争力，UE合同及原型输入仅在启用时生成。未启用部分不填空表。文件对应以`PRODUCTION_PATH_MANIFEST.json`为准。
 
-```text
-project-contract.md
-fact-conflict-gap-register.json
-product1-competition-study.md
-product1-competition-summary.json
-semantic-core.json
-super-competitiveness-plan.json
-product-enablement-matrix.json
-production-receipt.json
-```
-
-产物2、3、5只在启用时增加各自产物文件；未启用时只在项目合同和启用矩阵中记录理由，不生成空占位。`change-impact-registry.json`只在发生实质语义变化时生成。产物1、2的甲方正式报告与机器摘要物理分开：Markdown只承载甲方正文，配对JSON侧车只供校验、引用和跨产物消费。
+`--products 1`可独立生产竞争态势研究；`--products 2`可直接消费已有竞争研究并生产购买决策报告。产物3的实际页面生产使用`tools/product3_ppt_pipeline/README.md`，产物1、2导出使用`tools/product12_reports/README.md`。原有确认及实际页面检查保持，Grist无需安装。
 
 ## 四、验证一次生产运行
 
@@ -94,7 +72,7 @@ python3 tools/production_core/validate_upstream_exchange.py \
 
 ## 五、业务通过与载体通过分开记录
 
-业务主链状态：
+按当前启用部分登记相应业务状态，以下不构成所有任务的必经序列：
 
 - `rules_loaded`
 - `project_identity_closed`

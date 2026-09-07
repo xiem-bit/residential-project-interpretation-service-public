@@ -1,6 +1,6 @@
 {
   "schema": "residential.product3_gold_authority.v1",
-  "status": "authorized_current_gold_v0_2_0_rc_2_published",
+  "status": "historical_authorized_reference",
   "authority_file": "产物3-昆明碧桂园翠湖云顶二期-CHYD2-M9-v1.8-授权公开黄金参考.pptx",
   "authority_sha256": "29a4fc51d698725f728672ecffa769d19e855f3a87671e8cd948a5c813fe61fa",
   "accepted_source_sha256": "3b8270767227c2871abd278037f03000181dbc7131c2a06304bbc1525bae6891",
@@ -9,36 +9,130 @@
   "notes_sources_count": 20,
   "qa_render_count": 20,
   "map_policy": {
-    "standard_map_slides": [5, 6, 7],
+    "standard_map_slides": [
+      5,
+      6,
+      7
+    ],
     "same_base_map": true,
     "ai_generated_map": false,
     "required_visible_attribution": "© OpenStreetMap contributors"
   },
   "page_roles": [
-    {"slide": 1, "semantic": "P3-COVER-CLAIM", "role": "cover"},
-    {"slide": 2, "semantic": "P3-SECTION-PROMISE", "role": "chapter_2"},
-    {"slide": 3, "semantic": "P3-BUYER-VOICE", "role": "ten_buyer_voices"},
-    {"slide": 4, "semantic": "P3-CHOICE-SITUATION", "role": "four_choices"},
-    {"slide": 5, "semantic": "P3-COMPETITION-MAP", "role": "city_relationship"},
-    {"slide": 6, "semantic": "P3-COMPETITION-MAP", "role": "community_relationship"},
-    {"slide": 7, "semantic": "P3-COMPETITION-MAP", "role": "product_relationship"},
-    {"slide": 8, "semantic": "P3-SC-OVERVIEW", "role": "three_sc_dictionary"},
-    {"slide": 9, "semantic": "P3-SECTION-PROMISE", "role": "chapter_3"},
-    {"slide": 10, "semantic": "P3-SC-SCENE", "role": "sc_1_open"},
-    {"slide": 11, "semantic": "P3-SC-PROOF", "role": "sc_1_proof_1"},
-    {"slide": 12, "semantic": "P3-SC-PROOF", "role": "sc_1_proof_2"},
-    {"slide": 13, "semantic": "P3-SC-SCENE", "role": "sc_2_open"},
-    {"slide": 14, "semantic": "P3-SC-PROOF", "role": "sc_2_proof_1"},
-    {"slide": 15, "semantic": "P3-SC-PROOF", "role": "sc_2_proof_2"},
-    {"slide": 16, "semantic": "P3-SC-PROOF", "role": "sc_2_proof_3"},
-    {"slide": 17, "semantic": "P3-SC-SCENE", "role": "sc_3_open"},
-    {"slide": 18, "semantic": "P3-SC-PROOF", "role": "sc_3_proof_1"},
-    {"slide": 19, "semantic": "P3-AI-RECOMMENDER", "role": "lightweight_ai_recommender_preview"},
-    {"slide": 20, "semantic": "P3-CLOSING-OUTCOME", "role": "closing"}
+    {
+      "slide": 1,
+      "semantic": "P3-COVER-CLAIM",
+      "role": "cover"
+    },
+    {
+      "slide": 2,
+      "semantic": "P3-SECTION-PROMISE",
+      "role": "chapter_2"
+    },
+    {
+      "slide": 3,
+      "semantic": "P3-BUYER-VOICE",
+      "role": "ten_buyer_voices"
+    },
+    {
+      "slide": 4,
+      "semantic": "P3-CHOICE-SITUATION",
+      "role": "four_choices"
+    },
+    {
+      "slide": 5,
+      "semantic": "P3-COMPETITION-MAP",
+      "role": "city_relationship"
+    },
+    {
+      "slide": 6,
+      "semantic": "P3-COMPETITION-MAP",
+      "role": "community_relationship"
+    },
+    {
+      "slide": 7,
+      "semantic": "P3-COMPETITION-MAP",
+      "role": "product_relationship"
+    },
+    {
+      "slide": 8,
+      "semantic": "P3-SC-OVERVIEW",
+      "role": "three_sc_dictionary"
+    },
+    {
+      "slide": 9,
+      "semantic": "P3-SECTION-PROMISE",
+      "role": "chapter_3"
+    },
+    {
+      "slide": 10,
+      "semantic": "P3-SC-SCENE",
+      "role": "sc_1_open"
+    },
+    {
+      "slide": 11,
+      "semantic": "P3-SC-PROOF",
+      "role": "sc_1_proof_1"
+    },
+    {
+      "slide": 12,
+      "semantic": "P3-SC-PROOF",
+      "role": "sc_1_proof_2"
+    },
+    {
+      "slide": 13,
+      "semantic": "P3-SC-SCENE",
+      "role": "sc_2_open"
+    },
+    {
+      "slide": 14,
+      "semantic": "P3-SC-PROOF",
+      "role": "sc_2_proof_1"
+    },
+    {
+      "slide": 15,
+      "semantic": "P3-SC-PROOF",
+      "role": "sc_2_proof_2"
+    },
+    {
+      "slide": 16,
+      "semantic": "P3-SC-PROOF",
+      "role": "sc_2_proof_3"
+    },
+    {
+      "slide": 17,
+      "semantic": "P3-SC-SCENE",
+      "role": "sc_3_open"
+    },
+    {
+      "slide": 18,
+      "semantic": "P3-SC-PROOF",
+      "role": "sc_3_proof_1"
+    },
+    {
+      "slide": 19,
+      "semantic": "P3-AI-RECOMMENDER",
+      "role": "lightweight_ai_recommender_preview"
+    },
+    {
+      "slide": 20,
+      "semantic": "P3-CLOSING-OUTCOME",
+      "role": "closing"
+    }
   ],
-  "proof_depth_by_sc": [3, 4, 2],
-  "ai_recommender_slides": [19],
-  "default_combination_excludes": ["P3-FAMILY-SEGMENT", "P3-FAMILY-PATH", "P3-UE-BLUEPRINT"],
+  "proof_depth_by_sc": [
+    3,
+    4,
+    2
+  ],
+  "ai_recommender_slides": [
+    19
+  ],
+  "default_combination_excludes": [
+    "P3-FAMILY-SEGMENT",
+    "P3-FAMILY-PATH",
+    "P3-UE-BLUEPRINT"
+  ],
   "new_project_inheritance": {
     "fixed_slide_count": false,
     "fixed_slide_order": false,
@@ -54,13 +148,30 @@
     "prior_client_materials_included": true,
     "prior_success_asset_root": "references/product3/assets/产物3页面模板库",
     "prior_success_deck_files": [
-      {"file": "source_decks/QJ-建投金麟璟源-产物3-V0.4.1.pptx", "slides": 28, "sha256": "2bf3f8bce25024c672649a8bcf4ef09bf97fabb7fb31f97aedeb3ac11dae7107", "sanitization": "local_path_notes_removed_visible_render_28_of_28_equal"},
-      {"file": "source_decks/B10-德阳金鑫-产物3-V2.7.pptx", "slides": 27, "sha256": "7904304eba5d86b67dd7a76822412b1f36891c6b449ceecd97cd9d05b4d8f345", "sanitization": "source_package_no_local_path_hit"},
-      {"file": "source_decks/GT-高投中和57亩-产物3-V7.pptx", "slides": 21, "sha256": "bb48f54d06ab0436c681ab758d054d51d026a711b87fb2826f03b15f54f8f3eb", "sanitization": "source_package_no_local_path_hit"}
+      {
+        "file": "source_decks/QJ-建投金麟璟源-产物3-V0.4.1.pptx",
+        "slides": 28,
+        "sha256": "2bf3f8bce25024c672649a8bcf4ef09bf97fabb7fb31f97aedeb3ac11dae7107",
+        "sanitization": "local_path_notes_removed_visible_render_28_of_28_equal"
+      },
+      {
+        "file": "source_decks/B10-德阳金鑫-产物3-V2.7.pptx",
+        "slides": 27,
+        "sha256": "7904304eba5d86b67dd7a76822412b1f36891c6b449ceecd97cd9d05b4d8f345",
+        "sanitization": "source_package_no_local_path_hit"
+      },
+      {
+        "file": "source_decks/GT-高投中和57亩-产物3-V7.pptx",
+        "slides": 21,
+        "sha256": "bb48f54d06ab0436c681ab758d054d51d026a711b87fb2826f03b15f54f8f3eb",
+        "sanitization": "source_package_no_local_path_hit"
+      }
     ],
     "distilled_semantics": 17,
     "distilled_visual_prototypes": 19
   },
   "authorization_boundary": "AUTHORIZATION_BOUNDARY.md",
-  "page_responsibilities": "PAGE_RESPONSIBILITIES.md"
+  "page_responsibilities": "PAGE_RESPONSIBILITIES.md",
+  "current_layout_authority": "tools/product3_ppt_pipeline/compose_project_pages.mjs",
+  "reuse_boundary": "保留既有20页参考；当前默认空间比较和案例页沿用新版版式，不继承项目事实或固定页数"
 }

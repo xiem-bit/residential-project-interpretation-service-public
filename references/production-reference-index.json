@@ -8,7 +8,11 @@
       "type": "production_reference",
       "stage": "end_to_end_products_1_2_3_5",
       "path": "examples/production-path-tutorial",
-      "mechanisms": ["dual_direction_access", "daily_route_continuity", "family_space_adaptability"],
+      "mechanisms": [
+        "dual_direction_access",
+        "daily_route_continuity",
+        "family_space_adaptability"
+      ],
       "load_when": "需要学习全链、产物1至3与产物5同时启用或低密改善机制",
       "may_supply_project_facts": false
     },
@@ -17,19 +21,30 @@
       "type": "production_reference",
       "stage": "end_to_end_product1_only",
       "path": "examples/end-to-end-public-safe/fictional-wangchuan-xu",
-      "mechanisms": ["three_anchor_daily_route", "renovation_decision_clarity", "bounded_room_state_switch"],
+      "mechanisms": [
+        "three_anchor_daily_route",
+        "renovation_decision_clarity",
+        "bounded_room_state_switch"
+      ],
       "load_when": "需要学习按需启用、城市核心换新或只启用产物1的完整收口",
       "may_supply_project_facts": false
     },
     {
       "id": "REF-P3-QC-001",
       "type": "production_reference",
-      "stage": "product3_complete_gold",
+      "stage": "product3_historical_authorized_reference",
       "path": "examples/gold-product3-public-safe",
-      "mechanisms": ["accepted_gold_authority", "three_historical_success_decks_distilled", "same_base_real_maps", "asymmetric_sc_proof", "single_lightweight_ai_recommender", "assertive_writing_gate"],
+      "mechanisms": [
+        "accepted_gold_authority",
+        "three_historical_success_decks_distilled",
+        "same_base_real_maps",
+        "asymmetric_sc_proof",
+        "single_lightweight_ai_recommender",
+        "assertive_writing_gate"
+      ],
       "authorization": "explicit_client_publication_authorization_confirmed",
       "authority": "examples/gold-product3-public-safe/gold-authority.json",
-      "load_when": "新的完整产物3、整套重制、实质改变页面组合或黄金身份争议",
+      "load_when": "需要定点比较历史整套叙事与授权来源时",
       "may_supply_project_facts": false
     },
     {
@@ -37,7 +52,12 @@
       "type": "production_reference",
       "stage": "product3_page_templates_and_source_decks",
       "path": "references/product3/assets/产物3页面模板库",
-      "mechanisms": ["three_authorized_source_decks", "ninety_six_page_annotations", "seventeen_page_semantics", "nineteen_visual_prototypes"],
+      "mechanisms": [
+        "three_authorized_source_decks",
+        "ninety_six_page_annotations",
+        "seventeen_page_semantics",
+        "nineteen_visual_prototypes"
+      ],
       "authorization": "explicit_user_publication_authorization_2026_09_01",
       "load_when": "新的完整产物3、页面结构选择、历史成功原稿对照或多来源原生页装配",
       "may_supply_project_facts": false
@@ -47,7 +67,12 @@
       "type": "production_reference",
       "stage": "product3_case_asset_routing",
       "path": "references/product3/assets/产物3案例截图素材库",
-      "mechanisms": ["case_semantic_inventory", "page_value_routing", "ue_visual_reference", "asset_identity_boundary"],
+      "mechanisms": [
+        "case_semantic_inventory",
+        "page_value_routing",
+        "ue_visual_reference",
+        "asset_identity_boundary"
+      ],
       "authorization": "explicit_user_publication_authorization_2026_09_01",
       "load_when": "产物3页面需要UE案例画面证明且当前项目业务语义已经冻结",
       "may_supply_project_facts": false
@@ -57,7 +82,12 @@
       "type": "production_reference",
       "stage": "chinese_writing_and_marketing_expression",
       "path": "references/writing",
-      "mechanisms": ["chinese_report_editing", "assertion_first_writing", "marketing_expression_patterns", "human_revision_style_samples"],
+      "mechanisms": [
+        "chinese_report_editing",
+        "assertion_first_writing",
+        "marketing_expression_patterns",
+        "human_revision_style_samples"
+      ],
       "authorization": "explicit_user_publication_authorization_2026_09_01",
       "load_when": "中文报告、策略、PPT、HTML或客户可见文案的新写、实质改写与审校",
       "may_supply_project_facts": false
@@ -67,7 +97,12 @@
       "type": "learning_feedback",
       "stage": "human_revision_operating_preferences",
       "path": "references/learning-feedback/human_revision_feedback.v0.1.json",
-      "mechanisms": ["human_visible_surface", "non_blank_first_draft", "structure_only_reuse", "duplicate_page_removal"],
+      "mechanisms": [
+        "human_visible_surface",
+        "non_blank_first_draft",
+        "structure_only_reuse",
+        "duplicate_page_removal"
+      ],
       "authorization": "explicit_user_publication_authorization_2026_09_01",
       "load_when": "产物3装配、素材调度、前台字段或首次审阅出现重复返工",
       "may_supply_project_facts": false
@@ -77,7 +112,12 @@
       "type": "production_reference",
       "stage": "product5_complete_gold",
       "path": "examples/gold-product5-public-safe",
-      "mechanisms": ["state_machine", "motion", "ai_advisor", "mobile_route"],
+      "mechanisms": [
+        "state_machine",
+        "motion",
+        "ai_advisor",
+        "mobile_route"
+      ],
       "load_when": "新的产物5或实质交互改版",
       "may_supply_project_facts": false
     },
@@ -86,7 +126,11 @@
       "type": "regression_fixture",
       "stage": "inference_firewall",
       "path": "fixtures/inference-harness/cases.json",
-      "mechanisms": ["allowed_inference", "bridge_required", "prohibited_inference"],
+      "mechanisms": [
+        "allowed_inference",
+        "bridge_required",
+        "prohibited_inference"
+      ],
       "load_when": "高风险事实向市场、客户、品质或超级竞争力推导",
       "may_supply_project_facts": false
     },
@@ -95,8 +139,25 @@
       "type": "learning_feedback",
       "stage": "human_revision_patterns",
       "path": "references/learning-feedback/cases.json",
-      "mechanisms": ["before_after_reason_boundary"],
+      "mechanisms": [
+        "before_after_reason_boundary"
+      ],
       "load_when": "报告、产物3、产物5或检索规则出现对应漂移",
+      "may_supply_project_facts": false
+    },
+    {
+      "id": "REF-P123-DEFAULT-001",
+      "type": "production_reference",
+      "stage": "current_default_entry_representative",
+      "path": "examples/default-production-pages",
+      "mechanisms": [
+        "fullscreen_spatial_comparison",
+        "large_case_images",
+        "page_purpose_copy",
+        "actual_output_readback",
+        "independent_report_rendering"
+      ],
+      "load_when": "使用当前报告/PPT默认入口或核对适用版式与实际文字",
       "may_supply_project_facts": false
     }
   ]

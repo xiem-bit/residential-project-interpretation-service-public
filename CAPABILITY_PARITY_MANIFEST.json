@@ -1,16 +1,15 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
-  "candidate_version": "v0.2.0-rc.3",
-  "status": "capability_complete_authorized_reference_assets_complete_clean_clone_and_ci_accepted_v0_2_0_rc_3_published",
+  "candidate_version": "v0.2.0-rc.4",
+  "status": "p123_current_rules_templates_data_and_default_entry",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
-    "commit": "7aa80d7e8e76d1900b9c758bb46f9aba18ebd28f",
+    "commit": "05f7817ca043e7104ef82fd84f1538d45a7235c7",
     "authority_map": "PRODUCTION_AUTHORITY_MAP.json"
   },
   "public_candidate": {
     "branch": "main",
-    "p0_started_from_commit": "69efd01e760636e312be3af75b17a107ae037ee0",
-    "tag_created": true
+    "p0_started_from_commit": "69efd01e760636e312be3af75b17a107ae037ee0"
   },
   "principles": {
     "complete_semantic_parity_required": true,
@@ -69,7 +68,7 @@
         "workflows/residential-production-orchestrator/SKILL.md"
       ],
       "load_condition": "every_task_then_stage_specific",
-      "acceptance": "完整能力随包，产物1默认，产物2、3、5按需；产物4不在本次发行范围，不生成未启用产物空文件",
+      "acceptance": "产物1、2可独立启用和交付，产物3、5按任务启用；内部信息复用现有输入，不生成未启用产物空文件。",
       "status": "implemented_current",
       "gap": ""
     },
@@ -108,10 +107,12 @@
         "templates/产物1竞争态势研究摘要.template.json",
         "schemas/product1-summary.schema.json",
         "examples/production-path-tutorial/expected/product1-competition-study.md",
-        "examples/production-path-tutorial/expected/product1-competition-summary.json"
+        "examples/production-path-tutorial/expected/product1-competition-summary.json",
+        "tools/product12_reports",
+        "examples/default-production-pages"
       ],
       "load_condition": "default_for_residential_research",
-      "acceptance": "市场、区域、有效竞争圈和本案答案围绕当前项目递进，检索计划进入默认生产链",
+      "acceptance": "竞争范围、逐盘与横向比较形成本案判断；可独立生成报告并回读实际可见文字和图像。",
       "status": "implemented_current",
       "gap": ""
     },
@@ -131,10 +132,12 @@
         "templates/产物2购买决策研究摘要.template.json",
         "schemas/product2-summary.schema.json",
         "examples/production-path-tutorial/expected/product2-buyer-decision-study.md",
-        "examples/production-path-tutorial/expected/product2-buyer-decision-summary.json"
+        "examples/production-path-tutorial/expected/product2-buyer-decision-summary.json",
+        "tools/product12_reports",
+        "examples/default-production-pages"
       ],
       "load_condition": "buyer_decision_gap_or_enabled_product2",
-      "acceptance": "以生活任务和决策机制组织客群，闭合处境、触发、进展、替代、代价与行动阻力",
+      "acceptance": "真实选择和取舍形成可争取需求、购买理由及行动阻力，可独立交付；原声与推演分开。",
       "status": "implemented_current",
       "gap": ""
     },
@@ -198,8 +201,8 @@
         "schemas/super-competitiveness-plan.schema.json",
         "tools/production_core/validate_super_competitiveness.py"
       ],
-      "load_condition": "after_product1_and_enabled_product2_freeze",
-      "acceptance": "每条SC闭合项目事实、相对竞争、客户意义、项目承接、UE证明和行动推动",
+      "load_condition": "complete_research_or_solution_enabled",
+      "acceptance": "真实比较尺度、共享与局部价值、相称承接及完整任务至少三条保留；UE制作与证明仅按任务启用。",
       "status": "implemented_current",
       "gap": ""
     },
@@ -263,16 +266,19 @@
         "references/product3/assets/产物3页面模板库",
         "references/product3/assets/产物3案例截图素材库",
         "examples/gold-product3-public-safe",
-        "adapters/presentation/README.md"
+        "adapters/presentation/README.md",
+        "tools/product3_ppt_pipeline",
+        "tools/product3_assembly_console",
+        "examples/default-production-pages"
       ],
       "load_condition": "product3_enabled_or_material_structure_change",
-      "acceptance": "当前20页用户验收终稿是机器可读黄金权威；三份历史成功原稿、124文件页面模板库、229文件案例素材库、页面语义、非对称证明、单页轻量AI推荐、真实地图署名、断言门禁、首稿完整度和可编辑PPT形成完整公开参考",
+      "acceptance": "默认共用作者保留全屏真实地图、两侧卡片与大图版位；按页面职责编辑甲方文案，核对实际PPTX/PDF；案例从当前台账读取，旧20页稿仅作历史参考。",
       "status": "implemented_current",
       "gap": ""
     },
     {
       "id": "CAP-011",
-      "name": "产物4当前版不进入公开发行",
+      "name": "产物4内部用途与未公开原件边界",
       "domain": "product4",
       "classification": "retired_excluded",
       "source_authority_ids": [
@@ -283,7 +289,7 @@
       ],
       "planned_public_targets": [],
       "load_condition": "not_loadable_in_current_release",
-      "acceptance": "当前发行无产物4入口、模板、校验器、样例或运行文件；上游大修完成后由后续版本重新评估",
+      "acceptance": "产物4在本工程只作内部价值框架与制作衔接；原白皮书不改、不随包，当前不提供单独对客产物4入口。",
       "status": "retired_excluded",
       "gap": ""
     },
@@ -331,11 +337,12 @@
         "examples/production-path-revision",
         "examples/end-to-end-public-safe",
         "examples/gold-product3-public-safe",
-        "examples/gold-product5-public-safe"
+        "examples/gold-product5-public-safe",
+        "examples/default-production-pages"
       ],
       "planned_public_targets": [],
       "load_condition": "stage_specific_reference_lookup",
-      "acceptance": "至少两至三套完整项目、三份获授权历史成功产物3原稿及逐页结构、完整案例图和营销文案资产、当前授权真实黄金、正式产物参考、正反例和真人修订反馈可被路由调用",
+      "acceptance": "已有公开完整教程、授权历史原稿、原始营销素材保留；当前代表页与模板按需调用，未授权两项目新稿不外发，不追加完整项目。",
       "status": "implemented_current",
       "gap": ""
     },
@@ -399,10 +406,12 @@
         "templates/平台适配与能力缺口回传.template.json",
         "tests/test_installation_doctor.py",
         "tests/test_authorized_reference_assets.py",
-        "SECURITY.md"
+        "SECURITY.md",
+        "tools/product12_reports/README.md",
+        "tools/product3_ppt_pipeline/README.md"
       ],
       "load_condition": "installation_or_carrier_production",
-      "acceptance": "干净克隆中，终端用户可分别检查生产核心、20页产物3黄金、三份历史原稿、124文件模板、229文件案例素材、中文写作能力与产物5运行时；PPT引擎和Grist由终端安装，Computer Use、浏览器、地图、微信、小红书由终端安装或登录；平台缺失返回结构化gap，不迁移账号态，不让载体改写业务语义",
+      "acceptance": "安装按需声明运行依赖，Grist退出；干净目录以包内模板、素材和编辑规则运行实际代表页入口，不依赖私有项目脚本；账号与渠道权限由使用者配置。",
       "status": "implemented_current",
       "gap": ""
     },

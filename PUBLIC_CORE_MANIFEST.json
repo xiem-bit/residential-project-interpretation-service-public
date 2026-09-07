@@ -1,9 +1,9 @@
 {
   "schema": "residential-competitiveness-public-core-manifest.v0.6",
-  "status": "public_prerelease_v0_2_0_rc_3_published_capability_complete_authorized_assets_ci_accepted_apache_2_0",
-  "candidate": "v0.2.0-rc.3",
-  "source_commit": "7aa80d7e8e76d1900b9c758bb46f9aba18ebd28f",
-  "extraction_policy": "fixed_clean_source_complete_semantic_parity_and_rights_aware_asset_selection",
+  "status": "public_prerelease_p123_default_production_apache_2_0",
+  "candidate": "v0.2.0-rc.4",
+  "source_commit": "05f7817ca043e7104ef82fd84f1538d45a7235c7",
+  "extraction_policy": "committed_source_semantic_parity_and_existing_authorized_asset_scope",
   "authority_map": "PRODUCTION_AUTHORITY_MAP.json",
   "capability_parity_contract": "CAPABILITY_PARITY_CONTRACT.md",
   "capability_parity_manifest": "CAPABILITY_PARITY_MANIFEST.json",
@@ -25,11 +25,12 @@
   "public_release": {
     "repository": "https://github.com/xiem-bit/residential-project-interpretation-service-public",
     "visibility": "public",
-    "latest_published_tag": "v0.2.0-rc.3",
     "latest_published_tag_immutable": true,
-    "candidate_tag": "v0.2.0-rc.3",
-    "candidate_tag_created": true,
-    "candidate_publish_gate": "capability_parity_release_blockers_zero_cross_package_e2e_and_fresh_install_full_project_acceptance"
+    "candidate_tag": "v0.2.0-rc.4",
+    "release_tag": "v0.2.0-rc.4",
+    "previous_release_tag": "v0.2.0-rc.3",
+    "publication_status_authority": "GitHub Release and immutable tag",
+    "candidate_publish_gate": "existing_checks_and_clean_default_entry_representative_pages"
   },
   "historical_rc1": {
     "classification": "downstream_contract_and_carrier_adapter_demo",
@@ -52,31 +53,53 @@
     "examples/gold-product5-public-safe",
     "references",
     "external-capabilities",
-    "adapters"
+    "adapters",
+    "tools/product12_reports",
+    "tools/product3_assembly_console",
+    "tools/product3_ppt_pipeline",
+    "tools/shared_datasets",
+    "examples/default-production-pages"
   ],
   "v0_2_base_required_outputs": [
     "project-contract.md",
     "fact-conflict-gap-register.json",
-    "product1-competition-study.md",
-    "semantic-core.json",
-    "super-competitiveness-plan.json",
     "product-enablement-matrix.json",
     "production-receipt.json"
   ],
   "v0_2_conditional_outputs": {
-    "product2": ["product2-buyer-decision-study.md"],
-    "product3": ["product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json"],
-    "product5": ["product5-interaction-blueprint.json"],
-    "material_semantic_change": ["change-impact-registry.json"]
+    "product2": [
+      "product2-buyer-decision-study.md",
+      "product2-buyer-decision-summary.json"
+    ],
+    "product3": [
+      "product3-chapter2-contract.json",
+      "product3-chapter3-contract.json",
+      "ue-solution-handoff.json"
+    ],
+    "product5": [
+      "product5-interaction-blueprint.json"
+    ],
+    "product1": [
+      "product1-competition-study.md",
+      "product1-competition-summary.json"
+    ],
+    "complete_research_or_solution": [
+      "semantic-core.json",
+      "super-competitiveness-plan.json"
+    ],
+    "material_semantic_change": [
+      "change-impact-registry.json"
+    ]
   },
   "semantic_core_role": "production_output",
   "business_acceptance": {
     "machine_scope": "structure_references_states_only",
     "workbuddy_style_blind_training_included": false,
-    "fresh_install_full_project_acceptance_required": true,
+    "fresh_install_full_project_acceptance_required": false,
     "maintainer_step_by_step_guidance_allowed": false,
     "presentation_or_web_required": false,
-    "current_status": "v0_2_0_rc_3_public_prerelease_published_clean_clone_and_ci_accepted"
+    "current_status": "incremental_default_entry_checked_not_new_project_acceptance",
+    "incremental_check": "examples/default-production-pages/output/检查范围.json"
   },
   "forbidden_public_content": [
     "unauthorized_real_project_or_customer_materials",

@@ -1,0 +1,235 @@
+[
+  {
+    "id": "DEMO-MAP",
+    "layout": "map",
+    "semantic": "P3-COMPETITION-MAP",
+    "chapter": 2,
+    "title": "两处工作地点都要兼顾，区位选择才能适合双职工家庭",
+    "sub": "青岚澄境虚构样例将双向就业与低密居住放在同一次比较中。成熟轨道与低密空间各有吸引力，家庭仍需取舍。",
+    "body": {
+      "map_cards": {
+        "left": [
+          {
+            "key": "home",
+            "title": "青岚澄境",
+            "paragraphs": [
+              "双向就业关系与低密住区共同进入选择。",
+              "两处工作安排都能接受，低密改善才有实际意义。"
+            ],
+            "feature": true
+          },
+          {
+            "key": "b",
+            "title": "北湾府",
+            "paragraphs": [
+              "成熟轨道是既有优势。",
+              "更看重轨道确定性的家庭，会优先比较这里。"
+            ]
+          }
+        ],
+        "right": [
+          {
+            "key": "c",
+            "title": "栖霞里",
+            "paragraphs": [
+              "低密住区与已开放会所形成吸引。",
+              "偏爱眼前可感知社区生活的家庭，有另一种选择。"
+            ]
+          }
+        ]
+      },
+      "map_meta": "昆明真实底图仅作排版示范；虚构项目点位不代表实际位置、距离或通行条件。",
+      "conclusion": "是否适合家庭的两处工作安排，比单看某一个通勤方向更重要。"
+    },
+    "map": {
+      "asset_id": "DEMO-MAP-BASE",
+      "image": "assets/standard-map.png",
+      "width": 1600,
+      "height": 900,
+      "attribution": "© OpenStreetMap contributors",
+      "labels": [
+        {
+          "key": "a",
+          "name": "青岚澄境\n虚构位置",
+          "x": 700,
+          "y": 435,
+          "dx": -45,
+          "dy": 65,
+          "label_width": 190,
+          "label_height": 65,
+          "development": true,
+          "precision": "虚构样例标注，不是土地边界"
+        },
+        {
+          "key": "b",
+          "name": "北湾府（虚构）",
+          "x": 450,
+          "y": 335,
+          "dx": 0,
+          "dy": -58,
+          "label_width": 194,
+          "source": "样例位置说明"
+        },
+        {
+          "key": "c",
+          "name": "栖霞里（虚构）",
+          "x": 1130,
+          "y": 638,
+          "dx": -160,
+          "dy": 35,
+          "label_width": 194,
+          "source": "样例位置说明"
+        }
+      ]
+    },
+    "chapter_label": "公开虚构样例 · 产物3页面摘样",
+    "source": [
+      "examples/production-path-tutorial/input",
+      "仅验证默认生产，不是新的完整项目或客户采纳"
+    ],
+    "template_reference": {
+      "implementation": "tools/product3_ppt_pipeline/compose_project_pages.mjs",
+      "boundary": "当前认可版式；替换全部项目事实与可见文字"
+    },
+    "order": 1
+  },
+  {
+    "id": "DEMO-GARDEN",
+    "layout": "gallery",
+    "semantic": "P3-SC-PROOF",
+    "chapter": 3,
+    "title": "园林与架空层连成归家路径，家门外也有共同生活的空间",
+    "sub": "青岚澄境虚构资料将园林、架空层与地下会所纳入连续归家路径。家庭日常经过和停留的地方，也成为改善的组成部分。",
+    "body": {
+      "pairs": [
+        [
+          "CASE-225",
+          "从归家路进入社区公共生活",
+          "园林与架空层共同承接归家过程，住宅之外还有家人日常经过和停留的公共空间。"
+        ],
+        [
+          "CASE-229",
+          "共享空间延伸居住体验",
+          "家庭既有自己住宅内的生活，也能在社区的公共空间相处。具体使用内容仍以项目方案为准。"
+        ]
+      ],
+      "steps": [
+        "园林承接归家的户外体验",
+        "架空层连接社区公共生活",
+        "地下会所加入连续归家路径"
+      ]
+    },
+    "footer": "明源UE案例｜示例项目与案例项目不同，画面不代表本案设计、配置或景观。",
+    "chapter_label": "公开虚构样例 · 产物3页面摘样",
+    "source": [
+      "examples/production-path-tutorial/input",
+      "仅验证默认生产，不是新的完整项目或客户采纳"
+    ],
+    "template_reference": {
+      "implementation": "tools/product3_ppt_pipeline/compose_project_pages.mjs",
+      "boundary": "当前认可版式；替换全部项目事实与可见文字"
+    },
+    "order": 2
+  },
+  {
+    "id": "DEMO-WINDOW",
+    "layout": "gallery",
+    "semantic": "P3-SC-PROOF",
+    "chapter": 3,
+    "title": "选择具体住房，也是在选择每天窗外的环境",
+    "sub": "同一社区里的楼栋与楼层不同，窗前面对的建筑和景观也会不同。重视居家感受的家庭，会把这些关系放进具体房源比较。",
+    "body": {
+      "pairs": [
+        [
+          "CASE-107",
+          "窗边的停留，与窗外环境有关",
+          "在家休息、阅读或与家人相处时，窗外的建筑与景观也影响居家感受。"
+        ],
+        [
+          "CASE-192",
+          "楼层不同，观察到的关系也不同",
+          "窗前面对的建筑与景观，影响每天在家的感受。楼层与朝向不同，观察到的关系也不同；各套实际视野依照本案设计。"
+        ]
+      ],
+      "steps": [
+        "窗前环境进入具体住房比较",
+        "楼栋与楼层共同影响观察关系",
+        "案例视野不构成本案景观承诺"
+      ]
+    },
+    "footer": "明源UE案例｜本页说明具体选房的观察对象，不承诺样例项目拥有案例中的景观。",
+    "chapter_label": "公开虚构样例 · 产物3页面摘样",
+    "source": [
+      "examples/production-path-tutorial/input",
+      "仅验证默认生产，不是新的完整项目或客户采纳"
+    ],
+    "template_reference": {
+      "implementation": "tools/product3_ppt_pipeline/compose_project_pages.mjs",
+      "boundary": "当前认可版式；替换全部项目事实与可见文字"
+    },
+    "order": 3
+  },
+  {
+    "id": "DEMO-SCOPE",
+    "layout": "scope",
+    "semantic": "P3-UE-BLUEPRINT",
+    "chapter": 3,
+    "title": "同一套项目内容，支持完整介绍与不同家庭的重点讲解",
+    "sub": "系统保留项目整体介绍，也组织围绕工作安排和家庭空间的主题讲解。不同讲解可以共用页面、模型与底图。",
+    "body": {
+      "levels": [
+        [
+          "品牌",
+          "开发商资料"
+        ],
+        [
+          "城市",
+          "城市生活背景"
+        ],
+        [
+          "区域",
+          "工作与生活关系"
+        ],
+        [
+          "板块",
+          "周边生活环境"
+        ],
+        [
+          "土地",
+          "本案场地条件"
+        ],
+        [
+          "配套",
+          "日常目的地"
+        ],
+        [
+          "项目",
+          "社区与具体住宅"
+        ]
+      ],
+      "scope_heading": "项目内容覆盖社区整体与具体住房",
+      "included": [
+        "项目规划",
+        "美学立面",
+        "公共空间",
+        "景观鉴赏",
+        "智能选房",
+        "物业服务",
+        "标准层",
+        "精装样板间"
+      ],
+      "conclusion": "主题讲解调用已经编排的内容，入口可进入双向就业、家庭空间或通用住房浏览。具体设计、配置、售价与房源安排依项目正式资料。"
+    },
+    "footer": "公开虚构样例｜方案范围说明不代表系统已完成开发或交付。",
+    "chapter_label": "公开虚构样例 · 产物3页面摘样",
+    "source": [
+      "examples/production-path-tutorial/input",
+      "仅验证默认生产，不是新的完整项目或客户采纳"
+    ],
+    "template_reference": {
+      "implementation": "tools/product3_ppt_pipeline/compose_project_pages.mjs",
+      "boundary": "当前认可版式；替换全部项目事实与可见文字"
+    },
+    "order": 4
+  }
+]

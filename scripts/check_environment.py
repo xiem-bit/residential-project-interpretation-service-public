@@ -249,7 +249,7 @@ def check_environment(
         "manual_boundaries": {
             "codex_workspace": "打开仓库根目录后由AGENTS.md和现行Skill路由；脚本不证明Agent已理解业务",
             "product3_generation": "黄金PPTX、历史原稿、模板与案例资产随包；演示文稿引擎由终端用户自行安装并现场确认",
-            "grist_console": "本机Grist装配控制台不随包迁移；需要可视装配时由终端用户自行安装Grist",
+            "grist_console": "Grist不属于当前依赖；现有项目JSON、实际预排和导出入口承接装配",
             "external_channels": "Computer Use、浏览器、地图、微信、小红书等平台能力及账号登录态不随包迁移；由终端用户自行安装或登录",
             "human_business_acceptance": "机器doctor通过不代表真人业务接受、发布或业务效果",
         },

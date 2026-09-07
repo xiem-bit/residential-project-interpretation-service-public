@@ -57,13 +57,14 @@ def build_manifest() -> dict[str, Any]:
         }
         for path in source_files()
     ]
+    core = json.loads((ROOT / "PUBLIC_CORE_MANIFEST.json").read_text(encoding="utf-8"))
     tree_input = "".join(f"{item['sha256']}  {item['path']}\n" for item in records)
     return {
         "schema": "residential.public_rc_source_manifest.v0.2",
-        "version": "v0.2.0-rc.3",
-        "status": "v0_2_0_rc_3_public_prerelease_published_parity_clean_clone_and_ci_accepted",
-        "latest_published_tag": "v0.2.0-rc.3",
-        "source_commit": "7aa80d7e8e76d1900b9c758bb46f9aba18ebd28f",
+        "version": core["candidate"],
+        "status": "versioned_source_manifest",
+        "release_tag": core["public_release"]["release_tag"],
+        "source_commit": core["source_commit"],
         "excluded": [
             ".git/**",
             ".playwright-cli/**",

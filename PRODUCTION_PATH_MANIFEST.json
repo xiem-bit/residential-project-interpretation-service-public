@@ -1,14 +1,16 @@
 {
   "schema": "residential.production_path_manifest.v0.2",
-  "candidate_version": "v0.2.0-rc.3",
+  "candidate_version": "v0.2.0-rc.4",
   "status": "public_prerelease_product3_product5_gold_complete_product4_excluded",
-  "semantic_core_role": "required_production_output_not_bootstrap_input",
+  "semantic_core_role": "current_production_basis_when_task_requires_complete_research_or_solution",
   "product3_gold_authority": {
     "authority_file": "examples/gold-product3-public-safe/gold-authority.json",
     "page_responsibilities": "examples/gold-product3-public-safe/PAGE_RESPONSIBILITIES.md",
     "historical_success_distillation": "references/product3/HISTORICAL_SUCCESS_DISTILLATION.md",
-    "accepted_gold_precedes_recomposable_semantics": true,
-    "ai_recommender_max_pages_in_current_gold": 1
+    "current_layout_implementation": "tools/product3_ppt_pipeline/compose_project_pages.mjs",
+    "current_entry_example": "examples/default-production-pages",
+    "historical_authorized_deck": "examples/gold-product3-public-safe/gold-authority.json",
+    "current_layout_precedes_historical_deck": true
   },
   "entrypoints": {
     "human_or_agent": "START_HERE.md",
@@ -20,127 +22,239 @@
     {
       "id": "S0",
       "name": "rules_and_task_mode",
-      "inputs": ["repository", "authorized_raw_inputs"],
-      "outputs": ["project-contract.md"],
+      "inputs": [
+        "repository",
+        "authorized_raw_inputs"
+      ],
+      "outputs": [
+        "project-contract.md"
+      ],
       "gate": "rules_loaded"
     },
     {
       "id": "S1",
       "name": "project_identity_and_input_governance",
-      "inputs": ["project-contract.md", "authorized_raw_inputs"],
-      "outputs": ["fact-conflict-gap-register.json"],
+      "inputs": [
+        "project-contract.md",
+        "authorized_raw_inputs"
+      ],
+      "outputs": [
+        "fact-conflict-gap-register.json"
+      ],
       "gate": "project_identity_closed"
     },
     {
       "id": "S1R",
       "name": "external_research_and_evidence_adoption",
       "condition": "material_judgment_gap_requires_external_owner",
-      "inputs": ["project-contract.md", "fact-conflict-gap-register.json", "authorized_research_scope"],
-      "outputs": ["residential.upstream_task.v0.2", "public_evidence_envelope.v1", "residential.upstream_response.v0.2", "residential.upstream_adoption_receipt.v0.2"],
+      "inputs": [
+        "project-contract.md",
+        "fact-conflict-gap-register.json",
+        "authorized_research_scope"
+      ],
+      "outputs": [
+        "residential.upstream_task.v0.2",
+        "public_evidence_envelope.v1",
+        "residential.upstream_response.v0.2",
+        "residential.upstream_adoption_receipt.v0.2"
+      ],
       "gate": "evidence_accepted_rejected_or_gap_preserved",
-      "return_to": ["authorized_incremental_batch", "input_freeze", "business_gap"]
+      "return_to": [
+        "authorized_incremental_batch",
+        "input_freeze",
+        "business_gap"
+      ]
     },
     {
       "id": "S2",
       "name": "product1_competition_study",
-      "inputs": ["project-contract.md", "fact-conflict-gap-register.json", "authorized_raw_inputs"],
-      "outputs": ["product1-competition-study.md", "product1-competition-summary.json"],
+      "inputs": [
+        "project-contract.md",
+        "fact-conflict-gap-register.json",
+        "authorized_raw_inputs"
+      ],
+      "outputs": [
+        "product1-competition-study.md",
+        "product1-competition-summary.json"
+      ],
       "gate": "product1_complete",
-      "return_to": ["upstream_task", "competition_boundary_adjustment", "expert_reasoning"]
+      "return_to": [
+        "upstream_task",
+        "competition_boundary_adjustment",
+        "expert_reasoning"
+      ],
+      "condition": "product1_enabled"
     },
     {
       "id": "S3",
       "name": "product2_buyer_decision_study",
       "condition": "product2_enabled",
-      "inputs": ["product1-competition-study.md", "authorized_customer_inputs"],
-      "outputs": ["product2-buyer-decision-study.md", "product2-buyer-decision-summary.json"],
+      "inputs": [
+        "existing_accepted_competition_research",
+        "authorized_customer_inputs"
+      ],
+      "outputs": [
+        "product2-buyer-decision-study.md",
+        "product2-buyer-decision-summary.json"
+      ],
       "gate": "product2_complete"
     },
     {
       "id": "S4",
       "name": "unified_semantic_core",
-      "inputs": ["project-contract.md", "product1-competition-study.md", "enabled_upstream_products"],
-      "outputs": ["semantic-core.json"],
-      "gate": "semantic_core_frozen"
+      "inputs": [
+        "project-contract.md",
+        "current_accepted_research"
+      ],
+      "outputs": [
+        "semantic-core.json"
+      ],
+      "gate": "semantic_core_frozen",
+      "condition": "complete_product2_or_solution_enabled"
     },
     {
       "id": "S5",
       "name": "super_competitiveness_and_production_planning",
-      "inputs": ["semantic-core.json", "fact-conflict-gap-register.json"],
-      "outputs": ["super-competitiveness-plan.json"],
+      "inputs": [
+        "semantic-core.json",
+        "fact-conflict-gap-register.json"
+      ],
+      "outputs": [
+        "super-competitiveness-plan.json"
+      ],
       "gate": "minimum_three_sc_pass",
-      "checks_per_sc": ["purchase_impact", "bounded_unique_or_best", "enemy_relation", "project_support", "ue_provability"],
-      "causal_chain_per_sc": ["project_fact", "relative_competition", "customer_importance", "project_response", "ue_proof", "target_action"],
-      "inference_relationships": "contracts/inference-relationships.json"
+      "checks_per_sc": [
+        "purchase_impact",
+        "bounded_unique_or_best",
+        "enemy_relation",
+        "project_support",
+        "ue_provability"
+      ],
+      "causal_chain_per_sc": [
+        "project_fact",
+        "relative_competition",
+        "customer_importance",
+        "project_response",
+        "ue_proof",
+        "target_action"
+      ],
+      "inference_relationships": "contracts/inference-relationships.json",
+      "condition": "complete_product2_or_solution_enabled",
+      "ue_fields_condition": "product3_or_5_enabled"
     },
     {
       "id": "S6",
       "name": "product_enablement_and_high_cost_admission",
-      "inputs": ["semantic-core.json", "super-competitiveness-plan.json"],
-      "outputs": ["product-enablement-matrix.json"],
+      "inputs": [
+        "semantic-core.json",
+        "super-competitiveness-plan.json"
+      ],
+      "outputs": [
+        "product-enablement-matrix.json"
+      ],
       "gate": "high_cost_production_admitted_or_research_only"
     },
     {
       "id": "S7",
       "name": "product3_strategy_to_ue",
       "condition": "product3_enabled",
-      "inputs": ["semantic-core.json", "super-competitiveness-plan.json"],
-      "outputs": ["product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json"],
+      "inputs": [
+        "semantic-core.json",
+        "super-competitiveness-plan.json"
+      ],
+      "outputs": [
+        "product3-chapter2-contract.json",
+        "product3-chapter3-contract.json",
+        "ue-solution-handoff.json"
+      ],
       "gate": "ue_solution_bridge_pass"
     },
     {
       "id": "S8",
       "name": "product5_projection",
       "condition": "product5_enabled",
-      "inputs": ["semantic-core.json", "super-competitiveness-plan.json", "enabled_upstream_products"],
-      "outputs": ["product5-interaction-blueprint.json"],
+      "inputs": [
+        "semantic-core.json",
+        "super-competitiveness-plan.json",
+        "enabled_upstream_products"
+      ],
+      "outputs": [
+        "product5-interaction-blueprint.json"
+      ],
       "gate": "product5_blueprint_pass"
     },
     {
       "id": "S9",
       "name": "change_control_and_reprojection",
       "condition": "material_semantic_change_occurred",
-      "inputs": ["new_fact_or_decision", "current_semantic_version"],
-      "outputs": ["change-impact-registry.json", "updated_affected_outputs"],
+      "inputs": [
+        "new_fact_or_decision",
+        "current_semantic_version"
+      ],
+      "outputs": [
+        "change-impact-registry.json",
+        "updated_affected_outputs"
+      ],
       "gate": "cross_product_consistency_pass"
     }
   ],
   "base_required_run_files": [
     "project-contract.md",
     "fact-conflict-gap-register.json",
-    "product1-competition-study.md",
-    "product1-competition-summary.json",
-    "semantic-core.json",
-    "super-competitiveness-plan.json",
     "product-enablement-matrix.json",
     "production-receipt.json"
   ],
   "conditional_product_files": {
-    "2": ["product2-buyer-decision-study.md", "product2-buyer-decision-summary.json"],
-    "3": ["product3-chapter2-contract.json", "product3-chapter3-contract.json", "ue-solution-handoff.json"],
-    "5": ["product5-interaction-blueprint.json"]
+    "2": [
+      "product2-buyer-decision-study.md",
+      "product2-buyer-decision-summary.json"
+    ],
+    "3": [
+      "product3-chapter2-contract.json",
+      "product3-chapter3-contract.json",
+      "ue-solution-handoff.json"
+    ],
+    "5": [
+      "product5-interaction-blueprint.json"
+    ],
+    "1": [
+      "product1-competition-study.md",
+      "product1-competition-summary.json"
+    ]
   },
   "optional_process_files": {
-    "material_semantic_change": ["change-impact-registry.json"]
+    "material_semantic_change": [
+      "change-impact-registry.json"
+    ]
   },
   "disabled_product_file_policy": "must_be_absent",
   "base_business_status_order": [
     "rules_loaded",
     "project_identity_closed",
-    "product1_complete",
-    "semantic_core_frozen",
-    "minimum_three_sc_pass",
     "cross_product_consistency_pass"
   ],
   "conditional_business_statuses": {
     "2": "product2_complete",
     "3": "ue_solution_bridge_pass",
-    "5": "product5_blueprint_pass"
+    "5": "product5_blueprint_pass",
+    "1": [
+      "product1_complete"
+    ],
+    "complete_research_or_solution": [
+      "semantic_core_frozen",
+      "minimum_three_sc_pass"
+    ]
   },
   "adapter_status_namespace": "adapter_statuses",
   "adapter_pass_cannot_satisfy_business_gate": true,
   "machine_validation_scope": "enabled_files_structure_references_states_and_veto_rules_only",
-  "machine_pass_cannot_claim": ["strategic_quality", "human_business_accepted", "published", "adopted", "business_effect_observed"],
+  "machine_pass_cannot_claim": [
+    "strategic_quality",
+    "human_business_accepted",
+    "published",
+    "adopted",
+    "business_effect_observed"
+  ],
   "external_research_contract": {
     "request": "external-capabilities/upstream-task.schema.json",
     "upstream_envelope": "public_evidence_envelope.v1",
@@ -151,10 +265,18 @@
     "fulfilled_equals_accepted": false
   },
   "release_acceptance": {
-    "scope": "package_level_not_per_project_blind_training",
+    "scope": "incremental_rules_data_default_entry_not_new_full_project",
     "protocol": "V0_2_RELEASE_SCOPE.md",
     "private_holdout_included": false,
-    "fresh_install_full_public_safe_project_required": true,
-    "human_acceptance_required": true
-  }
+    "fresh_install_full_public_safe_project_required": false,
+    "human_acceptance_required": false,
+    "authorization": "current_user_approved_bounded_implementation_and_release",
+    "check": "examples/default-production-pages/output/检查范围.json"
+  },
+  "task_scope": "产物1、2可独立启用；仅已启用产物及其必要输入参加生产和验收，语义核是可局部修正的当前依据。",
+  "complete_research_or_solution_files": [
+    "semantic-core.json",
+    "super-competitiveness-plan.json"
+  ],
+  "stages_usage": "按已启用任务调用现有内容；不要求顺序走完或增加逐项审批。"
 }

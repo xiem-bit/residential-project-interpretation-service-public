@@ -32,7 +32,8 @@ class InstallationDoctorTest(unittest.TestCase):
         self.assertEqual(report["status"], "pass")
         self.assertEqual(report["checks"]["product3_gold_reference"]["status"], "pass")
         self.assertIn("124 page files", report["checks"]["product3_gold_reference"]["detail"])
-        self.assertIn("229 case files", report["checks"]["product3_gold_reference"]["detail"])
+        count = json.loads((ROOT / "references/authorized-reference-assets.json").read_text())["case_asset_library"]["file_count"]
+        self.assertIn(f"{count} case files", report["checks"]["product3_gold_reference"]["detail"])
 
     def test_product5_missing_node_returns_actionable_gap(self) -> None:
         with mock.patch.object(DOCTOR.shutil, "which", return_value=None):

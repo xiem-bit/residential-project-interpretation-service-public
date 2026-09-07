@@ -25,6 +25,121 @@ INTERNAL_VISIBLE_TERMS = {
 }
 
 
+def validate_ue_production_mapping(data: dict) -> list[str]:
+    """Check references inside the existing contract, not production-source rules."""
+    meta = data.get("meta") if isinstance(data.get("meta"), dict) else {}
+    version = meta.get("ue_production_mapping_version")
+    c3 = data.get("chapter3") if isinstance(data.get("chapter3"), dict) else {}
+    modules = c3.get("system_modules") if isinstance(c3.get("system_modules"), list) else []
+    has_mapping = any(isinstance(m, dict) and ("ue_pages" in m or "production_items" in m)
+                      for m in modules)
+    if version is None and not has_mapping:
+        return []  # Historical contracts remain readable, without new-interface acceptance.
+    errors: list[str] = []
+    levels = {"品牌", "城市", "区域", "板块", "土地", "配套", "项目"}
+    if version != 1:
+        errors.append("meta.ue_production_mapping_version: 新页面制作接口须明确为1")
+    basis = meta.get("production_basis")
+    if not isinstance(basis, list) or not basis or any(not isinstance(x, str) or not x.strip() for x in basis):
+        errors.append("meta.production_basis: 缺少当前采用的生产依据")
+    common = c3.get("common_project_answer") if isinstance(c3.get("common_project_answer"), dict) else {}
+    sections = common.get("super_competitiveness_sections")
+    sections = sections if isinstance(sections, list) else []
+    sc_ids = {s["source_ref"] for s in sections if isinstance(s, dict) and isinstance(s.get("source_ref"), str)}
+    items: set[str] = set()
+    pages: dict[str, tuple[str, dict]] = {}
+    module_ids = {m["id"] for m in modules if isinstance(m, dict) and isinstance(m.get("id"), str)}
+
+    def refs(value, allowed, path, required=True):
+        if not isinstance(value, list) or (required and not value):
+            errors.append(f"{path}: 须填写非空引用列表" if required else f"{path}: 须为引用列表")
+            return
+        if any(not isinstance(x, str) or x not in allowed for x in value):
+            errors.append(f"{path}: 包含不存在的引用")
+
+    def required_text(obj, fields, path):
+        for field in fields:
+            if not isinstance(obj.get(field), str) or not obj[field].strip():
+                errors.append(f"{path}.{field}: 缺少具体内容")
+
+    for mi, module in enumerate(modules):
+        if not isinstance(module, dict):
+            continue
+        path = f"chapter3.system_modules[{mi}]"
+        if not isinstance(module.get("production_items"), list):
+            errors.append(f"{path}.production_items: 须为列表；全部引用共用制作项时可以为空")
+        if not isinstance(module.get("ue_pages"), list) or not module["ue_pages"]:
+            errors.append(f"{path}.ue_pages: 缺少UE页面定义")
+        for item in module.get("production_items", []) if isinstance(module.get("production_items"), list) else []:
+            if not isinstance(item, dict):
+                errors.append(f"{path}.production_items: 制作项须为对象")
+                continue
+            required_text(item, ("id", "content", "basis", "status"), path + ".production_items")
+            ident = item.get("id")
+            if isinstance(ident, str):
+                if ident in items:
+                    errors.append(f"{path}.production_items: 制作项重复定义：{ident}；共用内容应引用")
+                items.add(ident)
+        for page in module.get("ue_pages", []) if isinstance(module.get("ue_pages"), list) else []:
+            if not isinstance(page, dict):
+                errors.append(f"{path}.ue_pages: 页面须为对象")
+                continue
+            required_text(page, ("id", "production_level", "narrative_task", "base_object",
+                                 "panel_content", "interaction", "basis"), path + ".ue_pages")
+            ident = page.get("id")
+            if isinstance(ident, str):
+                if ident in pages:
+                    errors.append(f"{path}.ue_pages: UE页面重复定义：{ident}")
+                pages[ident] = (module.get("id"), page)
+    for ident, (_, page) in pages.items():
+        if not isinstance(page.get("production_level"), str) or page["production_level"] not in levels:
+            errors.append(f"{ident}.production_level: 须使用生产端七级层名")
+        refs(page.get("production_item_refs"), items, f"{ident}.production_item_refs")
+        refs(page.get("supports_super_competitiveness_refs", []), sc_ids,
+             f"{ident}.supports_super_competitiveness_refs", required=False)
+        if not page.get("supports_super_competitiveness_refs") and not str(page.get("standard_content_reason") or "").strip():
+            errors.append(f"{ident}: 须说明竞争理由或基础内容职责")
+    for section in sections:
+        if not isinstance(section, dict):
+            continue
+        ident = section.get("source_ref")
+        refs(section.get("ue_page_refs"), pages, f"{ident}.ue_page_refs")
+        for ref in section.get("ue_page_refs", []) if isinstance(section.get("ue_page_refs"), list) else []:
+            supported = pages[ref][1].get("supports_super_competitiveness_refs") if isinstance(ref, str) and ref in pages else []
+            if isinstance(ref, str) and ref in pages and (not isinstance(supported, list) or ident not in supported):
+                errors.append(f"{ident}.ue_page_refs: {ref}未声明承接该竞争力")
+    for route in c3.get("family_routes", []) if isinstance(c3.get("family_routes"), list) else []:
+        if not isinstance(route, dict):
+            continue
+        if not isinstance(route.get("scenes"), list) or not route["scenes"]:
+            errors.append(f"{route.get('id', 'route')}.scenes: 已登记讲解路线须包含具体页面与讲稿")
+        for scene in route.get("scenes", []) if isinstance(route.get("scenes"), list) else []:
+            if not isinstance(scene, dict):
+                continue
+            path = str(scene.get("id", "route_scene"))
+            refs(scene.get("ue_page_refs"), pages, path + ".ue_page_refs")
+            required_text(scene, ("script", "focus", "emphasis"), path)
+            for ref in scene.get("ue_page_refs", []) if isinstance(scene.get("ue_page_refs"), list) else []:
+                if isinstance(ref, str) and ref in pages and pages[ref][0] not in (scene.get("module_refs") or []):
+                    errors.append(f"{path}: UE页面与调用模块不一致：{ref}")
+    scope = c3.get("system_scope_close") if isinstance(c3.get("system_scope_close"), dict) else {}
+    decisions = scope.get("scope_decisions", [])
+    seen: list[str] = []
+    for decision in decisions if isinstance(decisions, list) else []:
+        if not isinstance(decision, dict):
+            errors.append("scope_decisions: 范围安排须为对象")
+            continue
+        seen.append(decision.get("level"))
+        required_text(decision, ("level", "reason"), "scope_decisions")
+        if decision.get("status") not in {"included", "deferred", "not_in_scope"}:
+            errors.append("scope_decisions: 须区分本轮制作、后续深化和范围外")
+        refs(decision.get("module_refs", []), module_ids, "scope_decisions.module_refs",
+             required=decision.get("status") == "included")
+    if len(seen) != 7 or any(not isinstance(x, str) for x in seen) or set(seen) != levels:
+        errors.append("scope_decisions: 须说明七级内容在本轮的安排，不把售前重点当作完整系统")
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("contract", type=Path)
@@ -120,14 +235,28 @@ def main() -> int:
             if not isinstance(section.get(field), list) or not section[field]:
                 err(path + "." + field, "至少需要一项引用")
         scenes = section.get("ue_scenes")
-        if not isinstance(scenes, list) or not scenes:
-            err(path + ".ue_scenes", "至少需要一个 UE 场景")
+        if not isinstance(scenes, list):
+            err(path + ".ue_scenes", "须为列表；非三维价值可为空并填写 presentation_materials")
         else:
             for scene_index, scene in enumerate(scenes):
                 if isinstance(scene, dict):
                     register_scene(f"{path}.ue_scenes[{scene_index}]", scene)
                 else:
                     err(f"{path}.ue_scenes[{scene_index}]", "场景必须是对象")
+        materials = section.get("presentation_materials", [])
+        if not isinstance(materials, list):
+            err(path + ".presentation_materials", "须为列表")
+        else:
+            for material_index, material in enumerate(materials):
+                material_path = f"{path}.presentation_materials[{material_index}]"
+                if not isinstance(material, dict):
+                    err(material_path, "展示材料必须是对象")
+                    continue
+                for field in ("type", "source_ref", "explanation"):
+                    if not isinstance(material.get(field), str) or not material[field].strip():
+                        err(material_path + "." + field, "须说明材料类型、真实依据及讲解作用")
+        if not scenes and not materials:
+            err(path + ".presentation_materials", "无 UE 场景时须提供地图、原图、对比材料或讲解依据")
         case_slots = section.get("case_slots")
         if not isinstance(case_slots, list) or len(case_slots) < 2:
             err(path + ".case_slots", "每条超级竞争力至少保留两个案例版位")
@@ -212,8 +341,9 @@ def main() -> int:
         visible_claim = str(module.get("visible_value_claim", "")).strip()
         if visible_claim:
             visible_texts.append((path + ".visible_value_claim", visible_claim))
-        if not (module.get("supports_super_competitiveness_refs") or module.get("supports_route_refs")):
-            err(path, "模块必须支撑一条超级竞争力或家庭路径")
+        if not (module.get("supports_super_competitiveness_refs") or module.get("supports_route_refs")
+                or str(module.get("standard_content_reason") or "").strip()):
+            err(path, "模块必须说明竞争力、家庭路径或基础系统职责")
         if not isinstance(module.get("product5_targets"), list) or not module["product5_targets"]:
             err(path + ".product5_targets", "缺少产物5映射")
 
@@ -231,10 +361,15 @@ def main() -> int:
         err("chapter3.system_scope_close", "缺少系统内容全貌收口")
         close = {}
     required_labels = close.get("required_module_labels")
-    if not isinstance(required_labels, list) or len(required_labels) < 8:
-        err("chapter3.system_scope_close.required_module_labels", "至少覆盖8类系统内容")
+    if meta.get("ue_production_mapping_version") == 1:
+        if not isinstance(required_labels, list) or not required_labels:
+            err("chapter3.system_scope_close.required_module_labels", "须填写本轮内容标签；完整范围由七级scope_decisions说明")
+    elif not isinstance(required_labels, list) or len(required_labels) < 8:
+        err("chapter3.system_scope_close.required_module_labels", "历史合同至少覆盖8类系统内容")
     if not str(close.get("product5_target", "")).strip():
         err("chapter3.system_scope_close.product5_target", "缺少产物5映射")
+
+    errors.extend(validate_ue_production_mapping(data))
 
     for path, text in visible_texts:
         for term in INTERNAL_VISIBLE_TERMS:
@@ -246,9 +381,8 @@ def main() -> int:
             print("ERROR:", item, file=sys.stderr)
         return 1
 
-    print(
-        "PASS: 第三章生产消费合同结构有效；价值锚点仅文本承接，全部竞争力、家庭路径、系统模块与产物5映射完整。"
-    )
+    mapping = "页面、制作项与预制脚本引用有效" if meta.get("ue_production_mapping_version") == 1 else "历史结构有效，未验收新版页面制作接口"
+    print(f"PASS: 第三章合同结构与引用检查通过；{mapping}。业务判断和生产细则仍须人工复核。")
     return 0
 
 

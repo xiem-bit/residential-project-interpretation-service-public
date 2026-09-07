@@ -13,9 +13,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "成熟城市界面与公园绿地并置，适合表达城市生活底盘。",
     "user_correction": "城市界面、公园绿地、城市生活、成熟社区",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "区域生活环境页：承接城市便利与公园环境兼顾的选择理由；不作步行距离依据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "成熟城市界面、公园绿地与社区生活并置，表达成熟社区的城市生活底盘。"
+    "effective_business_semantic": "高位平视中，公园树冠、成熟住区与城市高层同框，能辨认绿地和城市界面的邻接关系。"
   },
   {
     "asset_id": "CASE-002",
@@ -31,9 +31,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "滨水城市天际线与住宅界面，适合表达城市景观资源。",
     "user_correction": "滨水、项目外立面、项目天际线、四代宅",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "滨水住区及立面页：适合已确认水岸资源的居住吸引力；不是窗内视野或本案水景依据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "滨水界面、项目立面与城市天际线并置，表达四代宅的城市景观占位。"
+    "effective_business_semantic": "水面前景与成排住宅立面、阳台及岸线同框，重点是住区面向水岸的建筑形象。"
   },
   {
     "asset_id": "CASE-003",
@@ -49,9 +49,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "低密住宅临水界面与可操作视角，适合表达产品占位。",
     "user_correction": "四代宅、阳台视野",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "阳台与户外空间页：承接希望增加户外生活空间的购买任务；不代替从室内向外的窗景。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "四代宅的立体产品界面与阳台视野，表达户内外延和观景体验。"
+    "effective_business_semantic": "建筑外部近景叠加阳台空间标注，可观察立体阳台、楼层界面和户外延展关系。"
   },
   {
     "asset_id": "CASE-004",
@@ -67,9 +67,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "城市全景与公共绿地，适合表达居住与城市环境的关系。",
     "user_correction": "滨水、公园绿地、城市界面、城市生活",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "区域生态资源页：辅助解释城市生活与水岸环境的组合；不适合街巷人视体验页。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "滨水公园、城市界面与公共生活同框，表达成熟城市中的日常休闲。"
+    "effective_business_semantic": "区域高位视角同时呈现河道、桥梁、公园与城市住区，说明水岸和建成区的整体关系。"
   },
   {
     "asset_id": "CASE-005",
@@ -85,9 +85,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "水岸公园与城市界面，适合表达日常公共生活场景。",
     "user_correction": "滨水、公园、城市界面、滨湖",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "湖园生活页：说明公共绿地与城市居住的关系；不能由鸟瞰推定出入口及实际步行时间。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "滨水、滨湖公园与城市界面，表达可进入日常的水岸公共生活。"
+    "effective_business_semantic": "高位视角呈现湖岸曲线、园路、绿地及周边城市界面，能够辨认公园空间的连续性。"
   },
   {
     "asset_id": "CASE-006",
@@ -103,9 +103,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "城市中轴与整体界面，适合表达区域成熟度。",
     "user_correction": "城市界面、城市中轴、成熟社区",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "成熟片区与城市界面页：承接保留城市生活联系的价值判断；不以建筑数量代替配套成熟度研究。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市中轴、成熟社区与整体天际线，表达区域成熟度和城市界面。"
+    "effective_business_semantic": "沿城市道路轴线观察两侧住区和高层建筑，体现连续建成界面与空间秩序。"
   },
   {
     "asset_id": "CASE-007",
@@ -121,45 +121,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "TOD／枢纽节点的城市空间呈现，适合表达通勤与城市连接。",
     "user_correction": "TOD、枢纽节点、通勤",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "枢纽及复合开发页：承接已确认的通勤与资源联系；交通效率须由本案线路及距离另行支持。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "TOD与枢纽节点组织通勤关系，表达城市连接和每日出行效率。"
-  },
-  {
-    "asset_id": "CASE-008",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材01.pdf",
-    "source_page": 2,
-    "page_value_title": "历史合作的典型项目实施案例介绍（以系统展示为主） 《东方希望·上东里》城东新地标 《旭辉·璞域》北京路上的伟大宁静 《邦泰·悦九章》最国际化",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-008_UE5___01_p02_i03.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-008_UE5___01_p02_i03.jpg",
-    "width_px": 2608,
-    "height_px": 1467,
-    "visual_form": "城市／项目氛围画面",
-    "business_semantic_guess": "城市地标与品牌到达感，适合表达区域形象。",
-    "user_correction": "城市地标、城市天际线",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市地标与天际线构成区域形象，表达项目所处城市界面的辨识度。"
-  },
-  {
-    "asset_id": "CASE-009",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材01.pdf",
-    "source_page": 2,
-    "page_value_title": "历史合作的典型项目实施案例介绍（以系统展示为主） 《东方希望·上东里》城东新地标 《旭辉·璞域》北京路上的伟大宁静 《邦泰·悦九章》最国际化",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-009_UE5___01_p02_i04.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-009_UE5___01_p02_i04.jpg",
-    "width_px": 1937,
-    "height_px": 1090,
-    "visual_form": "城市／项目氛围画面",
-    "business_semantic_guess": "城市地标视野，适合表达高点界面与城市观景。",
-    "user_correction": "城市地标、城市天际线、城市界面",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市地标、天际线与高点视野，表达城市观景和界面占位。"
+    "effective_business_semantic": "高位近景将复合建筑、街道及节点空间与半透明标注结合，突出枢纽周边的开发关系。"
   },
   {
     "asset_id": "CASE-010",
@@ -175,9 +139,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "夜景城市活力与水岸灯光，适合表达夜间公共生活。",
     "user_correction": "夜景、城市活力、滨水、活力",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "城市夜景与生活氛围页：用于偏好繁华城市界面的表达；灯光效果不证明商业运营或活动频率。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "水岸灯光与夜间城市活力，表达夜游、休闲和公共生活氛围。"
+    "effective_business_semantic": "夜间鸟瞰呈现水岸、城市灯光和地标建筑，主要传递滨水城市的夜间形象。"
   },
   {
     "asset_id": "CASE-011",
@@ -193,9 +157,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "产业／商业街区界面，适合表达工作与商业支持。",
     "user_correction": "产业、商业街、城市界面、天际线",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "工作与商业生活页：说明城市功能混合的环境特征；机位高于行人，不替代街头漫游。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "产业、商业街和城市天际线并置，表达工作、消费与城市生活支持。"
+    "effective_business_semantic": "中低高度沿街视角呈现商业街区、公共道路与产业建筑的组合，能观察街区建筑尺度。"
   },
   {
     "asset_id": "CASE-012",
@@ -211,27 +175,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "文化叙事地图，适合表达区域历史与文化线索。",
     "user_correction": "文化历史",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "城市文化与区域认同页：承接已研究的文脉偏好；案例历史不能转为本案文化事实。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以文化历史地图组织区域记忆，表达城市文脉与场所故事。"
-  },
-  {
-    "asset_id": "CASE-016",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材01.pdf",
-    "source_page": 5,
-    "page_value_title": "超级竞争力——“攀成钢烟火气最浓的成熟区域” 视觉设计：针对项目所处的位为项目地理位置定制一组电影化超级镜头 依照锦江区规划文件对项目周边精",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-016_UE5___01_p05_i02.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-016_UE5___01_p05_i02.jpg",
-    "width_px": 3840,
-    "height_px": 2160,
-    "visual_form": "城市／项目氛围画面",
-    "business_semantic_guess": "中心城区天际线，适合表达城市成熟界面。",
-    "user_correction": "成熟社区、城市界面、天际线",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "成熟社区、中心城区天际线与城市界面，表达既有生活底盘。"
+    "effective_business_semantic": "历史地图与地点、文化图像叠加，属于城市文脉的平面叙事画面。"
   },
   {
     "asset_id": "CASE-017",
@@ -247,9 +193,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "地标建筑群，适合表达城市发展能级。",
     "user_correction": "城市地标、发展能级、成熟社区、城市界面、天际线",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "城市形象页：适合城市界面和地标偏好；不独立证明发展能级或投资回报。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市地标、发展能级、成熟社区与天际线共同表达城市价值。"
+    "effective_business_semantic": "城市高层与地标的高位平视全景，突出成熟天际线和建筑群形象。"
   },
   {
     "asset_id": "CASE-018",
@@ -265,9 +211,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "建筑仰视与立面尺度，适合表达产品建筑形象。",
     "user_correction": "项目外立面、公建化外立面、玻璃外立面、四代宅、阳台视野、日照充足、工艺功法、材质质感",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "建筑立面与阳台页：承接对住宅形象、户外空间的关注；单帧不证明全年日照及具体工艺。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "公建化与玻璃立面、四代宅阳台、日照及材质工艺共同表达产品形象与品质。"
+    "effective_business_semantic": "地面仰视玻璃立面与外挑阳台，能够观察建筑比例、材料反光和近人尺度。"
   },
   {
     "asset_id": "CASE-021",
@@ -283,9 +229,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "全球—城市定位交互地图，适合表达城市价值的空间推导。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "开发商品牌页：参考集团产业与全球布局的表达；不是本案城市价值或明源技术优势。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "全球—城市定位交互地图，适合表达城市价值的空间推导。"
+    "effective_business_semantic": "地球底图连接多个产业图标，左侧企业简介和产业面板说明集团业务构成。"
   },
   {
     "asset_id": "CASE-022",
@@ -301,9 +247,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "城市经济／产业信息叠加地图，适合表达发展基础。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "开发商品牌页：承接开发经验与产品认知；不是城市经济研究，也不是明源技术优势。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市经济／产业信息叠加地图，适合表达发展基础。"
+    "effective_business_semantic": "区域地图、开发商品牌文案和产品系列共同呈现企业本土布局，核心是品牌及产品谱系。"
   },
   {
     "asset_id": "CASE-023",
@@ -319,9 +265,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "全国城市关系与能级比较，适合表达城市外部连接。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "城市外部联系页：适合已成立的城市比较背景；案例数据、排名和连接关系均须替换。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "全国城市关系与能级比较，适合表达城市外部连接。"
+    "effective_business_semantic": "全国地图与多个城市节点、交通和统计面板共同说明城市间联系。"
   },
   {
     "asset_id": "CASE-024",
@@ -337,9 +283,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "全球视角的城市定位，适合表达战略坐标。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "UE城市定位页：呈现宏观位置及连接叙事；不能据画面推定真实航线或通达效率。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "全球视角的城市定位，适合表达战略坐标。"
+    "effective_business_semantic": "地球视角以城市锚点与跨区域连线突出城市位置，并用侧面板补充信息。"
   },
   {
     "asset_id": "CASE-025",
@@ -355,9 +301,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "城市多中心关系与生活资源分布，适合表达客户生活坐标。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "区域多中心关系页：承接客户在不同生活中心之间的取舍；本案比较须另制真实地图。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市多中心关系与生活资源分布，适合表达客户生活坐标。"
+    "effective_business_semantic": "真实地貌样式底图中标记多个城市中心，辅以资源说明和图片面板。"
   },
   {
     "asset_id": "CASE-026",
@@ -373,27 +319,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "区域核心与资源圈层，适合表达板块的中心性。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "城市圈层选择页：适合中心与外围关系的UE表达；圈线本身不证明行政边界或通行时长。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "区域核心与资源圈层，适合表达板块的中心性。"
-  },
-  {
-    "asset_id": "CASE-027",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材01.pdf",
-    "source_page": 12,
-    "page_value_title": "区域价值——“千年锦江，主城稀贵恒产” ①在三维底座上，聚焦锦江区范围，结合态光效展示锦江区的功能格局，及“一核两轴三带三区 ”，表达项目位",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-027_UE5___01_p12_i02.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-027_UE5___01_p12_i02.jpg",
-    "width_px": 1024,
-    "height_px": 821,
-    "visual_form": "城市／区域关系界面",
-    "business_semantic_guess": "区域规划与功能分区图，适合表达片区发展逻辑。",
-    "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "区域规划与功能分区图，适合表达片区发展逻辑。"
+    "effective_business_semantic": "城市底图叠加中心高亮与多层圈线，侧面板解释圈层及资源信息。"
   },
   {
     "asset_id": "CASE-028",
@@ -409,9 +337,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "交通／资源圈层与区域联系，适合表达通勤和可达性。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "区域交通与城市结构页：承接跨板块选择背景；不能将视觉连线当作已建交通或距离证据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "交通／资源圈层与区域联系，适合表达通勤和可达性。"
+    "effective_business_semantic": "广域城市底图与交通、圈层线条同屏，上方概括城市结构，侧面板补充区域信息。"
   },
   {
     "asset_id": "CASE-029",
@@ -427,9 +355,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "片区总体规划与多片区协同，适合表达土地价值。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "片区功能关系页：说明住区与周边功能的组织；规划分区不能写成全部已兑现配套。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "片区总体规划与多片区协同，适合表达土地价值。"
+    "effective_business_semantic": "片区鸟瞰被划分为多个半透明功能区域，并由图片与标注说明各区内容。"
   },
   {
     "asset_id": "CASE-030",
@@ -445,9 +373,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "区域产业与经济资源联动，适合表达发展增量。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "多节点生活联系页：承接已明确的目的地与区域取舍；弧线不表示实际路线。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "区域产业与经济资源联动，适合表达发展增量。"
+    "effective_business_semantic": "城市鸟瞰上以多个发光圆圈及弧线连接重要节点，表达资源之间的组合关系。"
   },
   {
     "asset_id": "CASE-031",
@@ -463,9 +391,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "多节点城市动线，适合表达区域资源串联。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "区域资源组合页：适合多目的地关系的UE案例；节点顺序不等于真实出行顺序。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "多节点城市动线，适合表达区域资源串联。"
+    "effective_business_semantic": "鸟瞰底图通过连续高亮节点与曲线连接城市资源，左侧图片补充各节点内容。"
   },
   {
     "asset_id": "CASE-032",
@@ -481,9 +409,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "城市全景叠加发展节点，适合表达空间关系的动态讲解。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "城市发展轴及资源页：承接已确认的区域选择理由；城市发展判断来自本案研究。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市全景叠加发展节点，适合表达空间关系的动态讲解。"
+    "effective_business_semantic": "城市全景上标出轴线与重点节点，以照片卡片补充区域资源。"
   },
   {
     "asset_id": "CASE-034",
@@ -499,27 +427,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "城市公园与地标共景，适合表达公共生活界面。",
     "user_correction": "滨水、滨江、城市地标、项目外立面、天际线",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "滨水生活人视页：适合日常散步的环境感受；不是住宅窗景，也不承诺本案同等水岸。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "滨水滨江、城市地标、项目立面与天际线同框，表达公共景观与城市形象。"
-  },
-  {
-    "asset_id": "CASE-038",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材01.pdf",
-    "source_page": 16,
-    "page_value_title": "项目展示——“ 东大路主轴・最纯粹的低密改善社区 “ ①利用3D建模技术1:1还原并呈现逼真效果，对「项目规划、业态分布、人行动线、楼间距，",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-038_UE5___01_p16_i02.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-038_UE5___01_p16_i02.jpg",
-    "width_px": 1920,
-    "height_px": 1080,
-    "visual_form": "项目／社区／产品展示界面",
-    "business_semantic_guess": "白模总图叠加社区鸟瞰，适合表达项目总图与产品演示。",
-    "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "白模总图叠加社区鸟瞰，适合表达项目总图与产品演示。"
+    "effective_business_semantic": "河岸草地上的低机位平视，近处绿地、中景桥梁与河道、远处建筑共同形成水岸体验。"
   },
   {
     "asset_id": "CASE-039",
@@ -535,9 +445,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "项目鸟瞰总图，适合表达建筑、道路、园林的整体组织。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "项目整体规划页：比较住宅、公共空间与城市道路的组织；不从鸟瞰补造户内功能。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "项目鸟瞰总图，适合表达建筑、道路、园林的整体组织。"
+    "effective_business_semantic": "项目鸟瞰呈现住宅楼栋、道路、周边建筑和园林位置，空间关系清晰。"
   },
   {
     "asset_id": "CASE-040",
@@ -553,9 +463,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "建筑昼景与立面，适合表达建筑形象。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "建筑形象页：承接新住宅的外观及归家界面价值；案例材质和配置不转为本案承诺。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "建筑昼景与立面，适合表达建筑形象。"
+    "effective_business_semantic": "街道一侧的仰视近景展现住宅立面、入口及周边建筑，侧面板补充材料信息。"
   },
   {
     "asset_id": "CASE-041",
@@ -571,9 +481,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "建筑立面及产品特色标注，适合表达产品差异。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "立面与阳台关系页：说明建筑形象和户外空间；不用于解释室内收纳或具体房间尺度。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "建筑立面及产品特色标注，适合表达产品差异。"
+    "effective_business_semantic": "地面仰视住宅外立面与外挑阳台，并有局部特色标注。"
   },
   {
     "asset_id": "CASE-042",
@@ -589,9 +499,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "归家入口／门厅，适合表达社区第一到达体验。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "归家体验页：适合入口尺度、材质及内外过渡；不从效果推断实际服务标准。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "归家入口／门厅，适合表达社区第一到达体验。"
+    "effective_business_semantic": "人视角位于门厅或归家廊道，能够看到门、柱、材料、光影与通行空间。"
   },
   {
     "asset_id": "CASE-043",
@@ -607,9 +517,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "社区鸟瞰与园林系统，适合表达整体社区场景。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "住区整体关系页：说明共享空间和住宅的配置关系；庭院细部体验应另配人视案例。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "社区鸟瞰与园林系统，适合表达整体社区场景。"
+    "effective_business_semantic": "俯视住区总图，楼栋与园林、步道及公共空间整体展开。"
   },
   {
     "asset_id": "CASE-044",
@@ -625,9 +535,9 @@
     "visual_form": "园林／公共停留场景",
     "business_semantic_guess": "楼间庭院与慢行，适合表达社区日常停留。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：园林与停留、公共生活展开页",
+    "product3_recommended_use": "楼间共享空间页：承接住宅之外的公共生活空间；机位属于俯视，不用于行人漫游。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "楼间庭院与慢行，适合表达社区日常停留。"
+    "effective_business_semantic": "楼上俯看两栋建筑之间的庭院及步道，展示楼间绿地和活动空间的相对位置。"
   },
   {
     "asset_id": "CASE-045",
@@ -643,9 +553,9 @@
     "visual_form": "园林／公共停留场景",
     "business_semantic_guess": "园林夕照与会客情绪，适合表达景观品质。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：园林与停留、公共生活展开页",
+    "product3_recommended_use": "入口景观页：用于花木、景墙与归家感受；不据夕照推定本案日照或植物养护效果。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "园林夕照与会客情绪，适合表达景观品质。"
+    "effective_business_semantic": "较低机位面向园林花木、入口景墙与夕照，突出归家景观的近景氛围。"
   },
   {
     "asset_id": "CASE-046",
@@ -661,27 +571,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "建筑入口与归家界面，适合表达归家仪式感。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "归家与建筑形象页：承接进入社区的第一感受；不以高层形象代替具体户型优势。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "建筑入口与归家界面，适合表达归家仪式感。"
-  },
-  {
-    "asset_id": "CASE-047",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材01.pdf",
-    "source_page": 20,
-    "page_value_title": "一户一景——第三人称视角仿真模拟展示 ①通过三维建模表现户型分布，可通过选择户型/面积段，高亮形式呈现落位，呈现不同户型的位置分布和户型平面",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-047_UE5___01_p20_i01.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-047_UE5___01_p20_i01.jpg",
-    "width_px": 2560,
-    "height_px": 1440,
-    "visual_form": "项目／社区／产品展示界面",
-    "business_semantic_guess": "建筑局部／阳台关系，适合表达产品空间特征。",
-    "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "建筑局部／阳台关系，适合表达产品空间特征。"
+    "effective_business_semantic": "入口前人视仰角呈现门头及上方住宅立面，体现入口与建筑整体的联系。"
   },
   {
     "asset_id": "CASE-048",
@@ -697,27 +589,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "社区整体鸟瞰与楼栋关系，适合表达社区尺度。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "楼栋位置与住区规划页：说明楼栋分布及公共空间；不替代一户一景或具体房源实景。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "社区整体鸟瞰与楼栋关系，适合表达社区尺度。"
-  },
-  {
-    "asset_id": "CASE-049",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材01.pdf",
-    "source_page": 21,
-    "page_value_title": "空间功能展示——“新规产品，更强的空间感” ①根据项目户型图集成资料进行户型表达",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-049_UE5___01_p21_i01.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-049_UE5___01_p21_i01.jpg",
-    "width_px": 857,
-    "height_px": 482,
-    "visual_form": "项目／社区／产品展示界面",
-    "business_semantic_guess": "户型功能分区，适合表达家庭成员的空间使用。",
-    "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "户型功能分区，适合表达家庭成员的空间使用。"
+    "effective_business_semantic": "俯视总图对住宅楼栋作半透明高亮，能辨认楼栋、园林与周边湖园关系。"
   },
   {
     "asset_id": "CASE-050",
@@ -733,9 +607,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "户型平面与室内关系，适合表达产品讲解。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "住房布局内容页：仅在需解释平面布局时选用；生活体验及楼层视野页优先人视室内或窗景。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "户型平面与室内关系，适合表达产品讲解。"
+    "effective_business_semantic": "项目鸟瞰上打开二维户型平面面板，重点是房间布局与平面图的阅读。"
   },
   {
     "asset_id": "CASE-053",
@@ -751,9 +625,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "滨水城市鸟瞰，适合表达区域外部环境。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "城市水岸关系页：说明资源跨区域分布；不是本案坐标、距离或窗景的事实依据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "滨水城市鸟瞰，适合表达区域外部环境。"
+    "effective_business_semantic": "广域滨水鸟瞰呈现河流、桥梁、城市建筑和两岸空间。"
   },
   {
     "asset_id": "CASE-054",
@@ -769,9 +643,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "城市日落天际线，适合表达城市形象。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "城市氛围页：适合明确需要夕照形象的页面；不充当配套比较或项目采光证据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市日落天际线，适合表达城市形象。"
+    "effective_business_semantic": "城市日落全景呈现天际线与近景城市设施，主要表达时段光影和城市形象。"
   },
   {
     "asset_id": "CASE-055",
@@ -787,9 +661,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "建筑／地标案例矩阵，适合表达区域标杆资源。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "开发商及设计团队页：承接已确认的设计资源；不得误作区域配套或明源技术案例。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "建筑／地标案例矩阵，适合表达区域标杆资源。"
+    "effective_business_semantic": "设计机构名称、代表作品和背景数据组成案例矩阵，重点是设计团队的履历。"
   },
   {
     "asset_id": "CASE-056",
@@ -805,9 +679,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "全球—城市关系，适合表达城市战略坐标。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "UE城市定位页：宏观地图与内容面板的组合参考；项目事实和数据须由当前输入提供。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "全球—城市关系，适合表达城市战略坐标。"
+    "effective_business_semantic": "地球与国家轮廓、多个城市锚点及侧面板构成跨尺度定位画面。"
   },
   {
     "asset_id": "CASE-057",
@@ -823,9 +697,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "世界资源连线，适合表达城市外部链接。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "城市外部联系页：承接已成立的城市吸引力；图中连线不能直接证明真实航线。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "世界资源连线，适合表达城市外部链接。"
+    "effective_business_semantic": "地球底图上的城市节点和国际连线突出城市对外联系。"
   },
   {
     "asset_id": "CASE-058",
@@ -841,9 +715,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "全球视野中的城市定位，适合表达宏观城市价值。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "UE城市定位页：适合全球到本地的层次表达；不用来替代近场竞争地图。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "全球视野中的城市定位，适合表达宏观城市价值。"
+    "effective_business_semantic": "地球底图逐级指向国家和城市，并以图片与说明面板承接城市内容。"
   },
   {
     "asset_id": "CASE-059",
@@ -859,9 +733,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "区域功能结构，适合表达板块规划。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "板块功能比较页：适合区域取舍的表达结构；本案须使用自己的范围、名称和依据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "区域功能结构，适合表达板块规划。"
+    "effective_business_semantic": "区域平面地图用色块划分功能板块，正文面板解释片区结构。"
   },
   {
     "asset_id": "CASE-060",
@@ -877,9 +751,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "发展轴线与区域生长，适合表达未来建设。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "城市轴线与江湾环境页：承接有依据的发展及景观判断；光带不代表实际道路。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "发展轴线与区域生长，适合表达未来建设。"
+    "effective_business_semantic": "沿江高位视角以光带强调城市轴线，夕照与江湾共同构成区域形象。"
   },
   {
     "asset_id": "CASE-061",
@@ -895,9 +769,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "真实城市天际线，适合表达成熟城市界面。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "城市环境及远景页：适合公园、水面与建成区关系；未标明具体房源，不作一户一景证据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "真实城市天际线，适合表达成熟城市界面。"
+    "effective_business_semantic": "高位平视跨越公园和水面观察城市建筑群，远近景层次清晰。"
   },
   {
     "asset_id": "CASE-062",
@@ -913,9 +787,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "区域分区与资源位置，适合表达板块关系。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "区域资源关系页：承接客户关心的城市联系；线条只作叙事示意。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "区域分区与资源位置，适合表达板块关系。"
+    "effective_business_semantic": "鸟瞰底图上多个高亮节点连成资源关系链，侧面板给出节点图片。"
   },
   {
     "asset_id": "CASE-063",
@@ -931,9 +805,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "城市全景及核心节点，适合表达区域定位。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "区域定位页：说明核心节点与城市环境；不移植案例的中心性结论。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市全景及核心节点，适合表达区域定位。"
+    "effective_business_semantic": "城市全景叠加中心节点、轴线与资源卡片，显示区域定位及周边联系。"
   },
   {
     "asset_id": "CASE-065",
@@ -949,27 +823,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "项目级总图展示，适合表达社区组织。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "区域沙盘页：说明项目周边的城市结构；不是单一社区园林总图。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "项目级总图展示，适合表达社区组织。"
-  },
-  {
-    "asset_id": "CASE-066",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材02.pdf",
-    "source_page": 15,
-    "page_value_title": "重庆一绝——“两江四岸绝版区域，重庆城市的根与魂” ①在三维城市底座上，聚焦到重庆两江四岸核心区域，结合动态光效展示两江四岸脉络，特效展示“",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-066_UE5___02_p15_i02.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-066_UE5___02_p15_i02.jpg",
-    "width_px": 1920,
-    "height_px": 1080,
-    "visual_form": "城市／区域关系界面",
-    "business_semantic_guess": "城市夜景总览，适合表达区域氛围。",
-    "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市夜景总览，适合表达区域氛围。"
+    "effective_business_semantic": "较大范围的区域三维沙盘展现城市街区、河岸、道路与多个建筑群，配合左侧资源面板。"
   },
   {
     "asset_id": "CASE-067",
@@ -985,9 +841,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "城市发展规划图，适合表达区域发展方向。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "城市发展与板块关系页：适合已有规划依据的空间解释；区分规划定位与现实兑现。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市发展规划图，适合表达区域发展方向。"
+    "effective_business_semantic": "平面城市底图用色带划分两江两岸的发展区域，图例说明规划功能。"
   },
   {
     "asset_id": "CASE-068",
@@ -1003,9 +859,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "滨水片区规划／功能布局，适合表达区域资源。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "土地与滨水片区页：说明用地和资源关系；不能把规划形态当作已建成环境。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "滨水片区规划／功能布局，适合表达区域资源。"
+    "effective_business_semantic": "滨水片区鸟瞰与功能色块、节点和指向线结合，展示土地及周边资源组织。"
   },
   {
     "asset_id": "CASE-069",
@@ -1021,9 +877,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "片区鸟瞰与项目位置，适合表达区域占位。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "近场资源与区域沙盘页：承接固定目的地、工作及生活联系；不直接沿用案例点位。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "片区鸟瞰与项目位置，适合表达区域占位。"
+    "effective_business_semantic": "区域沙盘同时呈现交通枢纽、周边街区、绿地与节点图片，突出片区内的空间联系。"
   },
   {
     "asset_id": "CASE-070",
@@ -1039,9 +895,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "区域轴线与交通联系，适合表达可达性。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "项目与目的地关系页：可参考多点连接方式；连线不证明实际路线和通勤时间。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "区域轴线与交通联系，适合表达可达性。"
+    "effective_business_semantic": "城市鸟瞰中以项目锚点和多条连线关联周边节点，侧面信息解释连接对象。"
   },
   {
     "asset_id": "CASE-071",
@@ -1057,9 +913,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "城市地标天际线，适合表达城市形象。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "城市界面及建筑高度页：适合天际线比较的表达；案例高度不能转为本案楼层、视野或稀缺结论。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市地标天际线，适合表达城市形象。"
+    "effective_business_semantic": "临水城市天际线标注建筑高度和起伏轮廓，重点是高层建筑群的高度关系。"
   },
   {
     "asset_id": "CASE-072",
@@ -1075,9 +931,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "城市增长界面与未来新区，适合表达发展增量。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "区域景观与观察方向页：适合已明确景观资源的空间解释；不由此推定未来新区或发展增量。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市增长界面与未来新区，适合表达发展增量。"
+    "effective_business_semantic": "滨水片区鸟瞰叠加朝向扇面，呈现河道、公园与住区的相对位置。"
   },
   {
     "asset_id": "CASE-073",
@@ -1093,9 +949,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "桥梁水岸与城市界面，适合表达公共景观。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "景观朝向关系页：说明面向水岸的观察关系；不是行人漫游或具体住房窗景。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "桥梁水岸与城市界面，适合表达公共景观。"
+    "effective_business_semantic": "从桥梁上方观察河岸与建筑，半透明扇面强调水岸景观的方向和范围。"
   },
   {
     "asset_id": "CASE-074",
@@ -1111,9 +967,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "项目范围与城市关系的动态展示，适合表达区位。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "土地定位页：适合从城市到地块的UE过渡；高亮边界不自动等同法定红线。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "项目范围与城市关系的动态展示，适合表达区位。"
+    "effective_business_semantic": "简化城市地貌底图高亮一块沿水区域，突出地块与河道的位置关系。"
   },
   {
     "asset_id": "CASE-075",
@@ -1129,9 +985,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "项目周边资源圈层，适合表达生活半径。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "区域资源与生活圈页：承接已成立的生活范围选择；圈线不自动等同步行生活圈。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "项目周边资源圈层，适合表达生活半径。"
+    "effective_business_semantic": "区域总览以高亮圈、道路和水系标注组织片区资源，配合资源图片。"
   },
   {
     "asset_id": "CASE-076",
@@ -1147,9 +1003,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "项目微区位与资源标注，适合表达项目位置。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "土地及组团关系页：适合解释相邻功能和建设范围；不把不同地块的配置视作本案共享权益。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "项目微区位与资源标注，适合表达项目位置。"
+    "effective_business_semantic": "片区鸟瞰以多色边界区分相邻地块和功能组团，并显示交通枢纽及周边街区。"
   },
   {
     "asset_id": "CASE-077",
@@ -1165,9 +1021,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "公共文化活动展示，适合表达公共生活内容。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "运动配套内容页：可说明健身资源的展示用途；并非公共文化活动或已实现的实时服务。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "公共文化活动展示，适合表达公共生活内容。"
+    "effective_business_semantic": "区域沙盘上打开健身活动画面，呈现空间底图与运动内容面板的组合。"
   },
   {
     "asset_id": "CASE-078",
@@ -1183,9 +1039,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "城市生活资源全景，适合表达客户生活坐标。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "区域资源总览页：适合多目的地及跨板块联系；本案点位和空间比较须重新装载。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市生活资源全景，适合表达客户生活坐标。"
+    "effective_business_semantic": "广域城市沙盘叠加道路和资源节点，项目锚点与多处目的地处于同一视窗。"
   },
   {
     "asset_id": "CASE-079",
@@ -1201,27 +1057,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "水岸城市天际线，适合表达城市界面。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "滨水住区形象页：承接水岸环境偏好；没有房源机位，不能直接说明一户一景。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "水岸城市天际线，适合表达城市界面。"
-  },
-  {
-    "asset_id": "CASE-080",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材02.pdf",
-    "source_page": 22,
-    "page_value_title": "直播好评——城市漫行系统带客户实地感受 【城市漫行系统】——“南滨路、公园群落、峡谷商业生活方式交互体验” ①通过全场景建模，对项目旁的南滨",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-080_UE5___02_p22_i01.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-080_UE5___02_p22_i01.jpg",
-    "width_px": 3027,
-    "height_px": 1703,
-    "visual_form": "城市／项目氛围画面",
-    "business_semantic_guess": "公共草坪与休闲活动，适合表达公共停留。",
-    "user_correction": "",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "公共草坪与休闲活动，适合表达公共停留。"
+    "effective_business_semantic": "临水高位视角呈现项目建筑、岸线绿地和城市远景，强调建筑与水岸的整体关系。"
   },
   {
     "asset_id": "CASE-082",
@@ -1237,9 +1075,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "建筑群鸟瞰，适合表达项目外观与楼栋关系。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "建筑群与楼栋关系页：说明整体建筑形态；不用于街巷或室内生活体验。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "建筑群鸟瞰，适合表达项目外观与楼栋关系。"
+    "effective_business_semantic": "中高位平视显示数栋塔楼与周边城市建筑，左侧保留建筑选择与信息面板。"
   },
   {
     "asset_id": "CASE-084",
@@ -1255,9 +1093,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "成熟城市全景，适合表达城市生活底盘。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "城市生活环境页：适合公园水岸与成熟城市的组合；不提供距离和步行证据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "成熟城市全景，适合表达城市生活底盘。"
+    "effective_business_semantic": "高位平视中桥梁、公园、河道和城市住区同框，展示区域绿色空间与建成区关系。"
   },
   {
     "asset_id": "CASE-085",
@@ -1273,9 +1111,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "城市地标天际线，适合表达发展能级。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "城市形象页：用于已明确的城市界面偏好；建筑高度不等于经济能级。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市地标天际线，适合表达发展能级。"
+    "effective_business_semantic": "城市地标与连续高层的天际线全景，突出建筑群形象与城市尺度。"
   },
   {
     "asset_id": "CASE-086",
@@ -1291,9 +1129,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "宏观区域定位界面，适合表达城市外部连接。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "UE城市定位页：适合宏观空间与城市信息组合；不代替本案真实竞争地图。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "宏观区域定位界面，适合表达城市外部连接。"
+    "effective_business_semantic": "地球底图上叠加多个城市图片和定位信息，呈现外部城市关系。"
   },
   {
     "asset_id": "CASE-087",
@@ -1309,9 +1147,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "区域功能圈层，适合表达片区资源关系。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "区域选择比较页：可参考淡色范围圈的表达；案例范围不作本案板块边界依据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "区域功能圈层，适合表达片区资源关系。"
+    "effective_business_semantic": "平面区域底图以多个半透明圆区分城市板块，直观展示板块之间的位置关系。"
   },
   {
     "asset_id": "CASE-088",
@@ -1327,9 +1165,9 @@
     "visual_form": "城市／项目氛围画面",
     "business_semantic_guess": "工业文化／场所记忆，适合表达片区更新的文化线索。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：按生效语义匹配具体页面",
+    "product3_recommended_use": "街巷文化生活页：用于具体街景感受；画面不足以认定工业遗址或历史年代，也不标作UE漫游。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "工业文化／场所记忆，适合表达片区更新的文化线索。"
+    "effective_business_semantic": "竖向近景呈现街巷台阶、老建筑与树木，能够观察场所材质和高差。"
   },
   {
     "asset_id": "CASE-089",
@@ -1345,9 +1183,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "滨水片区总体鸟瞰，适合表达区域空间。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "区域景观关系页：用于水岸与城市环境的取舍；不由画面推断实际景观权利。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "滨水片区总体鸟瞰，适合表达区域空间。"
+    "effective_business_semantic": "广域鸟瞰以水系、公园及两岸建成区为主体，观察扇面补充朝向关系。"
   },
   {
     "asset_id": "CASE-090",
@@ -1363,9 +1201,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "道路与资源距离图，适合表达生活可达性。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "近场目的地与距离页：参考点线和数值的配合；本案须核对坐标、计量口径和路段对象。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "道路与资源距离图，适合表达生活可达性。"
+    "effective_business_semantic": "平面地图标出地块及道路节点，局部红线和长度标注说明具体路段关系。"
   },
   {
     "asset_id": "CASE-091",
@@ -1381,45 +1219,9 @@
     "visual_form": "园林／公共停留场景",
     "business_semantic_guess": "园林慢行归家，适合表达日常步行体验。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：园林与停留、公共生活展开页",
+    "product3_recommended_use": "园林慢行人视页：适合树荫、步道及楼间景观感受；不替代总图或运营承诺。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "园林慢行归家，适合表达日常步行体验。"
-  },
-  {
-    "asset_id": "CASE-094",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材03.pdf",
-    "source_page": 14,
-    "page_value_title": "项目解读—— “重庆的2000亩世界级超级湾区“ ①在三维城市底座上对重庆湾区域住宅、商业、办公、城市更新等业态进行分色块展示",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-094_UE5___03_p14_i03.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-094_UE5___03_p14_i03.jpg",
-    "width_px": 1920,
-    "height_px": 1080,
-    "visual_form": "城市／区域关系界面",
-    "business_semantic_guess": "项目夜景与外围环境，适合表达项目形象。",
-    "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "项目夜景与外围环境，适合表达项目形象。"
-  },
-  {
-    "asset_id": "CASE-095",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材03.pdf",
-    "source_page": 15,
-    "page_value_title": "世界一线标准总览——重庆湾五大维度满足世界一线豪宅标准 《成都麓湖金麟樾》八大金律 重塑四代宅 《成都麓湖金麟樾》六边形钻石 ①重庆湾项目在",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-095_UE5___03_p15_i01.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-095_UE5___03_p15_i01.jpg",
-    "width_px": 1920,
-    "height_px": 1080,
-    "visual_form": "城市／区域关系界面",
-    "business_semantic_guess": "项目空间秩序图，适合表达社区关系。",
-    "user_correction": "品牌价值、产品设计理念高度提炼",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "用高度提炼的品牌主张与产品设计理念，建立项目价值的统一表达。"
+    "effective_business_semantic": "行人视角沿林间园路向前观察，近景植被包围步道，远处出现住宅立面。"
   },
   {
     "asset_id": "CASE-096",
@@ -1435,9 +1237,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "城市夜景及地标，适合表达城市形象。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "城市氛围页：只在需要夕照形象时使用；不能作为夜间商业活力的直接依据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市夜景及地标，适合表达城市形象。"
+    "effective_business_semantic": "日落时段城市天际线与近景设施同框，突出城市光影。"
   },
   {
     "asset_id": "CASE-097",
@@ -1453,27 +1255,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "建筑仰视，适合表达立面与高度。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "立面与阳台页：承接建筑形象及户外延展关注；不推定实际日照时数。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "建筑仰视，适合表达立面与高度。"
-  },
-  {
-    "asset_id": "CASE-098",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材03.pdf",
-    "source_page": 18,
-    "page_value_title": "项目解读——”云端全景舱，自带气场的风景人生“ ①通过三维建模对建筑进行1：1还原，通过特殊视角表达景观视野 【多角度景观面】看江、看城市景",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-098_UE5___03_p18_i02.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-098_UE5___03_p18_i02.jpg",
-    "width_px": 855,
-    "height_px": 481,
-    "visual_form": "项目／社区／产品展示界面",
-    "business_semantic_guess": "总体鸟瞰与产品分区，适合表达社区全貌。",
-    "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "总体鸟瞰与产品分区，适合表达社区全貌。"
+    "effective_business_semantic": "地面仰视玻璃立面和连续阳台，近处植物与建筑形成尺度对照。"
   },
   {
     "asset_id": "CASE-100",
@@ -1489,27 +1273,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "建筑立面细节与产品卖点，适合表达品质工艺。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "阳台及立面细节页：适合户外空间与产品形象；不能从画面倒推出完整施工工艺。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "建筑立面细节与产品卖点，适合表达品质工艺。"
-  },
-  {
-    "asset_id": "CASE-101",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材03.pdf",
-    "source_page": 19,
-    "page_value_title": "景观解读——”从品质到矜贵，打造可传承的审美资产“ ①对园林场景模型进行精细化表现，对全场景景观空间进行可视化还原，实现全场景无死角任意行走",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-101_UE5___03_p19_i02.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-101_UE5___03_p19_i02.jpg",
-    "width_px": 3840,
-    "height_px": 2160,
-    "visual_form": "园林／公共停留场景",
-    "business_semantic_guess": "园林路径和植被，适合表达慢行与停留。",
-    "user_correction": "",
-    "product3_recommended_use": "产物3：园林与停留、公共生活展开页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "园林路径和植被，适合表达慢行与停留。"
+    "effective_business_semantic": "建筑外部近景突出转角阳台、玻璃栏板、结构边界及局部材料。"
   },
   {
     "asset_id": "CASE-102",
@@ -1525,9 +1291,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "架空层／入户公共空间，适合表达社区公共空间。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "公共厅廊及停留页：承接住宅之外的共享空间价值；具体用途与开放方式按本案资料。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "架空层／入户公共空间，适合表达社区公共空间。"
+    "effective_business_semantic": "人视公共厅廊中可见电梯门、座椅、绿植及通向室外的开口，展示共享空间的布置。"
   },
   {
     "asset_id": "CASE-103",
@@ -1543,9 +1309,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "社区入口与会客界面，适合表达归家第一印象。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "归家入口页：适合入口层次、门廊及景观感受；案例水景不能成为本案配置。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "社区入口与会客界面，适合表达归家第一印象。"
+    "effective_business_semantic": "入口前平视景墙、水面、台阶与建筑门廊，植物形成归家空间的前景。"
   },
   {
     "asset_id": "CASE-104",
@@ -1561,9 +1327,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "城市建筑界面，适合表达城市配套与工作场景。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "楼栋与住房内容页：关联楼栋位置、产品与房源信息；不是工作场景或城市配套证明。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市建筑界面，适合表达城市配套与工作场景。"
+    "effective_business_semantic": "楼栋被高亮显示，旁边有面积、户型面板及楼层区间列表，主体是住房选择内容。"
   },
   {
     "asset_id": "CASE-105",
@@ -1579,9 +1345,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "室内会客与景观视野，适合表达室内生活品质。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "室内会客与采景页：说明会客空间和窗外环境的组合；挑高、装修与景观不移植本案。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "室内会客与景观视野，适合表达室内生活品质。"
+    "effective_business_semantic": "挑高会客空间面向整面玻璃窗，室内座椅与窗外景观形成连续关系。"
   },
   {
     "asset_id": "CASE-106",
@@ -1597,9 +1363,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "室内会客空间，适合表达家庭相处与会客。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "家庭会客与室内体验页：承接相处和窗边感受；不据案例推定本案房间尺度。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "室内会客空间，适合表达家庭相处与会客。"
+    "effective_business_semantic": "室内沙发区、落地窗、家具及窗外树木构成近人尺度的共同生活空间。"
   },
   {
     "asset_id": "CASE-107",
@@ -1615,9 +1381,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "阳台观景与居家停留，适合表达户内外延。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "窗景与居家停留页：适合一户一景的观看方式；实际朝向、遮挡及视野须按具体住房。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "阳台观景与居家停留，适合表达户内外延。"
+    "effective_business_semantic": "窗边人视角同时呈现座椅、落地玻璃及外部城市建筑，室内外观察关系明确。"
   },
   {
     "asset_id": "CASE-108",
@@ -1633,27 +1399,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "宏观区域定位，适合表达外部连接。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "开发商品牌布局页：用于已确认的开发履历；不混同城市公共资源及区域交通网络。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "宏观区域定位，适合表达外部连接。"
-  },
-  {
-    "asset_id": "CASE-109",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材04.pdf",
-    "source_page": 2,
-    "page_value_title": "历史合作的典型项目实施案例介绍（以系统展示为主） 《东方希望·上东里》城东新地标 《旭辉·璞域》北京路上的伟大宁静 《邦泰·悦九章》最国际化",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-109_UE5___04_p02_i03.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-109_UE5___04_p02_i03.jpg",
-    "width_px": 3840,
-    "height_px": 2160,
-    "visual_form": "章节转场／界面氛围",
-    "business_semantic_guess": "项目／社区空间展示；横向场景（待人工订正具体价值点）",
-    "user_correction": "",
-    "product3_recommended_use": "产物3：章节转场或界面氛围候选",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "项目／社区空间展示；横向场景（待人工订正具体价值点）"
+    "effective_business_semantic": "地球上的中国轮廓高亮多个省市及项目节点，侧面保留企业信息，主体是集团布局。"
   },
   {
     "asset_id": "CASE-110",
@@ -1669,9 +1417,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "城市门户地标，适合表达区域形象。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "开发商品牌页：用于企业身份与履历表达；不是区域竞争证据或明源技术优势。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市门户地标，适合表达区域形象。"
+    "effective_business_semantic": "央企品牌文案与经营排名叠加城市地标画面，主体是开发企业实力叙事。"
   },
   {
     "asset_id": "CASE-111",
@@ -1687,27 +1435,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "城市—片区层级定位，适合表达区域价值推导。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "区域定位及资源联系页：适合城市尺度向土地尺度过渡；圈层不自动表示实际通勤时间。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市—片区层级定位，适合表达区域价值推导。"
-  },
-  {
-    "asset_id": "CASE-112",
-    "asset_class": "case_reference",
-    "source_type": "UE5方案PDF内嵌原图",
-    "source_file": "UE5方案_素材04.pdf",
-    "source_page": 12,
-    "page_value_title": "区域价值——“超级资源聚场，高新南黄金中场” ①在三维城市底座上，进一步聚焦范围，结合动态光效展示出金融城、大源、新川片区范围，并标出项目位",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-112_UE5___04_p12_i03.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-112_UE5___04_p12_i03.jpg",
-    "width_px": 3739,
-    "height_px": 2103,
-    "visual_form": "城市／区域关系界面",
-    "business_semantic_guess": "片区总体规划，适合表达区域更新。",
-    "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "片区总体规划，适合表达区域更新。"
+    "effective_business_semantic": "广域底图中高亮片区范围，并沿城市方向串联多个节点，体现城市到片区的层次。"
   },
   {
     "asset_id": "CASE-113",
@@ -1723,9 +1453,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "核心区空间结构，适合表达资源组织。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "城市圈层与板块选择页：承接不同区域的取舍；实际中心性结论由本案研究形成。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "核心区空间结构，适合表达资源组织。"
+    "effective_business_semantic": "城市平面底图用道路环线、重点板块和说明面板解释核心区结构。"
   },
   {
     "asset_id": "CASE-115",
@@ -1741,9 +1471,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "城市资源圈层，适合表达项目区位关系。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "商业生活比较页：适合多商圈与住区联系；不能用视觉圈推定均可步行到达。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "城市资源圈层，适合表达项目区位关系。"
+    "effective_business_semantic": "三处商业资源被半透明圈标出，项目与多个商圈节点在同一鸟瞰视窗。"
   },
   {
     "asset_id": "CASE-116",
@@ -1759,9 +1489,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "项目级规划与交通组织，适合表达片区空间。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "片区结构及发展页：说明土地与道路、建设区域关系；不能由示意判定全部已兑现。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "项目级规划与交通组织，适合表达片区空间。"
+    "effective_business_semantic": "滨水片区鸟瞰高亮道路和组团轮廓，并标注不同发展节点。"
   },
   {
     "asset_id": "CASE-117",
@@ -1777,9 +1507,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "项目周边资源圈层，适合表达生活半径。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：城市／区域／片区价值展开页",
+    "product3_recommended_use": "近场资源总览页：承接固定目的地与生活联系；范围圈需要与本案计量口径匹配。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "项目周边资源圈层，适合表达生活半径。"
+    "effective_business_semantic": "项目周边资源位于同一高亮范围内，鸟瞰和侧面板共同说明资源分布。"
   },
   {
     "asset_id": "CASE-118",
@@ -1795,9 +1525,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "社区入口，适合表达归家体验。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：项目与社区、建筑／园林／产品展开页",
+    "product3_recommended_use": "归家入口页：适合进入社区的直观感受；不能推导实际物业服务水平。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "社区入口，适合表达归家体验。"
+    "effective_business_semantic": "入口正面人视中呈现门廊、水景、铺装与两侧建筑，归家路径和空间层次可辨。"
   },
   {
     "asset_id": "CASE-119",
@@ -1813,9 +1543,9 @@
     "visual_form": "园林／公共停留场景",
     "business_semantic_guess": "社区会客庭院，适合表达公共停留。",
     "user_correction": "",
-    "product3_recommended_use": "产物3：园林与停留、公共生活展开页",
+    "product3_recommended_use": "共享庭院停留页：承接住宅之外的休憩与相处；设施与活动功能须有本案依据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "社区会客庭院，适合表达公共停留。"
+    "effective_business_semantic": "庭院人视角呈现座椅、遮阳伞、水景及围合建筑，是室外停留空间近景。"
   },
   {
     "asset_id": "CASE-120",
@@ -1831,9 +1561,9 @@
     "visual_form": "园林／公共停留场景",
     "business_semantic_guess": "园林步道与地形景观，适合表达慢行归家。",
     "user_correction": "",
-    "product3_recommended_use": "园林与停留页的下半部案例画面候选",
+    "product3_recommended_use": "庭院及慢行体验页：适合园路、景石和绿量感受；不据画面补造高差或适老设施。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "园林步道与地形景观，适合表达慢行归家。"
+    "effective_business_semantic": "地面机位沿园路观察景石、植被、景墙和住宅，呈现园林材质与步行尺度。"
   },
   {
     "asset_id": "CASE-121",
@@ -1849,9 +1579,9 @@
     "visual_form": "园林／公共停留场景",
     "business_semantic_guess": "园林步道与楼间景观，适合表达日常归家与社区慢行。",
     "user_correction": "",
-    "product3_recommended_use": "园林与停留页的下半部案例画面候选",
+    "product3_recommended_use": "社区慢行页：说明住宅与公共园林的近人关系；不替代整体园林规划图。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "园林步道与楼间景观，适合表达日常归家与社区慢行。"
+    "effective_business_semantic": "园路人视中楼栋、植被及景观构筑物共同构成楼间步行界面。"
   },
   {
     "asset_id": "CASE-122",
@@ -1867,9 +1597,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "临街商业、架空层界面与景观园林相互承接，表达社区日常消费、会客和停留的复合生活场景。",
     "user_correction": "项目临街商业与景观园林",
-    "product3_recommended_use": "项目与社区：商业界面、园林与日常生活展开页",
+    "product3_recommended_use": "临街与社区界面页：承接日常消费和公共停留的潜在价值；具体业态及开放运营须有本案依据。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "临街商业、架空层界面与景观园林相互承接，表达社区日常消费、会客和停留的复合生活场景。"
+    "effective_business_semantic": "临街建筑底层、开放界面与周边园林同框，能观察社区边界的空间组织。"
   },
   {
     "asset_id": "CASE-123",
@@ -1885,9 +1615,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "低层别墅产品、精细建筑立面与林下园境并置，表达低密居住的尺度、私密和景观关系。",
     "user_correction": "项目立面、别墅产品与景观园林",
-    "product3_recommended_use": "项目与社区：建筑立面、低密产品与园林展开页",
+    "product3_recommended_use": "低层住宅及园境页：承接偏好低层居住的购买任务；不由图推定专属庭院权益。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "低层别墅产品、精细建筑立面与林下园境并置，表达低密居住的尺度、私密和景观关系。"
+    "effective_business_semantic": "近地仰角观察低层住宅立面和林下庭园，低层建筑与绿地的相对尺度清楚。"
   },
   {
     "asset_id": "CASE-124",
@@ -1903,9 +1633,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "四代宅建筑立面、楼间园林与社区慢行界面共同构成可体验的产品形象。",
     "user_correction": "项目景观园林、四代宅产品与建筑立面",
-    "product3_recommended_use": "项目与社区：四代宅、建筑立面与园林展开页",
+    "product3_recommended_use": "园林与建筑关系页：承接住宅和共享绿地的组合；不把阳台外观自动认定为额外赠送面积。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "四代宅建筑立面、楼间园林与社区慢行界面共同构成可体验的产品形象。"
+    "effective_business_semantic": "人视园路两侧为树木与住宅，能观察楼间景观、外挑阳台和立面之间的关系。"
   },
   {
     "asset_id": "CASE-125",
@@ -1921,9 +1651,9 @@
     "visual_form": "园林／公共停留场景",
     "business_semantic_guess": "林下园境与建筑立面同框，表达楼间绿量、步行舒适度和社区景观包裹感。",
     "user_correction": "项目景观园林与建筑立面",
-    "product3_recommended_use": "项目与社区：园林、楼间关系与建筑立面展开页",
+    "product3_recommended_use": "楼间园境页：适合近人绿量与建筑尺度；不据单帧判断全部楼栋采光。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "林下园境与建筑立面同框，表达楼间绿量、步行舒适度和社区景观包裹感。"
+    "effective_business_semantic": "林下人视角仰看两侧住宅，树冠、楼间绿地与建筑立面形成包围感。"
   },
   {
     "asset_id": "CASE-126",
@@ -1939,9 +1669,9 @@
     "visual_form": "品牌价值界面",
     "business_semantic_guess": "以成都代表项目和市场表现建立品牌在地开发经验、高端产品序列与兑现能力认知。",
     "user_correction": "品牌价值：成都项目标杆序列",
-    "product3_recommended_use": "品牌价值与兑现证明页",
+    "product3_recommended_use": "开发商品牌页：承接本土开发经验与产品履历；案例销量及兑现判断不移植本案。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "以成都代表项目和市场表现建立品牌在地开发经验、高端产品序列与兑现能力认知。"
+    "effective_business_semantic": "开发商在成都的多项目作品、代表画面及相关说明构成在地品牌序列。"
   },
   {
     "asset_id": "CASE-127",
@@ -1957,9 +1687,9 @@
     "visual_form": "品牌价值界面",
     "business_semantic_guess": "以央企身份、全国经营规模和行业排名建立主体实力与长期兑现信任。",
     "user_correction": "品牌价值：央企与全国实力",
-    "product3_recommended_use": "品牌价值与兑现证明页",
+    "product3_recommended_use": "开发商品牌页：用于已确认的企业实力；不是明源供应商差异化，也不构成保值承诺。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "以央企身份、全国经营规模和行业排名建立主体实力与长期兑现信任。"
+    "effective_business_semantic": "开发企业身份、经营规模及排名文字与城市天际线结合，形成品牌实力叙事。"
   },
   {
     "asset_id": "CASE-128",
@@ -1975,9 +1705,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "以成熟街区、公园体系、商业休闲和社区网络展现区域现状与持续生长的公共生活底盘。",
     "user_correction": "区域规划、发展现状、成熟社区与高端配套",
-    "product3_recommended_use": "城市／区域：成熟生活、公共资源与规划增量展开页",
+    "product3_recommended_use": "区域资源与生活选择页：承接成熟生活联系及资源组合；现状与规划须由本案资料区分。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "以成熟街区、公园体系、商业休闲和社区网络展现区域现状与持续生长的公共生活底盘。"
+    "effective_business_semantic": "片区沙盘标出商业、公园和城市节点，资源图片与地面连线共同解释区域联系。"
   },
   {
     "asset_id": "CASE-129",
@@ -1993,9 +1723,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "以整体鸟瞰组织历史底蕴、成熟商业、社区与规划建设，表达城市更新中的区域价值再造。",
     "user_correction": "区域规划、发展现状、成熟社区与高端配套",
-    "product3_recommended_use": "城市／区域：规划、现状与成熟配套展开页",
+    "product3_recommended_use": "区域总体关系页：用于理解城市结构及更新背景；案例的历史与发展结论不能平移。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "以整体鸟瞰组织历史底蕴、成熟商业、社区与规划建设，表达城市更新中的区域价值再造。"
+    "effective_business_semantic": "片区整体鸟瞰呈现街区、交通、绿地和建筑网络，侧面板补充区域故事。"
   },
   {
     "asset_id": "CASE-130",
@@ -2011,9 +1741,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "以产业集群、人才、生态公园和成熟社区同图，表达区域发展现状与长期人口、就业和生活支撑。",
     "user_correction": "区域规划、产业发展、成熟社区与高端配套",
-    "product3_recommended_use": "城市／区域：产业、人才与生活配套展开页",
+    "product3_recommended_use": "产业与生活联系页：承接已研究的工作和家庭任务；不由资源密度直接推断客源规模。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "以产业集群、人才、生态公园和成熟社区同图，表达区域发展现状与长期人口、就业和生活支撑。"
+    "effective_business_semantic": "产业园区、公园及住区在同一沙盘上分层标注，能够辨认工作与生活资源的位置关系。"
   },
   {
     "asset_id": "CASE-131",
@@ -2029,9 +1759,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "滨江水岸、桥梁地标、城市天际线与公共慢行步道同框，表达项目周边可进入日常的景观资源和城市配套。",
     "user_correction": "滨江滨水、景观慢行步道与项目周边配套",
-    "product3_recommended_use": "城市／区域：滨水公共生活与周边配套展开页",
+    "product3_recommended_use": "滨江慢行页：承接偏好水岸散步的生活选择；实际到达路径按本案位置核对。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "滨江水岸、桥梁地标、城市天际线与公共慢行步道同框，表达项目周边可进入日常的景观资源和城市配套。"
+    "effective_business_semantic": "沿江步道的人视近景中，河岸栏杆、桥梁、江面与城市天际线构成日常步行环境。"
   },
   {
     "asset_id": "CASE-132",
@@ -2047,9 +1777,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "玻璃立面、首层架空与入口前场共同组织归家界面，表达建筑形象、公共会客和到达体验。",
     "user_correction": "项目外立面、入户大门与归家动线",
-    "product3_recommended_use": "项目与社区：建筑首层、归家界面与公共空间展开页",
+    "product3_recommended_use": "楼栋归家界面页：适合入口尺度和新住宅形象；不据图认定开放会客或商业运营。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "玻璃立面、首层架空与入口前场共同组织归家界面，表达建筑形象、公共会客和到达体验。"
+    "effective_business_semantic": "楼栋入口、首层公共界面和上方立面同框，能够观察归家空间与建筑的关系。"
   },
   {
     "asset_id": "CASE-133",
@@ -2065,9 +1795,9 @@
     "visual_form": "项目／社区／产品展示界面",
     "business_semantic_guess": "主入口门廊、建筑立面、艺术景观与人车到达动线共同建立社区第一印象和归家仪式。",
     "user_correction": "项目外立面、入户大门与归家动线",
-    "product3_recommended_use": "项目与社区：主入口、归家动线与建筑形象展开页",
+    "product3_recommended_use": "社区入口页：说明到达层次和第一印象；人车分流细节须由本案规划支持。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "主入口门廊、建筑立面、艺术景观与人车到达动线共同建立社区第一印象和归家仪式。"
+    "effective_business_semantic": "入口前场人视展示门廊、景墙、景观与道路组织，归家方向清晰。"
   },
   {
     "asset_id": "CASE-134",
@@ -2083,9 +1813,9 @@
     "visual_form": "园林／公共停留场景",
     "business_semantic_guess": "水系软景、热带植被、会所界面与步行节点共同构成可游、可停、可会客的园林生活。",
     "user_correction": "项目景观园林与水系软景",
-    "product3_recommended_use": "项目与社区：水景园林、公共停留与会客展开页",
+    "product3_recommended_use": "庭院水景与公共生活页：适合住宅之外的共享空间；案例水系及会所不移植本案。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "水系软景、热带植被、会所界面与步行节点共同构成可游、可停、可会客的园林生活。"
+    "effective_business_semantic": "人视园林画面呈现水面、曲线步道、植物及邻近建筑，公共景观的停留尺度可辨。"
   },
   {
     "asset_id": "CASE-135",
@@ -2101,9 +1831,9 @@
     "visual_form": "园林／公共停留场景",
     "business_semantic_guess": "下沉庭院、立体慢行、高差绿化与建筑围合共同组织复合公共空间和多层次园林体验。",
     "user_correction": "项目景观园林与下沉庭院",
-    "product3_recommended_use": "项目与社区：下沉庭院、立体慢行与公共空间展开页",
+    "product3_recommended_use": "下沉庭院与立体园林页：承接有依据的公共空间层次；不从单帧推定无障碍路径。",
     "status": "新增待用户复核",
-    "effective_business_semantic": "下沉庭院、立体慢行、高差绿化与建筑围合共同组织复合公共空间和多层次园林体验。"
+    "effective_business_semantic": "近人视角可见环形步道、下沉开口、绿地与住宅，展示上下层公共空间的连接。"
   },
   {
     "asset_id": "CASE-137",
@@ -2119,9 +1849,9 @@
     "visual_form": "城市／区域关系界面",
     "business_semantic_guess": "中国地图叠加新一线城市 TOP 排序、房价收入比、GDP 增量、人口净流入与地铁增长等多组指标，适合用同屏比较建立城市价值的相对位置。",
     "user_correction": "用户提供视频标题：麓湖丽世缦华城市价值；截帧 00:08.00；用户确认内容要素齐全。",
-    "product3_recommended_use": "城市／区域：城市价值横向比较、排名与多指标证据展开页",
+    "product3_recommended_use": "城市比较及UE信息组合页：适合地图与指标并置；具体排名、年份和数值由本案研究确认。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以全国新一线城市排名节点与多组指标同屏，展示 UE 如何把城市价值判断组织为可讲、可对照的横向比较证据。"
+    "effective_business_semantic": "全国城市节点、排名标签和多组指标与地图同屏，主体是城市横向比较。"
   },
   {
     "asset_id": "CASE-138",
@@ -2137,9 +1867,9 @@
     "visual_form": "项目外立面展示",
     "business_semantic_guess": "宽景同时呈现住宅组团、清晰立面轮廓、首层园林与周边城市天际线，适合交代项目外立面形象及其所处城市界面。",
     "user_correction": "用户提供视频标题：公园道1号—宏观外立面展示；人工归类：项目外立面展示；截帧 00:04.50；用户确认画面可用。",
-    "product3_recommended_use": "项目外立面：组团宽景、立面整体形象与城市界面关系页",
+    "product3_recommended_use": "建筑整体形象页：说明立面比例及周边关系；不替代行人机位或室内观看。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以组团宽景把建筑主体比例、玻璃转角、金色竖向构件、园林基底和城市天际线组织在同一画面中，完整展示项目外立面与周边环境关系。"
+    "effective_business_semantic": "中高位宽景同时呈现住宅主体、玻璃转角、金属构件、绿地与城市背景。"
   },
   {
     "asset_id": "CASE-139",
@@ -2155,9 +1885,9 @@
     "visual_form": "项目外立面展示",
     "business_semantic_guess": "近景环绕突出大面玻璃转角、水平线脚、金色竖向构件与屋顶檐口，并保留相邻楼栋和城市背景，适合说明立面构成及组团一致性。",
     "user_correction": "用户提供视频标题：公园道1号—宏观外立面展示；人工归类：项目外立面展示；截帧 00:12.00；用户确认画面可用。",
-    "product3_recommended_use": "项目外立面：立面构件、转角玻璃与组团一致性说明页",
+    "product3_recommended_use": "立面细节页：承接对材料和建筑比例的关注；不据效果画面确定施工做法。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以近景立面视角完整呈现玻璃转角、水平线脚、竖向金属构件和屋顶檐口的组合关系，同时保留相邻楼栋与城市背景作为尺度参照。"
+    "effective_business_semantic": "靠近立面的高位视角突出转角、水平线脚、金属构件与屋顶，保留邻栋作尺度参照。"
   },
   {
     "asset_id": "CASE-140",
@@ -2173,9 +1903,9 @@
     "visual_form": "项目外立面展示",
     "business_semantic_guess": "整栋正立面、竖向玻璃幕墙、金属包边与两侧露台同屏，并配合材料标签和说明卡，适合完整展示现代立面的整体构成。",
     "user_correction": "用户提供视频标题：麓湖金麟樾-立面细节展示；人工目录：项目外立面展示；截帧 00:00.80。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目外立面：整栋正立面、材料构成与标注讲解页",
+    "product3_recommended_use": "立面与露台页：说明建筑形象和户外延展；不将案例露台条件写成本案权益。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以横平竖直的正立面视角，同时呈现大面玻璃、竖向金属包边、非对称露台与材料标注，展示 UE 如何完整讲解建筑立面构成。"
+    "effective_business_semantic": "正立面仰视中，玻璃、金属包边与外挑露台共同呈现，标签对应局部材料。"
   },
   {
     "asset_id": "CASE-141",
@@ -2191,9 +1921,9 @@
     "visual_form": "项目外立面展示",
     "business_semantic_guess": "近景放大屋顶冠部、圆角金属框、竖向格栅与玻璃幕墙，并保留材料说明卡，适合观察立面收口细节。",
     "user_correction": "用户提供视频标题：麓湖金麟樾-立面细节展示；人工目录：项目外立面展示；截帧 00:04.60。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目外立面：屋顶冠部、圆角收边与幕墙节点说明页",
+    "product3_recommended_use": "立面材质细节页：适合近距离观察材料交接；技术优势需与已确认的工艺依据对应。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以近景锁定屋顶冠部、圆角金属包边、竖向格栅与玻璃幕墙的收口关系，展示 UE 对立面细部和材质节点的放大讲解。"
+    "effective_business_semantic": "建筑顶部近景突出圆角包边、格栅、玻璃与屋冠的收口关系。"
   },
   {
     "asset_id": "CASE-142",
@@ -2209,9 +1939,9 @@
     "visual_form": "项目外立面展示",
     "business_semantic_guess": "转角视角完整呈现大尺度挑出露台、玻璃栏板、檐底与竖向幕墙，适合说明建筑转角和立体层次。",
     "user_correction": "用户提供视频标题：麓湖金麟樾-立面细节展示；人工目录：项目外立面展示；截帧 00:14.60。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目外立面：转角露台、玻璃栏板与立体层次说明页",
+    "product3_recommended_use": "露台及立面关系页：承接关注户外空间的住房选择；不是从住户机位向外观察的窗景。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以转角视角同时呈现大尺度挑出露台、玻璃栏板、檐底与竖向幕墙，说明非对称立面与户外空间如何共同形成建筑形象。"
+    "effective_business_semantic": "建筑转角近景呈现外挑露台、栏板、檐底及竖向幕墙的组合。"
   },
   {
     "asset_id": "CASE-143",
@@ -2227,9 +1957,9 @@
     "visual_form": "项目外立面展示",
     "business_semantic_guess": "整栋建筑、城市背景、参考案例卡和多处立面标签同屏，适合从整体形象进入设计来源与材料构成讲解。",
     "user_correction": "用户提供视频标题：公园道1号立面细节；人工目录：项目外立面展示；截帧 00:01.40。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目外立面：整栋立面、参考案例与设计说明总览页",
+    "product3_recommended_use": "建筑形象与材料内容页：适合整体到细部的方案表达；图中参考项目不能转为本案设计来源。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以整栋建筑、城市背景、参考案例和多处立面标签同屏，展示 UE 如何把整体形象、材质构成与设计来源组织成一套可讲解界面。"
+    "effective_business_semantic": "整栋建筑、城市背景、材料标签和参考图同屏，整体形象与细节信息相互对应。"
   },
   {
     "asset_id": "CASE-144",
@@ -2245,9 +1975,9 @@
     "visual_form": "项目外立面展示",
     "business_semantic_guess": "近景呈现圆角檐口、金属板、竖向格栅与玻璃界面的交接，并在构件旁同步显示工艺和成本说明。",
     "user_correction": "用户提供视频标题：公园道1号立面细节；人工目录：项目外立面展示；截帧 00:04.60。画面含源视频内“成本增加40-50%”字样，仅保留为案例界面原始内容，不升级为当前项目事实。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目外立面：檐口收边、材料节点与工艺说明页",
+    "product3_recommended_use": "立面细节页：可作材料节点案例；原图成本数字仅属案例，不作本案造价或明源报价依据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以近景呈现圆角檐口、金属板、竖向格栅与玻璃界面的交接，并示范 UE 可在材料节点旁同步展开工艺或成本说明。"
+    "effective_business_semantic": "立面近景观察圆角檐口、金属、格栅与玻璃交接，原画面另有成本说明文字。"
   },
   {
     "asset_id": "CASE-145",
@@ -2263,9 +1993,9 @@
     "visual_form": "项目外立面展示",
     "business_semantic_guess": "正对入口的稳定视角同时呈现门头、金属框、曲面石材、玻璃、绿化与材料热点，适合讲解首层入口细节。",
     "user_correction": "用户提供视频标题：公园道1号立面细节；人工目录：项目外立面展示；截帧 00:15.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目外立面：首层入口、门头构造与材料热点说明页",
+    "product3_recommended_use": "楼栋入口细节页：承接归家界面与品质感受；具体材料及工艺按本案资料。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以正对入口的横平竖直视角，将门头、金属框、曲面石材、玻璃、两侧绿化及材料热点同时呈现，适合讲解首层入口的构造与品质。"
+    "effective_business_semantic": "正对入口的人视画面呈现门头、框架、石材、玻璃及两侧绿化，材料标签可定位。"
   },
   {
     "asset_id": "CASE-146",
@@ -2281,9 +2011,9 @@
     "visual_form": "项目外立面展示",
     "business_semantic_guess": "大门与塔楼同轴的宽景完整呈现门楼、两侧景墙、塔楼立面和前场水景，适合建立项目第一形象。",
     "user_correction": "用户提供视频标题：公园道1号大门；人工目录：项目外立面展示；截帧 00:04.60。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目外立面：主入口全景、大门与塔楼关系页",
+    "product3_recommended_use": "社区入口与建筑整体页：适合归家第一印象；不用于户内功能或楼层视野说明。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以大门与塔楼同轴的宽景视角，把门楼尺度、两侧景墙、塔楼立面和前场水景组织为完整的项目第一形象。"
+    "effective_business_semantic": "宽景仰视中门楼与塔楼同轴，两侧景墙及前场共同形成社区入口形象。"
   },
   {
     "asset_id": "CASE-147",
@@ -2299,9 +2029,9 @@
     "visual_form": "项目外立面展示",
     "business_semantic_guess": "侧向到达视角同时呈现深挑檐、灯光顶棚、石材墙面、金属门框、迎宾台阶和水景，适合说明入口层次。",
     "user_correction": "用户提供视频标题：公园道1号大门；人工目录：项目外立面展示；截帧 00:11.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目外立面：大门侧景、到达层次与水景关系页",
+    "product3_recommended_use": "归家近景页：适合入口尺度与材料感受；不由台阶画面推断全部通行条件。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以侧向到达视角同时呈现深挑檐、灯光顶棚、石材墙面、金属门框、迎宾台阶和水景，展示入口空间的层次与材质关系。"
+    "effective_business_semantic": "侧向到达机位展现深檐、顶棚灯光、墙面、门框、台阶和水景的空间层次。"
   },
   {
     "asset_id": "CASE-149",
@@ -2317,9 +2047,9 @@
     "visual_form": "城市慢行系统",
     "business_semantic_guess": "行人视角从滨江草坪望向河道、跨河拱桥、岸线绿化和带项目标注的住宅组团，完整呈现锦江岸线与项目的近场关系。",
     "user_correction": "用户提供视频标题：麓湖金鳞樾-锦江慢行；人工目录：城市慢行系统；内容边界：项目外部、紧邻项目本体的城市资源；截帧 00:00.80。用户确认保留并正式入库。",
-    "product3_recommended_use": "城市慢行：锦江岸线、滨水绿地与项目邻接关系页",
+    "product3_recommended_use": "外部水岸生活页：说明城市公共绿地的体验；不能误写成红线内私享园林。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以滨江草坪、河道、跨河桥、岸线绿化和项目标注同屏，展示 UE 如何从行人视角说明住宅紧邻锦江慢行空间的资源关系。"
+    "effective_business_semantic": "滨江草坪的行人机位可见河道、桥梁、岸线绿化与项目方向标注。"
   },
   {
     "asset_id": "CASE-150",
@@ -2335,9 +2065,9 @@
     "visual_form": "城市慢行系统",
     "business_semantic_guess": "近距离步行视角把项目建筑边界、跨河拱桥、滨水草地、河道和对岸住宅同框，适合说明从项目出发进入滨水空间的连续体验。",
     "user_correction": "用户提供视频标题：麓湖金鳞樾-锦江慢行；人工目录：城市慢行系统；内容边界：项目外部、紧邻项目本体的城市资源；截帧 00:07.80。用户确认保留并正式入库。",
-    "product3_recommended_use": "城市慢行：从项目界面进入滨江与桥下空间的体验页",
+    "product3_recommended_use": "外部滨江慢行页：承接靠近公共岸线的生活偏好；实际出入口和通行关系需本案依据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以项目建筑边界、跨河拱桥、滨水草地与河道同框，展示从项目近场步行进入锦江岸线和桥下空间的连续关系。"
+    "effective_business_semantic": "桥下与河岸附近的低机位同时呈现草地、江面和邻近建筑边界。"
   },
   {
     "asset_id": "CASE-151",
@@ -2353,9 +2083,9 @@
     "visual_form": "城市慢行系统",
     "business_semantic_guess": "曲线慢行道、复层植被、森林公园景观与带标注的项目塔楼共同出现，适合说明公园步行环境与住宅的紧邻关系。",
     "user_correction": "用户提供视频标题：麓湖金麟樾-森林公园慢行；人工目录：城市慢行系统；内容边界：项目外部、紧邻项目本体的城市资源；截帧 00:07.20。用户确认保留并正式入库。",
-    "product3_recommended_use": "城市慢行：森林公园路径、林下景观与项目邻接关系页",
+    "product3_recommended_use": "外部公园生活页：承接林下散步和邻近绿地的选择；不是本案社区内部园林。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以曲线慢行道、复层林下景观和项目塔楼同屏，展示 UE 如何从行人视角体验住宅紧邻森林公园的步行环境。"
+    "effective_business_semantic": "森林公园步道的人视近景可见复层植被、道路转弯与邻近住宅塔楼。"
   },
   {
     "asset_id": "CASE-152",
@@ -2371,9 +2101,9 @@
     "visual_form": "城市慢行系统",
     "business_semantic_guess": "行人视角仰看大型商业办公综合体，开放铺装广场、底层商业界面、塔楼与绿荫同时出现，适合展示项目近邻的城市商业资源。",
     "user_correction": "用户提供视频标题：商业慢行-公园道1号；人工目录：城市慢行系统；内容边界：项目外部、紧邻项目本体的城市资源；截帧 00:00.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "城市慢行：近邻商业综合体、开放广场与步行尺度页",
+    "product3_recommended_use": "城市街巷与商业生活页：适合商业界面体验；不由建筑界面推定已入驻品牌。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以开放广场、底层商业界面和高层商业办公建筑同屏，展示 UE 如何从行人尺度体验项目近邻的城市商业空间。"
+    "effective_business_semantic": "城市广场人视中可见底层商业与办公高层，建筑、道路和开放空间的尺度直观。"
   },
   {
     "asset_id": "CASE-153",
@@ -2389,9 +2119,9 @@
     "visual_form": "城市慢行系统",
     "business_semantic_guess": "低层商业街区、连续店面、公共铺装广场与城市高层天际线同屏，适合表达项目外部可步行商业界面的完整形态。",
     "user_correction": "用户提供视频标题：商业慢行-公园道1号2；人工目录：城市慢行系统；内容边界：项目外部、紧邻项目本体的城市资源；截帧 00:00.20。用户确认保留并正式入库。",
-    "product3_recommended_use": "城市慢行：街区商业界面、公共广场与城市背景页",
+    "product3_recommended_use": "城市商业慢行页：说明店面、公共空间与住区周边生活；具体商业内容由本案研究提供。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以低层商业街区、连续店面、公共广场和城市天际线同屏，展示项目近邻商业资源在行人视角下的界面与尺度。"
+    "effective_business_semantic": "行人机位面向低层商业建筑和广场，远处高层作为城市背景。"
   },
   {
     "asset_id": "CASE-154",
@@ -2407,9 +2137,9 @@
     "visual_form": "城市慢行系统",
     "business_semantic_guess": "公共活动场地、绿荫休息区、户外座椅、商业建筑边界与项目住宅塔楼同框，完整呈现外部城市空间和项目之间的步行关系。",
     "user_correction": "用户提供视频标题：商业慢行-公园道1号2；人工目录：城市慢行系统；内容边界：项目外部、紧邻项目本体的城市资源；截帧 00:10.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "城市慢行：公共活动空间、商业边界与项目塔楼关系页",
+    "product3_recommended_use": "外部公共生活页：承接在城市公共空间活动的偏好；公共场地不等同小区专属设施。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以公共活动场地、树荫休息区、商业边界和项目住宅塔楼同屏，展示项目外部城市公共空间与住宅之间可直接感知的步行邻接关系。"
+    "effective_business_semantic": "人视活动场地中可见树荫、休息区域、商业边界和住宅塔楼。"
   },
   {
     "asset_id": "CASE-155",
@@ -2425,9 +2155,9 @@
     "visual_form": "城市配套资源",
     "business_semantic_guess": "高空自由视角同时呈现带项目标注的核心建筑、滨水商务楼群、城市道路、绿地、河道与跨河桥，云层和水面反射完整稳定。",
     "user_correction": "用户提供视频标题：真实度，自由度；人工目录：城市配套资源；截帧 00:11.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "城市配套：高真实度滨水商务、道路与绿地环境页",
+    "product3_recommended_use": "区域环境总览页：可结合既有技术依据用于渲染效果说明；静帧不证明实时性能或自由漫游。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以真实光照、云层、水面反射和高精城市建模呈现项目周边滨水商务、道路、桥梁与公共绿地，展示 UE 对城市配套环境的高真实度复现能力。"
+    "effective_business_semantic": "高位城市宽景呈现江面反射、云层、建筑、桥梁和公共绿地，远近空间细节丰富。"
   },
   {
     "asset_id": "CASE-156",
@@ -2443,9 +2173,9 @@
     "visual_form": "城市配套资源",
     "business_semantic_guess": "广域自由视角把带标注的项目建筑群、滨水岸线、城市道路、桥梁、山体绿地和周边城市建筑群组织在同一画面。",
     "user_correction": "用户提供视频标题：真实度，自由度；人工目录：城市配套资源；截帧 00:22.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "城市配套：广域自由视角与项目周边资源总览页",
+    "product3_recommended_use": "区域整体关系页：适合由项目看周边环境；不从单帧承诺所有范围均为高精建模。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以可自由拉远的广域视角同时交代项目、滨水岸线、跨河交通、山体绿地和城市建设范围，展示 UE 对周边资源整体格局的连续观察。"
+    "effective_business_semantic": "拉远后的城市全景中项目、岸线、道路、山体与建成区同框，显示更大范围的环境关系。"
   },
   {
     "asset_id": "CASE-157",
@@ -2461,9 +2191,9 @@
     "visual_form": "城市配套资源",
     "business_semantic_guess": "项目锚点、河道、城市路网、多条高亮交通线路、交通节点标签与左侧交通说明卡同屏，线路范围与层级完整。",
     "user_correction": "用户提供视频标题：丽世缦华交通-流畅-自由-范围广；人工目录：城市配套资源；截帧 00:10.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "城市配套：项目交通路网、线路与节点说明页",
+    "product3_recommended_use": "交通与目的地页：承接已明确的工作、家庭联系；线条和标签不独立证明到达时间。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以项目为起点，通过高亮线路、交通节点和说明卡同时展示多方向交通连接，说明 UE 可把周边交通资源组织为可追踪的三维网络。"
+    "effective_business_semantic": "广域区域沙盘从项目锚点展开多方向线路、节点标签及资源卡片。"
   },
   {
     "asset_id": "CASE-158",
@@ -2479,9 +2209,9 @@
     "visual_form": "城市配套资源",
     "business_semantic_guess": "项目所在城市片区与分布在大范围三维城市中的多处绿色配套标签同屏，节点覆盖近场湖区与远端城市核心。",
     "user_correction": "用户提供视频标题：丽世缦华交通-流畅-自由-范围广；人工目录：城市配套资源；截帧 00:14.60。用户确认保留并正式入库。",
-    "product3_recommended_use": "城市配套：广域配套节点覆盖与资源密度总览页",
+    "product3_recommended_use": "区域资源总览页：适合综合资源定位；不能以密集标签替代资源有效性研究。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以项目所在片区为中心拉开广域城市视角，将多处配套节点分层标注，展示项目周边资源的覆盖范围和空间密度。"
+    "effective_business_semantic": "高位城市全景叠加多处资源标签，体现配套在片区内的分布与远近层次。"
   },
   {
     "asset_id": "CASE-159",
@@ -2497,9 +2227,9 @@
     "visual_form": "城市配套资源",
     "business_semantic_guess": "高亮项目锚点、多处医疗配套标签、跨越不同距离的三维路径与右侧资源说明卡同屏，项目到资源的方向和到达信息完整。",
     "user_correction": "用户提供视频标题：邦泰越九章-配套-带路径；人工目录：城市配套资源；截帧 00:12.80。用户确认保留并正式入库。",
-    "product3_recommended_use": "城市配套：项目到医疗配套的路径与说明卡页",
+    "product3_recommended_use": "医疗目的地关系页：承接有实际医疗联系的家庭任务；连线不代替道路路线及时间。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以项目为起点，用三维路径连接不同方向的医疗配套节点，并同步呈现资源说明卡，展示从配套清单到真实空间关系的可视化证明。"
+    "effective_business_semantic": "项目与多处医疗节点通过高亮曲线连接，并显示资源图片和说明卡。"
   },
   {
     "asset_id": "CASE-160",
@@ -2515,9 +2245,9 @@
     "visual_form": "企业品牌展示",
     "business_semantic_guess": "品牌标题、两家合作主体、双方核心能力与建筑主视觉共同组成三角形信息结构，联合关系和能力分工完整可读。",
     "user_correction": "用户提供视频标题：UI风格品牌；人工目录：企业品牌展示；截帧 00:01.20。用户确认保留并正式入库。",
-    "product3_recommended_use": "企业品牌：双品牌联合背书与能力分工页",
+    "product3_recommended_use": "开发商品牌合作页：承接已确认的开发主体与履历；不是明源技术优势。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以合作主体、企业能力、联合价值主张和项目建筑形象同屏，展示 UE 如何把双品牌背书与项目价值组织成一张完整品牌页。"
+    "effective_business_semantic": "合作开发主体、企业能力文字与项目形象同屏，重点是双品牌合作关系。"
   },
   {
     "asset_id": "CASE-161",
@@ -2533,9 +2263,9 @@
     "visual_form": "企业品牌展示",
     "business_semantic_guess": "品牌标识居中，五个圆形模块围绕展开，并配有品牌理念标题和说明文字，形成完整的品牌价值体系。",
     "user_correction": "用户提供视频标题：UI风格品牌；人工目录：企业品牌展示；截帧 00:04.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "企业品牌：品牌理念与核心价值体系页",
+    "product3_recommended_use": "品牌体系或系统内容页：说明主题组织方式；这些主题不是本案已成立的超级竞争力。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以品牌标识为中心，将私产、私享、私定、私藏、私属等价值模块分层展开，展示品牌理念如何被组织为可浏览的体系。"
+    "effective_business_semantic": "品牌标识周围分层排列多项价值主题，形成品牌理念与产品服务内容导航。"
   },
   {
     "asset_id": "CASE-162",
@@ -2551,9 +2281,9 @@
     "visual_form": "企业品牌展示",
     "business_semantic_guess": "品牌服务体系标题、三张服务主题卡、对应服务清单和底部服务主张完整同屏，层级清晰。",
     "user_correction": "用户提供视频标题：UI风格品牌；人工目录：企业品牌展示；截帧 00:06.60。用户确认保留并正式入库。",
-    "product3_recommended_use": "企业品牌：高端物业与管家服务体系页",
+    "product3_recommended_use": "已确认服务内容页：可参考卡片组织；不把案例服务写成本案已有配置或交付承诺。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以仪式感管家、资产服务和私人管家三类图文卡片呈现品牌服务内容，将抽象高端服务承诺转成可理解的服务体系。"
+    "effective_business_semantic": "三组图文卡呈现品牌管家及服务内容，重点是服务体系的说明。"
   },
   {
     "asset_id": "CASE-163",
@@ -2569,9 +2299,9 @@
     "visual_form": "企业品牌展示",
     "business_semantic_guess": "企业品牌定位、简介、1995年至2025年的五阶段发展时间轴和阶段事件说明完整同屏。",
     "user_correction": "用户提供视频标题：ui平面-动效表达效果；人工目录：企业品牌展示；截帧 00:01.60。用户确认保留并正式入库。",
-    "product3_recommended_use": "企业品牌：发展历程、里程碑与品牌沉淀页",
+    "product3_recommended_use": "开发商品牌履历页：适合有证据的发展历史；经营年限不直接证明本案品质。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以横向时间轴串联企业创立、文化引领、深耕成长和品牌升级，展示 UE 如何把长期发展历程压缩成可浏览的品牌证据。"
+    "effective_business_semantic": "横向时间轴串联开发企业的历程、阶段与品牌升级。"
   },
   {
     "asset_id": "CASE-164",
@@ -2587,9 +2317,9 @@
     "visual_form": "企业品牌展示",
     "business_semantic_guess": "企业标识居中，城市地产、文旅产业、资产运营、物业服务和园林景观五个产业模块环绕分布。",
     "user_correction": "用户提供视频标题：ui平面-动效表达效果；人工目录：企业品牌展示；截帧 00:04.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "企业品牌：多元产业布局与综合运营能力页",
+    "product3_recommended_use": "开发商品牌及产业页：用于已确认业务布局；不把多元产业自动转为项目配套。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以企业标识为核心，将多元产业板块分层组织，展示品牌从单一地产开发延伸至文旅、运营、物业和景观的综合能力。"
+    "effective_business_semantic": "企业标识连接多项产业图标与说明，呈现集团业务组成。"
   },
   {
     "asset_id": "CASE-165",
@@ -2605,9 +2335,9 @@
     "visual_form": "企业品牌展示",
     "business_semantic_guess": "企业品牌定位、资质与荣誉、全国地图、重点区域和项目名称同屏，形成品牌覆盖范围的完整证据。",
     "user_correction": "用户提供视频标题：ui平面-动效表达效果；人工目录：企业品牌展示；截帧 00:09.40。用户确认保留并正式入库。",
-    "product3_recommended_use": "企业品牌：全国布局、重点区域与项目覆盖页",
+    "product3_recommended_use": "开发商品牌布局页：承接在地和跨城开发经验；项目数量及荣誉须使用当前有效资料。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以全国地图、重点区域、项目清单和品牌荣誉共同呈现企业布局，展示品牌深耕城市与项目覆盖范围。"
+    "effective_business_semantic": "全国地图、重点区域和项目清单共同说明开发企业的地理布局。"
   },
   {
     "asset_id": "CASE-166",
@@ -2623,9 +2353,9 @@
     "visual_form": "企业品牌展示",
     "business_semantic_guess": "品牌文化主张、四张代表性文化项目卡及项目说明同屏，覆盖多种地域文化主题。",
     "user_correction": "用户提供视频标题：ui平面-动效表达效果；人工目录：企业品牌展示；截帧 00:11.40。用户确认保留并正式入库。",
-    "product3_recommended_use": "企业品牌：文化主张与代表性文旅项目页",
+    "product3_recommended_use": "开发商品牌文化页：适合已确认的代表作品；不能将其文脉和运营结果平移本案。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以不同地域的文化项目卡片说明企业对传统文化的运营与活化能力，将品牌文化主张落实到可识别的代表项目。"
+    "effective_business_semantic": "不同城市的文化项目以图文卡展示，主体是开发企业的文化项目履历。"
   },
   {
     "asset_id": "CASE-167",
@@ -2641,9 +2371,9 @@
     "visual_form": "企业品牌展示",
     "business_semantic_guess": "交付主张、园林细节图组、四类住宅产品图组与品牌说明同屏，产品与交付证明结构完整。",
     "user_correction": "用户提供视频标题：ui平面-动效表达效果；人工目录：企业品牌展示；截帧 00:14.20。用户确认保留并正式入库。",
-    "product3_recommended_use": "企业品牌：产品体系、园林细节与交付能力页",
+    "product3_recommended_use": "开发商品牌产品页：承接已确认的产品及交付履历；案例画面不证明本案同等兑现。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以园林细节、代表产品和交付主张共同展示企业的产品体系与兑现能力，将品牌承诺落到可感知的建成内容。"
+    "effective_business_semantic": "园林细节、代表住宅与交付文字构成产品作品对照。"
   },
   {
     "asset_id": "CASE-168",
@@ -2659,9 +2389,9 @@
     "visual_form": "企业品牌展示",
     "business_semantic_guess": "企业介绍、地球主视觉及铝业、农业、硅业、化工、能源、置业六大产业节点共同呈现，产业关系完整。",
     "user_correction": "用户提供静态图片；人工目录：企业品牌展示。用户确认保留并正式入库。",
-    "product3_recommended_use": "企业品牌：集团产业版图与全球化视觉页",
+    "product3_recommended_use": "开发商品牌页：适合集团布局与产业组合；不混同城市价值和明源品牌。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以地球主视觉连接六大产业板块，同时保留企业简介和产业说明，展示大型集团的全球视野与多产业协同。"
+    "effective_business_semantic": "地球主视觉连接多个产业板块，并由企业简介及产业说明补充内容。"
   },
   {
     "asset_id": "CASE-169",
@@ -2677,9 +2407,9 @@
     "visual_form": "企业品牌展示",
     "business_semantic_guess": "企业介绍、中国地图、重点城市高亮和多个项目节点名称同屏，集团在国内的项目分布清楚可读。",
     "user_correction": "用户提供静态图片；人工目录：企业品牌展示。用户确认保留并正式入库。",
-    "product3_recommended_use": "企业品牌：全国城市布局与代表项目落位页",
+    "product3_recommended_use": "开发商品牌布局页：用于可定位的企业履历；不作区域公共配套地图。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以中国地图、重点城市和项目节点展示企业落子范围，把集团实力转成可定位、可追踪的全国项目布局。"
+    "effective_business_semantic": "中国地图高亮多个省市及项目节点，侧面信息说明集团落子范围。"
   },
   {
     "asset_id": "CASE-170",
@@ -2695,9 +2425,9 @@
     "visual_form": "企业品牌展示",
     "business_semantic_guess": "品牌主张、六个代表项目建筑形象、项目系名称、核心价值说明和右侧价值导航完整同屏。",
     "user_correction": "用户提供静态图片；人工目录：企业品牌展示。用户确认保留并正式入库。",
-    "product3_recommended_use": "企业品牌：品牌项目谱系、产品系与代表作品页",
+    "product3_recommended_use": "开发商产品体系页：说明不同产品线及代表作品；产品系不直接等同本案竞争理由。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以多条产品系和代表项目并列呈现品牌作品谱系，展示企业在不同资源条件和产品类型中的持续开发能力。"
+    "effective_business_semantic": "多条产品系以建筑剪影和说明卡并列，呈现开发企业的作品谱系。"
   },
   {
     "asset_id": "CASE-171",
@@ -2713,9 +2443,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "河流穿城的黄昏鸟瞰、项目锚点、文化叙事标题和城市信息面板完整同屏。",
     "user_correction": "用户提供视频标题：河流文化-宣传片风格；人工目录：板块资源；截帧 00:15.20。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：河流文化、城市意象与项目锚点页",
+    "product3_recommended_use": "城市水岸及文化页：承接有研究依据的流域文化偏好；宣传画面不能独立证明历史或产业趋势。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以河流穿越城市的连续景观、项目位置和文化主张同屏，展示 UE 如何将流域资源转成区域文化与城市身份叙事。"
+    "effective_business_semantic": "河流沿城市延展，项目锚点及文化文案与夕照鸟瞰同屏。"
   },
   {
     "asset_id": "CASE-172",
@@ -2731,9 +2461,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "项目为中心的环形范围、商圈节点、距离连线和双侧价值面板稳定展开。",
     "user_correction": "用户提供视频标题：保利-商圈极致距离；人工目录：板块资源；截帧 00:05.20。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：商圈半径、资源节点与极致距离页",
+    "product3_recommended_use": "商业资源关系页：承接商圈及日常消费的取舍；沿用本案测量口径，不能把圆圈当步行时间。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以项目为中心展开商圈半径、多个商业节点和距离标注，展示板块内商业资源的近邻性与到达效率。"
+    "effective_business_semantic": "项目周边商业节点、距离标签和范围圈在区域沙盘上展开。"
   },
   {
     "asset_id": "CASE-173",
@@ -2749,9 +2479,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "重庆宏观地图、两江新区高亮边界、周边行政或城市组团标签和双侧说明同屏。",
     "user_correction": "用户提供视频标题：重庆两江新区；人工目录：板块资源；截帧 00:04.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：大区域边界、行政层级与战略位置页",
+    "product3_recommended_use": "区域定位比较页：适合解释跨区域选择；案例行政范围及中心性不能转作本案事实。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以大区域底图高亮两江新区范围，并与周边城区和功能节点对照，展示行政级别、空间边界与战略位置。"
+    "effective_business_semantic": "大区域底图高亮新区范围，周围城市板块与功能节点形成对照。"
   },
   {
     "asset_id": "CASE-174",
@@ -2767,9 +2497,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "广州文化中心范围、内部地块编号、边界线、对标项目和距离标注完整呈现。",
     "user_correction": "用户提供视频标题：广州文化中心-地块划分对标；人工目录：板块资源；截帧 00:07.20。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：内部地块划分、编号与对标关系页",
+    "product3_recommended_use": "土地与分区关系页：适合分宗地及建设范围解释；地块编号不能自动对应开发分期。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以板块边界、内部地块编号和外部对标项目建立可比较结构，展示大板块内部的用地划分与空间对标关系。"
+    "effective_business_semantic": "板块鸟瞰用道路、地块标签和对标说明组织内部用地与外部参照。"
   },
   {
     "asset_id": "CASE-175",
@@ -2785,9 +2515,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "三个核心功能板块以透明色圈高亮，并由金色路径连接，中心关系稳定可读。",
     "user_correction": "用户提供视频标题：广州文化中心黄金三角；人工目录：板块资源；截帧 00:10.40。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：三大功能区连接与黄金三角页",
+    "product3_recommended_use": "多节点资源关系页：承接已确认的资源组合；弧线不是实际通行路线。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以三个核心功能区和彼此连接的路径构成黄金三角，展示文化中心与周边产业、商务板块的协同位置。"
+    "effective_business_semantic": "三个功能区以高亮圈和连接弧线构成三角关系，突出文化、产业及商务节点。"
   },
   {
     "asset_id": "CASE-176",
@@ -2803,9 +2533,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "城市鸟瞰上分布多个企业与楼宇节点，白色连线、板块边界和中心标识同屏。",
     "user_correction": "用户提供视频标题：广州文化中心企业云集；人工目录：板块资源；截帧 00:12.80。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：企业集群、产业节点与空间网络页",
+    "product3_recommended_use": "产业与工作联系页：适合已研究的就业目的地关系；企业分布不能直接推定购房客源。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以企业节点、重点楼宇和空间连线呈现产业集聚，展示板块内企业密度、产业网络与中心位置。"
+    "effective_business_semantic": "项目周边企业与楼宇节点在同一鸟瞰视窗中以线条连接。"
   },
   {
     "asset_id": "CASE-177",
@@ -2821,9 +2551,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "地球主视觉上以杭州为锚点，多条弧线连接世界城市，排名和城市信息面板已完整展开。",
     "user_correction": "用户提供视频标题：杭州与世界的链接；人工目录：板块资源；截帧 00:07.20。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：城市对外联系、全球网络与能级页",
+    "product3_recommended_use": "UE城市价值页：用于宏观信息组织；数据、排名及连线含义须有当前研究依据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以地球、杭州锚点和多城连线呈现对外联系，将城市排名、产业信息和世界城市网络组织为区域开放度证明。"
+    "effective_business_semantic": "地球上的城市锚点与国际连线、排名和产业面板共同呈现城市外部联系。"
   },
   {
     "asset_id": "CASE-178",
@@ -2839,27 +2569,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "成都向南发展轴线、项目锚点、沿线节点和双侧数据面板完整同屏。",
     "user_correction": "用户提供视频标题：丽世缦华-城市向南；人工目录：板块资源；截帧 00:04.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：城市南向轴线、发展节点与项目位置页",
+    "product3_recommended_use": "城市发展与区域选择页：承接已成立的板块趋势；不将光带视作已建交通设施。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以城市南向轴线、发展节点和项目位置建立关系，展示项目如何承接城市空间向南拓展的板块趋势。"
-  },
-  {
-    "asset_id": "CASE-179",
-    "asset_class": "case_reference",
-    "source_type": "shared_case_asset",
-    "source_file": "",
-    "source_page": "",
-    "page_value_title": "",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-179_block_tianxin_subdistricts_t004000ms.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-179_block_tianxin_subdistricts_t004000ms.jpg",
-    "width_px": 1920,
-    "height_px": 1080,
-    "visual_form": "板块资源",
-    "business_semantic_guess": "天府新区内部多个小板块以不同色块划分，麓湖范围、项目锚点和信息卡可读。",
-    "user_correction": "用户提供视频标题：丽世缦华-天新板块话费-麓湖头牌；人工目录：板块资源；截帧 00:04.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：大区域内部小板块划分与项目占位页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以色块区分大区域内的多个小板块，并将项目锚定在麓湖范围内，展示天府新区内部的板块层级与项目所在位置。"
+    "effective_business_semantic": "城市轴线、连续节点和片区高亮形成从城市到项目的空间层次。"
   },
   {
     "asset_id": "CASE-180",
@@ -2875,9 +2587,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "主城、天府新区与项目之间由多层环线和路径特效连接，区域边界与信息面板完整。",
     "user_correction": "用户提供视频标题：丽世缦华-天新看主城-环线特效；人工目录：板块资源；截帧 00:05.60。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：主城—大板块—项目环线关系页",
+    "product3_recommended_use": "区域圈层与交通页：说明不同空间层级；本案的距离及路线需独立核对。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以多层环线和路径特效连接主城、大板块与项目，展示大小区域的空间层级、城市距离与交通联系。"
+    "effective_business_semantic": "城市底图叠加多层环线和道路走向，突出主城、片区与项目的尺度关系。"
   },
   {
     "asset_id": "CASE-181",
@@ -2893,27 +2605,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "项目周边河流、湖泊、公园与绿地以不同色彩高亮，资源标签、项目锚点和信息面板同屏。",
     "user_correction": "用户提供视频标题：丽世缦华-自然资源量；人工目录：板块资源；截帧 00:04.80。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：河湖公园分布与自然资源丰富度页",
+    "product3_recommended_use": "自然资源组合页：承接已确认的生态生活偏好；高亮面积不直接证明可进入范围。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以项目为锚点高亮河流、湖泊、公园和绿地，展示小板块内自然资源的类型、数量与空间分布。"
-  },
-  {
-    "asset_id": "CASE-182",
-    "asset_class": "case_reference",
-    "source_type": "shared_case_asset",
-    "source_file": "",
-    "source_page": "",
-    "page_value_title": "",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-182_block_jinlin_south_axis_t003200ms.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-182_block_jinlin_south_axis_t003200ms.jpg",
-    "width_px": 1920,
-    "height_px": 1080,
-    "visual_form": "板块资源",
-    "business_semantic_guess": "成都南向主轴、沿线成长节点、项目位置和双侧城市数据面板稳定展开。",
-    "user_correction": "用户提供视频标题：麓湖金麟樾-城市向南确定性；人工目录：板块资源；截帧 00:03.20。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：城市南向发展确定性与项目承接页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以城市南向发展轴与沿线节点承接项目位置，展示板块成长方向、发展连续性与项目的空间关系。"
+    "effective_business_semantic": "项目周边河流、公园和绿地以不同高亮区域标出，并有资源图片及节点名称。"
   },
   {
     "asset_id": "CASE-183",
@@ -2929,9 +2623,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "麓湖范围、核心区高亮圈、项目锚点、主要交通路网和双侧信息卡同屏。",
     "user_correction": "用户提供视频标题：麓湖金麟樾-麓湖正位，头牌；人工目录：板块资源；截帧 00:04.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：麓湖范围、核心圈层与项目正位页",
+    "product3_recommended_use": "区域与项目定位页：适合板块内外比较；案例核心地位及权益不能平移。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以麓湖大范围、核心区圈层和项目锚点建立层级，展示项目在板块核心位置的空间占位与交通关系。"
+    "effective_business_semantic": "麓湖片区范围、重点区域和项目方向在同一底图中形成层级关系。"
   },
   {
     "asset_id": "CASE-184",
@@ -2947,9 +2641,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "项目、锦江、沿岸绿地、风向箭头和侧边自然资源信息完整呈现。",
     "user_correction": "用户提供视频标题：麓湖金麟樾-上风上水；人工目录：板块资源；截帧 00:02.40。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：河流、风向、绿地与项目自然关系页",
+    "product3_recommended_use": "水岸与自然条件页：可说明资源位置；风向效果不等同经验证的通风模拟。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以项目与河流、绿地和风向的相对位置，展示 UE 如何将板块自然条件转成可视的水岸、通风与生态关系。"
+    "effective_business_semantic": "河道、桥梁、绿地和建筑同框，蓝色方向效果强调水岸与观察方向。"
   },
   {
     "asset_id": "CASE-185",
@@ -2965,9 +2659,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "城市鸟瞰上多个高端住宅节点沿带状路径排列，项目锚点、节点说明和对标结构完整。",
     "user_correction": "用户提供视频标题：璞钰one-豪宅带；人工目录：板块资源；截帧 00:13.60。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：城市豪宅带、高端住宅节点与对标格局页",
+    "product3_recommended_use": "竞品及住宅带关系页：承接已确认的比较对象；本案竞品资格由研究判断，不能照搬节点。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以带状空间串联多个高端住宅节点和项目，展示城市豪宅带的分布逻辑、对标格局与项目所处竞争语境。"
+    "effective_business_semantic": "多个住宅节点沿连续高亮带串联，配有项目图片与说明卡。"
   },
   {
     "asset_id": "CASE-186",
@@ -2983,27 +2677,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "板块广域鸟瞰中项目位置、河流、湖泊、绿地与城市功能节点共同呈现。",
     "user_correction": "用户提供视频标题：资源丰富性；人工目录：板块资源；截帧 00:04.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：多类资源密度、组合与项目邻接页",
+    "product3_recommended_use": "近场环境总览页：说明多类资源的邻接；鸟瞰不替代具体目的地距离。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以广域鸟瞰同屏呈现项目、水系、绿地和城市功能节点，展示小板块内多类资源的密度、组合与项目邻接关系。"
-  },
-  {
-    "asset_id": "CASE-187",
-    "asset_class": "case_reference",
-    "source_type": "shared_case_asset",
-    "source_file": "",
-    "source_page": "",
-    "page_value_title": "",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-187_block_cbd_masterplan.png",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-187_block_cbd_masterplan.png",
-    "width_px": 2175,
-    "height_px": 1214,
-    "visual_form": "板块资源",
-    "business_semantic_guess": "天府新区总部商务区总览、项目锚点、中央商务公园与多类开发机制、国内外 CBD 对标信息完整同屏。",
-    "user_correction": "用户提供静态图片；人工目录：板块资源。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：CBD 总体格局、中央公园与项目占位页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以总览底图统筹总部商务区、中央公园、项目位置、开发机制和 CBD 对标，展示大板块内部的空间结构与资源组织。"
+    "effective_business_semantic": "广域鸟瞰中项目、水系、公园与城市住区同时出现，呈现自然资源和居住的组合。"
   },
   {
     "asset_id": "CASE-188",
@@ -3019,9 +2695,9 @@
     "visual_form": "板块资源",
     "business_semantic_guess": "航拍底图上金色中环、中优与东进等版块色带、中心项目、多个商圈节点和左侧政策说明同屏。",
     "user_correction": "用户提供静态图片；人工目录：板块资源。用户确认保留并正式入库。",
-    "product3_recommended_use": "板块资源：城市战略色带、商圈节点与项目位置页",
+    "product3_recommended_use": "区域商业选择页：适合解释跨板块生活取舍；色带不独立证明战略成长结论。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以多层战略色带、中心项目和周边商圈节点建立空间关系，展示大区域战略格局内的板块成长与商业资源分布。"
+    "effective_business_semantic": "大区域色带、中心项目与多个商业节点以不同层次标注，展现区域和商圈关系。"
   },
   {
     "asset_id": "CASE-189",
@@ -3037,9 +2713,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "客厅、整面收纳墙、家政功能与“收纳”文字解读、户型小图完整同屏。",
     "user_correction": "用户提供视频标题：精装样板间-带文字解读；人工目录：项目/产品规划；截帧 00:03.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：客厅收纳系统与精装空间解读页",
+    "product3_recommended_use": "客厅与收纳页：承接已确认的家庭使用问题；图内题字属于案例，不作本案配置。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以三维精装空间、功能标签和说明文字共同解释客厅收纳体系与空间秩序。"
+    "effective_business_semantic": "客厅人视画面展示沙发、书架及整面收纳，功能题字与室内场景同屏。"
   },
   {
     "asset_id": "CASE-190",
@@ -3055,27 +2731,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "餐厅、开放厨房、全屋联系与“格调”文字解读、户型小图完整呈现。",
     "user_correction": "用户提供视频标题：精装样板间-带文字解读；人工目录：项目/产品规划；截帧 00:20.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：餐厨一体、精装格调与空间解读页",
+    "product3_recommended_use": "家庭用餐与餐厨关系页：承接共同生活和家务任务；具体尺寸、收纳及装修按本案资料。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以餐厨空间、全屋关系和文字解读呈现餐厨一体的使用方式与精装生活格调。"
-  },
-  {
-    "asset_id": "CASE-191",
-    "asset_class": "case_reference",
-    "source_type": "shared_case_asset",
-    "source_file": "",
-    "source_page": "",
-    "page_value_title": "",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-191_plan_standard_floor_t003000ms.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-191_plan_standard_floor_t003000ms.jpg",
-    "width_px": 1920,
-    "height_px": 1080,
-    "visual_form": "项目/产品规划",
-    "business_semantic_guess": "楼栋顶部剖开后，标准层多户组合、阳台及户间关系完整可读。",
-    "user_correction": "用户提供视频标题：标准层展示；人工目录：项目/产品规划；截帧 00:03.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：标准层户型组合与楼栋关系页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以楼栋剖切和标准层俯视展示同层户型组合、核心筒与建筑外轮廓关系。"
+    "effective_business_semantic": "从餐厅望向厨房和客厅，餐桌、橱柜及相邻空间连续呈现。"
   },
   {
     "asset_id": "CASE-192",
@@ -3091,9 +2749,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "清水房室内、窗外主景观面、楼层切换和户型小图稳定同屏。",
     "user_correction": "用户提供视频标题：贵州普定-清水样板间一户一景；人工目录：项目/产品规划；截帧 00:03.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：清水样板间、主景观面与楼层视野页",
+    "product3_recommended_use": "一户一景页：适合比较窗外可见内容和遮挡；具体楼层效果必须对应本案设计。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "从清水样板间内部模拟不同楼层的主景观面，展示交付空间与外部视野的对应关系。"
+    "effective_business_semantic": "清水房间内对着窗户观察，可见窗框、近处景观及对面楼栋，并有楼层选择界面。"
   },
   {
     "asset_id": "CASE-193",
@@ -3109,9 +2767,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "清水房阳台界面、相邻楼栋、远景和楼层选择控件完整呈现。",
     "user_correction": "用户提供视频标题：贵州普定-清水样板间一户一景；人工目录：项目/产品规划；截帧 00:13.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：阳台界面、楼间关系与多朝向视野页",
+    "product3_recommended_use": "窗景与邻栋关系页：适合说明视线、距离感和局部遮挡；不承诺全部住房同等视野。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以阳台视角呈现楼间关系、朝向差异和远近景层次，支持多楼层视野比较。"
+    "effective_business_semantic": "室内靠近阳台门的机位可见栏杆及近邻住宅，楼栋间相对关系清楚。"
   },
   {
     "asset_id": "CASE-194",
@@ -3127,9 +2785,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "完整精装户型从顶部轴测展开，客餐厅、卧室、卫浴与阳台均可辨识。",
     "user_correction": "用户提供视频标题：户型轴侧；人工目录：项目/产品规划；截帧 00:02.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：户型轴测、功能分区与全屋关系页",
+    "product3_recommended_use": "住房平面结构页：仅用于明确需要全屋布局的内容；不用于窗景或生活体验主图。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以顶部轴测将全屋功能空间同时展开，直观解释户型分区与各房间联系。"
+    "effective_business_semantic": "从顶部轴测展开单套住宅，房间及家具与相邻楼栋同屏。"
   },
   {
     "asset_id": "CASE-195",
@@ -3145,9 +2803,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "精装户型斜向轴测嵌入楼栋和景观环境，户内外位置关系完整。",
     "user_correction": "用户提供视频标题：户型轴侧；人工目录：项目/产品规划；截帧 00:09.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：户型轴测、楼栋位置与外部环境关系页",
+    "product3_recommended_use": "户型与楼栋关系页：可说明空间位置；生活感受和楼层景观优先选用人视窗景。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以斜向轴测把户型放回楼栋与外部环境中，展示产品空间和项目位置的对应关系。"
+    "effective_business_semantic": "斜向轴测将拆顶户型放回楼栋高度和外部环境中，突出户型所在位置。"
   },
   {
     "asset_id": "CASE-196",
@@ -3163,9 +2821,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "项目整体鸟瞰、楼栋排布、道路边界和信息面板完整同屏。",
     "user_correction": "用户提供视频标题：锦城序-项目规划；人工目录：项目/产品规划；截帧 00:01.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目规划：总体布局、楼栋排布与城市界面页",
+    "product3_recommended_use": "项目规划页：承接新住宅与社区空间的整体关系；红线及经济指标由本案资料确认。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以总体鸟瞰展示红线内楼栋排布、社区结构与外部城市界面。"
+    "effective_business_semantic": "项目总体鸟瞰将住宅楼栋、道路、园林与外部街区完整展开。"
   },
   {
     "asset_id": "CASE-197",
@@ -3181,27 +2839,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "社区入口、中庭景观、楼栋围合与侧边规划信息稳定呈现。",
     "user_correction": "用户提供视频标题：锦城序-项目规划；人工目录：项目/产品规划；截帧 00:07.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目规划：社区入口、中庭园林与楼栋围合页",
+    "product3_recommended_use": "入口与庭院整体关系页：说明公共空间组织；不是步道或室内人视画面。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以较低鸟瞰展示社区入口、中庭园林和楼栋围合，解释归家与公共景观组织。"
-  },
-  {
-    "asset_id": "CASE-198",
-    "asset_class": "case_reference",
-    "source_type": "shared_case_asset",
-    "source_file": "",
-    "source_page": "",
-    "page_value_title": "",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-198_plan_furnished_zoning_t009000ms.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-198_plan_furnished_zoning_t009000ms.jpg",
-    "width_px": 1920,
-    "height_px": 1080,
-    "visual_form": "项目/产品规划",
-    "business_semantic_guess": "精装户型轴测以不同色块标出客餐厅、卧室等功能区域。",
-    "user_correction": "用户提供视频标题：精装样板间；人工目录：项目/产品规划；截帧 00:09.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：户型功能分区、动静关系与空间识别页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以三维户型和颜色分区明确全屋功能、动静组织与房间识别。"
+    "effective_business_semantic": "较低高度俯看入口、中庭和围合楼栋，绿地及归家空间的衔接清晰。"
   },
   {
     "asset_id": "CASE-199",
@@ -3217,9 +2857,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "完整精装客厅、转角窗、阳台与开阔滨水城市景观同屏。",
     "user_correction": "用户提供视频标题：精装样板间；人工目录：项目/产品规划；截帧 00:15.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：客厅尺度、转角景观面与精装体验页",
+    "product3_recommended_use": "客厅与窗景页：适合居家停留和对外观察；水岸、装修与尺度仅属案例。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以精装客厅实景化视角展示空间尺度、转角景观面和户内观景体验。"
+    "effective_business_semantic": "精装客厅人视中，座椅、落地窗与窗外水岸和建筑同时可见。"
   },
   {
     "asset_id": "CASE-200",
@@ -3235,9 +2875,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "转角客厅、大面宽玻璃界面、阳台和城市远景完整呈现。",
     "user_correction": "用户提供视频标题：精装样板间2；人工目录：项目/产品规划；截帧 00:03.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：转角厅、景观阳台与大面宽视野页",
+    "product3_recommended_use": "家庭相处与窗边体验页：承接公共空间使用；单帧不证明全年采光或永久视野。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以转角厅和大面宽开窗展示公共空间的采光、景观阳台与开阔视野。"
+    "effective_business_semantic": "室内转角客厅与大面玻璃同框，可观察公共空间、窗边和城市远景的连续关系。"
   },
   {
     "asset_id": "CASE-201",
@@ -3253,9 +2893,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "客厅、餐厅与开放厨房在同一稳定镜头内完整展开。",
     "user_correction": "用户提供视频标题：精装样板间2；人工目录：项目/产品规划；截帧 00:15.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：客餐厨一体与家庭公共空间页",
+    "product3_recommended_use": "家庭共同生活页：适合会客、用餐与空间联系；不是卧室、厨房细节或功能分布图。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以完整公共空间展示客餐厨一体的连续关系与家庭互动场景。"
+    "effective_business_semantic": "客餐厅、厨房界面和相邻窗边空间在同一人视画面中展开。"
   },
   {
     "asset_id": "CASE-202",
@@ -3271,9 +2911,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "台地式项目整体、分层建筑、河岸绿地与周边环境完整同屏。",
     "user_correction": "用户提供视频标题：丽世缦华-台地式设计；人工目录：项目/产品规划；截帧 00:03.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目规划：台地式总体设计、建筑层级与滨水环境页",
+    "product3_recommended_use": "项目地形与规划页：说明不同高度产品与环境组织；不转用案例的地形和水景事实。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以总体鸟瞰解释台地式规划、建筑层级与滨水自然环境的整体关系。"
+    "effective_business_semantic": "台地式建筑群与高低层住宅、坡地绿化和滨水环境在总体鸟瞰中展开。"
   },
   {
     "asset_id": "CASE-203",
@@ -3289,9 +2929,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "侧向鸟瞰清晰呈现建筑随地形错落、台地层级及与河岸的平行关系。",
     "user_correction": "用户提供视频标题：丽世缦华-台地式设计；人工目录：项目/产品规划；截帧 00:06.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目规划：台地层级、建筑排布与河岸关系页",
+    "product3_recommended_use": "台地与滨水建筑关系页：适合高差和建筑层次；不用于具体住房窗景。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以侧向镜头解释台地高差、建筑排布与河岸景观资源的承接方式。"
+    "effective_business_semantic": "侧向高位视角呈现台地建筑层级、退台及河岸环境，立体关系突出。"
   },
   {
     "asset_id": "CASE-204",
@@ -3307,45 +2947,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "第四代住宅大阳台、完整建筑立面、产品说明和示意图同屏。",
     "user_correction": "用户提供视频标题：麓湖金麟樾-四代大阳台；人工目录：项目/产品规划；截帧 00:04.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：第四代住宅大阳台、立面与户外延展页",
+    "product3_recommended_use": "阳台及户外延展页：承接有依据的产品差异；不能据图推定赠送面积或使用权益。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以建筑立面和完整阳台空间展示第四代住宅的户外延展、尺度与产品识别。"
-  },
-  {
-    "asset_id": "CASE-205",
-    "asset_class": "case_reference",
-    "source_type": "shared_case_asset",
-    "source_file": "",
-    "source_page": "",
-    "page_value_title": "",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-205_plan_building_layout_t002000ms.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-205_plan_building_layout_t002000ms.jpg",
-    "width_px": 1920,
-    "height_px": 1080,
-    "visual_form": "项目/产品规划",
-    "business_semantic_guess": "项目总图、楼栋轮廓、分析环线、图表和规划信息完整展开。",
-    "user_correction": "用户提供视频标题：麓湖金麟樾建筑布局；人工目录：项目/产品规划；截帧 00:02.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目规划：楼栋布局、朝向组织与景观平权页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以总图分析楼栋布局、朝向组织和景观资源分配，解释规划对各楼栋的影响。"
-  },
-  {
-    "asset_id": "CASE-206",
-    "asset_class": "case_reference",
-    "source_type": "shared_case_asset",
-    "source_file": "",
-    "source_page": "",
-    "page_value_title": "",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-206_plan_golden_angle_layout_t006000ms.jpg",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-206_plan_golden_angle_layout_t006000ms.jpg",
-    "width_px": 1920,
-    "height_px": 1080,
-    "visual_form": "项目/产品规划",
-    "business_semantic_guess": "三维楼栋从总图中立体弹出，黄金角度和楼栋错动关系清晰可读。",
-    "user_correction": "用户提供视频标题：麓湖金麟樾建筑布局；人工目录：项目/产品规划；截帧 00:06.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目规划：黄金角度、楼栋错动与采光视野策略页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以三维楼栋和角度特效解释错动布局如何改善采光、视野与楼间关系。"
+    "effective_business_semantic": "建筑转角近景中，外挑阳台、栏板、玻璃及上下楼层同时呈现。"
   },
   {
     "asset_id": "CASE-207",
@@ -3361,9 +2965,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "从项目内部望向河流、绿道、桥梁和城市远景，前中后景完整。",
     "user_correction": "用户提供视频标题：麓湖丽世缦华-从项目看景观；人工目录：项目/产品规划；截帧 00:03.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：项目内部看景观、滨水视野与前景层次页",
+    "product3_recommended_use": "建筑与外部景观关系页：适合靠近建筑的观景表达；机位在建筑外，不能标作室内窗景。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以户内或社区视角展示项目如何获得滨水绿道、桥岸与城市天际线的多层景观。"
+    "effective_business_semantic": "靠近建筑外立面的侧向机位可见滨水绿道、河岸、桥梁和城市远景。"
   },
   {
     "asset_id": "CASE-208",
@@ -3379,9 +2983,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "项目整体、锦江岸线、桥梁、慢行绿地与城市背景完整同屏。",
     "user_correction": "用户提供视频标题：鸟瞰到锦江慢行；人工目录：项目/产品规划；截帧 00:03.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目规划：项目整体、锦江岸线与慢行资源邻接页",
+    "product3_recommended_use": "住区与外部公园关系页：说明城市资源邻接；画面未提供法定红线，不直接宣称私享。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以鸟瞰建立项目红线、锦江岸线和城市慢行资源的总体邻接关系。"
+    "effective_business_semantic": "鸟瞰将住宅组团、河流、桥梁及两岸绿地置于同一视窗。"
   },
   {
     "asset_id": "CASE-209",
@@ -3397,9 +3001,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "行人尺度的滨江绿道、桥下空间、河岸与项目塔楼共同出现。",
     "user_correction": "用户提供视频标题：鸟瞰到锦江慢行；人工目录：项目/产品规划；截帧 00:17.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目规划：项目到锦江慢行、桥岸空间与步行体验页",
+    "product3_recommended_use": "外部慢行生活页：承接公共岸线体验；不把城市公共空间误作社区园林。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "从慢行视角展示项目到锦江绿道、桥岸公共空间的步行体验和近邻关系。"
+    "effective_business_semantic": "江边草地的人视近景中桥梁、水面与邻近建筑同框。"
   },
   {
     "asset_id": "CASE-210",
@@ -3415,9 +3019,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "精装入户玄关、收纳界面、走廊、户型小图和房间切换控件完整。",
     "user_correction": "用户提供视频标题：璞御one-精装样板间；人工目录：项目/产品规划；截帧 00:02.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：精装入户玄关、收纳界面与归家序列页",
+    "product3_recommended_use": "入户与收纳页：承接回家物品安放及动线；柜体和装修标准只属案例。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以精装玄关展示入户收纳、空间界面与归家序列。"
+    "effective_business_semantic": "玄关人视画面呈现入口柜体、墙面与通向室内的过渡空间。"
   },
   {
     "asset_id": "CASE-211",
@@ -3433,9 +3037,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "精装客厅、餐厅、软装和空间联系在同一画面内完整呈现。",
     "user_correction": "用户提供视频标题：璞御one-精装样板间；人工目录：项目/产品规划；截帧 00:04.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：客餐厅一体、家庭会客与精装展示页",
+    "product3_recommended_use": "客餐厅共同生活页：适合一家人相处的空间关系；不当作厨房或卧室案例。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以客餐厅一体空间展示家庭会客、用餐与精装氛围。"
+    "effective_business_semantic": "从餐桌向客厅观察，家庭用餐、会客区与窗外近邻建筑连续可见。"
   },
   {
     "asset_id": "CASE-212",
@@ -3451,9 +3055,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "独立厨房的橱柜、台面、操作动线和精装材质完整可见。",
     "user_correction": "用户提供视频标题：璞御one-精装样板间；人工目录：项目/产品规划；截帧 00:06.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：独立厨房、操作界面与精装材质页",
+    "product3_recommended_use": "厨房与家务页：承接做饭、收纳和操作空间的需要；不以案例尺寸承诺本案功能。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以稳定正向视角展示厨房布局、操作界面和精装用材。"
+    "effective_business_semantic": "厨房正向人视中，操作台、橱柜、电器与窗户的相对位置清楚。"
   },
   {
     "asset_id": "CASE-213",
@@ -3469,9 +3073,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "卧室、书桌收纳、休憩区与外接阳台完整呈现。",
     "user_correction": "用户提供视频标题：璞御one-精装样板间；人工目录：项目/产品规划；截帧 00:08.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：卧室、书桌收纳与私享阳台页",
+    "product3_recommended_use": "卧室及独处空间页：承接休息与个人使用任务；不把复合布置自动写成本案配置。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以完整卧室场景展示睡眠、办公收纳与私享阳台的复合使用。"
+    "effective_business_semantic": "卧室人视画面同时呈现床、桌面、收纳和阳台方向。"
   },
   {
     "asset_id": "CASE-214",
@@ -3487,9 +3091,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "卫浴空间、浴缸、洗漱界面和深色石材精装完整可见。",
     "user_correction": "用户提供视频标题：璞御one-精装样板间；人工目录：项目/产品规划；截帧 00:09.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：卫浴分区、浴缸与精装材质页",
+    "product3_recommended_use": "卫浴使用页：适合已有设计依据的生活功能；浴缸和材质不得平移。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以完整卫浴场景展示功能分区、浴缸配置与精装材质。"
+    "effective_business_semantic": "卫浴人视中可见洗漱台、浴缸、柜体及相邻界面，功能位置清晰。"
   },
   {
     "asset_id": "CASE-215",
@@ -3505,9 +3109,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "社区全部楼栋、楼号、道路和智能选房控件稳定同屏。",
     "user_correction": "用户提供视频标题：人居怡湖春晓选房系统；人工目录：项目/产品规划；截帧 00:01.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目规划：社区楼栋总览、楼栋定位与智能选房页",
+    "product3_recommended_use": "楼栋定位与系统内容页：说明从总图识别楼栋；静帧不证明实时库存或精准推荐能力。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以社区总览和可选楼栋状态支持楼栋定位、楼号识别与智能选房入口。"
+    "effective_business_semantic": "社区总览中多栋住宅高亮并显示可选状态，周边公园和道路同时可见。"
   },
   {
     "asset_id": "CASE-216",
@@ -3523,9 +3127,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "选定楼层后的实际景观结果、楼层列表和选房控件完整呈现。",
     "user_correction": "用户提供视频标题：人居怡湖春晓选房系统；人工目录：项目/产品规划；截帧 00:10.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：楼层选择、景观结果与所见即所得页",
+    "product3_recommended_use": "一户一景页：适合楼层与可见景观的对应；本案需按实际位置及设计深化。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "把楼层选择与对应景观结果联动，展示不同房源所见即所得的视野差异。"
+    "effective_business_semantic": "楼层选择界面与窗外公园、湖岸和城市远景同屏，呈现特定楼层的观察结果。"
   },
   {
     "asset_id": "CASE-217",
@@ -3541,9 +3145,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "城市与项目鸟瞰中选中楼栋高亮，楼栋列表、户型小图和控件完整。",
     "user_correction": "用户提供视频标题：一户一景；人工目录：项目/产品规划；截帧 00:02.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：楼栋选择、户型入口与项目位置联动页",
+    "product3_recommended_use": "楼栋及住房内容页：说明产品信息与位置的联系；不是客厅或真实库存证据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以楼栋高亮、户型入口和项目位置联动，建立从选楼到看房的交互路径。"
+    "effective_business_semantic": "指定楼栋被高亮，面积、平面图和楼层区间面板与周边环境并列。"
   },
   {
     "asset_id": "CASE-218",
@@ -3559,9 +3163,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "选定住宅的滨水景观、地标标注、户型小图和楼层控件完整同屏。",
     "user_correction": "用户提供视频标题：一户一景；人工目录：项目/产品规划；截帧 00:07.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：一户一景、地标标注与户内景观模拟页",
+    "product3_recommended_use": "一户一景页：适合特定房源朝向、远景与遮挡比较；案例水岸不能成为本案承诺。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以具体房源视角模拟滨水景观和城市地标，实现一户一景的可视比较。"
+    "effective_business_semantic": "靠近建筑的房源观察视角面向水岸与地标，户型及楼层信息保留在界面中。"
   },
   {
     "asset_id": "CASE-219",
@@ -3577,9 +3181,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "跃层上下两层完整精装轴测同时展开，楼梯和房间关系清晰。",
     "user_correction": "用户提供视频标题：轴测跃层-双层展示；人工目录：项目/产品规划；截帧 00:03.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：跃层双层结构、上下层关系与空间全貌页",
+    "product3_recommended_use": "跃层结构页：仅在需解释上下层布局时采用；生活体验优先使用室内人视图。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以双层轴测同时展示跃层上下层结构、楼梯联系和空间全貌。"
+    "effective_business_semantic": "双层住宅以上下分离轴测展开，能够观察楼梯、房间和两层空间关系。"
   },
   {
     "asset_id": "CASE-220",
@@ -3595,9 +3199,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "跃层上下两层以彩色功能区标识，动静分区完整可读。",
     "user_correction": "用户提供视频标题：轴测跃层-双层展示；人工目录：项目/产品规划；截帧 00:08.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：跃层功能分区、上下层动静组织页",
+    "product3_recommended_use": "功能布局专用页：保留为限定结构说明；不推荐为生活体验、楼层关系或窗景主图。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以双层功能着色解释跃层上下层的动静组织和家庭功能分配。"
+    "effective_business_semantic": "双层轴测用不同颜色标记功能区域，主体是跃层功能分配示意。"
   },
   {
     "asset_id": "CASE-221",
@@ -3613,9 +3217,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "复式挑高客厅、楼梯、上下层联系和窗外滨水视野完整呈现。",
     "user_correction": "用户提供视频标题：轴测跃层-双层展示；人工目录：项目/产品规划；截帧 00:12.00。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：挑高客厅、楼梯联系与复式景观页",
+    "product3_recommended_use": "复式共同生活及窗景页：适合层间联系与室内体验；挑高及视野须有本案产品依据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以室内视角展示挑高客厅、楼梯联系和复式住宅的景观体验。"
+    "effective_business_semantic": "复式室内人视中，客厅、楼梯、挑高窗和外部景观同框。"
   },
   {
     "asset_id": "CASE-222",
@@ -3631,27 +3235,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "五组设计伙伴、人物或机构信息、设计主张与专业成绩完整同屏。",
     "user_correction": "用户提供静态图片；人工目录：项目/产品规划。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目规划：设计联盟、专业团队与规划背书页",
+    "product3_recommended_use": "设计团队页：用于已确认的团队背书；人物是设计师，不能路由为购房家庭肖像。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以设计联盟和专业团队信息为项目规划与产品设计提供体系化背书。"
-  },
-  {
-    "asset_id": "CASE-223",
-    "asset_class": "case_reference",
-    "source_type": "shared_case_asset",
-    "source_file": "",
-    "source_page": "",
-    "page_value_title": "",
-    "original_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-223_plan_eight_rules.png",
-    "preview_asset": "references/product3/assets/产物3案例截图素材库/original/CASE-223_plan_eight_rules.png",
-    "width_px": 1920,
-    "height_px": 1080,
-    "visual_form": "项目/产品规划",
-    "business_semantic_guess": "“八大金律”标题、八项产品价值主张和品牌标识完整同屏。",
-    "user_correction": "用户提供静态图片；人工目录：项目/产品规划。用户确认保留并正式入库。",
-    "product3_recommended_use": "产品规划：八大产品金律与四代宅价值体系页",
-    "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以八项产品金律概括资源、空间、生态和家庭关系等四代住宅价值体系。"
+    "effective_business_semantic": "多个设计机构与设计师履历并列，人物照片配合作品和专业说明。"
   },
   {
     "asset_id": "CASE-224",
@@ -3667,9 +3253,9 @@
     "visual_form": "项目/产品规划",
     "business_semantic_guess": "完整总图、楼栋编号、楼间距、出入口、经济指标和功能导航同屏。",
     "user_correction": "用户提供静态图片；人工目录：项目/产品规划。用户确认保留并正式入库。",
-    "product3_recommended_use": "项目规划：总图、楼栋编号、楼间距与经济指标页",
+    "product3_recommended_use": "项目规划与楼栋关系页：适合空间尺度说明；本案需重新核对楼号、距离和指标。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以总图统筹楼栋排布、编号、楼间距、出入口和项目经济技术指标。"
+    "effective_business_semantic": "正上方总图标出楼栋、楼间距离和经济技术指标，主体是规划关系与数据。"
   },
   {
     "asset_id": "CASE-225",
@@ -3685,9 +3271,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "下沉式会所立面、水院、台阶、乔木与立体绿化在充足日照下完整呈现。",
     "user_correction": "用户提供视频标题：下沉式会所；人工目录：项目红线内景观园林；截帧 00:01.50。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：下沉式会所、水院与立体绿化页",
+    "product3_recommended_use": "庭院与入口页：适合共享空间及到达感受；不由画面推定会所服务或专属权益。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以明亮水院和下沉台阶组织会所前场，展示会所界面、植物围合与下沉空间关系。"
+    "effective_business_semantic": "人视水院中，台阶、景墙、门厅和花树构成前场层次。"
   },
   {
     "asset_id": "CASE-226",
@@ -3703,9 +3289,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "连廊格栅、柱廊、水面和铺装形成清晰真实的阳光投影。",
     "user_correction": "用户提供视频标题：公园道1号-连廊-植物；人工目录：项目红线内景观园林；截帧 00:04.50。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：连廊格栅光影与水景步道页",
+    "product3_recommended_use": "归家连廊页：适合遮蔽空间和园林光影感受；不由单帧推定日照时长或全天通行条件。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以格栅日影、水面反射和柱廊节奏展示连廊的遮阳、通行与园林光影体验。"
+    "effective_business_semantic": "连廊人视中，格栅光影、柱列、水面及门厅形成通行界面。"
   },
   {
     "asset_id": "CASE-227",
@@ -3721,9 +3307,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "连廊外侧庭院、乔木、红枫、花境、水景和建筑界面完整同屏。",
     "user_correction": "用户提供视频标题：公园道1号-连廊-植物；人工目录：项目红线内景观园林；截帧 00:10.50。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：连廊庭院、乔灌花境与水景页",
+    "product3_recommended_use": "庭院停留页：承接住宅之外的共享园境；不补造活动和运营功能。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "从连廊看向庭院，展示乔灌花境、水景与建筑之间的层次和半室外停留体验。"
+    "effective_business_semantic": "从半室外廊下看向花境、树木与水院，建筑和庭院之间有清晰过渡。"
   },
   {
     "asset_id": "CASE-228",
@@ -3739,9 +3325,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "阳光照亮景石、花境、乔木、水面与弧形连廊，主体层次清楚。",
     "user_correction": "用户提供视频标题：公园道1号-连廊-植物；人工目录：项目红线内景观园林；截帧 00:13.50。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：景石花境、水面与架空连廊页",
+    "product3_recommended_use": "庭院细部页：适合公共景观的具体看点；不把共享庭院写成私家庭院。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以景石、花境、水面和架空连廊共同构成可停留的精致庭院节点。"
+    "effective_business_semantic": "近人视角中景石、花境、水面与连廊形成庭院节点，远近层次清楚。"
   },
   {
     "asset_id": "CASE-229",
@@ -3757,9 +3343,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "木平台、户外座椅、草坪、乔木和住宅塔楼在上午自然光下完整呈现。",
     "user_correction": "用户提供视频标题：归家慢行-写实化；人工目录：项目红线内景观园林；截帧 00:04.50。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：归家慢行、下沉平台与楼栋围合页",
+    "product3_recommended_use": "共享停留空间页：承接室外休息与相处；具体家具和开放方式按本案资料。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以归家路径旁的下沉木平台和休憩家具展示园林中的停留空间与楼栋围合。"
+    "effective_business_semantic": "楼间下沉木平台上布置休憩家具，周围住宅和绿地形成围合。"
   },
   {
     "asset_id": "CASE-230",
@@ -3775,9 +3361,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "下沉水院、铺装平台、乔木和住宅塔楼关系稳定可读。",
     "user_correction": "用户提供视频标题：归家慢行-写实化；人工目录：项目红线内景观园林；截帧 00:09.00。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：归家水院、休憩平台与楼间尺度页",
+    "product3_recommended_use": "园路与水院页：适合归家途中的景观关系；不把平台自动认定为活动运营场地。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以水院和平台组织归家慢行中的景观停顿，展示水景、活动空间与楼间尺度。"
+    "effective_business_semantic": "人视机位沿平台和水院观察步道、绿化与住宅，展示公共空间转折。"
   },
   {
     "asset_id": "CASE-231",
@@ -3793,9 +3379,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "阳光下的园林乔木、步道、水面反射与住宅塔楼完整同屏。",
     "user_correction": "用户提供视频标题：归家慢行-写实化；人工目录：项目红线内景观园林；截帧 00:16.50。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：园林步道、乔木层次与住宅塔楼关系页",
+    "product3_recommended_use": "楼间园境页：承接社区步行与绿化感受；不是具体楼层视野。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以行人视角展示归家园路、乔木层次和住宅塔楼之间的连续关系。"
+    "effective_business_semantic": "人视园路中近景水面、乔木和住宅立面同框，楼间尺度明显。"
   },
   {
     "asset_id": "CASE-232",
@@ -3811,9 +3397,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "架空层整体、城市客厅座椅、盆景、采光开口和功能界面完整呈现。",
     "user_correction": "用户提供视频标题：架空层；人工目录：项目红线内景观园林；截帧 00:04.50。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：架空层城市客厅、休憩与半户外空间页",
+    "product3_recommended_use": "架空公共空间页：承接公共停留与住宅出入；适用楼栋和实际功能以本案规划为准。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以自然采光的架空层展示社区城市客厅、休憩会客和半户外公共空间。"
+    "effective_business_semantic": "架空公共空间中电梯、座椅、盆景与室外开口同框，半室外使用关系清晰。"
   },
   {
     "asset_id": "CASE-233",
@@ -3829,9 +3415,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "架空层茶桌、松树盆景、种植槽和外部绿色景观完整同屏。",
     "user_correction": "用户提供视频标题：架空层；人工目录：项目红线内景观园林；截帧 00:09.00。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：架空层茶叙、盆景与庭院渗透页",
+    "product3_recommended_use": "公共会客与庭院关系页：适合半室外停留；茶叙设施不自动成为本案运营承诺。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以茶叙空间、盆景和开敞景观面展示架空层活动与庭院绿化的相互渗透。"
+    "effective_business_semantic": "架空层内的茶叙座椅、绿植与开敞景观面相邻，内外空间相互联系。"
   },
   {
     "asset_id": "CASE-234",
@@ -3847,9 +3433,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "阳光充足的滨水公园、曲线步道、会客座椅、花树和草坡完整呈现。",
     "user_correction": "用户提供视频标题：丽世缦华-代建公园；人工目录：项目红线内景观园林；截帧 00:01.50。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：代建公园、滨水会客与花树草坡页",
+    "product3_recommended_use": "代建或外部公园生活页：承接公共休闲价值；公园性质及使用关系必须按本案资料确认。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以滨水会客平台、花树草坡和曲线慢行路展示代建公园的休闲场景与景观丰富度。"
+    "effective_business_semantic": "滨水平台、曲线园路、花树和草坡构成公园近景，能够观察步行与停留节点。"
   },
   {
     "asset_id": "CASE-235",
@@ -3865,9 +3451,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "河道、滨水绿地、步道、花树、桥梁和低层住宅界面在晴天同屏。",
     "user_correction": "用户提供视频标题：丽世缦华-代建公园；人工目录：项目红线内景观园林；截帧 00:09.00。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：代建公园、滨水慢行与住宅界面页",
+    "product3_recommended_use": "公园与住区关系页：适合整体景观连接；不当作行人漫游或专属园林证据。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以开阔鸟瞰展示代建公园的滨水慢行系统、景观连续性与住宅界面关系。"
+    "effective_business_semantic": "较高机位展开滨水公园、连续园路和相邻住宅，重点是公园与建筑的总体关系。"
   },
   {
     "asset_id": "CASE-236",
@@ -3883,9 +3469,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "归家前场喷泉、乔木、花境和弧形车行路径在明亮日光下完整呈现。",
     "user_correction": "用户提供视频标题：丽世缦华风格化归家动线；人工目录：项目红线内景观园林；截帧 00:01.50。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：喷泉节点、花境与风格化归家前场页",
+    "product3_recommended_use": "归家园路页：适合入口前场的识别与停留感受；喷泉及养护标准只属案例。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以喷泉、花境和道路转折形成风格化归家前场的识别节点与景观序列。"
+    "effective_business_semantic": "入口园路近景中喷泉、花境和道路转折形成连续景观节点。"
   },
   {
     "asset_id": "CASE-237",
@@ -3901,9 +3487,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "项目入口门头、环形铺装、花树大道和住宅背景在晴天完整同屏。",
     "user_correction": "用户提供视频标题：丽世缦华风格化归家动线；人工目录：项目红线内景观园林；截帧 00:06.00。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：项目入口、花树大道与归家仪式页",
+    "product3_recommended_use": "社区入口页：承接进入社区的第一印象；不把园林风格当作项目品质已兑现的结论。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以入口门头、环形铺装和连续花树营造清晰的归家仪式与项目识别。"
+    "effective_business_semantic": "入口正面视角呈现门头、环形铺装、花树与住宅背景，归家方向清晰。"
   },
   {
     "asset_id": "CASE-238",
@@ -3919,9 +3505,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "架空顶盖穿树、保留大树、石材柱、林下铺装与光斑完整呈现。",
     "user_correction": "用户提供视频标题：麓湖金麟樾园林；人工目录：项目红线内景观园林；截帧 00:03.00。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：林下会客、保留大树与架空顶盖页",
+    "product3_recommended_use": "架空空间与树木关系页：适合半室外停留体验；不能据画面认定原生古树保留或具体结构工艺。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以顶盖穿树和林下光影展示保留大树、架空空间与园林会客场所的融合。"
+    "effective_business_semantic": "半室外空间的顶盖围绕树干留出开口，廊下光影与周围园林形成连接。"
   },
   {
     "asset_id": "CASE-239",
@@ -3937,9 +3523,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "廊下框景中园路、花境、乔木、阳光斑驳和住宅界面清晰可读。",
     "user_correction": "用户提供视频标题：麓湖金麟樾园林；人工目录：项目红线内景观园林；截帧 00:15.00。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：廊下框景、园路与植物层次页",
+    "product3_recommended_use": "归家连廊及庭院页：适合内外过渡与近人园境；不替代整体规划。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "从廊下向园林取景，展示归家园路、植物层次与建筑之间的空间渗透。"
+    "effective_business_semantic": "从廊下向园林看，园路、乔灌木和住宅形成由近到远的层次。"
   },
   {
     "asset_id": "CASE-240",
@@ -3955,9 +3541,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "晴空、阳光照亮的森系中庭、花境、步道与住宅塔楼完整同屏。",
     "user_correction": "用户提供视频标题：麓湖金麟樾园林；人工目录：项目红线内景观园林；截帧 00:22.50。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：森系中庭、住宅塔楼与归家界面页",
+    "product3_recommended_use": "庭院与建筑关系页：承接住宅之外的共享景观；不把示意绿量当作交付成熟度。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以森系中庭和住宅塔楼同框，展示高大乔木、花境与归家界面的整体关系。"
+    "effective_business_semantic": "人视中庭中，高大乔木、花境、水景与住宅塔楼同框。"
   },
   {
     "asset_id": "CASE-241",
@@ -3973,9 +3559,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "园路、树阵、灌木、草本和建筑边界在充足日照下层次清晰。",
     "user_correction": "用户提供视频标题：森系植物表达；人工目录：项目红线内景观园林；截帧 00:07.50。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：日照园路、乔灌草层次与宅间花园页",
+    "product3_recommended_use": "宅间慢行页：适合近人尺度的步行环境；日照和植物状态仅是案例时刻。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以真实树影和明亮园路展示乔灌草多层植物营造与宅间花园体验。"
+    "effective_business_semantic": "沿明亮园路观察两侧乔灌草和住宅，树影与路径界面清楚。"
   },
   {
     "asset_id": "CASE-242",
@@ -3991,9 +3577,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "水院、树岛、架桥步道、林下座椅和住宅界面在夕阳侧光下完整呈现。",
     "user_correction": "用户提供视频标题：森系植物表达；人工目录：项目红线内景观园林；截帧 00:15.00。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：水院、树岛、步道与林下活动页",
+    "product3_recommended_use": "园林停留节点页：适合共享空间的具体看点；不据画面补造活动运营安排。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以水院、树岛和步道组织林下活动空间，展示自然式园林的可进入性。"
+    "effective_business_semantic": "人视画面以步道、水院和树岛组织楼间空间，可见局部坐凳及绿地。"
   },
   {
     "asset_id": "CASE-243",
@@ -4009,9 +3595,9 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "红枫、乔木、灌木、花境、景石和玻璃建筑边界在午后日照下完整呈现。",
     "user_correction": "用户提供视频标题：森系植物表达2；人工目录：项目红线内景观园林；截帧 00:13.50。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：红枫花境、景石与建筑边界页",
+    "product3_recommended_use": "园林细部页：适合色彩、植物层次及建筑边界；不单独承担整盘竞争结论。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以红枫、景石和多层植物展示森系花境的色彩层次及其与建筑边界的结合。"
+    "effective_business_semantic": "园林近景中红枫、景石与多层植物相互搭配，建筑作为背景。"
   },
   {
     "asset_id": "CASE-244",
@@ -4027,8 +3613,8 @@
     "visual_form": "项目红线内景观园林",
     "business_semantic_guess": "明亮树冠、多层植物、花境和建筑玻璃界面构成完整宅间园林。",
     "user_correction": "用户提供视频标题：森系植物表达2；人工目录：项目红线内景观园林；截帧 00:16.50。 用户确认保留并正式入库。",
-    "product3_recommended_use": "园林：森系植物、玻璃界面与建筑渗透页",
+    "product3_recommended_use": "林下园境与建筑界面页：说明内外视觉关系；不以单帧证明全年绿量及采光。",
     "status": "已完成首轮语义确认",
-    "effective_business_semantic": "以树冠和玻璃界面同框展示森系植物如何柔化建筑边界并形成室内外渗透。"
+    "effective_business_semantic": "近人仰角中树冠、灌木与玻璃立面相邻，建筑边界被绿化包围。"
   }
 ]

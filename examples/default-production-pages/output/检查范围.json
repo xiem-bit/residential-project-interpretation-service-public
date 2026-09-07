@@ -1,0 +1,17 @@
+{
+  "scope": "实际默认入口的代表页与当前公开教程，非完整新项目验收",
+  "date": "2026-09-07",
+  "runtime": "明确配置的Presentations与Python/Node/Chrome依赖；无Grist、私人项目或私人编辑技能",
+  "source_inputs": [
+    "../assembly-input.json",
+    "../page-content.json",
+    "../product1-content.json",
+    "../product2-content.json"
+  ],
+  "files": {
+    "方案代表页.pptx": "ef614cdbbd5a12bea1927961ab1b7d0ea3e04b6b4ea786f350831d698997fa22",
+    "产物1代表页.pdf": "cb2c8316fc398ea974a44949b92c45bc2f19bbb7d562ca9d29f1aa71bae6707b",
+    "方案代表页.pdf": "5253ed9de4798cac39b17ef2c3b5bec467540fe416a4b94a7f6ab33c98ef1fa9",
+    "产物2代表页.pdf": "9c4d1c0c35d998fd6785f6e65d633ac75ffb037128ca0ad856b1a579ff47bb77"
+  }
+}

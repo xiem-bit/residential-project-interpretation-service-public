@@ -1,0 +1,64 @@
+@import url("base.css");
+html,body{font-size:10.3pt;line-height:1.7}
+a{color:#32665d;text-decoration:none;border-bottom:.2px solid #b5c7c0}
+.page{padding:14mm 15mm 15mm}
+.running{margin-bottom:7mm;letter-spacing:0;font-size:7.5pt}
+.page-title{font-size:23pt;line-height:1.38;letter-spacing:-.035em;max-width:none;margin-bottom:5mm}
+.page-lead{font-size:11pt;line-height:1.85;max-width:none;margin-bottom:6mm}
+.p{font-size:10.5pt;line-height:1.9;margin:4mm 0}
+.sub{font-size:12pt;line-height:1.65;color:#174d48;margin:5mm 0 2.5mm}
+.note{font-size:8pt;color:#626f6c;line-height:1.65;margin-top:4mm}
+.insight{font-size:11pt;line-height:1.85;margin-top:6mm;padding:5mm 5.5mm}
+.original{margin:5mm 0;padding:5mm 6mm;background:#e7ece4;border-left:1.2mm solid #a77b3f;border-radius:0 2mm 2mm 0;font-size:11.5pt;line-height:1.95;color:#174d48}
+.original p{margin:0;white-space:normal}
+.origin-link{display:block;width:max-content;margin-top:2mm;font-size:7.7pt;color:#667971;font-weight:400}
+.path{display:grid;grid-template-columns:repeat(3,1fr);margin:6mm 0;gap:4mm}
+.path>div{padding:4mm 3mm;border-top:1mm solid #a77b3f;background:rgba(236,229,215,.45)}
+.path h3{font-size:10.5pt;color:#174d48;line-height:1.6;margin:0 0 2mm}
+.path p{font-size:9.5pt;margin:0;line-height:1.75;color:#4b5a54}
+.bands{display:grid;gap:5mm;margin:5mm 0}
+.band{display:grid;grid-template-columns:30mm 1fr;gap:5mm;padding:5mm;background:#fffdf8;border:.2mm solid #cad2c9;border-radius:3mm}
+.band-label{color:#916522;font-size:10.3pt;font-weight:650;line-height:1.8}
+.band h3{font-size:12.3pt;line-height:1.6;margin:0 0 2mm;color:#174d48}
+.band p{font-size:10.5pt;line-height:1.85;margin:0;color:#40524b}
+.report-table{font-size:10pt;line-height:1.85;margin:5mm 0}
+.report-table thead th{padding:3mm;font-size:10.2pt}
+.report-table tbody th,.report-table tbody td{padding:3.6mm 3mm}
+.report-table tbody th{width:40mm}
+.area-chart{margin:5mm 0;padding:5mm;background:#e7ece4;border-radius:3mm}
+.area-row{display:grid;grid-template-columns:30mm 1fr;gap:4mm;margin-bottom:4mm;align-items:start}
+.area-row:last-child{margin-bottom:0}
+.area-row>span{font-size:10pt;font-weight:650;color:#174d48}
+.area-row>div{position:relative;padding-top:7mm}
+.area-row i{display:block;position:absolute;top:0;left:0;background:#437568;border-radius:1mm;height:5mm}
+.area-row:last-child i{background:#b48f58}
+.area-row b{position:absolute;top:-.2mm;left:3mm;line-height:5mm;color:white;font-size:9.5pt}
+.area-row p{font-size:9.5pt;margin:0;color:#42534b}
+.profile{margin:5mm 0;padding:5mm;border:.2mm solid #cad2c9;border-radius:3mm;background:#fffdf8}
+.profile h3{font-size:12.2pt;line-height:1.6;color:#174d48;margin:0 0 2mm}
+.profile>p{font-size:10.4pt;margin:0 0 3mm;line-height:1.85}
+.profile-detail{display:grid;grid-template-columns:1fr 1fr;gap:5mm;padding-top:3mm;border-top:.2mm solid #d7ded5}
+.profile-detail b{font-size:9.5pt;color:#9b753e}
+.profile-detail p{font-size:9.8pt;line-height:1.8;margin:1mm 0 0}
+.claim{padding:5mm;margin:5mm 0;border:.2mm solid #cbd4ca;background:#fffdf8;border-radius:3mm}
+.claim-label{font-size:8.8pt;color:#95692e}
+.claim h3{font-size:13pt;line-height:1.55;margin:2mm 0;color:#174d48}
+.claim p{font-size:10.3pt;line-height:1.85;margin:0 0 3mm}
+.claim-result{font-size:10pt;line-height:1.8;color:#4b5d52;background:#e8ede5;border-radius:2mm;padding:3mm}
+.footer{left:15mm;right:15mm;letter-spacing:0;font-size:7pt}
+.cover .page-title{font-size:29pt;line-height:1.65;margin-top:22mm}
+.cover .page-lead{font-size:16pt;line-height:1.65;margin:8mm 0 10mm}
+.cover .p{font-size:12pt;line-height:1.95;margin:6mm 0;max-width:168mm}
+.cover .path{margin-top:15mm}
+.cover .note{margin-top:15mm}
+.closing .bands{gap:6mm}
+@media print{.page{margin:0;break-after:page}.page:last-child{break-after:auto}}
+@media screen and (max-width:820px){.page{margin:0 0 8mm;box-shadow:none}}
+
+.research-map{margin:5mm 0}.research-map img{display:block;width:100%;max-height:110mm;object-fit:contain}.research-map figcaption{font-size:8pt;color:#63716e;line-height:1.7;margin-top:2mm}
+
+.regional-feature .bands{gap:3mm;margin:3mm 0}
+.regional-feature .band{padding:4mm}
+.regional-feature .original{margin:4mm 0;padding:4mm 6mm}
+
+.daily-feature .research-map img{max-height:92mm}.daily-feature .report-table{margin:4mm 0}.daily-feature .report-table tbody td,.daily-feature .report-table tbody th{padding:3mm}.daily-feature .page-lead{margin-bottom:4mm}
