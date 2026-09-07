@@ -1,7 +1,7 @@
 {
   "schema": "residential-competitiveness-public-core-manifest.v0.6",
   "status": "public_prerelease_p123_default_production_apache_2_0",
-  "candidate": "v0.2.0-rc.5",
+  "candidate": "v0.2.0-rc.6",
   "source_commit": "6de48e99c620ff899abc96fb53ecca259f58d928",
   "extraction_policy": "committed_source_semantic_parity_and_existing_authorized_asset_scope",
   "authority_map": "PRODUCTION_AUTHORITY_MAP.json",
@@ -26,8 +26,8 @@
     "repository": "https://github.com/xiem-bit/residential-project-interpretation-service-public",
     "visibility": "public",
     "latest_published_tag_immutable": true,
-    "candidate_tag": "v0.2.0-rc.5",
-    "release_tag": "v0.2.0-rc.5",
+    "candidate_tag": "v0.2.0-rc.6",
+    "release_tag": "v0.2.0-rc.6",
     "previous_release_tag": "v0.2.0-rc.4",
     "publication_status_authority": "GitHub Release and immutable tag",
     "candidate_publish_gate": "existing_checks_and_clean_default_entry_representative_pages"

@@ -1,6 +1,6 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
-  "candidate_version": "v0.2.0-rc.5",
+  "candidate_version": "v0.2.0-rc.6",
   "status": "p123_current_rules_templates_data_and_default_entry",
   "source_baseline": {
     "role": "private_method_and_gold_authority",

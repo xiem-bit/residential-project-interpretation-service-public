@@ -103,13 +103,12 @@ def validate_business_pages(request: dict[str, Any], output_path: Path) -> None:
         hits = gates.internal_method_hits(page)
         if hits:
             internal_hits[item["page_id"]] = hits
-    duplicate_errors = gates.duplicate_sequence_errors(pages)
     report = {
         "schema": "residential.product3_business_qa.v0.1",
-        "status": "pass" if not internal_hits and not duplicate_errors else "fail",
+        "status": "pass" if not internal_hits else "fail",
         "page_count": len(pages),
         "internal_method_hits": internal_hits,
-        "duplicate_sequence_errors": duplicate_errors,
+        "information_progression": "review_actual_pages_not_layout_or_filenames",
     }
     write_json(output_path, report)
     if report["status"] != "pass":

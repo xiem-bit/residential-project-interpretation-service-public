@@ -1,6 +1,6 @@
 {
   "schema": "residential.production_authority_map.v0.2",
-  "candidate_version": "v0.2.0-rc.5",
+  "candidate_version": "v0.2.0-rc.6",
   "source_baseline": {
     "repository_role": "private_method_authority",
     "commit": "6de48e99c620ff899abc96fb53ecca259f58d928",

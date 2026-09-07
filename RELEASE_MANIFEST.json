@@ -1,8 +1,8 @@
 {
   "schema": "residential.public_rc_source_manifest.v0.2",
-  "version": "v0.2.0-rc.5",
+  "version": "v0.2.0-rc.6",
   "status": "versioned_source_manifest",
-  "release_tag": "v0.2.0-rc.5",
+  "release_tag": "v0.2.0-rc.6",
   "source_commit": "6de48e99c620ff899abc96fb53ecca259f58d928",
   "excluded": [
     ".git/**",
@@ -17,7 +17,7 @@
     "RELEASE_MANIFEST.json"
   ],
   "file_count": 673,
-  "tree_sha256": "42461a8d588b2ebcdb78f5cc0dff6c7b44643e350d2175d012f61d00bff3c07e",
+  "tree_sha256": "e4c74e9f935f2cd2708ec177e62285bbdfbe073b793cf091ce211506cf18b3d8",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -57,7 +57,7 @@
     {
       "path": "CAPABILITY_PARITY_MANIFEST.json",
       "bytes": 19431,
-      "sha256": "79e515c4a5314d8b7f426deb78185a773a950878ba65a7556a0a7eeff3c56549"
+      "sha256": "374f2d3133547ba2bba48f8775bb090300d2c03243766ed70059fd8fc53c0056"
     },
     {
       "path": "COLD_START_PROTOCOL.md",
@@ -72,7 +72,7 @@
     {
       "path": "INSTALL.md",
       "bytes": 5759,
-      "sha256": "cb886f7457eb17581429500a0a8dd80793cc03d8759871d6963b95f2b67e4689"
+      "sha256": "ab3cb5c5c390eadbf132853fa6c570d464d3d2052ea04ad58f7fb023e4e60756"
     },
     {
       "path": "LICENSE",
@@ -87,17 +87,17 @@
     {
       "path": "PRODUCTION_AUTHORITY_MAP.json",
       "bytes": 15433,
-      "sha256": "e2aff288e0d022c9cf679d716b177ac70a2708cec621d685878b7bbac2dfcbdb"
+      "sha256": "e0d120ae10bf71b809968882fc844162e15ff8adf52c0abbc1bb982cf601d42a"
     },
     {
       "path": "PRODUCTION_PATH_MANIFEST.json",
       "bytes": 8736,
-      "sha256": "b243607aca3f734f8cb114a1228ff4ac7c605c44968400b1afc5b4a5e3ec452f"
+      "sha256": "0d23aca64f68efd06cf254c146f0394e3f419d04deef0152f740da8dafd73775"
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
       "bytes": 4468,
-      "sha256": "ceaff94633907043961b307c84c8fe1b640974a33d0ef96b7714a075055a3437"
+      "sha256": "54014a60b919092fd5edac23816f6c1c1e289f50cf0a78680f49b3746b908ca9"
     },
     {
       "path": "RC1_E2E_VERIFICATION.json",
@@ -107,12 +107,12 @@
     {
       "path": "README.md",
       "bytes": 4029,
-      "sha256": "5c75c41e5faa4ff81cdf6150ceed8ff5a48a8140398bd1d184d6cb53e8e54e58"
+      "sha256": "00acc671018df882d6c7481aa5011c42e22e5ebdc605b8a9ce4c213e7e07e476"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 2555,
-      "sha256": "8aedc4d090454e78431876ec2879d641bf6c09087856fa3ee4390d33ec3519c5"
+      "bytes": 2792,
+      "sha256": "ac0b5c4c31c434490dbd050fa0f37c4f93161323bb515842433a7f09574f070d"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
@@ -347,7 +347,7 @@
     {
       "path": "examples/default-production-pages/output/补丁检查说明.md",
       "bytes": 918,
-      "sha256": "4cf9dc8234e5e578ee6423653bc1a6b700b2d25ff94da7fad29aa4c2ea74ccc4"
+      "sha256": "21511e25946f3a426c3977749923c83cb574acb02f97e4cf9ac0ec581658f382"
     },
     {
       "path": "examples/default-production-pages/page-content.json",
@@ -2706,8 +2706,8 @@
     },
     {
       "path": "scripts/run_rc1_demo.py",
-      "bytes": 15922,
-      "sha256": "758c9b709e1c5a7007b04a59c9b444460a3adc9e1564f5d6365328db6e97e804"
+      "bytes": 15862,
+      "sha256": "c64622ecc582fc8acfa2a2b38f06509dac7c488c3cba4694f0f6f2ef4d088da9"
     },
     {
       "path": "scripts/verify_capability_parity.py",
@@ -2897,7 +2897,7 @@
     {
       "path": "tests/test_public_release_state.py",
       "bytes": 5862,
-      "sha256": "3d171f43fdbe057e370b17e121db20e406ffc53f64d6cdc6b0d8cde3b8dbd95f"
+      "sha256": "afc8d22dddcdf985809e940aaf241a3c4343b6c49581ebe2539dc0eeb20625bd"
     },
     {
       "path": "tests/test_rc1_contracts.py",
