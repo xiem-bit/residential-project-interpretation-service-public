@@ -17,7 +17,7 @@
     "RELEASE_MANIFEST.json"
   ],
   "file_count": 673,
-  "tree_sha256": "adf977b0ce35327adabf21913678931f7162eb0be327368d80309262058e7e21",
+  "tree_sha256": "8d444ba274aa0162bfa2fabe246f08a22ab92a4d1de53a0dbe6d1caa534ce238",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -71,8 +71,8 @@
     },
     {
       "path": "INSTALL.md",
-      "bytes": 5759,
-      "sha256": "ab3cb5c5c390eadbf132853fa6c570d464d3d2052ea04ad58f7fb023e4e60756"
+      "bytes": 8908,
+      "sha256": "c65ee8672b2b9422949fdcd4e7016129551563df58a253dd142453cb9286ff4a"
     },
     {
       "path": "LICENSE",
@@ -106,13 +106,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4029,
-      "sha256": "00acc671018df882d6c7481aa5011c42e22e5ebdc605b8a9ce4c213e7e07e476"
+      "bytes": 4260,
+      "sha256": "4789e8f918f2329df63f31c40790a87569a4532900efb6d7df2945035aad85ec"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 3746,
-      "sha256": "52ccd8f153954255999b99e88612322f54fa3af84b872cabdae65090e4a83344"
+      "bytes": 4065,
+      "sha256": "bd87e35a4ebea11a17883ab9743e514af4c0e17070984b938a56f6e6d4a9987c"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
