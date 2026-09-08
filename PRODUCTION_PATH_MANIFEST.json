@@ -1,6 +1,6 @@
 {
   "schema": "residential.production_path_manifest.v0.2",
-  "candidate_version": "v0.2.0-rc.6",
+  "candidate_version": "v0.2.0-rc.7",
   "status": "public_prerelease_product3_product5_gold_complete_product4_excluded",
   "semantic_core_role": "current_production_basis_when_task_requires_complete_research_or_solution",
   "product3_gold_authority": {

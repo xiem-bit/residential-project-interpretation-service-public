@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 from typing import Any
 
-from validate_production_input import DEFAULT_ASSETS, load_current_inventory, parse_asset_bindings, validate_payload
+from validate_production_input import DEFAULT_ASSETS, load_current_inventory, parse_asset_bindings, validate_payload, used_asset_ids
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -82,13 +82,14 @@ def main() -> int:
     args = parser.parse_args()
 
     blueprint = load_json(args.blueprint)
+    asset_inventory = load_current_inventory(args.asset_inventory, used_asset_ids(blueprint))
     semantic_dataset = load_json(args.semantic_dataset)
     source_dataset = load_json(args.source_dataset)
     validation_errors, _ = validate_payload(
         blueprint,
         semantic_dataset,
         source_dataset,
-        load_current_inventory(args.asset_inventory),
+        asset_inventory,
         allow_test_fixture=bool(blueprint.get("fixture_only")),
     )
     if validation_errors:
@@ -97,7 +98,7 @@ def main() -> int:
         )
     semantics = {item["semanticId"]: item for item in semantic_dataset.get("semantics", [])}
     sources = {item["sourcePageId"]: item for item in source_dataset.get("pages", [])}
-    assets = {item["asset_id"]: item for item in load_current_inventory(args.asset_inventory)}
+    assets = {item["asset_id"]: item for item in asset_inventory}
     content = load_json(args.content) if args.content else []
     content_by_id = {item["id"]: item for item in content}
     if args.content and (len(content) != len(content_by_id) or set(content_by_id) != {p["页面ID"] for p in blueprint["pages"]}):

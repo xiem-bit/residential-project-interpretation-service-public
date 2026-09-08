@@ -18,6 +18,8 @@ from zipfile import ZipFile
 from business_gates import (
     FAMILY_SEGMENT_SEMANTICS,
     internal_method_hits,
+    locked_quote_errors,
+    changed_basis_review,
     is_audience_portrait,
     page_business_query,
     rank_portrait_assets,
@@ -88,6 +90,10 @@ def parse_asset_bindings(value: Any) -> tuple[list[str], str | None]:
     return [], "素材编号JSON必须是对象或数组"
 
 
+def used_asset_ids(payload: dict[str, Any]) -> set[str]:
+    return {item for page in payload.get("pages", []) for item in parse_asset_bindings(page.get("素材编号"))[0]}
+
+
 def contains_placeholder(value: Any) -> bool:
     text = str(value or "")
     return any(marker.lower() in text.lower() for marker in PLACEHOLDER_MARKERS)
@@ -142,6 +148,20 @@ def validate_payload(
         errors.append("不是已裁定正式导出")
     if payload.get("fixture_only") and not allow_test_fixture:
         errors.append("技术夹具禁止进入正式生产；仅测试时显式使用--allow-test-fixture")
+    contract_path = payload.get("chapter2_contract_path")
+    if contract_path:
+        contract_file = resolve_project_path(contract_path)
+        if not contract_file.is_file():
+            errors.append("当前第二章依据文件不可读，不能沿用旧审阅状态")
+        else:
+            review = changed_basis_review(payload, load_json(contract_file))
+            if review["changed_facts"]:
+                errors.append(
+                    "第二章事实已变化：" + "、".join(review["changed_facts"]) +
+                    "；依赖判断：" + "、".join(review["affected_ids"]) +
+                    "；相关页面：" + ("、".join(review["page_ids"]) or "由既有合同确认适用页面") +
+                    "。通过现有装配导出入口生成定向审阅稿，不能用编号未变继承批准；这不触发无关研究重做"
+                )
 
     semantics = {item.get("semanticId"): item for item in semantic_dataset.get("semantics", [])}
     variants = {item.get("visualVariantId"): item for item in semantic_dataset.get("visualVariants", [])}
@@ -182,11 +202,13 @@ def validate_payload(
             errors.append(f"{page_id}：页面文案为空；历史来源页只提供结构，正式生产必须装载当前项目文案")
         elif contains_placeholder(visible_copy):
             errors.append(f"{page_id}：页面文案仍含待补占位语")
+        if formal_business_gate:
+            errors.extend(f"{page_id}：{error}" for error in locked_quote_errors(page))
         method_hits = internal_method_hits(page) if formal_business_gate else []
         if method_hits:
             errors.append(
-                f"{page_id}：客户可见标题／文案暴露内部推导方法（{'、'.join(method_hits)}）；"
-                "改写为新的项目关系、客户获得或删除该页"
+                f"{page_id}：自写文字命中内部方法定位规则（{'、'.join(method_hits)}）；"
+                "在现有审稿中核对整句用途；自写方法句改为本案判断，忠实引用核对来源与用途后精确保留原文，不因命中自动删页"
             )
 
         semantic_id = str(page.get("页面语义ID") or "")
@@ -263,9 +285,11 @@ def validate_payload(
                 errors.append(f"{page_id}：素材{asset_id}尚未完成真人复核")
             if not str(asset.get("effective_business_semantic") or "").strip():
                 errors.append(f"{page_id}：素材{asset_id}缺少生效业务语义")
-            original_name = Path(str(asset.get("original_asset") or "")).name
-            shared_path = SHARED_ASSET_ROOT / original_name
-            if not original_name or not shared_path.exists():
+            if asset.get("current_inventory_difference"):
+                errors.append(f"{page_id}：素材{asset_id}：{asset['current_inventory_difference']}")
+            original_name = str(asset.get("original_asset") or "")
+            shared_path = resolve_project_path(original_name)
+            if not original_name or not shared_path.is_file():
                 errors.append(f"{page_id}：素材{asset_id}真实文件不存在：{shared_path}")
             else:
                 asset_hash_usage[sha256_file(shared_path)].append((asset_id, page_id))
@@ -354,7 +378,7 @@ def main() -> int:
         payload,
         load_json(args.semantic_dataset),
         load_json(args.source_dataset),
-        load_current_inventory(args.asset_inventory),
+        load_current_inventory(args.asset_inventory, used_asset_ids(payload)),
         args.allow_test_fixture,
     )
     report = {

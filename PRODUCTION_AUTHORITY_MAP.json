@@ -1,9 +1,9 @@
 {
   "schema": "residential.production_authority_map.v0.2",
-  "candidate_version": "v0.2.0-rc.6",
+  "candidate_version": "v0.2.0-rc.7",
   "source_baseline": {
     "repository_role": "private_method_authority",
-    "commit": "6de48e99c620ff899abc96fb53ecca259f58d928",
+    "commit": "78a4d17a9a35697024a263588426c8da10030ddc",
     "worktree_required_clean": false,
     "extraction_method": "explicit_committed_git_paths_with_public_safe_adaptation",
     "incremental_sync_record": "MAINLINE_SYNC_20260903.md"
@@ -25,7 +25,7 @@
       "source": [
         {
           "path": "AGENTS.md",
-          "git_blob": "cec749c425b8944f08531afe818c8ecac005a978"
+          "git_blob": "588b1e9101aba9defabbf658e3a967b33c6e600a"
         },
         {
           "path": "README.md",
@@ -37,7 +37,7 @@
         },
         {
           "path": "docs/当前状态.md",
-          "git_blob": "4069fb0735d852d716a3e61047589d78e492e7b4"
+          "git_blob": "6518d4e76f48c453f87007a2075db377e4a49bc2"
         }
       ],
       "public": [
@@ -53,11 +53,11 @@
       "source": [
         {
           "path": "docs/30-住宅项目竞争力生产消费主合同_v1.0.md",
-          "git_blob": "a1d2b7910a128c5ad58f0597c2bb88e511221ab0"
+          "git_blob": "87520baacbbf99204c76625169156a2b7af286e7"
         },
         {
           "path": "docs/09-产物1至5整体设计与八项目重写标准.md",
-          "git_blob": "66564da0a070f70161efa5cea29e90c33e9fccc6"
+          "git_blob": "b2607b0ac8a13e8ff4e5f322e5a8c373fa357c58"
         },
         {
           "path": "docs/35-产物1至5现行产品体系与黄金生产基线决策记录_v1.0.md",
@@ -65,7 +65,7 @@
         },
         {
           "path": "docs/住宅产物质量与任务路由.md",
-          "git_blob": "e783e385a75e162faa874e40004ac7d49286aecc"
+          "git_blob": "fde0d2eb93cc7182b61f71abfec8e56dd9419025"
         },
         {
           "path": "docs/24-产物1至5统一语义核与产物3-4-5交付接口决策记录_v0.1.md",
@@ -112,7 +112,7 @@
         },
         {
           "path": "docs/30-住宅项目竞争力生产消费主合同_v1.0.md",
-          "git_blob": "a1d2b7910a128c5ad58f0597c2bb88e511221ab0"
+          "git_blob": "87520baacbbf99204c76625169156a2b7af286e7"
         }
       ],
       "public": [
@@ -132,7 +132,7 @@
         },
         {
           "path": "docs/19-产物3第三章住宅UE系统解决方案生产规范_v1.0.md",
-          "git_blob": "b2dd65b706616798c9119afbeaf916a43ee7dea1"
+          "git_blob": "aa430c07c0426126fef3b16dc9428b74651e4591"
         },
         {
           "path": "docs/33-产物3预排版装配控制台生产规范_v0.1.md",
@@ -159,11 +159,11 @@
       "source": [
         {
           "path": "docs/28-产物5住宅UE交互视觉原型生产规范_v1.0.md",
-          "git_blob": "a3c9738bf9cd3af73d4c26c1eb5061a42627e72c"
+          "git_blob": "422cfc4985e663e2a7f4566a8df9ff0c95dff54e"
         },
         {
           "path": "docs/30-住宅项目竞争力生产消费主合同_v1.0.md",
-          "git_blob": "a1d2b7910a128c5ad58f0597c2bb88e511221ab0"
+          "git_blob": "87520baacbbf99204c76625169156a2b7af286e7"
         }
       ],
       "public": [
@@ -208,7 +208,7 @@
       "source": [
         {
           "path": "docs/16-断言式书写规范_v1.0.md",
-          "git_blob": "702fc5917203d5cdcdcdc86a2fcf6dd24e11eb36"
+          "git_blob": "01d6ebf8f31bf60b883b5645f7930d88ed355439"
         },
         {
           "path": "tools/skills/chinese-affirmative-business-editor/SKILL.md",
@@ -275,7 +275,7 @@
         },
         {
           "path": "tools/skills/product3-assembly-console/SKILL.md",
-          "git_blob": "d434db9748868d8dbb3503e2fb3a5b4545f6ef55"
+          "git_blob": "c0216fb1950c9c5a319c60f7f6cc2ba18e0fbec9"
         },
         {
           "path": "assets/产物3页面模板库/README.md",
@@ -287,7 +287,7 @@
         },
         {
           "path": "tools/product3_ppt_pipeline/plan_production.py",
-          "git_blob": "5c92ea4fabfe4c94f5186eebf60f5d7ac3344a79"
+          "git_blob": "fb5d7f75023719bdf9debb6b4b43ed709ce455d0"
         },
         {
           "path": "tools/product3_ppt_pipeline/build_or_patch_deck.mjs",
@@ -295,15 +295,15 @@
         },
         {
           "path": "tools/product3_assembly_console/scripts/export_approved_blueprint.py",
-          "git_blob": "f0ee88bcfdfe6fce6487bacce93aa4d7179ab010"
+          "git_blob": "353057e5adf983e1f0f2f0b35df9161f3461d636"
         },
         {
           "path": "tools/product3_ppt_pipeline/business_gates.py",
-          "git_blob": "ad3e8b54e59a609f95bc548d18be60ad44f72b1a"
+          "git_blob": "23d041ed2a897eb4b2bd8454407f4eb528f855ac"
         },
         {
           "path": "tools/product3_ppt_pipeline/validate_production_input.py",
-          "git_blob": "f9901662bf672a8b27fb31c726ab291abe2fea41"
+          "git_blob": "68cb0c1cb7e6899c0e0380c9628a2e15fe5756c7"
         },
         {
           "path": "templates/产物3第二章生产消费合同.template.json",
@@ -329,11 +329,11 @@
       "source": [
         {
           "path": "docs/28-产物5住宅UE交互视觉原型生产规范_v1.0.md",
-          "git_blob": "a3c9738bf9cd3af73d4c26c1eb5061a42627e72c"
+          "git_blob": "422cfc4985e663e2a7f4566a8df9ff0c95dff54e"
         },
         {
           "path": "tools/skills/product5-presales-focus-production/SKILL.md",
-          "git_blob": "45ec0868b940bcb15e33b8e4ddefd46ff674637e"
+          "git_blob": "7244456f7ed2be4a344c71482684e961c8b5c57e"
         },
         {
           "path": "assets/产物5标准实现/翠湖云顶二期/README.md",
@@ -367,7 +367,7 @@
         },
         {
           "path": "tools/shared_datasets/build_case_asset_inventory.py",
-          "git_blob": "a93b86f5a9f20c4eaae50ee6efe3b2a31fba2ca2"
+          "git_blob": "7f16bb25c78f359fab19365b3473d9fe2d33428e"
         },
         {
           "path": "assets/产物3案例截图素材库/case_asset_inventory.json",

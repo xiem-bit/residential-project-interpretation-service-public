@@ -1,10 +1,10 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
-  "candidate_version": "v0.2.0-rc.6",
+  "candidate_version": "v0.2.0-rc.7",
   "status": "p123_current_rules_templates_data_and_default_entry",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
-    "commit": "6de48e99c620ff899abc96fb53ecca259f58d928",
+    "commit": "78a4d17a9a35697024a263588426c8da10030ddc",
     "authority_map": "PRODUCTION_AUTHORITY_MAP.json"
   },
   "public_candidate": {

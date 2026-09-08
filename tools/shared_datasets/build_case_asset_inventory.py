@@ -63,7 +63,30 @@ def read_workbook_rows(path: Path) -> list[list[Any]]:
         return rows
 
 
-def load_current_inventory(path: Path) -> list[dict[str, Any]]:
+def project_asset_differences(records: list[dict[str, Any]], current: list[dict[str, Any]], used_ids: set[str]) -> list[dict[str, Any]]:
+    """只核对本次使用的公司素材；项目新增资产与历史快照保持原样。"""
+    authoritative = {item["asset_id"]: item for item in current if enabled(item.get("status"))}
+    result = []
+    for original in records:
+        item = dict(original)
+        asset_id = item["asset_id"]
+        file = Path(str(item.get("original_asset") or ""))
+        file = file if file.is_absolute() else PROJECT_ROOT / file
+        is_shared = file.is_relative_to(DEFAULT_ORIGINAL_DIR) or asset_id in authoritative
+        if asset_id in used_ids and is_shared:
+            latest = authoritative.get(asset_id)
+            if latest is None:
+                item["current_inventory_difference"] = "共享台账已退出该素材；仅复核本次使用它的页面"
+            else:
+                fields = ("effective_business_semantic", "asset_class", "original_asset")
+                changed = [key for key in fields if item.get(key) != latest.get(key)]
+                if changed:
+                    item["current_inventory_difference"] = "共享素材已有订正（" + "、".join(changed) + "）；复核相关页面用途后更新项目装配，历史交付保持不变"
+        result.append(item)
+    return result
+
+
+def load_current_inventory(path: Path, used_asset_ids: set[str] | None = None) -> list[dict[str, Any]]:
     """当前选择及生产入口共用；台账变更即刷新派生索引，历史索引不复活删项。"""
     ledger = path.parent / DEFAULT_LEDGER.name
     inspect = Path(str(ledger) + ".inspect.ndjson")
@@ -75,7 +98,10 @@ def load_current_inventory(path: Path) -> list[dict[str, Any]]:
             previous = {}
         if not path.is_file() or previous.get("ledger_sha256") != digest or previous.get("inventory_sha256") != hashlib.sha256(path.read_bytes()).hexdigest():
             build_inventory(ledger, path.parent / "original", path, path, inspect)
-    return [a for a in json.loads(path.read_text(encoding="utf-8")) if enabled(a.get("status"))]
+    records = [a for a in json.loads(path.read_text(encoding="utf-8")) if enabled(a.get("status"))]
+    if used_asset_ids and path.resolve() != DEFAULT_OUTPUT.resolve():
+        return project_asset_differences(records, load_current_inventory(DEFAULT_OUTPUT), used_asset_ids)
+    return records
 
 
 def load_ledger_rows(path: Path) -> list[list[Any]]:

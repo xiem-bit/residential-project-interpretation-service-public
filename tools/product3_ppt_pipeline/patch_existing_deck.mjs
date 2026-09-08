@@ -1,6 +1,7 @@
 import crypto from "node:crypto";
 import fs from "node:fs/promises";
 import { createRequire } from "node:module";
+import { execFileSync } from "node:child_process";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 
@@ -141,6 +142,13 @@ async function applyOperations(presentation, pages, request) {
   const pageById = new Map(pages.map((page) => [page.page_id, page]));
   const applied = [];
   for (const operation of request.operations || []) {
+    if (operation.op === "replace_notes") {
+      const page = requirePage(pageById, operation.page_id);
+      if (typeof operation.text !== "string" || !operation.text.trim()) throw new Error("备注修订须提供实际讲解内容");
+      presentation.slides.getItem(pages.indexOf(page)).speakerNotes.textFrame.setText(operation.text);
+      applied.push({ ...operation });
+      continue;
+    }
     if (operation.op === "replace_image") {
       const page = requirePage(pageById, operation.page_id);
       const semanticAllowlist = operation.expected_semantic_ids || [];
@@ -189,6 +197,70 @@ async function applyOperations(presentation, pages, request) {
     throw new Error(`不支持的修订动作：${operation.op}`);
   }
   return applied;
+}
+
+async function exportNotesOnly(presentation, pages, request, outputPptx, mappingPath, workDir, applied, parentMapping) {
+  // SDK编辑备注；只回装备注正文，避免导入再导出改变已认可的前台对象。
+  await fs.mkdir(workDir, { recursive: true });
+  await fs.mkdir(path.dirname(outputPptx), { recursive: true });
+  const donor = path.join(workDir, "notes-sdk.pptx");
+  const candidate = path.join(workDir, "notes-candidate.pptx");
+  await (await PresentationFile.exportPptx(presentation)).save(donor);
+  const replacements = applied.map(op => ({ order: pages.findIndex(p => p.page_id === op.page_id) + 1, text: op.text }));
+  const python = process.env.RUNTIME_PYTHON;
+  const skillDir = process.env.PRESENTATIONS_SKILL_DIR;
+  if (!python || !path.isAbsolute(python) || !skillDir || !path.isAbsolute(skillDir)) throw new Error("备注修订需要当前演示文稿运行环境与Skill绝对路径");
+  const preserved = JSON.parse(execFileSync(python, ["-c", `
+import sys,json,posixpath,hashlib,copy
+from zipfile import ZipFile
+from xml.etree import ElementTree as E
+parent,donor,target,raw=sys.argv[1:]
+ns={'p':'http://schemas.openxmlformats.org/presentationml/2006/main','a':'http://schemas.openxmlformats.org/drawingml/2006/main'}
+def note_name(z,order):
+    rel=E.fromstring(z.read(f'ppt/slides/_rels/slide{order}.xml.rels'))
+    link=next(r for r in rel if r.attrib['Type'].endswith('/notesSlide'))
+    target=link.attrib['Target']
+    return target.lstrip('/') if target.startswith('/') else posixpath.normpath(posixpath.join('ppt/slides',target))
+def body(root):
+    return next(s for s in root.findall('.//p:sp',ns) if (s.find('p:nvSpPr/p:nvPr/p:ph',ns) is not None and s.find('p:nvSpPr/p:nvPr/p:ph',ns).get('type')=='body'))
+changes={}
+with ZipFile(parent) as old, ZipFile(donor) as new:
+    for item in json.loads(raw):
+        name=note_name(old,item['order']); source=E.fromstring(old.read(name))
+        target_body=body(source); donor_body=body(E.fromstring(new.read(note_name(new,item['order']))))
+        text_body=donor_body.find('p:txBody',ns)
+        actual=''.join(text_body.itertext())
+        expected=''.join(item['text'].split())
+        if ''.join(actual.split())!=expected: raise RuntimeError('SDK备注与批准输入不一致')
+        target_body.remove(target_body.find('p:txBody',ns)); target_body.append(copy.deepcopy(text_body))
+        changes[name]=E.tostring(source,encoding='utf-8',xml_declaration=True)
+    with ZipFile(target,'w') as output:
+        for member in old.infolist(): output.writestr(member,changes.get(member.filename,old.read(member.filename)))
+with ZipFile(parent) as old, ZipFile(target) as new:
+    assert old.namelist()==new.namelist()
+    changed=[name for name in old.namelist() if old.read(name)!=new.read(name)]
+    assert set(changed)==set(changes), '前台或其他文件发生变化'
+print(json.dumps({'changed_members':changed,'unchanged_members':len(old.namelist())-len(changed),'front_members_identical':True}))
+`, request.parent_pptx, donor, candidate, JSON.stringify(replacements)], { encoding: "utf8" }));
+  const { finalizePresentation } = await import(pathToFileURL(path.join(skillDir, "container_tools/artifact_tool_utils.mjs")).href);
+  await finalizePresentation({
+    workspaceDir: path.dirname(workDir), candidatePath: candidate, finalPath: outputPptx,
+    pythonExecutable: python,
+    integrityValidatorPath: path.join(skillDir, "container_tools/inspect_presentation_package_integrity.py"),
+    layoutValidatorPath: path.join(skillDir, "container_tools/inspect_presentation_layout_geometry.py"),
+    explicitTotalSlideCount: pages.length, requiredNativeTableOwnerSlides: [], requiredNativeChartOwnerSlides: [],
+    verifyArtifactToolImport: true, receiptPath: path.join(workDir, "notes-finalization.json"),
+  });
+  // finalizer只作校验与复制，仍以最终实际文件确认字节相同。
+  if (await sha256File(candidate) !== await sha256File(outputPptx)) throw new Error("备注定稿改变了已核对候选文件");
+  const mapping = { ...parentMapping, assembly_version: request.assembly_version, parent_pptx: request.parent_pptx,
+    parent_deck_sha256: parentMapping.output_deck_sha256, output_pptx: outputPptx,
+    output_deck_sha256: await sha256File(outputPptx), applied_operations: applied,
+    validation_scope: "speaker_notes_only; visible pages and existing visual evidence preserved", notes_preservation: preserved,
+    pages: pages.map(p => ({ ...p, ...(applied.find(op => op.page_id === p.page_id) ? { speaker_notes: applied.find(op => op.page_id === p.page_id).text } : {}) })) };
+  await fs.mkdir(path.dirname(mappingPath), { recursive: true });
+  await fs.writeFile(mappingPath, JSON.stringify(mapping, null, 2) + "\n");
+  await fs.writeFile(path.join(workDir, "notes-preservation.json"), JSON.stringify(preserved, null, 2) + "\n");
 }
 
 async function exportEvidence(presentation, pages, request, outputPptx, mappingPath, previewDir, layoutDir, workDir, applied) {
@@ -267,7 +339,9 @@ async function main() {
   const pages = [...parentMapping.pages].sort((left, right) => left.order - right.order);
   if (presentation.slides.items.length !== pages.length) throw new Error("父版页数与映射不一致");
   const applied = await applyOperations(presentation, pages, request);
-  await exportEvidence(
+  if (applied.length && applied.every(op => op.op === "replace_notes")) {
+    await exportNotesOnly(presentation, pages, request, path.resolve(args["out-pptx"]), path.resolve(args.mapping), path.resolve(args["work-dir"]), applied, parentMapping);
+  } else await exportEvidence(
     presentation,
     pages,
     request,

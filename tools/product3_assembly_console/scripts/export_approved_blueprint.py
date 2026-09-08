@@ -15,6 +15,9 @@ import sqlite3
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "product3_ppt_pipeline"))
+from business_gates import changed_basis_review
+
 
 REQUIRED_LABELS = {
     "页序",
@@ -238,6 +241,30 @@ def main() -> int:
         with sqlite3.connect(f"file:{args.input_file.resolve()}?mode=ro", uri=True) as conn:
             table_id, labels = find_assembly_table(conn)
             records = read_records(conn, table_id, labels)
+    if isinstance(source, dict) and source.get("chapter2_contract_path"):
+        contract_path = Path(source["chapter2_contract_path"])
+        if not contract_path.is_absolute():
+            contract_path = Path(__file__).resolve().parents[3] / contract_path
+        review = changed_basis_review(source, json.loads(contract_path.read_text(encoding="utf-8")))
+        if review["changed_facts"]:
+            explanation = (
+                "事实订正需定向复核：" + "、".join(review["changed_facts"]) +
+                "；相关判断：" + "、".join(review["affected_ids"]) +
+                "。复核本页标题、判断、图表、讲稿与制作内容；在既有论证记录接受或退回理由。"
+            )
+            for record in records:
+                if record.get("页面ID") in review["page_ids"]:
+                    record.update({"裁定状态": "draft", "进入PPT生产": False, "裁定说明": explanation})
+            source["export_status"] = "draft_non_production"
+            if review["page_ids"]:
+                source["reviewed_chapter2_basis"] = review["current_basis"]
+            out_dir = args.out_dir or args.input_file.parent
+            out_dir.mkdir(parents=True, exist_ok=True)
+            # 留在原有装配清单中，由Owner完成受影响审阅；不覆盖已交付快照。
+            (out_dir / "draft_装配清单.json").write_text(json.dumps(source, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            print(explanation + " 相关页面：" + ("、".join(review["page_ids"]) or "须从合同确认适用范围"), file=sys.stderr)
+            return 1
+        source["reviewed_chapter2_basis"] = review["current_basis"]
     errors = validate(records, args.allow_draft)
     if errors:
         print("装配清单未通过导出门禁：", file=sys.stderr)

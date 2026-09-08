@@ -26,6 +26,10 @@ node tools/product3_ppt_pipeline/build_or_patch_deck.mjs \
 
 沿用两项目的页面内容结构：每页包含`id / order / semantic / title / sub / layout / body`。`chapter_label`和`footer`是实际可见文案，也应进入清单的`页面文案`。`body`只放本页需要的可见内容；后台依据、UE引用和讲稿继续维护在现有合同及装配字段。
 
+项目适配入口直接消费当前认可正文，不先生成旧业务稿再层层修正。有第二章合同的项目，在既有装配输入保留`chapter2_contract_path`；现行导出记录`reviewed_chapter2_basis`，事实记录发生实质变化时，沿原有引用及页面职责返回受影响页到`draft_装配清单.json`。Owner在原论证位置复核标题、判断、图表、讲稿和制作内容，再沿用现有批准字段；不因编号相同继承旧批准，也不重审未受影响页面。纯空白修改不触发事实复核。
+
+忠实引用在装配页保留`原文引文`，每段包含`field`（页面名称或页面文案）、精确`text`、`source`和本页`purpose`。词法检查只扣除这段已标识原文，自写内容仍检查；引文是否适合本页仍由原有语义审稿判断。当前生产只核对正在使用的共享素材订正或退出，合法项目新增图保持独立身份，历史交付不自动刷新。
+
 | 适用版式 | 当前内容用法 |
 | --- | --- |
 | `map` | `map`提供已核阅真实底图、图形编号、1600×900取景及同视窗点位；`body.map_cards.left/right`和`map_meta/conclusion`装载两侧卡片、精度说明及比较结论。底图按当前空间证据取得，编号须在本页“本项目图形”中登记；不把一个截图按所有页面拉伸，不猜坐标。 |
@@ -51,6 +55,7 @@ node tools/product3_ppt_pipeline/build_or_patch_deck.mjs \
 ## 局部修订与历史路线
 
 - 只改字句或同用途换图，更新当前内容和既有清单，重建受影响部分或调用`patch_existing_deck.mjs`；保留新版本，不重开语义冻结。改变观看对象、功能或范围时，同步现有页面论证、制作项及讲稿。
+- 仅补后台交接时，现有修订请求支持`replace_notes`（`page_id`、`text`）。备注内容从实际合同与适配入口生成，应说明本页表达、展示内容、共用制作项和讲稿重点。全为此动作时只回装SDK生成的备注正文，并核对其余PPT组成文件与父版相同；前台不变的PDF及视觉证据可沿用，不重做全部产物或真人验收。
 - `verify_patch.py`核对定向修订之外的页面；`refresh_external_parent.mjs`与`verify_external_refresh.py`处理外部父版接续，实际原生应用兼容性只按真实检查结果报告。
 - 历史单来源／多来源starter、`pptx-automizer`和技术夹具继续保留。`reuse_source_slide`只用于显式技术夹具；任意历史PPT的`reuse_structure_rewrite_copy`仍未闭合，不能冒充当前内容默认路线，也不能把来源原文整页带入新项目。
 - 公司章节只按任务启用，当前内置组合承接第二／三章；第四章不默认制作。完整系统开发、S3原型、AI推荐官实时能力均不由PPT导出证明。

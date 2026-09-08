@@ -12,7 +12,7 @@ PIPELINE_DIR = Path(__file__).resolve().parents[1]
 PROJECT_ROOT = PIPELINE_DIR.parents[1]
 sys.path.insert(0, str(PIPELINE_DIR))
 
-from business_gates import is_audience_portrait, rank_portrait_assets, required_portrait_count  # noqa: E402
+from business_gates import is_audience_portrait, rank_portrait_assets, required_portrait_count, chapter2_basis, changed_basis_review, internal_method_hits, locked_quote_errors  # noqa: E402
 from validate_production_input import validate_payload  # noqa: E402
 sys.path.insert(0, str(PROJECT_ROOT / "tools/product3_assembly_console/scripts"))
 from export_approved_blueprint import build_payload, markdown  # noqa: E402
@@ -140,7 +140,6 @@ class BusinessGateTests(unittest.TestCase):
                     self.assertEqual(errors, [])
 
     def test_family_slots_are_required_and_bound_to_real_portrait_assets(self):
-        from unittest.mock import patch
         record = page(1, "FAMILY", "三类家庭", "各有实际生活安排。", "P3-FAMILY-SEGMENT", "", "已选两个人物版位")
         payload = {"schema": "product3.assembly_blueprint.v0.1", "export_status": "approved_for_ppt_production", "fixture_only": False, "project_id": "FAMILY-TEST", "project_name": "局部检查", "assembly_version": "family", "page_count": 1, "pages": [record]}
         errors, _ = validate_payload(payload, SEMANTIC_DATASET, SOURCE_DATASET, [], False)
@@ -149,9 +148,11 @@ class BusinessGateTests(unittest.TestCase):
         self.assertEqual(required_portrait_count(record), 2)  # 不由“三类家庭”猜数量
         record["素材编号"] = {"proof": ["CASE-0", "CASE-1"]}
         assets = [{"asset_id": f"CASE-{i}", "asset_class": "audience_portrait", "effective_business_semantic": "家庭人物肖像", "original_asset": f"portrait-{i}.png", "status": "approved"} for i in range(2)]
-        with tempfile.TemporaryDirectory() as folder, patch("validate_production_input.SHARED_ASSET_ROOT", Path(folder)):
+        with tempfile.TemporaryDirectory() as folder:
             for i in range(2):
-                (Path(folder) / f"portrait-{i}.png").write_bytes(bytes([i]))
+                file = Path(folder) / f"portrait-{i}.png"
+                file.write_bytes(bytes([i]))
+                assets[i]["original_asset"] = str(file)
             errors, evidence = validate_payload(payload, SEMANTIC_DATASET, SOURCE_DATASET, assets, False)
             self.assertEqual(errors, [])
             self.assertEqual(evidence["family_asset_selection"][0]["result"], "bound")
@@ -266,6 +267,89 @@ class BusinessGateTests(unittest.TestCase):
             self.assertIn(record[original], exported_text)
         self.assertEqual(output["visible_copy"], record["页面文案"])
         self.assertNotIn("UE-PAGE", output["visible_copy"])
+
+
+class ContinuationRegressionTests(unittest.TestCase):
+    def test_exact_identified_quote_is_preserved_but_own_method_sentence_is_not_exempt(self):
+        quoted = page(1, "QUOTE", "购房者怎样做选择", "原文标题：《四个WHY选房记》。这位作者最后选择保留原有通勤。", "P3-CUSTOMER-CHOICE", "", "原声")
+        self.assertTrue(internal_method_hits(quoted))  # 引号不是身份
+        quoted["原文引文"] = [{"field": "页面文案", "text": "《四个WHY选房记》", "source": "原作者文章标题，归档原文第1行", "purpose": "辨认所引选择事件"}]
+        original = quoted["页面文案"]
+        self.assertEqual(locked_quote_errors(quoted), [])
+        self.assertEqual(internal_method_hits(quoted), [])
+        self.assertEqual(quoted["页面文案"], original)
+        quoted["页面名称"] = "用四个WHY重排家庭优先级"
+        self.assertTrue(internal_method_hits(quoted))
+        quoted["原文引文"][0]["source"] = ""
+        self.assertTrue(locked_quote_errors(quoted))
+        self.assertTrue(internal_method_hits(quoted))
+
+    def test_fact_change_returns_only_dependent_pages_to_existing_export_review(self):
+        from copy import deepcopy
+        contract = {"chapter2": {"dimensions": [{"subject": {"strengths": [{"id": "FACT-UNIT", "text": "住宅采用环幕公区", "factor_id": "采光", "evidence_refs": ["E-PLAN"]}]}, "conclusions": [{"id": "CON-UNIT", "fact_refs": ["FACT-UNIT"]}]}], "advantage_matrix": {"columns": [{"items": [{"id": "ADV-UNIT", "conclusion_refs": ["CON-UNIT"]}], "super_competitiveness": {"id": "SC-UNIT", "advantage_item_refs": ["ADV-UNIT"]}}]}}}
+        records = [page(i, name, title, "现有正文", "P3-SC-PROOF", "", "内容页") for i, name, title in [(1, "PAGE-UNIT", "室内天光"), (2, "PAGE-CITY", "城市联系")]]
+        for record, role in zip(records, ["SC-UNIT", "SC-CITY"]):
+            record.update({"有效": True, "项目ID": "CHANGE-TEST", "项目名称": "离线订正对照", "装配版本": "test", "上游冻结状态": "frozen", "这一页只负责": role})
+        payload = build_payload(records, False)
+        payload["reviewed_chapter2_basis"] = chapter2_basis(contract)
+        wrapped = deepcopy(contract)
+        wrapped["chapter2"]["dimensions"][0]["subject"]["strengths"][0]["text"] = "住宅采用\n环幕公区"
+        self.assertEqual(changed_basis_review(payload, wrapped)["changed_facts"], [])
+        changed = deepcopy(contract)
+        changed["chapter2"]["dimensions"][0]["subject"]["strengths"][0]["text"] = "原环幕公区方案已取消"
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            basis_path, source = root / "chapter2.json", root / "approved.json"
+            payload["chapter2_contract_path"] = str(basis_path)
+            source.write_text(json.dumps(payload, ensure_ascii=False))
+            before = source.read_bytes()
+            basis_path.write_text(json.dumps(changed, ensure_ascii=False))
+            result = subprocess.run([sys.executable, str(PROJECT_ROOT / "tools/product3_assembly_console/scripts/export_approved_blueprint.py"), str(source), "--out-dir", str(root / "review")], cwd=PROJECT_ROOT, text=True, capture_output=True)
+            self.assertEqual(result.returncode, 1, result.stderr)
+            draft = json.loads((root / "review/draft_装配清单.json").read_text())
+            self.assertEqual(draft["pages"][0]["裁定状态"], "draft")
+            self.assertFalse(draft["pages"][0]["进入PPT生产"])
+            self.assertIn("FACT-UNIT", draft["pages"][0]["裁定说明"])
+            self.assertEqual(draft["pages"][1]["裁定状态"], "approved")
+            self.assertEqual(source.read_bytes(), before)  # 已交付快照不被覆盖
+            self.assertFalse((root / "review/approved_装配清单.json").exists())
+            # 单纯换行和同用途换图继续通过当前导出，不把局部操作升级为研究。
+            basis_path.write_text(json.dumps(wrapped, ensure_ascii=False))
+            payload["pages"][0]["素材编号"] = ["CASE-REPLACEMENT"]
+            source.write_text(json.dumps(payload, ensure_ascii=False))
+            result = subprocess.run([sys.executable, str(PROJECT_ROOT / "tools/product3_assembly_console/scripts/export_approved_blueprint.py"), str(source), "--out-dir", str(root / "layout-only")], cwd=PROJECT_ROOT, text=True, capture_output=True)
+            self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_live_asset_check_is_limited_to_used_shared_material(self):
+        from copy import deepcopy
+        from unittest.mock import patch
+        import build_case_asset_inventory as inventory
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            shared_path, project_path = root / "shared.json", root / "project/snapshot.json"
+            project_path.parent.mkdir()
+            assets = [
+                {"asset_id": "CASE-USED", "original_asset": str(root / "original/used.png"), "status": "approved", "asset_class": "case_reference", "effective_business_semantic": "厅堂空间"},
+                {"asset_id": "CASE-UNUSED", "original_asset": str(root / "original/unused.png"), "status": "approved", "asset_class": "case_reference", "effective_business_semantic": "建筑空间"},
+                {"asset_id": "CASE-PROJECT", "original_asset": str(root / "project/portrait.png"), "status": "approved", "asset_class": "audience_portrait", "effective_business_semantic": "一家人在住宅中使用空间"},
+            ]
+            project_path.write_text(json.dumps(assets))
+            original = project_path.read_bytes()
+            with patch.object(inventory, "DEFAULT_OUTPUT", shared_path), patch.object(inventory, "DEFAULT_ORIGINAL_DIR", root / "original"):
+                shared_path.write_text(json.dumps(assets[:2]))
+                current = inventory.load_current_inventory(project_path, {"CASE-USED", "CASE-PROJECT"})
+                self.assertTrue(all("current_inventory_difference" not in x for x in current))
+                changed = deepcopy(assets[:2]); changed[0]["effective_business_semantic"] = "仅能说明立面材质"
+                changed[1]["status"] = "disabled"
+                shared_path.write_text(json.dumps(changed))
+                current = inventory.load_current_inventory(project_path, {"CASE-USED", "CASE-PROJECT"})
+                self.assertIn("订正", current[0]["current_inventory_difference"])
+                self.assertNotIn("current_inventory_difference", current[1])  # 未使用，不增加工作
+                self.assertNotIn("current_inventory_difference", current[2])  # 项目新增保持
+                changed[0]["status"] = "disabled"
+                shared_path.write_text(json.dumps(changed))
+                self.assertIn("退出", inventory.load_current_inventory(project_path, {"CASE-USED"})[0]["current_inventory_difference"])
+                self.assertEqual(project_path.read_bytes(), original)
 
 
 class ActualCopyRoundtripTest(unittest.TestCase):

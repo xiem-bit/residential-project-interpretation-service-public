@@ -1,9 +1,9 @@
 {
   "schema": "residential.public_rc_source_manifest.v0.2",
-  "version": "v0.2.0-rc.6",
+  "version": "v0.2.0-rc.7",
   "status": "versioned_source_manifest",
-  "release_tag": "v0.2.0-rc.6",
-  "source_commit": "6de48e99c620ff899abc96fb53ecca259f58d928",
+  "release_tag": "v0.2.0-rc.7",
+  "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc",
   "excluded": [
     ".git/**",
     ".playwright-cli/**",
@@ -17,7 +17,7 @@
     "RELEASE_MANIFEST.json"
   ],
   "file_count": 673,
-  "tree_sha256": "e4c74e9f935f2cd2708ec177e62285bbdfbe073b793cf091ce211506cf18b3d8",
+  "tree_sha256": "adf977b0ce35327adabf21913678931f7162eb0be327368d80309262058e7e21",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -36,8 +36,8 @@
     },
     {
       "path": "AGENT_RULES.md",
-      "bytes": 14796,
-      "sha256": "a722982a38e5da70ad22cc7c8311671bac1cc0ba158f56a5267e33cee349885f"
+      "bytes": 15580,
+      "sha256": "ad1600e07fa4a1f9ad56333b2606a211f1498de26925db93045bce8d9196c8cf"
     },
     {
       "path": "A_CLASS_ALLOWLIST.txt",
@@ -57,7 +57,7 @@
     {
       "path": "CAPABILITY_PARITY_MANIFEST.json",
       "bytes": 19431,
-      "sha256": "374f2d3133547ba2bba48f8775bb090300d2c03243766ed70059fd8fc53c0056"
+      "sha256": "e80b39a9304a1d237944486db2454006c71ba244d482412ce5dcbebd2333a82f"
     },
     {
       "path": "COLD_START_PROTOCOL.md",
@@ -81,23 +81,23 @@
     },
     {
       "path": "MAINLINE_SYNC_20260903.md",
-      "bytes": 4192,
-      "sha256": "15f18c7ba2fcbd3576db770d22a3ce10e8686b2ffbca13a62649593c36c59ed7"
+      "bytes": 5078,
+      "sha256": "69d139602aa167cb12a02b671801031914595e1da0e88a8a300ddeccdbe8d087"
     },
     {
       "path": "PRODUCTION_AUTHORITY_MAP.json",
       "bytes": 15433,
-      "sha256": "e0d120ae10bf71b809968882fc844162e15ff8adf52c0abbc1bb982cf601d42a"
+      "sha256": "e5e896960b96aeec6c01c916b4b71f720dc38d46db1968fc313736a68cc156c7"
     },
     {
       "path": "PRODUCTION_PATH_MANIFEST.json",
       "bytes": 8736,
-      "sha256": "0d23aca64f68efd06cf254c146f0394e3f419d04deef0152f740da8dafd73775"
+      "sha256": "b9e6b674f9da8b3e8f149b7fca5c4bcb4dcbff3ca243c2daec71bdf4206f8a2a"
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
       "bytes": 4468,
-      "sha256": "54014a60b919092fd5edac23816f6c1c1e289f50cf0a78680f49b3746b908ca9"
+      "sha256": "e8fb964d68cb9c276d291e6c1bd64a947ade65b9294ccc801550dc58db94b2bc"
     },
     {
       "path": "RC1_E2E_VERIFICATION.json",
@@ -111,8 +111,8 @@
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 2792,
-      "sha256": "ac0b5c4c31c434490dbd050fa0f37c4f93161323bb515842433a7f09574f070d"
+      "bytes": 3746,
+      "sha256": "52ccd8f153954255999b99e88612322f54fa3af84b872cabdae65090e4a83344"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
@@ -256,8 +256,8 @@
     },
     {
       "path": "core/01-项目任务与输入治理.md",
-      "bytes": 4241,
-      "sha256": "1adabc2c288a54557904a10e63d889d0afde4dc7a2517be28cd2b7871d5d5d5e"
+      "bytes": 4621,
+      "sha256": "b7469bc9e9caa0274386b6a5803894edc8eab64dd1a6d623d3eee6d504ef9dae"
     },
     {
       "path": "core/02-产物1竞争态势研究.md",
@@ -271,8 +271,8 @@
     },
     {
       "path": "core/04-统一语义核与超级竞争力.md",
-      "bytes": 4055,
-      "sha256": "dcf88f7f6cb3606919f374eadea0705b19cc9a6b1bfa31dabe59f4c239bc3cab"
+      "bytes": 4675,
+      "sha256": "4bd3470b86c4c3f5c90209118c4cf622352000d4140cd2dbc7f7556c916c5c80"
     },
     {
       "path": "core/05-产物启用与生产准入.md",
@@ -281,18 +281,18 @@
     },
     {
       "path": "core/06-产物3从竞争策略到UE解决方案.md",
-      "bytes": 5577,
-      "sha256": "3844b11cf239d06f0004f5b50730207b2cfcceafe7c353560a1bdef8f54e2cc1"
+      "bytes": 6168,
+      "sha256": "f3a1c1616d17c043bcf30590a572fa8f93535f6777cec68fc0ef9e5f40f9177d"
     },
     {
       "path": "core/08-产物5交互蓝图.md",
-      "bytes": 4480,
-      "sha256": "70c93a09a57a1c55fe7a7c1e411bcd30203c6288d6250a086c14276c4809a37a"
+      "bytes": 4616,
+      "sha256": "78ba45febb35c0b5ba1987114b8ee6c35e546b89339013042c26043cea5d7a3b"
     },
     {
       "path": "core/09-变更回写与重投影.md",
-      "bytes": 1927,
-      "sha256": "5b97e1c42f3666d8815bb5137d5b7bb25777bb3c139fee6a4644076b28921f8b"
+      "bytes": 2436,
+      "sha256": "c07e35204ec71c8c12d55fa1c8b1295f7c5943deb66d062eb02af418d804140a"
     },
     {
       "path": "examples/default-production-pages/README.md",
@@ -1966,8 +1966,8 @@
     },
     {
       "path": "references/product3/assets/产物3页面模板库/02-共享页面语义库_v0.1.md",
-      "bytes": 15830,
-      "sha256": "e48fcaf4efcb1be08b730ea95887e187f09b93dbc2be176b2a2469e3c832cba9"
+      "bytes": 16523,
+      "sha256": "2b92314eb2cafd74f6ab73204950b574aa47adddecb7900672b357ea04233f50"
     },
     {
       "path": "references/product3/assets/产物3页面模板库/04-页面语义、视觉变体与来源页标注_v0.3.md",
@@ -1981,8 +1981,8 @@
     },
     {
       "path": "references/product3/assets/产物3页面模板库/datasets/page_semantic_dataset.v0.3.json",
-      "bytes": 52848,
-      "sha256": "e04cc2532fac1a277c7ce263728f13dc899545354dec9e038ae354bc12070b8f"
+      "bytes": 53352,
+      "sha256": "390790356e6e305cd690a54ea2f98a6fe8b978a12000425bc1d7d38e91bdde7d"
     },
     {
       "path": "references/product3/assets/产物3页面模板库/datasets/page_semantic_pairing_profiles.v0.1.json",
@@ -2591,8 +2591,8 @@
     },
     {
       "path": "references/writing/16-断言式书写规范_v1.0.md",
-      "bytes": 20425,
-      "sha256": "07fbe48b2f3b434cfdcb20058c7ba5e1a8dd9e1ff3622aaa80949ab56cbe31e9"
+      "bytes": 20829,
+      "sha256": "36bf2000f8a7acd7e3ab6ae553167b96ab261e66f223dc6537b576e23c8ea423"
     },
     {
       "path": "references/writing/README.md",
@@ -2897,7 +2897,7 @@
     {
       "path": "tests/test_public_release_state.py",
       "bytes": 5862,
-      "sha256": "afc8d22dddcdf985809e940aaf241a3c4343b6c49581ebe2539dc0eeb20625bd"
+      "sha256": "5d29f7bf99b9b93d02a88b5d42c1eb073e59caf562c81897faa47b300d3f1001"
     },
     {
       "path": "tests/test_rc1_contracts.py",
@@ -2971,8 +2971,8 @@
     },
     {
       "path": "tools/product3_assembly_console/scripts/export_approved_blueprint.py",
-      "bytes": 10840,
-      "sha256": "e1bbbd026d8e178fc0a01e7d5e4b70ff24019dd2d04c5c194bc9a3c1f0137054"
+      "bytes": 12684,
+      "sha256": "9645b798ccf0fb89012d2fbef26040fa5ed2cba2a550e7eb93d23a08129ec2c2"
     },
     {
       "path": "tools/product3_chapter2/test_validate_chapter2_contract.py",
@@ -2991,8 +2991,8 @@
     },
     {
       "path": "tools/product3_chapter23/validate_chapter23_bridge.py",
-      "bytes": 5754,
-      "sha256": "00d66dc59c2e4b1d6964a297b056032791dd20b3216db085087c51aafe279602"
+      "bytes": 5855,
+      "sha256": "3cc3c15501fc00d8fc443f22629ea6952225aeff5089f91b022a7f3a77c87f1a"
     },
     {
       "path": "tools/product3_chapter3/test_validate_chapter3_contract.py",
@@ -3006,8 +3006,8 @@
     },
     {
       "path": "tools/product3_ppt_pipeline/README.md",
-      "bytes": 6988,
-      "sha256": "317cd69354ed1817d9f8287f577f6761fe8445f7a66fb7f01b88f7e970ffc928"
+      "bytes": 8360,
+      "sha256": "5bb8577b7740120bdf8d691d468c4b7f3600f763b43bd3dff52e0cabf940cdb4"
     },
     {
       "path": "tools/product3_ppt_pipeline/automizer_adapter/README.md",
@@ -3056,8 +3056,8 @@
     },
     {
       "path": "tools/product3_ppt_pipeline/business_gates.py",
-      "bytes": 3914,
-      "sha256": "88345f70d87cb677c88cee42b17b8c77d50dc258efe227f25fd73a18aad31f54"
+      "bytes": 7901,
+      "sha256": "114a09212993175819c7d94c92f9ad9ae0aa6ea14036f87fe4b8f13ffe868456"
     },
     {
       "path": "tools/product3_ppt_pipeline/compose_project_pages.mjs",
@@ -3086,13 +3086,13 @@
     },
     {
       "path": "tools/product3_ppt_pipeline/patch_existing_deck.mjs",
-      "bytes": 12186,
-      "sha256": "02b4e8b3e73350ec1e03fe9268226b343ac9f0e0a817ae07898b5210d113c70b"
+      "bytes": 17757,
+      "sha256": "71ea147c7f462be7bcc68dd8202ca2d74015ee143ee7d8d295d56a56636f8e25"
     },
     {
       "path": "tools/product3_ppt_pipeline/plan_production.py",
-      "bytes": 12526,
-      "sha256": "1ceaf975e8fa541e9db166be0da8149965596a040a899ebe4efb6271ef06c2c1"
+      "bytes": 12578,
+      "sha256": "8c019646ef8aa93be5b9e3008b78c0fb66f8707a72ec12885512388dcaee8f39"
     },
     {
       "path": "tools/product3_ppt_pipeline/refresh_external_parent.mjs",
@@ -3116,13 +3116,13 @@
     },
     {
       "path": "tools/product3_ppt_pipeline/tests/test_business_gates.py",
-      "bytes": 14900,
-      "sha256": "911336f2e3f1ff53f60143f533fe7b474a404fb0412eb351b1a736a86723983b"
+      "bytes": 22007,
+      "sha256": "7ea37246520d7607c6f8b1022a4806e368ec4d96c80e9eb464eba280c74f0686"
     },
     {
       "path": "tools/product3_ppt_pipeline/validate_production_input.py",
-      "bytes": 18665,
-      "sha256": "73fc42b4cc74aea64608a11dfb5788aba470586a22f7bb4bf32e41a1b4f441f8"
+      "bytes": 20173,
+      "sha256": "df4bbea0c07310f92bc32cf1f26f9a1cfd45ec72eb1443eb63ba80b2e961cd36"
     },
     {
       "path": "tools/product3_ppt_pipeline/verify_external_refresh.py",
@@ -3311,8 +3311,8 @@
     },
     {
       "path": "tools/shared_datasets/build_case_asset_inventory.py",
-      "bytes": 8703,
-      "sha256": "d8b6e018dd8aca8433ae3ff4a2795246f32c277e8912cf9d722a38ed527f5e66"
+      "bytes": 10315,
+      "sha256": "82727aaef465d6bdba9b287c6aa53dff1b94eb2309496775bf879ae49f81c5fc"
     },
     {
       "path": "tools/ue_static_bundle/create_manifest.mjs",
@@ -3351,8 +3351,8 @@
     },
     {
       "path": "workflows/product5-presales-focus/SKILL.md",
-      "bytes": 5640,
-      "sha256": "d273c648df79d663e24a43218126b58d82038b8c71e1301134ff80108b39c3f9"
+      "bytes": 5912,
+      "sha256": "d409706e59414eca3852b9014c3a2cc24e5f9135cb8b5751943fbe25adda2f3b"
     },
     {
       "path": "workflows/product5-presales-focus/agents/openai.yaml",
