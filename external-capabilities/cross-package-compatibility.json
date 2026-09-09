@@ -4,16 +4,16 @@
   "request_contract": {
     "schema": "residential.upstream_task.v0.2",
     "path": "external-capabilities/upstream-task.schema.json",
-    "sha256_raw_file_bytes": "12f7ed916755bc37a870a6eb893210cc7e0fbc35ecea443f8e8d10bbe102b271"
+    "sha256_raw_file_bytes": "1cafb6531f34518d7d110f21ad9242aa9bf8ab18ae1d295e1b3a9c519336c32a"
   },
   "upstream_evidence_contract": {
     "repository": "https://github.com/xiem-public-info/public-info-research-kit",
-    "release_candidate": "0.8.0-rc.1",
-    "source_commit": "208d3defc03c0d7f30e93ea543634f11a55b9d0b",
+    "release_candidate": "0.8.0-rc.6",
+    "source_commit": "d991498764ede1207ade694e80191daa5c6179f0",
     "schema": "public_evidence_envelope.v1",
     "repository_relative_schema_path": "plugins/public-info-research-kit/schemas/public_evidence_envelope.v1.json",
     "plugin_relative_schema_path": "schemas/public_evidence_envelope.v1.json",
-    "schema_sha256": "ee303d2ea8eef1bcc2b6e6f7a8b020486aa80c3c3ca3189cb99fedd5b8fc2148",
+    "schema_sha256": "343d804eb2bd2be56a97d93c25376d64e55fc8e2e9afac952d2c4e1a630e92e1",
     "hash_basis": "raw_file_bytes_sha256",
     "repository_relative_golden_fixture_path": "plugins/public-info-research-kit/tests/fixtures/golden-tasks/golden_public_evidence_envelope.json",
     "plugin_relative_golden_fixture_path": "tests/fixtures/golden-tasks/golden_public_evidence_envelope.json",
@@ -26,8 +26,8 @@
     "freeze_receipt": {
       "status": "candidate_frozen",
       "minimal_fixture_cases_passed": 11,
-      "producer_core_conformance_fixture_cases_passed": 94,
-      "full_harness_fixture_cases_passed": 101,
+      "full_harness_fixture_cases_passed": 318,
+      "contract_drift_negative_cases_passed": 6,
       "network_accessed": false,
       "platform_opened": false,
       "business_acceptance_validated": false

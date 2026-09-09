@@ -271,6 +271,42 @@ class ProductionPathV02Test(unittest.TestCase):
         self.assertTrue((output / "product5-interaction-blueprint.json").is_file())
         self.assertFalse((output / "product4-value-framework-contract.json").exists())
 
+    def test_initializer_never_claims_business_completion(self) -> None:
+        for products in ("1", "1,2", "2", "1,2,3,5"):
+            with self.subTest(products=products):
+                output = Path(self.temp.name) / ("honest-" + products)
+                completed = subprocess.run(
+                    [sys.executable, str(ROOT / "scripts/init_production_run.py"),
+                     "--input-dir", str(ROOT / "examples/production-path-tutorial/input"),
+                     "--output-dir", str(output), "--products", products],
+                    text=True, capture_output=True, check=False,
+                )
+                self.assertEqual(completed.returncode, 0, completed.stderr)
+                contract_text = (output / "project-contract.md").read_text()
+                self.assertIn('"identity_status": "pending"', contract_text)
+                self.assertIn('"status": "research_in_progress"', contract_text)
+                matrix = json.loads((output / "product-enablement-matrix.json").read_text())
+                admission = matrix["high_cost_admission"]
+                self.assertNotEqual(admission["status"], "admitted")
+                self.assertEqual(admission["established_sc_count"], 0)
+                self.assertFalse(any(value for value in admission.values() if isinstance(value, bool)))
+                receipt = json.loads((output / "production-receipt.json").read_text())
+                self.assertEqual(receipt["enabled_products"], sorted(map(int, products.split(","))))
+                self.assertEqual(set(receipt["business_statuses"].values()), {"not_run"})
+                facts = json.loads((output / "fact-conflict-gap-register.json").read_text())
+                self.assertEqual(facts["freeze_status"], "not_frozen")
+                self.assertFalse(any(item["status"] == "accepted" for item in facts["entries"]))
+                for path in output.glob("*.json"):
+                    data = json.loads(path.read_text())
+                    self.assertNotIn(data.get("status"), {"complete", "product1_complete", "product2_complete", "semantic_core_frozen", "minimum_three_sc_pass", "ue_solution_bridge_pass"})
+                sc_path = output / "super-competitiveness-plan.json"
+                if sc_path.exists():
+                    plan = json.loads(sc_path.read_text())
+                    self.assertTrue(all(item["status"] == "candidate" for item in plan["items"]))
+                    self.assertTrue(all(check["status"] == "not_run" for item in plan["items"] for check in item["five_checks"].values()))
+                _, errors = validate_all(output)
+                self.assertTrue(errors, "An empty initialized run must not pass final acceptance")
+
     def test_initializer_rejects_product4_in_current_release(self) -> None:
         output = Path(self.temp.name) / "product4-rejected"
         completed = subprocess.run(

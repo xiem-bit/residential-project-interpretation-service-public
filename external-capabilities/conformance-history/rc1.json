@@ -1,15 +1,15 @@
 {
   "schema": "residential.cross_package_conformance_receipt.v0.2",
   "status": "pass",
-  "recorded_at": "2026-09-09",
-  "release_state": "offline_verified_release_candidates_before_publication",
+  "recorded_at": "2026-09-01",
+  "release_state": "both_packages_are_unpublished_release_candidates",
   "producer": {
     "repository": "https://github.com/xiem-public-info/public-info-research-kit",
-    "release_candidate": "0.8.0-rc.6",
-    "source_commit": "d991498764ede1207ade694e80191daa5c6179f0",
+    "release_candidate": "0.8.0-rc.1",
+    "source_commit": "208d3defc03c0d7f30e93ea543634f11a55b9d0b",
     "schema": "public_evidence_envelope.v1",
     "schema_path": "plugins/public-info-research-kit/schemas/public_evidence_envelope.v1.json",
-    "sha256_raw_file_bytes": "343d804eb2bd2be56a97d93c25376d64e55fc8e2e9afac952d2c4e1a630e92e1",
+    "sha256_raw_file_bytes": "ee303d2ea8eef1bcc2b6e6f7a8b020486aa80c3c3ca3189cb99fedd5b8fc2148",
     "golden_fixture_path": "plugins/public-info-research-kit/tests/fixtures/golden-tasks/golden_public_evidence_envelope.json",
     "interop_manifest_path": "plugins/public-info-research-kit/schemas/public_interop_manifest.v1.json",
     "minimal_conformance": {
@@ -20,18 +20,20 @@
     "full_harness": {
       "command_from_plugin_root": "python3 tests/run_release_harness.py",
       "status": "pass",
-      "fixture_case_count": 318
+      "producer_core_conformance_fixture_case_count": 94,
+      "fixture_case_count": 101
     }
   },
   "consumer": {
     "repository": "https://github.com/xiem-bit/residential-project-interpretation-service-public",
-    "release_candidate": "v0.2.0-rc.8",
-    "current_regression_case_count": 136,
+    "release_candidate": "v0.2.0-rc.1",
+    "interface_freeze_commit": "0a0c08eefc5ba4d5d36e9b5658ea648c44628585",
+    "current_regression_case_count": 106,
     "contracts": [
       {
         "schema": "residential.upstream_task.v0.2",
         "path": "external-capabilities/upstream-task.schema.json",
-        "sha256_raw_file_bytes": "1cafb6531f34518d7d110f21ad9242aa9bf8ab18ae1d295e1b3a9c519336c32a"
+        "sha256_raw_file_bytes": "12f7ed916755bc37a870a6eb893210cc7e0fbc35ecea443f8e8d10bbe102b271"
       },
       {
         "schema": "residential.upstream_response.v0.2",
@@ -53,50 +55,10 @@
     "consumer_adoption_fixture": "fixtures/upstream-exchange/adoption-receipt.json",
     "producer_validated_consumer_fixture": true,
     "consumer_validated_producer_fixture": true,
-    "fields_preserved_end_to_end": [
-      "request_id",
-      "project_id",
-      "acceptance_contract",
-      "sources",
-      "items",
-      "negative_hits",
-      "conflicts",
-      "gaps",
-      "stop_reason"
-    ],
+    "fields_preserved_end_to_end": ["request_id", "project_id", "negative_hits", "conflicts", "gaps", "stop_reason"],
     "stopped_status_supported": true,
     "empty_conflicts_and_gaps_representation": "empty_array",
-    "fulfilled_equals_accepted": false,
-    "request_frozen_before_execution": true,
-    "request_compiled_without_execution": true,
-    "original_request_sha256": "e03fac1e8ef4bcb9f01114e8523b8e0c2f8772a6cd849f258b4920bc688607b1",
-    "contract_drift_negative_cases": [
-      {
-        "case": "mode_changed",
-        "passed": true
-      },
-      {
-        "case": "threshold_lowered",
-        "passed": true
-      },
-      {
-        "case": "quality_removed",
-        "passed": true
-      },
-      {
-        "case": "diversity_lowered",
-        "passed": true
-      },
-      {
-        "case": "unknown_mode",
-        "passed": true
-      },
-      {
-        "case": "another_request",
-        "passed": true
-      }
-    ],
-    "consumer_sufficiency_fixture": "fixtures/upstream-exchange/sufficiency-input.json"
+    "fulfilled_equals_accepted": false
   },
   "boundaries": {
     "shared_cwd_required": false,
@@ -106,6 +68,5 @@
     "real_gui_validated": false,
     "business_acceptance_validated": false,
     "release_or_tag_created": false
-  },
-  "historical_receipt": "external-capabilities/conformance-history/rc1.json"
+  }
 }

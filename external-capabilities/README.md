@@ -31,16 +31,19 @@ residential.upstream_task.v0.2
 
 已知 URL、指定文档、单一事实或精确记录获取可以使用简单定向获取，但必须有人工豁免；只要任务涉及多查询、支持与反例、来源多样性、比较模式、增量可能或市场外推，就不得借豁免绕开研究充分性。
 
-## 增量补检
+## 增量补检与原请求保护
 
-上游可以提出 `proposed_incremental_batch`，但不能替下游授权执行。住宅生产 Owner 结合覆盖、边际信息增益、剩余 gap 和本轮业务用途，选择：
+同目标、同对象、预算内的继续检索服从有效任务授权；`in_scope_iteration_allowed=false`明确禁止范围内继续，字段省略也不能覆盖任务原文里的停止限制。`execution_authorized`表示范围外扩展的授权状态，不把历史`false`自动改成`true`。上游执行前自行冻结本批精确查询。
 
-- `authorize_incremental`：只授权已提出的查询，并写明批次、时间、成本或停止边界；
-- `stop_search`：现有证据已足以稳定当前判断，或继续检索没有业务增益；
-- `hold`：等待新材料、权限或更明确的业务问题；
-- `not_applicable`：本轮不需要增量检索。
+住宅生产 Owner 在用户已有授权范围内选择`authorize_incremental`、`stop_search`、`hold`或`not_applicable`，在独立采用回执中记录理由与执行边界。Owner的条件采用不等于真人验收。超出用户批准的对象、预算或动作范围时取得用户新授权；不能以改写旧请求或更换写入方式绕过平台拒绝。
 
-渠道按当次权限、可用性与缺口路由。某一渠道的临时健康状态、账号现场或本机路径不进入长期任务合同。
+## 冻结请求贯穿执行与回包
+
+原请求是对照依据，不能从回包反生成请求。上游通过确定性接口读取住宅`acceptance_contract`、对象与停止条件，执行和封装均与原件核对。新证据包的`contract_binding`包含原请求指纹、完整验收条件及实际充分性输入指纹。只有数量超过门槛不能代替质量、资格及多样性；冲突和缺口不直接计入合格证据。
+
+住宅校验默认要求绑定；提供`--sufficiency-input`同时核对实际充分性输入。旧无绑定回包仅可通过`--allow-legacy-unbound`做结构只读审阅，此模式不能生成采用通过。恢复旧任务时保留原request与已有材料，上游按原合同重算充分性并重包，再由住宅侧条件采用。部分充分可以合法回传，不改写成充分，不自动启动新增检索。
+
+原request由住宅侧维护并冻结；上游在自己的授权目录产出证据包和充分性输入，住宅侧在自己的项目目录产出response和adoption。双方传递可移植文件与引用，不把对方目录当默认写入目标。
 
 ## 证据采用边界
 
@@ -52,7 +55,7 @@ residential.upstream_task.v0.2
 
 ## 双包兼容
 
-`cross-package-compatibility.json`登记双方独立仓库的Schema、哈希、黄金fixture与验证命令。住宅包已发布`v0.2.0-rc.2`公开预发行版，公开信息包仍处于候选状态；双方已经冻结接口并完成fixture往返，兼容状态仍为`compatible_candidate_frozen`。验证结果见`cross-package-conformance-receipt.json`，该回执保留接口冻结时的候选版本快照。任一Schema字节变化都必须更新哈希并重跑双方conformance；双方正式版本均发布后再升级稳定兼容状态。
+`cross-package-compatibility.json`登记双方固定版本、Schema及哈希。当前联动以执行前已冻结的住宅请求为起点，经上游转换、充分性校验和封装，再由住宅校验；历史回执保存在`conformance-history/`，不代表当前修复已经通过。
 
 住宅侧可运行：
 
@@ -61,7 +64,8 @@ python3 tools/production_core/validate_upstream_exchange.py \
   --request fixtures/upstream-exchange/request.json \
   --envelope fixtures/upstream-exchange/public-evidence-envelope.json \
   --response fixtures/upstream-exchange/response.json \
-  --adoption fixtures/upstream-exchange/adoption-receipt.json
+  --adoption fixtures/upstream-exchange/adoption-receipt.json \
+  --sufficiency-input fixtures/upstream-exchange/sufficiency-input.json
 ```
 
 两套发行包不要求共享工作目录，不允许依赖另一工程的绝对路径、账号态或私有运行实现。

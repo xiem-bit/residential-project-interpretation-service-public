@@ -21,7 +21,7 @@
       "const": "residential.product1_competition_study.v0.2"
     },
     "status": {
-      "enum": [
+      "enum": ["draft",
         "product1_complete",
         "returned_for_research"
       ]

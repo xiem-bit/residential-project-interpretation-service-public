@@ -60,7 +60,7 @@ def configure_enablement(output_dir: Path, products: set[int]) -> None:
             item.update(status="enabled", reason="由本轮初始化参数启用，正式原因须在项目合同中写明", deliverables=deliverables[product_id])
         else:
             item.update(status="not_enabled", reason="本轮未启用", deliverables=[])
-    matrix["high_cost_admission"]["status"] = "admitted" if products.intersection({3, 5}) else "research_only"
+    matrix["high_cost_admission"]["status"] = "pending" if products.intersection({3, 5}) else "research_only"
     matrix_path.write_text(json.dumps(matrix, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     contract_path = output_dir / "project-contract.md"
@@ -76,6 +76,25 @@ def configure_enablement(output_dir: Path, products: set[int]) -> None:
     ]
     replacement = "```json\n" + json.dumps(summary, ensure_ascii=False, indent=2) + "\n```"
     contract_path.write_text(text[: match.start()] + replacement + text[match.end() :], encoding="utf-8")
+
+    receipt_path = output_dir / "production-receipt.json"
+    receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+    receipt["enabled_products"] = sorted(products)
+    statuses = ["rules_loaded", "project_identity_closed", "cross_product_consistency_pass"]
+    statuses.extend(f"product{product}_complete" for product in sorted(products & {1, 2}))
+    if products.intersection({2, 3, 5}):
+        statuses.extend(["semantic_core_frozen", "minimum_three_sc_pass"])
+    receipt["business_statuses"] = {status: "not_run" for status in statuses}
+    receipt_path.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    semantic_path = output_dir / "semantic-core.json"
+    if semantic_path.exists():
+        semantic = json.loads(semantic_path.read_text(encoding="utf-8"))
+        semantic["product_package"] = {"enabled": sorted(products), "not_enabled": sorted({1, 2, 3, 4, 5} - products)}
+        semantic["source_outputs"] = ["project-contract.md"] + [
+            deliverables[product][0] for product in sorted(products & {1, 2})
+        ]
+        semantic_path.write_text(json.dumps(semantic, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def main() -> int:

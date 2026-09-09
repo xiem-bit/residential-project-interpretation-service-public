@@ -25,6 +25,11 @@ class CrossPackageConformanceTest(unittest.TestCase):
         self.assertTrue(self.receipt["round_trip"]["producer_validated_consumer_fixture"])
         self.assertTrue(self.receipt["round_trip"]["consumer_validated_producer_fixture"])
         self.assertFalse(self.receipt["round_trip"]["fulfilled_equals_accepted"])
+        self.assertTrue(self.receipt["round_trip"]["request_frozen_before_execution"])
+        self.assertTrue(self.receipt["round_trip"]["request_compiled_without_execution"])
+        cases = self.receipt["round_trip"]["contract_drift_negative_cases"]
+        self.assertEqual(len(cases), 6)
+        self.assertTrue(all(case["passed"] for case in cases))
 
     def test_consumer_schema_raw_hashes_are_frozen(self) -> None:
         records = {
@@ -44,7 +49,7 @@ class CrossPackageConformanceTest(unittest.TestCase):
         self.assertEqual(producer["schema_sha256"], self.receipt["producer"]["sha256_raw_file_bytes"])
         self.assertEqual(producer["source_commit"], self.receipt["producer"]["source_commit"])
         self.assertRegex(producer["source_commit"], r"^[0-9a-f]{40}$")
-        self.assertEqual(self.receipt["producer"]["full_harness"]["fixture_case_count"], 101)
+        self.assertEqual(self.receipt["producer"]["full_harness"]["fixture_case_count"], 318)
         self.assertEqual(
             {item["schema"] for item in self.receipt["consumer"]["contracts"]},
             {

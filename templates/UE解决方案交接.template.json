@@ -2,7 +2,7 @@
   "schema": "residential.ue_solution_handoff.v0.2",
   "project_id": "PROJECT-001",
   "semantic_version": "SEM-001",
-  "status": "ue_solution_bridge_pass",
+  "status": "draft",
   "value_anchor_ref": "VALUE-ANCHOR",
   "mappings": [
     {

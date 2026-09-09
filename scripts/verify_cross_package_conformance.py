@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import argparse
+import copy
+import tempfile
 import hashlib
 import json
 import subprocess
@@ -39,89 +41,14 @@ def run_json(command: list[str], cwd: Path) -> tuple[dict[str, Any], str]:
         return {}, f"non-JSON command output: {exc}"
 
 
-def first_query_text(envelope: dict[str, Any], query_id: str) -> str:
-    for source in envelope.get("sources", []):
-        query_ref = source.get("query_ref") if isinstance(source, dict) else None
-        if isinstance(query_ref, dict) and query_ref.get("query_id") == query_id and query_ref.get("exact_query_text"):
-            return query_ref["exact_query_text"]
-    return f"公开证据检索 {query_id}"
-
-
-def consumer_contracts_for(envelope: dict[str, Any], schema_sha256: str) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
+def consumer_contracts_for(request: dict[str, Any], envelope: dict[str, Any], schema_sha256: str) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
+    """Wrap a result while retaining a request frozen before producer execution."""
+    request = copy.deepcopy(request)
     execution = envelope.get("query_execution") or {}
     executed = list(execution.get("executed_query_ids") or [])
     proposed = list(execution.get("proposed_incremental_query_ids") or [])
-    mode = execution.get("acceptance_mode") or "quality_sufficiency"
-    if mode not in {"count_based", "quality_sufficiency", "hybrid"}:
-        mode = "quality_sufficiency"
-    project_id = envelope.get("project_id") or "PROJECT-NOT-SPECIFIED"
-    request = {
-        "schema": "residential.upstream_task.v0.2",
-        "request_id": envelope["request_id"],
-        "task_id": envelope["task_id"],
-        "project_id": project_id,
-        "owner": "public_information_owner",
-        "business_question": envelope["request"]["business_question"],
-        "judgment_gap": "验证生产方黄金证据包能否被住宅侧完整消费",
-        "requested_evidence_roles": ["official_public_fact", "nonprobability_social_sample", "counterexample"],
-        "object_scope": {
-            "canonical_subject": envelope["subject"],
-            "aliases": [],
-            "comparison_objects": [],
-            "identity_boundary": "只验证公开候选接口，不产生真实项目判断",
-        },
-        "time_scope": envelope["request"]["time_scope"],
-        "geo_scope": envelope["request"]["geo_scope"],
-        "downstream_destination": {
-            "products": [1],
-            "judgment_refs": ["INTEROP-CHECK"],
-            "allowed_uses": ["接口一致性检查"],
-            "blocked_uses": ["真实项目结论", "自动裁定超级竞争力"],
-        },
-        "acceptance_contract": {
-            "acceptance_mode": mode,
-            "qualified_match_classes": ["direct", "supporting"],
-            "quality_criteria": ["证据层级保留", "冲突与缺口不丢失"],
-            "count_threshold": 1 if mode in {"count_based", "hybrid"} else None,
-            "diversity_requirements": {
-                "minimum_source_role_count": 1,
-                "minimum_project_or_brand_count": 1,
-                "maximum_qualified_items_per_project_or_brand": 2,
-            },
-            "research_characteristics": ["support_and_counterevidence_required", "adaptive_extension_possible"],
-        },
-        "query_plan": {
-            "mode": "research_retrieval",
-            "plan_schema": execution.get("plan_schema"),
-            "plan_version": execution.get("plan_version"),
-            "channel_scope": list(envelope["request"]["channel_scope"]),
-            "frozen_queries": [
-                {
-                    "query_id": query_id,
-                    "exact_query_text": first_query_text(envelope, query_id),
-                    "object_identity": envelope["subject"],
-                    "term_provenance": ["producer_golden_fixture"],
-                    "minimum_result_batches": 1,
-                    "minimum_actual_opens": 1,
-                }
-                for query_id in executed
-            ],
-            "simple_direct_retrieval_exemption": None,
-        },
-        "incremental_policy": {
-            "proposal_allowed": True,
-            "execution_authorized": False,
-            "authorization_ref": None,
-            "maximum_incremental_batches": 0,
-            "time_limit_minutes": 0,
-            "cost_limit": None,
-            "minimum_marginal_information_gain": "low",
-        },
-        "stop_conditions": [envelope["stop_reason"]],
-        "authorization": "synthetic_fixture",
-        "status": "fulfilled",
-        "portability_boundary": "no_shared_cwd_no_absolute_path_no_private_runtime_state",
-    }
+    mode = request["acceptance_contract"]["acceptance_mode"]
+    project_id = request["project_id"]
     package_hash = canonical_json_sha256(envelope)
     response = {
         "schema": "residential.upstream_response.v0.2",
@@ -232,15 +159,95 @@ def verify(upstream_root: Path, full: bool) -> dict[str, Any]:
 
     local_envelope = ROOT / "fixtures" / "upstream-exchange" / "public-evidence-envelope.json"
     local_for_producer, local_error = run_json(
-        [sys.executable, "tools/validate_public_evidence.py", "--input", str(local_envelope)],
+        [sys.executable, "tools/validate_public_evidence.py", "--input", str(local_envelope),
+         "--request", str(ROOT / "fixtures/upstream-exchange/request.json"),
+         "--sufficiency-input", str(ROOT / "fixtures/upstream-exchange/sufficiency-input.json")],
         upstream_root,
     )
     if local_error or local_for_producer.get("status") != "pass":
         errors.append(f"producer rejected residential fixture: {local_error or local_for_producer.get('status')}")
 
-    producer_golden = load_json(fixture_path)
-    request, response, adoption = consumer_contracts_for(producer_golden, actual_schema_hash)
-    consumer_report = validate_exchange(request, producer_golden, response, adoption, compatibility)
+    fixture_root = ROOT / "fixtures/upstream-exchange"
+    original_request = load_json(fixture_root / "request.json")
+    original_hash = canonical_json_sha256(original_request)
+    sufficiency_input = load_json(fixture_root / "sufficiency-input.json")
+    with tempfile.TemporaryDirectory(prefix="residential-exchange-") as temp:
+        output = Path(temp) / "envelope.json"
+        owner_plan = {"channel": "public_web", "queries": original_request["query_plan"]["frozen_queries"]}
+        plan_path = Path(temp) / "owner-plan.json"
+        plan_path.write_text(json.dumps(owner_plan, ensure_ascii=False), encoding="utf-8")
+        compiled_path = Path(temp) / "compiled-request.json"
+        compilation, compilation_error = run_json(
+            [sys.executable, "tools/compile_retrieval_execution_request.py",
+             "--task", str(fixture_root / "request.json"), "--plan", str(plan_path), "--output", str(compiled_path)], upstream_root,
+        )
+        compiled_ok = False
+        if compilation_error or not compilation.get("passed") or not compiled_path.exists():
+            errors.append(f"producer request compilation failed: {compilation_error or compilation.get('status')}")
+        else:
+            compiled = load_json(compiled_path)
+            compiled_ok = (compiled.get("retrieval_task") == original_request
+                           and compiled.get("source_request_sha256") == original_hash
+                           and compiled.get("request_id") == original_request["request_id"]
+                           and all(compiled.get("sufficiency_applicability", {}).get(k) == v
+                                   for k, v in original_request["acceptance_contract"].items()))
+            if not compiled_ok:
+                errors.append("producer compilation changed frozen request criteria")
+        packaging, packaging_error = run_json(
+            [sys.executable, "tools/package_evidence.py", "--input", str(local_envelope),
+             "--request", str(fixture_root / "request.json"),
+             "--sufficiency-input", str(fixture_root / "sufficiency-input.json"),
+             "--output", str(output)], upstream_root,
+        )
+        if packaging_error or packaging.get("status") != "pass" or not output.exists():
+            errors.append(f"producer request-bound packaging failed: {packaging_error or packaging.get('status')}")
+            consumer_report = {"status": "fail"}
+        else:
+            producer_golden = load_json(output)
+            for field in ("sources", "items", "negative_hits", "conflicts", "gaps"):
+                if producer_golden[field] != load_json(local_envelope)[field]:
+                    errors.append(f"producer changed preserved evidence field: {field}")
+            request, response, adoption = consumer_contracts_for(original_request, producer_golden, actual_schema_hash)
+            consumer_report = validate_exchange(request, producer_golden, response, adoption, compatibility,
+                                                sufficiency_input=sufficiency_input)
+    if canonical_json_sha256(load_json(fixture_root / "request.json")) != original_hash:
+        errors.append("producer changed the frozen request")
+    negative_cases = []
+    for case in ("mode_changed", "threshold_lowered", "quality_removed", "diversity_lowered", "unknown_mode", "another_request"):
+        draft = load_json(local_envelope)
+        sufficient = copy.deepcopy(sufficiency_input)
+        if case == "mode_changed":
+            draft["query_execution"]["acceptance_mode"] = "quality_sufficiency"
+        elif case == "threshold_lowered":
+            sufficient["consumer_contract"]["count_threshold"] = 1
+        elif case == "quality_removed":
+            sufficient["consumer_contract"]["quality_criteria"] = []
+        elif case == "diversity_lowered":
+            sufficient["consumer_contract"]["diversity_requirements"]["minimum_source_role_count"] = 1
+        elif case == "unknown_mode":
+            draft["query_execution"]["acceptance_mode"] = "unknown"
+        else:
+            sufficient["request_id"] = "REQUEST-OTHER"
+        with tempfile.TemporaryDirectory(prefix="residential-negative-") as temp:
+            temp_root = Path(temp)
+            for name, value in (("draft.json", draft), ("sufficiency.json", sufficient)):
+                (temp_root / name).write_text(json.dumps(value, ensure_ascii=False), encoding="utf-8")
+            output = temp_root / "output.json"
+            completed = subprocess.run(
+                [sys.executable, "tools/package_evidence.py", "--input", str(temp_root / "draft.json"),
+                 "--request", str(fixture_root / "request.json"),
+                 "--sufficiency-input", str(temp_root / "sufficiency.json"), "--output", str(output)],
+                cwd=upstream_root, capture_output=True, text=True, check=False,
+            )
+            try:
+                rejection = json.loads(completed.stdout)
+            except json.JSONDecodeError:
+                rejection = {}
+            passed = (completed.returncode != 0 and rejection.get("status") == "fail"
+                      and bool(rejection.get("errors")) and not output.exists())
+            negative_cases.append({"case": case, "passed": passed})
+            if not passed:
+                errors.append(f"producer failed to reject contract drift: {case}")
     if consumer_report.get("status") != "pass":
         errors.extend(f"consumer rejected producer fixture: {error}" for error in consumer_report.get("errors", []))
 
@@ -270,6 +277,10 @@ def verify(upstream_root: Path, full: bool) -> dict[str, Any]:
             "full_fixture_case_count": full_report.get("fixture_case_count") if full_report else None,
         },
         "consumer_contracts": local_contracts,
+        "request_frozen_before_execution": True,
+        "request_compiled_without_execution": compiled_ok,
+        "original_request_sha256": original_hash,
+        "contract_drift_negative_cases": negative_cases,
         "producer_validated_consumer_fixture": local_for_producer.get("status") == "pass",
         "consumer_validated_producer_fixture": consumer_report.get("status") == "pass",
         "shared_cwd_required": False,

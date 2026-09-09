@@ -15,7 +15,7 @@
       "const": "residential.super_competitiveness_plan.v0.2"
     },
     "status": {
-      "enum": [
+      "enum": ["draft",
         "minimum_three_sc_pass",
         "returned_for_research"
       ]

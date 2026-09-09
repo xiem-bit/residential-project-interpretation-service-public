@@ -186,6 +186,8 @@ def validate_request(request: dict[str, Any]) -> list[str]:
         errors,
     ):
         authorized = incremental.get("execution_authorized")
+        if "in_scope_iteration_allowed" in incremental and not isinstance(incremental["in_scope_iteration_allowed"], bool):
+            errors.append("request.incremental_policy.in_scope_iteration_allowed: 必须为布尔值")
         authorization_ref = incremental.get("authorization_ref")
         maximum = incremental.get("maximum_incremental_batches")
         if authorized is True:
@@ -445,6 +447,10 @@ def validate_adoption(
         proposed = set((response.get("sufficiency") or {}).get("proposed_incremental_query_ids") or [])
         authorized = set(decision.get("authorized_query_ids") or [])
         if decision.get("decision") == "authorize_incremental":
+            if not _nonempty(decision.get("limits")):
+                errors.append("adoption.incremental_decision.limits: 续作授权必须明确执行边界")
+            if adoption.get("accepted_by") != "residential_production_owner":
+                errors.append("adoption.accepted_by: 续作授权须由住宅生产Owner决定")
             if not authorized or not authorized.issubset(proposed):
                 errors.append("adoption.incremental_decision: 只能授权上游已提出的增量查询")
             if not (request.get("incremental_policy") or {}).get("proposal_allowed"):
@@ -455,18 +461,66 @@ def validate_adoption(
     return sorted(set(errors))
 
 
+def validate_contract_binding(
+    request: dict[str, Any], envelope: dict[str, Any], sufficiency_input: dict[str, Any] | None = None
+) -> list[str]:
+    """Compare against the pre-existing request, never reconstruct it from results."""
+    errors: list[str] = []
+    binding = envelope.get("contract_binding")
+    if not isinstance(binding, dict):
+        return ["envelope.contract_binding: 新回包及采用必须绑定原冻结请求；旧无绑定包仅可只读审阅"]
+    expected = {
+        "schema": "public_retrieval_contract_binding.v1",
+        "request_schema": REQUEST_SCHEMA,
+        "request_id": request.get("request_id"),
+        "request_sha256": canonical_json_sha256(request),
+        "acceptance_contract": request.get("acceptance_contract"),
+    }
+    for field, value in expected.items():
+        if binding.get(field) != value:
+            errors.append(f"envelope.contract_binding.{field}: 与原冻结请求不一致")
+    package_hash = binding.get("sufficiency_package_sha256")
+    if not isinstance(package_hash, str) or not SHA256.fullmatch(package_hash):
+        errors.append("envelope.contract_binding.sufficiency_package_sha256: 必须绑定实际充分性输入哈希")
+    if sufficiency_input is not None:
+        if package_hash != canonical_json_sha256(sufficiency_input):
+            errors.append("envelope.contract_binding.sufficiency_package_sha256: 与实际充分性输入不一致")
+        for field in ("request_id", "task_id"):
+            if sufficiency_input.get(field) != request.get(field):
+                errors.append(f"sufficiency_input.{field}: 与原请求不一致")
+        if sufficiency_input.get("source_request_sha256") != expected["request_sha256"]:
+            errors.append("sufficiency_input.source_request_sha256: 与原冻结请求不一致")
+        consumer = sufficiency_input.get("consumer_contract")
+        if not isinstance(consumer, dict):
+            errors.append("sufficiency_input.consumer_contract: 必须提供实际执行合同")
+        else:
+            for field, value in (request.get("acceptance_contract") or {}).items():
+                if consumer.get(field) != value:
+                    errors.append(f"sufficiency_input.consumer_contract.{field}: 与原冻结请求不一致")
+    return errors
+
+
 def validate_exchange(
     request: dict[str, Any],
     envelope: dict[str, Any],
     response: dict[str, Any],
     adoption: dict[str, Any] | None = None,
     compatibility: dict[str, Any] | None = None,
+    *,
+    sufficiency_input: dict[str, Any] | None = None,
+    allow_legacy_unbound: bool = False,
 ) -> dict[str, Any]:
     if compatibility is None:
         compatibility = json.loads(COMPATIBILITY_PATH.read_text(encoding="utf-8"))
     errors = validate_request(request)
     errors.extend(validate_envelope(envelope))
     errors.extend(validate_response(request, envelope, response, compatibility))
+    binding = envelope.get("contract_binding")
+    if binding is None and allow_legacy_unbound and adoption is None:
+        binding_status = "legacy_structure_only"
+    else:
+        binding_status = "checked"
+        errors.extend(validate_contract_binding(request, envelope, sufficiency_input))
     if adoption is not None:
         errors.extend(validate_adoption(request, envelope, response, adoption))
     errors = sorted(set(errors))
@@ -478,6 +532,8 @@ def validate_exchange(
         "request_id": request.get("request_id"),
         "package_id": envelope.get("package_id"),
         "adoption_checked": adoption is not None,
+        "contract_binding_status": binding_status,
+        "sufficiency_input_checked": sufficiency_input is not None,
         "compatibility_status": compatibility.get("status"),
         "machine_check_does_not_approve_business_quality": True,
     }
@@ -496,6 +552,8 @@ def main() -> int:
     parser.add_argument("--envelope", required=True)
     parser.add_argument("--response", required=True)
     parser.add_argument("--adoption")
+    parser.add_argument("--sufficiency-input", help="Actual upstream D237 input, for full contract/hash comparison")
+    parser.add_argument("--allow-legacy-unbound", action="store_true", help="Read old unbound packages only; cannot be used with adoption")
     parser.add_argument("--compatibility", default=str(COMPATIBILITY_PATH))
     args = parser.parse_args()
     receipt = validate_exchange(
@@ -504,6 +562,8 @@ def main() -> int:
         _load(args.response),
         _load(args.adoption) if args.adoption else None,
         _load(args.compatibility),
+        sufficiency_input=_load(args.sufficiency_input) if args.sufficiency_input else None,
+        allow_legacy_unbound=args.allow_legacy_unbound,
     )
     print(json.dumps(receipt, ensure_ascii=False, indent=2))
     return 0 if receipt["status"] == "pass" else 1

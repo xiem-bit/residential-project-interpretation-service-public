@@ -17,7 +17,7 @@
       "required": ["id", "canonical_name", "aliases", "city", "district_or_area", "location", "developer", "land_and_phase_relation", "lifecycle", "fact_cutoff", "identity_status"],
       "properties": {
         "id": {"type": "string", "minLength": 1},
-        "identity_status": {"enum": ["closed", "blocked_by_material_conflict"]}
+        "identity_status": {"enum": ["pending", "closed", "blocked_by_material_conflict"]}
       }
     },
     "authorized_inputs": {
@@ -33,6 +33,6 @@
       }
     },
     "enabled_products": {"type": "array", "uniqueItems": true, "items": {"enum": [1, 2, 3, 5]}},
-    "status": {"enum": ["project_identity_closed", "blocked_by_identity_or_rights"]}
+    "status": {"enum": ["research_in_progress", "project_identity_closed", "blocked_by_identity_or_rights"]}
   }
 }

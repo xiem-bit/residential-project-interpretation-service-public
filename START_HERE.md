@@ -65,10 +65,11 @@ python3 tools/production_core/validate_upstream_exchange.py \
   --request <request.json> \
   --envelope <public-evidence-envelope.json> \
   --response <response.json> \
-  --adoption <adoption-receipt.json>
+  --adoption <adoption-receipt.json> \
+  --sufficiency-input <sufficiency-input.json>
 ```
 
-该检查确认请求、证据、回传和采用回执没有丢失边界，不会替住宅生产 Owner 判断证据是否足以形成商业结论。
+新回包须绑定原请求与实际充分性输入，旧包先保留材料并按原合同重包。不得降低原请求门槛来迁就回包。该检查确认请求、证据、回传和采用回执没有丢失边界，不会替住宅生产 Owner 判断证据是否足以形成商业结论。
 
 ## 五、业务通过与载体通过分开记录
 

@@ -20,6 +20,74 @@ class UpstreamExchangeTest(unittest.TestCase):
         self.envelope = json.loads((fixture_root / "public-evidence-envelope.json").read_text(encoding="utf-8"))
         self.response = json.loads((fixture_root / "response.json").read_text(encoding="utf-8"))
         self.adoption = json.loads((fixture_root / "adoption-receipt.json").read_text(encoding="utf-8"))
+        self.sufficiency_input = json.loads((fixture_root / "sufficiency-input.json").read_text(encoding="utf-8"))
+
+    def test_full_binding_matches_actual_sufficiency_input(self) -> None:
+        receipt = validate_exchange(self.request, self.envelope, self.response, self.adoption, sufficiency_input=self.sufficiency_input)
+        self.assertEqual(receipt["status"], "pass", receipt["errors"])
+        self.assertTrue(receipt["sufficiency_input_checked"])
+
+    def test_original_contract_changes_are_detected_even_when_modes_match(self) -> None:
+        for field, changed in (
+            ("count_threshold", 1),
+            ("quality_criteria", ["原文可回源"]),
+            ("diversity_requirements", {"minimum_source_role_count": 1, "minimum_project_or_brand_count": 1, "maximum_qualified_items_per_project_or_brand": 10}),
+        ):
+            with self.subTest(field=field):
+                request = copy.deepcopy(self.request)
+                request["acceptance_contract"][field] = changed
+                receipt = validate_exchange(request, self.envelope, self.response)
+                self.assertTrue(any("contract_binding.request_sha256" in e for e in receipt["errors"]))
+
+    def test_sufficiency_input_cannot_substitute_another_contract(self) -> None:
+        sufficiency = copy.deepcopy(self.sufficiency_input)
+        sufficiency["consumer_contract"]["count_threshold"] = 1
+        envelope = copy.deepcopy(self.envelope)
+        envelope["contract_binding"]["sufficiency_package_sha256"] = canonical_json_sha256(sufficiency)
+        response = copy.deepcopy(self.response)
+        response["evidence_envelope"]["content_sha256"] = canonical_json_sha256(envelope)
+        receipt = validate_exchange(self.request, envelope, response, sufficiency_input=sufficiency)
+        self.assertTrue(any("consumer_contract.count_threshold" in e for e in receipt["errors"]))
+
+    def test_mismatched_acceptance_mode_is_rejected(self) -> None:
+        envelope = copy.deepcopy(self.envelope)
+        envelope["query_execution"]["acceptance_mode"] = "quality_sufficiency"
+        response = copy.deepcopy(self.response)
+        response["sufficiency"]["acceptance_mode"] = "quality_sufficiency"
+        response["evidence_envelope"]["content_sha256"] = canonical_json_sha256(envelope)
+        receipt = validate_exchange(self.request, envelope, response)
+        self.assertTrue(any("请求与执行口径不一致" in e for e in receipt["errors"]))
+
+    def test_legacy_package_is_read_only_and_cannot_be_adopted(self) -> None:
+        envelope = copy.deepcopy(self.envelope)
+        envelope.pop("contract_binding")
+        response = copy.deepcopy(self.response)
+        response["evidence_envelope"]["content_sha256"] = canonical_json_sha256(envelope)
+        receipt = validate_exchange(self.request, envelope, response)
+        self.assertEqual(receipt["status"], "fail")
+        receipt = validate_exchange(self.request, envelope, response, allow_legacy_unbound=True)
+        self.assertEqual(receipt["status"], "pass", receipt["errors"])
+        self.assertEqual(receipt["contract_binding_status"], "legacy_structure_only")
+        adoption = copy.deepcopy(self.adoption)
+        adoption["evidence_package"]["content_sha256"] = canonical_json_sha256(envelope)
+        receipt = validate_exchange(self.request, envelope, response, adoption, allow_legacy_unbound=True)
+        self.assertTrue(any("contract_binding" in e for e in receipt["errors"]))
+
+    def test_same_task_cannot_accept_another_request_binding(self) -> None:
+        request = copy.deepcopy(self.request)
+        request["request_id"] = "REQUEST-OTHER"
+        receipt = validate_exchange(request, self.envelope, self.response)
+        self.assertTrue(any("contract_binding.request_id" in e for e in receipt["errors"]))
+
+    def test_followup_authorization_preserves_original_request(self) -> None:
+        original = copy.deepcopy(self.request)
+        self.assertFalse(original["incremental_policy"]["execution_authorized"])
+        receipt = validate_exchange(self.request, self.envelope, self.response, self.adoption)
+        self.assertEqual(receipt["status"], "pass", receipt["errors"])
+        self.assertEqual(self.request, original)
+        adoption = copy.deepcopy(self.adoption)
+        adoption["incremental_decision"]["limits"] = None
+        self.assertTrue(any("limits" in e for e in validate_exchange(self.request, self.envelope, self.response, adoption)["errors"]))
 
     def test_public_safe_round_trip_passes_against_frozen_candidate(self) -> None:
         receipt = validate_exchange(self.request, self.envelope, self.response, self.adoption)

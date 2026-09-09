@@ -1,8 +1,8 @@
 {
   "schema": "residential.public_rc_source_manifest.v0.2",
-  "version": "v0.2.0-rc.7",
+  "version": "v0.2.0-rc.8",
   "status": "versioned_source_manifest",
-  "release_tag": "v0.2.0-rc.7",
+  "release_tag": "v0.2.0-rc.8",
   "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc",
   "excluded": [
     ".git/**",
@@ -16,8 +16,8 @@
     ".DS_Store",
     "RELEASE_MANIFEST.json"
   ],
-  "file_count": 673,
-  "tree_sha256": "8d444ba274aa0162bfa2fabe246f08a22ab92a4d1de53a0dbe6d1caa534ce238",
+  "file_count": 676,
+  "tree_sha256": "fa5a9a486adb96daa7fe8b7e76fb2d216018c6b9040b79ae9570a179f8e15e87",
   "files": [
     {
       "path": ".github/workflows/rc-verify.yml",
@@ -36,8 +36,8 @@
     },
     {
       "path": "AGENT_RULES.md",
-      "bytes": 15580,
-      "sha256": "ad1600e07fa4a1f9ad56333b2606a211f1498de26925db93045bce8d9196c8cf"
+      "bytes": 16015,
+      "sha256": "e301ee39ede80e8312ce54a023cfe4f584f44fbfdfd104e03ed19885571faeac"
     },
     {
       "path": "A_CLASS_ALLOWLIST.txt",
@@ -71,8 +71,8 @@
     },
     {
       "path": "INSTALL.md",
-      "bytes": 8908,
-      "sha256": "c65ee8672b2b9422949fdcd4e7016129551563df58a253dd142453cb9286ff4a"
+      "bytes": 9377,
+      "sha256": "4401cc75a1c00ebfb528927a7ddc3a722a4c31170ebd506add06ec233dc9d19a"
     },
     {
       "path": "LICENSE",
@@ -96,8 +96,8 @@
     },
     {
       "path": "PUBLIC_CORE_MANIFEST.json",
-      "bytes": 4468,
-      "sha256": "e8fb964d68cb9c276d291e6c1bd64a947ade65b9294ccc801550dc58db94b2bc"
+      "bytes": 4809,
+      "sha256": "ceb42ad8f41e55b9070f8dd4f3c2738871ee3a80192f30fb3332b0d4af74bf41"
     },
     {
       "path": "RC1_E2E_VERIFICATION.json",
@@ -106,13 +106,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 4260,
-      "sha256": "4789e8f918f2329df63f31c40790a87569a4532900efb6d7df2945035aad85ec"
+      "bytes": 4305,
+      "sha256": "b1be25dc83826ee2180d23a05da7a4cae1fc91ec28618963c0c2cc34195345bb"
+    },
+    {
+      "path": "RELEASE_NOTES_0.2.0-rc.8.md",
+      "bytes": 1333,
+      "sha256": "2fda04c7ac0c0bc607f7e2a293229dba1186719661346cc3e5c29f40e75ec9ec"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 4065,
-      "sha256": "bd87e35a4ebea11a17883ab9743e514af4c0e17070984b938a56f6e6d4a9987c"
+      "bytes": 4878,
+      "sha256": "c8e255429c39aa2dbda5b85828c9988d8080510d8e6df70b19a2d679479311d9"
     },
     {
       "path": "RETIRED_AND_PRIVATE_BOUNDARY.md",
@@ -136,8 +141,8 @@
     },
     {
       "path": "START_HERE.md",
-      "bytes": 5415,
-      "sha256": "bd01c26d3034ae67dbd2370ada77d812afe48089a8cf96fbb5aa0e603306dc82"
+      "bytes": 5608,
+      "sha256": "c43f714c6e26efc13405563ac300f85a51b37fe336406ccfd3f36ddd6400e6ae"
     },
     {
       "path": "THIRD_PARTY_LICENSES.json",
@@ -256,8 +261,8 @@
     },
     {
       "path": "core/01-项目任务与输入治理.md",
-      "bytes": 4621,
-      "sha256": "b7469bc9e9caa0274386b6a5803894edc8eab64dd1a6d623d3eee6d504ef9dae"
+      "bytes": 5007,
+      "sha256": "dae706ac90638bccb7894b9a0b6581018f8eb5f2166a97f65f00c3c04fe0d06b"
     },
     {
       "path": "core/02-产物1竞争态势研究.md",
@@ -806,18 +811,23 @@
     },
     {
       "path": "external-capabilities/README.md",
-      "bytes": 4007,
-      "sha256": "52c1b92eaf91d0a51774cd825e9cbe798dea06758ff2eb06b350b4d1bd6d778f"
+      "bytes": 5018,
+      "sha256": "5cd74216421d0a22ae4f6974dbf46b46c48a9f1897b22cbced36bc1ad2353e93"
+    },
+    {
+      "path": "external-capabilities/conformance-history/rc1.json",
+      "bytes": 3411,
+      "sha256": "53f1f1779bf3f183f384df197dc7842d8b85c0e3ed7b321007f59cfa26c9afcd"
     },
     {
       "path": "external-capabilities/cross-package-compatibility.json",
-      "bytes": 2972,
-      "sha256": "cf5a72a652bf7151f6f6ad40ad6dd0268570a6c2f014394839b8d30d49ae8b5c"
+      "bytes": 2961,
+      "sha256": "052411015a53c70d15da2a1782621503b730dc5d519a8d9513dfdee4ea1c0ad0"
     },
     {
       "path": "external-capabilities/cross-package-conformance-receipt.json",
-      "bytes": 3411,
-      "sha256": "53f1f1779bf3f183f384df197dc7842d8b85c0e3ed7b321007f59cfa26c9afcd"
+      "bytes": 4239,
+      "sha256": "bafca9b9579ad2c33111f1236b3f8eaf43bc9ece529c09eb8e85ddebdf1d6429"
     },
     {
       "path": "external-capabilities/upstream-adoption-receipt.schema.json",
@@ -831,8 +841,8 @@
     },
     {
       "path": "external-capabilities/upstream-task.schema.json",
-      "bytes": 7939,
-      "sha256": "12f7ed916755bc37a870a6eb893210cc7e0fbc35ecea443f8e8d10bbe102b271"
+      "bytes": 10904,
+      "sha256": "1cafb6531f34518d7d110f21ad9242aa9bf8ab18ae1d295e1b3a9c519336c32a"
     },
     {
       "path": "fixtures/client-review/external-resource.md",
@@ -871,13 +881,13 @@
     },
     {
       "path": "fixtures/upstream-exchange/adoption-receipt.json",
-      "bytes": 1788,
-      "sha256": "5bba78097d240092ff3ee65c9fbf766bede0a24e16936936849a3a9c67f0d642"
+      "bytes": 1910,
+      "sha256": "edbd1b12518c9ca7070bbeebe8f57947ab0ce7424fd4199819f89b1331b4b296"
     },
     {
       "path": "fixtures/upstream-exchange/public-evidence-envelope.json",
-      "bytes": 5793,
-      "sha256": "c6ebde0b2d50c8319c6fca6110d4c47399e25a1c366c3e88d7aaf65fc7954e0c"
+      "bytes": 7287,
+      "sha256": "452c06380ded03cfafc23caa11aa3013831ba970212a8e713aee3e44b8b71c37"
     },
     {
       "path": "fixtures/upstream-exchange/request.json",
@@ -886,8 +896,13 @@
     },
     {
       "path": "fixtures/upstream-exchange/response.json",
-      "bytes": 1308,
-      "sha256": "2f42108a1f346ef1d0ab0a5a94d9717199b31c58ecfdc7e5397fda2c9c3f4978"
+      "bytes": 1362,
+      "sha256": "7b967d8b4f86e6c4df76d97173d0da3c3a5557d599b15371b789d41904bc5340"
+    },
+    {
+      "path": "fixtures/upstream-exchange/sufficiency-input.json",
+      "bytes": 4562,
+      "sha256": "a3c648ee35d1a8964270a700bccc42bb28cd79a4fd9efc1eef2e4b0ff68cdf21"
     },
     {
       "path": "references/AUTHORIZED_REFERENCE_ASSETS.md",
@@ -2631,23 +2646,23 @@
     },
     {
       "path": "schemas/fact-gap-register.schema.json",
-      "bytes": 1448,
-      "sha256": "7ebb586262f7d92df10d223409f09951126a3e321ddef363610cd2524bd5d488"
+      "bytes": 1462,
+      "sha256": "b262cbfbe9c92d076969cc7cb913de1778e21a9fcbe28f3bf4f20e6e4209c604"
     },
     {
       "path": "schemas/product-enablement.schema.json",
-      "bytes": 1101,
-      "sha256": "a1ab02c243b977cbbe8c8b3434f5e6b046bbb4479141e3fee0a6387b206b81ee"
+      "bytes": 1112,
+      "sha256": "4f6e922492bc58221a3382ef905f764ddb36c91ac5aff3588fb1b13397adedab"
     },
     {
       "path": "schemas/product1-summary.schema.json",
-      "bytes": 1396,
-      "sha256": "425e234d0be00ffe470bc870ae3566c9a100be398f8b05cefde6709fb5a4a82a"
+      "bytes": 1404,
+      "sha256": "e7187844b518a3910b83763dcd873d8f3829191d04c844b10cc48750283e402d"
     },
     {
       "path": "schemas/product2-summary.schema.json",
-      "bytes": 864,
-      "sha256": "5d4c87aa88d08d2b8386d0be4fc6e91661c9376aba0493a665c49dceccde4ead"
+      "bytes": 873,
+      "sha256": "ba82bd1badd4ceeeab0bbca59eb31147d08ae2ed81c0334ee2777fd3ccb38c6d"
     },
     {
       "path": "schemas/product5-interaction-blueprint.schema.json",
@@ -2661,23 +2676,23 @@
     },
     {
       "path": "schemas/project-contract.schema.json",
-      "bytes": 1923,
-      "sha256": "caadc064660d207fa621771a4bd59f85e2138720e31e1cbf296846dd09721224"
+      "bytes": 1958,
+      "sha256": "4cd0cbedd16783bd70a96c7852d7084d69ba1fbc9f80a504f6a3c522a0cca321"
     },
     {
       "path": "schemas/semantic-core.schema.json",
-      "bytes": 923,
-      "sha256": "3c7c0a7873ba8937d93932e47b2af85b7331bdae642e8b91a4bc25375d2c5a79"
+      "bytes": 932,
+      "sha256": "724a896ac3ef69bdb3fb8f7fad3c3d1b3c8f019f5e39cabd48fe2d30d87ffaf4"
     },
     {
       "path": "schemas/super-competitiveness-plan.schema.json",
-      "bytes": 2844,
-      "sha256": "8045ac861ab4c344a2300de566bd4251126f5b5f2c32dfa460acd020ae507f5f"
+      "bytes": 2852,
+      "sha256": "6c233a2bc50593f31dea60370e707a3d2ca75a1378d23278c4617154b6ad3513"
     },
     {
       "path": "schemas/ue-solution-handoff.schema.json",
-      "bytes": 504,
-      "sha256": "5172f49e53b40a595cf873ef49bde0a611eda59023236d4344b8da5bd19c5933"
+      "bytes": 513,
+      "sha256": "c5ccdd9c34c94d8e9c986dfc0e9c7fb66988c0049b97dacca605a044012a227c"
     },
     {
       "path": "scripts/build_release_manifest.py",
@@ -2696,8 +2711,8 @@
     },
     {
       "path": "scripts/init_production_run.py",
-      "bytes": 6199,
-      "sha256": "d7a85a37cf20aecb44e5d318c6228270c1d5884df7a062f4f94511f8a53e1d47"
+      "bytes": 7398,
+      "sha256": "17b9ca9fac621cb3e63cab6be80310c1e8a1c66b76302782bcf21877f27bbe44"
     },
     {
       "path": "scripts/prepare_external_cold_start.py",
@@ -2716,8 +2731,8 @@
     },
     {
       "path": "scripts/verify_cross_package_conformance.py",
-      "bytes": 13114,
-      "sha256": "b0bac8d9bef33c6c902c51811c03750a067355fdbf2b8c16fcca4edd5330e80b"
+      "bytes": 15107,
+      "sha256": "b01f1a18519acfc2973e66aeec794092d766d5fd52d65ca1366f280611b07c95"
     },
     {
       "path": "scripts/verify_external_cold_start.py",
@@ -2736,13 +2751,13 @@
     },
     {
       "path": "templates/UE解决方案交接.template.json",
-      "bytes": 469,
-      "sha256": "81026acfc70c5bf78425b709d35a7eef7088c58cc6a59cf830829eeb3270da48"
+      "bytes": 451,
+      "sha256": "0810f13230638d60dc21b61670c9256d45cf84335ed29b5ac2a856545095517d"
     },
     {
       "path": "templates/事实冲突缺口登记表.template.json",
-      "bytes": 1347,
-      "sha256": "52d5afde86e415c5a54985446a41e722e4266ee6a90fc530cce5beebe1c9b612"
+      "bytes": 1013,
+      "sha256": "3e817dbfd44ee1f9b0a09f44491f679c8196f0d1e62e175a2293b9580a59dd17"
     },
     {
       "path": "templates/产物1竞争态势研究.template.md",
@@ -2751,8 +2766,8 @@
     },
     {
       "path": "templates/产物1竞争态势研究摘要.template.json",
-      "bytes": 1631,
-      "sha256": "11e6f0233d3916aa8aaec85855fb8076cd267d37ccd2f49633abde8107b89610"
+      "bytes": 1820,
+      "sha256": "1bef91af259a21b0f92fcede16810c91bded7d48740cc1bdf67e2e677be20247"
     },
     {
       "path": "templates/产物2购买决策研究.template.md",
@@ -2761,13 +2776,13 @@
     },
     {
       "path": "templates/产物2购买决策研究摘要.template.json",
-      "bytes": 987,
-      "sha256": "70f9a8108e05b5dd8f14bf21995c9bb18ef1ffff86b8bc8d9960a42a2a6e0e81"
+      "bytes": 1095,
+      "sha256": "7fd828b52eaf1934b9233131976c714bc20f7757fb73674f8a47f68d1da72c61"
     },
     {
       "path": "templates/产物3第三章UE合同.template.json",
-      "bytes": 4504,
-      "sha256": "f0e23572d0d5e5e949bf134d34d22b393725e8d3c0c3217dbd7bc34799edec8a"
+      "bytes": 4501,
+      "sha256": "ed8d9bb7ca30b49b6d660c9256567c7fdbebe9d0f8373f139259fa4fd7e1d93c"
     },
     {
       "path": "templates/产物3第三章生产消费合同.template.json",
@@ -2776,8 +2791,8 @@
     },
     {
       "path": "templates/产物3第二章战略合同.template.json",
-      "bytes": 1072,
-      "sha256": "67c3b892f46969c99d15fe9cd9a2cae47652532deb8aab4ea87861f18f5bcc3b"
+      "bytes": 1069,
+      "sha256": "3b651934f60de1f252b7ef4fab51e3128158c58d0def6cb7c4f67d27443e28b1"
     },
     {
       "path": "templates/产物3第二章生产消费合同.template.json",
@@ -2791,8 +2806,8 @@
     },
     {
       "path": "templates/产物启用矩阵.template.json",
-      "bytes": 963,
-      "sha256": "3c5aa9ac9a7e5d64643a8c5aa33c0fcea2daaf0aec26de1506a821a87553e6e1"
+      "bytes": 1111,
+      "sha256": "3c476db5be0ed27590b76c6337af1c7540c4a61b188923914b24a4acc1cdb791"
     },
     {
       "path": "templates/变更影响登记表.template.json",
@@ -2806,23 +2821,23 @@
     },
     {
       "path": "templates/生产回执.template.json",
-      "bytes": 753,
-      "sha256": "76d9d88c491b8cde5d3042c624992529d8747f467be7a64d7813162f300ab1bc"
+      "bytes": 827,
+      "sha256": "cdb6fe8d8488c87d0d84ac6a93785043802a50cc1f1966f07f5398b5906bdbbd"
     },
     {
       "path": "templates/真实项目有效任务合同.md",
-      "bytes": 4369,
-      "sha256": "8f03e17513e19c4f9b64e978d5761235f1824c4ef08101cc1d443ec41f21a207"
+      "bytes": 4367,
+      "sha256": "9e6a8f64f984f09f6eaca4e24b5b957494a080a3a1b7e65c12a0d6a530c541a8"
     },
     {
       "path": "templates/统一语义核.template.json",
-      "bytes": 1616,
-      "sha256": "139f5f4bb46354b4b8dda5ec7278c79d91cbb5a0f1298b68d70e0865b0539958"
+      "bytes": 1831,
+      "sha256": "224376287490a49b7347e61ac99d7d665ee98a6f19618f149d9c1e97a74bf2ed"
     },
     {
       "path": "templates/超级竞争力与制作规划.template.json",
-      "bytes": 2562,
-      "sha256": "eb2b7c97ebd6badc1295902348a2956ef114aeb1c0e74f68f1d0a42666aa0b5a"
+      "bytes": 3358,
+      "sha256": "17a02e234d37530524fcc8c2bec9f515bf0f17ef77030f9733b1df4530f9d9c3"
     },
     {
       "path": "templates/附表A-上游检索任务与回传.md",
@@ -2861,8 +2876,8 @@
     },
     {
       "path": "tests/test_cross_package_conformance.py",
-      "bytes": 3286,
-      "sha256": "db79bb25ca45cd92003619c4c049e8f6d01470f7cfb658826eb2dc0522ab4797"
+      "bytes": 3642,
+      "sha256": "a5a12f4cdf949d3233ad48d00dec94e76449bda47ce55ff51f7a62524cafebd2"
     },
     {
       "path": "tests/test_external_cold_start_protocol.py",
@@ -2886,8 +2901,8 @@
     },
     {
       "path": "tests/test_production_path_v02.py",
-      "bytes": 16398,
-      "sha256": "e651be53fe575941e303692ab0162f6e7c7d637a81739905e1405c0d19761206"
+      "bytes": 19114,
+      "sha256": "eb334aae9e06b44c25057b742abd8231e4d5ea6b8729c0a1cfa8e54104c4ce80"
     },
     {
       "path": "tests/test_production_reference_library.py",
@@ -2897,7 +2912,7 @@
     {
       "path": "tests/test_public_release_state.py",
       "bytes": 5862,
-      "sha256": "5d29f7bf99b9b93d02a88b5d42c1eb073e59caf562c81897faa47b300d3f1001"
+      "sha256": "3a9ec178063ced286ec82869eeaea362658daf9d71b23f314a117cb988ed22c7"
     },
     {
       "path": "tests/test_rc1_contracts.py",
@@ -2906,8 +2921,8 @@
     },
     {
       "path": "tests/test_upstream_exchange.py",
-      "bytes": 6368,
-      "sha256": "d7f93766f131cc44147a7ef717c37474a66f6334d4e6baf854754bea5292c601"
+      "bytes": 10840,
+      "sha256": "b7e8f371455e1b16d77c761d575b47341a517918d03c16932bc1843995fe7f31"
     },
     {
       "path": "tools/chinese_copy_lint/affirmative_statement_lint.py",
@@ -3296,8 +3311,8 @@
     },
     {
       "path": "tools/production_core/validate_upstream_exchange.py",
-      "bytes": 27628,
-      "sha256": "baade5e00b36c940698f3a4e3c07d55faade5e9499f7b1f0d7dec7138199faa3"
+      "bytes": 31413,
+      "sha256": "b377f57573e9ad3da8f1056564b319b2cb0a6981a36b961807e42834e9f4bbaa"
     },
     {
       "path": "tools/rc1/build_demo_contracts.py",

@@ -28,6 +28,6 @@
         "required": ["id", "relation_id", "source_refs", "target_claim", "target_level", "boundary", "bridge_refs", "decision", "target_refs"]
       }
     },
-    "freeze_status": {"enum": ["input_frozen", "input_frozen_with_declared_gaps", "blocked_by_material_conflict"]}
+    "freeze_status": {"enum": ["not_frozen", "input_frozen", "input_frozen_with_declared_gaps", "blocked_by_material_conflict"]}
   }
 }

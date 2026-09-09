@@ -1,7 +1,7 @@
 {
   "schema": "residential-competitiveness-public-core-manifest.v0.6",
   "status": "public_prerelease_p123_default_production_apache_2_0",
-  "candidate": "v0.2.0-rc.7",
+  "candidate": "v0.2.0-rc.8",
   "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc",
   "extraction_policy": "committed_source_semantic_parity_and_existing_authorized_asset_scope",
   "authority_map": "PRODUCTION_AUTHORITY_MAP.json",
@@ -26,9 +26,9 @@
     "repository": "https://github.com/xiem-bit/residential-project-interpretation-service-public",
     "visibility": "public",
     "latest_published_tag_immutable": true,
-    "candidate_tag": "v0.2.0-rc.7",
-    "release_tag": "v0.2.0-rc.7",
-    "previous_release_tag": "v0.2.0-rc.6",
+    "candidate_tag": "v0.2.0-rc.8",
+    "release_tag": "v0.2.0-rc.8",
+    "previous_release_tag": "v0.2.0-rc.7",
     "publication_status_authority": "GitHub Release and immutable tag",
     "candidate_publish_gate": "existing_checks_and_clean_default_entry_representative_pages"
   },
@@ -110,5 +110,16 @@
     "private_git_history"
   ],
   "release_scope": "V0_2_RELEASE_SCOPE.md",
-  "dependency_exceptions": "DEPENDENCY_EXCEPTIONS.json"
+  "dependency_exceptions": "DEPENDENCY_EXCEPTIONS.json",
+  "public_native_updates": {
+    "version": "v0.2.0-rc.8",
+    "scope": [
+      "immutable_request_binding",
+      "task_scope_iteration_policy",
+      "blank_initialization_states",
+      "request_first_offline_conformance"
+    ],
+    "record": "RELEASE_NOTES_0.2.0-rc.8.md",
+    "historical_private_production_source_unchanged": true
+  }
 }

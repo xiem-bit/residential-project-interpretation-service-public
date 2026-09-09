@@ -2,7 +2,7 @@
   "schema": "residential.product3_chapter3_ue_contract.v0.2",
   "project_id": "PROJECT-001",
   "semantic_version": "SEM-001",
-  "status": "complete",
+  "status": "draft",
   "value_anchor": {
     "text": "与第二章一致的价值锚点",
     "source_ref": "VALUE-ANCHOR",

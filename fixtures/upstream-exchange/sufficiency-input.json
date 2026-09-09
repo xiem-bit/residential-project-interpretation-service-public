@@ -1,0 +1,141 @@
+{
+  "schema": "adaptive_query_sufficiency_package.v1",
+  "task_id": "TASK-PUBLIC-001",
+  "business_question_ref": "RQ-PUBLIC-001",
+  "business_question_family": "虚构住宅归家体验联动样例",
+  "consumer_contract": {
+    "acceptance_mode": "hybrid",
+    "qualified_match_classes": [
+      "direct",
+      "supporting"
+    ],
+    "quality_criteria": [
+      "对象身份闭合",
+      "原文可回源",
+      "支持与反例同时保留",
+      "证据用途边界明确"
+    ],
+    "count_threshold": 4,
+    "diversity_requirements": {
+      "minimum_source_role_count": 2,
+      "minimum_project_or_brand_count": 2,
+      "maximum_qualified_items_per_project_or_brand": 2
+    },
+    "research_characteristics": [
+      "multiple_independent_queries",
+      "support_and_counterevidence_required",
+      "source_or_project_diversity_required",
+      "comparative_or_pattern_judgment",
+      "adaptive_extension_possible"
+    ],
+    "non_counted_match_classes": [
+      "excluded"
+    ],
+    "evidence_usage_permission": "内部研究候选，不直接升级为项目硬事实、总体比例或超级竞争力",
+    "adaptive_extension": {
+      "authorized": false,
+      "authorization_ref": null,
+      "maximum_incremental_batches": 0,
+      "time_limit_minutes": 0,
+      "cost_limit": null
+    }
+  },
+  "batch": {
+    "batch_id": "RQ-PUBLIC-001-B1",
+    "batch_state": "initial_frozen_batch",
+    "parent_batch_id": null,
+    "queries": [
+      {
+        "query_id": "q01",
+        "exact_query_text": "某城市 示例项目 归家体验 入住后",
+        "term_provenance": [
+          "business_question",
+          "customer_task",
+          "counterevidence_required"
+        ],
+        "minimum_result_batches": 2,
+        "minimum_actual_opens": 2,
+        "atom_signature": [
+          "identity:城市",
+          "identity:正式名",
+          "lifecycle:交付",
+          "business_intent:使用体验"
+        ]
+      }
+    ]
+  },
+  "receipt": {
+    "evidence_sufficiency_status": "partially_sufficient",
+    "marginal_information_gain": {
+      "assessment": "medium",
+      "new_qualified_count": 2,
+      "new_distinct_source_role_count": 2,
+      "new_qualified_project_or_brand_count": 1,
+      "new_expression_pattern_count": 2,
+      "duplicate_rate": 0.2,
+      "assessment_basis": "初始批次补足两个有效选择机制，但项目多样性仍不足"
+    },
+    "failure_class": "content_supply_gap",
+    "needs_downstream_authorization": false,
+    "remaining_gap": "虚构样例只有两项可采用候选，原合同要求四项及两个项目；当前仍有冲突和缺口",
+    "stop_reason": "初始冻结查询完成，当前部分充分；未获增量授权，不执行增量提案",
+    "executed_result_batch_count": 2,
+    "actual_open_count": 2,
+    "cumulative_evidence": [
+      {
+        "evidence_item_id": "ITEM-F1",
+        "project_or_brand_id": "PROJECT-PUBLIC-001",
+        "source_role": "official_fact_source",
+        "source_id": "SRC-OFFICIAL-01"
+      },
+      {
+        "evidence_item_id": "ITEM-S1",
+        "project_or_brand_id": "PROJECT-PUBLIC-001",
+        "source_role": "owner_experience",
+        "source_id": "SRC-SOCIAL-01"
+      }
+    ]
+  },
+  "query_learning_records": [
+    {
+      "query_id": "q01",
+      "exact_query_text": "某城市 示例项目 归家体验 入住后",
+      "attribution_status": "recorded",
+      "discovery_evidence_item_ids": [
+        "ITEM-F1",
+        "ITEM-S1"
+      ],
+      "revisit_evidence_item_ids": [],
+      "qualification_counts": {
+        "direct": 1,
+        "supporting": 1,
+        "excluded": 1
+      },
+      "qualified_count": 2,
+      "qualified_rate": 0.6667,
+      "qualified_project_or_brand_count": 1,
+      "result_batch_count": 2,
+      "actual_open_count": 2,
+      "marginal_information_gain": "medium",
+      "effective_terms": [
+        "交付后",
+        "使用体验"
+      ],
+      "low_efficiency_terms": [],
+      "identity_or_object_drift": [],
+      "failure_class": "content_supply_gap",
+      "stop_reason": "虚构样例完成两批与两次开读；独立竞品反例和原任务数量仍有缺口",
+      "validated_task_count": 1,
+      "recommended_query_status": "candidate",
+      "human_review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewed_at": null,
+        "review_batch_id": null
+      }
+    }
+  ],
+  "promotion_review_batches": [],
+  "request_id": "RQ-PUBLIC-001",
+  "source_request_sha256": "e03fac1e8ef4bcb9f01114e8523b8e0c2f8772a6cd849f258b4920bc688607b1"
+}
