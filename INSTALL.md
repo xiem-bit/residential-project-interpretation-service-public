@@ -2,10 +2,10 @@
 
 这套公开包的推荐安装方式是完整克隆仓库，并把仓库根目录作为Codex项目打开。`AGENTS.md`、现行生产Skill、业务合同、机器门禁、黄金参考和学习反馈必须一起存在；只复制PPT模板、网页源码或单个Skill无法继承完整能力。
 
-当前公开预发行标签为`v0.2.0-rc.8`。`v0.1.0-rc.1`只代表历史载体演示，`v0.2.0-rc.1`已由CI修复版`rc.2`取代。推荐固定标签安装：
+当前公开预发行标签为`v0.2.0-rc.9`。`v0.1.0-rc.1`只代表历史载体演示，`v0.2.0-rc.1`已由CI修复版`rc.2`取代。推荐固定标签安装：
 
 ```bash
-git clone --branch v0.2.0-rc.8 \
+git clone --branch v0.2.0-rc.9 \
   https://github.com/xiem-bit/residential-project-interpretation-service-public.git
 cd residential-project-interpretation-service-public
 python3 -m pip install Pillow
@@ -79,13 +79,13 @@ python3 scripts/verify_production_run.py \
 
 下面这段适用于首次安装和从旧版升级，可整段复制给Codex：
 
-> 请在当前电脑安装或升级“住宅项目竞争力工程”公开预发行版 v0.2.0-rc.8。
+> 请在当前电脑安装或升级“住宅项目竞争力工程”公开预发行版 v0.2.0-rc.9。
 >
-> 官方仓库：https://github.com/xiem-bit/residential-project-interpretation-service-public 。固定版本：v0.2.0-rc.8；下载页：https://github.com/xiem-bit/residential-project-interpretation-service-public/releases/tag/v0.2.0-rc.8 。
+> 官方仓库：https://github.com/xiem-bit/residential-project-interpretation-service-public 。固定版本：v0.2.0-rc.9；下载页：https://github.com/xiem-bit/residential-project-interpretation-service-public/releases/tag/v0.2.0-rc.9 。
 >
 > 先识别现有安装目录、版本和未提交改动。新装时完整克隆固定标签；升级时保留已有项目、个人改动及账号配置。原目录有改动或用途不清时，在相邻的新目录安装固定版本，保留旧目录，不强制重置或清理工作区。不要只复制单个Skill，也不要把持续变化的main当作这个固定发行版。
 >
-> 如本机同时使用公开信息工具包，将实际调用的工程目录及插件一并更新到v0.8.0-rc.6，按其固定版本安装说明核对；保留已有项目、任务记录和检索材料。
+> 如本机同时使用公开信息工具包，核对已有版本与接口兼容记录。住宅rc.9沿用rc.8接口，本轮不要求降级或重装已兼容的上游；首次安装可按既有v0.8.0-rc.6固定版本说明配置。保留已有项目、任务记录和检索材料。
 >
 > 在新版本根目录读取AGENTS.md、INSTALL.md和START_HERE.md，按说明配置独立Python环境与Pillow，执行 scripts/check_environment.py --profile production-core --run-tests。根据本次需要再检查产物3或产物5的依赖；仅安装研究能力时不额外安装Node、浏览器或演示引擎。专业演示能力、渠道账号及权限沿用本机可用配置，缺少的明确说明。
 >
@@ -103,3 +103,7 @@ python3 scripts/verify_production_run.py \
 恢复旧任务前先查看已有任务状态和文件，不重复创建任务，不重新初始化已有项目。保留原request、证据、引用与缺口；旧无绑定包可只读审阅，进入新采用流程前由上游用原请求及已有材料重新核算充分性、补齐绑定并重包。仅封装修正时不新增检索，原请求、来源、证据项、负命中、冲突和缺口保持。确有材料缺口时，再依据有效任务授权决定续查。用户明确的停止条件继续有效；平台拒绝须按其理由处理，账号用量恢复由账号侧单独处理。
 
 完整更新记录见[rc.8说明](RELEASE_NOTES_0.2.0-rc.8.md)。本次安装升级不自动启动旧任务或新的住宅研究。
+
+## 八、rc.9规则升级
+
+本版规则增量见[更新说明](RELEASE_NOTES_0.2.0-rc.9.md)。沿用rc.8机器接口及已有上游兼容记录；本轮不要求升级上游。保留旧项目、既有请求和采用材料，只在后续已授权任务中应用更新的竞品与协作规则，不自动重新检索或改写历史结论。

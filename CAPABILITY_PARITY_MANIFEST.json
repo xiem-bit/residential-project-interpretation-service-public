@@ -1,11 +1,12 @@
 {
   "schema": "residential.capability_parity_manifest.v1",
-  "candidate_version": "v0.2.0-rc.7",
+  "candidate_version": "v0.2.0-rc.9",
   "status": "p123_current_rules_templates_data_and_default_entry",
   "source_baseline": {
     "role": "private_method_and_gold_authority",
-    "commit": "78a4d17a9a35697024a263588426c8da10030ddc",
-    "authority_map": "PRODUCTION_AUTHORITY_MAP.json"
+    "commit": "f536d70fa1020a7049679872506b57a7e3e7989d",
+    "authority_map": "PRODUCTION_AUTHORITY_MAP.json",
+    "incremental_sync_record": "MAINLINE_SYNC_20260922.md"
   },
   "public_candidate": {
     "branch": "main",

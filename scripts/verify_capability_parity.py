@@ -278,11 +278,15 @@ def validate_private_source(repo: Path, parity: dict[str, Any], authority: dict[
         return ["source baseline commit does not exist in source repository"]
     for mapping in authority.get("mappings", []):
         authority_id = mapping.get("authority", "unknown")
+        mapping_commit = mapping.get("source_commit", commit)
+        if not isinstance(mapping_commit, str) or not HEX40.fullmatch(mapping_commit):
+            errors.append(f"{authority_id}: source commit is invalid")
+            continue
         for source in mapping.get("source", []):
             path = source.get("path")
             expected_blob = source.get("git_blob")
             try:
-                actual_blob = git_output(repo, "rev-parse", f"{commit}:{path}")
+                actual_blob = git_output(repo, "rev-parse", f"{mapping_commit}:{path}")
             except ValueError:
                 errors.append(f"{authority_id}: source missing at frozen commit: {path}")
                 continue

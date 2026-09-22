@@ -1,12 +1,12 @@
 {
   "schema": "residential.production_authority_map.v0.2",
-  "candidate_version": "v0.2.0-rc.7",
+  "candidate_version": "v0.2.0-rc.9",
   "source_baseline": {
     "repository_role": "private_method_authority",
-    "commit": "78a4d17a9a35697024a263588426c8da10030ddc",
+    "commit": "f536d70fa1020a7049679872506b57a7e3e7989d",
     "worktree_required_clean": false,
     "extraction_method": "explicit_committed_git_paths_with_public_safe_adaptation",
-    "incremental_sync_record": "MAINLINE_SYNC_20260903.md"
+    "incremental_sync_record": "MAINLINE_SYNC_20260922.md"
   },
   "precedence": [
     "START_HERE.md",
@@ -46,7 +46,8 @@
         "RELEASE_STATUS.md",
         "core/00-权威生产路径.md"
       ],
-      "coverage": "complete_dynamic_routing_and_current_status"
+      "coverage": "complete_dynamic_routing_and_current_status",
+      "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc"
     },
     {
       "authority": "cross_product_contract_and_quality_baseline",
@@ -78,7 +79,8 @@
         "core/05-产物启用与生产准入.md",
         "PRODUCTION_PATH_MANIFEST.json"
       ],
-      "coverage": "complete_reasoning_harness_and_cross_product_baseline"
+      "coverage": "complete_reasoning_harness_and_cross_product_baseline",
+      "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc"
     },
     {
       "authority": "formal_annexes",
@@ -101,7 +103,8 @@
         "templates/附表B-超级竞争力与制作规划.md",
         "templates/附表C-产物启用与验收矩阵.md"
       ],
-      "coverage": "complete_current_annexes_with_incremental_and_adoption_fields"
+      "coverage": "complete_current_annexes_with_incremental_and_adoption_fields",
+      "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc"
     },
     {
       "authority": "project_contract_and_upstream",
@@ -121,7 +124,8 @@
         "core/03-产物2购买决策研究.md",
         "templates/真实项目有效任务合同.md"
       ],
-      "coverage": "complete_project_contract_gold_and_incremental_research"
+      "coverage": "complete_project_contract_gold_and_incremental_research",
+      "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc"
     },
     {
       "authority": "product3_strategy_and_ue",
@@ -152,7 +156,8 @@
         "references/product3/assets/产物3案例截图素材库",
         "examples/gold-product3-public-safe"
       ],
-      "coverage": "complete_strategy_ue_authorized_gold_and_reference_assembly"
+      "coverage": "complete_strategy_ue_authorized_gold_and_reference_assembly",
+      "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc"
     },
     {
       "authority": "product5_and_change",
@@ -173,7 +178,8 @@
         "examples/gold-product5-public-safe",
         "workflows/product5-presales-focus"
       ],
-      "coverage": "complete_public_safe_gold_runtime_and_change_reprojection"
+      "coverage": "complete_public_safe_gold_runtime_and_change_reprojection",
+      "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc"
     },
     {
       "authority": "public_channel_and_incremental_research",
@@ -201,7 +207,8 @@
         "tests/test_cross_package_conformance.py",
         "templates/附表A-上游检索任务与回传.md"
       ],
-      "coverage": "complete_incremental_adoption_and_candidate_cross_package_conformance"
+      "coverage": "complete_incremental_adoption_and_candidate_cross_package_conformance",
+      "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc"
     },
     {
       "authority": "customer_facing_assertion_and_delivery_qa",
@@ -227,7 +234,8 @@
         "tools/chinese_copy_lint/affirmative_statement_lint.py",
         "fixtures/client-review"
       ],
-      "coverage": "complete_chinese_report_assertion_writing_human_feedback_and_delivery_qa"
+      "coverage": "complete_chinese_report_assertion_writing_human_feedback_and_delivery_qa",
+      "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc"
     },
     {
       "authority": "product1_product2_gold_references",
@@ -260,7 +268,8 @@
         "examples/default-production-pages"
       ],
       "planned_public": [],
-      "coverage": "complete_public_safe_product1_product2_reports"
+      "coverage": "complete_public_safe_product1_product2_reports",
+      "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc"
     },
     {
       "authority": "product3_gold_assembly",
@@ -322,7 +331,8 @@
         "examples/default-production-pages"
       ],
       "planned_public": [],
-      "coverage": "current_layout_and_actual_copy_assembly_with_historical_authorized_references"
+      "coverage": "current_layout_and_actual_copy_assembly_with_historical_authorized_references",
+      "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc"
     },
     {
       "authority": "product5_gold_implementation",
@@ -348,7 +358,8 @@
         "workflows/product5-presales-focus"
       ],
       "planned_public": [],
-      "coverage": "complete_public_safe_gold_source_motion_ai_mobile_and_qa"
+      "coverage": "complete_public_safe_gold_source_motion_ai_mobile_and_qa",
+      "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc"
     },
     {
       "authority": "shared_production_references",
@@ -385,7 +396,8 @@
         "tools/shared_datasets"
       ],
       "planned_public": [],
-      "coverage": "current_human_ledger_derived_inventory_original_copy_preserved_authorized_scope"
+      "coverage": "current_human_ledger_derived_inventory_original_copy_preserved_authorized_scope",
+      "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc"
     },
     {
       "authority": "platform_neutral_learning_feedback",
@@ -399,7 +411,54 @@
         "CAPABILITY_PARITY_CONTRACT.md",
         "RETIRED_AND_PRIVATE_BOUNDARY.md"
       ],
-      "coverage": "platform_neutral_relationship_rules_only_platform_process_excluded"
+      "coverage": "platform_neutral_relationship_rules_only_platform_process_excluded",
+      "source_commit": "78a4d17a9a35697024a263588426c8da10030ddc"
+    },
+    {
+      "authority": "competitor_and_cross_engineering_increment_20260922",
+      "source_commit": "f536d70fa1020a7049679872506b57a7e3e7989d",
+      "source": [
+        {
+          "path": "docs/30-住宅项目竞争力生产消费主合同_v1.0.md",
+          "git_blob": "777f8cd6794074cba1352fa694389dcb2ca7bc05"
+        },
+        {
+          "path": "docs/04-二期四渠道业务消费方法.md",
+          "git_blob": "95f2931e53ca60fb352a45bf439dafe17018808c"
+        },
+        {
+          "path": "docs/24-产物1至5统一语义核与产物3-4-5交付接口决策记录_v0.1.md",
+          "git_blob": "e9e383f0e618d121ddeab70e748b1c837d514b9a"
+        },
+        {
+          "path": "templates/住宅项目上游检索任务与回传表_v1.0.md",
+          "git_blob": "cbb346136c81b22805c5f0a9a9f0ed7841a2b45e"
+        },
+        {
+          "path": "docs/09-产物1至5整体设计与八项目重写标准.md",
+          "git_blob": "c93f0e90ef59b1b0478d3dcae6eaea17d2592a5c"
+        },
+        {
+          "path": "docs/16-断言式书写规范_v1.0.md",
+          "git_blob": "ada37490eee02b3c342d7791c31b80697b0c863e"
+        },
+        {
+          "path": "docs/48-任务理论消费与研究复核_20260911.md",
+          "git_blob": "f91a202906d2f1d8a5c1139ff5b7b7b68c772f0d"
+        }
+      ],
+      "public": [
+        "core/02-产物1竞争态势研究.md",
+        "core/04-统一语义核与超级竞争力.md",
+        "core/06-产物3从竞争策略到UE解决方案.md",
+        "external-capabilities/README.md",
+        "templates/附表A-上游检索任务与回传.md",
+        "contracts/住宅竞争力方法与生产合同.md",
+        "core/03-产物2购买决策研究.md",
+        "core/08-产物5交互蓝图.md",
+        "references/writing/16-断言式书写规范_v1.0.md"
+      ],
+      "coverage": "public_safe_method_increment_only"
     }
   ],
   "excluded_from_public": [
